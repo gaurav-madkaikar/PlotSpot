@@ -569,7 +569,7 @@ git commit -m "feat: recover targeted quiz story evidence"
 - Produces: `resume_rows(path: Path, identity: dict) -> list[dict]`, `run_batch(client, targets: list[dict]) -> list[dict]`, and `build_report(identity: dict, rows: list[dict]) -> dict` for isolated tests.
 - Produces per-target reasons `no_natural_exact_answer_span`, `intent_contract_not_satisfied`, `writer_abstained`, deterministic problems and critic decisions.
 
-- [ ] **Step 1: Write failing checkpoint and publication-boundary tests**
+- [x] **Step 1: Write failing checkpoint and publication-boundary tests**
 
 ```python
 from movie_companion.local_models import DIGESTS
@@ -658,13 +658,13 @@ def test_completion_runner_never_opens_a_publication_transaction(monkeypatch, tm
     assert report["publication"] == {"authorized": False, "database_mutated": False}
 ```
 
-- [ ] **Step 2: Run the runner tests and verify failure**
+- [x] **Step 2: Run the runner tests and verify failure**
 
 Run: `cd backend && .venv/bin/python -m pytest tests/test_prepare_quiz_replacement_completion.py -q`
 
 Expected: FAIL because the completion runner does not exist.
 
-- [ ] **Step 3: Implement immutable resume identity and per-target rows**
+- [x] **Step 3: Implement immutable resume identity and per-target rows**
 
 ```python
 CHECKPOINT_KEYS = (
@@ -690,7 +690,7 @@ def resume_rows(path, identity):
 
 Assemble generation work from the thirteen `intent` targets plus any `evidence` target whose recovered evidence status is `supported`. Add reviewed `intent` and citation records to each target, preflight `answer_spans`, then process batches of at most three. Catch only target-scoped model/schema/http failures, record their type and continue; allow `CancelledError` to propagate.
 
-- [ ] **Step 4: Retrieve and review the seventeen evidence gaps**
+- [x] **Step 4: Retrieve and review the seventeen evidence gaps**
 
 Run the first bounded recovery pass:
 
@@ -700,7 +700,7 @@ cd backend
   --manifest ../evals/movie-rag/quiz-narrative-quality/replacement-completion-manifest-v1.json \
   --contracts ../evals/movie-rag/quiz-narrative-quality/replacement-intent-contracts-v1.json \
   --catalog ../data/private/movie-catalog.db \
-  --corpus ../data/private/web-corpus.db \
+  --corpus data/private/web-corpus.db \
   --revision 1 \
   --output ../evals/movie-rag/quiz-narrative-quality/replacement-recovery-evidence-v1.json
 .venv/bin/python scripts/review_quiz_replacement_evidence.py \
@@ -710,7 +710,7 @@ cd backend
 
 For evidence-review `insufficient` rows, run revision 2 once into `replacement-recovery-evidence-v2.json`, review it into `replacement-recovery-evidence-review-v2.json`, and merge only newly supported, hash-pinned decisions. Never overwrite the first-pass reports.
 
-- [ ] **Step 5: Run intent-aware generation**
+- [x] **Step 5: Run intent-aware generation**
 
 ```bash
 cd backend
@@ -726,7 +726,7 @@ cd backend
 
 Expected: every eligible target has one candidate or one explicit withheld reason; report fields remain `status=proposal_only`, `published=false`, and `database_mutated=false`.
 
-- [ ] **Step 6: Run focused runner tests and commit**
+- [x] **Step 6: Run focused runner tests and commit**
 
 Run: `cd backend && .venv/bin/python -m pytest tests/test_prepare_quiz_replacement_completion.py tests/test_quiz_replacement_span_writer.py tests/test_quiz_replacement_workflow.py -q`
 

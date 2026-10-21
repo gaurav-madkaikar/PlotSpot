@@ -88,6 +88,26 @@ def test_locked_writer_withholds_a_candidate_that_misses_reviewed_intent(monkeyp
     drafts,info=asyncio.run(run())
     assert drafts.items==[]
     assert info['T1']['writer_problems']==['missing_required_concept']
+    assert info['T1']['rejected_candidate']['question']=='What happens after the storm?'
+
+
+def test_locked_writer_uses_bounded_repair_feedback(monkeypatch):
+    chosen=next(item for item in answer_spans(target()) if item['text']=='seek temporary shelter')
+    seen={}
+    async def fake(*args,**kwargs):
+        seen['prompt']=kwargs['prompt']
+        return json.dumps({'items':[{'target_id':'T1','answer_span_id':chosen['span_id'],
+            'question':'What consequence does the flood have for the family?',
+            'distractors':['They inherit a mansion','They leave the city','They repair the house']} ]})
+    monkeypatch.setattr('movie_companion.quiz_replacement_span_writer.chat_once',fake)
+    feedback={'T1':{'problems':['missing_required_concept'],
+        'rejected_candidate':{'question':'What happens after the storm?'}}}
+    async def run():
+        async with httpx.AsyncClient(base_url='http://127.0.0.1:11434',follow_redirects=False) as client:
+            return await generate_locked_drafts(client,[target()],repair_feedback=feedback)
+    drafts,info=asyncio.run(run())
+    assert drafts.items and info['T1']['writer_problems']==[]
+    assert 'repair_feedback' in seen['prompt'] and 'missing_required_concept' in seen['prompt']
 
 
 def test_locked_writer_isolates_intent_failure_from_valid_sibling(monkeypatch):

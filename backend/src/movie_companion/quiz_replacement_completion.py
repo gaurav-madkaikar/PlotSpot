@@ -79,6 +79,7 @@ SHAPE_PATTERNS = {
         r"\bwhat does .+ (?:show|suggest|represent|mean)\b",
         r"\bcentral conflict\b",
         r"\bwhat drives\b",
+        r"\bwhat do .+ (?:fight|battle|struggle)\b",
     ),
 }
 
@@ -171,6 +172,33 @@ def _normal(value: str):
     return " ".join(re.findall(r"[a-z0-9]+", value.casefold()))
 
 
+def _stem(token: str):
+    """Normalize a few safe English inflections without semantic expansion."""
+    for suffix in (
+        "ations", "ation", "ments", "ment", "ables", "able", "ibles", "ible",
+        "ings", "ing", "ied", "ies", "ed", "es", "s", "ry",
+    ):
+        if token.endswith(suffix) and len(token) - len(suffix) >= 4:
+            replacement = "y" if suffix in ("ied", "ies") else ""
+            return token[:-len(suffix)] + replacement
+    return token
+
+
+def _contains_concept(text: str, alias: str):
+    """Match reviewed aliases as an ordered, inflection-normalized token sequence."""
+    haystack = [_stem(token) for token in _normal(text).split()]
+    needle = [_stem(token) for token in _normal(alias).split()]
+    if not needle:
+        return False
+    position = 0
+    for token in haystack:
+        if token == needle[position]:
+            position += 1
+            if position == len(needle):
+                return True
+    return False
+
+
 def intent_contract_problems(question: str, answer: str, *, intent: NarrativeIntent):
     """Check reviewed concepts and question form without inferring movie facts."""
     if not isinstance(question, str) or not isinstance(answer, str):
@@ -178,7 +206,7 @@ def intent_contract_problems(question: str, answer: str, *, intent: NarrativeInt
     combined = _normal(f"{question} {answer}")
     problems = []
     if any(
-        not any(_normal(alias) in combined for alias in group)
+        not any(_contains_concept(combined, alias) for alias in group)
         for group in intent.required_concepts
     ):
         problems.append("missing_required_concept")

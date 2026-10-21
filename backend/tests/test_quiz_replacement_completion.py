@@ -201,6 +201,31 @@ def test_intent_contract_requires_every_concept_group_and_blocks_forbidden_detai
 
 
 @pytest.mark.parametrize(
+    "alias,wording",
+    [
+        ("rivalry", "rival stage magicians"),
+        ("stolen painting", "a stolen oil painting"),
+        ("habitable", "human habitation"),
+    ],
+)
+def test_intent_contract_accepts_safe_inflections_and_intervening_modifiers(
+    alias, wording
+):
+    intent = NarrativeIntent(
+        question_id="q1",
+        focus="a story relationship",
+        relation="motivation",
+        required_concepts=[[alias]],
+        forbidden_details=[],
+        expected_answer_shape="reason",
+    )
+
+    assert intent_contract_problems(
+        f"Why does {wording} matter?", "Because it changes the story", intent=intent
+    ) == []
+
+
+@pytest.mark.parametrize(
     "shape,question,answer",
     [
         ("reason", "Who begins the meeting?", "Tyler Durden"),

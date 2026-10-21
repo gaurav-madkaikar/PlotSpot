@@ -9,9 +9,11 @@ from pathlib import Path
 import httpx
 
 from movie_companion.catalog_store import CatalogStore, DEFAULT_PATH as CATALOG_PATH
+from movie_companion.evidence_store import SourceDocument
 from movie_companion.movie_source_corpus import MovieSourceCorpus
 from movie_companion.movie_web_sources import MovieIdentity
 from movie_companion.preparation_jobs import atomic_json
+from movie_companion.proposal_evidence import evidence_pools
 from movie_companion.quiz_replacement_completion import (
     load_completion_manifest,
     load_intent_contracts,
@@ -25,6 +27,19 @@ from movie_companion.web_corpus_store import WebCorpusStore, DEFAULT_PATH as COR
 
 
 POLICY = "quiz-replacement-evidence-recovery-v1"
+ROOT = Path(__file__).resolve().parents[2]
+WIKIPEDIA_SOURCES = ROOT / ".cache/expanded20/sources"
+
+
+def load_frozen_wikipedia(directory, movie_id):
+    path = Path(directory) / f"{movie_id}.json"
+    if not path.is_file():
+        return None
+    source = SourceDocument(**json.loads(path.read_text()))
+    if source.movie_id != movie_id or not source.revision.startswith("enwiki-"):
+        raise ValueError("Frozen Wikipedia source identity changed")
+    evidence_pools(source)
+    return source
 
 
 async def recover_target(corpus, store, movie, target, intent, *, revision):
@@ -74,6 +89,14 @@ async def run(args):
     targets = [item for item in manifest.items if item.lane == "evidence"]
     if len(targets) != 17:
         raise ValueError("Evidence recovery requires exactly seventeen targets")
+    if args.question_id:
+        requested = set(args.question_id)
+        if len(requested) != len(args.question_id):
+            raise ValueError("Duplicate evidence-recovery target filter")
+        available = {item.question_id for item in targets}
+        if not requested <= available:
+            raise ValueError("Unknown evidence-recovery target filter")
+        targets = [item for item in targets if item.question_id in requested]
 
     store = WebCorpusStore(args.corpus)
     catalog = CatalogStore(args.catalog)
@@ -104,6 +127,9 @@ async def run(args):
                 movie_record = catalog.get_movie(item.movie_id)
                 if movie_record is None:
                     raise ValueError("Movie metadata is unavailable")
+                wikipedia = load_frozen_wikipedia(args.wikipedia_sources, item.movie_id)
+                if wikipedia is not None:
+                    store.remember(wikipedia, "web")
                 row = await recover_target(
                     corpus,
                     store,
@@ -111,6 +137,9 @@ async def run(args):
                     target,
                     contracts[item.question_id],
                     revision=args.revision,
+                )
+                row["frozen_wikipedia_source_id"] = (
+                    None if wikipedia is None else wikipedia.source_id
                 )
                 row["error_type"] = None
             except (ValueError, OSError, TimeoutError, httpx.HTTPError) as error:
@@ -127,6 +156,7 @@ async def run(args):
                     "acquisition": None,
                     "local_evidence_count": 0,
                     "error_type": type(error).__name__,
+                    "frozen_wikipedia_source_id": None,
                 }
             report["items"].append(row)
             atomic_json(args.output, report)
@@ -155,6 +185,8 @@ if __name__ == "__main__":
     parser.add_argument("--contracts", type=Path, required=True)
     parser.add_argument("--catalog", type=Path, default=CATALOG_PATH)
     parser.add_argument("--corpus", type=Path, default=CORPUS_PATH)
+    parser.add_argument("--wikipedia-sources", type=Path, default=WIKIPEDIA_SOURCES)
     parser.add_argument("--revision", type=int, required=True, choices=(1, 2))
+    parser.add_argument("--question-id", action="append", default=[])
     parser.add_argument("--output", type=Path, required=True)
     asyncio.run(run(parser.parse_args()))
