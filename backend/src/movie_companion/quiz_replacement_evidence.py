@@ -4,6 +4,8 @@ from collections import Counter
 import math
 import re
 
+from .movie_web_sources import MovieIdentity
+from .quiz_replacement_completion import NarrativeIntent
 from .sentence_spans import complete_sentence_spans
 from .source_coverage import publisher
 
@@ -33,15 +35,36 @@ def story_sentences(source):
     return rows
 
 
-def retrieve_replacement_evidence(store, target, *, limit=8):
+def targeted_story_query(movie:MovieIdentity,intent:NarrativeIntent,*,revision:int):
+    """Build two bounded discovery queries from reviewed target language."""
+    movie=movie if isinstance(movie,MovieIdentity) else MovieIdentity(**movie)
+    intent=intent if isinstance(intent,NarrativeIntent) else NarrativeIntent.model_validate(intent)
+    if revision not in (1,2):raise ValueError('Only an initial and one revised query are allowed')
+    concepts=[group[0] if revision==1 else group[-1] for group in intent.required_concepts]
+    title=re.sub(r'[^\w .,:!?()\-]',' ',movie.title)[:160]
+    variant='plot explanation' if revision==1 else 'story analysis'
+    query=' '.join((f'"{title}"',str(movie.year or ''),'film',intent.relation,
+                    intent.focus,*concepts,variant))
+    query=' '.join(query.split())
+    if len(query)>500:raise ValueError('Targeted story query exceeds budget')
+    return query
+
+
+def retrieve_replacement_evidence(store, target, *, intent=None, limit=8):
     """Rank complete plot sentences; ranking is relevance, not proof."""
     if type(limit) is not int or not 1<=limit<=8:
         raise ValueError('Invalid replacement evidence limit')
     query=' '.join((target['replacement_brief'],target['old_question'],
                     target['evidence'].get('explanation','')))
+    if intent is not None:
+        intent=intent if isinstance(intent,NarrativeIntent) else NarrativeIntent.model_validate(intent)
+        if intent.question_id!=target.get('question_id',intent.question_id):
+            raise ValueError('Narrative intent crossed target boundaries')
+        query=' '.join((query,intent.focus,intent.relation,
+                        *(alias for group in intent.required_concepts for alias in group)))
     query_terms=set(terms(query))
     candidates=[]
-    sources=store.movie_sources(target['movie_id'],kinds=('web','provider'))
+    sources=store.movie_sources(target['movie_id'],kinds=('web','script','provider'))
     for source,kind in sources:
         for section_title,sentence in story_sentences(source):
             candidates.append({'source':source,'kind':kind,'section_title':section_title,

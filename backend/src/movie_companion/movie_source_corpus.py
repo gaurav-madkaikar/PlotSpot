@@ -35,12 +35,22 @@ class MovieSourceCorpus:
         return hashlib.sha256(f'{POLICY}:{fallback}:{movie.fingerprint}:{purpose}:{self.search.provider}'.encode()).hexdigest()
     async def web(self,movie,purpose,*,refresh=False):
         key=self.key(movie,purpose)
+        return await self._cached_web(movie,purpose,key,movie.query(purpose),refresh=refresh)
+    def targeted_key(self,movie,query):
+        fallback=None if self.reference_search is None else self.reference_search.provider
+        return hashlib.sha256(f'{POLICY}:{fallback}:targeted-story:{movie.fingerprint}:{self.search.provider}:{query}'.encode()).hexdigest()
+    async def targeted_story(self,movie,query,*,refresh=False):
+        if not isinstance(query,str) or not 1<=len(query)<=500:
+            raise ValueError('Targeted story query exceeds budget')
+        key=self.targeted_key(movie,query)
+        return await self._cached_web(movie,'story',key,query,refresh=refresh)
+    async def _cached_web(self,movie,purpose,key,query,*,refresh=False):
         if not refresh:
             cached=await asyncio.to_thread(self.store.bundle,key)
             if cached:return self.restore(cached)
         task=self.pending.get(key)
         if task is None:
-            task=asyncio.create_task(self._web(movie,purpose,key));self.pending[key]=task
+            task=asyncio.create_task(self._web(movie,purpose,key,query));self.pending[key]=task
             def done(completed):
                 self.pending.pop(key,None)
                 if not completed.cancelled():completed.exception()
@@ -49,13 +59,13 @@ class MovieSourceCorpus:
     def restore(self,cached):
         sources=tuple(self.store.load(r['movie_id'],r['source_id'],r['revision']) for r in cached['sources'])
         return CorpusResult(sources,{**cached['trace'],'cache':'hit'})
-    async def _web(self,movie,purpose,key):
+    async def _web(self,movie,purpose,key,query):
         async with self.slots:
             errors=[];accepted=[]
             try:
                 async with asyncio.timeout(80):
                     discovery=self.search.provider
-                    try:hits=await self.search.search(movie.query(purpose),limit=15)
+                    try:hits=await self.search.search(query,limit=15)
                     except SearchUnavailable:
                         if self.reference_search is None:raise
                         hits=await self.reference_search.search(movie,purpose,limit=30)

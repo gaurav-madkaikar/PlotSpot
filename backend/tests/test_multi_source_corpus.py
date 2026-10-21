@@ -158,6 +158,40 @@ def test_unavailable_public_search_falls_back_to_wikipedia_citations(tmp_path):
     asyncio.run(run())
 
 
+def test_targeted_story_queries_have_distinct_cache_keys_and_keep_page_budget(tmp_path):
+    class Search:
+        provider='duckduckgo'
+        def __init__(self):self.queries=[]
+        async def search(self,query,limit):
+            self.queries.append(query)
+            return [SearchHit('Interstellar',f'https://targeted{i}.example/story',
+                'Discovery only',i+1) for i in range(5)]
+    class Reader:
+        async def fetch(self,url):return WebRead(url,article(),'text/html')
+    search=Search();corpus=MovieSourceCorpus(search,Reader(),WebCorpusStore(tmp_path/'targeted.db'))
+    async def run():
+        first=await corpus.targeted_story(MOVIE,'"Interstellar" 2014 film family consequence')
+        cached=await corpus.targeted_story(MOVIE,'"Interstellar" 2014 film family consequence')
+        second=await corpus.targeted_story(MOVIE,'"Interstellar" 2014 film ending choice')
+        await corpus.close()
+        return first,cached,second
+    first,cached,second=asyncio.run(run())
+    assert search.queries==['"Interstellar" 2014 film family consequence',
+                            '"Interstellar" 2014 film ending choice']
+    assert len(first.sources)<=5 and len(second.sources)<=5
+    assert cached.trace['cache']=='hit'
+
+
+@pytest.mark.parametrize('query',['','x'*501,42])
+def test_targeted_story_rejects_queries_outside_budget(tmp_path,query):
+    corpus=MovieSourceCorpus(store=WebCorpusStore(tmp_path/'invalid-targeted.db'))
+    async def run():
+        with pytest.raises(ValueError,match='query'):
+            await corpus.targeted_story(MOVIE,query)
+        await corpus.close()
+    asyncio.run(run())
+
+
 def test_robots_policy_is_rechecked_on_public_redirects():
     calls=[]
     async def resolve(host):return ['93.184.216.34']

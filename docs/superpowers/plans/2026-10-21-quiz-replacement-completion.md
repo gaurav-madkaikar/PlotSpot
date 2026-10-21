@@ -407,7 +407,7 @@ git commit -m "feat: constrain quiz replacements by narrative intent"
 - Changes: `retrieve_replacement_evidence(store, target, *, intent=None, limit=8)` adds reviewed concept aliases to BM25 terms.
 - Produces artifact policy `quiz-replacement-evidence-recovery-v1`.
 
-- [ ] **Step 1: Write failing targeted-query and recovery tests**
+- [x] **Step 1: Write failing targeted-query and recovery tests**
 
 ```python
 from movie_companion.quiz_replacement_completion import NarrativeIntent
@@ -471,13 +471,13 @@ def test_contract_terms_improve_ranking_without_releasing_partial_sentences(tmp_
     assert len(evidence) <= 8
 ```
 
-- [ ] **Step 2: Run tests and verify the missing-interface failures**
+- [x] **Step 2: Run tests and verify the missing-interface failures**
 
 Run: `cd backend && .venv/bin/python -m pytest tests/test_multi_source_corpus.py tests/test_quiz_replacement_evidence.py tests/test_recover_quiz_replacement_evidence.py -q`
 
 Expected: FAIL because targeted-story acquisition and contract-aware retrieval are absent.
 
-- [ ] **Step 3: Add query-keyed acquisition without weakening source policy**
+- [x] **Step 3: Add query-keyed acquisition without weakening source policy**
 
 Refactor only the discovery query input; keep `_web` acquisition, `make_web_source`, publisher caps, full-page identity checks and `WebCorpusStore.remember` unchanged:
 
@@ -497,7 +497,7 @@ async def targeted_story(self, movie, query, *, refresh=False):
 
 The shared helper calls `self.search.search(query, limit=15)`, accepts at most five validated pages, keeps two pages per publisher, uses stale cache on provider failure, and stores the query hash rather than raw query text in cache metadata.
 
-- [ ] **Step 4: Add bounded query construction and contract-aware BM25**
+- [x] **Step 4: Add bounded query construction and contract-aware BM25**
 
 ```python
 def targeted_story_query(movie, intent, *, revision):
@@ -515,7 +515,7 @@ def targeted_story_query(movie, intent, *, revision):
 
 In `retrieve_replacement_evidence`, add each reviewed alias group to the lexical query when `intent` is present, but keep the existing complete-sentence extractor, 8,000-candidate ceiling, per-source cap and per-publisher cap.
 
-- [ ] **Step 5: Implement the local-first recovery script**
+- [x] **Step 5: Implement the local-first recovery script**
 
 For each of the seventeen `evidence` targets:
 
@@ -527,7 +527,7 @@ For each of the seventeen `evidence` targets:
 
 The script must reject `--revision` outside `1..2`, an output file that already contains a different manifest/contract hash, or any manifest whose lane counts differ from `13/17/1`.
 
-- [ ] **Step 6: Run focused source and recovery tests**
+- [x] **Step 6: Run focused source and recovery tests**
 
 Run:
 
@@ -542,7 +542,7 @@ cd backend
 
 Expected: PASS with no search snippet present in returned evidence.
 
-- [ ] **Step 7: Commit bounded evidence recovery**
+- [x] **Step 7: Commit bounded evidence recovery**
 
 ```bash
 git add backend/src/movie_companion/movie_source_corpus.py \
