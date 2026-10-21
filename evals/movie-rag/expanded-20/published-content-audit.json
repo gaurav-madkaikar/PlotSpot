@@ -1,0 +1,465 @@
+{
+  "generated_at": "2026-10-21T06:51:53.284051+00:00",
+  "policy": "published-content-integrity-audit-v1",
+  "status": "pass",
+  "scope": "Published-bank integrity, minimum content readiness and citation publisher diversity.",
+  "movie_count": 20,
+  "metrics": {
+    "facts": 113,
+    "quiz_items": 215,
+    "scored_questions": 214,
+    "interpretation_prompts": 1,
+    "citations": 332,
+    "unique_publishers": 25,
+    "publishers": [
+      "afi.com",
+      "alltherightmovies.com",
+      "archive.org",
+      "bestlifeonline.com",
+      "bfi.org.uk",
+      "caltech.edu",
+      "deadline.com",
+      "denofgeek.com",
+      "filmlookup.com",
+      "filmmakermagazine.com",
+      "geektyrant.com",
+      "hollywoodreporter.com",
+      "moviesense.io",
+      "plotspoiler.com",
+      "rollingstone.com",
+      "screenrant.com",
+      "slate.com",
+      "theasc.com",
+      "thefincheranalyst.com",
+      "themoviedb.org",
+      "thisisbarry.com",
+      "time.com",
+      "vanityfair.com",
+      "variety.com",
+      "wikipedia.org"
+    ],
+    "minimum_facts_per_movie": 5,
+    "minimum_scored_questions_per_movie": 10,
+    "movies_with_multi_publisher_facts": 20,
+    "movies_with_multi_publisher_quiz": 20,
+    "verified_receipts": 20,
+    "verified_payloads": 20
+  },
+  "movies": [
+    {
+      "movie_id": 27205,
+      "title": "Inception",
+      "version": "research-09ee095c837e",
+      "facts": 6,
+      "scored_questions": 12,
+      "interpretation_prompts": 0,
+      "citations": 18,
+      "fact_publishers": [
+        "archive.org",
+        "wikipedia.org"
+      ],
+      "quiz_publishers": [
+        "themoviedb.org",
+        "wikipedia.org"
+      ],
+      "receipt_verified": true,
+      "payload_verified": true,
+      "coverage_complete": true
+    },
+    {
+      "movie_id": 157336,
+      "title": "Interstellar (film)",
+      "version": "research-929a17806629",
+      "facts": 6,
+      "scored_questions": 15,
+      "interpretation_prompts": 1,
+      "citations": 22,
+      "fact_publishers": [
+        "caltech.edu",
+        "wikipedia.org"
+      ],
+      "quiz_publishers": [
+        "variety.com",
+        "wikipedia.org"
+      ],
+      "receipt_verified": true,
+      "payload_verified": true,
+      "coverage_complete": true
+    },
+    {
+      "movie_id": 329865,
+      "title": "Arrival (film)",
+      "version": "research-e35d6fd37554",
+      "facts": 8,
+      "scored_questions": 12,
+      "interpretation_prompts": 0,
+      "citations": 21,
+      "fact_publishers": [
+        "bfi.org.uk",
+        "time.com",
+        "wikipedia.org"
+      ],
+      "quiz_publishers": [
+        "slate.com",
+        "wikipedia.org"
+      ],
+      "receipt_verified": true,
+      "payload_verified": true,
+      "coverage_complete": true
+    },
+    {
+      "movie_id": 603,
+      "title": "The Matrix",
+      "version": "research-39ceaa564552",
+      "facts": 6,
+      "scored_questions": 10,
+      "interpretation_prompts": 0,
+      "citations": 17,
+      "fact_publishers": [
+        "archive.org",
+        "wikipedia.org"
+      ],
+      "quiz_publishers": [
+        "thisisbarry.com",
+        "wikipedia.org"
+      ],
+      "receipt_verified": true,
+      "payload_verified": true,
+      "coverage_complete": true
+    },
+    {
+      "movie_id": 546554,
+      "title": "Knives Out",
+      "version": "research-15f18152719f",
+      "facts": 6,
+      "scored_questions": 10,
+      "interpretation_prompts": 0,
+      "citations": 17,
+      "fact_publishers": [
+        "deadline.com",
+        "wikipedia.org"
+      ],
+      "quiz_publishers": [
+        "slate.com",
+        "wikipedia.org"
+      ],
+      "receipt_verified": true,
+      "payload_verified": true,
+      "coverage_complete": true
+    },
+    {
+      "movie_id": 496243,
+      "title": "Parasite (2019 film)",
+      "version": "research-d0ef19fec3ad",
+      "facts": 6,
+      "scored_questions": 11,
+      "interpretation_prompts": 0,
+      "citations": 17,
+      "fact_publishers": [
+        "archive.org",
+        "wikipedia.org"
+      ],
+      "quiz_publishers": [
+        "variety.com",
+        "wikipedia.org"
+      ],
+      "receipt_verified": true,
+      "payload_verified": true,
+      "coverage_complete": true
+    },
+    {
+      "movie_id": 129,
+      "title": "Spirited Away",
+      "version": "research-a97564d0da89",
+      "facts": 6,
+      "scored_questions": 11,
+      "interpretation_prompts": 0,
+      "citations": 17,
+      "fact_publishers": [
+        "deadline.com",
+        "wikipedia.org"
+      ],
+      "quiz_publishers": [
+        "themoviedb.org",
+        "wikipedia.org"
+      ],
+      "receipt_verified": true,
+      "payload_verified": true,
+      "coverage_complete": true
+    },
+    {
+      "movie_id": 37165,
+      "title": "The Truman Show",
+      "version": "research-0f201d0320a9",
+      "facts": 6,
+      "scored_questions": 10,
+      "interpretation_prompts": 0,
+      "citations": 17,
+      "fact_publishers": [
+        "theasc.com",
+        "wikipedia.org"
+      ],
+      "quiz_publishers": [
+        "themoviedb.org",
+        "wikipedia.org"
+      ],
+      "receipt_verified": true,
+      "payload_verified": true,
+      "coverage_complete": true
+    },
+    {
+      "movie_id": 120467,
+      "title": "The Grand Budapest Hotel",
+      "version": "research-a342008a26db",
+      "facts": 6,
+      "scored_questions": 11,
+      "interpretation_prompts": 0,
+      "citations": 17,
+      "fact_publishers": [
+        "filmmakermagazine.com",
+        "wikipedia.org"
+      ],
+      "quiz_publishers": [
+        "themoviedb.org",
+        "wikipedia.org"
+      ],
+      "receipt_verified": true,
+      "payload_verified": true,
+      "coverage_complete": true
+    },
+    {
+      "movie_id": 438631,
+      "title": "Dune (2021 film)",
+      "version": "research-419b709b44ef",
+      "facts": 6,
+      "scored_questions": 11,
+      "interpretation_prompts": 0,
+      "citations": 17,
+      "fact_publishers": [
+        "archive.org",
+        "wikipedia.org"
+      ],
+      "quiz_publishers": [
+        "variety.com",
+        "wikipedia.org"
+      ],
+      "receipt_verified": true,
+      "payload_verified": true,
+      "coverage_complete": true
+    },
+    {
+      "movie_id": 155,
+      "title": "The Dark Knight",
+      "version": "research-f559e8b9817d",
+      "facts": 6,
+      "scored_questions": 11,
+      "interpretation_prompts": 0,
+      "citations": 17,
+      "fact_publishers": [
+        "archive.org",
+        "wikipedia.org"
+      ],
+      "quiz_publishers": [
+        "themoviedb.org",
+        "wikipedia.org"
+      ],
+      "receipt_verified": true,
+      "payload_verified": true,
+      "coverage_complete": true
+    },
+    {
+      "movie_id": 278,
+      "title": "The Shawshank Redemption",
+      "version": "research-4630dcebf37c",
+      "facts": 5,
+      "scored_questions": 10,
+      "interpretation_prompts": 0,
+      "citations": 15,
+      "fact_publishers": [
+        "rollingstone.com",
+        "wikipedia.org"
+      ],
+      "quiz_publishers": [
+        "themoviedb.org",
+        "variety.com",
+        "wikipedia.org"
+      ],
+      "receipt_verified": true,
+      "payload_verified": true,
+      "coverage_complete": true
+    },
+    {
+      "movie_id": 238,
+      "title": "The Godfather",
+      "version": "research-b2fb98bba6e1",
+      "facts": 5,
+      "scored_questions": 10,
+      "interpretation_prompts": 0,
+      "citations": 15,
+      "fact_publishers": [
+        "bestlifeonline.com",
+        "wikipedia.org"
+      ],
+      "quiz_publishers": [
+        "themoviedb.org",
+        "wikipedia.org"
+      ],
+      "receipt_verified": true,
+      "payload_verified": true,
+      "coverage_complete": true
+    },
+    {
+      "movie_id": 680,
+      "title": "Pulp Fiction",
+      "version": "research-86a3da84985e",
+      "facts": 5,
+      "scored_questions": 10,
+      "interpretation_prompts": 0,
+      "citations": 15,
+      "fact_publishers": [
+        "variety.com",
+        "wikipedia.org"
+      ],
+      "quiz_publishers": [
+        "archive.org",
+        "wikipedia.org"
+      ],
+      "receipt_verified": true,
+      "payload_verified": true,
+      "coverage_complete": true
+    },
+    {
+      "movie_id": 550,
+      "title": "Fight Club",
+      "version": "research-e783e7f83fe0",
+      "facts": 5,
+      "scored_questions": 10,
+      "interpretation_prompts": 0,
+      "citations": 15,
+      "fact_publishers": [
+        "thefincheranalyst.com",
+        "wikipedia.org"
+      ],
+      "quiz_publishers": [
+        "filmlookup.com",
+        "plotspoiler.com",
+        "themoviedb.org",
+        "wikipedia.org"
+      ],
+      "receipt_verified": true,
+      "payload_verified": true,
+      "coverage_complete": true
+    },
+    {
+      "movie_id": 13,
+      "title": "Forrest Gump",
+      "version": "research-423740447f00",
+      "facts": 5,
+      "scored_questions": 10,
+      "interpretation_prompts": 0,
+      "citations": 15,
+      "fact_publishers": [
+        "afi.com",
+        "denofgeek.com",
+        "wikipedia.org"
+      ],
+      "quiz_publishers": [
+        "moviesense.io",
+        "plotspoiler.com",
+        "wikipedia.org"
+      ],
+      "receipt_verified": true,
+      "payload_verified": true,
+      "coverage_complete": true
+    },
+    {
+      "movie_id": 1124,
+      "title": "The Prestige",
+      "version": "research-6bd2d9de6c13",
+      "facts": 5,
+      "scored_questions": 10,
+      "interpretation_prompts": 0,
+      "citations": 15,
+      "fact_publishers": [
+        "alltherightmovies.com",
+        "screenrant.com",
+        "wikipedia.org"
+      ],
+      "quiz_publishers": [
+        "geektyrant.com",
+        "wikipedia.org"
+      ],
+      "receipt_verified": true,
+      "payload_verified": true,
+      "coverage_complete": true
+    },
+    {
+      "movie_id": 10681,
+      "title": "WALL-E",
+      "version": "research-a7b58936b8bc",
+      "facts": 5,
+      "scored_questions": 10,
+      "interpretation_prompts": 0,
+      "citations": 15,
+      "fact_publishers": [
+        "archive.org",
+        "wikipedia.org"
+      ],
+      "quiz_publishers": [
+        "hollywoodreporter.com",
+        "themoviedb.org",
+        "wikipedia.org"
+      ],
+      "receipt_verified": true,
+      "payload_verified": true,
+      "coverage_complete": true
+    },
+    {
+      "movie_id": 8587,
+      "title": "The Lion King",
+      "version": "research-b4c4933bed48",
+      "facts": 5,
+      "scored_questions": 10,
+      "interpretation_prompts": 0,
+      "citations": 15,
+      "fact_publishers": [
+        "denofgeek.com",
+        "wikipedia.org"
+      ],
+      "quiz_publishers": [
+        "archive.org",
+        "themoviedb.org",
+        "wikipedia.org"
+      ],
+      "receipt_verified": true,
+      "payload_verified": true,
+      "coverage_complete": true
+    },
+    {
+      "movie_id": 76341,
+      "title": "Mad Max: Fury Road",
+      "version": "research-600f039b5e2b",
+      "facts": 5,
+      "scored_questions": 10,
+      "interpretation_prompts": 0,
+      "citations": 15,
+      "fact_publishers": [
+        "variety.com",
+        "wikipedia.org"
+      ],
+      "quiz_publishers": [
+        "vanityfair.com",
+        "wikipedia.org"
+      ],
+      "receipt_verified": true,
+      "payload_verified": true,
+      "coverage_complete": true
+    }
+  ],
+  "limitations": [
+    "This audit does not measure whether every claim or answer is semantically correct.",
+    "Publisher diversity does not prove source independence, credibility or agreement.",
+    "The reviewed selections were assistant-inspected; independent human labels remain pending.",
+    "Latency, throughput, model cost and live provider availability are outside this audit."
+  ]
+}

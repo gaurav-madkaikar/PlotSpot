@@ -1,0 +1,300 @@
+{
+  "mode": "deterministic-replay",
+  "model_calls": 0,
+  "state": "complete",
+  "publication_approved": false,
+  "input_report": "precision-final-v3.json",
+  "input_report_sha256": "a3635cb57fd1659bf215fa0891a27765ea80b29762c000065d81b9d8156ea8bc",
+  "dataset_sha256": "9bba11937d8d7a37005d86adac22688ac4216dae0387be8454ed1d73e4bb3c1d",
+  "background_policy_sha256": "d8711e21b57386bce2bd17c1687b6d2d169c4a91ea6e0929def1165400350298",
+  "critic_policy_version": "background-precision-critic-v4-source-names",
+  "cases": [
+    {
+      "case_id": "precision-496243:F1",
+      "expected": "accept",
+      "actual": "accept",
+      "matched": true,
+      "category": "useful-supported",
+      "assessment": {
+        "item_id": "F1",
+        "missing_mentions": [],
+        "semantic_decision": "accept",
+        "reason": "The proposal accurately reflects the evidence quote regarding editors stitching different takes to create options with limited coverage."
+      },
+      "previous_decision": "accept"
+    },
+    {
+      "case_id": "precision-496243:F2",
+      "expected": "reject",
+      "actual": "reject",
+      "matched": true,
+      "category": "stronger-qualifier",
+      "assessment": {
+        "item_id": "F2",
+        "missing_mentions": [],
+        "semantic_decision": "reject",
+        "reason": "The claim 'always joined' contradicts the source text which states they 'sometimes stitched together' different takes."
+      },
+      "previous_decision": "reject"
+    },
+    {
+      "case_id": "precision-496243:F3",
+      "expected": "uncertain",
+      "actual": "uncertain",
+      "matched": true,
+      "category": "missing-full-name",
+      "assessment": {
+        "item_id": "F3",
+        "missing_mentions": [
+          "Bong Joon-ho"
+        ],
+        "semantic_decision": "accept",
+        "reason": "The proposal correctly summarizes the evidence quote stating that Bong chose to shoot the film without traditional coverage."
+      },
+      "previous_decision": "uncertain"
+    },
+    {
+      "case_id": "precision-129:F1",
+      "expected": "accept",
+      "actual": "accept",
+      "matched": true,
+      "category": "useful-supported",
+      "assessment": {
+        "item_id": "F1",
+        "missing_mentions": [],
+        "semantic_decision": "accept",
+        "reason": "The proposal accurately reflects the evidence quote regarding screenwriters writing English dialogue to match original Japanese lip movements."
+      },
+      "previous_decision": "accept"
+    },
+    {
+      "case_id": "precision-129:F2",
+      "expected": "reject",
+      "actual": "reject",
+      "matched": true,
+      "category": "reversed-language",
+      "assessment": {
+        "item_id": "F2",
+        "missing_mentions": [],
+        "semantic_decision": "reject",
+        "reason": "The proposal incorrectly states they wrote the 'original Japanese dialogue' to match English lips, whereas the evidence confirms they wrote the 'English-language dialogue' to match Japanese lip movements."
+      },
+      "previous_decision": "reject"
+    },
+    {
+      "case_id": "precision-129:F3",
+      "expected": "reject",
+      "actual": "reject",
+      "matched": true,
+      "category": "changed-object",
+      "assessment": {
+        "item_id": "F3",
+        "missing_mentions": [],
+        "semantic_decision": "reject",
+        "reason": "The proposal incorrectly identifies the output as an 'English soundtrack'; the evidence quote explicitly refers to 'dialogue', not a soundtrack."
+      },
+      "previous_decision": "reject"
+    },
+    {
+      "case_id": "precision-120467:F1",
+      "expected": "accept",
+      "actual": "accept",
+      "matched": true,
+      "category": "useful-supported",
+      "assessment": {
+        "item_id": "F1",
+        "missing_mentions": [],
+        "semantic_decision": "accept",
+        "reason": "The proposal accurately reflects the evidence quote by listing both photographers and painters studied, correctly attributing the research to Canonero without omitting key sources mentioned in the text."
+      },
+      "previous_decision": "accept"
+    },
+    {
+      "case_id": "precision-120467:F2",
+      "expected": "uncertain",
+      "actual": "uncertain",
+      "matched": true,
+      "category": "missing-full-name",
+      "assessment": {
+        "item_id": "F2",
+        "missing_mentions": [
+          "Milena Canonero"
+        ],
+        "semantic_decision": "reject",
+        "reason": "The proposal omits George Hurrell from the list of photographers, creating an incomplete factual claim that contradicts the full scope of the evidence quote which explicitly names him."
+      },
+      "previous_decision": "uncertain"
+    },
+    {
+      "case_id": "precision-120467:F3",
+      "expected": "reject",
+      "actual": "reject",
+      "matched": true,
+      "category": "unsupported-exclusivity",
+      "assessment": {
+        "item_id": "F3",
+        "missing_mentions": [],
+        "semantic_decision": "reject",
+        "reason": "The proposal falsely claims photographs were the 'only' source, directly contradicting the evidence quote which clearly states Canonero also researched period artwork by painters like Klimt and Lempicka."
+      },
+      "previous_decision": "reject"
+    },
+    {
+      "case_id": "precision-438631:F1",
+      "expected": "accept",
+      "actual": "accept",
+      "matched": true,
+      "category": "useful-supported",
+      "assessment": {
+        "item_id": "F1",
+        "missing_mentions": [],
+        "semantic_decision": "accept",
+        "reason": "The proposal text accurately reflects the evidence quote regarding sandscreens simulating desert luminance without adding unsupported details."
+      },
+      "previous_decision": "accept"
+    },
+    {
+      "case_id": "precision-438631:F2",
+      "expected": "reject",
+      "actual": "reject",
+      "matched": true,
+      "category": "invented-material",
+      "assessment": {
+        "item_id": "F2",
+        "missing_mentions": [],
+        "semantic_decision": "reject",
+        "reason": "The proposal claims screens were built from 'real desert sand,' but the evidence only states they simulated luminance; this specific material detail is not supported by the quote."
+      },
+      "previous_decision": "reject"
+    },
+    {
+      "case_id": "precision-438631:F3",
+      "expected": "uncertain",
+      "actual": "uncertain",
+      "matched": true,
+      "category": "missing-person",
+      "assessment": {
+        "item_id": "F3",
+        "missing_mentions": [
+          "Greig Fraser"
+        ],
+        "semantic_decision": "reject",
+        "reason": "The proposal attributes the action to cinematographer Greig Fraser, yet the evidence quote contains no mention of his name or role; this causal link is invented."
+      },
+      "previous_decision": "uncertain"
+    },
+    {
+      "case_id": "precision-546554:F1",
+      "expected": "accept",
+      "actual": "accept",
+      "matched": true,
+      "category": "useful-supported",
+      "assessment": {
+        "item_id": "F1",
+        "missing_mentions": [],
+        "semantic_decision": "accept",
+        "reason": "The proposal accurately reflects the evidence quote regarding Johnson naming characters after musicians for easier memory retention, using concise wording and a specific title."
+      },
+      "previous_decision": "accept"
+    },
+    {
+      "case_id": "precision-546554:F2",
+      "expected": "reject",
+      "actual": "reject",
+      "matched": true,
+      "category": "changed-object",
+      "assessment": {
+        "item_id": "F2",
+        "missing_mentions": [],
+        "semantic_decision": "reject",
+        "reason": "The phrase 'make their roles in the story easier to remember' exceeds the evidence; the quote only supports making the names easier to remember, not the roles themselves."
+      },
+      "previous_decision": "reject"
+    },
+    {
+      "case_id": "precision-546554:F3",
+      "expected": "uncertain",
+      "actual": "uncertain",
+      "matched": true,
+      "category": "missing-full-name",
+      "assessment": {
+        "item_id": "F3",
+        "missing_mentions": [
+          "Rian Johnson"
+        ],
+        "semantic_decision": "accept",
+        "reason": "The proposal correctly summarizes the evidence quote about naming characters after enjoyed musicians for memory ease, with a specific title and concise wording under 45 words."
+      },
+      "previous_decision": "uncertain"
+    },
+    {
+      "case_id": "precision-37165:F1",
+      "expected": "accept",
+      "actual": "accept",
+      "matched": true,
+      "category": "useful-supported",
+      "assessment": {
+        "item_id": "F1",
+        "missing_mentions": [],
+        "semantic_decision": "accept",
+        "reason": "The proposal text accurately reflects the evidence quote without adding unsupported details. The title is specific, and the claim relies entirely on the provided background content."
+      },
+      "previous_decision": "accept"
+    },
+    {
+      "case_id": "precision-37165:F2",
+      "expected": "reject",
+      "actual": "reject",
+      "matched": true,
+      "category": "invented-cause",
+      "assessment": {
+        "item_id": "F2",
+        "missing_mentions": [],
+        "semantic_decision": "reject",
+        "reason": "The proposal introduces a causal claim ('could not afford a movement coach') that is not present in or supported by the evidence quote. This exceeds the available evidence."
+      },
+      "previous_decision": "reject"
+    },
+    {
+      "case_id": "precision-37165:F3",
+      "expected": "reject",
+      "actual": "reject",
+      "matched": true,
+      "category": "stronger-qualifier",
+      "assessment": {
+        "item_id": "F3",
+        "missing_mentions": [],
+        "semantic_decision": "reject",
+        "reason": "The proposal claims she reproduced 'every model,' which is an exaggeration not supported by the quote stating she developed 'her character's poses.' This misrepresents the scope of the evidence."
+      },
+      "previous_decision": "reject"
+    }
+  ],
+  "metrics": {
+    "label_matches": {
+      "count": 18,
+      "total": 18
+    },
+    "useful_acceptance": {
+      "count": 6,
+      "total": 6
+    },
+    "false_acceptance": {
+      "count": 0,
+      "total": 12
+    },
+    "false_rejection": {
+      "count": 0,
+      "total": 6
+    },
+    "uncertain": {
+      "count": 4,
+      "total": 18
+    },
+    "errors": {
+      "count": 0,
+      "total": 18
+    }
+  },
+  "limitations": "Reuses actual prior model semantic decisions and consumed development labels. Recomputes only the final body-name guard; not a fresh model evaluation, held-out accuracy or generation qualification."
+}

@@ -1,0 +1,111 @@
+{
+  "movie_id": 27205,
+  "generator_model": "llama3.2:3b",
+  "critic_model": "qwen3.5:9b",
+  "elapsed_seconds": 32.6,
+  "source_manifest": {
+    "enwiki-1379453144-sections-v3-body": "https://en.wikipedia.org/w/index.php?oldid=1379453144"
+  },
+  "proposals": {
+    "facts": [
+      {
+        "title": "Practical Effects",
+        "text": "A hotel corridor was also constructed by Guy Hendrix Dyas, the production designer, Chris Corbould, the special effects supervisor, and Wally Pfister, the director of photography; it rotated a full 360 degrees to create the effect of alternate directions of gravity for scenes set during the second level of dreaming, where dream-sector physics become chaotic.",
+        "passage_id": "P3",
+        "evidence_quote": "it rotated a full 360 degrees"
+      },
+      {
+        "title": "Explosion Effects",
+        "text": "For the explosion that takes place during the bistro scene, local authorities would not allow the use of real explosives. High-pressure nitrogen was used to create the effect of a series of explosions.",
+        "passage_id": "P4",
+        "evidence_quote": "High-pressure nitrogen was used"
+      }
+    ],
+    "questions": [
+      {
+        "question": "What is the job that Cobb is offered by Saito?",
+        "options": [
+          "To steal a valuable artifact",
+          "To implant an idea in Robert Fischer's mind",
+          "To clear his criminal status",
+          "To perform a series of stunts"
+        ],
+        "correct_index": 1,
+        "passage_id": "P1",
+        "evidence_quote": "implanting Robert Fischer, the son of Saito's competitor Maurice Fischer, with the idea to dissolve his father's conglomerate."
+      },
+      {
+        "question": "What does Saito promise to do in return for hiring Cobb?",
+        "options": [
+          "To clear his criminal status",
+          "To implant an idea in Robert Fischer's mind",
+          "To steal a valuable artifact",
+          "To perform a series of stunts"
+        ],
+        "correct_index": 0,
+        "passage_id": "P2",
+        "evidence_quote": "In return, Saito promises to clear Cobb's criminal status"
+      }
+    ]
+  },
+  "checks": [
+    {
+      "kind": "fact",
+      "index": 0,
+      "passage_id": "P3",
+      "support_checks_passed": true,
+      "problems": [],
+      "semantic_review_required": true
+    },
+    {
+      "kind": "fact",
+      "index": 1,
+      "passage_id": "P4",
+      "support_checks_passed": true,
+      "problems": [],
+      "semantic_review_required": true
+    },
+    {
+      "kind": "question",
+      "index": 0,
+      "passage_id": "P1",
+      "support_checks_passed": true,
+      "problems": [],
+      "semantic_review_required": true
+    },
+    {
+      "kind": "question",
+      "index": 1,
+      "passage_id": "P2",
+      "support_checks_passed": true,
+      "problems": [],
+      "semantic_review_required": true
+    }
+  ],
+  "review": {
+    "items": [
+      {
+        "item_id": "F1",
+        "decision": "reject",
+        "reason": "The proposal text is a direct copy of the source passage rather than a concise summary. It fails the requirement for background content to be distinct from the full quote and exceeds the 45-word limit."
+      },
+      {
+        "item_id": "F2",
+        "decision": "reject",
+        "reason": "The proposal text repeats the entire source passage verbatim instead of providing a concise summary. It violates the constraint requiring background content to be distinct from the full evidence quote."
+      },
+      {
+        "item_id": "Q1",
+        "decision": "accept",
+        "reason": "The question is objective with one unambiguous correct option derived directly from the source text. Distractors are plausible but clearly incorrect based on the provided evidence."
+      },
+      {
+        "item_id": "Q2",
+        "decision": "accept",
+        "reason": "The question asks for a specific story detail supported by the quote. Options are distinct and objective, with no subjective interpretation or jokey elements."
+      }
+    ]
+  },
+  "publication_approved": false,
+  "saved_collection_changed": false
+}

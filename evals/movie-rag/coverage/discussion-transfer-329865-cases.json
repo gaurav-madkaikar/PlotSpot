@@ -1,0 +1,61 @@
+{
+  "version": "discussion-transfer-329865-dev-v1",
+  "split": "development",
+  "source_snapshot": "89f7bcf5fc9b8c405c2e6775e296c5d620ed1639ad843f67053dffb02b8a1fde",
+  "cases": [
+    {
+      "id": "future-visions",
+      "question": "What does Louise discover about the visions of her daughter in the story?",
+      "expected_status": "answered",
+      "relevant_passage_ids": [
+        "89f7bcf5fc9b8c405c2e6775e296c5d6_011"
+      ],
+      "required_phrase_groups": [
+        [
+          "future",
+          "premonition"
+        ]
+      ]
+    },
+    {
+      "id": "future-help",
+      "question": "Why do the heptapods help humanity in the story?",
+      "expected_status": "answered",
+      "relevant_passage_ids": [
+        "89f7bcf5fc9b8c405c2e6775e296c5d6_011"
+      ],
+      "required_phrase_groups": [
+        [
+          "3,000",
+          "3000"
+        ],
+        [
+          "help"
+        ]
+      ]
+    },
+    {
+      "id": "original-score",
+      "question": "Who wrote Arrival’s original score?",
+      "expected_status": "answered",
+      "relevant_passage_ids": [
+        "89f7bcf5fc9b8c405c2e6775e296c5d6_033"
+      ],
+      "required_phrase_groups": [
+        [
+          "Jóhann Jóhannsson",
+          "Johann Johannsson",
+          "Jóhannsson",
+          "Johannsson"
+        ]
+      ]
+    },
+    {
+      "id": "missing-private-talk",
+      "question": "What did I tell my friends privately after watching Arrival?",
+      "expected_status": "insufficient_evidence",
+      "relevant_passage_ids": [],
+      "required_phrase_groups": []
+    }
+  ]
+}

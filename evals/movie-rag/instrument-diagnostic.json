@@ -1,0 +1,48 @@
+{
+  "purpose": "Two diagnostic repeats after initial ValueError; initial raw response unavailable; not a controlled improvement comparison",
+  "question": "Which instrument was chosen as the primary instrument for the score?",
+  "source_snapshot": "e75a7bb9fce05a8541de5c8596eb11b7273c819d3dfdff654e29c45e06829ad8",
+  "attempts": [
+    {
+      "attempt": 1,
+      "raw_model_response": [
+        "{\"status\": \"insufficient_evidence\", \"answer\": \"The supplied evidence is insufficient to answer this question.\", \"citation_ids\": []}"
+      ],
+      "answer": {
+        "status": "insufficient_evidence",
+        "answer": "The supplied evidence is insufficient to answer this question.",
+        "citation_ids": []
+      },
+      "error": null,
+      "supporting_hit_at_3": true,
+      "annotated_id_recall_at_3": 1.0,
+      "automated_pass": false,
+      "failures": [
+        "Answer status differs from expectation",
+        "No labelled supporting passage cited",
+        "Missing expected phrase group: ['organ']"
+      ],
+      "human_claim_support_review": "pending"
+    },
+    {
+      "attempt": 2,
+      "raw_model_response": [
+        "{\"status\": \"answered\", \"answer\": \"the 1926 four-manual Harrison & Harrison organ of the Temple Church, London\", \"citation_ids\": [\"e75a7bb9fce05a8541de5c8596eb11b7_043\", \"e75a7bb9fce05a8541de5c8596eb11b7_042\"]}"
+      ],
+      "answer": {
+        "status": "answered",
+        "answer": "the 1926 four-manual Harrison & Harrison organ of the Temple Church, London",
+        "citation_ids": [
+          "e75a7bb9fce05a8541de5c8596eb11b7_043",
+          "e75a7bb9fce05a8541de5c8596eb11b7_042"
+        ]
+      },
+      "error": null,
+      "supporting_hit_at_3": true,
+      "annotated_id_recall_at_3": 1.0,
+      "automated_pass": true,
+      "failures": [],
+      "human_claim_support_review": "pending"
+    }
+  ]
+}

@@ -1,0 +1,214 @@
+{
+  "kind": "preregistered_narrative_real_movie_holdout_v3",
+  "created_at": "2026-10-20",
+  "cases": [
+    {
+      "id": "narrative-v3-aged-saito-agreement",
+      "movie_id": 27205,
+      "expected_accept": true,
+      "wiki_revision": "enwiki-1379453144-sections-v3-body",
+      "script_revision": "imsdb-scenes-v1-b2318593c69efc77e2ab42006e975adc0d288d131322ba3220624a55bd013a0f",
+      "wiki_start": 6543,
+      "wiki_end": 7007,
+      "script_start": 157311,
+      "script_end": 158222,
+      "label_reason": "This resolution action completes the agreement that motivates the central mission.",
+      "draft": {
+        "kind": "event",
+        "question": "What does Cobb do after finding an aged Saito in Limbo?",
+        "answer": "reminds him of their agreement",
+        "wiki_alias": "W1",
+        "script_alias": "S1",
+        "options": [
+          "reminds him of their agreement",
+          "abandons him in Limbo",
+          "asks him to redesign the dream",
+          "destroys his projection"
+        ],
+        "correct_index": 0
+      }
+    },
+    {
+      "id": "narrative-v3-mal-false-reality",
+      "movie_id": 27205,
+      "expected_accept": true,
+      "wiki_revision": "enwiki-1379453144-sections-v3-body",
+      "script_revision": "imsdb-scenes-v1-b2318593c69efc77e2ab42006e975adc0d288d131322ba3220624a55bd013a0f",
+      "wiki_start": 4947,
+      "wiki_end": 5288,
+      "script_start": 146767,
+      "script_end": 147672,
+      "label_reason": "Both accounts connect Mal’s fatal choice to her belief that her world was unreal.",
+      "draft": {
+        "kind": "event",
+        "question": "What mistaken belief drives Mal to treat death as a way to wake up?",
+        "answer": "Mal still believed she was dreaming",
+        "wiki_alias": "W1",
+        "script_alias": "S1",
+        "options": [
+          "Mal still believed she was dreaming",
+          "Cobb had abandoned their children",
+          "Saito had trapped her in Limbo",
+          "Ariadne had altered her memories"
+        ],
+        "correct_index": 0
+      }
+    },
+    {
+      "id": "narrative-v3-morpheus-sacrifice",
+      "movie_id": 603,
+      "expected_accept": true,
+      "wiki_revision": "enwiki-1379344781-sections-v3-body",
+      "script_revision": "imsdb-scenes-v1-f3b7d7c6313a6b3bfaef394d69ab08f97cc11e4514e6e6e39b7adf517bca4548",
+      "wiki_start": 5954,
+      "wiki_end": 6474,
+      "script_start": 101148,
+      "script_end": 102011,
+      "label_reason": "Both accounts connect the sacrifice to Morpheus believing in Neo.",
+      "draft": {
+        "kind": "event",
+        "question": "What belief motivates Morpheus to sacrifice himself?",
+        "answer": "Neo’s importance",
+        "wiki_alias": "W1",
+        "script_alias": "S1",
+        "options": [
+          "Neo’s importance",
+          "Cypher’s loyalty",
+          "Smith’s surrender",
+          "the Oracle’s location"
+        ],
+        "correct_index": 0
+      }
+    },
+    {
+      "id": "narrative-v3-human-energy",
+      "movie_id": 603,
+      "expected_accept": true,
+      "wiki_revision": "enwiki-1379344781-sections-v3-body",
+      "script_revision": "imsdb-scenes-v1-f3b7d7c6313a6b3bfaef394d69ab08f97cc11e4514e6e6e39b7adf517bca4548",
+      "wiki_start": 5006,
+      "wiki_end": 5578,
+      "script_start": 52326,
+      "script_end": 53333,
+      "label_reason": "Human energy is a central world rule explaining the Matrix system.",
+      "draft": {
+        "kind": "event",
+        "question": "How do the machines replace the solar power denied to them?",
+        "answer": "harvesting their bioelectric energy",
+        "wiki_alias": "W1",
+        "script_alias": "S1",
+        "options": [
+          "harvesting their bioelectric energy",
+          "burning the remains of Zion",
+          "restoring sunlight above the clouds",
+          "using Agent Smith as a generator"
+        ],
+        "correct_index": 0
+      }
+    },
+    {
+      "id": "narrative-v3-granular-forger-name",
+      "movie_id": 27205,
+      "expected_accept": false,
+      "wiki_revision": "enwiki-1379453144-sections-v3-body",
+      "script_revision": "imsdb-scenes-v1-b2318593c69efc77e2ab42006e975adc0d288d131322ba3220624a55bd013a0f",
+      "wiki_start": 3611,
+      "wiki_end": 4014,
+      "script_start": 42348,
+      "script_end": 42827,
+      "label_reason": "This is isolated role-to-name recall rather than narrative understanding.",
+      "draft": {
+        "kind": "event",
+        "question": "Which recruited team member is the forger?",
+        "answer": "Eames",
+        "wiki_alias": "W1",
+        "script_alias": "S1",
+        "options": [
+          "Eames",
+          "Arthur",
+          "Saito",
+          "Yusuf"
+        ],
+        "correct_index": 0
+      }
+    },
+    {
+      "id": "narrative-v3-wrong-mal-cause",
+      "movie_id": 27205,
+      "expected_accept": false,
+      "wiki_revision": "enwiki-1379453144-sections-v3-body",
+      "script_revision": "imsdb-scenes-v1-b2318593c69efc77e2ab42006e975adc0d288d131322ba3220624a55bd013a0f",
+      "wiki_start": 4947,
+      "wiki_end": 5288,
+      "script_start": 146767,
+      "script_end": 147672,
+      "label_reason": "Cobb fleeing is a later consequence, not Mal’s motivation.",
+      "draft": {
+        "kind": "event",
+        "question": "Why does Mal commit suicide after waking?",
+        "answer": "Cobb fled the U.S.",
+        "wiki_alias": "W1",
+        "script_alias": "S1",
+        "options": [
+          "Cobb fled the U.S.",
+          "Mal still believed she was dreaming",
+          "Ariadne killed her projection",
+          "Saito broke their agreement"
+        ],
+        "correct_index": 0
+      }
+    },
+    {
+      "id": "narrative-v3-granular-cypher-killer",
+      "movie_id": 603,
+      "expected_accept": false,
+      "wiki_revision": "enwiki-1379344781-sections-v3-body",
+      "script_revision": "imsdb-scenes-v1-f3b7d7c6313a6b3bfaef394d69ab08f97cc11e4514e6e6e39b7adf517bca4548",
+      "wiki_start": 6475,
+      "wiki_end": 6583,
+      "script_start": 94900,
+      "script_end": 95765,
+      "label_reason": "This asks for an isolated supporting-character name even though both sources identify it.",
+      "draft": {
+        "kind": "event",
+        "question": "Which crew member kills Cypher?",
+        "answer": "Tank",
+        "wiki_alias": "W1",
+        "script_alias": "S1",
+        "options": [
+          "Tank",
+          "Neo",
+          "Trinity",
+          "Morpheus"
+        ],
+        "correct_index": 0
+      }
+    },
+    {
+      "id": "narrative-v3-uncorroborated-oracle-choice",
+      "movie_id": 603,
+      "expected_accept": false,
+      "wiki_revision": "enwiki-1379344781-sections-v3-body",
+      "script_revision": "imsdb-scenes-v1-f3b7d7c6313a6b3bfaef394d69ab08f97cc11e4514e6e6e39b7adf517bca4548",
+      "wiki_start": 5954,
+      "wiki_end": 6474,
+      "script_start": 75053,
+      "script_end": 76067,
+      "label_reason": "The released account contains the warning, but the pinned script excerpt does not; cross-source approval must abstain.",
+      "draft": {
+        "kind": "event",
+        "question": "What imminent choice does the Oracle warn Neo about?",
+        "answer": "between his life and Morpheus’s",
+        "wiki_alias": "W1",
+        "script_alias": "S1",
+        "options": [
+          "between his life and Morpheus’s",
+          "between the red and blue pills",
+          "between Zion and the Matrix",
+          "between Trinity and Cypher"
+        ],
+        "correct_index": 0
+      }
+    }
+  ]
+}

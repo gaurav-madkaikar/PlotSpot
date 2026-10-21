@@ -1,0 +1,32 @@
+[
+  {
+    "query": "Hundreds of Beavers",
+    "status": 200,
+    "persisted_after_restart": true,
+    "metadata_in_sqlite": true
+  },
+  {
+    "query": "Amy Adams",
+    "person_id": 9273,
+    "role": "actor",
+    "status": 200,
+    "total": 60,
+    "partial": false,
+    "limited": true,
+    "expected_ids_present": true,
+    "unique_pages": true,
+    "elapsed_ms": 5037
+  },
+  {
+    "query": "Christopher Nolan",
+    "person_id": 525,
+    "role": "director",
+    "status": 200,
+    "total": 19,
+    "partial": false,
+    "limited": false,
+    "expected_ids_present": true,
+    "unique_pages": true,
+    "elapsed_ms": 801
+  }
+]

@@ -1,0 +1,249 @@
+{
+  "dataset_version": "movie-content-quality-v1",
+  "partition": "held-out",
+  "label_policy": "accept: supported and product-appropriate; reject: contradicted, unsupported assertion or unsuitable content; uncertain: missing evidence/context. Authored synthetic cases, not independent external annotations.",
+  "batches": [
+    {
+      "batch_id": "reserved-quality",
+      "evidence": [
+        {
+          "passage_id": "P1",
+          "purpose": "background",
+          "text": "The film was released on May 4, 2018, and its distributor was Northstar Films."
+        },
+        {
+          "passage_id": "P2",
+          "purpose": "background",
+          "text": "The crew sometimes filmed reflections using mirrors placed under shallow water."
+        },
+        {
+          "passage_id": "P3",
+          "purpose": "background",
+          "text": "The city skyline was made from cardboard models submerged in a glass aquarium."
+        },
+        {
+          "passage_id": "P4",
+          "purpose": "story",
+          "text": "The pilot left the compass in the radio room before meeting the mechanic."
+        },
+        {
+          "passage_id": "P5",
+          "purpose": "story",
+          "text": "The archivist burned the duplicate letter and kept the original in a safe."
+        },
+        {
+          "passage_id": "P6",
+          "purpose": "story",
+          "text": "The visitor left the museum after sunset."
+        }
+      ],
+      "proposals": {
+        "facts": [
+          {
+            "title": "May release",
+            "text": "The film was released on May 4, 2018, by Northstar Films.",
+            "passage_id": "P1",
+            "evidence_quote": "The film was released on May 4, 2018, and its distributor was Northstar Films."
+          },
+          {
+            "title": "Mirror reflections",
+            "text": "The crew always filmed reflections using mirrors under shallow water.",
+            "passage_id": "P2",
+            "evidence_quote": "The crew sometimes filmed reflections using mirrors placed under shallow water."
+          },
+          {
+            "title": "An aquarium skyline",
+            "text": "Cardboard models submerged in a glass aquarium formed the city skyline.",
+            "passage_id": "P3",
+            "evidence_quote": "The city skyline was made from cardboard models submerged in a glass aquarium."
+          }
+        ],
+        "questions": [
+          {
+            "question": "Where did the pilot leave the compass?",
+            "options": [
+              "The radio room",
+              "The mechanic’s workshop",
+              "The cargo hold",
+              "The cockpit"
+            ],
+            "correct_index": 0,
+            "passage_id": "P4",
+            "evidence_quote": "The pilot left the compass in the radio room before meeting the mechanic."
+          },
+          {
+            "question": "What did the archivist burn?",
+            "options": [
+              "The duplicate letter",
+              "A talking sandwich",
+              "The sun",
+              "An invisible dinosaur"
+            ],
+            "correct_index": 0,
+            "passage_id": "P5",
+            "evidence_quote": "The archivist burned the duplicate letter and kept the original in a safe."
+          },
+          {
+            "question": "Why did the visitor leave the museum?",
+            "options": [
+              "To catch the last train",
+              "To visit a relative",
+              "To meet the curator",
+              "To avoid the storm"
+            ],
+            "correct_index": 0,
+            "passage_id": "P6",
+            "evidence_quote": "The visitor left the museum after sunset."
+          }
+        ]
+      },
+      "labels": {
+        "F1": {
+          "decision": "reject",
+          "category": "ordinary-release-metadata"
+        },
+        "F2": {
+          "decision": "reject",
+          "category": "unsupported-universal-qualifier"
+        },
+        "F3": {
+          "decision": "accept",
+          "category": "supported-unusual-craft"
+        },
+        "Q1": {
+          "decision": "accept",
+          "category": "supported-objective-location"
+        },
+        "Q2": {
+          "decision": "reject",
+          "category": "absurd-distractors"
+        },
+        "Q3": {
+          "decision": "uncertain",
+          "category": "missing-motivation"
+        }
+      }
+    },
+    {
+      "batch_id": "reserved-context",
+      "evidence": [
+        {
+          "passage_id": "P1",
+          "purpose": "background",
+          "text": "The production used only hand-painted glass for the palace backgrounds, with no digital backgrounds."
+        },
+        {
+          "passage_id": "P2",
+          "purpose": "background",
+          "text": "The crew recorded footsteps on damp gravel for the forest scenes."
+        },
+        {
+          "passage_id": "P3",
+          "purpose": "background",
+          "text": "It was rebuilt twice after heavy rain damaged the set."
+        },
+        {
+          "passage_id": "P4",
+          "purpose": "story",
+          "text": "The child looked at the empty chair before closing the door."
+        },
+        {
+          "passage_id": "P5",
+          "purpose": "story",
+          "text": "The detective gave the photograph to the station clerk, then left the ticket with the porter."
+        },
+        {
+          "passage_id": "P6",
+          "purpose": "story",
+          "text": "The medic waited until the bell rang three times before opening the sealed box."
+        }
+      ],
+      "proposals": {
+        "facts": [
+          {
+            "title": "Hand-painted palaces",
+            "text": "Only hand-painted glass was used for the palace backgrounds.",
+            "passage_id": "P1",
+            "evidence_quote": "The production used only hand-painted glass for the palace backgrounds, with no digital backgrounds."
+          },
+          {
+            "title": "A historic sound first",
+            "text": "This was the first film ever to record footsteps on damp gravel.",
+            "passage_id": "P2",
+            "evidence_quote": "The crew recorded footsteps on damp gravel for the forest scenes."
+          },
+          {
+            "title": "A rebuilt mountain fortress",
+            "text": "The mountain fortress was rebuilt twice after rain damaged it.",
+            "passage_id": "P3",
+            "evidence_quote": "It was rebuilt twice after heavy rain damaged the set."
+          }
+        ],
+        "questions": [
+          {
+            "question": "What does the empty chair definitely symbolize?",
+            "options": [
+              "Forgiveness",
+              "Ambition",
+              "Betrayal",
+              "Freedom"
+            ],
+            "correct_index": 0,
+            "passage_id": "P4",
+            "evidence_quote": "The child looked at the empty chair before closing the door."
+          },
+          {
+            "question": "Who received the photograph?",
+            "options": [
+              "The porter",
+              "The station clerk",
+              "The conductor",
+              "The platform guard"
+            ],
+            "correct_index": 0,
+            "passage_id": "P5",
+            "evidence_quote": "The detective gave the photograph to the station clerk, then left the ticket with the porter."
+          },
+          {
+            "question": "When did the medic open the sealed box?",
+            "options": [
+              "After the bell rang three times",
+              "Before the first bell",
+              "After the second bell",
+              "Before any bell rang"
+            ],
+            "correct_index": 0,
+            "passage_id": "P6",
+            "evidence_quote": "The medic waited until the bell rang three times before opening the sealed box."
+          }
+        ]
+      },
+      "labels": {
+        "F1": {
+          "decision": "accept",
+          "category": "supported-exclusive-technique"
+        },
+        "F2": {
+          "decision": "reject",
+          "category": "unsupported-superlative"
+        },
+        "F3": {
+          "decision": "uncertain",
+          "category": "missing-object-antecedent"
+        },
+        "Q1": {
+          "decision": "reject",
+          "category": "subjective-symbolism"
+        },
+        "Q2": {
+          "decision": "reject",
+          "category": "wrong-answer-with-nearby-entity"
+        },
+        "Q3": {
+          "decision": "accept",
+          "category": "supported-temporal-condition"
+        }
+      }
+    }
+  ]
+}

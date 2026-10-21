@@ -1,0 +1,849 @@
+{
+  "created_at_utc": "2026-10-11T19:36:57.461355+00:00",
+  "movie_id": 546554,
+  "dataset_version": "discussion-transfer-546554-dev-v1",
+  "split": "development",
+  "dataset_sha256": "7d1c9c3c35c689471844167def525fab1594310af0026b597b18ffd585d34dac",
+  "source_snapshot": "1179572245185c9f871574a7a54cc20532fa74f0ef6373dd124d60d875cc5414",
+  "source_revision": "enwiki-1378593030-sections-v3-body",
+  "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1378593030",
+  "pipeline_sha256": "27e550fe85745741eb0a584de39f944fedbe3b3ddbecc22a16bec257a8f0ceec",
+  "prompt_sha256": "517661616ddfc76f72f32e30064ccce7a97d63ccdb9213a0c707cbd3385329a0",
+  "retrieval_policy": "discussion-hybrid-v2",
+  "retriever_sha256": "2084660632a45e8d0c4afbbf33fcf9344d0c36abca84270f046e8406864636c8",
+  "comparison": {
+    "order": "alternating baseline/candidate per case; sequential",
+    "baseline_sha256": {
+      "grounding_learning": "cd984e87a32baad171d6c3938afdb0ed918db53b6263b1b394c55c2595cbd6df",
+      "movie_qa_learning": "91bc247e547060f1ea5ee863aa5b89dfe4a4544dc4684030cd601efacd346fd4"
+    },
+    "baseline_automated_passed": 2,
+    "baseline_generation_errors": 0
+  },
+  "models": {
+    "nomic-embed-text:v1.5": "0a109f422b47e3a30ba2b10eca18548e944e8a23073ee3f3e947efcf3c45e59f",
+    "llama3.2:3b": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72"
+  },
+  "chunk_settings": {
+    "max_chars": 600,
+    "overlap_chars": 100
+  },
+  "ingestion": "cached",
+  "passages": 101,
+  "publication": false,
+  "token_usage": null,
+  "summary": {
+    "automated_passed": 2,
+    "total": 4
+  },
+  "limitations": [
+    "Small development inspection, not an independent holdout or safety benchmark.",
+    "Phrase and citation membership checks do not establish entailment; inspect cited passages.",
+    "Runs the shared Wikipedia discussion function, not the HTTP or script-assisted path.",
+    "No bank generation, publication, or production throughput is measured."
+  ],
+  "cases": [
+    {
+      "id": "false-alibi",
+      "question": "Why does Harlan ask Marta to create a false alibi in the story?",
+      "expected_status": "answered",
+      "labelled_supporting_ids": [
+        "1179572245185c9f871574a7a54cc205_007"
+      ],
+      "retrieved": [
+        {
+          "passage_id": "1179572245185c9f871574a7a54cc205_007",
+          "score": 0.8387770261670673,
+          "section": "Plot"
+        },
+        {
+          "passage_id": "1179572245185c9f871574a7a54cc205_010",
+          "score": 0.7536034633801469,
+          "section": "Plot"
+        },
+        {
+          "passage_id": "1179572245185c9f871574a7a54cc205_011",
+          "score": 0.7647124536327814,
+          "section": "Plot"
+        }
+      ],
+      "answer": {
+        "status": "answered",
+        "answer": "To protect Marta from being blamed for Harlan's death, Harlan instructed Marta to create a false alibi so that it would appear he was alive after she left for the night.",
+        "citation_ids": [
+          "1179572245185c9f871574a7a54cc205_007"
+        ]
+      },
+      "error": null,
+      "duration_seconds": 2.419,
+      "supporting_hit_at_3": true,
+      "annotated_id_recall_at_3": 1.0,
+      "automated_pass": true,
+      "failures": [],
+      "human_claim_support_review": "pending",
+      "retrieval_trace": {
+        "policy": "discussion-hybrid-v2",
+        "scope": "story",
+        "classified": true,
+        "eligible_passages": 101,
+        "routed_passages": 9,
+        "lexical_anchor": "1179572245185c9f871574a7a54cc205_007",
+        "selected_ids": [
+          "1179572245185c9f871574a7a54cc205_007",
+          "1179572245185c9f871574a7a54cc205_010",
+          "1179572245185c9f871574a7a54cc205_011"
+        ],
+        "vector_top": [
+          {
+            "id": "1179572245185c9f871574a7a54cc205_007",
+            "cosine": 0.8387770261670673
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_013",
+            "cosine": 0.7746437044404502
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_011",
+            "cosine": 0.7647124536327814
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_010",
+            "cosine": 0.7536034633801469
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_012",
+            "cosine": 0.7478656381223211
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_009",
+            "cosine": 0.7476478149763416
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_008",
+            "cosine": 0.7457254535185922
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_006",
+            "cosine": 0.727188221824637
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_014",
+            "cosine": 0.6864840592149997
+          }
+        ],
+        "lexical_top": [
+          {
+            "id": "1179572245185c9f871574a7a54cc205_007",
+            "bm25": 16.348930777000348
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_010",
+            "bm25": 5.910698890681935
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_011",
+            "bm25": 5.853439585656233
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_008",
+            "bm25": 5.416810678159161
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_013",
+            "bm25": 5.374787183780032
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_009",
+            "bm25": 4.944316887892196
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_012",
+            "bm25": 4.944316887892196
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_006",
+            "bm25": 4.655012816067946
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_014",
+            "bm25": 4.278393126186767
+          }
+        ],
+        "selected_ranks": [
+          {
+            "id": "1179572245185c9f871574a7a54cc205_007",
+            "rrf": 0.03278688524590164,
+            "vector_rank": 1,
+            "lexical_rank": 1
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_010",
+            "rrf": 0.031754032258064516,
+            "vector_rank": 4,
+            "lexical_rank": 2
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_011",
+            "rrf": 0.031746031746031744,
+            "vector_rank": 3,
+            "lexical_rank": 3
+          }
+        ]
+      },
+      "baseline": {
+        "id": "false-alibi",
+        "question": "Why does Harlan ask Marta to create a false alibi in the story?",
+        "expected_status": "answered",
+        "labelled_supporting_ids": [
+          "1179572245185c9f871574a7a54cc205_007"
+        ],
+        "retrieved": [
+          {
+            "passage_id": "1179572245185c9f871574a7a54cc205_007",
+            "score": 0.8387770261670673,
+            "section": "Plot"
+          },
+          {
+            "passage_id": "1179572245185c9f871574a7a54cc205_013",
+            "score": 0.7746437044404502,
+            "section": "Plot"
+          },
+          {
+            "passage_id": "1179572245185c9f871574a7a54cc205_011",
+            "score": 0.7647124536327814,
+            "section": "Plot"
+          }
+        ],
+        "answer": {
+          "status": "answered",
+          "answer": "Harlan asks Marta to create a false alibi to protect her from being blamed for his death, as he instructed her to create a false alibi before he slit his own throat.",
+          "citation_ids": [
+            "1179572245185c9f871574a7a54cc205_007"
+          ]
+        },
+        "error": null,
+        "duration_seconds": 2.536,
+        "supporting_hit_at_3": true,
+        "annotated_id_recall_at_3": 1.0,
+        "automated_pass": true,
+        "failures": [],
+        "human_claim_support_review": "pending",
+        "retrieval_trace": null
+      }
+    },
+    {
+      "id": "medicine-recognition",
+      "question": "How does Marta identify the right medicine despite the switched labels?",
+      "expected_status": "answered",
+      "labelled_supporting_ids": [
+        "1179572245185c9f871574a7a54cc205_011"
+      ],
+      "retrieved": [
+        {
+          "passage_id": "1179572245185c9f871574a7a54cc205_011",
+          "score": 0.6732614067308109,
+          "section": "Plot"
+        },
+        {
+          "passage_id": "1179572245185c9f871574a7a54cc205_010",
+          "score": 0.6279838004082862,
+          "section": "Plot"
+        },
+        {
+          "passage_id": "1179572245185c9f871574a7a54cc205_009",
+          "score": 0.6496691271759976,
+          "section": "Plot"
+        }
+      ],
+      "answer": {
+        "status": "answered",
+        "answer": "Marta recognizes the correct medication by its viscosity, not by reading the label.",
+        "citation_ids": [
+          "1179572245185c9f871574a7a54cc205_010"
+        ]
+      },
+      "error": null,
+      "duration_seconds": 1.812,
+      "supporting_hit_at_3": true,
+      "annotated_id_recall_at_3": 1.0,
+      "automated_pass": false,
+      "failures": [
+        "No labelled supporting passage cited"
+      ],
+      "human_claim_support_review": "pending",
+      "retrieval_trace": {
+        "policy": "discussion-hybrid-v2",
+        "scope": "all",
+        "classified": true,
+        "eligible_passages": 101,
+        "routed_passages": 101,
+        "lexical_anchor": "1179572245185c9f871574a7a54cc205_011",
+        "selected_ids": [
+          "1179572245185c9f871574a7a54cc205_011",
+          "1179572245185c9f871574a7a54cc205_010",
+          "1179572245185c9f871574a7a54cc205_009"
+        ],
+        "vector_top": [
+          {
+            "id": "1179572245185c9f871574a7a54cc205_011",
+            "cosine": 0.6732614067308109
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_009",
+            "cosine": 0.6496691271759976
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_007",
+            "cosine": 0.6496436101574395
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_010",
+            "cosine": 0.6279838004082862
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_013",
+            "cosine": 0.6084932965756569
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_057",
+            "cosine": 0.599320641716123
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_008",
+            "cosine": 0.5947536496164962
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_014",
+            "cosine": 0.594454992887857
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_012",
+            "cosine": 0.5930523762591235
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_029",
+            "cosine": 0.5819544733729471
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_030",
+            "cosine": 0.5522540802132175
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_031",
+            "cosine": 0.5506477913603849
+          }
+        ],
+        "lexical_top": [
+          {
+            "id": "1179572245185c9f871574a7a54cc205_011",
+            "bm25": 17.71675090666991
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_010",
+            "bm25": 6.947412378477308
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_024",
+            "bm25": 4.930916772413491
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_097",
+            "bm25": 3.5791829124876395
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_009",
+            "bm25": 3.4954353771791733
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_012",
+            "bm25": 3.4954353771791733
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_008",
+            "bm25": 3.349299028118784
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_013",
+            "bm25": 3.3281407092646433
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_007",
+            "bm25": 3.286616038278142
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_017",
+            "bm25": 2.9903514476634325
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_014",
+            "bm25": 2.417332076127708
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_057",
+            "bm25": 1.9810243358050308
+          }
+        ],
+        "selected_ranks": [
+          {
+            "id": "1179572245185c9f871574a7a54cc205_011",
+            "rrf": 0.03278688524590164,
+            "vector_rank": 1,
+            "lexical_rank": 1
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_010",
+            "rrf": 0.031754032258064516,
+            "vector_rank": 4,
+            "lexical_rank": 2
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_009",
+            "rrf": 0.0315136476426799,
+            "vector_rank": 2,
+            "lexical_rank": 5
+          }
+        ]
+      },
+      "baseline": {
+        "id": "medicine-recognition",
+        "question": "How does Marta identify the right medicine despite the switched labels?",
+        "expected_status": "answered",
+        "labelled_supporting_ids": [
+          "1179572245185c9f871574a7a54cc205_011"
+        ],
+        "retrieved": [
+          {
+            "passage_id": "1179572245185c9f871574a7a54cc205_011",
+            "score": 0.6732614067308109,
+            "section": "Plot"
+          },
+          {
+            "passage_id": "1179572245185c9f871574a7a54cc205_009",
+            "score": 0.6496691271759976,
+            "section": "Plot"
+          },
+          {
+            "passage_id": "1179572245185c9f871574a7a54cc205_007",
+            "score": 0.6496436101574395,
+            "section": "Plot"
+          }
+        ],
+        "answer": {
+          "status": "answered",
+          "answer": "Marta recognizes the correct medication by its viscosity, not by reading the label.",
+          "citation_ids": [
+            "1179572245185c9f871574a7a54cc205_007"
+          ]
+        },
+        "error": null,
+        "duration_seconds": 2.043,
+        "supporting_hit_at_3": true,
+        "annotated_id_recall_at_3": 1.0,
+        "automated_pass": false,
+        "failures": [
+          "No labelled supporting passage cited"
+        ],
+        "human_claim_support_review": "pending",
+        "retrieval_trace": null
+      }
+    },
+    {
+      "id": "stage-knife",
+      "question": "How does Ransom\u2019s knife attack on Marta end?",
+      "expected_status": "answered",
+      "labelled_supporting_ids": [
+        "1179572245185c9f871574a7a54cc205_013"
+      ],
+      "retrieved": [
+        {
+          "passage_id": "1179572245185c9f871574a7a54cc205_013",
+          "score": 0.8132357721396396,
+          "section": "Plot"
+        },
+        {
+          "passage_id": "1179572245185c9f871574a7a54cc205_012",
+          "score": 0.7585334149125764,
+          "section": "Plot"
+        },
+        {
+          "passage_id": "1179572245185c9f871574a7a54cc205_010",
+          "score": 0.7166561067291585,
+          "section": "Plot"
+        }
+      ],
+      "answer": {
+        "status": "answered",
+        "answer": "The knife attack by Ransom on Marta ends with the knife being a harmless retractable stage knife.",
+        "citation_ids": [
+          "1179572245185c9f871574a7a54cc205_013"
+        ]
+      },
+      "error": null,
+      "duration_seconds": 1.775,
+      "supporting_hit_at_3": true,
+      "annotated_id_recall_at_3": 1.0,
+      "automated_pass": true,
+      "failures": [],
+      "human_claim_support_review": "pending",
+      "retrieval_trace": {
+        "policy": "discussion-hybrid-v2",
+        "scope": "story",
+        "classified": true,
+        "eligible_passages": 101,
+        "routed_passages": 9,
+        "lexical_anchor": "1179572245185c9f871574a7a54cc205_013",
+        "selected_ids": [
+          "1179572245185c9f871574a7a54cc205_013",
+          "1179572245185c9f871574a7a54cc205_012",
+          "1179572245185c9f871574a7a54cc205_010"
+        ],
+        "vector_top": [
+          {
+            "id": "1179572245185c9f871574a7a54cc205_013",
+            "cosine": 0.8132357721396396
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_012",
+            "cosine": 0.7585334149125764
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_008",
+            "cosine": 0.737343522889596
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_011",
+            "cosine": 0.7331758845627155
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_009",
+            "cosine": 0.72601806606813
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_010",
+            "cosine": 0.7166561067291585
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_014",
+            "cosine": 0.7037206196020286
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_007",
+            "cosine": 0.6605374900066951
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_006",
+            "cosine": 0.5898255098668028
+          }
+        ],
+        "lexical_top": [
+          {
+            "id": "1179572245185c9f871574a7a54cc205_013",
+            "bm25": 17.141152886600818
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_010",
+            "bm25": 7.27553718031357
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_012",
+            "bm25": 7.225391351656233
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_011",
+            "bm25": 7.025496460710636
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_009",
+            "bm25": 6.933928243982847
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_008",
+            "bm25": 6.36852275359826
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_014",
+            "bm25": 5.939226512525348
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_007",
+            "bm25": 3.286616038278142
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_006",
+            "bm25": 1.8170439031458516
+          }
+        ],
+        "selected_ranks": [
+          {
+            "id": "1179572245185c9f871574a7a54cc205_013",
+            "rrf": 0.03278688524590164,
+            "vector_rank": 1,
+            "lexical_rank": 1
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_012",
+            "rrf": 0.03200204813108039,
+            "vector_rank": 2,
+            "lexical_rank": 3
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_010",
+            "rrf": 0.03128054740957967,
+            "vector_rank": 6,
+            "lexical_rank": 2
+          }
+        ]
+      },
+      "baseline": {
+        "id": "stage-knife",
+        "question": "How does Ransom\u2019s knife attack on Marta end?",
+        "expected_status": "answered",
+        "labelled_supporting_ids": [
+          "1179572245185c9f871574a7a54cc205_013"
+        ],
+        "retrieved": [
+          {
+            "passage_id": "1179572245185c9f871574a7a54cc205_013",
+            "score": 0.8132357721396396,
+            "section": "Plot"
+          },
+          {
+            "passage_id": "1179572245185c9f871574a7a54cc205_012",
+            "score": 0.7585334149125764,
+            "section": "Plot"
+          },
+          {
+            "passage_id": "1179572245185c9f871574a7a54cc205_008",
+            "score": 0.737343522889596,
+            "section": "Plot"
+          }
+        ],
+        "answer": {
+          "status": "answered",
+          "answer": "The knife attack by Ransom on Marta ends with the police arresting him.",
+          "citation_ids": [
+            "1179572245185c9f871574a7a54cc205_013"
+          ]
+        },
+        "error": null,
+        "duration_seconds": 1.95,
+        "supporting_hit_at_3": true,
+        "annotated_id_recall_at_3": 1.0,
+        "automated_pass": false,
+        "failures": [
+          "Missing expected phrase group: ['stage', 'retractable', 'harmless']"
+        ],
+        "human_claim_support_review": "pending",
+        "retrieval_trace": null
+      }
+    },
+    {
+      "id": "title-origin",
+      "question": "Which band\u2019s song inspired the title Knives Out?",
+      "expected_status": "answered",
+      "labelled_supporting_ids": [
+        "1179572245185c9f871574a7a54cc205_022"
+      ],
+      "retrieved": [
+        {
+          "passage_id": "1179572245185c9f871574a7a54cc205_022",
+          "score": 0.7720747775174281,
+          "section": "Development"
+        },
+        {
+          "passage_id": "1179572245185c9f871574a7a54cc205_052",
+          "score": 0.7718258317605001,
+          "section": "Music"
+        },
+        {
+          "passage_id": "1179572245185c9f871574a7a54cc205_051",
+          "score": 0.7681224665700582,
+          "section": "Music"
+        }
+      ],
+      "answer": null,
+      "error": "ValueError",
+      "duration_seconds": 1.408,
+      "supporting_hit_at_3": true,
+      "annotated_id_recall_at_3": 1.0,
+      "automated_pass": false,
+      "failures": [
+        "Generation or response validation failed"
+      ],
+      "human_claim_support_review": "pending",
+      "retrieval_trace": {
+        "policy": "discussion-hybrid-v2",
+        "scope": "all",
+        "classified": true,
+        "eligible_passages": 101,
+        "routed_passages": 101,
+        "lexical_anchor": "1179572245185c9f871574a7a54cc205_022",
+        "selected_ids": [
+          "1179572245185c9f871574a7a54cc205_022",
+          "1179572245185c9f871574a7a54cc205_052",
+          "1179572245185c9f871574a7a54cc205_051"
+        ],
+        "vector_top": [
+          {
+            "id": "1179572245185c9f871574a7a54cc205_022",
+            "cosine": 0.7720747775174281
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_052",
+            "cosine": 0.7718258317605001
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_051",
+            "cosine": 0.7681224665700582
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_050",
+            "cosine": 0.7250361419310128
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_026",
+            "cosine": 0.7182035425766827
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_002",
+            "cosine": 0.7020204803741582
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_019",
+            "cosine": 0.6959850674368997
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_066",
+            "cosine": 0.6934991995431192
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_001",
+            "cosine": 0.6934205736080532
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_000",
+            "cosine": 0.6901816345346544
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_005",
+            "cosine": 0.690172783644774
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_067",
+            "cosine": 0.6899612423743664
+          }
+        ],
+        "lexical_top": [
+          {
+            "id": "1179572245185c9f871574a7a54cc205_022",
+            "bm25": 8.66053756311332
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_052",
+            "bm25": 4.911234243639053
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_003",
+            "bm25": 4.849341675772569
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_051",
+            "bm25": 4.715016697973419
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_016",
+            "bm25": 3.6894751674396438
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_038",
+            "bm25": 3.633017234775242
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_050",
+            "bm25": 1.8303599602085097
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_090",
+            "bm25": 1.8131785398440878
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_064",
+            "bm25": 1.7220074758040278
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_091",
+            "bm25": 1.7079151374279018
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_002",
+            "bm25": 1.688555645703973
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_098",
+            "bm25": 1.6820206370740114
+          }
+        ],
+        "selected_ranks": [
+          {
+            "id": "1179572245185c9f871574a7a54cc205_022",
+            "rrf": 0.03278688524590164,
+            "vector_rank": 1,
+            "lexical_rank": 1
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_052",
+            "rrf": 0.03225806451612903,
+            "vector_rank": 2,
+            "lexical_rank": 2
+          },
+          {
+            "id": "1179572245185c9f871574a7a54cc205_051",
+            "rrf": 0.03149801587301587,
+            "vector_rank": 3,
+            "lexical_rank": 4
+          }
+        ]
+      },
+      "baseline": {
+        "id": "title-origin",
+        "question": "Which band\u2019s song inspired the title Knives Out?",
+        "expected_status": "answered",
+        "labelled_supporting_ids": [
+          "1179572245185c9f871574a7a54cc205_022"
+        ],
+        "retrieved": [
+          {
+            "passage_id": "1179572245185c9f871574a7a54cc205_022",
+            "score": 0.7720747775174281,
+            "section": "Development"
+          },
+          {
+            "passage_id": "1179572245185c9f871574a7a54cc205_052",
+            "score": 0.7718258317605001,
+            "section": "Music"
+          },
+          {
+            "passage_id": "1179572245185c9f871574a7a54cc205_051",
+            "score": 0.7681224665700582,
+            "section": "Music"
+          }
+        ],
+        "answer": {
+          "status": "answered",
+          "answer": "Radiohead",
+          "citation_ids": [
+            "1179572245185c9f871574a7a54cc205_022"
+          ]
+        },
+        "error": null,
+        "duration_seconds": 1.716,
+        "supporting_hit_at_3": true,
+        "annotated_id_recall_at_3": 1.0,
+        "automated_pass": true,
+        "failures": [],
+        "human_claim_support_review": "pending",
+        "retrieval_trace": null
+      }
+    }
+  ]
+}

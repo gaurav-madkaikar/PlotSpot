@@ -1,0 +1,81 @@
+{
+  "version": "dark-knight-discussion-dev-v1",
+  "split": "development",
+  "source_snapshot": "902071f36d1e1c1ae43ce3ae813ef0dadcb422e7827fd06cdc7299a9867d4792",
+  "cases": [
+    {
+      "id": "composers",
+      "question": "Who composed the music for The Dark Knight?",
+      "expected_status": "answered",
+      "relevant_passage_ids": [
+        "902071f36d1e1c1ae43ce3ae813ef0da_001",
+        "902071f36d1e1c1ae43ce3ae813ef0da_075"
+      ],
+      "required_phrase_groups": [
+        [
+          "James Newton Howard"
+        ],
+        [
+          "Hans Zimmer"
+        ]
+      ]
+    },
+    {
+      "id": "working-title",
+      "question": "What cover title was used for filming The Dark Knight in Chicago?",
+      "expected_status": "answered",
+      "relevant_passage_ids": [
+        "902071f36d1e1c1ae43ce3ae813ef0da_050",
+        "902071f36d1e1c1ae43ce3ae813ef0da_051"
+      ],
+      "required_phrase_groups": [
+        [
+          "Rory's First Kiss",
+          "Rory’s First Kiss"
+        ]
+      ]
+    },
+    {
+      "id": "dents-decoy",
+      "question": "Why does Harvey Dent claim that he is Batman?",
+      "expected_status": "answered",
+      "relevant_passage_ids": [
+        "902071f36d1e1c1ae43ce3ae813ef0da_012"
+      ],
+      "required_phrase_groups": [
+        [
+          "lure",
+          "draw"
+        ],
+        [
+          "Joker"
+        ]
+      ]
+    },
+    {
+      "id": "ending-legacy",
+      "question": "Why does Batman take the blame for Harvey Dent’s crimes at the end?",
+      "expected_status": "answered",
+      "relevant_passage_ids": [
+        "902071f36d1e1c1ae43ce3ae813ef0da_016"
+      ],
+      "required_phrase_groups": [
+        [
+          "Dent"
+        ],
+        [
+          "hero",
+          "faith",
+          "hope"
+        ]
+      ]
+    },
+    {
+      "id": "missing-private-diary",
+      "question": "What did I write in my private diary after watching The Dark Knight?",
+      "expected_status": "insufficient_evidence",
+      "relevant_passage_ids": [],
+      "required_phrase_groups": []
+    }
+  ]
+}

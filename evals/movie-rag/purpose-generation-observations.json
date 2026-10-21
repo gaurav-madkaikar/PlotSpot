@@ -1,0 +1,61 @@
+{
+  "generator_policy": "movie-purpose-generation-v2",
+  "generator_implementation_sha256": "ee1d0a5e46b0178e0941970c00fe48c8018a6c2cb455ee8551ad92fed113ab97",
+  "report": "preparation-inception-purpose-branches-one-batch.json",
+  "previous_report": "preparation-inception-rag-one-batch.json",
+  "same_first_batch_evidence": true,
+  "elapsed_seconds": 43.66,
+  "facts_retained": 2,
+  "questions_retained": 0,
+  "observed_checks": [
+    {
+      "kind": "fact",
+      "index": 0,
+      "passage_id": "P3",
+      "support_checks_passed": true,
+      "problems": [],
+      "semantic_review_required": true
+    },
+    {
+      "kind": "fact",
+      "index": 1,
+      "passage_id": "P4",
+      "support_checks_passed": true,
+      "problems": [],
+      "semantic_review_required": true
+    },
+    {
+      "kind": "question",
+      "index": 0,
+      "passage_id": "P1",
+      "support_checks_passed": true,
+      "problems": [],
+      "semantic_review_required": true
+    },
+    {
+      "kind": "question",
+      "index": 1,
+      "passage_id": "P2",
+      "support_checks_passed": true,
+      "problems": [],
+      "semantic_review_required": true
+    }
+  ],
+  "manual_observations": [
+    {
+      "item": "Q1",
+      "finding": "Now an objective story question with an exact supporting quote. Critic rejects because distractors are not the objective; incorrect distractors alone are not grounds for rejection. Plausibility still needs independent assessment."
+    },
+    {
+      "item": "Q2",
+      "finding": "Now a story question with an exact supporting quote. Greatest dream architect distractor is implausible; clearing criminal status and general immunity may overlap. Critic rejection may be warranted, but its explanation does not identify those issues clearly."
+    },
+    {
+      "item": "F1",
+      "finding": "Quote refers to an unspecified sequence filmed with six cameras before mentioning the Paris folding scene. Combining these under a Paris-focused title risks implying the cameras were used for that scene. Critic acceptance does not resolve the antecedent."
+    }
+  ],
+  "representative_quality_benchmark": false,
+  "publication_approved": false,
+  "saved_collection_changed": false
+}

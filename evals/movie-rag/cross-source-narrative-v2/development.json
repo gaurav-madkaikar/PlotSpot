@@ -1,0 +1,261 @@
+{
+  "description": "Fresh v2 narrative development cases authored and frozen before model execution.",
+  "cases": [
+    {
+      "id": "isolation-development-choice",
+      "mode": "quiz",
+      "expected_accept": true,
+      "label_reason": "The item tests the explicit motivation behind a central choice.",
+      "evidence": [
+        {
+          "alias": "W1",
+          "text": "Asha burns the false treaty because signing it would surrender Ravel to the invaders."
+        },
+        {
+          "alias": "S1",
+          "text": "Rather than surrender Ravel, Asha refuses the false treaty and burns it."
+        }
+      ],
+      "draft": {
+        "kind": "event",
+        "question": "Why does Asha burn the false treaty?",
+        "answer": "signing it would surrender Ravel to the invaders",
+        "wiki_alias": "W1",
+        "wiki_quote": "Asha burns the false treaty because signing it would surrender Ravel to the invaders.",
+        "script_alias": "S1",
+        "script_quote": "Rather than surrender Ravel, Asha refuses the false treaty and burns it.",
+        "options": [
+          "signing it would surrender Ravel to the invaders",
+          "it contains a treasure map",
+          "the ink is invisible",
+          "the mayor asks for a copy"
+        ],
+        "correct_index": 0
+      }
+    },
+    {
+      "id": "isolation-development-consequence",
+      "mode": "quiz",
+      "expected_accept": true,
+      "label_reason": "The item tests a central action and consequence.",
+      "evidence": [
+        {
+          "alias": "W1",
+          "text": "After Asha opens the old canal, water reaches the farms and ends the siege."
+        },
+        {
+          "alias": "S1",
+          "text": "Asha opens the canal; the farms receive water, so the besiegers lose their leverage."
+        }
+      ],
+      "draft": {
+        "kind": "event",
+        "question": "What consequence follows when Asha opens the canal?",
+        "answer": "water reaches the farms and ends the siege",
+        "wiki_alias": "W1",
+        "wiki_quote": "After Asha opens the old canal, water reaches the farms and ends the siege.",
+        "script_alias": "S1",
+        "script_quote": "Asha opens the canal; the farms receive water, so the besiegers lose their leverage.",
+        "options": [
+          "water reaches the farms and ends the siege",
+          "the farms are abandoned",
+          "the invaders capture the mayor",
+          "the canal freezes"
+        ],
+        "correct_index": 0
+      }
+    },
+    {
+      "id": "isolation-development-relationship",
+      "mode": "quiz",
+      "expected_accept": true,
+      "label_reason": "The item tests a meaningful relationship change.",
+      "evidence": [
+        {
+          "alias": "W1",
+          "text": "Asha gives command to Beren after recognizing that Beren protected the villagers at personal risk."
+        },
+        {
+          "alias": "S1",
+          "text": "Because Beren risked everything to protect the villagers, Asha trusts Beren with command."
+        }
+      ],
+      "draft": {
+        "kind": "event",
+        "question": "Why does Asha give command to Beren?",
+        "answer": "Beren protected the villagers at personal risk",
+        "wiki_alias": "W1",
+        "wiki_quote": "Asha gives command to Beren after recognizing that Beren protected the villagers at personal risk.",
+        "script_alias": "S1",
+        "script_quote": "Because Beren risked everything to protect the villagers, Asha trusts Beren with command.",
+        "options": [
+          "Beren protected the villagers at personal risk",
+          "Beren owns the canal",
+          "the mayor leaves town",
+          "the treaty requires it"
+        ],
+        "correct_index": 0
+      }
+    },
+    {
+      "id": "isolation-development-story-rule",
+      "mode": "quiz",
+      "expected_accept": true,
+      "label_reason": "The item tests an explicit central story rule.",
+      "evidence": [
+        {
+          "alias": "W1",
+          "text": "The warning beacon can be lit only when two rival houses place their seals together."
+        },
+        {
+          "alias": "S1",
+          "text": "The beacon responds only after both rival houses join their seals."
+        }
+      ],
+      "draft": {
+        "kind": "event",
+        "question": "What must the rival houses do to light the warning beacon?",
+        "answer": "place their seals together",
+        "wiki_alias": "W1",
+        "wiki_quote": "The warning beacon can be lit only when two rival houses place their seals together.",
+        "script_alias": "S1",
+        "script_quote": "The beacon responds only after both rival houses join their seals.",
+        "options": [
+          "place their seals together",
+          "destroy both seals",
+          "wait until midnight",
+          "open the canal"
+        ],
+        "correct_index": 0
+      }
+    },
+    {
+      "id": "isolation-development-granular-name",
+      "mode": "quiz",
+      "expected_accept": false,
+      "label_reason": "The ferry name is isolated recall with no narrative role in the question.",
+      "evidence": [
+        {
+          "alias": "W1",
+          "text": "Asha calls the small ferry Silver Finch before the final meeting."
+        },
+        {
+          "alias": "S1",
+          "text": "The ferry named Silver Finch carries Asha to the meeting."
+        }
+      ],
+      "draft": {
+        "kind": "event",
+        "question": "What is the name of Asha’s ferry?",
+        "answer": "Silver Finch",
+        "wiki_alias": "W1",
+        "wiki_quote": "Asha calls the small ferry Silver Finch before the final meeting.",
+        "script_alias": "S1",
+        "script_quote": "The ferry named Silver Finch carries Asha to the meeting.",
+        "options": [
+          "Silver Finch",
+          "Morning Star",
+          "River Queen",
+          "Grey Heron"
+        ],
+        "correct_index": 0
+      }
+    },
+    {
+      "id": "isolation-development-conflict",
+      "mode": "quiz",
+      "expected_accept": false,
+      "label_reason": "The sources contradict the actor and outcome.",
+      "evidence": [
+        {
+          "alias": "W1",
+          "text": "Asha opens the canal, and water reaches the farms to end the siege."
+        },
+        {
+          "alias": "S1",
+          "text": "Beren destroys the canal before Asha arrives, leaving the farms without water."
+        }
+      ],
+      "draft": {
+        "kind": "event",
+        "question": "Whose action brings water to the farms?",
+        "answer": "Asha",
+        "wiki_alias": "W1",
+        "wiki_quote": "Asha opens the canal, and water reaches the farms to end the siege.",
+        "script_alias": "S1",
+        "script_quote": "Beren destroys the canal before Asha arrives, leaving the farms without water.",
+        "options": [
+          "Asha",
+          "Beren",
+          "the mayor",
+          "the invaders"
+        ],
+        "correct_index": 0
+      }
+    },
+    {
+      "id": "isolation-development-wrong-relation",
+      "mode": "quiz",
+      "expected_accept": false,
+      "label_reason": "The selected answer occurs in evidence but is not the cause.",
+      "evidence": [
+        {
+          "alias": "W1",
+          "text": "Asha carries a brass seal while fear of the wildfire drives the evacuation."
+        },
+        {
+          "alias": "S1",
+          "text": "The wildfire causes the evacuation; Asha merely carries a brass seal."
+        }
+      ],
+      "draft": {
+        "kind": "event",
+        "question": "What drives the evacuation?",
+        "answer": "a brass seal",
+        "wiki_alias": "W1",
+        "wiki_quote": "Asha carries a brass seal while fear of the wildfire drives the evacuation.",
+        "script_alias": "S1",
+        "script_quote": "The wildfire causes the evacuation; Asha merely carries a brass seal.",
+        "options": [
+          "a brass seal",
+          "fear of the wildfire",
+          "a festival",
+          "a broken cart"
+        ],
+        "correct_index": 0
+      }
+    },
+    {
+      "id": "isolation-development-ambiguous",
+      "mode": "quiz",
+      "expected_accept": false,
+      "label_reason": "Two options are supported, so the item is not uniquely scorable.",
+      "evidence": [
+        {
+          "alias": "W1",
+          "text": "Asha names both the northern bridge and the river tunnel as safe escape routes."
+        },
+        {
+          "alias": "S1",
+          "text": "The northern bridge and river tunnel are both approved escape routes."
+        }
+      ],
+      "draft": {
+        "kind": "event",
+        "question": "Which route is approved for escape?",
+        "answer": "the northern bridge",
+        "wiki_alias": "W1",
+        "wiki_quote": "Asha names both the northern bridge and the river tunnel as safe escape routes.",
+        "script_alias": "S1",
+        "script_quote": "The northern bridge and river tunnel are both approved escape routes.",
+        "options": [
+          "the northern bridge",
+          "the river tunnel",
+          "the market road",
+          "the cliff path"
+        ],
+        "correct_index": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+# Multi-source development evidence — 13 October 2026
+
+- `source-policy-cases-v1.json` and `source-policy-report-v1.json`: 12/12 authored offline acquisition/routing labels match. These do not measure live provider relevance or model truth.
+- `live-acquisition-v1.json`: DuckDuckGo discovery retained five story pages (four publishers), plus three groups from an unverified IMSDb draft. These include small blogs; acquisition is not a credibility endorsement. Search rank and source count do not prove accuracy.
+- `production-search-v1.json`: zero accepted pages because production search was unavailable. Startpage also failed the provider comparison. No five-page production-coverage claim is made.
+- `local-model-smoke-v1.json`: actual local llama3.2:3b/nomic/qwen3.5:9b pipeline answered the NASA-location question with a web citation in 37.194s and abstained on unavailable private information in 8.080s. Combined retrieval was reduced from 693 passages to 107/117 candidates. This used cached acquisition and a retained Wikipedia snapshot; it is not an Internet-to-answer cold-start latency measurement.
+- `independent-quiz-review-v1.json`: a bounded initial generation run drafted four questions, of which two passed original same-source support/novelty/clarity checks. Inspection exposed misleading blog claims. The current pipeline adds independent Wikipedia support before retaining web-derived quiz answers. The follow-up check rejected both misleading claims, supported the TARS/CASE question and withheld the correct seven-year ratio because retrieved reference sentences did not establish it. This is a false abstention/retrieval gap, not proof that seven years is incorrect. Reviews remain model judgements and need fresh human labels.
+
+The original drafting report is superseded by the added independent-support gate. These four follow-up checks re-review its candidates; they are not a completed publication or a fresh end-to-end generation benchmark of the final policy. No new fact or quiz was published. All eleven published banks retain their original hashes.
+
+Run the offline policy suite from the repo root with `PYTHONPATH=backend/src backend/.venv/bin/python backend/scripts/evaluate_movie_sources.py --dataset evals/movie-rag/multi-source/source-policy-cases-v1.json --report .cache/source-policy-report.json`. Application and network safeguards additionally have integration/HTTP/browser tests.
+
+Next qualification work: fresh independent labels, source credibility ranking, conflicting claims, missing corroboration, general movie coverage and a single-agent baseline comparison. Do not present test counts or these consumed development examples as production accuracy or complete prompt-injection protection.

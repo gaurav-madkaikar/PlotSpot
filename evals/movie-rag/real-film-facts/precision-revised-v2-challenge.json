@@ -1,0 +1,624 @@
+{
+  "dataset_version": "real-film-fact-precision-v1",
+  "dataset_sha256": "801d3b27f09fedb86b7b8a2706e135c8b6859e7c223168170400dda97c652b1a",
+  "partition": "development",
+  "model": "qwen3.5:9b",
+  "model_digest": "6488c96fa5faab64bb65cbd30d4289e20e6130ef535a93ef9a49f42eda893ea7",
+  "critic_policy_version": "background-precision-critic-v2",
+  "critic_implementation_sha256": "61992f8efa86aac220276f67974d19b6ed6f46818ebb8dd7a260cfbcf7464356",
+  "generation_settings": {
+    "temperature": 0,
+    "seed": 7,
+    "num_predict": 1800,
+    "think": false
+  },
+  "state": "complete",
+  "cases": [
+    {
+      "case_id": "precision-496243:F1",
+      "expected": "accept",
+      "category": "useful-supported",
+      "actual": "reject",
+      "reason": "The claim accurately reflects the quote's statement that editors 'sometimes' joined different takes due to limited shots, preserving the qualifier and action without adding or omit",
+      "matched": false,
+      "assessment": {
+        "item_id": "F1",
+        "reason": "The claim accurately reflects the quote's statement that editors 'sometimes' joined different takes due to limited shots, preserving the qualifier and action without adding or omit",
+        "entities": "supported",
+        "wording": "supported",
+        "qualifiers": "supported",
+        "quote": "supported",
+        "content": "uninteresting"
+      }
+    },
+    {
+      "case_id": "precision-496243:F2",
+      "expected": "reject",
+      "category": "stronger-qualifier",
+      "actual": "reject",
+      "reason": "The claim changes the quote's qualifier from 'sometimes' to 'always', which contradicts the specific frequency mentioned in the supporting text.",
+      "matched": true,
+      "assessment": {
+        "item_id": "F2",
+        "reason": "The claim changes the quote's qualifier from 'sometimes' to 'always', which contradicts the specific frequency mentioned in the supporting text.",
+        "entities": "supported",
+        "wording": "contradicted_or_exceeds",
+        "qualifiers": "contradicted_or_exceeds",
+        "quote": "contradicted_or_exceeds",
+        "content": "uninteresting"
+      }
+    },
+    {
+      "case_id": "precision-496243:F3",
+      "expected": "uncertain",
+      "category": "missing-full-name",
+      "actual": "reject",
+      "reason": "The claim correctly identifies the action and subject from the quote, though it omits the specific reason (editing options) which is allowed as non-exhaustive detail.",
+      "matched": false,
+      "assessment": {
+        "item_id": "F3",
+        "reason": "The claim correctly identifies the action and subject from the quote, though it omits the specific reason (editing options) which is allowed as non-exhaustive detail.",
+        "entities": "supported",
+        "wording": "supported",
+        "qualifiers": "supported",
+        "quote": "supported",
+        "content": "uninteresting"
+      }
+    },
+    {
+      "case_id": "precision-129:F1",
+      "expected": "accept",
+      "category": "useful-supported",
+      "actual": "reject",
+      "reason": "The claim accurately reflects the context regarding the screenwriters writing English dialogue to match Japanese lip movements, with all names and actions supported by the quote.",
+      "matched": false,
+      "assessment": {
+        "item_id": "F1",
+        "reason": "The claim accurately reflects the context regarding the screenwriters writing English dialogue to match Japanese lip movements, with all names and actions supported by the quote.",
+        "entities": "supported",
+        "wording": "supported",
+        "qualifiers": "supported",
+        "quote": "supported",
+        "content": "plot_or_metadata"
+      }
+    },
+    {
+      "case_id": "precision-129:F2",
+      "expected": "reject",
+      "category": "reversed-language",
+      "actual": "reject",
+      "reason": "The claim contradicts the context by reversing the languages; the screenwriters wrote English dialogue to match Japanese lip movements, not original Japanese dialogue to match lip.",
+      "matched": true,
+      "assessment": {
+        "item_id": "F2",
+        "reason": "The claim contradicts the context by reversing the languages; the screenwriters wrote English dialogue to match Japanese lip movements, not original Japanese dialogue to match lip.",
+        "entities": "supported",
+        "wording": "contradicted_or_exceeds",
+        "qualifiers": "contradicted_or_exceeds",
+        "quote": "contradicted_or_exceeds",
+        "content": "plot_or_metadata"
+      }
+    },
+    {
+      "case_id": "precision-129:F3",
+      "expected": "reject",
+      "category": "changed-object",
+      "actual": "reject",
+      "reason": "The claim contradicts the context by substituting 'soundtrack' for 'dialogue'; screenwriters write dialogue, not compose soundtracks, and the action of matching lip movements is a ",
+      "matched": true,
+      "assessment": {
+        "item_id": "F3",
+        "reason": "The claim contradicts the context by substituting 'soundtrack' for 'dialogue'; screenwriters write dialogue, not compose soundtracks, and the action of matching lip movements is a ",
+        "entities": "supported",
+        "wording": "contradicted_or_exceeds",
+        "qualifiers": "contradicted_or_exceeds",
+        "quote": "contradicted_or_exceeds",
+        "content": "plot_or_metadata"
+      }
+    },
+    {
+      "case_id": "precision-120467:F1",
+      "expected": "accept",
+      "category": "useful-supported",
+      "actual": "reject",
+      "reason": "The claim accurately reflects the context by stating Canonero studied uniforms and artworks by photographers and painters, specifically naming Man Ray and Gustav Klimt who are both",
+      "matched": false,
+      "assessment": {
+        "item_id": "F1",
+        "reason": "The claim accurately reflects the context by stating Canonero studied uniforms and artworks by photographers and painters, specifically naming Man Ray and Gustav Klimt who are both",
+        "entities": "supported",
+        "wording": "supported",
+        "qualifiers": "supported",
+        "quote": "supported",
+        "content": "plot_or_metadata"
+      }
+    },
+    {
+      "case_id": "precision-120467:F2",
+      "expected": "uncertain",
+      "category": "missing-full-name",
+      "actual": "reject",
+      "reason": "The claim adds the first name 'Milena' to Canonero, which is not present in the context; a surname alone cannot prove a full name, and adding an unverified first name constitutes",
+      "matched": false,
+      "assessment": {
+        "item_id": "F2",
+        "reason": "The claim adds the first name 'Milena' to Canonero, which is not present in the context; a surname alone cannot prove a full name, and adding an unverified first name constitutes",
+        "entities": "insufficient_context",
+        "wording": "supported",
+        "qualifiers": "supported",
+        "quote": "supported",
+        "content": "plot_or_metadata"
+      }
+    },
+    {
+      "case_id": "precision-120467:F3",
+      "expected": "reject",
+      "category": "unsupported-exclusivity",
+      "actual": "reject",
+      "reason": "The claim asserts photographs were the 'only' research source, but the context explicitly mentions researching period artwork by painters as well; this invented exclusivity",
+      "matched": true,
+      "assessment": {
+        "item_id": "F3",
+        "reason": "The claim asserts photographs were the 'only' research source, but the context explicitly mentions researching period artwork by painters as well; this invented exclusivity",
+        "entities": "supported",
+        "wording": "contradicted_or_exceeds",
+        "qualifiers": "contradicted_or_exceeds",
+        "quote": "supported",
+        "content": "plot_or_metadata"
+      }
+    },
+    {
+      "case_id": "precision-438631:F1",
+      "expected": "accept",
+      "category": "useful-supported",
+      "actual": "reject",
+      "reason": "The claim accurately reflects the quote's statement that 'Sandscreens' were used to simulate natural luminance (brightness) of the desert intended for backgrounds, without adding, ",
+      "matched": false,
+      "assessment": {
+        "item_id": "F1",
+        "reason": "The claim accurately reflects the quote's statement that 'Sandscreens' were used to simulate natural luminance (brightness) of the desert intended for backgrounds, without adding, ",
+        "entities": "supported",
+        "wording": "supported",
+        "qualifiers": "supported",
+        "quote": "supported",
+        "content": "plot_or_metadata"
+      }
+    },
+    {
+      "case_id": "precision-438631:F2",
+      "expected": "reject",
+      "category": "invented-material",
+      "actual": "reject",
+      "reason": "The claim adds a specific cause ('built from real desert sand') that is not mentioned in the quote or context, which only states they were used to simulate luminance.",
+      "matched": true,
+      "assessment": {
+        "item_id": "F2",
+        "reason": "The claim adds a specific cause ('built from real desert sand') that is not mentioned in the quote or context, which only states they were used to simulate luminance.",
+        "entities": "insufficient_context",
+        "wording": "contradicted_or_exceeds",
+        "qualifiers": "contradicted_or_exceeds",
+        "quote": "contradicted_or_exceeds",
+        "content": "plot_or_metadata"
+      }
+    },
+    {
+      "case_id": "precision-438631:F3",
+      "expected": "uncertain",
+      "category": "missing-person",
+      "actual": "reject",
+      "reason": "The claim attributes the action to 'Cinematographer Greig Fraser', but neither the quote nor the context identifies any person by name.",
+      "matched": false,
+      "assessment": {
+        "item_id": "F3",
+        "reason": "The claim attributes the action to 'Cinematographer Greig Fraser', but neither the quote nor the context identifies any person by name.",
+        "entities": "insufficient_context",
+        "wording": "supported",
+        "qualifiers": "supported",
+        "quote": "insufficient_context",
+        "content": "plot_or_metadata"
+      }
+    },
+    {
+      "case_id": "precision-546554:F1",
+      "expected": "accept",
+      "category": "useful-supported",
+      "actual": "reject",
+      "reason": "The claim accurately reflects the context by preserving the action (naming characters), the object (musicians he enjoyed), specific examples (Joni Mitchell, Steely Dan's Donald F),",
+      "matched": false,
+      "assessment": {
+        "item_id": "F1",
+        "reason": "The claim accurately reflects the context by preserving the action (naming characters), the object (musicians he enjoyed), specific examples (Joni Mitchell, Steely Dan's Donald F),",
+        "entities": "supported",
+        "wording": "supported",
+        "qualifiers": "supported",
+        "quote": "supported",
+        "content": "plot_or_metadata"
+      }
+    },
+    {
+      "case_id": "precision-546554:F2",
+      "expected": "reject",
+      "category": "changed-object",
+      "actual": "reject",
+      "reason": "The claim preserves the action and motive but omits specific musician names; however, omitting examples from a nonexhaustive list is allowed. The phrase 'make their roles in the'",
+      "matched": true,
+      "assessment": {
+        "item_id": "F2",
+        "reason": "The claim preserves the action and motive but omits specific musician names; however, omitting examples from a nonexhaustive list is allowed. The phrase 'make their roles in the'",
+        "entities": "supported",
+        "wording": "supported",
+        "qualifiers": "supported",
+        "quote": "supported",
+        "content": "plot_or_metadata"
+      }
+    },
+    {
+      "case_id": "precision-546554:F3",
+      "expected": "uncertain",
+      "category": "missing-full-name",
+      "actual": "reject",
+      "reason": "The claim explicitly identifies 'Rian Johnson' which is not present in the context text (only 'Johnson'). While the surname matches, the full name attribution exceeds the provided",
+      "matched": false,
+      "assessment": {
+        "item_id": "F3",
+        "reason": "The claim explicitly identifies 'Rian Johnson' which is not present in the context text (only 'Johnson'). While the surname matches, the full name attribution exceeds the provided",
+        "entities": "contradicted_or_exceeds",
+        "wording": "supported",
+        "qualifiers": "supported",
+        "quote": "supported",
+        "content": "plot_or_metadata"
+      }
+    },
+    {
+      "case_id": "precision-37165:F1",
+      "expected": "accept",
+      "category": "useful-supported",
+      "actual": "reject",
+      "reason": "The claim accurately reflects the context regarding Laura Linney studying Sears catalogs to develop her character's poses. The entity 'Laura Linney' is named, and the action of 'st",
+      "matched": false,
+      "assessment": {
+        "item_id": "F1",
+        "reason": "The claim accurately reflects the context regarding Laura Linney studying Sears catalogs to develop her character's poses. The entity 'Laura Linney' is named, and the action of 'st",
+        "entities": "supported",
+        "wording": "supported",
+        "qualifiers": "supported",
+        "quote": "supported",
+        "content": "plot_or_metadata"
+      }
+    },
+    {
+      "case_id": "precision-37165:F2",
+      "expected": "reject",
+      "category": "invented-cause",
+      "actual": "reject",
+      "reason": "The claim introduces a specific cause ('could not afford a movement coach') that is not present in the context. The context only states she studied catalogs to develop poses, not *",
+      "matched": true,
+      "assessment": {
+        "item_id": "F2",
+        "reason": "The claim introduces a specific cause ('could not afford a movement coach') that is not present in the context. The context only states she studied catalogs to develop poses, not *",
+        "entities": "supported",
+        "wording": "contradicted_or_exceeds",
+        "qualifiers": "contradicted_or_exceeds",
+        "quote": "contradicted_or_exceeds",
+        "content": "plot_or_metadata"
+      }
+    },
+    {
+      "case_id": "precision-37165:F3",
+      "expected": "reject",
+      "category": "stronger-qualifier",
+      "actual": "reject",
+      "reason": "The claim adds the qualifier 'exact poses of every model' which is not supported by the context. The context says she developed her character's poses, implying a general process, ",
+      "matched": true,
+      "assessment": {
+        "item_id": "F3",
+        "reason": "The claim adds the qualifier 'exact poses of every model' which is not supported by the context. The context says she developed her character's poses, implying a general process, ",
+        "entities": "supported",
+        "wording": "contradicted_or_exceeds",
+        "qualifiers": "contradicted_or_exceeds",
+        "quote": "contradicted_or_exceeds",
+        "content": "plot_or_metadata"
+      }
+    }
+  ],
+  "batches": [
+    {
+      "batch_id": "precision-496243",
+      "elapsed_seconds": 20.91,
+      "error_type": null
+    },
+    {
+      "batch_id": "precision-129",
+      "elapsed_seconds": 21.03,
+      "error_type": null
+    },
+    {
+      "batch_id": "precision-120467",
+      "elapsed_seconds": 20.58,
+      "error_type": null
+    },
+    {
+      "batch_id": "precision-438631",
+      "elapsed_seconds": 18.03,
+      "error_type": null
+    },
+    {
+      "batch_id": "precision-546554",
+      "elapsed_seconds": 18.71,
+      "error_type": null
+    },
+    {
+      "batch_id": "precision-37165",
+      "elapsed_seconds": 23.15,
+      "error_type": null
+    }
+  ],
+  "planned_cases": 18,
+  "deadline_seconds": 360,
+  "limitations": "Assistant-authored development labels frozen before the first precision run. Accept faithful useful paraphrases; reject changed objects, invented causes/materials and stronger qualifiers; uncertain for person identities absent from the supplied source context. Existing source excerpts were consumed previously. Not independent annotations or held-out accuracy.",
+  "metrics": {
+    "label_matches": {
+      "count": 8,
+      "total": 18
+    },
+    "useful_acceptance": {
+      "count": 0,
+      "total": 6
+    },
+    "false_acceptance": {
+      "count": 0,
+      "total": 12
+    },
+    "false_rejection": {
+      "count": 6,
+      "total": 6
+    },
+    "uncertain": {
+      "count": 0,
+      "total": 18
+    },
+    "errors": {
+      "count": 0,
+      "total": 18
+    }
+  },
+  "metrics_by_category": {
+    "changed-object": {
+      "label_matches": {
+        "count": 2,
+        "total": 2
+      },
+      "useful_acceptance": {
+        "count": 0,
+        "total": 0
+      },
+      "false_acceptance": {
+        "count": 0,
+        "total": 2
+      },
+      "false_rejection": {
+        "count": 0,
+        "total": 0
+      },
+      "uncertain": {
+        "count": 0,
+        "total": 2
+      },
+      "errors": {
+        "count": 0,
+        "total": 2
+      }
+    },
+    "invented-cause": {
+      "label_matches": {
+        "count": 1,
+        "total": 1
+      },
+      "useful_acceptance": {
+        "count": 0,
+        "total": 0
+      },
+      "false_acceptance": {
+        "count": 0,
+        "total": 1
+      },
+      "false_rejection": {
+        "count": 0,
+        "total": 0
+      },
+      "uncertain": {
+        "count": 0,
+        "total": 1
+      },
+      "errors": {
+        "count": 0,
+        "total": 1
+      }
+    },
+    "invented-material": {
+      "label_matches": {
+        "count": 1,
+        "total": 1
+      },
+      "useful_acceptance": {
+        "count": 0,
+        "total": 0
+      },
+      "false_acceptance": {
+        "count": 0,
+        "total": 1
+      },
+      "false_rejection": {
+        "count": 0,
+        "total": 0
+      },
+      "uncertain": {
+        "count": 0,
+        "total": 1
+      },
+      "errors": {
+        "count": 0,
+        "total": 1
+      }
+    },
+    "missing-full-name": {
+      "label_matches": {
+        "count": 0,
+        "total": 3
+      },
+      "useful_acceptance": {
+        "count": 0,
+        "total": 0
+      },
+      "false_acceptance": {
+        "count": 0,
+        "total": 3
+      },
+      "false_rejection": {
+        "count": 0,
+        "total": 0
+      },
+      "uncertain": {
+        "count": 0,
+        "total": 3
+      },
+      "errors": {
+        "count": 0,
+        "total": 3
+      }
+    },
+    "missing-person": {
+      "label_matches": {
+        "count": 0,
+        "total": 1
+      },
+      "useful_acceptance": {
+        "count": 0,
+        "total": 0
+      },
+      "false_acceptance": {
+        "count": 0,
+        "total": 1
+      },
+      "false_rejection": {
+        "count": 0,
+        "total": 0
+      },
+      "uncertain": {
+        "count": 0,
+        "total": 1
+      },
+      "errors": {
+        "count": 0,
+        "total": 1
+      }
+    },
+    "reversed-language": {
+      "label_matches": {
+        "count": 1,
+        "total": 1
+      },
+      "useful_acceptance": {
+        "count": 0,
+        "total": 0
+      },
+      "false_acceptance": {
+        "count": 0,
+        "total": 1
+      },
+      "false_rejection": {
+        "count": 0,
+        "total": 0
+      },
+      "uncertain": {
+        "count": 0,
+        "total": 1
+      },
+      "errors": {
+        "count": 0,
+        "total": 1
+      }
+    },
+    "stronger-qualifier": {
+      "label_matches": {
+        "count": 2,
+        "total": 2
+      },
+      "useful_acceptance": {
+        "count": 0,
+        "total": 0
+      },
+      "false_acceptance": {
+        "count": 0,
+        "total": 2
+      },
+      "false_rejection": {
+        "count": 0,
+        "total": 0
+      },
+      "uncertain": {
+        "count": 0,
+        "total": 2
+      },
+      "errors": {
+        "count": 0,
+        "total": 2
+      }
+    },
+    "unsupported-exclusivity": {
+      "label_matches": {
+        "count": 1,
+        "total": 1
+      },
+      "useful_acceptance": {
+        "count": 0,
+        "total": 0
+      },
+      "false_acceptance": {
+        "count": 0,
+        "total": 1
+      },
+      "false_rejection": {
+        "count": 0,
+        "total": 0
+      },
+      "uncertain": {
+        "count": 0,
+        "total": 1
+      },
+      "errors": {
+        "count": 0,
+        "total": 1
+      }
+    },
+    "useful-supported": {
+      "label_matches": {
+        "count": 0,
+        "total": 6
+      },
+      "useful_acceptance": {
+        "count": 0,
+        "total": 6
+      },
+      "false_acceptance": {
+        "count": 0,
+        "total": 0
+      },
+      "false_rejection": {
+        "count": 6,
+        "total": 6
+      },
+      "uncertain": {
+        "count": 0,
+        "total": 6
+      },
+      "errors": {
+        "count": 0,
+        "total": 6
+      }
+    }
+  },
+  "elapsed_seconds": 122.42,
+  "publication_approved": false,
+  "background_policy_sha256": "4f4c8d444258730e809ba12cabd79cf793becfdc2e96d4595a8aa8362f6277db"
+}

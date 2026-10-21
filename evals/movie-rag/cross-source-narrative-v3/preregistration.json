@@ -1,0 +1,36 @@
+{
+  "policy": "cross-source-story-v12-bounded-review-repair",
+  "dataset_family": "cross-source-narrative-v3",
+  "frozen_at": "2026-10-18T13:00:00+05:30",
+  "authorship": "assistant-authored labels frozen before v3 execution",
+  "partition_order": [
+    "development",
+    "reserved",
+    "adversarial",
+    "real_movies"
+  ],
+  "thresholds": {
+    "false_approvals": 0,
+    "minimum_useful_acceptance": 0.75,
+    "errors": 0,
+    "all_partitions_must_pass": true
+  },
+  "case_counts": {
+    "development": 8,
+    "reserved": 8,
+    "adversarial": 4,
+    "real_movies": 8
+  },
+  "real_movie_cases": "unchanged and still unconsumed after v1 and v2 stopped earlier",
+  "files": {
+    "evals/movie-rag/cross-source-narrative-v3/development.json": "690fd3db4b58408524eaff4fb9aa5e200d559692f33dc3337b72c18d7ed51511",
+    "evals/movie-rag/cross-source-narrative-v3/reserved.json": "365f9a626643a542b10c6b081d4a472100d088d4cfcd88909e2ab589fad9f08d",
+    "evals/movie-rag/cross-source-narrative-v3/adversarial.json": "6b0d1abc02f965fc44167e6af9263471cd68472cf43afcafb0eeb5ae2ccea71b",
+    "evals/movie-rag/story-quality/real-movie-cases-narrative-v1.json": "ca4b04752c144e607107cf90a1e1b4cf0c88d8811d07c80ab824c0e7d65c47e5"
+  },
+  "limitations": [
+    "Authored development labels are not independent human judgments.",
+    "One bounded repair is part of the policy under evaluation.",
+    "No v3 label, threshold or case may change after output is observed."
+  ]
+}

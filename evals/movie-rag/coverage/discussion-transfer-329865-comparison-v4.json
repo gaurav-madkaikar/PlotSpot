@@ -1,0 +1,858 @@
+{
+  "created_at_utc": "2026-10-11T19:47:31.706946+00:00",
+  "movie_id": 329865,
+  "dataset_version": "discussion-transfer-329865-dev-v1",
+  "split": "development",
+  "dataset_sha256": "584cff295411c5043513bc8ec229f452ac5f2b93d2ac2b249f5891745af1633e",
+  "source_snapshot": "89f7bcf5fc9b8c405c2e6775e296c5d620ed1639ad843f67053dffb02b8a1fde",
+  "source_revision": "enwiki-1377517038-sections-v3-body",
+  "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1377517038",
+  "pipeline_sha256": "6f052e9af44c58b1d1e362e6fbe9ff14570ac50cffee21b3fa8dfc0d225c5936",
+  "prompt_sha256": "33dfd878003893e1e693eee342b9666be408de80bc9966a499a50d3570975132",
+  "grounding_module_sha256": "52a799e95e4dd6a677d0b0f3841fac52229edcee95bcf5629ea507a2c0df3a95",
+  "retrieval_policy": "discussion-hybrid-v2",
+  "grounding_policy": "grounded-support-options-v1",
+  "retriever_sha256": "2084660632a45e8d0c4afbbf33fcf9344d0c36abca84270f046e8406864636c8",
+  "comparison": {
+    "order": "alternating baseline/candidate per case; sequential",
+    "baseline_sha256": {
+      "grounding_learning": "cd984e87a32baad171d6c3938afdb0ed918db53b6263b1b394c55c2595cbd6df",
+      "movie_qa_learning": "91bc247e547060f1ea5ee863aa5b89dfe4a4544dc4684030cd601efacd346fd4"
+    },
+    "baseline_automated_passed": 3,
+    "baseline_generation_errors": 0
+  },
+  "models": {
+    "nomic-embed-text:v1.5": "0a109f422b47e3a30ba2b10eca18548e944e8a23073ee3f3e947efcf3c45e59f",
+    "llama3.2:3b": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72"
+  },
+  "chunk_settings": {
+    "max_chars": 600,
+    "overlap_chars": 100
+  },
+  "ingestion": "cached",
+  "passages": 54,
+  "publication": false,
+  "token_usage": null,
+  "summary": {
+    "automated_passed": 3,
+    "total": 4
+  },
+  "limitations": [
+    "Small development inspection, not an independent holdout or safety benchmark.",
+    "Phrase and citation membership checks do not establish entailment; inspect cited passages.",
+    "Runs the shared Wikipedia discussion function, not the HTTP or script-assisted path.",
+    "No bank generation, publication, or production throughput is measured."
+  ],
+  "cases": [
+    {
+      "id": "future-visions",
+      "question": "What does Louise discover about the visions of her daughter in the story?",
+      "expected_status": "answered",
+      "labelled_supporting_ids": [
+        "89f7bcf5fc9b8c405c2e6775e296c5d6_011"
+      ],
+      "retrieved": [
+        {
+          "passage_id": "89f7bcf5fc9b8c405c2e6775e296c5d6_011",
+          "score": 0.6702315101173791,
+          "section": "Plot"
+        },
+        {
+          "passage_id": "89f7bcf5fc9b8c405c2e6775e296c5d6_006",
+          "score": 0.6868278822263852,
+          "section": "Plot"
+        },
+        {
+          "passage_id": "89f7bcf5fc9b8c405c2e6775e296c5d6_007",
+          "score": 0.5602224902684824,
+          "section": "Plot"
+        }
+      ],
+      "answer": {
+        "status": "answered",
+        "answer": "She discovers that her visions of her daughter are premonitions, meaning her daughter will not be born until sometime in the future.",
+        "citation_ids": [
+          "89f7bcf5fc9b8c405c2e6775e296c5d6_011"
+        ]
+      },
+      "error": null,
+      "duration_seconds": 3.156,
+      "supporting_hit_at_3": true,
+      "annotated_id_recall_at_3": 1.0,
+      "automated_pass": true,
+      "failures": [],
+      "human_claim_support_review": "pending",
+      "retrieval_trace": {
+        "policy": "discussion-hybrid-v2",
+        "scope": "story",
+        "classified": true,
+        "eligible_passages": 54,
+        "routed_passages": 9,
+        "lexical_anchor": "89f7bcf5fc9b8c405c2e6775e296c5d6_011",
+        "selected_ids": [
+          "89f7bcf5fc9b8c405c2e6775e296c5d6_011",
+          "89f7bcf5fc9b8c405c2e6775e296c5d6_006",
+          "89f7bcf5fc9b8c405c2e6775e296c5d6_007"
+        ],
+        "vector_top": [
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_006",
+            "cosine": 0.6868278822263852
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_011",
+            "cosine": 0.6702315101173791
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_013",
+            "cosine": 0.6279191406453931
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_014",
+            "cosine": 0.5987058054907008
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_012",
+            "cosine": 0.5939882485533865
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_010",
+            "cosine": 0.5721506309872453
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_007",
+            "cosine": 0.5602224902684824
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_008",
+            "cosine": 0.5566887015357894
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_009",
+            "cosine": 0.553441621010123
+          }
+        ],
+        "lexical_top": [
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_011",
+            "bm25": 6.454630562844427
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_007",
+            "bm25": 5.496658727540132
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_006",
+            "bm25": 4.041543152729668
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_010",
+            "bm25": 2.9065226242866538
+          }
+        ],
+        "selected_ranks": [
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_011",
+            "rrf": 0.03252247488101534,
+            "vector_rank": 2,
+            "lexical_rank": 1
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_006",
+            "rrf": 0.032266458495966696,
+            "vector_rank": 1,
+            "lexical_rank": 3
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_007",
+            "rrf": 0.031054405392392875,
+            "vector_rank": 7,
+            "lexical_rank": 2
+          }
+        ]
+      },
+      "grounding_trace": {
+        "type": "grounding",
+        "policy": "grounded-support-options-v1",
+        "support": [
+          {
+            "passage_id": "89f7bcf5fc9b8c405c2e6775e296c5d6_011",
+            "quote": "Learning the language alters humans' linear perception of time, allowing them to experience memories of future events."
+          },
+          {
+            "passage_id": "89f7bcf5fc9b8c405c2e6775e296c5d6_011",
+            "quote": "Banks's visions of her daughter are revealed to be premonitions; her daughter will not be born until sometime in the future."
+          }
+        ],
+        "note": "Exact quote presence is checked; semantic claim support still requires evaluation."
+      },
+      "baseline": {
+        "id": "future-visions",
+        "question": "What does Louise discover about the visions of her daughter in the story?",
+        "expected_status": "answered",
+        "labelled_supporting_ids": [
+          "89f7bcf5fc9b8c405c2e6775e296c5d6_011"
+        ],
+        "retrieved": [
+          {
+            "passage_id": "89f7bcf5fc9b8c405c2e6775e296c5d6_006",
+            "score": 0.6868278822263852,
+            "section": "Plot"
+          },
+          {
+            "passage_id": "89f7bcf5fc9b8c405c2e6775e296c5d6_011",
+            "score": 0.6702315101173791,
+            "section": "Plot"
+          },
+          {
+            "passage_id": "89f7bcf5fc9b8c405c2e6775e296c5d6_026",
+            "score": 0.6381202480266219,
+            "section": "Filming"
+          }
+        ],
+        "answer": {
+          "status": "answered",
+          "answer": "Louise discovers that her visions of her daughter are premonitions, meaning her daughter will not be born until sometime in the future.",
+          "citation_ids": [
+            "89f7bcf5fc9b8c405c2e6775e296c5d6_011"
+          ]
+        },
+        "error": null,
+        "duration_seconds": 1.63,
+        "supporting_hit_at_3": true,
+        "annotated_id_recall_at_3": 1.0,
+        "automated_pass": true,
+        "failures": [],
+        "human_claim_support_review": "pending",
+        "retrieval_trace": null,
+        "grounding_trace": null
+      }
+    },
+    {
+      "id": "future-help",
+      "question": "Why do the heptapods help humanity in the story?",
+      "expected_status": "answered",
+      "labelled_supporting_ids": [
+        "89f7bcf5fc9b8c405c2e6775e296c5d6_011"
+      ],
+      "retrieved": [
+        {
+          "passage_id": "89f7bcf5fc9b8c405c2e6775e296c5d6_007",
+          "score": 0.7301619344778639,
+          "section": "Plot"
+        },
+        {
+          "passage_id": "89f7bcf5fc9b8c405c2e6775e296c5d6_013",
+          "score": 0.6838111074482344,
+          "section": "Plot"
+        },
+        {
+          "passage_id": "89f7bcf5fc9b8c405c2e6775e296c5d6_011",
+          "score": 0.6529155862601672,
+          "section": "Plot"
+        }
+      ],
+      "answer": {
+        "status": "answered",
+        "answer": "The heptapods help humanity because in 3,000 years' time they will need humanity's help in return.",
+        "citation_ids": [
+          "89f7bcf5fc9b8c405c2e6775e296c5d6_011"
+        ]
+      },
+      "error": null,
+      "duration_seconds": 2.505,
+      "supporting_hit_at_3": true,
+      "annotated_id_recall_at_3": 1.0,
+      "automated_pass": true,
+      "failures": [],
+      "human_claim_support_review": "pending",
+      "retrieval_trace": {
+        "policy": "discussion-hybrid-v2",
+        "scope": "story",
+        "classified": true,
+        "eligible_passages": 54,
+        "routed_passages": 9,
+        "lexical_anchor": "89f7bcf5fc9b8c405c2e6775e296c5d6_011",
+        "selected_ids": [
+          "89f7bcf5fc9b8c405c2e6775e296c5d6_007",
+          "89f7bcf5fc9b8c405c2e6775e296c5d6_013",
+          "89f7bcf5fc9b8c405c2e6775e296c5d6_011"
+        ],
+        "vector_top": [
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_007",
+            "cosine": 0.7301619344778639
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_012",
+            "cosine": 0.7027058124778446
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_009",
+            "cosine": 0.6875844551773516
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_010",
+            "cosine": 0.6866863943908802
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_013",
+            "cosine": 0.6838111074482344
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_006",
+            "cosine": 0.6821377130545782
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_014",
+            "cosine": 0.678881185177064
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_011",
+            "cosine": 0.6529155862601672
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_008",
+            "cosine": 0.6399587595877448
+          }
+        ],
+        "lexical_top": [
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_011",
+            "bm25": 7.621151576508588
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_013",
+            "bm25": 4.382987391963265
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_007",
+            "bm25": 2.1362579956171546
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_014",
+            "bm25": 1.3833043724135232
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_008",
+            "bm25": 1.3207932834295497
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_010",
+            "bm25": 1.3207932834295497
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_012",
+            "bm25": 1.3109199402150613
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_009",
+            "bm25": 1.2728598374076583
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_006",
+            "bm25": 1.2282836944881246
+          }
+        ],
+        "selected_ranks": [
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_007",
+            "rrf": 0.032266458495966696,
+            "vector_rank": 1,
+            "lexical_rank": 3
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_013",
+            "rrf": 0.0315136476426799,
+            "vector_rank": 5,
+            "lexical_rank": 2
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_011",
+            "rrf": 0.031099324975891997,
+            "vector_rank": 8,
+            "lexical_rank": 1
+          }
+        ]
+      },
+      "grounding_trace": {
+        "type": "grounding",
+        "policy": "grounded-support-options-v1",
+        "support": [
+          {
+            "passage_id": "89f7bcf5fc9b8c405c2e6775e296c5d6_011",
+            "quote": "Costello explains that they have come to help humanity, because in 3,000 years' time they will need humanity's help in return."
+          }
+        ],
+        "note": "Exact quote presence is checked; semantic claim support still requires evaluation."
+      },
+      "baseline": {
+        "id": "future-help",
+        "question": "Why do the heptapods help humanity in the story?",
+        "expected_status": "answered",
+        "labelled_supporting_ids": [
+          "89f7bcf5fc9b8c405c2e6775e296c5d6_011"
+        ],
+        "retrieved": [
+          {
+            "passage_id": "89f7bcf5fc9b8c405c2e6775e296c5d6_007",
+            "score": 0.7301619344778639,
+            "section": "Plot"
+          },
+          {
+            "passage_id": "89f7bcf5fc9b8c405c2e6775e296c5d6_022",
+            "score": 0.7247824686192262,
+            "section": "Development and pre-production"
+          },
+          {
+            "passage_id": "89f7bcf5fc9b8c405c2e6775e296c5d6_012",
+            "score": 0.7027058124778446,
+            "section": "Plot"
+          }
+        ],
+        "answer": {
+          "status": "insufficient_evidence",
+          "answer": "The supplied evidence is insufficient to answer this question.",
+          "citation_ids": []
+        },
+        "error": null,
+        "duration_seconds": 0.766,
+        "supporting_hit_at_3": false,
+        "annotated_id_recall_at_3": 0.0,
+        "automated_pass": false,
+        "failures": [
+          "No labelled supporting passage retrieved",
+          "Answer status differs from expectation",
+          "No labelled supporting passage cited",
+          "Missing expected phrase group: ['3,000', '3000']",
+          "Missing expected phrase group: ['help']"
+        ],
+        "human_claim_support_review": "pending",
+        "retrieval_trace": null,
+        "grounding_trace": null
+      }
+    },
+    {
+      "id": "original-score",
+      "question": "Who wrote Arrival\u2019s original score?",
+      "expected_status": "answered",
+      "labelled_supporting_ids": [
+        "89f7bcf5fc9b8c405c2e6775e296c5d6_033"
+      ],
+      "retrieved": [
+        {
+          "passage_id": "89f7bcf5fc9b8c405c2e6775e296c5d6_033",
+          "score": 0.7952971433116821,
+          "section": "Music and soundtrack"
+        },
+        {
+          "passage_id": "89f7bcf5fc9b8c405c2e6775e296c5d6_000",
+          "score": 0.6900224203202737,
+          "section": "Introduction"
+        },
+        {
+          "passage_id": "89f7bcf5fc9b8c405c2e6775e296c5d6_005",
+          "score": 0.5845782125062695,
+          "section": "Introduction"
+        }
+      ],
+      "answer": null,
+      "error": "ValueError",
+      "duration_seconds": 6.57,
+      "supporting_hit_at_3": true,
+      "annotated_id_recall_at_3": 1.0,
+      "automated_pass": false,
+      "failures": [
+        "Generation or response validation failed"
+      ],
+      "human_claim_support_review": "pending",
+      "retrieval_trace": {
+        "policy": "discussion-hybrid-v2",
+        "scope": "all",
+        "classified": true,
+        "eligible_passages": 54,
+        "routed_passages": 54,
+        "lexical_anchor": "89f7bcf5fc9b8c405c2e6775e296c5d6_005",
+        "selected_ids": [
+          "89f7bcf5fc9b8c405c2e6775e296c5d6_033",
+          "89f7bcf5fc9b8c405c2e6775e296c5d6_000",
+          "89f7bcf5fc9b8c405c2e6775e296c5d6_005"
+        ],
+        "vector_top": [
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_033",
+            "cosine": 0.7952971433116821
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_002",
+            "cosine": 0.7573588902476883
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_003",
+            "cosine": 0.7490094067951533
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_017",
+            "cosine": 0.7441557499558501
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_000",
+            "cosine": 0.6900224203202737
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_049",
+            "cosine": 0.6745974931995018
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_042",
+            "cosine": 0.6655448339679852
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_031",
+            "cosine": 0.6636119070562814
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_040",
+            "cosine": 0.6626782098908347
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_047",
+            "cosine": 0.6562347257972387
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_044",
+            "cosine": 0.6495147654652038
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_045",
+            "cosine": 0.6357857792713053
+          }
+        ],
+        "lexical_top": [
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_005",
+            "bm25": 5.429162677104119
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_034",
+            "bm25": 5.151029671438829
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_033",
+            "bm25": 4.738176925723921
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_052",
+            "bm25": 4.626686287604773
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_021",
+            "bm25": 3.6076457058210583
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_004",
+            "bm25": 3.4340100570080225
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_042",
+            "bm25": 2.94669031840977
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_044",
+            "bm25": 2.8605131915144066
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_000",
+            "bm25": 1.8655500838871606
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_030",
+            "bm25": 1.8388997891784993
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_046",
+            "bm25": 1.7963896275704088
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_020",
+            "bm25": 1.7691248526102512
+          }
+        ],
+        "selected_ranks": [
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_033",
+            "rrf": 0.032266458495966696,
+            "vector_rank": 1,
+            "lexical_rank": 3
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_000",
+            "rrf": 0.029877369007803793,
+            "vector_rank": 5,
+            "lexical_rank": 9
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_005",
+            "rrf": 0.02938045560996381,
+            "vector_rank": 17,
+            "lexical_rank": 1
+          }
+        ]
+      },
+      "grounding_trace": null,
+      "baseline": {
+        "id": "original-score",
+        "question": "Who wrote Arrival\u2019s original score?",
+        "expected_status": "answered",
+        "labelled_supporting_ids": [
+          "89f7bcf5fc9b8c405c2e6775e296c5d6_033"
+        ],
+        "retrieved": [
+          {
+            "passage_id": "89f7bcf5fc9b8c405c2e6775e296c5d6_033",
+            "score": 0.7952971433116821,
+            "section": "Music and soundtrack"
+          },
+          {
+            "passage_id": "89f7bcf5fc9b8c405c2e6775e296c5d6_002",
+            "score": 0.7573588902476883,
+            "section": "Introduction"
+          },
+          {
+            "passage_id": "89f7bcf5fc9b8c405c2e6775e296c5d6_003",
+            "score": 0.7490094067951533,
+            "section": "Introduction"
+          }
+        ],
+        "answer": {
+          "status": "answered",
+          "answer": "J\u00f3hann J\u00f3hannsson",
+          "citation_ids": [
+            "89f7bcf5fc9b8c405c2e6775e296c5d6_033"
+          ]
+        },
+        "error": null,
+        "duration_seconds": 1.277,
+        "supporting_hit_at_3": true,
+        "annotated_id_recall_at_3": 1.0,
+        "automated_pass": true,
+        "failures": [],
+        "human_claim_support_review": "pending",
+        "retrieval_trace": null,
+        "grounding_trace": null
+      }
+    },
+    {
+      "id": "missing-private-talk",
+      "question": "What did I tell my friends privately after watching Arrival?",
+      "expected_status": "insufficient_evidence",
+      "labelled_supporting_ids": [],
+      "retrieved": [
+        {
+          "passage_id": "89f7bcf5fc9b8c405c2e6775e296c5d6_002",
+          "score": 0.7042806269223464,
+          "section": "Introduction"
+        },
+        {
+          "passage_id": "89f7bcf5fc9b8c405c2e6775e296c5d6_022",
+          "score": 0.6409906842039665,
+          "section": "Development and pre-production"
+        },
+        {
+          "passage_id": "89f7bcf5fc9b8c405c2e6775e296c5d6_003",
+          "score": 0.6997953924104146,
+          "section": "Introduction"
+        }
+      ],
+      "answer": {
+        "status": "insufficient_evidence",
+        "answer": "The supplied evidence is insufficient to answer this question.",
+        "citation_ids": []
+      },
+      "error": null,
+      "duration_seconds": 2.416,
+      "supporting_hit_at_3": null,
+      "annotated_id_recall_at_3": null,
+      "automated_pass": true,
+      "failures": [],
+      "human_claim_support_review": "pending",
+      "retrieval_trace": {
+        "policy": "discussion-hybrid-v2",
+        "scope": "all",
+        "classified": true,
+        "eligible_passages": 54,
+        "routed_passages": 54,
+        "lexical_anchor": "89f7bcf5fc9b8c405c2e6775e296c5d6_022",
+        "selected_ids": [
+          "89f7bcf5fc9b8c405c2e6775e296c5d6_002",
+          "89f7bcf5fc9b8c405c2e6775e296c5d6_022",
+          "89f7bcf5fc9b8c405c2e6775e296c5d6_003"
+        ],
+        "vector_top": [
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_002",
+            "cosine": 0.7042806269223464
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_017",
+            "cosine": 0.7020129246022649
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_003",
+            "cosine": 0.6997953924104146
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_044",
+            "cosine": 0.6698051402240435
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_021",
+            "cosine": 0.6565469714519225
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_042",
+            "cosine": 0.6548111495362062
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_045",
+            "cosine": 0.6475564443073575
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_049",
+            "cosine": 0.6467271833283667
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_000",
+            "cosine": 0.6462361018186253
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_022",
+            "cosine": 0.6409906842039665
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_033",
+            "cosine": 0.6336337949798801
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_047",
+            "cosine": 0.6324331097838581
+          }
+        ],
+        "lexical_top": [
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_022",
+            "bm25": 2.249857533294257
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_024",
+            "bm25": 2.148947197565244
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_018",
+            "bm25": 2.101812087834077
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_036",
+            "bm25": 2.101812087834077
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_035",
+            "bm25": 2.0715208632718514
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_000",
+            "bm25": 1.8655500838871606
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_038",
+            "bm25": 1.7419017829241075
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_003",
+            "bm25": 1.7231531764167176
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_040",
+            "bm25": 1.7045769720837567
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_002",
+            "bm25": 1.6425996420810964
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_051",
+            "bm25": 1.609166350235157
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_047",
+            "bm25": 1.2091028235804635
+          }
+        ],
+        "selected_ranks": [
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_002",
+            "rrf": 0.030679156908665108,
+            "vector_rank": 1,
+            "lexical_rank": 10
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_022",
+            "rrf": 0.030679156908665108,
+            "vector_rank": 10,
+            "lexical_rank": 1
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_003",
+            "rrf": 0.03057889822595705,
+            "vector_rank": 3,
+            "lexical_rank": 8
+          }
+        ]
+      },
+      "grounding_trace": {
+        "type": "grounding",
+        "policy": "grounded-support-options-v1",
+        "support": [],
+        "note": "Exact quote presence is checked; semantic claim support still requires evaluation."
+      },
+      "baseline": {
+        "id": "missing-private-talk",
+        "question": "What did I tell my friends privately after watching Arrival?",
+        "expected_status": "insufficient_evidence",
+        "labelled_supporting_ids": [],
+        "retrieved": [
+          {
+            "passage_id": "89f7bcf5fc9b8c405c2e6775e296c5d6_002",
+            "score": 0.7042806269223464,
+            "section": "Introduction"
+          },
+          {
+            "passage_id": "89f7bcf5fc9b8c405c2e6775e296c5d6_017",
+            "score": 0.7020129246022649,
+            "section": "Development and pre-production"
+          },
+          {
+            "passage_id": "89f7bcf5fc9b8c405c2e6775e296c5d6_003",
+            "score": 0.6997953924104146,
+            "section": "Introduction"
+          }
+        ],
+        "answer": {
+          "status": "insufficient_evidence",
+          "answer": "The supplied evidence is insufficient to answer this question.",
+          "citation_ids": []
+        },
+        "error": null,
+        "duration_seconds": 1.989,
+        "supporting_hit_at_3": null,
+        "annotated_id_recall_at_3": null,
+        "automated_pass": true,
+        "failures": [],
+        "human_claim_support_review": "pending",
+        "retrieval_trace": null,
+        "grounding_trace": null
+      }
+    }
+  ]
+}

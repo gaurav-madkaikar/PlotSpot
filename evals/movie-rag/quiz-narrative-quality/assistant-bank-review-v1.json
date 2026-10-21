@@ -1,0 +1,1600 @@
+{
+  "generated_at": "2026-10-18T11:02:59.454568+00:00",
+  "policy": "assistant-semantic-quiz-bank-review-v1",
+  "source_audit": "evals/movie-rag/quiz-narrative-quality/published-bank-audit-v1.json",
+  "source_database": "data/movie-content.db",
+  "status": "proposal_only",
+  "review_kind": "assistant_semantic_review",
+  "scope": {
+    "flagged_questions": 55,
+    "movies": 19
+  },
+  "summary": {
+    "replace": 34,
+    "keep": 21
+  },
+  "movie_summary": [
+    {
+      "title": "Arrival",
+      "replace": 1
+    },
+    {
+      "title": "Dune",
+      "keep": 2
+    },
+    {
+      "title": "Fight Club",
+      "replace": 2,
+      "keep": 1
+    },
+    {
+      "title": "Forrest Gump",
+      "replace": 5
+    },
+    {
+      "title": "Inception",
+      "keep": 2,
+      "replace": 1
+    },
+    {
+      "title": "Interstellar",
+      "keep": 1,
+      "replace": 6
+    },
+    {
+      "title": "Knives Out",
+      "keep": 1
+    },
+    {
+      "title": "Mad Max: Fury Road",
+      "replace": 4
+    },
+    {
+      "title": "Parasite",
+      "replace": 1
+    },
+    {
+      "title": "Pulp Fiction",
+      "replace": 1,
+      "keep": 1
+    },
+    {
+      "title": "Spirited Away",
+      "keep": 1,
+      "replace": 1
+    },
+    {
+      "title": "The Dark Knight",
+      "replace": 1
+    },
+    {
+      "title": "The Godfather",
+      "keep": 4
+    },
+    {
+      "title": "The Grand Budapest Hotel",
+      "keep": 2,
+      "replace": 1
+    },
+    {
+      "title": "The Lion King",
+      "replace": 3
+    },
+    {
+      "title": "The Matrix",
+      "keep": 2,
+      "replace": 1
+    },
+    {
+      "title": "The Prestige",
+      "replace": 3,
+      "keep": 1
+    },
+    {
+      "title": "The Shawshank Redemption",
+      "replace": 2,
+      "keep": 1
+    },
+    {
+      "title": "WALL·E",
+      "keep": 2,
+      "replace": 1
+    }
+  ],
+  "decisions": [
+    {
+      "movie_id": 13,
+      "title": "Forrest Gump",
+      "question_id": "research-423740447f00-t1-Q2",
+      "question": "How many years does Forrest spend in a relentless cross-country run after Jenny leaves?",
+      "answer": "Three years",
+      "surface_flags": [
+        "exact_count_or_duration"
+      ],
+      "narrative_focus": "granular_recall",
+      "narrative_significance": "granular",
+      "narrative_eligible": false,
+      "disposition": "replace",
+      "rationale": "The current wording tests an isolated exact count or duration rather than why the detail matters to the story.",
+      "replacement_brief": "Replace with an objective question about Forrest responding to heartbreak by beginning the cross-country run; omit the exact duration.",
+      "evidence": {
+        "explanation": "Heartbroken, Forrest spends the next three years in a relentless cross-country run.",
+        "citations": [
+          {
+            "source_label": "English Wikipedia contributors: Forrest Gump",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1377355264",
+            "revision": "enwiki-1377355264-sections-v3-body",
+            "excerpt": "Heartbroken, Forrest spends the next three years in a relentless cross-country run."
+          }
+        ]
+      }
+    },
+    {
+      "movie_id": 13,
+      "title": "Forrest Gump",
+      "question_id": "research-423740447f00-t6-Q2",
+      "question": "What is the name of Jenny's son revealed in the film's ending?",
+      "answer": "Forrest",
+      "surface_flags": [
+        "isolated_name"
+      ],
+      "narrative_focus": "granular_recall",
+      "narrative_significance": "granular",
+      "narrative_eligible": false,
+      "disposition": "replace",
+      "rationale": "The current wording tests an isolated isolated name rather than why the detail matters to the story.",
+      "replacement_brief": "Replace with the ending revelation that Forrest learns he is Jenny’s son’s father; test the relationship change, not the child’s repeated name.",
+      "evidence": {
+        "explanation": "It is here that the film's major twist is revealed: Jenny has a son, also named Forrest, and Forrest is the father.",
+        "citations": [
+          {
+            "source_label": "moviesense.io · Forrest Gump (1994) Ending Explained - What Does the Finale Mean? | MovieSense Forrest Gump — Ending Explained",
+            "source_ref": "https://moviesense.io/forrest-gump/ending-explained",
+            "revision": "web-ee3826f5153d054a47ed7492fe8229ba6003773bd7a0462506cf5bb30fc3ecab",
+            "excerpt": "It is here that the film's major twist is revealed: Jenny has a son, also named Forrest, and Forrest is the father."
+          }
+        ]
+      }
+    },
+    {
+      "movie_id": 13,
+      "title": "Forrest Gump",
+      "question_id": "research-423740447f00-t9-Q1",
+      "question": "Where does Forrest find himself after being discharged from the hospital?",
+      "answer": "An antiwar rally in Washington, D.C.",
+      "surface_flags": [
+        "isolated_location"
+      ],
+      "narrative_focus": "granular_recall",
+      "narrative_significance": "granular",
+      "narrative_eligible": false,
+      "disposition": "replace",
+      "rationale": "The current wording tests an isolated isolated location rather than why the detail matters to the story.",
+      "replacement_brief": "Replace from broader plot evidence with a question about whom Forrest reconnects with after military service and how it redirects his journey.",
+      "evidence": {
+        "explanation": "After his discharge, Forrest finds himself at an antiwar rally in Washington, D.C., where he encounters a bitter and alcoholic Lieutenant Dan and his beloved Jenny, who is following a hippie lifestyle.",
+        "citations": [
+          {
+            "source_label": "plotspoiler.com · Forrest Gump (1994) - Plot Summary & Spoilers | The Plot Spoiler Forrest Gump (1994)",
+            "source_ref": "https://plotspoiler.com/title/422/movie-1994-forrest-gump",
+            "revision": "web-ff8271eaf076151f614acc4c623de782cde8de512407b598b54be31964970b5f",
+            "excerpt": "After his discharge, Forrest finds himself at an antiwar rally in Washington, D.C., where he encounters a bitter and alcoholic Lieutenant Dan and his beloved Jenny, who is following a hippie lifestyle."
+          }
+        ]
+      }
+    },
+    {
+      "movie_id": 13,
+      "title": "Forrest Gump",
+      "question_id": "research-423740447f00-t10-Q1",
+      "question": "What object floats away from Forrest's feet into the sky at the film's conclusion?",
+      "answer": "The feather",
+      "surface_flags": [
+        "isolated_object"
+      ],
+      "narrative_focus": "granular_recall",
+      "narrative_significance": "granular",
+      "narrative_eligible": false,
+      "disposition": "replace",
+      "rationale": "The current wording tests an isolated isolated object rather than why the detail matters to the story.",
+      "replacement_brief": "Replace with a scored question about Forrest settling into fatherhood at the ending; keep the feather’s meaning for an unscored discussion prompt.",
+      "evidence": {
+        "explanation": "The feather, which appeared at the beginning, floats away from Forrest's feet into the sky, symbolizing that while Forrest's journey has found a new, stable chapter as a father, the unpredictable journey of life continues with the next generation.",
+        "citations": [
+          {
+            "source_label": "moviesense.io · Forrest Gump (1994) Ending Explained - What Does the Finale Mean? | MovieSense Forrest Gump — Ending Explained",
+            "source_ref": "https://moviesense.io/forrest-gump/ending-explained",
+            "revision": "web-ee3826f5153d054a47ed7492fe8229ba6003773bd7a0462506cf5bb30fc3ecab",
+            "excerpt": "The feather, which appeared at the beginning, floats away from Forrest's feet into the sky, symbolizing that while Forrest's journey has found a new, stable chapter as a father, the unpredictable journey of life continues with the next generation."
+          }
+        ]
+      }
+    },
+    {
+      "movie_id": 13,
+      "title": "Forrest Gump",
+      "question_id": "research-423740447f00-t11-Q2",
+      "question": "In which city does Forrest buy a shrimping boat after endorsing a ping-pong paddle manufacturer?",
+      "answer": "Bayou La Batre",
+      "surface_flags": [
+        "isolated_location"
+      ],
+      "narrative_focus": "granular_recall",
+      "narrative_significance": "granular",
+      "narrative_eligible": false,
+      "disposition": "replace",
+      "rationale": "The current wording tests an isolated isolated location rather than why the detail matters to the story.",
+      "replacement_brief": "Replace with why Forrest buys the shrimping boat: to fulfil his promise to Bubba.",
+      "evidence": {
+        "explanation": "Discharged from the Army, Forrest returns to Alabama and endorses a ping-pong paddle manufacturer, using the earnings to buy a shrimping boat in Bayou La Batre, fulfilling his promise to Bubba.",
+        "citations": [
+          {
+            "source_label": "English Wikipedia contributors: Forrest Gump",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1377355264",
+            "revision": "enwiki-1377355264-sections-v3-body",
+            "excerpt": "Discharged from the Army, Forrest returns to Alabama and endorses a ping-pong paddle manufacturer, using the earnings to buy a shrimping boat in Bayou La Batre, fulfilling his promise to Bubba."
+          }
+        ]
+      }
+    },
+    {
+      "movie_id": 129,
+      "title": "Spirited Away",
+      "question_id": "no-face-home",
+      "question": "Where does No-Face choose to stay near the end?",
+      "answer": "With Zeniba",
+      "surface_flags": [
+        "isolated_location"
+      ],
+      "narrative_focus": "ending_or_resolution",
+      "narrative_significance": "supporting",
+      "narrative_eligible": true,
+      "disposition": "keep",
+      "rationale": "No-Face choosing to remain with Zeniba is part of his character resolution, so the location expresses an ending choice rather than incidental geography.",
+      "replacement_brief": null,
+      "evidence": {
+        "explanation": "No-Face stays with Zeniba while Haku flies Chihiro and Boh back.",
+        "citations": [
+          {
+            "source_label": "English Wikipedia contributors: Spirited Away",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1378275530",
+            "revision": "enwiki-1378275530-sections-v3-body",
+            "excerpt": "Using his dragon form, Haku flies Chihiro and Boh back, while No-Face decides to stay with Zeniba."
+          }
+        ]
+      }
+    },
+    {
+      "movie_id": 129,
+      "title": "Spirited Away",
+      "question_id": "research-a97564d0da89-t3-Q3",
+      "question": "Who is the main character trapped in the spirit world?",
+      "answer": "Chihiro",
+      "surface_flags": [
+        "isolated_name"
+      ],
+      "narrative_focus": "granular_recall",
+      "narrative_significance": "granular",
+      "narrative_eligible": false,
+      "disposition": "replace",
+      "rationale": "The current wording tests an isolated isolated name rather than why the detail matters to the story.",
+      "replacement_brief": "Replace with the predicament that begins Chihiro’s arc: becoming trapped in the spirit world after her parents are transformed.",
+      "evidence": {
+        "explanation": "A young girl, Chihiro, becomes trapped in a strange new world of spirits.",
+        "citations": [
+          {
+            "source_label": "The Movie Database (TMDB) · Spirited Away",
+            "source_ref": "https://www.themoviedb.org/movie/129",
+            "revision": "tmdb-details-86e41acdf50125845741c9c3e95cb85e85ad5c14f667602a314c424bf7992290-v1",
+            "excerpt": "A young girl, Chihiro, becomes trapped in a strange new world of spirits."
+          }
+        ]
+      }
+    },
+    {
+      "movie_id": 155,
+      "title": "The Dark Knight",
+      "question_id": "laus-hideout",
+      "question": "Where does Batman travel to bring the mob’s accountant Lau back to Gotham?",
+      "answer": "Hong Kong",
+      "surface_flags": [
+        "isolated_location"
+      ],
+      "narrative_focus": "granular_recall",
+      "narrative_significance": "granular",
+      "narrative_eligible": false,
+      "disposition": "replace",
+      "rationale": "The current wording tests an isolated isolated location rather than why the detail matters to the story.",
+      "replacement_brief": "Replace from broader evidence with why capturing Lau matters to Batman, Gordon, and Dent’s case against the mob.",
+      "evidence": {
+        "explanation": "Lau flees to Hong Kong, where Batman finds him and returns him to Gotham police custody.",
+        "citations": [
+          {
+            "source_label": "English Wikipedia contributors: The Dark Knight",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1378704545",
+            "revision": "enwiki-1378704545-sections-v3-body",
+            "excerpt": "With the help of Wayne Enterprises CEO Lucius Fox, Batman finds Lau in Hong Kong and returns him to the custody of the Gotham police."
+          }
+        ]
+      }
+    },
+    {
+      "movie_id": 238,
+      "title": "The Godfather",
+      "question_id": "research-b2fb98bba6e1-t1-Q1",
+      "question": "Where does Michael take refuge after killing Sollozzo and McCluskey?",
+      "answer": "His family's native Sicily",
+      "surface_flags": [
+        "isolated_location"
+      ],
+      "narrative_focus": "turning_point",
+      "narrative_significance": "supporting",
+      "narrative_eligible": true,
+      "disposition": "keep",
+      "rationale": "Michael’s flight to Sicily is a major consequence of the murders and begins a central phase of his transformation.",
+      "replacement_brief": null,
+      "evidence": {
+        "explanation": "He takes refuge in his family's native Sicily to escape the NYPD and the ire of the other gangs until the heat dies down.",
+        "citations": [
+          {
+            "source_label": "English Wikipedia contributors: The Godfather",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379290889",
+            "revision": "enwiki-1379290889-sections-v3-body",
+            "excerpt": "He takes refuge in his family's native Sicily to escape the NYPD and the ire of the other gangs until the heat dies down."
+          }
+        ]
+      }
+    },
+    {
+      "movie_id": 238,
+      "title": "The Godfather",
+      "question_id": "research-b2fb98bba6e1-t17-Q1",
+      "question": "Where does the ambush that kills Sonny take place?",
+      "answer": "A highway toll booth",
+      "surface_flags": [
+        "isolated_location"
+      ],
+      "narrative_focus": "turning_point",
+      "narrative_significance": "central",
+      "narrative_eligible": true,
+      "disposition": "keep",
+      "rationale": "The toll-booth ambush is the setting of Sonny’s death, a major turning point in the family conflict.",
+      "replacement_brief": null,
+      "evidence": {
+        "explanation": "A furious Sonny sets off for her house but is ambushed and murdered at a highway toll booth.",
+        "citations": [
+          {
+            "source_label": "English Wikipedia contributors: The Godfather",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379290889",
+            "revision": "enwiki-1379290889-sections-v3-body",
+            "excerpt": "A furious Sonny sets off for her house but is ambushed and murdered at a highway toll booth."
+          }
+        ]
+      }
+    },
+    {
+      "movie_id": 238,
+      "title": "The Godfather",
+      "question_id": "research-b2fb98bba6e1-t17-Q3",
+      "question": "Who is revealed to be abusing Connie?",
+      "answer": "Carlo",
+      "surface_flags": [
+        "isolated_name"
+      ],
+      "narrative_focus": "cause_or_consequence",
+      "narrative_significance": "supporting",
+      "narrative_eligible": true,
+      "disposition": "keep",
+      "rationale": "Identifying Carlo connects Connie’s abuse to Sonny’s fatal reaction and the later reckoning.",
+      "replacement_brief": null,
+      "evidence": {
+        "explanation": "Sonny discovers that Connie was being abused by Carlo.",
+        "citations": [
+          {
+            "source_label": "English Wikipedia contributors: The Godfather",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379290889",
+            "revision": "enwiki-1379290889-sections-v3-body",
+            "excerpt": "Sonny discovers that Connie was being abused by Carlo."
+          }
+        ]
+      }
+    },
+    {
+      "movie_id": 238,
+      "title": "The Godfather",
+      "question_id": "research-b2fb98bba6e1-t29-Q1",
+      "question": "What object is found in Jack Woltz's bed after he refuses to help Johnny Fontane?",
+      "answer": "A severed horse head",
+      "surface_flags": [
+        "isolated_object"
+      ],
+      "narrative_focus": "turning_point",
+      "narrative_significance": "supporting",
+      "narrative_eligible": true,
+      "disposition": "keep",
+      "rationale": "The horse head is the consequence that demonstrates the Corleones’ coercive power and advances the Fontane plot.",
+      "replacement_brief": null,
+      "evidence": {
+        "explanation": "Hagen departs and the next morning, Woltz wakes to find the severed head of his prized $600,000 racehorse Khartoum in his bed with him.",
+        "citations": [
+          {
+            "source_label": "English Wikipedia contributors: The Godfather",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379290889",
+            "revision": "enwiki-1379290889-sections-v3-body",
+            "excerpt": "Hagen departs and the next morning, Woltz wakes to find the severed head of his prized $600,000 racehorse Khartoum in his bed with him."
+          }
+        ]
+      }
+    },
+    {
+      "movie_id": 278,
+      "title": "The Shawshank Redemption",
+      "question_id": "research-4630dcebf37c-t5-Q1",
+      "question": "How many years does the protagonist spend behind prison walls?",
+      "answer": "19 years",
+      "surface_flags": [
+        "exact_count_or_duration"
+      ],
+      "narrative_focus": "granular_recall",
+      "narrative_significance": "granular",
+      "narrative_eligible": false,
+      "disposition": "replace",
+      "rationale": "The current wording tests an isolated exact count or duration rather than why the detail matters to the story.",
+      "replacement_brief": "Replace with an objective question about how Andy sustains hope or prepares for escape during imprisonment; omit the year count.",
+      "evidence": {
+        "explanation": "The 19 years that the film's protagonist spends behind prison walls is a term shared by the audience.",
+        "citations": [
+          {
+            "source_label": "variety.com · The Shawshank Redemption The Shawshank Redemption Film Review: ‘The Shawshank Redemption’",
+            "source_ref": "https://variety.com/1994/film/reviews/the-shawshank-redemption-1200438677/",
+            "revision": "web-a5a3ddd3c2fb249b3850b0fd2e0e9ed3b5f5cffd8d1ef26ab619d0b9e701b680",
+            "excerpt": "The 19 years that the film's protagonist spends behind prison walls is a term shared by the audience."
+          }
+        ]
+      }
+    },
+    {
+      "movie_id": 278,
+      "title": "The Shawshank Redemption",
+      "question_id": "research-4630dcebf37c-t15-Q3",
+      "question": "Where do Andy and Red reunite at the end of the film?",
+      "answer": "A beach",
+      "surface_flags": [
+        "isolated_location"
+      ],
+      "narrative_focus": "ending_or_resolution",
+      "narrative_significance": "central",
+      "narrative_eligible": true,
+      "disposition": "keep",
+      "rationale": "Andy and Red’s reunion on the beach is the film’s central resolution.",
+      "replacement_brief": null,
+      "evidence": {
+        "explanation": "He finds Andy on a beach, and the reunited friends happily embrace.",
+        "citations": [
+          {
+            "source_label": "English Wikipedia contributors: The Shawshank Redemption",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1378966502",
+            "revision": "enwiki-1378966502-sections-v3-body",
+            "excerpt": "He finds Andy on a beach, and the reunited friends happily embrace."
+          }
+        ]
+      }
+    },
+    {
+      "movie_id": 278,
+      "title": "The Shawshank Redemption",
+      "question_id": "research-4630dcebf37c-t29-Q2",
+      "question": "What item does Andy take with him when he escapes through the sewage pipe?",
+      "answer": "Norton's suit and shoes",
+      "surface_flags": [
+        "isolated_object"
+      ],
+      "narrative_focus": "granular_recall",
+      "narrative_significance": "granular",
+      "narrative_eligible": false,
+      "disposition": "replace",
+      "rationale": "The current wording tests an isolated isolated object rather than why the detail matters to the story.",
+      "replacement_brief": "Replace with what evidence Andy carries out of Shawshank and how it exposes Norton’s corruption; focus on the ledger, not clothing.",
+      "evidence": {
+        "explanation": "The previous night, Andy escaped through the tunnel and prison sewage pipe, taking with him Norton's suit, shoes, and the ledger containing evidence of the corruption at Shawshank.",
+        "citations": [
+          {
+            "source_label": "English Wikipedia contributors: The Shawshank Redemption",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1378966502",
+            "revision": "enwiki-1378966502-sections-v3-body",
+            "excerpt": "The previous night, Andy escaped through the tunnel and prison sewage pipe, taking with him Norton's suit, shoes, and the ledger containing evidence of the corruption at Shawshank."
+          }
+        ]
+      }
+    },
+    {
+      "movie_id": 550,
+      "title": "Fight Club",
+      "question_id": "research-e783e7f83fe0-t1-Q1",
+      "question": "Where do the members of Fight Club first gather to reclaim control of their lives?",
+      "answer": "At Tyler's large and decrepit house",
+      "surface_flags": [
+        "isolated_location"
+      ],
+      "narrative_focus": "granular_recall",
+      "narrative_significance": "granular",
+      "narrative_eligible": false,
+      "disposition": "replace",
+      "rationale": "The current wording tests an isolated isolated location rather than why the detail matters to the story.",
+      "replacement_brief": "Replace with the stated purpose of the first Fight Club: helping the men reclaim a sense of control.",
+      "evidence": {
+        "explanation": "At Tyler's large and decrepit house, they start an underground \"Fight Club\" at the bar, as a way for men to reclaim control of their lives.",
+        "citations": [
+          {
+            "source_label": "English Wikipedia contributors: Fight Club",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379571496",
+            "revision": "enwiki-1379571496-sections-v3-body",
+            "excerpt": "At Tyler's large and decrepit house, they start an underground \"Fight Club\" at the bar, as a way for men to reclaim control of their lives."
+          }
+        ]
+      }
+    },
+    {
+      "movie_id": 550,
+      "title": "Fight Club",
+      "question_id": "research-e783e7f83fe0-t11-Q3",
+      "question": "Where do underground fight clubs form as the concept catches on?",
+      "answer": "In every town",
+      "surface_flags": [
+        "isolated_location"
+      ],
+      "narrative_focus": "cause_or_consequence",
+      "narrative_significance": "supporting",
+      "narrative_eligible": true,
+      "disposition": "keep",
+      "rationale": "The spread to every town shows the club escalating into a movement beyond the Narrator’s control.",
+      "replacement_brief": null,
+      "evidence": {
+        "explanation": "Their concept catches on, with underground \"fight clubs\" forming in every town, until an eccentric gets in the way and ignites an out-of-control spiral toward oblivion.",
+        "citations": [
+          {
+            "source_label": "The Movie Database (TMDB) · Fight Club",
+            "source_ref": "https://www.themoviedb.org/movie/550",
+            "revision": "tmdb-details-8d33e1a03240560f7f224778045491fdb685a1c5738dd1cf7fa144aff348e8dc-v1",
+            "excerpt": "Their concept catches on, with underground \"fight clubs\" forming in every town, until an eccentric gets in the way and ignites an out-of-control spiral toward oblivion."
+          }
+        ]
+      }
+    },
+    {
+      "movie_id": 550,
+      "title": "Fight Club",
+      "question_id": "research-e783e7f83fe0-t24-Q2",
+      "question": "Who is the new member of Fight Club that also attends a cancer support group?",
+      "answer": "Robert \"Bob\" Paulsen",
+      "surface_flags": [
+        "isolated_name"
+      ],
+      "narrative_focus": "granular_recall",
+      "narrative_significance": "granular",
+      "narrative_eligible": false,
+      "disposition": "replace",
+      "rationale": "The current wording tests an isolated isolated name rather than why the detail matters to the story.",
+      "replacement_brief": "Replace with how Bob links the Narrator’s support-group life to Fight Club, rather than asking for his name.",
+      "evidence": {
+        "explanation": "He attracts new members, including his cancer support group friend, Robert \"Bob\" Paulsen.",
+        "citations": [
+          {
+            "source_label": "English Wikipedia contributors: Fight Club",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379571496",
+            "revision": "enwiki-1379571496-sections-v3-body",
+            "excerpt": "He attracts new members, including his cancer support group friend, Robert \"Bob\" Paulsen."
+          }
+        ]
+      }
+    },
+    {
+      "movie_id": 603,
+      "title": "The Matrix",
+      "question_id": "pill-choice",
+      "question": "Which pill does Neo take to uncover the truth about the Matrix?",
+      "answer": "The red pill",
+      "surface_flags": [
+        "isolated_object"
+      ],
+      "narrative_focus": "choice_or_motivation",
+      "narrative_significance": "central",
+      "narrative_eligible": true,
+      "disposition": "keep",
+      "rationale": "The red pill is Neo’s defining choice to learn the truth, not an incidental object.",
+      "replacement_brief": null,
+      "evidence": {
+        "explanation": "Neo chooses the red pill and awakens outside the simulation.",
+        "citations": [
+          {
+            "source_label": "English Wikipedia contributors: The Matrix",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379344781",
+            "revision": "enwiki-1379344781-sections-v3-body",
+            "excerpt": "Neo takes the red pill and awakens in the real world, submerged in a mechanical pod and connected to invasive cables."
+          }
+        ]
+      }
+    },
+    {
+      "movie_id": 603,
+      "title": "The Matrix",
+      "question_id": "rescue-ship",
+      "question": "What is the name of Morpheus’s hovercraft?",
+      "answer": "Nebuchadnezzar",
+      "surface_flags": [
+        "isolated_name"
+      ],
+      "narrative_focus": "granular_recall",
+      "narrative_significance": "granular",
+      "narrative_eligible": false,
+      "disposition": "replace",
+      "rationale": "The current wording tests an isolated isolated name rather than why the detail matters to the story.",
+      "replacement_brief": "Replace with the Nebuchadnezzar’s narrative role in rescuing Neo and housing Morpheus’s crew.",
+      "evidence": {
+        "explanation": "Morpheus rescues Neo aboard the Nebuchadnezzar.",
+        "citations": [
+          {
+            "source_label": "English Wikipedia contributors: The Matrix",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379344781",
+            "revision": "enwiki-1379344781-sections-v3-body",
+            "excerpt": "He sees countless humans similarly encased and tended by machines before he is ejected from the building and rescued by Morpheus aboard the hovercraft Nebuchadnezzar."
+          }
+        ]
+      }
+    },
+    {
+      "movie_id": 603,
+      "title": "The Matrix",
+      "question_id": "human-refuge",
+      "question": "Where have the remaining free humans established their refuge?",
+      "answer": "Zion",
+      "surface_flags": [
+        "isolated_location"
+      ],
+      "narrative_focus": "story_rule",
+      "narrative_significance": "supporting",
+      "narrative_eligible": true,
+      "disposition": "keep",
+      "rationale": "Zion establishes where free humans survive outside the Matrix and is central to the story world.",
+      "replacement_brief": null,
+      "evidence": {
+        "explanation": "Zion is the underground refuge of the remaining free humans.",
+        "citations": [
+          {
+            "source_label": "English Wikipedia contributors: The Matrix",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379344781",
+            "revision": "enwiki-1379344781-sections-v3-body",
+            "excerpt": "The remaining free humans founded an underground refuge called Zion, surviving on scarce resources."
+          }
+        ]
+      }
+    },
+    {
+      "movie_id": 680,
+      "title": "Pulp Fiction",
+      "question_id": "research-86a3da84985e-t1-Q1",
+      "question": "Who visits the young Butch Coolidge in his apartment?",
+      "answer": "Captain Koons",
+      "surface_flags": [
+        "isolated_name"
+      ],
+      "narrative_focus": "granular_recall",
+      "narrative_significance": "granular",
+      "narrative_eligible": false,
+      "disposition": "replace",
+      "rationale": "The current wording tests an isolated isolated name rather than why the detail matters to the story.",
+      "replacement_brief": "Replace with why Koons visits Butch: to return and explain the family watch.",
+      "evidence": {
+        "explanation": "A young Butch Coolidge is visited by Captain Koons, an Air Force pilot.",
+        "citations": [
+          {
+            "source_label": "English Wikipedia contributors: Pulp Fiction",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379946852",
+            "revision": "enwiki-1379946852-sections-v3-body",
+            "excerpt": "A young Butch Coolidge is visited by Captain Koons, an Air Force pilot."
+          }
+        ]
+      }
+    },
+    {
+      "movie_id": 680,
+      "title": "Pulp Fiction",
+      "question_id": "research-86a3da84985e-t1-Q2",
+      "question": "What object does Captain Koons reveal to Butch as a family heirloom?",
+      "answer": "A gold watch",
+      "surface_flags": [
+        "isolated_object"
+      ],
+      "narrative_focus": "turning_point",
+      "narrative_significance": "supporting",
+      "narrative_eligible": true,
+      "disposition": "keep",
+      "rationale": "The inherited watch drives Butch’s choices and the consequences of returning for it.",
+      "replacement_brief": null,
+      "evidence": {
+        "explanation": "Koons reveals a gold watch to Butch and explains that the watch is a family heirloom and belonged to Butch's father, who served with Koons and died in a POW camp in the Vietnam War.",
+        "citations": [
+          {
+            "source_label": "English Wikipedia contributors: Pulp Fiction",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379946852",
+            "revision": "enwiki-1379946852-sections-v3-body",
+            "excerpt": "Koons reveals a gold watch to Butch and explains that the watch is a family heirloom and belonged to Butch's father, who served with Koons and died in a POW camp in the Vietnam War."
+          }
+        ]
+      }
+    },
+    {
+      "movie_id": 1124,
+      "title": "The Prestige",
+      "question_id": "research-6bd2d9de6c13-t1-Q1",
+      "question": "In which city does the story of Robert Angier and Alfred Borden take place?",
+      "answer": "London",
+      "surface_flags": [
+        "isolated_location"
+      ],
+      "narrative_focus": "granular_recall",
+      "narrative_significance": "granular",
+      "narrative_eligible": false,
+      "disposition": "replace",
+      "rationale": "The current wording tests an isolated isolated location rather than why the detail matters to the story.",
+      "replacement_brief": "Replace with the rivalry between Angier and Borden that drives the story; London alone is incidental.",
+      "evidence": {
+        "explanation": "In 1890s London, Robert Angier, Alfred Borden, and Angier's wife, Julia, work as magician's assistants under the mentorship of John Cutter.",
+        "citations": [
+          {
+            "source_label": "English Wikipedia contributors: The Prestige",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379159123",
+            "revision": "enwiki-1379159123-sections-v3-body",
+            "excerpt": "In 1890s London, Robert Angier, Alfred Borden, and Angier's wife, Julia, work as magician's assistants under the mentorship of John Cutter."
+          }
+        ]
+      }
+    },
+    {
+      "movie_id": 1124,
+      "title": "The Prestige",
+      "question_id": "research-6bd2d9de6c13-t10-Q1",
+      "question": "What is the name of Alfred Borden's daughter?",
+      "answer": "Jess",
+      "surface_flags": [
+        "isolated_name"
+      ],
+      "narrative_focus": "granular_recall",
+      "narrative_significance": "granular",
+      "narrative_eligible": false,
+      "disposition": "replace",
+      "rationale": "The current wording tests an isolated isolated name rather than why the detail matters to the story.",
+      "replacement_brief": "Replace from broader plot evidence with how Borden’s double life affects Sarah and Jess.",
+      "evidence": {
+        "explanation": "Borden, a gifted inventor of illusions, marries a woman named Sarah, with whom he has a daughter named Jess, and hires an enigmatic assistant, Fallon.",
+        "citations": [
+          {
+            "source_label": "English Wikipedia contributors: The Prestige",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379159123",
+            "revision": "enwiki-1379159123-sections-v3-body",
+            "excerpt": "Borden, a gifted inventor of illusions, marries a woman named Sarah, with whom he has a daughter named Jess, and hires an enigmatic assistant, Fallon."
+          }
+        ]
+      }
+    },
+    {
+      "movie_id": 1124,
+      "title": "The Prestige",
+      "question_id": "research-6bd2d9de6c13-t10-Q3",
+      "question": "What object does Angier's death knock over, causing the theater to burn?",
+      "answer": "A kerosene lamp",
+      "surface_flags": [
+        "isolated_object"
+      ],
+      "narrative_focus": "cause_or_consequence",
+      "narrative_significance": "supporting",
+      "narrative_eligible": true,
+      "disposition": "keep",
+      "rationale": "The lamp directly causes the fire that exposes Angier’s duplicate-filled tanks at the ending.",
+      "replacement_brief": null,
+      "evidence": {
+        "explanation": "Angier's death knocks over a kerosene lamp that sends his theater up in flames, revealing rows of water tanks holding the corpses of his many duplicates.",
+        "citations": [
+          {
+            "source_label": "English Wikipedia contributors: The Prestige",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379159123",
+            "revision": "enwiki-1379159123-sections-v3-body",
+            "excerpt": "Angier's death knocks over a kerosene lamp that sends his theater up in flames, revealing rows of water tanks holding the corpses of his many duplicates."
+          }
+        ]
+      }
+    },
+    {
+      "movie_id": 1124,
+      "title": "The Prestige",
+      "question_id": "research-6bd2d9de6c13-t17-Q2",
+      "question": "How many fingers does Alfred Borden lose after being shot by Robert Angier during a pistol trick?",
+      "answer": "Two",
+      "surface_flags": [
+        "exact_count_or_duration"
+      ],
+      "narrative_focus": "granular_recall",
+      "narrative_significance": "granular",
+      "narrative_eligible": false,
+      "disposition": "replace",
+      "rationale": "The current wording tests an isolated exact count or duration rather than why the detail matters to the story.",
+      "replacement_brief": "Replace with the consequence of Angier shooting Borden during the pistol trick; omit the exact finger count.",
+      "evidence": {
+        "explanation": "Borden loses two fingers after being shot by Angier during a pistol trick, and Borden violently thwarts Angier's bird act in front of a live audience, harming an attendee.",
+        "citations": [
+          {
+            "source_label": "English Wikipedia contributors: The Prestige",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379159123",
+            "revision": "enwiki-1379159123-sections-v3-body",
+            "excerpt": "Borden loses two fingers after being shot by Angier during a pistol trick, and Borden violently thwarts Angier's bird act in front of a live audience, harming an attendee."
+          }
+        ]
+      }
+    },
+    {
+      "movie_id": 8587,
+      "title": "The Lion King",
+      "question_id": "research-b4c4933bed48-t1-Q2",
+      "question": "Who is the mandrill that acts as the kingdom's shaman and advisor during Simba's birth presentation?",
+      "answer": "Rafiki",
+      "surface_flags": [
+        "isolated_name"
+      ],
+      "narrative_focus": "granular_recall",
+      "narrative_significance": "granular",
+      "narrative_eligible": false,
+      "disposition": "replace",
+      "rationale": "The current wording tests an isolated isolated name rather than why the detail matters to the story.",
+      "replacement_brief": "Replace with Rafiki’s role as shaman and adviser during Simba’s presentation, rather than simple name recall.",
+      "evidence": {
+        "explanation": "King Mufasa and Queen Sarabi's newborn son, Simba, is presented to the gathered animals by Rafiki, the mandrill who is the kingdom's shaman and advisor.",
+        "citations": [
+          {
+            "source_label": "English Wikipedia contributors: The Lion King",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1377606597",
+            "revision": "enwiki-1377606597-sections-v3-body",
+            "excerpt": "King Mufasa and Queen Sarabi's newborn son, Simba, is presented to the gathered animals by Rafiki, the mandrill who is the kingdom's shaman and advisor."
+          }
+        ]
+      }
+    },
+    {
+      "movie_id": 8587,
+      "title": "The Lion King",
+      "question_id": "research-b4c4933bed48-t11-Q3",
+      "question": "What is the name of the land where Simba is eager to one day become king?",
+      "answer": "Pride Lands",
+      "surface_flags": [
+        "isolated_name"
+      ],
+      "narrative_focus": "granular_recall",
+      "narrative_significance": "granular",
+      "narrative_eligible": false,
+      "disposition": "replace",
+      "rationale": "The current wording tests an isolated isolated name rather than why the detail matters to the story.",
+      "replacement_brief": "Replace with the conflict threatening Simba’s future rule: Scar’s plan to take the throne.",
+      "evidence": {
+        "explanation": "Young lion prince Simba, eager to one day become king of the Pride Lands, grows up under the watchful eye of his father Mufasa; all the while his villainous uncle Scar conspires to take the throne for himself.",
+        "citations": [
+          {
+            "source_label": "The Movie Database (TMDB) · The Lion King",
+            "source_ref": "https://www.themoviedb.org/movie/8587",
+            "revision": "tmdb-details-6aa51d8fac49961c274a1200ed5bbaed2454b70aea16a9a788fe1a18d09a4ea0-v1",
+            "excerpt": "Young lion prince Simba, eager to one day become king of the Pride Lands, grows up under the watchful eye of his father Mufasa; all the while his villainous uncle Scar conspires to take the throne for himself."
+          }
+        ]
+      }
+    },
+    {
+      "movie_id": 8587,
+      "title": "The Lion King",
+      "question_id": "research-b4c4933bed48-t13-Q3",
+      "question": "Where does Simba collapse before being rescued by Timon and Pumbaa?",
+      "answer": "In a desert",
+      "surface_flags": [
+        "isolated_location"
+      ],
+      "narrative_focus": "granular_recall",
+      "narrative_significance": "granular",
+      "narrative_eligible": false,
+      "disposition": "replace",
+      "rationale": "The current wording tests an isolated isolated location rather than why the detail matters to the story.",
+      "replacement_brief": "Replace with the consequence of Simba’s collapse: Timon and Pumbaa rescue him and begin a new phase of his life.",
+      "evidence": {
+        "explanation": "Simba collapses in a desert but is rescued by two outcasts, a meerkat and a warthog named Timon and Pumbaa.",
+        "citations": [
+          {
+            "source_label": "English Wikipedia contributors: The Lion King",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1377606597",
+            "revision": "enwiki-1377606597-sections-v3-body",
+            "excerpt": "Simba collapses in a desert but is rescued by two outcasts, a meerkat and a warthog named Timon and Pumbaa."
+          }
+        ]
+      }
+    },
+    {
+      "movie_id": 10681,
+      "title": "WALL·E",
+      "question_id": "research-a7b58936b8bc-t1-Q2",
+      "question": "Which robot is responsible for stowing the plant in a self-destructing pod?",
+      "answer": "GO-4",
+      "surface_flags": [
+        "isolated_object"
+      ],
+      "narrative_focus": "cause_or_consequence",
+      "narrative_significance": "supporting",
+      "narrative_eligible": true,
+      "disposition": "keep",
+      "rationale": "GO-4 hiding the plant is a consequential act that proves WALL·E’s innocence and advances the return-to-Earth conflict.",
+      "replacement_brief": null,
+      "evidence": {
+        "explanation": "Frustrated with WALL-E's reckless actions, EVE tries sending WALL-E home in an escape pod, but as WALL-E refuses, the two witness McCrea's first mate robot, GO-4, stowing the plant in a pod set to self-destruct, proving WALL-E's innocence.",
+        "citations": [
+          {
+            "source_label": "English Wikipedia contributors: WALL-E",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379756687",
+            "revision": "enwiki-1379756687-sections-v3-body",
+            "excerpt": "Frustrated with WALL-E's reckless actions, EVE tries sending WALL-E home in an escape pod, but as WALL-E refuses, the two witness McCrea's first mate robot, GO-4, stowing the plant in a pod set to self-destruct, proving WALL-E's innocence."
+          }
+        ]
+      }
+    },
+    {
+      "movie_id": 10681,
+      "title": "WALL·E",
+      "question_id": "research-a7b58936b8bc-t4-Q3",
+      "question": "What object does WALL-E show EVE that represents hope for the planet's future?",
+      "answer": "A little green plant",
+      "surface_flags": [
+        "isolated_object"
+      ],
+      "narrative_focus": "theme_or_concept",
+      "narrative_significance": "central",
+      "narrative_eligible": true,
+      "disposition": "keep",
+      "rationale": "The plant is the central evidence that Earth can recover and the mission can return home.",
+      "replacement_brief": null,
+      "evidence": {
+        "explanation": "WALL-E even shows her his little green plant.",
+        "citations": [
+          {
+            "source_label": "www.hollywoodreporter.com · 'Wall-E' Review: 2008 Movie ‘WALL-E’: THR’s 2008 Review",
+            "source_ref": "https://www.hollywoodreporter.com/movies/movie-news/wall-e-review-2008-movie-1016979/",
+            "revision": "web-1ba388bfaa7b30b9ac615a7b7729c58ae71d90444e8544be65eceffa1b2bf73a",
+            "excerpt": "WALL-E even shows her his little green plant."
+          }
+        ]
+      }
+    },
+    {
+      "movie_id": 10681,
+      "title": "WALL·E",
+      "question_id": "research-a7b58936b8bc-t10-Q3",
+      "question": "Where do WALL-E and EVE reconcile after catching up to each other?",
+      "answer": "In space around the Axiom",
+      "surface_flags": [
+        "isolated_location"
+      ],
+      "narrative_focus": "granular_recall",
+      "narrative_significance": "granular",
+      "narrative_eligible": false,
+      "disposition": "replace",
+      "rationale": "The current wording tests an isolated isolated location rather than why the detail matters to the story.",
+      "replacement_brief": "Replace from broader evidence with what WALL·E and EVE’s reconciliation changes in their joint effort to protect the plant.",
+      "evidence": {
+        "explanation": "EVE catches up to him and they reconcile, dancing in space around the Axiom.",
+        "citations": [
+          {
+            "source_label": "English Wikipedia contributors: WALL-E",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379756687",
+            "revision": "enwiki-1379756687-sections-v3-body",
+            "excerpt": "EVE catches up to him and they reconcile, dancing in space around the Axiom."
+          }
+        ]
+      }
+    },
+    {
+      "movie_id": 27205,
+      "title": "Inception",
+      "question_id": "second-level",
+      "question": "Where is Arthur’s second-level dream set?",
+      "answer": "A hotel",
+      "surface_flags": [
+        "isolated_location"
+      ],
+      "narrative_focus": "story_rule",
+      "narrative_significance": "supporting",
+      "narrative_eligible": true,
+      "disposition": "keep",
+      "rationale": "The hotel identifies one level of the coordinated nested-dream plan, so it supports understanding the story structure.",
+      "replacement_brief": null,
+      "evidence": {
+        "explanation": "The second level is a hotel dreamed by Arthur.",
+        "citations": [
+          {
+            "source_label": "English Wikipedia contributors: Inception",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379453144",
+            "revision": "enwiki-1379453144-sections-v3-body",
+            "excerpt": "Yusuf drives the team around the first level as they are sedated into the second level, a hotel dreamed by Arthur."
+          }
+        ]
+      }
+    },
+    {
+      "movie_id": 27205,
+      "title": "Inception",
+      "question_id": "script-rag-74e285b37039",
+      "question": "How many years did Cobb and Mal experience in Limbo during their experiment?",
+      "answer": "fifty years",
+      "surface_flags": [
+        "exact_count_or_duration"
+      ],
+      "narrative_focus": "granular_recall",
+      "narrative_significance": "granular",
+      "narrative_eligible": false,
+      "disposition": "replace",
+      "rationale": "The current wording tests an isolated exact count or duration rather than why the detail matters to the story.",
+      "replacement_brief": "Replace with the lasting consequence of Limbo: Mal continues to believe reality is a dream; omit the exact duration.",
+      "evidence": {
+        "explanation": "Cobb explains to Ariadne that he and Mal entered Limbo while experimenting with dream-sharing, experiencing fifty years in one night.",
+        "citations": [
+          {
+            "source_label": "English Wikipedia contributors: Inception",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379453144",
+            "revision": "enwiki-1379453144-sections-v3-body",
+            "excerpt": "Cobb explains to Ariadne that he and Mal entered Limbo while experimenting with dream-sharing, experiencing fifty years in one night."
+          }
+        ]
+      }
+    },
+    {
+      "movie_id": 27205,
+      "title": "Inception",
+      "question_id": "research-09ee095c837e-t1-Q2",
+      "question": "What is the name of the impossible task offered to Cobb as payment for regaining his old life?",
+      "answer": "Inception",
+      "surface_flags": [
+        "isolated_name"
+      ],
+      "narrative_focus": "theme_or_concept",
+      "narrative_significance": "central",
+      "narrative_eligible": true,
+      "disposition": "keep",
+      "rationale": "Inception is the central task and concept that drives the entire plot.",
+      "replacement_brief": null,
+      "evidence": {
+        "explanation": "Cobb, a skilled thief who commits corporate espionage by infiltrating the subconscious of his targets is offered a chance to regain his old life as payment for a task considered to be impossible: \"inception\", the implantation of another person's idea into a target's subconscious.",
+        "citations": [
+          {
+            "source_label": "The Movie Database (TMDB) · Inception",
+            "source_ref": "https://www.themoviedb.org/movie/27205",
+            "revision": "tmdb-details-663333bb090ad242f5b9201242e68ea53ceb28bf33e31c4e31c07279a5f23c9b-v1",
+            "excerpt": "Cobb, a skilled thief who commits corporate espionage by infiltrating the subconscious of his targets is offered a chance to regain his old life as payment for a task considered to be impossible: \"inception\", the implantation of another person's idea into a target's subconscious."
+          }
+        ]
+      }
+    },
+    {
+      "movie_id": 76341,
+      "title": "Mad Max: Fury Road",
+      "question_id": "research-600f039b5e2b-t1-Q2",
+      "question": "What object does Nux sacrifice himself by wrecking to block the canyon behind them?",
+      "answer": "The Rig",
+      "surface_flags": [
+        "isolated_object"
+      ],
+      "narrative_focus": "granular_recall",
+      "narrative_significance": "granular",
+      "narrative_eligible": false,
+      "disposition": "replace",
+      "rationale": "The current wording tests an isolated isolated object rather than why the detail matters to the story.",
+      "replacement_brief": "Replace with how Nux’s sacrifice helps the group escape: he blocks the canyon behind them.",
+      "evidence": {
+        "explanation": "The remnants of the group drive Joe's truck back to the Citadel, while Nux sacrifices himself by wrecking the Rig to block the canyon behind them, killing Rictus.",
+        "citations": [
+          {
+            "source_label": "English Wikipedia contributors: Mad Max: Fury Road",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379735077",
+            "revision": "enwiki-1379735077-sections-v3-body",
+            "excerpt": "The remnants of the group drive Joe's truck back to the Citadel, while Nux sacrifices himself by wrecking the Rig to block the canyon behind them, killing Rictus."
+          }
+        ]
+      }
+    },
+    {
+      "movie_id": 76341,
+      "title": "Mad Max: Fury Road",
+      "question_id": "research-600f039b5e2b-t6-Q2",
+      "question": "How many Vuvalini are killed during the battle with Joe's forces?",
+      "answer": "Five",
+      "surface_flags": [
+        "exact_count_or_duration"
+      ],
+      "narrative_focus": "granular_recall",
+      "narrative_significance": "granular",
+      "narrative_eligible": false,
+      "disposition": "replace",
+      "rationale": "The current wording tests an isolated exact count or duration rather than why the detail matters to the story.",
+      "replacement_brief": "Replace with the major consequences of Joe’s attack: Vuvalini deaths, Toast’s capture, and Furiosa’s injury; omit the count.",
+      "evidence": {
+        "explanation": "Joe intercepts them, and in the ensuing battle, five Vuvalini are killed, Toast is captured, and Furiosa is severely wounded.",
+        "citations": [
+          {
+            "source_label": "English Wikipedia contributors: Mad Max: Fury Road",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379735077",
+            "revision": "enwiki-1379735077-sections-v3-body",
+            "excerpt": "Joe intercepts them, and in the ensuing battle, five Vuvalini are killed, Toast is captured, and Furiosa is severely wounded."
+          }
+        ]
+      }
+    },
+    {
+      "movie_id": 76341,
+      "title": "Mad Max: Fury Road",
+      "question_id": "research-600f039b5e2b-t8-Q1",
+      "question": "What vehicle does Joe overtake as the group approaches the canyon?",
+      "answer": "The Rig",
+      "surface_flags": [
+        "isolated_object"
+      ],
+      "narrative_focus": "granular_recall",
+      "narrative_significance": "granular",
+      "narrative_eligible": false,
+      "disposition": "replace",
+      "rationale": "The current wording tests an isolated isolated object rather than why the detail matters to the story.",
+      "replacement_brief": "Replace from broader evidence with how Joe overtaking the Rig changes the chase or threatens the escape.",
+      "evidence": {
+        "explanation": "Joe overtakes the Rig as they approach the canyon.",
+        "citations": [
+          {
+            "source_label": "English Wikipedia contributors: Mad Max: Fury Road",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379735077",
+            "revision": "enwiki-1379735077-sections-v3-body",
+            "excerpt": "Joe overtakes the Rig as they approach the canyon."
+          }
+        ]
+      }
+    },
+    {
+      "movie_id": 76341,
+      "title": "Mad Max: Fury Road",
+      "question_id": "research-600f039b5e2b-t27-Q1",
+      "question": "How many Vuvalini remain after the revelation that the Green Place is uninhabitable?",
+      "answer": "Seven",
+      "surface_flags": [
+        "exact_count_or_duration"
+      ],
+      "narrative_focus": "granular_recall",
+      "narrative_significance": "granular",
+      "narrative_eligible": false,
+      "disposition": "replace",
+      "rationale": "The current wording tests an isolated exact count or duration rather than why the detail matters to the story.",
+      "replacement_brief": "Replace with Furiosa’s devastating discovery that the Green Place is gone and only a small group remains; omit the count.",
+      "evidence": {
+        "explanation": "The Vuvalini recognise Furiosa as one of their own but inform a devastated Furiosa that the Green Place was the now-uninhabitable swamp from the previous night and that only seven Vuvalini are left.",
+        "citations": [
+          {
+            "source_label": "English Wikipedia contributors: Mad Max: Fury Road",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379735077",
+            "revision": "enwiki-1379735077-sections-v3-body",
+            "excerpt": "The Vuvalini recognise Furiosa as one of their own but inform a devastated Furiosa that the Green Place was the now-uninhabitable swamp from the previous night and that only seven Vuvalini are left."
+          }
+        ]
+      }
+    },
+    {
+      "movie_id": 120467,
+      "title": "The Grand Budapest Hotel",
+      "question_id": "famous-bequest",
+      "question": "Which painting does Madame D. leave to Gustave?",
+      "answer": "Boy with Apple",
+      "surface_flags": [
+        "isolated_object"
+      ],
+      "narrative_focus": "turning_point",
+      "narrative_significance": "supporting",
+      "narrative_eligible": true,
+      "disposition": "keep",
+      "rationale": "Boy with Apple is the contested bequest that triggers the theft, pursuit, and inheritance conflict.",
+      "replacement_brief": null,
+      "evidence": {
+        "explanation": "Madame D.’s will leaves Gustave the Renaissance painting Boy with Apple.",
+        "citations": [
+          {
+            "source_label": "English Wikipedia contributors: The Grand Budapest Hotel",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379203663",
+            "revision": "enwiki-1379203663-sections-v3-body",
+            "excerpt": "Kovacs announces that she has bequeathed a famous Renaissance painting, Boy with Apple, to Gustave."
+          }
+        ]
+      }
+    },
+    {
+      "movie_id": 120467,
+      "title": "The Grand Budapest Hotel",
+      "question_id": "second-will",
+      "question": "Where is Madame D.’s missing second will found?",
+      "answer": "On the back of Boy with Apple",
+      "surface_flags": [
+        "isolated_location"
+      ],
+      "narrative_focus": "ending_or_resolution",
+      "narrative_significance": "central",
+      "narrative_eligible": true,
+      "disposition": "keep",
+      "rationale": "Finding the second will on the painting resolves the inheritance conflict and changes Zero’s future.",
+      "replacement_brief": null,
+      "evidence": {
+        "explanation": "The second will is attached to the back of the painting, making Gustave the beneficiary.",
+        "citations": [
+          {
+            "source_label": "English Wikipedia contributors: The Grand Budapest Hotel",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379203663",
+            "revision": "enwiki-1379203663-sections-v3-body",
+            "excerpt": "Madame's second will, which makes Gustave the beneficiary of her fortune, is found attached to the back of Boy with Apple."
+          }
+        ]
+      }
+    },
+    {
+      "movie_id": 120467,
+      "title": "The Grand Budapest Hotel",
+      "question_id": "research-a342008a26db-t1-Q2",
+      "question": "What object is stolen and later recovered by Gustave?",
+      "answer": "A priceless Renaissance painting",
+      "surface_flags": [
+        "isolated_object"
+      ],
+      "narrative_focus": "turning_point",
+      "narrative_significance": "supporting",
+      "narrative_eligible": true,
+      "disposition": "replace",
+      "rationale": "The painting is narratively important, but this item duplicates the stronger reviewed Boy with Apple question in the same bank.",
+      "replacement_brief": "Replace because it duplicates the stronger Boy with Apple bequest question; use another central choice or consequence from the film.",
+      "evidence": {
+        "explanation": "The story involves the theft and recovery of a priceless Renaissance painting, the battle for an enormous family fortune and the slow and then sudden upheavals that transformed Europe during the first half of the 20th century.",
+        "citations": [
+          {
+            "source_label": "The Movie Database (TMDB) · The Grand Budapest Hotel",
+            "source_ref": "https://www.themoviedb.org/movie/120467",
+            "revision": "tmdb-details-e672c1cd95903a9e81b2fa3db4f56b0007fa5cfdea5d67c48ae49b7f9978dcd7-v1",
+            "excerpt": "The story involves the theft and recovery of a priceless Renaissance painting, the battle for an enormous family fortune and the slow and then sudden upheavals that transformed Europe during the first half of the 20th century."
+          }
+        ]
+      }
+    },
+    {
+      "movie_id": 157336,
+      "title": "Interstellar",
+      "question_id": "dust-coordinates",
+      "question": "Where do the dust patterns in Murph's room lead Cooper and Murph in Interstellar?",
+      "answer": "A secret NASA facility",
+      "surface_flags": [
+        "isolated_location"
+      ],
+      "narrative_focus": "turning_point",
+      "narrative_significance": "central",
+      "narrative_eligible": true,
+      "disposition": "keep",
+      "rationale": "The coordinates lead Cooper to NASA and launch the central mission.",
+      "replacement_brief": null,
+      "evidence": {
+        "explanation": "Cooper reads the dust patterns as binary coordinates. They lead him and Murph to a secret NASA facility headed by Professor Brand.",
+        "citations": [
+          {
+            "source_label": "English Wikipedia contributors: Interstellar (film)",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379200125",
+            "revision": "enwiki-1379200125-plaintext-v1",
+            "excerpt": "wed former NASA test pilot, works as a farmer and raises his children, Murphy \"Murph\" and Tom, with his father-in-law Donald. Following a dust storm, Cooper and Murph discover that dust patterns in Murph's room, which she had attributed to a ghost, result from a gravitational anomaly. Cooper recognizes the patterns as binary code specifying coordinates, which lead him and Murph to a secret NASA facility headed by Professor John Brand.\n\nBrand explains that 48 years earlier, a wormhole appeared near Saturn, apparently placed there by an unknown intelligence, leading to a system in another galaxy"
+          }
+        ]
+      }
+    },
+    {
+      "movie_id": 157336,
+      "title": "Interstellar",
+      "question_id": "wormhole-location",
+      "question": "Where is the wormhole that opens humanity's route to another galaxy?",
+      "answer": "Near Saturn",
+      "surface_flags": [
+        "isolated_location"
+      ],
+      "narrative_focus": "granular_recall",
+      "narrative_significance": "granular",
+      "narrative_eligible": false,
+      "disposition": "replace",
+      "rationale": "The current wording tests an isolated isolated location rather than why the detail matters to the story.",
+      "replacement_brief": "Replace with the wormhole’s narrative role: opening a route to another galaxy for the survival mission.",
+      "evidence": {
+        "explanation": "The wormhole appears near Saturn, opening a route to another galaxy.",
+        "citations": [
+          {
+            "source_label": "English Wikipedia contributors: Interstellar (film)",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379200125",
+            "revision": "enwiki-1379200125-plaintext-v1",
+            "excerpt": "wed former NASA test pilot, works as a farmer and raises his children, Murphy \"Murph\" and Tom, with his father-in-law Donald. Following a dust storm, Cooper and Murph discover that dust patterns in Murph's room, which she had attributed to a ghost, result from a gravitational anomaly. Cooper recognizes the patterns as binary code specifying coordinates, which lead him and Murph to a secret NASA facility headed by Professor John Brand.\n\nBrand explains that 48 years earlier, a wormhole appeared near Saturn, apparently placed there by an unknown intelligence, leading to a system in another galaxy"
+          }
+        ]
+      }
+    },
+    {
+      "movie_id": 157336,
+      "title": "Interstellar",
+      "question_id": "ship-name",
+      "question": "What is the name of the spacecraft Cooper pilots through the wormhole?",
+      "answer": "Endurance",
+      "surface_flags": [
+        "isolated_name"
+      ],
+      "narrative_focus": "granular_recall",
+      "narrative_significance": "granular",
+      "narrative_eligible": false,
+      "disposition": "replace",
+      "rationale": "The current wording tests an isolated isolated name rather than why the detail matters to the story.",
+      "replacement_brief": "Replace with the Endurance’s role in carrying Cooper’s team through the wormhole, rather than its name.",
+      "evidence": {
+        "explanation": "Cooper pilots the Endurance. Gargantua is the black hole, while Lazarus names the earlier expedition.",
+        "citations": [
+          {
+            "source_label": "English Wikipedia contributors: Interstellar (film)",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379200125",
+            "revision": "enwiki-1379200125-plaintext-v1",
+            "excerpt": "ar Saturn, apparently placed there by an unknown intelligence, leading to a system in another galaxy with 12 potentially habitable planets located near a black hole named Gargantua. Volunteers of the Lazarus expedition had previously traveled through the wormhole to evaluate the planets, with three—Miller, Mann, and Edmunds—reporting back desirable results.\n\nCooper is enlisted to pilot the Endurance spacecraft through the wormhole as part of a mission to colonize a habitable planet with 5,000 frozen embryos and ensure humanity's survival. Meanwhile, Professor Brand would continue his work on s"
+          }
+        ]
+      }
+    },
+    {
+      "movie_id": 157336,
+      "title": "Interstellar",
+      "question_id": "generated-slingshot-time-59c997d23d21",
+      "question": "How many years does a slingshot around Gargantua cost Cooper and Brand?",
+      "answer": "51 years",
+      "surface_flags": [
+        "exact_count_or_duration"
+      ],
+      "narrative_focus": "granular_recall",
+      "narrative_significance": "granular",
+      "narrative_eligible": false,
+      "disposition": "replace",
+      "rationale": "The current wording tests an isolated exact count or duration rather than why the detail matters to the story.",
+      "replacement_brief": "Replace with why the Gargantua slingshot is costly: time dilation takes decades from Cooper and Brand; omit the exact number.",
+      "evidence": {
+        "explanation": "With insufficient fuel, Cooper and Brand resort to a slingshot around Gargantua, which costs them 51 years due to time dilation.",
+        "citations": [
+          {
+            "source_label": "English Wikipedia contributors: Interstellar (film)",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379200125",
+            "revision": "enwiki-1379200125-plaintext-v1",
+            "excerpt": "ailed manual docking operation, badly damaging the Endurance, but Cooper is able to regain control of the spacecraft through his own docking maneuver.\n\nWith insufficient fuel, Cooper and Brand resort to a slingshot around Gargantua, which costs them 51 years due to time dilation. In the process, Cooper and TARS detach in their craft to lighten the Endurance so that Brand and CASE may reach Edmunds' planet. Falling past Gargantua's event horizon, they eject from their craft and find themselves in a tesseract made up of infinite copies of Murph's bedroom across moments in time. Cooper deduces th"
+          }
+        ]
+      }
+    },
+    {
+      "movie_id": 157336,
+      "title": "Interstellar",
+      "question_id": "generated-colony-cargo-20b1852c1d6c",
+      "question": "How many frozen embryos are part of the mission to colonize a habitable planet?",
+      "answer": "5,000 frozen embryos",
+      "surface_flags": [
+        "exact_count_or_duration"
+      ],
+      "narrative_focus": "granular_recall",
+      "narrative_significance": "granular",
+      "narrative_eligible": false,
+      "disposition": "replace",
+      "rationale": "The current wording tests an isolated exact count or duration rather than why the detail matters to the story.",
+      "replacement_brief": "Replace with what the embryo cargo makes possible: establishing a colony to preserve humanity; omit the exact count.",
+      "evidence": {
+        "explanation": "Cooper is enlisted to pilot the Endurance spacecraft through the wormhole as part of a mission to colonize a habitable planet with 5,000 frozen embryos and ensure humanity's survival.",
+        "citations": [
+          {
+            "source_label": "English Wikipedia contributors: Interstellar (film)",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379200125",
+            "revision": "enwiki-1379200125-plaintext-v1",
+            "excerpt": "ar Saturn, apparently placed there by an unknown intelligence, leading to a system in another galaxy with 12 potentially habitable planets located near a black hole named Gargantua. Volunteers of the Lazarus expedition had previously traveled through the wormhole to evaluate the planets, with three—Miller, Mann, and Edmunds—reporting back desirable results.\n\nCooper is enlisted to pilot the Endurance spacecraft through the wormhole as part of a mission to colonize a habitable planet with 5,000 frozen embryos and ensure humanity's survival. Meanwhile, Professor Brand would continue his work on s"
+          }
+        ]
+      }
+    },
+    {
+      "movie_id": 157336,
+      "title": "Interstellar",
+      "question_id": "generated-booby-trap-8bb6c51c5a44",
+      "question": "Who is killed by a booby trap?",
+      "answer": "Romilly",
+      "surface_flags": [
+        "isolated_name"
+      ],
+      "narrative_focus": "granular_recall",
+      "narrative_significance": "granular",
+      "narrative_eligible": false,
+      "disposition": "replace",
+      "rationale": "The current wording tests an isolated isolated name rather than why the detail matters to the story.",
+      "replacement_brief": "Replace with the consequence of Mann’s deception and booby trap for the mission; simple victim-name recall is too narrow.",
+      "evidence": {
+        "explanation": "A booby trap set by Mann kills Romilly, but Brand rescues Cooper with the other lander and they race back to the Endurance.",
+        "citations": [
+          {
+            "source_label": "English Wikipedia contributors: Interstellar (film)",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379200125",
+            "revision": "enwiki-1379200125-plaintext-v1",
+            "excerpt": "measurements from inside a black hole.\n\nOn Mann's planet, they awaken him from cryostasis, and he assures them that colonization is possible, despite the extreme environment. During a scouting mission, Mann attempts to kill Cooper and reveals that he falsified his data in the hope of being rescued. He steals Cooper's lander and heads for the Endurance. A booby trap set by Mann kills Romilly, but Brand rescues Cooper with the other lander and they race back to the Endurance. Mann is killed in a failed manual docking operation, badly damaging the Endurance, but Cooper is able to regain control o"
+          }
+        ]
+      }
+    },
+    {
+      "movie_id": 157336,
+      "title": "Interstellar",
+      "question_id": "research-929a17806629-t3-Q2",
+      "question": "How many potentially habitable planets are found in the other galaxy beyond the wormhole in Interstellar?",
+      "answer": "Twelve",
+      "surface_flags": [
+        "exact_count_or_duration"
+      ],
+      "narrative_focus": "granular_recall",
+      "narrative_significance": "granular",
+      "narrative_eligible": false,
+      "disposition": "replace",
+      "rationale": "The current wording tests an isolated exact count or duration rather than why the detail matters to the story.",
+      "replacement_brief": "Replace with what the planets beyond the wormhole represent for humanity: possible new homes; omit the count.",
+      "evidence": {
+        "explanation": "On the other side: another galaxy containing a dozen planets that might be fit for human habitation.",
+        "citations": [
+          {
+            "source_label": "variety.com · 'Interstellar' Review: Christopher Nolan Goes to Infinity and Beyond 'Interstellar' Review: Christopher Nolan Goes to Infinity and Beyond Film Review: ‘Interstellar’",
+            "source_ref": "https://variety.com/2014/film/reviews/film-review-interstellar-1201338475/",
+            "revision": "web-5381bbc0a9d6199117d33cfd7fcf56dd45cb50c1933a1beba350e999cb05bc88",
+            "excerpt": "On the other side: another galaxy containing a dozen planets that might be fit for human habitation."
+          }
+        ]
+      }
+    },
+    {
+      "movie_id": 329865,
+      "title": "Arrival",
+      "question_id": "ship-count",
+      "question": "How many alien spacecraft arrive around Earth?",
+      "answer": "Twelve",
+      "surface_flags": [
+        "exact_count_or_duration"
+      ],
+      "narrative_focus": "granular_recall",
+      "narrative_significance": "granular",
+      "narrative_eligible": false,
+      "disposition": "replace",
+      "rationale": "The current wording tests an isolated exact count or duration rather than why the detail matters to the story.",
+      "replacement_brief": "Replace from broader evidence with how the worldwide arrivals force countries to coordinate and share interpretations; omit the count.",
+      "evidence": {
+        "explanation": "Twelve spacecraft arrive at locations around the planet.",
+        "citations": [
+          {
+            "source_label": "English Wikipedia contributors: Arrival (film)",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1377517038",
+            "revision": "enwiki-1377517038-sections-v3-body",
+            "excerpt": "Twelve extraterrestrial spacecraft hover over various locations around the Earth."
+          }
+        ]
+      }
+    },
+    {
+      "movie_id": 438631,
+      "title": "Dune",
+      "question_id": "new-fief",
+      "question": "Which planet is Duke Leto ordered to take over?",
+      "answer": "Arrakis",
+      "surface_flags": [
+        "isolated_object"
+      ],
+      "narrative_focus": "turning_point",
+      "narrative_significance": "central",
+      "narrative_eligible": true,
+      "disposition": "keep",
+      "rationale": "The order to rule Arrakis initiates the Atreides conflict and the film’s main story.",
+      "replacement_brief": null,
+      "evidence": {
+        "explanation": "The Emperor assigns Leto to replace House Harkonnen as the ruler of Arrakis.",
+        "citations": [
+          {
+            "source_label": "English Wikipedia contributors: Dune (2021 film)",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379707655",
+            "revision": "enwiki-1379707655-sections-v3-body",
+            "excerpt": "In the distant future, Duke Leto Atreides is assigned by the Padishah Emperor Shaddam IV to replace Baron Vladimir Harkonnen as the fiefholder of Arrakis, a harsh desert planet and the sole source of \"spice\", a valuable psychotropic substance that imparts heightened vitality and awareness."
+          }
+        ]
+      }
+    },
+    {
+      "movie_id": 438631,
+      "title": "Dune",
+      "question_id": "poison-capsule",
+      "question": "Where does Yueh hide the poison gas capsule for Leto?",
+      "answer": "In a replacement tooth",
+      "surface_flags": [
+        "isolated_location"
+      ],
+      "narrative_focus": "cause_or_consequence",
+      "narrative_significance": "supporting",
+      "narrative_eligible": true,
+      "disposition": "keep",
+      "rationale": "The hidden tooth is part of Yueh’s consequential plan to give Leto a chance to kill the Baron.",
+      "replacement_brief": null,
+      "evidence": {
+        "explanation": "Yueh replaces one of Leto’s teeth with a poison gas capsule intended to kill the Baron.",
+        "citations": [
+          {
+            "source_label": "English Wikipedia contributors: Dune (2021 film)",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379707655",
+            "revision": "enwiki-1379707655-sections-v3-body",
+            "excerpt": "Yueh replaces one of Leto's teeth with a poison gas capsule with which Leto can assassinate the Baron."
+          }
+        ]
+      }
+    },
+    {
+      "movie_id": 496243,
+      "title": "Parasite",
+      "question_id": "flood-refuge",
+      "question": "Where do the Kims take shelter after their flat floods?",
+      "answer": "A gymnasium",
+      "surface_flags": [
+        "isolated_location"
+      ],
+      "narrative_focus": "granular_recall",
+      "narrative_significance": "granular",
+      "narrative_eligible": false,
+      "disposition": "replace",
+      "rationale": "The current wording tests an isolated isolated location rather than why the detail matters to the story.",
+      "replacement_brief": "Replace with the flood’s consequence for the Kim family and how it exposes their precarity; the gym alone is incidental.",
+      "evidence": {
+        "explanation": "The rain floods their flat with sewage water, forcing them into a gymnasium with other displaced people.",
+        "citations": [
+          {
+            "source_label": "English Wikipedia contributors: Parasite (2019 film)",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1377908085",
+            "revision": "enwiki-1377908085-sections-v3-body",
+            "excerpt": "The Kims manage to escape, but the torrential rain floods their flat with sewage water, forcing them to take shelter in a gymnasium alongside other displaced people."
+          }
+        ]
+      }
+    },
+    {
+      "movie_id": 546554,
+      "title": "Knives Out",
+      "question_id": "balcony-finale",
+      "question": "Where is Marta in the final scene while the family gathers outside?",
+      "answer": "On the mansion’s balcony",
+      "surface_flags": [
+        "isolated_location"
+      ],
+      "narrative_focus": "ending_or_resolution",
+      "narrative_significance": "central",
+      "narrative_eligible": true,
+      "disposition": "keep",
+      "rationale": "Marta on the balcony of her inherited mansion is the final reversal of power and status.",
+      "replacement_brief": null,
+      "evidence": {
+        "explanation": "Marta stands on the balcony of her new mansion, holding Harlan’s coffee mug.",
+        "citations": [
+          {
+            "source_label": "English Wikipedia contributors: Knives Out",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1378593030",
+            "revision": "enwiki-1378593030-sections-v3-body",
+            "excerpt": "As Ransom is taken into custody and the rest of the family is gathered outside in defeat, Marta watches from the balcony of what is now her mansion, sipping from Harlan's coffee mug that reads \"My House, My Rules, My Coffee!!\"."
+          }
+        ]
+      }
+    }
+  ],
+  "publication": {
+    "changed": false,
+    "reason": "This artifact proposes keep/replace decisions; it does not modify the published content database."
+  },
+  "limitations": [
+    "This is an assistant semantic review, not an independent human annotation.",
+    "Replacement briefs describe the narrative target; each replacement still needs evidence retrieval, option review, and publication approval.",
+    "The review covers the 55 surface-flagged questions only; unflagged questions were not semantically re-reviewed."
+  ]
+}

@@ -1,0 +1,151 @@
+[
+  {
+    "query": "Hundreds of Beavers",
+    "status": 200,
+    "elapsed_ms": 1354,
+    "locally_present_before": false,
+    "total": 1,
+    "partial": false,
+    "limited": false,
+    "matched_query": null,
+    "selected_person": null,
+    "person_role": null,
+    "first_results": [
+      {
+        "id": 1019939,
+        "title": "Hundreds of Beavers"
+      }
+    ],
+    "cache_reused": true
+  },
+  {
+    "query": "Christopher Nolan",
+    "status": 200,
+    "elapsed_ms": 463,
+    "locally_present_before": false,
+    "total": 28,
+    "partial": false,
+    "limited": false,
+    "matched_query": null,
+    "selected_person": null,
+    "person_role": null,
+    "first_results": [
+      {
+        "id": 272,
+        "title": "Batman Begins"
+      },
+      {
+        "id": 505819,
+        "title": "Cinema 16: European Short Films (U.S. Edition)"
+      },
+      {
+        "id": 126444,
+        "title": "Cinema16: British Short Films"
+      },
+      {
+        "id": 43629,
+        "title": "Doodlebug"
+      },
+      {
+        "id": 374720,
+        "title": "Dunkirk"
+      }
+    ],
+    "pagination_no_duplicates": true,
+    "cache_reused": true
+  },
+  {
+    "query": "Amy Adams",
+    "status": 200,
+    "elapsed_ms": 477,
+    "locally_present_before": false,
+    "total": 2,
+    "partial": false,
+    "limited": false,
+    "matched_query": null,
+    "selected_person": null,
+    "person_role": null,
+    "first_results": [
+      {
+        "id": 329865,
+        "title": "Arrival"
+      },
+      {
+        "id": 640,
+        "title": "Catch Me If You Can"
+      }
+    ],
+    "cache_reused": true
+  },
+  {
+    "query": "Intersteler",
+    "status": 200,
+    "elapsed_ms": 1919,
+    "locally_present_before": false,
+    "total": 29,
+    "partial": false,
+    "limited": false,
+    "matched_query": "Interstellar",
+    "selected_person": null,
+    "person_role": null,
+    "first_results": [
+      {
+        "id": 157336,
+        "title": "Interstellar"
+      },
+      {
+        "id": 261443,
+        "title": "Angry Planet"
+      },
+      {
+        "id": 1443305,
+        "title": "Container Interstellar"
+      },
+      {
+        "id": 763179,
+        "title": "Cosmic Journey: The Voyager Interstellar Mission and Message"
+      },
+      {
+        "id": 660698,
+        "title": "Faster Than Light: the Dream of Interstellar Flight"
+      }
+    ],
+    "pagination_no_duplicates": true,
+    "cache_reused": true
+  },
+  {
+    "query": "linguist",
+    "status": 200,
+    "elapsed_ms": 1725,
+    "locally_present_before": false,
+    "total": 15,
+    "partial": false,
+    "limited": false,
+    "matched_query": null,
+    "selected_person": null,
+    "person_role": null,
+    "first_results": [
+      {
+        "id": 630248,
+        "title": "A Short Manual of Linguistic Anarchism"
+      },
+      {
+        "id": 1017710,
+        "title": "Contribution to the Theory of Linguistics"
+      },
+      {
+        "id": 1199667,
+        "title": "Cunning Linguist"
+      },
+      {
+        "id": 582043,
+        "title": "Electronic Linguistic"
+      },
+      {
+        "id": 1592027,
+        "title": "Julia Kristeva On Linguistics"
+      }
+    ],
+    "cache_reused": true
+  }
+]

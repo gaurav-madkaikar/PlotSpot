@@ -1,0 +1,214 @@
+{
+  "quiz": [
+    {
+      "id": "parents-transformed",
+      "question": "What happens to Chihiro’s parents after they eat the unattended food?",
+      "options": [
+        "They fall asleep",
+        "They turn into birds",
+        "They turn into pigs",
+        "They become invisible"
+      ],
+      "correct_index": 2,
+      "explanation": "Chihiro finds that her parents have been transformed into pigs.",
+      "evidence_markers": [
+        "parents have been transformed into pigs"
+      ],
+      "kind": "plot"
+    },
+    {
+      "id": "boiler-worker",
+      "question": "Who works in the bathhouse boiler room?",
+      "options": [
+        "Kamaji",
+        "Haku",
+        "No-Face",
+        "Boh"
+      ],
+      "correct_index": 0,
+      "explanation": "Kamaji is the bathhouse’s boiler-man, whom Haku tells Chihiro to approach for work.",
+      "evidence_markers": [
+        "bathhouse's boiler-man, Kamaji"
+      ],
+      "kind": "plot"
+    },
+    {
+      "id": "name-control",
+      "question": "How does Yubaba keep people under her control?",
+      "options": [
+        "By hiding their shoes",
+        "By locking the bridge",
+        "By taking their memories of home",
+        "By taking their names"
+      ],
+      "correct_index": 3,
+      "explanation": "Haku explains that Yubaba controls people by taking their names. Remembering her own name is vital for Chihiro.",
+      "evidence_markers": [
+        "Yubaba controls people by taking their names"
+      ],
+      "kind": "plot"
+    },
+    {
+      "id": "first-customer",
+      "question": "What is Chihiro’s first bathhouse customer revealed to be?",
+      "options": [
+        "A mountain spirit",
+        "A polluted river spirit",
+        "A lost dragon",
+        "A disguised witch"
+      ],
+      "correct_index": 1,
+      "explanation": "Her first customer is the spirit of a polluted river, which she cleans.",
+      "evidence_markers": [
+        "spirit of a polluted river arrives as Chihiro's first customer",
+        "After she cleans him"
+      ],
+      "kind": "plot"
+    },
+    {
+      "id": "no-face-payment",
+      "question": "What does No-Face offer the bathhouse workers in exchange for food?",
+      "options": [
+        "Train tickets",
+        "A golden seal",
+        "Gold",
+        "A protective hairband"
+      ],
+      "correct_index": 2,
+      "explanation": "No-Face gives the workers gold while demanding food. Chihiro declines his gold.",
+      "evidence_markers": [
+        "No-Face demands food",
+        "giving them gold"
+      ],
+      "kind": "plot"
+    },
+    {
+      "id": "stolen-object",
+      "question": "What has Haku stolen from Zeniba?",
+      "options": [
+        "A magic golden seal",
+        "A work contract",
+        "A train ticket",
+        "A bag of gold"
+      ],
+      "correct_index": 0,
+      "explanation": "Zeniba says Haku stole her magic golden seal, which carries a deadly curse.",
+      "evidence_markers": [
+        "Haku has stolen a magic golden seal"
+      ],
+      "kind": "plot"
+    },
+    {
+      "id": "twin-relationship",
+      "question": "How is Zeniba related to Yubaba?",
+      "options": [
+        "She is her mother",
+        "She is her daughter",
+        "She is her aunt",
+        "She is her twin sister"
+      ],
+      "correct_index": 3,
+      "explanation": "Zeniba is Yubaba’s twin sister.",
+      "evidence_markers": [
+        "Yubaba's twin sister Zeniba"
+      ],
+      "kind": "plot"
+    },
+    {
+      "id": "no-face-home",
+      "question": "Where does No-Face choose to stay near the end?",
+      "options": [
+        "At the bathhouse",
+        "With Zeniba",
+        "In the boiler room",
+        "With Chihiro’s parents"
+      ],
+      "correct_index": 1,
+      "explanation": "No-Face stays with Zeniba while Haku flies Chihiro and Boh back.",
+      "evidence_markers": [
+        "No-Face decides to stay with Zeniba"
+      ],
+      "kind": "ending"
+    },
+    {
+      "id": "hakus-identity",
+      "question": "What is Haku’s true identity?",
+      "options": [
+        "The bathhouse’s founder",
+        "A mountain guardian",
+        "The spirit of the Kohaku River",
+        "Chihiro’s lost brother"
+      ],
+      "correct_index": 2,
+      "explanation": "Chihiro remembers the Kohaku River and recognizes Haku as its spirit, restoring his memory.",
+      "evidence_markers": [
+        "Haku's true identity as the spirit of the Kohaku River"
+      ],
+      "kind": "ending"
+    },
+    {
+      "id": "final-test",
+      "question": "What answer lets Chihiro pass Yubaba’s final pig test?",
+      "options": [
+        "None of the pigs are her parents",
+        "The two smallest pigs are her parents",
+        "All the pigs are her parents",
+        "The pigs beside Yubaba are her parents"
+      ],
+      "correct_index": 0,
+      "explanation": "Chihiro correctly recognizes that her parents are not among the pigs shown to her.",
+      "evidence_markers": [
+        "none of the pigs are her parents"
+      ],
+      "kind": "ending"
+    }
+  ],
+  "facts": [
+    {
+      "id": "young-audience",
+      "title": "A heroine for the girls at the cabin",
+      "text": "Miyazaki wanted to make a film for five young family friends who spent summers at his mountain cabin.",
+      "evidence_markers": [
+        "five girls who were friends of the family",
+        "film for these friends"
+      ]
+    },
+    {
+      "id": "bathhouse-door",
+      "title": "A small door sparked a whole world",
+      "text": "A bathhouse in Miyazaki’s hometown had a small door beside a bathtub. His curiosity about what lay behind it inspired stories that fed the film’s bathhouse setting.",
+      "evidence_markers": [
+        "Miyazaki's hometown",
+        "small door next to one of the bathtubs",
+        "inspired the bathhouse setting"
+      ]
+    },
+    {
+      "id": "museum-buildings",
+      "title": "Architecture gathered from a museum",
+      "text": "Miyazaki visited Tokyo’s Edo-Tokyo Open Air Architectural Museum during production. Some spirit-world buildings drew on the museum’s Meiji-era Pseudo-Western architecture.",
+      "evidence_markers": [
+        "Edo-Tokyo Open Air Architectural Museum",
+        "Pseudo-Western style buildings"
+      ]
+    },
+    {
+      "id": "orchestral-score",
+      "title": "A full orchestra for the spirit world",
+      "text": "Joe Hisaishi composed and conducted the score, which was performed by the New Japan Philharmonic.",
+      "evidence_markers": [
+        "composed and conducted",
+        "New Japan Philharmonic"
+      ]
+    },
+    {
+      "id": "song-second-life",
+      "title": "A closing song found a new home",
+      "text": "Always With Me was originally intended for another Miyazaki film, Rin the Chimney Painter, which was never released. It became Spirited Away’s closing song.",
+      "evidence_markers": [
+        "closing song, \"Always With Me\"",
+        "Rin the Chimney Painter"
+      ]
+    }
+  ]
+}

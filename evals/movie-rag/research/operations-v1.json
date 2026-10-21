@@ -1,0 +1,1353 @@
+{
+  "dataset_sha256": "24b08df7066d5fffc51b00efb9ebc712d89551170cab493a75d878becc1c15d7",
+  "dataset_version": "research-operations-development-v1",
+  "type": "operational controls; no LLM semantic accuracy measured",
+  "initial_module_hashes": {
+    "movie_research.py": "52154700f3576eeaf6f28fb43d5b419b19f5ca605190df1a1607d22f9fe4df3f",
+    "research_preparation.py": "272180db7f347201f45fc9938a08a0e25a43456ba67d4022bee88f01435e32ef",
+    "content_evidence_retrieval.py": "430ee606cd6c87114e5b1b4cdf5ffc3cdcc10dcab45b0e0c7e043cc916d175ba",
+    "content_proposal_learning.py": "ee1d0a5e46b0178e0941970c00fe48c8018a6c2cb455ee8551ad92fed113ab97",
+    "structured_content_review.py": "baccad37400e69b9ad6bc75598b527021a144ad31944e77ef4f850752970284f",
+    "background_fact_workflow.py": "09703a74b88758201ea47e30a70072d77d443c6ad3402792f002ea2a50f6b9d9",
+    "background_fact_review.py": "34e85089cebccd79f05266a8e878de64b6230b7b495fa5481d1f0e0b7e6675ea",
+    "background_articles.py": "e1505e3954c8898c0e34e6fbcbfbfdb1f95eca78c8b562d7beb1a3b9df9e4436",
+    "background_registry.py": "61d43fb11693d52bf821a2e75c6d1a894e02448e6fc50ae00be88fdd7c56c93e",
+    "proposal_evidence.py": "39870c5dde1e5a712c5191cbdc1edecca0e7c1c66fd045ad33dc84f4cb52a7be",
+    "source_sections.py": "69bb2ab860e8f96bb67dcc6b226d0d8c79fddffbb3b1e559da0400fb779568e7",
+    "sentence_spans.py": "bb35bf3b1844a8dc356e30f0bd17f35f61397612604783e0ff08552708064667",
+    "ingestion_learning.py": "667187b7fce030b089cc48033d9c2fb8d728d79e220a11e01961bbdd48cfef30",
+    "evidence_store.py": "4376381764265497159813b241cd33d65b9b5fc3b96b0810fcced61f4ae5d311",
+    "retrieval_learning.py": "b2a9124437a7630a65f715f1134eda7ae657fbd24e361b63000a0908f2b3a0a5",
+    "embedding_learning.py": "03fb3844cdb6aa85f5739e96304054b761a88f40a38b3adda70195a676a83198",
+    "ollama_learning.py": "686a266d8a7d9f3ab4504bfe05e893ce26c1514b991fecbfd7e2c69337747ccc",
+    "local_models.py": "e723dc425ec7d8f91ca7be6c8d73b7c6a1b4cda1722783a9cecbac0f66174471",
+    "content_proposals.py": "576a6a10fe33944920706a73f2d04b6eef74d596ab39b48a6b787ecbc30ca9fa",
+    "wikipedia_source.py": "b40e51a43ee081be98528ce3685a16fce11b24b5018e6fca37b3a62918e10546"
+  },
+  "cases": [
+    {
+      "id": "complete",
+      "mode": "sequential",
+      "passed": true,
+      "statuses": [
+        "complete",
+        "complete"
+      ],
+      "trace": {
+        "policy": "bounded-movie-research-v1",
+        "movie_id": 329865,
+        "mode": "sequential",
+        "seconds": 0.000964,
+        "events": [
+          {
+            "purpose": "story",
+            "event": "started",
+            "offset_seconds": 2.5e-05
+          },
+          {
+            "purpose": "story",
+            "event": "complete",
+            "offset_seconds": 0.000919
+          },
+          {
+            "purpose": "background",
+            "event": "started",
+            "offset_seconds": 0.000921
+          },
+          {
+            "purpose": "background",
+            "event": "complete",
+            "offset_seconds": 0.000959
+          }
+        ],
+        "model_calls": 0,
+        "published": false,
+        "branches": [
+          {
+            "purpose": "story",
+            "status": "complete",
+            "seconds": 0.000886,
+            "errors": [],
+            "sources": [
+              {
+                "source_id": "enwiki-43991244",
+                "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1377517038",
+                "revision": "enwiki-1377517038-sections-v3-body",
+                "sha256": "1e0483565dd1c62d96e04be0f39c5fc74522f65b81fd0cd56f64a896a3860ea4"
+              }
+            ]
+          },
+          {
+            "purpose": "background",
+            "status": "complete",
+            "seconds": 3.5e-05,
+            "errors": [],
+            "sources": [
+              {
+                "source_id": "time-arrival",
+                "source_ref": "https://time.com/4677598/arrival-oscar-cinematography/",
+                "revision": "article-bfe3876862cdb31f17c6aeb7b7e9fcf92a251717638b88d699309a09dd2ab008",
+                "sha256": "c4158f8ba859c02a648dc8e4c3b2016e05b63efa9b91444bb49f6f45c5c676ea"
+              },
+              {
+                "source_id": "bfi-arrival",
+                "source_ref": "https://www.bfi.org.uk/features/strange-new-worlds-craft-denis-villeneuve",
+                "revision": "article-4cbb73d5e23b3e42b6ef8241cc8efe42dab22e005963fd8e62b7ac9822d899be",
+                "sha256": "fa1be175ec8714ef94fd6ea1daeb018239e82d99ccb4c8c2953fa8121a454788"
+              }
+            ]
+          }
+        ]
+      },
+      "timeout_child_joined": null
+    },
+    {
+      "id": "complete",
+      "mode": "parallel",
+      "passed": true,
+      "statuses": [
+        "complete",
+        "complete"
+      ],
+      "trace": {
+        "policy": "bounded-movie-research-v1",
+        "movie_id": 329865,
+        "mode": "parallel",
+        "seconds": 0.00044,
+        "events": [
+          {
+            "purpose": "story",
+            "event": "started",
+            "offset_seconds": 5.7e-05
+          },
+          {
+            "purpose": "story",
+            "event": "complete",
+            "offset_seconds": 0.000365
+          },
+          {
+            "purpose": "background",
+            "event": "started",
+            "offset_seconds": 0.00037
+          },
+          {
+            "purpose": "background",
+            "event": "complete",
+            "offset_seconds": 0.000386
+          }
+        ],
+        "model_calls": 0,
+        "published": false,
+        "branches": [
+          {
+            "purpose": "story",
+            "status": "complete",
+            "seconds": 0.000306,
+            "errors": [],
+            "sources": [
+              {
+                "source_id": "enwiki-43991244",
+                "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1377517038",
+                "revision": "enwiki-1377517038-sections-v3-body",
+                "sha256": "1e0483565dd1c62d96e04be0f39c5fc74522f65b81fd0cd56f64a896a3860ea4"
+              }
+            ]
+          },
+          {
+            "purpose": "background",
+            "status": "complete",
+            "seconds": 1.5e-05,
+            "errors": [],
+            "sources": [
+              {
+                "source_id": "time-arrival",
+                "source_ref": "https://time.com/4677598/arrival-oscar-cinematography/",
+                "revision": "article-bfe3876862cdb31f17c6aeb7b7e9fcf92a251717638b88d699309a09dd2ab008",
+                "sha256": "c4158f8ba859c02a648dc8e4c3b2016e05b63efa9b91444bb49f6f45c5c676ea"
+              },
+              {
+                "source_id": "bfi-arrival",
+                "source_ref": "https://www.bfi.org.uk/features/strange-new-worlds-craft-denis-villeneuve",
+                "revision": "article-4cbb73d5e23b3e42b6ef8241cc8efe42dab22e005963fd8e62b7ac9822d899be",
+                "sha256": "fa1be175ec8714ef94fd6ea1daeb018239e82d99ccb4c8c2953fa8121a454788"
+              }
+            ]
+          }
+        ]
+      },
+      "timeout_child_joined": null
+    },
+    {
+      "id": "missing-story",
+      "mode": "sequential",
+      "passed": true,
+      "statuses": [
+        "failed",
+        "complete"
+      ],
+      "trace": {
+        "policy": "bounded-movie-research-v1",
+        "movie_id": 329865,
+        "mode": "sequential",
+        "seconds": 6.5e-05,
+        "events": [
+          {
+            "purpose": "story",
+            "event": "started",
+            "offset_seconds": 1.6e-05
+          },
+          {
+            "purpose": "story",
+            "event": "failed",
+            "offset_seconds": 4.1e-05
+          },
+          {
+            "purpose": "background",
+            "event": "started",
+            "offset_seconds": 4.2e-05
+          },
+          {
+            "purpose": "background",
+            "event": "complete",
+            "offset_seconds": 6.2e-05
+          }
+        ],
+        "model_calls": 0,
+        "published": false,
+        "branches": [
+          {
+            "purpose": "story",
+            "status": "failed",
+            "seconds": 2.3e-05,
+            "errors": [
+              {
+                "source_id": "wikipedia",
+                "error_type": "ValueError"
+              }
+            ],
+            "sources": []
+          },
+          {
+            "purpose": "background",
+            "status": "complete",
+            "seconds": 1.8e-05,
+            "errors": [],
+            "sources": [
+              {
+                "source_id": "time-arrival",
+                "source_ref": "https://time.com/4677598/arrival-oscar-cinematography/",
+                "revision": "article-bfe3876862cdb31f17c6aeb7b7e9fcf92a251717638b88d699309a09dd2ab008",
+                "sha256": "c4158f8ba859c02a648dc8e4c3b2016e05b63efa9b91444bb49f6f45c5c676ea"
+              },
+              {
+                "source_id": "bfi-arrival",
+                "source_ref": "https://www.bfi.org.uk/features/strange-new-worlds-craft-denis-villeneuve",
+                "revision": "article-4cbb73d5e23b3e42b6ef8241cc8efe42dab22e005963fd8e62b7ac9822d899be",
+                "sha256": "fa1be175ec8714ef94fd6ea1daeb018239e82d99ccb4c8c2953fa8121a454788"
+              }
+            ]
+          }
+        ]
+      },
+      "timeout_child_joined": null
+    },
+    {
+      "id": "missing-story",
+      "mode": "parallel",
+      "passed": true,
+      "statuses": [
+        "failed",
+        "complete"
+      ],
+      "trace": {
+        "policy": "bounded-movie-research-v1",
+        "movie_id": 329865,
+        "mode": "parallel",
+        "seconds": 0.00016,
+        "events": [
+          {
+            "purpose": "story",
+            "event": "started",
+            "offset_seconds": 5.4e-05
+          },
+          {
+            "purpose": "story",
+            "event": "failed",
+            "offset_seconds": 7.7e-05
+          },
+          {
+            "purpose": "background",
+            "event": "started",
+            "offset_seconds": 8.1e-05
+          },
+          {
+            "purpose": "background",
+            "event": "complete",
+            "offset_seconds": 9.7e-05
+          }
+        ],
+        "model_calls": 0,
+        "published": false,
+        "branches": [
+          {
+            "purpose": "story",
+            "status": "failed",
+            "seconds": 2.1e-05,
+            "errors": [
+              {
+                "source_id": "wikipedia",
+                "error_type": "ValueError"
+              }
+            ],
+            "sources": []
+          },
+          {
+            "purpose": "background",
+            "status": "complete",
+            "seconds": 1.5e-05,
+            "errors": [],
+            "sources": [
+              {
+                "source_id": "time-arrival",
+                "source_ref": "https://time.com/4677598/arrival-oscar-cinematography/",
+                "revision": "article-bfe3876862cdb31f17c6aeb7b7e9fcf92a251717638b88d699309a09dd2ab008",
+                "sha256": "c4158f8ba859c02a648dc8e4c3b2016e05b63efa9b91444bb49f6f45c5c676ea"
+              },
+              {
+                "source_id": "bfi-arrival",
+                "source_ref": "https://www.bfi.org.uk/features/strange-new-worlds-craft-denis-villeneuve",
+                "revision": "article-4cbb73d5e23b3e42b6ef8241cc8efe42dab22e005963fd8e62b7ac9822d899be",
+                "sha256": "fa1be175ec8714ef94fd6ea1daeb018239e82d99ccb4c8c2953fa8121a454788"
+              }
+            ]
+          }
+        ]
+      },
+      "timeout_child_joined": null
+    },
+    {
+      "id": "missing-background",
+      "mode": "sequential",
+      "passed": true,
+      "statuses": [
+        "complete",
+        "failed"
+      ],
+      "trace": {
+        "policy": "bounded-movie-research-v1",
+        "movie_id": 329865,
+        "mode": "sequential",
+        "seconds": 0.00036,
+        "events": [
+          {
+            "purpose": "story",
+            "event": "started",
+            "offset_seconds": 6e-06
+          },
+          {
+            "purpose": "story",
+            "event": "complete",
+            "offset_seconds": 0.000343
+          },
+          {
+            "purpose": "background",
+            "event": "started",
+            "offset_seconds": 0.000344
+          },
+          {
+            "purpose": "background",
+            "event": "failed",
+            "offset_seconds": 0.000357
+          }
+        ],
+        "model_calls": 0,
+        "published": false,
+        "branches": [
+          {
+            "purpose": "story",
+            "status": "complete",
+            "seconds": 0.000334,
+            "errors": [],
+            "sources": [
+              {
+                "source_id": "enwiki-43991244",
+                "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1377517038",
+                "revision": "enwiki-1377517038-sections-v3-body",
+                "sha256": "1e0483565dd1c62d96e04be0f39c5fc74522f65b81fd0cd56f64a896a3860ea4"
+              }
+            ]
+          },
+          {
+            "purpose": "background",
+            "status": "failed",
+            "seconds": 1.1e-05,
+            "errors": [
+              {
+                "source_id": "background",
+                "error_type": "ValueError"
+              }
+            ],
+            "sources": []
+          }
+        ]
+      },
+      "timeout_child_joined": null
+    },
+    {
+      "id": "missing-background",
+      "mode": "parallel",
+      "passed": true,
+      "statuses": [
+        "complete",
+        "failed"
+      ],
+      "trace": {
+        "policy": "bounded-movie-research-v1",
+        "movie_id": 329865,
+        "mode": "parallel",
+        "seconds": 0.000429,
+        "events": [
+          {
+            "purpose": "story",
+            "event": "started",
+            "offset_seconds": 3.8e-05
+          },
+          {
+            "purpose": "story",
+            "event": "complete",
+            "offset_seconds": 0.000328
+          },
+          {
+            "purpose": "background",
+            "event": "started",
+            "offset_seconds": 0.000333
+          },
+          {
+            "purpose": "background",
+            "event": "failed",
+            "offset_seconds": 0.000344
+          }
+        ],
+        "model_calls": 0,
+        "published": false,
+        "branches": [
+          {
+            "purpose": "story",
+            "status": "complete",
+            "seconds": 0.000289,
+            "errors": [],
+            "sources": [
+              {
+                "source_id": "enwiki-43991244",
+                "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1377517038",
+                "revision": "enwiki-1377517038-sections-v3-body",
+                "sha256": "1e0483565dd1c62d96e04be0f39c5fc74522f65b81fd0cd56f64a896a3860ea4"
+              }
+            ]
+          },
+          {
+            "purpose": "background",
+            "status": "failed",
+            "seconds": 9e-06,
+            "errors": [
+              {
+                "source_id": "background",
+                "error_type": "ValueError"
+              }
+            ],
+            "sources": []
+          }
+        ]
+      },
+      "timeout_child_joined": null
+    },
+    {
+      "id": "one-article-missing",
+      "mode": "sequential",
+      "passed": true,
+      "statuses": [
+        "complete",
+        "partial"
+      ],
+      "trace": {
+        "policy": "bounded-movie-research-v1",
+        "movie_id": 329865,
+        "mode": "sequential",
+        "seconds": 0.000386,
+        "events": [
+          {
+            "purpose": "story",
+            "event": "started",
+            "offset_seconds": 1e-05
+          },
+          {
+            "purpose": "story",
+            "event": "complete",
+            "offset_seconds": 0.000361
+          },
+          {
+            "purpose": "background",
+            "event": "started",
+            "offset_seconds": 0.000362
+          },
+          {
+            "purpose": "background",
+            "event": "partial",
+            "offset_seconds": 0.000383
+          }
+        ],
+        "model_calls": 0,
+        "published": false,
+        "branches": [
+          {
+            "purpose": "story",
+            "status": "complete",
+            "seconds": 0.000348,
+            "errors": [],
+            "sources": [
+              {
+                "source_id": "enwiki-43991244",
+                "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1377517038",
+                "revision": "enwiki-1377517038-sections-v3-body",
+                "sha256": "1e0483565dd1c62d96e04be0f39c5fc74522f65b81fd0cd56f64a896a3860ea4"
+              }
+            ]
+          },
+          {
+            "purpose": "background",
+            "status": "partial",
+            "seconds": 1.9e-05,
+            "errors": [
+              {
+                "source_id": "time-arrival",
+                "error_type": "HTTPError"
+              }
+            ],
+            "sources": [
+              {
+                "source_id": "bfi-arrival",
+                "source_ref": "https://www.bfi.org.uk/features/strange-new-worlds-craft-denis-villeneuve",
+                "revision": "article-4cbb73d5e23b3e42b6ef8241cc8efe42dab22e005963fd8e62b7ac9822d899be",
+                "sha256": "fa1be175ec8714ef94fd6ea1daeb018239e82d99ccb4c8c2953fa8121a454788"
+              }
+            ]
+          }
+        ]
+      },
+      "timeout_child_joined": null
+    },
+    {
+      "id": "one-article-missing",
+      "mode": "parallel",
+      "passed": true,
+      "statuses": [
+        "complete",
+        "partial"
+      ],
+      "trace": {
+        "policy": "bounded-movie-research-v1",
+        "movie_id": 329865,
+        "mode": "parallel",
+        "seconds": 0.000516,
+        "events": [
+          {
+            "purpose": "story",
+            "event": "started",
+            "offset_seconds": 5.2e-05
+          },
+          {
+            "purpose": "story",
+            "event": "complete",
+            "offset_seconds": 0.000426
+          },
+          {
+            "purpose": "background",
+            "event": "started",
+            "offset_seconds": 0.000431
+          },
+          {
+            "purpose": "background",
+            "event": "partial",
+            "offset_seconds": 0.000455
+          }
+        ],
+        "model_calls": 0,
+        "published": false,
+        "branches": [
+          {
+            "purpose": "story",
+            "status": "complete",
+            "seconds": 0.00037,
+            "errors": [],
+            "sources": [
+              {
+                "source_id": "enwiki-43991244",
+                "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1377517038",
+                "revision": "enwiki-1377517038-sections-v3-body",
+                "sha256": "1e0483565dd1c62d96e04be0f39c5fc74522f65b81fd0cd56f64a896a3860ea4"
+              }
+            ]
+          },
+          {
+            "purpose": "background",
+            "status": "partial",
+            "seconds": 2.1e-05,
+            "errors": [
+              {
+                "source_id": "time-arrival",
+                "error_type": "HTTPError"
+              }
+            ],
+            "sources": [
+              {
+                "source_id": "bfi-arrival",
+                "source_ref": "https://www.bfi.org.uk/features/strange-new-worlds-craft-denis-villeneuve",
+                "revision": "article-4cbb73d5e23b3e42b6ef8241cc8efe42dab22e005963fd8e62b7ac9822d899be",
+                "sha256": "fa1be175ec8714ef94fd6ea1daeb018239e82d99ccb4c8c2953fa8121a454788"
+              }
+            ]
+          }
+        ]
+      },
+      "timeout_child_joined": null
+    },
+    {
+      "id": "wrong-movie",
+      "mode": "sequential",
+      "passed": true,
+      "statuses": [
+        "complete",
+        "failed"
+      ],
+      "trace": {
+        "policy": "bounded-movie-research-v1",
+        "movie_id": 329865,
+        "mode": "sequential",
+        "seconds": 0.000354,
+        "events": [
+          {
+            "purpose": "story",
+            "event": "started",
+            "offset_seconds": 7e-06
+          },
+          {
+            "purpose": "story",
+            "event": "complete",
+            "offset_seconds": 0.000306
+          },
+          {
+            "purpose": "background",
+            "event": "started",
+            "offset_seconds": 0.000307
+          },
+          {
+            "purpose": "background",
+            "event": "failed",
+            "offset_seconds": 0.000351
+          }
+        ],
+        "model_calls": 0,
+        "published": false,
+        "branches": [
+          {
+            "purpose": "story",
+            "status": "complete",
+            "seconds": 0.000297,
+            "errors": [],
+            "sources": [
+              {
+                "source_id": "enwiki-43991244",
+                "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1377517038",
+                "revision": "enwiki-1377517038-sections-v3-body",
+                "sha256": "1e0483565dd1c62d96e04be0f39c5fc74522f65b81fd0cd56f64a896a3860ea4"
+              }
+            ]
+          },
+          {
+            "purpose": "background",
+            "status": "failed",
+            "seconds": 4.2e-05,
+            "errors": [
+              {
+                "source_id": "background",
+                "error_type": "ValueError"
+              }
+            ],
+            "sources": []
+          }
+        ]
+      },
+      "timeout_child_joined": null
+    },
+    {
+      "id": "wrong-movie",
+      "mode": "parallel",
+      "passed": true,
+      "statuses": [
+        "complete",
+        "failed"
+      ],
+      "trace": {
+        "policy": "bounded-movie-research-v1",
+        "movie_id": 329865,
+        "mode": "parallel",
+        "seconds": 0.000454,
+        "events": [
+          {
+            "purpose": "story",
+            "event": "started",
+            "offset_seconds": 4.9e-05
+          },
+          {
+            "purpose": "story",
+            "event": "complete",
+            "offset_seconds": 0.000361
+          },
+          {
+            "purpose": "background",
+            "event": "started",
+            "offset_seconds": 0.000365
+          },
+          {
+            "purpose": "background",
+            "event": "failed",
+            "offset_seconds": 0.000405
+          }
+        ],
+        "model_calls": 0,
+        "published": false,
+        "branches": [
+          {
+            "purpose": "story",
+            "status": "complete",
+            "seconds": 0.000309,
+            "errors": [],
+            "sources": [
+              {
+                "source_id": "enwiki-43991244",
+                "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1377517038",
+                "revision": "enwiki-1377517038-sections-v3-body",
+                "sha256": "1e0483565dd1c62d96e04be0f39c5fc74522f65b81fd0cd56f64a896a3860ea4"
+              }
+            ]
+          },
+          {
+            "purpose": "background",
+            "status": "failed",
+            "seconds": 3.8e-05,
+            "errors": [
+              {
+                "source_id": "background",
+                "error_type": "ValueError"
+              }
+            ],
+            "sources": []
+          }
+        ]
+      },
+      "timeout_child_joined": null
+    },
+    {
+      "id": "unregistered-host",
+      "mode": "sequential",
+      "passed": true,
+      "statuses": [
+        "complete",
+        "failed"
+      ],
+      "trace": {
+        "policy": "bounded-movie-research-v1",
+        "movie_id": 329865,
+        "mode": "sequential",
+        "seconds": 0.000426,
+        "events": [
+          {
+            "purpose": "story",
+            "event": "started",
+            "offset_seconds": 7e-06
+          },
+          {
+            "purpose": "story",
+            "event": "complete",
+            "offset_seconds": 0.000392
+          },
+          {
+            "purpose": "background",
+            "event": "started",
+            "offset_seconds": 0.000393
+          },
+          {
+            "purpose": "background",
+            "event": "failed",
+            "offset_seconds": 0.000424
+          }
+        ],
+        "model_calls": 0,
+        "published": false,
+        "branches": [
+          {
+            "purpose": "story",
+            "status": "complete",
+            "seconds": 0.000383,
+            "errors": [],
+            "sources": [
+              {
+                "source_id": "enwiki-43991244",
+                "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1377517038",
+                "revision": "enwiki-1377517038-sections-v3-body",
+                "sha256": "1e0483565dd1c62d96e04be0f39c5fc74522f65b81fd0cd56f64a896a3860ea4"
+              }
+            ]
+          },
+          {
+            "purpose": "background",
+            "status": "failed",
+            "seconds": 2.9e-05,
+            "errors": [
+              {
+                "source_id": "background",
+                "error_type": "ValueError"
+              }
+            ],
+            "sources": []
+          }
+        ]
+      },
+      "timeout_child_joined": null
+    },
+    {
+      "id": "unregistered-host",
+      "mode": "parallel",
+      "passed": true,
+      "statuses": [
+        "complete",
+        "failed"
+      ],
+      "trace": {
+        "policy": "bounded-movie-research-v1",
+        "movie_id": 329865,
+        "mode": "parallel",
+        "seconds": 0.000396,
+        "events": [
+          {
+            "purpose": "story",
+            "event": "started",
+            "offset_seconds": 3.9e-05
+          },
+          {
+            "purpose": "story",
+            "event": "complete",
+            "offset_seconds": 0.000325
+          },
+          {
+            "purpose": "background",
+            "event": "started",
+            "offset_seconds": 0.000328
+          },
+          {
+            "purpose": "background",
+            "event": "failed",
+            "offset_seconds": 0.000355
+          }
+        ],
+        "model_calls": 0,
+        "published": false,
+        "branches": [
+          {
+            "purpose": "story",
+            "status": "complete",
+            "seconds": 0.000284,
+            "errors": [],
+            "sources": [
+              {
+                "source_id": "enwiki-43991244",
+                "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1377517038",
+                "revision": "enwiki-1377517038-sections-v3-body",
+                "sha256": "1e0483565dd1c62d96e04be0f39c5fc74522f65b81fd0cd56f64a896a3860ea4"
+              }
+            ]
+          },
+          {
+            "purpose": "background",
+            "status": "failed",
+            "seconds": 2.5e-05,
+            "errors": [
+              {
+                "source_id": "background",
+                "error_type": "ValueError"
+              }
+            ],
+            "sources": []
+          }
+        ]
+      },
+      "timeout_child_joined": null
+    },
+    {
+      "id": "plot-as-production",
+      "mode": "sequential",
+      "passed": true,
+      "statuses": [
+        "complete",
+        "failed"
+      ],
+      "trace": {
+        "policy": "bounded-movie-research-v1",
+        "movie_id": 329865,
+        "mode": "sequential",
+        "seconds": 0.000312,
+        "events": [
+          {
+            "purpose": "story",
+            "event": "started",
+            "offset_seconds": 5e-06
+          },
+          {
+            "purpose": "story",
+            "event": "complete",
+            "offset_seconds": 0.000278
+          },
+          {
+            "purpose": "background",
+            "event": "started",
+            "offset_seconds": 0.000279
+          },
+          {
+            "purpose": "background",
+            "event": "failed",
+            "offset_seconds": 0.000309
+          }
+        ],
+        "model_calls": 0,
+        "published": false,
+        "branches": [
+          {
+            "purpose": "story",
+            "status": "complete",
+            "seconds": 0.000272,
+            "errors": [],
+            "sources": [
+              {
+                "source_id": "enwiki-43991244",
+                "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1377517038",
+                "revision": "enwiki-1377517038-sections-v3-body",
+                "sha256": "1e0483565dd1c62d96e04be0f39c5fc74522f65b81fd0cd56f64a896a3860ea4"
+              }
+            ]
+          },
+          {
+            "purpose": "background",
+            "status": "failed",
+            "seconds": 2.9e-05,
+            "errors": [
+              {
+                "source_id": "background",
+                "error_type": "ValueError"
+              }
+            ],
+            "sources": []
+          }
+        ]
+      },
+      "timeout_child_joined": null
+    },
+    {
+      "id": "plot-as-production",
+      "mode": "parallel",
+      "passed": true,
+      "statuses": [
+        "complete",
+        "failed"
+      ],
+      "trace": {
+        "policy": "bounded-movie-research-v1",
+        "movie_id": 329865,
+        "mode": "parallel",
+        "seconds": 0.000382,
+        "events": [
+          {
+            "purpose": "story",
+            "event": "started",
+            "offset_seconds": 3.2e-05
+          },
+          {
+            "purpose": "story",
+            "event": "complete",
+            "offset_seconds": 0.000311
+          },
+          {
+            "purpose": "background",
+            "event": "started",
+            "offset_seconds": 0.000314
+          },
+          {
+            "purpose": "background",
+            "event": "failed",
+            "offset_seconds": 0.000342
+          }
+        ],
+        "model_calls": 0,
+        "published": false,
+        "branches": [
+          {
+            "purpose": "story",
+            "status": "complete",
+            "seconds": 0.000277,
+            "errors": [],
+            "sources": [
+              {
+                "source_id": "enwiki-43991244",
+                "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1377517038",
+                "revision": "enwiki-1377517038-sections-v3-body",
+                "sha256": "1e0483565dd1c62d96e04be0f39c5fc74522f65b81fd0cd56f64a896a3860ea4"
+              }
+            ]
+          },
+          {
+            "purpose": "background",
+            "status": "failed",
+            "seconds": 2.7e-05,
+            "errors": [
+              {
+                "source_id": "background",
+                "error_type": "ValueError"
+              }
+            ],
+            "sources": []
+          }
+        ]
+      },
+      "timeout_child_joined": null
+    },
+    {
+      "id": "malformed-researcher",
+      "mode": "sequential",
+      "passed": true,
+      "statuses": [
+        "complete",
+        "failed"
+      ],
+      "trace": {
+        "policy": "bounded-movie-research-v1",
+        "movie_id": 329865,
+        "mode": "sequential",
+        "seconds": 0.000305,
+        "events": [
+          {
+            "purpose": "story",
+            "event": "started",
+            "offset_seconds": 5e-06
+          },
+          {
+            "purpose": "story",
+            "event": "complete",
+            "offset_seconds": 0.000292
+          },
+          {
+            "purpose": "background",
+            "event": "started",
+            "offset_seconds": 0.000293
+          },
+          {
+            "purpose": "background",
+            "event": "failed",
+            "offset_seconds": 0.000303
+          }
+        ],
+        "model_calls": 0,
+        "published": false,
+        "branches": [
+          {
+            "purpose": "story",
+            "status": "complete",
+            "seconds": 0.000285,
+            "errors": [],
+            "sources": [
+              {
+                "source_id": "enwiki-43991244",
+                "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1377517038",
+                "revision": "enwiki-1377517038-sections-v3-body",
+                "sha256": "1e0483565dd1c62d96e04be0f39c5fc74522f65b81fd0cd56f64a896a3860ea4"
+              }
+            ]
+          },
+          {
+            "purpose": "background",
+            "status": "failed",
+            "seconds": 9e-06,
+            "errors": [
+              {
+                "source_id": "background",
+                "error_type": "ValueError"
+              }
+            ],
+            "sources": []
+          }
+        ]
+      },
+      "timeout_child_joined": null
+    },
+    {
+      "id": "malformed-researcher",
+      "mode": "parallel",
+      "passed": true,
+      "statuses": [
+        "complete",
+        "failed"
+      ],
+      "trace": {
+        "policy": "bounded-movie-research-v1",
+        "movie_id": 329865,
+        "mode": "parallel",
+        "seconds": 0.000361,
+        "events": [
+          {
+            "purpose": "story",
+            "event": "started",
+            "offset_seconds": 3e-05
+          },
+          {
+            "purpose": "story",
+            "event": "complete",
+            "offset_seconds": 0.00031
+          },
+          {
+            "purpose": "background",
+            "event": "started",
+            "offset_seconds": 0.000313
+          },
+          {
+            "purpose": "background",
+            "event": "failed",
+            "offset_seconds": 0.000323
+          }
+        ],
+        "model_calls": 0,
+        "published": false,
+        "branches": [
+          {
+            "purpose": "story",
+            "status": "complete",
+            "seconds": 0.000278,
+            "errors": [],
+            "sources": [
+              {
+                "source_id": "enwiki-43991244",
+                "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1377517038",
+                "revision": "enwiki-1377517038-sections-v3-body",
+                "sha256": "1e0483565dd1c62d96e04be0f39c5fc74522f65b81fd0cd56f64a896a3860ea4"
+              }
+            ]
+          },
+          {
+            "purpose": "background",
+            "status": "failed",
+            "seconds": 8e-06,
+            "errors": [
+              {
+                "source_id": "background",
+                "error_type": "ValueError"
+              }
+            ],
+            "sources": []
+          }
+        ]
+      },
+      "timeout_child_joined": null
+    },
+    {
+      "id": "background-timeout",
+      "mode": "sequential",
+      "passed": true,
+      "statuses": [
+        "complete",
+        "timed_out"
+      ],
+      "trace": {
+        "policy": "bounded-movie-research-v1",
+        "movie_id": 329865,
+        "mode": "sequential",
+        "seconds": 0.030563,
+        "events": [
+          {
+            "purpose": "story",
+            "event": "started",
+            "offset_seconds": 4e-06
+          },
+          {
+            "purpose": "story",
+            "event": "complete",
+            "offset_seconds": 0.000281
+          },
+          {
+            "purpose": "background",
+            "event": "started",
+            "offset_seconds": 0.000282
+          },
+          {
+            "purpose": "background",
+            "event": "timed_out",
+            "offset_seconds": 0.030555
+          }
+        ],
+        "model_calls": 0,
+        "published": false,
+        "branches": [
+          {
+            "purpose": "story",
+            "status": "complete",
+            "seconds": 0.000275,
+            "errors": [],
+            "sources": [
+              {
+                "source_id": "enwiki-43991244",
+                "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1377517038",
+                "revision": "enwiki-1377517038-sections-v3-body",
+                "sha256": "1e0483565dd1c62d96e04be0f39c5fc74522f65b81fd0cd56f64a896a3860ea4"
+              }
+            ]
+          },
+          {
+            "purpose": "background",
+            "status": "timed_out",
+            "seconds": 0.030268,
+            "errors": [
+              {
+                "source_id": "background",
+                "error_type": "OSError"
+              }
+            ],
+            "sources": []
+          }
+        ]
+      },
+      "timeout_child_joined": true
+    },
+    {
+      "id": "background-timeout",
+      "mode": "parallel",
+      "passed": true,
+      "statuses": [
+        "complete",
+        "timed_out"
+      ],
+      "trace": {
+        "policy": "bounded-movie-research-v1",
+        "movie_id": 329865,
+        "mode": "parallel",
+        "seconds": 0.031583,
+        "events": [
+          {
+            "purpose": "story",
+            "event": "started",
+            "offset_seconds": 4.7e-05
+          },
+          {
+            "purpose": "story",
+            "event": "complete",
+            "offset_seconds": 0.000368
+          },
+          {
+            "purpose": "background",
+            "event": "started",
+            "offset_seconds": 0.000373
+          },
+          {
+            "purpose": "background",
+            "event": "timed_out",
+            "offset_seconds": 0.031508
+          }
+        ],
+        "model_calls": 0,
+        "published": false,
+        "branches": [
+          {
+            "purpose": "story",
+            "status": "complete",
+            "seconds": 0.000319,
+            "errors": [],
+            "sources": [
+              {
+                "source_id": "enwiki-43991244",
+                "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1377517038",
+                "revision": "enwiki-1377517038-sections-v3-body",
+                "sha256": "1e0483565dd1c62d96e04be0f39c5fc74522f65b81fd0cd56f64a896a3860ea4"
+              }
+            ]
+          },
+          {
+            "purpose": "background",
+            "status": "timed_out",
+            "seconds": 0.031129,
+            "errors": [
+              {
+                "source_id": "background",
+                "error_type": "OSError"
+              }
+            ],
+            "sources": []
+          }
+        ]
+      },
+      "timeout_child_joined": true
+    },
+    {
+      "id": "cancelled-workflow",
+      "mode": "sequential",
+      "passed": true,
+      "statuses": [
+        "cancelled",
+        "cancelled"
+      ],
+      "cancelled_children_joined": true
+    },
+    {
+      "id": "cancelled-workflow",
+      "mode": "parallel",
+      "passed": true,
+      "statuses": [
+        "cancelled",
+        "cancelled"
+      ],
+      "cancelled_children_joined": true
+    }
+  ],
+  "published": false,
+  "controlled_scheduling": {
+    "simulated_delays_seconds": {
+      "story": 0.015,
+      "background": 0.02
+    },
+    "repeats_per_mode": 6,
+    "order": "alternating paired modes",
+    "seconds": {
+      "sequential": [
+        0.037133,
+        0.0375,
+        0.037459,
+        0.037507,
+        0.03625,
+        0.036792
+      ],
+      "parallel": [
+        0.02067,
+        0.020436,
+        0.020752,
+        0.020686,
+        0.020672,
+        0.020453
+      ]
+    },
+    "median_seconds": {
+      "sequential": 0.037295999999999996,
+      "parallel": 0.020671000000000002
+    },
+    "same_sources_all_runs": true,
+    "limitation": "Injected waiting time demonstrates scheduling; not measured internet or production speedup."
+  },
+  "summary": {
+    "passed": 20,
+    "total": 20
+  },
+  "code_changed_during_run": false
+}

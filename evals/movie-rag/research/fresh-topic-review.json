@@ -1,0 +1,90 @@
+{
+  "version": "fresh-topic-human-review-v1",
+  "labels_pending": true,
+  "cases": [
+    {
+      "id": "A",
+      "existing": [
+        {
+          "question": "Where does Rin find the compass?",
+          "answer": "Workshop"
+        }
+      ],
+      "candidate": {
+        "question": "Where does Rin find the signal beacon?",
+        "answer": "Workshop"
+      },
+      "expected": null
+    },
+    {
+      "id": "B",
+      "existing": [
+        {
+          "question": "Why does Jade leave camp?",
+          "answer": "To rescue Noor"
+        }
+      ],
+      "candidate": {
+        "question": "What motivates Jade\u2019s departure from camp?",
+        "answer": "Rescuing Noor"
+      },
+      "expected": null
+    },
+    {
+      "id": "C",
+      "existing": [
+        {
+          "question": "How many bridges does the party cross?",
+          "answer": "Three"
+        }
+      ],
+      "candidate": {
+        "question": "How many bridges does the party traverse?",
+        "answer": "Three"
+      },
+      "expected": null
+    },
+    {
+      "id": "D",
+      "existing": [
+        {
+          "question": "Who hides the key?",
+          "answer": "Eli"
+        }
+      ],
+      "candidate": {
+        "question": "Where does Eli hide the key?",
+        "answer": "Inside the lamp"
+      },
+      "expected": null
+    },
+    {
+      "id": "E",
+      "existing": [
+        {
+          "question": "How old is Lina\u2019s brother when he returns?",
+          "answer": "Nine"
+        }
+      ],
+      "candidate": {
+        "question": "Who does Lina\u2019s brother meet when he returns?",
+        "answer": "Noor"
+      },
+      "expected": null
+    },
+    {
+      "id": "F",
+      "existing": [
+        {
+          "question": "Whose promise changes the plan?",
+          "answer": "Her promise"
+        }
+      ],
+      "candidate": {
+        "question": "What do they decide?",
+        "answer": "That plan"
+      },
+      "expected": null
+    }
+  ]
+}

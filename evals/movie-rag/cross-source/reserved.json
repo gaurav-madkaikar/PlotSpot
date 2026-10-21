@@ -1,0 +1,251 @@
+{
+  "description": "Fresh authored synthetic cross-source cases; not independently collected movie annotations.",
+  "cases": [
+    {
+      "id": "reserved-location",
+      "mode": "quiz",
+      "expected_accept": true,
+      "label_reason": "The selected location is supported in both sources.",
+      "evidence": [
+        {
+          "alias": "W1",
+          "text": "Elin hides the map in the mill before Tomas arrives."
+        },
+        {
+          "alias": "S1",
+          "text": "Elin places the map in the mill, away from the visitor."
+        }
+      ],
+      "draft": {
+        "kind": "event",
+        "question": "Where does Elin hide the map?",
+        "answer": "mill",
+        "wiki_alias": "W1",
+        "wiki_quote": "Elin hides the map in the mill before Tomas arrives.",
+        "script_alias": "S1",
+        "script_quote": "Elin places the map in the mill, away from the visitor.",
+        "options": [
+          "mill",
+          "shed",
+          "cellar",
+          "courtyard"
+        ],
+        "correct_index": 0
+      }
+    },
+    {
+      "id": "reserved-conflict",
+      "mode": "quiz",
+      "expected_accept": false,
+      "label_reason": "The script and released account contradict the same location.",
+      "evidence": [
+        {
+          "alias": "W1",
+          "text": "Elin hides the map in the mill before Tomas arrives."
+        },
+        {
+          "alias": "S1",
+          "text": "Elin hides the map in the shed, not in the mill."
+        }
+      ],
+      "draft": {
+        "kind": "event",
+        "question": "Where does Elin hide the map?",
+        "answer": "mill",
+        "wiki_alias": "W1",
+        "wiki_quote": "Elin hides the map in the mill before Tomas arrives.",
+        "script_alias": "S1",
+        "script_quote": "Elin hides the map in the shed, not in the mill.",
+        "options": [
+          "mill",
+          "shed",
+          "cellar",
+          "courtyard"
+        ],
+        "correct_index": 0
+      }
+    },
+    {
+      "id": "reserved-person",
+      "mode": "quiz",
+      "expected_accept": false,
+      "label_reason": "The script assigns the action to a different character.",
+      "evidence": [
+        {
+          "alias": "W1",
+          "text": "Elin hides the map in the mill before Tomas arrives."
+        },
+        {
+          "alias": "S1",
+          "text": "Tomas hides the map in the mill; Elin never touches it."
+        }
+      ],
+      "draft": {
+        "kind": "event",
+        "question": "Where does Elin hide the map?",
+        "answer": "mill",
+        "wiki_alias": "W1",
+        "wiki_quote": "Elin hides the map in the mill before Tomas arrives.",
+        "script_alias": "S1",
+        "script_quote": "Tomas hides the map in the mill; Elin never touches it.",
+        "options": [
+          "mill",
+          "shed",
+          "cellar",
+          "courtyard"
+        ],
+        "correct_index": 0
+      }
+    },
+    {
+      "id": "reserved-motive",
+      "mode": "quiz",
+      "expected_accept": true,
+      "label_reason": "The same stated motivation is supported in both sources.",
+      "evidence": [
+        {
+          "alias": "W1",
+          "text": "Elin leaves the village to rescue Tomas, who is trapped by the flood."
+        },
+        {
+          "alias": "S1",
+          "text": "Elin sets off to rescue Tomas from the approaching flood."
+        }
+      ],
+      "draft": {
+        "kind": "event",
+        "question": "Why does Elin leave the village?",
+        "answer": "to rescue Tomas",
+        "wiki_alias": "W1",
+        "wiki_quote": "Elin leaves the village to rescue Tomas, who is trapped by the flood.",
+        "script_alias": "S1",
+        "script_quote": "Elin sets off to rescue Tomas from the approaching flood.",
+        "options": [
+          "to rescue Tomas",
+          "to collect a reward",
+          "to find a lost diary",
+          "to attend a ceremony"
+        ],
+        "correct_index": 0
+      }
+    },
+    {
+      "id": "reserved-cause",
+      "mode": "quiz",
+      "expected_accept": false,
+      "label_reason": "The selected noun occurs in the account but is not the stated cause.",
+      "evidence": [
+        {
+          "alias": "W1",
+          "text": "Elin carries a lantern, but the flood forces Elin to leave the village."
+        },
+        {
+          "alias": "S1",
+          "text": "Because of the flood, Elin leaves, carrying a lantern for light."
+        }
+      ],
+      "draft": {
+        "kind": "event",
+        "question": "What forces Elin to leave the village?",
+        "answer": "lantern",
+        "wiki_alias": "W1",
+        "wiki_quote": "Elin carries a lantern, but the flood forces Elin to leave the village.",
+        "script_alias": "S1",
+        "script_quote": "Because of the flood, Elin leaves, carrying a lantern for light.",
+        "options": [
+          "lantern",
+          "curfew",
+          "a letter",
+          "a threat"
+        ],
+        "correct_index": 0
+      }
+    },
+    {
+      "id": "reserved-ambiguous",
+      "mode": "quiz",
+      "expected_accept": false,
+      "label_reason": "Two answer options are supported, so the question is not uniquely scored.",
+      "evidence": [
+        {
+          "alias": "W1",
+          "text": "Elin brings both the map and a lantern into the mill."
+        },
+        {
+          "alias": "S1",
+          "text": "Elin enters the mill carrying the map and a lantern."
+        }
+      ],
+      "draft": {
+        "kind": "event",
+        "question": "What does Elin bring into the mill?",
+        "answer": "map",
+        "wiki_alias": "W1",
+        "wiki_quote": "Elin brings both the map and a lantern into the mill.",
+        "script_alias": "S1",
+        "script_quote": "Elin enters the mill carrying the map and a lantern.",
+        "options": [
+          "map",
+          "a lantern",
+          "a bicycle",
+          "a painting"
+        ],
+        "correct_index": 0
+      }
+    },
+    {
+      "id": "reserved-interpretation",
+      "mode": "discussion",
+      "expected_accept": true,
+      "label_reason": "A cautious possible reading grounded in the same event, not author intent.",
+      "evidence": [
+        {
+          "alias": "W1",
+          "text": "Elin returns the map to Tomas after deciding to trust Tomas."
+        },
+        {
+          "alias": "S1",
+          "text": "Elin hands the map back to Tomas, saying that trust matters."
+        }
+      ],
+      "draft": {
+        "kind": "interpretation",
+        "question": "What might returning the map represent?",
+        "answer": "Returning the map could represent renewed trust.",
+        "wiki_alias": "W1",
+        "wiki_quote": "Elin returns the map to Tomas after deciding to trust Tomas.",
+        "script_alias": "S1",
+        "script_quote": "Elin hands the map back to Tomas, saying that trust matters.",
+        "options": [],
+        "correct_index": null
+      }
+    },
+    {
+      "id": "reserved-intent",
+      "mode": "discussion",
+      "expected_accept": false,
+      "label_reason": "The claimed definitive author intent is not supported by either source.",
+      "evidence": [
+        {
+          "alias": "W1",
+          "text": "Elin returns the map to Tomas after deciding to trust Tomas."
+        },
+        {
+          "alias": "S1",
+          "text": "Elin hands the map back to Tomas, saying that trust matters."
+        }
+      ],
+      "draft": {
+        "kind": "interpretation",
+        "question": "What hidden message did the director definitely intend?",
+        "answer": "The director definitely intended the object to symbolize political rebellion.",
+        "wiki_alias": "W1",
+        "wiki_quote": "Elin returns the map to Tomas after deciding to trust Tomas.",
+        "script_alias": "S1",
+        "script_quote": "Elin hands the map back to Tomas, saying that trust matters.",
+        "options": [],
+        "correct_index": null
+      }
+    }
+  ]
+}

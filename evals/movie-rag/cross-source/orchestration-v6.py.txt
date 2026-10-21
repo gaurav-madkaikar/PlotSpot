@@ -1,0 +1,197 @@
+"""Script-assisted live story flows, gated by a measured frozen-policy evaluation."""
+import asyncio
+from dataclasses import asdict, dataclass
+from difflib import SequenceMatcher
+import hashlib
+import json
+import re
+from pathlib import Path
+from uuid import uuid4
+
+from .content_evidence_retrieval import TOPICS, _select_units
+from .embedding_learning import embed_texts
+from .evidence_store import EvidenceStore
+from .local_models import DIGESTS, verify_local_model
+from .movie_questions import MovieAnswer, QuestionCitation, ScriptContext
+from .movie_quiz import QuizItem
+from .preparation_jobs import atomic_json
+from .proposal_evidence import evidence_pools
+from .retrieval_learning import rank_passages, retrieve_passages
+from .screenplay_retrieval import MODEL as EMBEDDING_MODEL, index_script, retrieve_script
+from .screenplay_source import SCRIPTS, load_script, scene_sections
+from .source_sections import source_chunks
+from .story_verification import MODEL, POLICY, StoryEvidence, normalized, propose_story, review_story
+
+BACKEND = Path(__file__).resolve().parents[2]
+
+
+def policy_fingerprint():
+    root = Path(__file__).parent
+    files = ('story_verification.py', 'story_rag.py', 'screenplay_source.py', 'screenplay_retrieval.py', 'movie_questions.py', 'quiz_generation.py')
+    return hashlib.sha256(json.dumps({name: hashlib.sha256((root/name).read_bytes()).hexdigest()
+                                     for name in files}, sort_keys=True).encode()).hexdigest()
+
+
+LOADED_IMPLEMENTATION = policy_fingerprint()
+
+
+@dataclass
+class StoryContext:
+    evidence: list[StoryEvidence]
+    citations: dict
+    script: ScriptContext
+    trace: dict
+
+
+class StoryRag:
+    def __init__(self, script_client, *, cache_root=None, evidence_path=None, gate_path=None, trace_root=None):
+        self.script_client = script_client
+        self.cache_root = cache_root or BACKEND/'data/private/screenplays'
+        self.evidence_path = evidence_path or BACKEND/'data/content-evidence'
+        self.gate_path = gate_path or BACKEND/'data/private/story-rag-gate.json'
+        self.trace_root = trace_root or BACKEND/'data/private/story-rag-traces'
+        self.store = None
+
+    @staticmethod
+    def handles(question):
+        # Production/metadata questions continue using the full article path.
+        return not re.search(r'\b(direct(?:or|ed|ing)?|compos(?:er|ed)?|score|soundtrack|filmed|filming|production|budget|revenue|cast|actor|actress|release|award|cinematograph\w*)\b', question.casefold())
+
+    def enabled(self, movie_id):
+        if movie_id not in SCRIPTS:
+            return False
+        try:
+            if self.gate_path.stat().st_size > 10000:
+                return False
+            gate = json.loads(self.gate_path.read_text())
+            return (gate.get('passed') is True and gate.get('policy') == POLICY
+                    and gate.get('implementation_sha256') == LOADED_IMPLEMENTATION
+                    and policy_fingerprint() == LOADED_IMPLEMENTATION
+                    and gate.get('model_digest') == DIGESTS[MODEL])
+        except (OSError, ValueError, TypeError, AttributeError):
+            return False
+
+    async def context(self, client, *, source, passages, query, script_query=None):
+        # Validate Wikipedia identity and exact passage snapshot before model I/O.
+        pools = evidence_pools(source)
+        expected = source_chunks(source, max_chars=600, overlap_chars=100)
+        if len(passages) != len(expected) or any(p.text != c.text or p.movie_id != source.movie_id
+                                                for p, c in zip(passages, expected)):
+            raise ValueError('Released-film passage snapshot mismatch')
+        plot = [p for p in passages if p.section_category == 'plot']
+        if not plot or not pools['story']:
+            return None
+        await verify_local_model(client, MODEL)
+        await verify_local_model(client, EMBEDDING_MODEL)
+        vector = (await embed_texts(client, model=EMBEDDING_MODEL, texts=['search_query: '+query]))[0]
+        retrieve_passages(vector, plot, query_model=EMBEDDING_MODEL, movie_id=source.movie_id,
+                          allow_spoilers=True, k=3)
+        hits = rank_passages(vector, plot, k=len(plot))
+        windows = {p.passage_id: c for p, c in zip(passages, expected)}
+        selected = _select_units(pools['story'], windows, hits, set())
+        if not selected:
+            return None
+        evidence, citations, wiki_trace = [], {}, []
+        for index, (score, _, _, text, origin) in enumerate(selected):
+            alias = f'W{index+1}'
+            evidence.append(StoryEvidence(alias=alias, text=text))
+            citations[alias] = QuestionCitation(passage_id=hashlib.sha256(f'{source.revision}:{origin.start}:{origin.end}'.encode()).hexdigest()[:32], source_label=source.source_label,
+                    source_ref=source.source_ref, revision=source.revision, excerpt=text)
+            wiki_trace.append({'alias': alias, 'score': score, 'origin': origin.model_dump()})
+        snapshot, cache_state = await load_script(self.script_client, movie_id=source.movie_id, cache_root=self.cache_root)
+        if self.store is None:
+            self.store = await asyncio.to_thread(EvidenceStore, self.evidence_path)
+        indexed = await index_script(client, snapshot=snapshot, store=self.store)
+        script_hits = []
+        # Retrieve scene context for each selected released-film passage, not just
+        # the vague topic. Scripts still need agreement checks after retrieval.
+        for item in evidence:
+            retrieved = await retrieve_script(client, snapshot=snapshot, store=self.store,
+                                               query=(script_query or item.text)[:500], allow_spoilers=True, k=6)
+            added = 0
+            for hit in retrieved:
+                if len(hit.text) < 20:
+                    continue
+                if hit.scene == 'Opening and title material':
+                    continue  # Header/title words must not count as narrative evidence.
+                if any(hit.start < other.end and other.start < hit.end for other in script_hits):
+                    continue
+                script_hits.append(hit)
+                added += 1
+                if len(script_hits) >= 3 or added >= 2:
+                    break
+            if len(script_hits) >= 3:
+                break
+        if not script_hits:
+            return None
+        script_trace = []
+        for index, hit in enumerate(script_hits):
+            alias = f'S{index+1}'
+            # Parent context recovers dialogue around a small embedding window.
+            scene = next(s for s in scene_sections(snapshot.text) if s.start <= hit.start < hit.end <= s.end)
+            start, end = max(scene.start, hit.start-300), min(scene.end, hit.end+300)
+            if start > scene.start:
+                newline = snapshot.text.find('\n', start, hit.start)
+                if newline >= 0:
+                    start = newline+1
+            if end < scene.end:
+                newline = snapshot.text.rfind('\n', hit.end, end)
+                if newline >= 0:
+                    end = newline
+            text = snapshot.text[start:end]
+            evidence.append(StoryEvidence(alias=alias, text=text))
+            script_trace.append({'alias': alias, **{k: v for k, v in asdict(hit).items() if k != 'text'},
+                                 'start':start, 'end':end, 'vector_start':hit.start, 'vector_end':hit.end})
+        return StoryContext(evidence, citations,
+              ScriptContext(source_ref=snapshot.source_ref, version=SCRIPTS[source.movie_id].version_label),
+              {'policy': POLICY, 'implementation_sha256': LOADED_IMPLEMENTATION,
+               'model':MODEL, 'model_digest':DIGESTS[MODEL],
+               'embedding_model':EMBEDDING_MODEL, 'embedding_digest':DIGESTS[EMBEDDING_MODEL],
+               'movie_id': source.movie_id, 'wiki_revision': source.revision,
+               'script_revision': snapshot.revision, 'source_cache': cache_state,
+               'index': indexed, 'wiki_hits': wiki_trace, 'script_hits': script_trace})
+
+    def audit(self, context, *, mode, decisions, drafts):
+        # No full screenplay excerpts or user questions in saved traces.
+        atomic_json(self.trace_root/f'{context.trace["movie_id"]}-{uuid4().hex}.json',
+            {**context.trace, 'mode': mode, 'decisions': decisions,
+             'candidate_sha256': hashlib.sha256(drafts.model_dump_json().encode()).hexdigest(),
+             'candidate_count': len(drafts.items)})
+
+    async def discuss(self, client, *, source, passages, question):
+        context = await self.context(client, source=source, passages=passages, query=question, script_query=question)
+        if context is None:
+            return MovieAnswer(status='insufficient_evidence', answer='The available sources do not agree on enough scene context to answer this question.')
+        drafts = await propose_story(client, evidence=context.evidence, mode='discussion', question=question)
+        decisions = await review_story(client, drafts=drafts, evidence=context.evidence, mode='discussion')
+        self.audit(context, mode='discussion', decisions=decisions, drafts=drafts)
+        if not drafts.items or not decisions[0]['accepted']:
+            return MovieAnswer(status='insufficient_evidence', answer='The available sources do not support a consistent answer to this question.', script_context=context.script)
+        item = drafts.items[0]
+        answer = ('One possible reading: ' if item.kind == 'interpretation' else '') + item.answer
+        return MovieAnswer(status='answered', answer=answer, citations=[context.citations[item.wiki_alias]],
+                           answer_kind=item.kind, script_context=context.script)
+
+    async def quiz(self, client, *, source, passages, existing):
+        generated = sum(i.id.startswith('script-rag-') for i in existing.items)
+        topic = TOPICS['story'][(len(existing.items)+generated) % len(TOPICS['story'])]
+        context = await self.context(client, source=source, passages=passages, query=topic)
+        if context is None:
+            return []
+        drafts = await propose_story(client, evidence=context.evidence, mode='quiz',
+                                     previous=[i.question for i in existing.items])
+        decisions = await review_story(client, drafts=drafts, evidence=context.evidence, mode='quiz')
+        previous = [normalized(i.question) for i in existing.items]
+        accepted = []
+        for item, decision in zip(drafts.items, decisions):
+            duplicate = any(SequenceMatcher(None, normalized(item.question), text).ratio() > .72 for text in previous)
+            if duplicate:
+                decision.update(accepted=False, reason='Similar to an existing question.')
+            if not decision['accepted']:
+                continue
+            previous.append(normalized(item.question))
+            accepted.append(QuizItem(id='script-rag-'+uuid4().hex[:12], origin='generated', kind='plot',
+                question=item.question, options=item.options, correct_index=item.correct_index,
+                explanation=item.wiki_quote, citations=[context.citations[item.wiki_alias]]))
+        self.audit(context, mode='quiz', decisions=decisions, drafts=drafts)
+        return accepted

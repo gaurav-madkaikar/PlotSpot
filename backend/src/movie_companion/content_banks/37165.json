@@ -1,0 +1,215 @@
+{
+  "quiz": [
+    {
+      "id": "seahaven-secret",
+      "question": "What is Seahaven Island really?",
+      "options": [
+        "A privately owned island",
+        "A vast television soundstage",
+        "A military training town",
+        "An abandoned film studio"
+      ],
+      "correct_index": 1,
+      "explanation": "Seahaven is inside an enormous Los Angeles soundstage, allowing the producers to control Truman’s surroundings.",
+      "evidence_markers": [
+        "Seahaven Island",
+        "enormous soundstage"
+      ],
+      "kind": "plot"
+    },
+    {
+      "id": "world-controller",
+      "question": "Who controls the show built around Truman’s life?",
+      "options": [
+        "Marlon",
+        "Meryl",
+        "Christof",
+        "Sylvia"
+      ],
+      "correct_index": 2,
+      "explanation": "Christof is the show’s creator and executive producer.",
+      "evidence_markers": [
+        "Christof, the show's creator and executive producer"
+      ],
+      "kind": "plot"
+    },
+    {
+      "id": "water-fear",
+      "question": "How does the show make Truman afraid to leave by sea?",
+      "options": [
+        "It stages his father’s death in a boating accident",
+        "It tells him the harbor is polluted",
+        "It sends him a fake weather report",
+        "It removes every boat from town"
+      ],
+      "correct_index": 0,
+      "explanation": "Christof stages the apparent death of Truman’s father in a boating accident to make Truman fear the sea.",
+      "evidence_markers": [
+        "\"death\" of Truman's father in a boating accident"
+      ],
+      "kind": "plot"
+    },
+    {
+      "id": "fiji-dream",
+      "question": "Why does Truman dream of traveling to Fiji?",
+      "options": [
+        "Marlon promises him a job",
+        "His father leaves him a map",
+        "Meryl plans a holiday there",
+        "He is told Sylvia has moved there"
+      ],
+      "correct_index": 3,
+      "explanation": "Truman hopes to find Sylvia, whom he was told had moved to Fiji.",
+      "evidence_markers": [
+        "Fiji",
+        "Sylvia had moved"
+      ],
+      "kind": "plot"
+    },
+    {
+      "id": "outside-allies",
+      "question": "Which group does Sylvia join outside the show?",
+      "options": [
+        "Save Seahaven",
+        "Free Truman",
+        "The Seahaven Players",
+        "The Truth Network"
+      ],
+      "correct_index": 1,
+      "explanation": "Sylvia joins Free Truman, which campaigns for his liberation from the show.",
+      "evidence_markers": [
+        "Sylvia joins \"Free Truman\""
+      ],
+      "kind": "plot"
+    },
+    {
+      "id": "radio-glitch",
+      "question": "What unusual radio broadcast helps Truman suspect he is being watched?",
+      "options": [
+        "His father’s recorded voice",
+        "An announcement naming the show",
+        "A transmission describing his movements",
+        "A message from Sylvia"
+      ],
+      "correct_index": 2,
+      "explanation": "Truman hears a radio transmission describing his movements around town.",
+      "evidence_markers": [
+        "radio transmission describing his movements"
+      ],
+      "kind": "plot"
+    },
+    {
+      "id": "basement-escape",
+      "question": "How does Truman disappear from his home before his final escape?",
+      "options": [
+        "Through a makeshift tunnel",
+        "Through the garage roof",
+        "In a delivery van",
+        "Through Meryl’s dressing room"
+      ],
+      "correct_index": 0,
+      "explanation": "Marlon discovers that Truman has disappeared through a makeshift tunnel from the basement.",
+      "evidence_markers": [
+        "disappeared through a makeshift tunnel"
+      ],
+      "kind": "plot"
+    },
+    {
+      "id": "last-obstacle",
+      "question": "What does Christof create to try to stop Truman’s boat?",
+      "options": [
+        "A false coastline",
+        "A rescue helicopter",
+        "A floating barrier",
+        "A violent storm"
+      ],
+      "correct_index": 3,
+      "explanation": "Christof creates a violent storm to try to capsize the boat, despite objections from his colleagues.",
+      "evidence_markers": [
+        "creates a violent storm"
+      ],
+      "kind": "plot"
+    },
+    {
+      "id": "world-edge",
+      "question": "What does Truman’s boat strike at the edge of his world?",
+      "options": [
+        "A hidden island",
+        "The soundstage wall",
+        "A stranded ship",
+        "A harbor gate"
+      ],
+      "correct_index": 1,
+      "explanation": "The boat strikes the wall of the soundstage; Truman then discovers a staircase and exit door.",
+      "evidence_markers": [
+        "boat strikes the wall of the soundstage",
+        "staircase leading to an exit door"
+      ],
+      "kind": "ending"
+    },
+    {
+      "id": "final-choice",
+      "question": "How does Truman respond to Christof’s plea that he stay?",
+      "options": [
+        "He asks for a new life in Seahaven",
+        "He demands a share of the profits",
+        "He says his catchphrase, bows and exits",
+        "He turns off the cameras himself"
+      ],
+      "correct_index": 2,
+      "explanation": "Truman delivers his familiar greeting, bows to the audience and leaves through the exit.",
+      "evidence_markers": [
+        "before bowing to the audience and exiting"
+      ],
+      "kind": "ending"
+    }
+  ],
+  "facts": [
+    {
+      "id": "early-city",
+      "title": "Before there was Seahaven",
+      "text": "Andrew Niccol’s original draft was closer to a science-fiction thriller, with the story set in New York City.",
+      "evidence_markers": [
+        "original draft",
+        "story set in New York City"
+      ]
+    },
+    {
+      "id": "carrey-wait",
+      "title": "Waiting for the right Truman",
+      "text": "Jim Carrey’s commitments to The Cable Guy and Liar Liar delayed his availability. Weir chose to wait rather than cast someone else.",
+      "evidence_markers": [
+        "commitments with The Cable Guy and Liar Liar",
+        "Weir felt Carrey was perfect for the role",
+        "rather than recast"
+      ]
+    },
+    {
+      "id": "seaside-discovery",
+      "title": "A real town behind the perfect suburb",
+      "text": "Weir’s wife Wendy Stites introduced him to Seaside, Florida. The planned community became the location for most of the filming.",
+      "evidence_markers": [
+        "Wendy Stites introduced him to Seaside",
+        "majority of filming took place"
+      ]
+    },
+    {
+      "id": "postcard-world",
+      "title": "A world drawn from postcards",
+      "text": "Norman Rockwell paintings and 1960s postcards inspired the film’s design. The team also researched surveillance techniques for certain shots.",
+      "evidence_markers": [
+        "Norman Rockwell paintings and 1960s postcards",
+        "surveillance techniques"
+      ]
+    },
+    {
+      "id": "composer-cameo",
+      "title": "The composer at the piano",
+      "text": "Philip Glass contributed music to the soundtrack and appears in the film playing his piece Truman Sleeps.",
+      "evidence_markers": [
+        "Some parts of the soundtrack were composed by Philip Glass",
+        "Philip Glass also appears in the film playing his composition"
+      ]
+    }
+  ]
+}

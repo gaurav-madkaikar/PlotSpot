@@ -1,0 +1,23 @@
+{
+  "version": "content-readiness-development-v1",
+  "split": "development",
+  "authorship": "Assistant-authored fictional expectations frozen before model execution, not independently labelled quality data.",
+  "facts": [
+    {"id":"supported-paraphrase","title":"Spacecraft models","text":"The filmmakers built small spacecraft models inside a water tank.","quote":"The crew built miniature spacecraft inside a water tank.","expected_ready":true},
+    {"id":"unsupported-purpose","title":"Cheaper models","text":"The crew built miniature spacecraft inside a water tank to save money.","quote":"The crew built miniature spacecraft inside a water tank.","expected_ready":false},
+    {"id":"name-outside-citation","title":"Chamber lighting","text":"Production designer Mira Cole used colored lights for the chamber.","quote":"The designer used colored lights for the chamber.","expected_ready":false},
+    {"id":"context-only-detail","title":"Mood board process","text":"The production team created mood boards inspired by the installation.","quote":"The two filmmakers admired the installation.","expected_ready":false},
+    {"id":"stated-purpose","title":"Safer miniature work","text":"Miniature models kept stunt performers clear of explosions.","quote":"The crew used miniature models to keep stunt performers away from explosions.","expected_ready":true},
+    {"id":"discouraged-heading","title":"Visual Inspiration","text":"The crew built miniature spacecraft inside a water tank.","quote":"The crew built miniature spacecraft inside a water tank.","expected_ready":false},
+    {"id":"lost-qualifier","title":"Miniature scene work","text":"All scenes used miniature spacecraft built in a water tank.","quote":"Some exterior scenes used miniature spacecraft built in a water tank.","expected_ready":false}
+  ],
+  "quizzes": [
+    {"id":"paraphrased-topic","existing":[{"question":"Why do the aliens help humanity now?","answer":"They will need humanity's help in 3,000 years."}],"candidates":[{"question":"What future need motivates the aliens to assist humans?","answer":"Humanity's help in 3,000 years"}],"expected_ready_ids":[]},
+    {"id":"same-character-new-fact","existing":[{"question":"What is Louise's profession?","answer":"Linguist"}],"candidates":[{"question":"How old is Louise's daughter when she dies?","answer":"Twelve"}],"expected_ready_ids":["Q1"]},
+    {"id":"same-event-different-fact","existing":[{"question":"Who opens the hidden vault?","answer":"Mira"}],"candidates":[{"question":"Where is the hidden vault located?","answer":"Below the hotel"}],"expected_ready_ids":["Q1"]},
+    {"id":"same-answer-different-object","existing":[{"question":"What color is the spacecraft?","answer":"Blue"}],"candidates":[{"question":"What color is the captain's uniform?","answer":"Blue"}],"expected_ready_ids":["Q1"]},
+    {"id":"awkward-stem","existing":[],"candidates":[{"question":"How are the miniature ships revealed to be?","answer":"Wooden models"}],"expected_ready_ids":[]},
+    {"id":"within-batch-paraphrase","existing":[],"candidates":[{"question":"Why do the aliens offer help to the humans?","answer":"They will need human help later"},{"question":"What future need explains the aliens' assistance?","answer":"They will need human help later"}],"expected_ready_ids":["Q1"]},
+    {"id":"exact-wording","existing":[{"question":"Where is the hidden vault located?","answer":"Below the hotel"}],"candidates":[{"question":"Where is the hidden vault located?","answer":"Below the hotel"}],"expected_ready_ids":[]}
+  ]
+}

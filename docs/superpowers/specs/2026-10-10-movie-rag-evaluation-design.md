@@ -1,0 +1,11 @@
+# Real movie RAG evaluation
+
+Scope approved by the user's “Lets proceed” after the proposed real-movie labelling milestone. Keep inline pairing and the learner's completed AI implementation.
+
+Use a local frozen Interstellar Wikipedia SourceDocument, its content/configuration fingerprint, and a readable catalogue of all chunk IDs and text. A preparation command fetches the reviewed provider once and creates two labelled development examples: composer and missing personal evidence. Preparation refuses to overwrite existing learner labels. The learner adds the instrument case after inspecting the complete catalogue, independently of generated responses. Full source text stays in ignored local storage; versioned labels and compact reports contain IDs and observations.
+
+The runner ingests the frozen source into a separate persistent evaluation store and calls the actual learner-owned answer_movie_question. An optional retrieval observer records the same top-three hits used for generation. Existing endpoint callers remain unchanged. No internet requests occur during inference evaluation; Ollama uses fixed loopback clients and existing model tags, no downloads or retries. Each case has a 180-second deadline, and the dataset is capped at 20 development cases.
+
+Metrics: supporting-passage hit@3 for answerable questions with labels, fraction of annotated supporting IDs retrieved (not exhaustive corpus recall), expected status, required phrase groups, citation membership in retrieved hits, and whether any cited passage overlaps the labelled supporting set. Missing-evidence cases are excluded from retrieval denominators. Membership or phrase matches do not establish claim support; human review remains pending. Report all case errors, runtime and source/dataset/prompt hashes, model identity availability and unpinned sampling limitations. No holdout, injection-resistance or speed claims.
+
+Validate labels and source fingerprint before model requests. Do not select expected passage IDs from a generated answer. Tests use authored evidence and mock HTTP, including trace capture, denominator handling, foreign citation IDs, unknown label IDs and snapshot mismatch. The UI and production pipeline decisions remain unchanged.

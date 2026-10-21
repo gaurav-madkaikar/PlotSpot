@@ -1,0 +1,179 @@
+{
+  "created_at_utc": "2026-10-11T20:34:59.088213+00:00",
+  "reviewer": "assistant source inspection; not independent human review",
+  "scope": "Seventeen unchanged consumed development cases, frozen Lesson 58 hybrid/excerpt baseline, complete-sentence context plus distinct local reviewer candidate",
+  "inputs": [
+    {
+      "path": "evals/movie-rag/coverage/dark-knight-discussion-sentences-v2.json",
+      "sha256": "a7659f3c833818b77f9283afe2dbdfaab0d0fe204dc01fe41cc89d329b1c4d92"
+    },
+    {
+      "path": "evals/movie-rag/coverage/discussion-transfer-155-sentences-v2.json",
+      "sha256": "e6e69f8fe86c5d20f47604a09af3ab60f472326c2effe654534591bccc225525"
+    },
+    {
+      "path": "evals/movie-rag/coverage/discussion-transfer-329865-sentences-v2.json",
+      "sha256": "6eb176dbbcd7622a7e2f95ce327c7a387fbff2fc00a3e45616c4130cae06407b"
+    },
+    {
+      "path": "evals/movie-rag/coverage/discussion-transfer-546554-sentences-v2.json",
+      "sha256": "081f15e2a765cb3bcccbdd7345814edcfe2c311001d31e06404cb92bbd963dfd"
+    }
+  ],
+  "metrics": {
+    "candidate": {
+      "automated_passed": 16,
+      "total": 17,
+      "annotated_supporting_hit_at_3": 14,
+      "answerable_cases": 14,
+      "expected_abstentions_passed": 3,
+      "expected_abstentions": 3,
+      "generation_errors": 0,
+      "observed_median_seconds": 8.018
+    },
+    "baseline": {
+      "automated_passed": 15,
+      "total": 17,
+      "annotated_supporting_hit_at_3": 14,
+      "answerable_cases": 14,
+      "expected_abstentions_passed": 3,
+      "expected_abstentions": 3,
+      "generation_errors": 0,
+      "observed_median_seconds": 2.729
+    }
+  },
+  "support_controls": {
+    "path": "evals/grounding/support-review-qwen-v4.json",
+    "sha256": "93b563b387fa161e597c50415f133b4df263f03fa287da1b11b43cbe7c6363cf",
+    "passed": 11,
+    "total": 12,
+    "false_acceptances": 1,
+    "false_rejections": 0,
+    "failure": "wrong-reason: false acceptance of a causal relation not established by the supplied sentences"
+  },
+  "assistant_review": [
+    {
+      "id": "composers",
+      "automated_pass": true,
+      "failures_retained": [],
+      "note": "First selected sentence names both composers. Other selected sentences add unnecessary context."
+    },
+    {
+      "id": "working-title",
+      "automated_pass": true,
+      "failures_retained": [],
+      "note": "Complete sentence states the ruse title; filming-end sentence is unnecessary."
+    },
+    {
+      "id": "dents-decoy",
+      "automated_pass": true,
+      "failures_retained": [],
+      "note": "Quote explicitly states the lure-the-Joker reason."
+    },
+    {
+      "id": "ending-legacy",
+      "automated_pass": true,
+      "failures_retained": [],
+      "note": "Complete sentence supports preserving Dent as a hero and avoiding harm to Gotham. The unchanged phrase check now passes."
+    },
+    {
+      "id": "missing-private-diary",
+      "automated_pass": true,
+      "failures_retained": [],
+      "note": "Appropriate abstention: requested private diary content is absent."
+    },
+    {
+      "id": "ferry-event",
+      "automated_pass": true,
+      "failures_retained": [],
+      "note": "Refusal sentence supports the answer; extra Dent and ferry-setting sentences are unnecessary."
+    },
+    {
+      "id": "makeup-craft",
+      "automated_pass": true,
+      "failures_retained": [],
+      "note": "Recovered complete instruction/application sentence crosses original windows 073 and 074, and both are cited. Technique is supported. The generator adds the given name John, present elsewhere in the generation window rather than the selected sentence; reviewer acceptance does not prove every detail of this answer is entailed by selected quotes alone."
+    },
+    {
+      "id": "ending-analysis",
+      "automated_pass": true,
+      "failures_retained": [],
+      "note": "Answer explicitly attributes thematic interpretation to the article; sacrifice/hope sentences support that interpretation."
+    },
+    {
+      "id": "missing-rating",
+      "automated_pass": true,
+      "failures_retained": [],
+      "note": "Appropriate abstention: requested external rating is absent."
+    },
+    {
+      "id": "future-visions",
+      "automated_pass": false,
+      "failures_retained": [
+        "Answer status differs from expectation",
+        "No labelled supporting passage cited",
+        "Missing expected phrase group: ['future', 'premonition']"
+      ],
+      "note": "False rejection retained. Generator proposes future premonitions; selected language/time sentences use Banks while question/answer name Louise. Selected context omits the alias introduction and the most direct premonitions sentence. Reviewer rejects and final result abstains. A correct story answer still fails this development case; no relabelling."
+    },
+    {
+      "id": "future-help",
+      "automated_pass": true,
+      "failures_retained": [],
+      "note": "Exact sentence supports the 3,000-year reason."
+    },
+    {
+      "id": "original-score",
+      "automated_pass": true,
+      "failures_retained": [],
+      "note": "J\u00f3hann J\u00f3hannsson writing the score supports the composer identity; other selected details are unnecessary."
+    },
+    {
+      "id": "missing-private-talk",
+      "automated_pass": true,
+      "failures_retained": [],
+      "note": "Appropriate abstention: requested private conversation is absent."
+    },
+    {
+      "id": "false-alibi",
+      "automated_pass": true,
+      "failures_retained": [],
+      "note": "Sentence explicitly supplies Harlan\u2019s protection-of-Marta reason."
+    },
+    {
+      "id": "medicine-recognition",
+      "automated_pass": true,
+      "failures_retained": [],
+      "note": "Complete sentence explicitly names Marta, viscosity, label and nursing experience."
+    },
+    {
+      "id": "stage-knife",
+      "automated_pass": true,
+      "failures_retained": [],
+      "note": "Sentence explicitly identifies a harmless retractable stage knife."
+    },
+    {
+      "id": "title-origin",
+      "automated_pass": true,
+      "failures_retained": [],
+      "note": "Sentence explicitly names the Radiohead song origin."
+    }
+  ],
+  "saved_content": {
+    "saved_banks_unchanged": true,
+    "count": 11,
+    "script_policy_unchanged": true,
+    "inception_more_questions_gate": true
+  },
+  "provenance_note": "Earlier sentences-v1 reports were produced while a deterministic canonical-anchor validation guard was added on disk. Their context_sha256 reads the end-of-run file and does not attest the loaded pre-guard module. Outputs/labels are retained unchanged as historical observations. Primary sentences-v2 reports rerun the complete comparison after final code was frozen; their context source hashes match the evaluated code. No inference code was edited during v2.",
+  "qualification": false,
+  "limitations": [
+    "Assistant-authored, repeatedly consumed development data; no independent holdout.",
+    "Automated phrase/ID grades are not factual accuracy or a safety guarantee.",
+    "A supported model verdict remains fallible; the causal control is a false acceptance, and identity context causes a false rejection.",
+    "Some passing answers cite unnecessary context; quote provenance does not establish entailment of every answer detail.",
+    "Observed timings are sequential local runs, not production throughput or isolated reviewer latency.",
+    "Neither saved content nor script-assisted generation/discussion is newly qualified.",
+    "Parallel research comparison, accounts/community, preferences/memory and consolidated deployment/portfolio work remain pending."
+  ]
+}

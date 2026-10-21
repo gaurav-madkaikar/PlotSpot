@@ -1,0 +1,35 @@
+{
+  "policy": "cross-source-story-v10-narrative-quality",
+  "dataset_family": "cross-source-narrative-v1",
+  "frozen_at": "2026-10-18T00:00:00+05:30",
+  "authorship": "assistant-authored development labels; no model outputs were viewed for these cases before freezing",
+  "partition_order": [
+    "development",
+    "reserved",
+    "adversarial",
+    "real_movies"
+  ],
+  "thresholds": {
+    "false_approvals": 0,
+    "minimum_useful_acceptance": 0.75,
+    "errors": 0,
+    "all_partitions_must_pass": true
+  },
+  "case_counts": {
+    "development": 8,
+    "reserved": 8,
+    "adversarial": 4,
+    "real_movies": 8
+  },
+  "files": {
+    "evals/movie-rag/cross-source-narrative-v1/development.json": "fdab3a7c9b47992abffb161f6031e0a8460051f0863ed3666c24d26c0b805a1f",
+    "evals/movie-rag/cross-source-narrative-v1/reserved.json": "1b07d4e7ac7e9726f4ab7af6825ab1cb7d6f06e378526f5541d31fae68134c3d",
+    "evals/movie-rag/cross-source-narrative-v1/adversarial.json": "8135201cc414749b2aa5d18a86eefcdc148c014e23c12365555ef602653b9c61",
+    "evals/movie-rag/story-quality/real-movie-cases-narrative-v1.json": "ca4b04752c144e607107cf90a1e1b4cf0c88d8811d07c80ab824c0e7d65c47e5"
+  },
+  "limitations": [
+    "Synthetic and real-film cases are authored development labels, not independent human judgments.",
+    "The real-film set reuses previously pinned source spans and changes only question framing and labels.",
+    "No threshold, label, or case may be changed after observing this version’s model output."
+  ]
+}

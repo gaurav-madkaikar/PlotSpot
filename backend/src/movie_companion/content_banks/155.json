@@ -1,0 +1,126 @@
+{
+  "quiz": [
+    {
+      "id": "last-bank-robber",
+      "question": "Who turns out to be the last surviving robber in the opening bank heist?",
+      "options": ["Lau", "Harvey Dent", "The Joker", "Jim Gordon"],
+      "correct_index": 2,
+      "explanation": "The Joker reveals himself as the mastermind after the other robbers betray and kill one another.",
+      "evidence_markers": ["sole survivor, the Joker", "mastermind"],
+      "kind": "plot"
+    },
+    {
+      "id": "bruces-exit-plan",
+      "question": "Why does Bruce publicly support Harvey Dent as Gotham’s protector?",
+      "options": ["He hopes Dent’s success will let him retire as Batman", "He wants Dent to run Wayne Enterprises", "He plans to make Dent the next police commissioner", "He believes Dent already knows his identity"],
+      "correct_index": 0,
+      "explanation": "Bruce sees Dent as a legitimate protector whose success could let him stop being Batman.",
+      "evidence_markers": ["publicly supports Dent", "allow him to retire as Batman"],
+      "kind": "plot"
+    },
+    {
+      "id": "laus-hideout",
+      "question": "Where does Batman travel to bring the mob’s accountant Lau back to Gotham?",
+      "options": ["London", "Metropolis", "Shanghai", "Hong Kong"],
+      "correct_index": 3,
+      "explanation": "Lau flees to Hong Kong, where Batman finds him and returns him to Gotham police custody.",
+      "evidence_markers": ["Batman finds Lau in Hong Kong", "custody of the Gotham police"],
+      "kind": "plot"
+    },
+    {
+      "id": "jokers-price",
+      "question": "What price does the Joker name for killing Batman at the mob meeting?",
+      "options": ["Every dollar in Gotham’s banks", "Half of the mob’s hidden fortune", "Ownership of Wayne Enterprises", "Lau’s entire personal fortune"],
+      "correct_index": 1,
+      "explanation": "The Joker offers to kill Batman in exchange for half of the fortune concealed by Lau.",
+      "evidence_markers": ["offers to kill Batman for half of the fortune"],
+      "kind": "plot"
+    },
+    {
+      "id": "dents-decoy",
+      "question": "Why does Harvey Dent claim that he is Batman?",
+      "options": ["To expose Bruce’s secret", "To stop Gordon from becoming commissioner", "To lure the Joker out", "To take control of Wayne Enterprises"],
+      "correct_index": 2,
+      "explanation": "Dent uses the false claim to draw out the Joker, who then attacks the convoy transporting him.",
+      "evidence_markers": ["Dent claims he is Batman to lure the Joker out"],
+      "kind": "plot"
+    },
+    {
+      "id": "switched-rescue",
+      "question": "Batman races to save Rachel but reaches Dent instead. What caused the switch?",
+      "options": ["The Joker gave their locations in reverse", "Dent secretly changed buildings", "Rachel escaped before Batman arrived", "Gordon redirected Batman’s vehicle"],
+      "correct_index": 0,
+      "explanation": "The Joker reverses the two locations, so Batman’s attempt to reach Rachel leads him to Dent.",
+      "evidence_markers": ["Batman races to rescue Rachel", "positions in reverse"],
+      "kind": "plot"
+    },
+    {
+      "id": "scarred-coin",
+      "question": "After Rachel’s death, what does Dent use to decide his victims’ fates?",
+      "options": ["A shuffled deck of cards", "A roll of dice", "Gordon’s arrest records", "His half-scarred, two-headed coin"],
+      "correct_index": 3,
+      "explanation": "Dent leaves his decisions to the coin, now scarred on one side.",
+      "evidence_markers": ["Dent defers his decision-making", "half-scarred, two-headed coin"],
+      "kind": "plot"
+    },
+    {
+      "id": "ferry-choice",
+      "question": "How do the passengers on the two rigged ferries respond to the Joker’s ultimatum?",
+      "options": ["The civilians destroy the prisoners’ ferry", "Both groups refuse to kill the other", "The prisoners destroy the civilians’ ferry", "Both groups trigger their detonators"],
+      "correct_index": 1,
+      "explanation": "Neither group kills the other, defying the Joker’s expectation.",
+      "evidence_markers": ["passengers refuse to kill one another"],
+      "kind": "ending"
+    },
+    {
+      "id": "protecting-dents-legacy",
+      "question": "Why does Batman accept blame for Dent’s death and crimes?",
+      "options": ["To protect the Joker from prosecution", "To become Gotham’s district attorney", "To preserve Dent as the hero Gotham needs", "To hide Lau’s stolen fortune"],
+      "correct_index": 2,
+      "explanation": "Batman and Gordon conceal Dent’s corruption to preserve Gotham’s faith in him.",
+      "evidence_markers": ["Dent is the hero the city needs", "Batman takes the blame"],
+      "kind": "ending"
+    },
+    {
+      "id": "foxs-final-action",
+      "question": "What happens to the surveillance network after it helps Batman locate the Joker?",
+      "options": ["Lucius Fox destroys it", "Gordon transfers it to the police", "Bruce sells it to the city", "The Joker takes control of it"],
+      "correct_index": 0,
+      "explanation": "Fox destroys the invasive surveillance network once it has helped Batman find the Joker.",
+      "evidence_markers": ["Fox destroys the invasive surveillance network"],
+      "kind": "ending"
+    }
+  ],
+  "facts": [
+    {
+      "id": "working-title",
+      "title": "Rory’s First Kiss",
+      "text": "The Chicago shoot used Rory’s First Kiss as a cover title. The press quickly worked out which film was really being made.",
+      "evidence_markers": ["ruse title Rory's First Kiss", "quickly uncovered"]
+    },
+    {
+      "id": "post-office-imax-test",
+      "title": "An IMAX experiment at the post office",
+      "text": "The bank heist was shot first at Chicago’s old main post office. It tested the IMAX process early enough to allow a reshoot with conventional cameras.",
+      "evidence_markers": ["Old Chicago Main Post Office", "refilmed with traditional cameras"]
+    },
+    {
+      "id": "batpod-training",
+      "title": "A motorcycle built for one rider",
+      "text": "The Batpod was so unwieldy that stunt rider Jean Pierre Goy was the only person able to ride it, after months of training.",
+      "evidence_markers": ["could only be ridden by stuntman Jean Pierre Goy", "months of training"]
+    },
+    {
+      "id": "jokers-makeup",
+      "title": "Makeup that moved with Ledger",
+      "text": "Ledger scrunched his face while the Joker’s makeup was applied. Relaxing his expression created the cracks and uneven texture.",
+      "evidence_markers": ["scrunch up his face", "different cracks and textures"]
+    },
+    {
+      "id": "character-composers",
+      "title": "A score divided by character",
+      "text": "James Newton Howard focused on Harvey Dent’s music, while Hans Zimmer worked on Batman and the Joker.",
+      "evidence_markers": ["Howard focused on Dent", "Zimmer focused on Batman and the Joker"]
+    }
+  ]
+}

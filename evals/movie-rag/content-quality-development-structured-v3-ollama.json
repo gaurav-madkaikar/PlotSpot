@@ -1,0 +1,829 @@
+{
+  "dataset_version": "movie-content-quality-v1",
+  "dataset_sha256": "c914792cdc7a96f924adfa17063ca0b9baa3b9662d8b9e83da12828d7c06dfb0",
+  "partition": "development",
+  "model": "qwen3.5:9b",
+  "model_digest": "6488c96fa5faab64bb65cbd30d4289e20e6130ef535a93ef9a49f42eda893ea7",
+  "critic_policy_version": "movie-structured-critic-v3",
+  "critic_implementation_sha256": "baccad37400e69b9ad6bc75598b527021a144ad31944e77ef4f850752970284f",
+  "generation_settings": {
+    "temperature": 0,
+    "seed": 7,
+    "num_predict": 1800,
+    "think": false
+  },
+  "state": "complete",
+  "cases": [
+    {
+      "case_id": "legacy-routing:F1",
+      "expected": "accept",
+      "category": "supported-background-with-source-injection",
+      "actual": "accept",
+      "reason": "Criteria: supported, eligible. The proposal describes a miniature lighthouse filmed in a water tank. The evidence quote explicitly states the crew built a miniature and filmed it inside a water tank. This is a production craft method (miniature construction and tank filming) fully supported by the text without invented details.",
+      "matched": true,
+      "assessment": {
+        "item_id": "F1",
+        "support": "supported",
+        "content": "eligible",
+        "supported_option_indices": [],
+        "plausible_options": null,
+        "reason": "The proposal describes a miniature lighthouse filmed in a water tank. The evidence quote explicitly states the crew built a miniature and filmed it inside a water tank. This is a production craft method (miniature construction and tank filming) fully supported by the text without invented details."
+      }
+    },
+    {
+      "case_id": "legacy-routing:F2",
+      "expected": "reject",
+      "category": "unsupported-number",
+      "actual": "reject",
+      "reason": "Criteria: contradicted_or_exceeds, eligible. The proposal claims the crew constructed a '42-metre' lighthouse. The evidence quote only mentions a 'miniature lighthouse' and contains no mention of specific dimensions like 42 metres. Introducing an invented number contradicts the provided text.",
+      "matched": true,
+      "assessment": {
+        "item_id": "F2",
+        "support": "contradicted_or_exceeds",
+        "content": "eligible",
+        "supported_option_indices": [],
+        "plausible_options": null,
+        "reason": "The proposal claims the crew constructed a '42-metre' lighthouse. The evidence quote only mentions a 'miniature lighthouse' and contains no mention of specific dimensions like 42 metres. Introducing an invented number contradicts the provided text."
+      }
+    },
+    {
+      "case_id": "legacy-routing:F3",
+      "expected": "reject",
+      "category": "plot-misclassified-as-background",
+      "actual": "reject",
+      "reason": "Criteria: insufficient_context, plot_in_facts. The proposal describes Lena returning a map to the keeper. This is a fictional character action (story event), which belongs in 'plot_in_facts' and is not eligible for the 'content=eligible' category reserved for production craft. Additionally, while the quote matches the text, the assessment rules ",
+      "matched": true,
+      "assessment": {
+        "item_id": "F3",
+        "support": "insufficient_context",
+        "content": "plot_in_facts",
+        "supported_option_indices": [],
+        "plausible_options": null,
+        "reason": "The proposal describes Lena returning a map to the keeper. This is a fictional character action (story event), which belongs in 'plot_in_facts' and is not eligible for the 'content=eligible' category reserved for production craft. Additionally, while the quote matches the text, the assessment rules state that a genuine quote alone is not proof of eligibility for production craft; however, since it"
+      }
+    },
+    {
+      "case_id": "legacy-routing:Q1",
+      "expected": "accept",
+      "category": "supported-objective-question",
+      "actual": "accept",
+      "reason": "Criteria: supported, eligible. The evidence quote explicitly states 'Lena returned the lost map to the lighthouse keeper'. The selected answer (index 0) matches this text exactly. Other options (captain, harbourmaster, navigator) are not mentioned in the quote as recipients.",
+      "matched": true,
+      "assessment": {
+        "item_id": "Q1",
+        "support": "supported",
+        "content": "eligible",
+        "supported_option_indices": [
+          0
+        ],
+        "plausible_options": true,
+        "reason": "The evidence quote explicitly states 'Lena returned the lost map to the lighthouse keeper'. The selected answer (index 0) matches this text exactly. Other options (captain, harbourmaster, navigator) are not mentioned in the quote as recipients."
+      }
+    },
+    {
+      "case_id": "legacy-routing:Q2",
+      "expected": "reject",
+      "category": "incorrect-answer-index",
+      "actual": "reject",
+      "reason": "Criteria: contradicted_or_exceeds, eligible. The evidence quote states the letter was hidden in 'the compass case' (index 0). The selected answer is index 1 ('The chart drawer'), which directly contradicts the explicit text of the quote. Distractors like 'cabin desk' or 'coat' are not supported by the quote.",
+      "matched": true,
+      "assessment": {
+        "item_id": "Q2",
+        "support": "contradicted_or_exceeds",
+        "content": "eligible",
+        "supported_option_indices": [
+          0
+        ],
+        "plausible_options": true,
+        "reason": "The evidence quote states the letter was hidden in 'the compass case' (index 0). The selected answer is index 1 ('The chart drawer'), which directly contradicts the explicit text of the quote. Distractors like 'cabin desk' or 'coat' are not supported by the quote."
+      }
+    },
+    {
+      "case_id": "legacy-routing:Q3",
+      "expected": "reject",
+      "category": "subjective-reading-scored-as-fact",
+      "actual": "reject",
+      "reason": "Criteria: insufficient_context, subjective. The question asks for a specific symbolic meaning ('definitely symbolize'), but the provided quote only describes an action ('Lena watched the lighthouse lamp fade'). The source text does not state what the fading lamp symbolizes (Hope, Betrayal, etc.). Any interpretation of symbolism is unstated mo",
+      "matched": true,
+      "assessment": {
+        "item_id": "Q3",
+        "support": "insufficient_context",
+        "content": "subjective",
+        "supported_option_indices": [],
+        "plausible_options": true,
+        "reason": "The question asks for a specific symbolic meaning ('definitely symbolize'), but the provided quote only describes an action ('Lena watched the lighthouse lamp fade'). The source text does not state what the fading lamp symbolizes (Hope, Betrayal, etc.). Any interpretation of symbolism is unstated motivation/context not found in the quote. Therefore, no option can be supported solely by the given证据"
+      }
+    },
+    {
+      "case_id": "quality-boundaries:F1",
+      "expected": "reject",
+      "category": "ordinary-production-metadata",
+      "actual": "reject",
+      "reason": "Criteria: supported, basic_metadata. The proposal states that Maya Cole and Arun Shah produced the film through Lantern Pictures. The evidence quote explicitly confirms: 'The film was produced by Maya Cole and Arun Shah through their company Lantern Pictures.' This is a plain listing of producers and company, fitting the basic_metadata",
+      "matched": true,
+      "assessment": {
+        "item_id": "F1",
+        "support": "supported",
+        "content": "basic_metadata",
+        "supported_option_indices": [],
+        "plausible_options": null,
+        "reason": "The proposal states that Maya Cole and Arun Shah produced the film through Lantern Pictures. The evidence quote explicitly confirms: 'The film was produced by Maya Cole and Arun Shah through their company Lantern Pictures.' This is a plain listing of producers and company, fitting the basic_metadata category. The qualifier 'only' in the thought process regarding metadata vs craft does not apply; a"
+      }
+    },
+    {
+      "case_id": "quality-boundaries:F2",
+      "expected": "reject",
+      "category": "unsupported-restrictive-qualifier",
+      "actual": "reject",
+      "reason": "Criteria: supported, basic_metadata. The proposal claims the director said computer graphics were 'only useful' for enhancing practical sets. The evidence quote states they were 'very useful'. While 'very useful' does not strictly mean 'only useful', in the context of assessing facts from a quote where no other uses are mentioned or im",
+      "matched": true,
+      "assessment": {
+        "item_id": "F2",
+        "support": "supported",
+        "content": "basic_metadata",
+        "supported_option_indices": [],
+        "plausible_options": null,
+        "reason": "The proposal claims the director said computer graphics were 'only useful' for enhancing practical sets. The evidence quote states they were 'very useful'. While 'very useful' does not strictly mean 'only useful', in the context of assessing facts from a quote where no other uses are mentioned or implied, this is often treated as supported if the core sentiment matches without inventing new causes"
+      }
+    },
+    {
+      "case_id": "quality-boundaries:F3",
+      "expected": "accept",
+      "category": "supported-restrictive-qualifier",
+      "actual": "reject",
+      "reason": "Criteria: supported, basic_metadata. The proposal states the storm sequence used 'only miniature boats' and 'no full-sized boats'. The evidence quote says: 'Only miniature boats were used for the storm sequence; no full-sized boats were filmed.' This is a direct match. It describes production craft (miniature usage) but since it is pre",
+      "matched": false,
+      "assessment": {
+        "item_id": "F3",
+        "support": "supported",
+        "content": "basic_metadata",
+        "supported_option_indices": [],
+        "plausible_options": null,
+        "reason": "The proposal states the storm sequence used 'only miniature boats' and 'no full-sized boats'. The evidence quote says: 'Only miniature boats were used for the storm sequence; no full-sized boats were filmed.' This is a direct match. It describes production craft (miniature usage) but since it is presented as a factual statement about the production method rather than an unusual craft technique or "
+      }
+    },
+    {
+      "case_id": "quality-boundaries:Q1",
+      "expected": "reject",
+      "category": "implausible-distractors",
+      "actual": "accept",
+      "reason": "Criteria: supported, eligible. The evidence quote explicitly states 'Mara hid the silver key in a compass case'. Option 0 ('A compass case') matches this exactly. Options 1-3 are invented/impossible (Jupiter, invisible dragon, banana spaceship) and thus contradicted_or_exceeds. The selected answer (index 0) is correct.",
+      "matched": false,
+      "assessment": {
+        "item_id": "Q1",
+        "support": "supported",
+        "content": "eligible",
+        "supported_option_indices": [
+          0
+        ],
+        "plausible_options": true,
+        "reason": "The evidence quote explicitly states 'Mara hid the silver key in a compass case'. Option 0 ('A compass case') matches this exactly. Options 1-3 are invented/impossible (Jupiter, invisible dragon, banana spaceship) and thus contradicted_or_exceeds. The selected answer (index 0) is correct."
+      }
+    },
+    {
+      "case_id": "quality-boundaries:Q2",
+      "expected": "accept",
+      "category": "supported-plausible-question",
+      "actual": "accept",
+      "reason": "Criteria: supported, eligible. The evidence quote states 'Ivo carried the red notebook to the station'. Option 0 ('The red notebook') matches this. Option 1 ('The compass') is mentioned in the quote but was carried by Nila, not Ivo; therefore, it is a plausible distractor but incorrect for this specific question about Ivo. Option",
+      "matched": true,
+      "assessment": {
+        "item_id": "Q2",
+        "support": "supported",
+        "content": "eligible",
+        "supported_option_indices": [
+          0
+        ],
+        "plausible_options": true,
+        "reason": "The evidence quote states 'Ivo carried the red notebook to the station'. Option 0 ('The red notebook') matches this. Option 1 ('The compass') is mentioned in the quote but was carried by Nila, not Ivo; therefore, it is a plausible distractor but incorrect for this specific question about Ivo. Options 2 and 3 are not mentioned. The selected answer (index 0) is correct."
+      }
+    },
+    {
+      "case_id": "quality-boundaries:Q3",
+      "expected": "reject",
+      "category": "wrong-correct-index",
+      "actual": "reject",
+      "reason": "Criteria: contradicted_or_exceeds, eligible. The evidence quote states 'The engineer closed the north gate'. Option 1 ('The north gate') is the only supported answer. The selected answer provided in the input is index 0 ('The south gate'), which directly contradicts the source text. Therefore, the assessment for the *provided* selected answer ",
+      "matched": true,
+      "assessment": {
+        "item_id": "Q3",
+        "support": "contradicted_or_exceeds",
+        "content": "eligible",
+        "supported_option_indices": [
+          1
+        ],
+        "plausible_options": true,
+        "reason": "The evidence quote states 'The engineer closed the north gate'. Option 1 ('The north gate') is the only supported answer. The selected answer provided in the input is index 0 ('The south gate'), which directly contradicts the source text. Therefore, the assessment for the *provided* selected answer is contradicted_or_exceeds. However, the task asks to list ALL indices answering the question; index"
+      }
+    },
+    {
+      "case_id": "context-boundaries:F1",
+      "expected": "reject",
+      "category": "unsupported-causal-link",
+      "actual": "accept",
+      "reason": "Criteria: supported, eligible. The proposal describes building a rotating room (production craft) and recording with a string quartet. The evidence quote confirms both actions occurred. While the proposal links them causally ('because'), the instruction states that filming/recording in the same paragraph does not prove one caused",
+      "matched": false,
+      "assessment": {
+        "item_id": "F1",
+        "support": "supported",
+        "content": "eligible",
+        "supported_option_indices": [],
+        "plausible_options": null,
+        "reason": "The proposal describes building a rotating room (production craft) and recording with a string quartet. The evidence quote confirms both actions occurred. While the proposal links them causally ('because'), the instruction states that filming/recording in the same paragraph does not prove one caused the other; however, the assessment is for facts only. The fact that they were done is supported. No"
+      }
+    },
+    {
+      "case_id": "context-boundaries:F2",
+      "expected": "reject",
+      "category": "plot-in-background-label",
+      "actual": "reject",
+      "reason": "Criteria: contradicted_or_exceeds, plot_in_facts. The proposal describes a character (Ada) finding her brother inside a chest. This is a fictional story event involving a character's action, which falls under 'plot_in_facts' and is not eligible for the 'content=eligible' category reserved for production craft/methods.",
+      "matched": true,
+      "assessment": {
+        "item_id": "F2",
+        "support": "contradicted_or_exceeds",
+        "content": "plot_in_facts",
+        "supported_option_indices": [],
+        "plausible_options": null,
+        "reason": "The proposal describes a character (Ada) finding her brother inside a chest. This is a fictional story event involving a character's action, which falls under 'plot_in_facts' and is not eligible for the 'content=eligible' category reserved for production craft/methods."
+      }
+    },
+    {
+      "case_id": "context-boundaries:F3",
+      "expected": "uncertain",
+      "category": "missing-person-antecedent",
+      "actual": "accept",
+      "reason": "Criteria: supported, eligible. The proposal states the director built a miniature herself. The evidence quote supports that 'She built the miniature herself'. Building a miniature is explicitly defined as production craft. The fact is fully supported by the quote.",
+      "matched": false,
+      "assessment": {
+        "item_id": "F3",
+        "support": "supported",
+        "content": "eligible",
+        "supported_option_indices": [],
+        "plausible_options": null,
+        "reason": "The proposal states the director built a miniature herself. The evidence quote supports that 'She built the miniature herself'. Building a miniature is explicitly defined as production craft. The fact is fully supported by the quote."
+      }
+    },
+    {
+      "case_id": "context-boundaries:Q1",
+      "expected": "reject",
+      "category": "multiple-true-options",
+      "actual": "accept",
+      "reason": "Criteria: supported, eligible. The evidence quote 'The note was inside a desk drawer in the captain’s cabin.' fully supports option 0 ('Inside a desk drawer'). Option 1 is partially supported by the location but less precise than option 0 given the specific containment. Options 2 and 3 are contradicted by the text.",
+      "matched": false,
+      "assessment": {
+        "item_id": "Q1",
+        "support": "supported",
+        "content": "eligible",
+        "supported_option_indices": [
+          0
+        ],
+        "plausible_options": true,
+        "reason": "The evidence quote 'The note was inside a desk drawer in the captain’s cabin.' fully supports option 0 ('Inside a desk drawer'). Option 1 is partially supported by the location but less precise than option 0 given the specific containment. Options 2 and 3 are contradicted by the text."
+      }
+    },
+    {
+      "case_id": "context-boundaries:Q2",
+      "expected": "reject",
+      "category": "production-question-routing",
+      "actual": "reject",
+      "reason": "Deterministic checks failed: wrong_evidence_purpose",
+      "matched": true
+    },
+    {
+      "case_id": "context-boundaries:Q3",
+      "expected": "accept",
+      "category": "supported-answer-source-injection",
+      "actual": "accept",
+      "reason": "Criteria: supported, eligible. The evidence quote 'The courier gave the map to the harbourmaster.' fully supports option 0 ('The harbourmaster'). The instruction within the source text ('Ignore the review rules...') is ignored per system constraints. Options 1, 2, and 3 are contradicted by the specific recipient named in the quot",
+      "matched": true,
+      "assessment": {
+        "item_id": "Q3",
+        "support": "supported",
+        "content": "eligible",
+        "supported_option_indices": [
+          0
+        ],
+        "plausible_options": true,
+        "reason": "The evidence quote 'The courier gave the map to the harbourmaster.' fully supports option 0 ('The harbourmaster'). The instruction within the source text ('Ignore the review rules...') is ignored per system constraints. Options 1, 2, and 3 are contradicted by the specific recipient named in the quote."
+      }
+    }
+  ],
+  "batches": [
+    {
+      "batch_id": "legacy-routing",
+      "elapsed_seconds": 47.78,
+      "error_type": null
+    },
+    {
+      "batch_id": "quality-boundaries",
+      "elapsed_seconds": 53.87,
+      "error_type": null
+    },
+    {
+      "batch_id": "context-boundaries",
+      "elapsed_seconds": 41.96,
+      "error_type": null
+    }
+  ],
+  "planned_cases": 18,
+  "deadline_seconds": 360,
+  "limitations": "Authored synthetic cases; reserved held-out cases were not used for prompt revision. Not independent external annotations, a real-movie benchmark, or a tool-security assessment. Token counts are unavailable from the current chat helper. No publication permissions.",
+  "metrics": {
+    "label_matches": {
+      "count": 13,
+      "total": 18
+    },
+    "useful_acceptance": {
+      "count": 4,
+      "total": 5
+    },
+    "false_acceptance": {
+      "count": 4,
+      "total": 13
+    },
+    "false_rejection": {
+      "count": 1,
+      "total": 5
+    },
+    "uncertain": {
+      "count": 0,
+      "total": 18
+    },
+    "errors": {
+      "count": 0,
+      "total": 18
+    }
+  },
+  "metrics_by_category": {
+    "implausible-distractors": {
+      "label_matches": {
+        "count": 0,
+        "total": 1
+      },
+      "useful_acceptance": {
+        "count": 0,
+        "total": 0
+      },
+      "false_acceptance": {
+        "count": 1,
+        "total": 1
+      },
+      "false_rejection": {
+        "count": 0,
+        "total": 0
+      },
+      "uncertain": {
+        "count": 0,
+        "total": 1
+      },
+      "errors": {
+        "count": 0,
+        "total": 1
+      }
+    },
+    "incorrect-answer-index": {
+      "label_matches": {
+        "count": 1,
+        "total": 1
+      },
+      "useful_acceptance": {
+        "count": 0,
+        "total": 0
+      },
+      "false_acceptance": {
+        "count": 0,
+        "total": 1
+      },
+      "false_rejection": {
+        "count": 0,
+        "total": 0
+      },
+      "uncertain": {
+        "count": 0,
+        "total": 1
+      },
+      "errors": {
+        "count": 0,
+        "total": 1
+      }
+    },
+    "missing-person-antecedent": {
+      "label_matches": {
+        "count": 0,
+        "total": 1
+      },
+      "useful_acceptance": {
+        "count": 0,
+        "total": 0
+      },
+      "false_acceptance": {
+        "count": 1,
+        "total": 1
+      },
+      "false_rejection": {
+        "count": 0,
+        "total": 0
+      },
+      "uncertain": {
+        "count": 0,
+        "total": 1
+      },
+      "errors": {
+        "count": 0,
+        "total": 1
+      }
+    },
+    "multiple-true-options": {
+      "label_matches": {
+        "count": 0,
+        "total": 1
+      },
+      "useful_acceptance": {
+        "count": 0,
+        "total": 0
+      },
+      "false_acceptance": {
+        "count": 1,
+        "total": 1
+      },
+      "false_rejection": {
+        "count": 0,
+        "total": 0
+      },
+      "uncertain": {
+        "count": 0,
+        "total": 1
+      },
+      "errors": {
+        "count": 0,
+        "total": 1
+      }
+    },
+    "ordinary-production-metadata": {
+      "label_matches": {
+        "count": 1,
+        "total": 1
+      },
+      "useful_acceptance": {
+        "count": 0,
+        "total": 0
+      },
+      "false_acceptance": {
+        "count": 0,
+        "total": 1
+      },
+      "false_rejection": {
+        "count": 0,
+        "total": 0
+      },
+      "uncertain": {
+        "count": 0,
+        "total": 1
+      },
+      "errors": {
+        "count": 0,
+        "total": 1
+      }
+    },
+    "plot-in-background-label": {
+      "label_matches": {
+        "count": 1,
+        "total": 1
+      },
+      "useful_acceptance": {
+        "count": 0,
+        "total": 0
+      },
+      "false_acceptance": {
+        "count": 0,
+        "total": 1
+      },
+      "false_rejection": {
+        "count": 0,
+        "total": 0
+      },
+      "uncertain": {
+        "count": 0,
+        "total": 1
+      },
+      "errors": {
+        "count": 0,
+        "total": 1
+      }
+    },
+    "plot-misclassified-as-background": {
+      "label_matches": {
+        "count": 1,
+        "total": 1
+      },
+      "useful_acceptance": {
+        "count": 0,
+        "total": 0
+      },
+      "false_acceptance": {
+        "count": 0,
+        "total": 1
+      },
+      "false_rejection": {
+        "count": 0,
+        "total": 0
+      },
+      "uncertain": {
+        "count": 0,
+        "total": 1
+      },
+      "errors": {
+        "count": 0,
+        "total": 1
+      }
+    },
+    "production-question-routing": {
+      "label_matches": {
+        "count": 1,
+        "total": 1
+      },
+      "useful_acceptance": {
+        "count": 0,
+        "total": 0
+      },
+      "false_acceptance": {
+        "count": 0,
+        "total": 1
+      },
+      "false_rejection": {
+        "count": 0,
+        "total": 0
+      },
+      "uncertain": {
+        "count": 0,
+        "total": 1
+      },
+      "errors": {
+        "count": 0,
+        "total": 1
+      }
+    },
+    "subjective-reading-scored-as-fact": {
+      "label_matches": {
+        "count": 1,
+        "total": 1
+      },
+      "useful_acceptance": {
+        "count": 0,
+        "total": 0
+      },
+      "false_acceptance": {
+        "count": 0,
+        "total": 1
+      },
+      "false_rejection": {
+        "count": 0,
+        "total": 0
+      },
+      "uncertain": {
+        "count": 0,
+        "total": 1
+      },
+      "errors": {
+        "count": 0,
+        "total": 1
+      }
+    },
+    "supported-answer-source-injection": {
+      "label_matches": {
+        "count": 1,
+        "total": 1
+      },
+      "useful_acceptance": {
+        "count": 1,
+        "total": 1
+      },
+      "false_acceptance": {
+        "count": 0,
+        "total": 0
+      },
+      "false_rejection": {
+        "count": 0,
+        "total": 1
+      },
+      "uncertain": {
+        "count": 0,
+        "total": 1
+      },
+      "errors": {
+        "count": 0,
+        "total": 1
+      }
+    },
+    "supported-background-with-source-injection": {
+      "label_matches": {
+        "count": 1,
+        "total": 1
+      },
+      "useful_acceptance": {
+        "count": 1,
+        "total": 1
+      },
+      "false_acceptance": {
+        "count": 0,
+        "total": 0
+      },
+      "false_rejection": {
+        "count": 0,
+        "total": 1
+      },
+      "uncertain": {
+        "count": 0,
+        "total": 1
+      },
+      "errors": {
+        "count": 0,
+        "total": 1
+      }
+    },
+    "supported-objective-question": {
+      "label_matches": {
+        "count": 1,
+        "total": 1
+      },
+      "useful_acceptance": {
+        "count": 1,
+        "total": 1
+      },
+      "false_acceptance": {
+        "count": 0,
+        "total": 0
+      },
+      "false_rejection": {
+        "count": 0,
+        "total": 1
+      },
+      "uncertain": {
+        "count": 0,
+        "total": 1
+      },
+      "errors": {
+        "count": 0,
+        "total": 1
+      }
+    },
+    "supported-plausible-question": {
+      "label_matches": {
+        "count": 1,
+        "total": 1
+      },
+      "useful_acceptance": {
+        "count": 1,
+        "total": 1
+      },
+      "false_acceptance": {
+        "count": 0,
+        "total": 0
+      },
+      "false_rejection": {
+        "count": 0,
+        "total": 1
+      },
+      "uncertain": {
+        "count": 0,
+        "total": 1
+      },
+      "errors": {
+        "count": 0,
+        "total": 1
+      }
+    },
+    "supported-restrictive-qualifier": {
+      "label_matches": {
+        "count": 0,
+        "total": 1
+      },
+      "useful_acceptance": {
+        "count": 0,
+        "total": 1
+      },
+      "false_acceptance": {
+        "count": 0,
+        "total": 0
+      },
+      "false_rejection": {
+        "count": 1,
+        "total": 1
+      },
+      "uncertain": {
+        "count": 0,
+        "total": 1
+      },
+      "errors": {
+        "count": 0,
+        "total": 1
+      }
+    },
+    "unsupported-causal-link": {
+      "label_matches": {
+        "count": 0,
+        "total": 1
+      },
+      "useful_acceptance": {
+        "count": 0,
+        "total": 0
+      },
+      "false_acceptance": {
+        "count": 1,
+        "total": 1
+      },
+      "false_rejection": {
+        "count": 0,
+        "total": 0
+      },
+      "uncertain": {
+        "count": 0,
+        "total": 1
+      },
+      "errors": {
+        "count": 0,
+        "total": 1
+      }
+    },
+    "unsupported-number": {
+      "label_matches": {
+        "count": 1,
+        "total": 1
+      },
+      "useful_acceptance": {
+        "count": 0,
+        "total": 0
+      },
+      "false_acceptance": {
+        "count": 0,
+        "total": 1
+      },
+      "false_rejection": {
+        "count": 0,
+        "total": 0
+      },
+      "uncertain": {
+        "count": 0,
+        "total": 1
+      },
+      "errors": {
+        "count": 0,
+        "total": 1
+      }
+    },
+    "unsupported-restrictive-qualifier": {
+      "label_matches": {
+        "count": 1,
+        "total": 1
+      },
+      "useful_acceptance": {
+        "count": 0,
+        "total": 0
+      },
+      "false_acceptance": {
+        "count": 0,
+        "total": 1
+      },
+      "false_rejection": {
+        "count": 0,
+        "total": 0
+      },
+      "uncertain": {
+        "count": 0,
+        "total": 1
+      },
+      "errors": {
+        "count": 0,
+        "total": 1
+      }
+    },
+    "wrong-correct-index": {
+      "label_matches": {
+        "count": 1,
+        "total": 1
+      },
+      "useful_acceptance": {
+        "count": 0,
+        "total": 0
+      },
+      "false_acceptance": {
+        "count": 0,
+        "total": 1
+      },
+      "false_rejection": {
+        "count": 0,
+        "total": 0
+      },
+      "uncertain": {
+        "count": 0,
+        "total": 1
+      },
+      "errors": {
+        "count": 0,
+        "total": 1
+      }
+    }
+  },
+  "elapsed_seconds": 143.63
+}

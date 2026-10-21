@@ -1,0 +1,312 @@
+{
+  "generated_at": "2026-10-21T10:28:14.597744+00:00",
+  "policy": "assistant-broader-evidence-replacement-review-v1",
+  "status": "proposal_only",
+  "published": false,
+  "source_report_sha256": "ebd6a16be52cbb3a3375bf262786bc9d805c7fe298730edfd9a6ac9651501298",
+  "summary": {
+    "targets": 16,
+    "pipeline_withheld": 14,
+    "editorial_rejects": 1,
+    "editorial_accepts": 1
+  },
+  "items": [
+    {
+      "movie_id": 13,
+      "title": "Forrest Gump",
+      "question_id": "research-423740447f00-t1-Q2",
+      "candidate": {
+        "target_id": "T1",
+        "question": "What action does Forrest take after being heartbroken by Jenny leaving him?",
+        "options": [
+          "He embarks on a cross-country run that lasts for over three years.",
+          "He learns to play table tennis in the hospital.",
+          "He proposes marriage to Jenny immediately.",
+          "He travels to Vietnam to find Bubba."
+        ],
+        "correct_index": 0,
+        "evidence_quote": "After Jenny leaves him, he embarks on a cross-country run that lasts for over three years."
+      },
+      "final_review": "withheld_by_code",
+      "reason": "isolated_action_recall"
+    },
+    {
+      "movie_id": 13,
+      "title": "Forrest Gump",
+      "question_id": "research-423740447f00-t6-Q2",
+      "candidate": {
+        "target_id": "T2",
+        "question": "What major revelation occurs regarding Forrest's relationship with Jenny at the film's end?",
+        "options": [
+          "It is here that the film's major twist is revealed: Jenny has a son, also named Forrest, and Forrest is the father.",
+          "Forrest decides to leave Jenny forever after she returns.",
+          "Jenny reveals she never loved him in the first place.",
+          "They decide to adopt a child from an orphanage."
+        ],
+        "correct_index": 0,
+        "evidence_quote": "It is here that the film's major twist is revealed: Jenny has a son, also named Forrest, and Forrest is the father."
+      },
+      "final_review": "withheld_by_critic",
+      "reason": "Criteria: supported, granular_detail. The selected answer (index 0) is explicitly confirmed by the evidence quote as the film's major twist regarding Jenny and Forrest. The other options are not supported by the provided text. The question tests a specific plot revelation (turning_point) that serves as the central resolution of the rela"
+    },
+    {
+      "movie_id": 13,
+      "title": "Forrest Gump",
+      "question_id": "research-423740447f00-t10-Q1",
+      "candidate": {
+        "target_id": "T3",
+        "question": "What is Forrest's status at the film's conclusion?",
+        "options": [
+          "At the film's conclusion, Forrest is a single father raising his son after Jenny's passing.",
+          "He becomes a famous runner and retires from public life.",
+          "He reunites with Jenny to start a new business venture.",
+          "He moves to a different state to live alone."
+        ],
+        "correct_index": 0,
+        "evidence_quote": "At the film's conclusion, Forrest is a single father raising his son after Jenny's passing."
+      },
+      "final_review": "withheld_by_code",
+      "reason": "quote_not_in_reviewed_evidence"
+    },
+    {
+      "movie_id": 13,
+      "title": "Forrest Gump",
+      "question_id": "research-423740447f00-t11-Q2",
+      "candidate": {
+        "target_id": "T1",
+        "question": "Why does Forrest buy a shrimping boat?",
+        "options": [
+          "To fulfil his promise to Bubba.",
+          "To make money for the community immediately.",
+          "Because he wants to leave Alabama forever.",
+          "To prove he can be a millionaire like others."
+        ],
+        "correct_index": 0,
+        "evidence_quote": "Forrest returns to Alabama and buys a shrimping boat, fulfilling Bubba's dream."
+      },
+      "final_review": "withheld_by_code",
+      "reason": "selected_answer_not_literal"
+    },
+    {
+      "movie_id": 129,
+      "title": "Spirited Away",
+      "question_id": "research-a97564d0da89-t3-Q3",
+      "candidate": {
+        "target_id": "T2",
+        "question": "What predicament begins Chihiro's arc?",
+        "options": [
+          "Becoming trapped in the spirit world after her parents are transformed.",
+          "Finding a way to escape the bathhouse without help.",
+          "Learning how to cook for the spirits quickly.",
+          "Discovering that No-Face is actually a kind spirit."
+        ],
+        "correct_index": 0,
+        "evidence_quote": "A young girl, Chihiro, becomes trapped in a strange new world of spirits."
+      },
+      "final_review": "withheld_by_code",
+      "reason": "selected_answer_not_literal"
+    },
+    {
+      "movie_id": 278,
+      "title": "The Shawshank Redemption",
+      "question_id": "research-4630dcebf37c-t5-Q1",
+      "candidate": {
+        "target_id": "T3",
+        "question": "How is Andy Dufresne described during his time in prison?",
+        "options": [
+          "Admired by the other inmates for his integrity and unquenchable sense of hope.",
+          "Feared by the guards for his knowledge of finance.",
+          "Isolated because he refuses to talk to anyone.",
+          "Respected only by the warden for his quiet demeanor."
+        ],
+        "correct_index": 0,
+        "evidence_quote": "During his long stretch in prison, Dufresne comes to be admired by the other inmates -- including an older prisoner named Red -- for his integrity and unquenchable sense of hope."
+      },
+      "final_review": "withheld_by_code",
+      "reason": "selected_answer_not_literal"
+    },
+    {
+      "movie_id": 550,
+      "title": "Fight Club",
+      "question_id": "research-e783e7f83fe0-t1-Q1",
+      "candidate": {
+        "target_id": "T1",
+        "question": "What is the stated purpose of the first Fight Club gathering?",
+        "options": [
+          "To engage in bare-knuckle fighting as a means of reclaiming their masculinity and escaping the confines of modern society.",
+          "To find a new member who also attends a cancer support group.",
+          "To transform into an organization called Project Mayhem.",
+          "To stand hand in hand with Marla Singer."
+        ],
+        "correct_index": 0,
+        "evidence_quote": "Fight Club begins as a secret society where men gather to engage in bare-knuckle fighting as a means of reclaiming their masculinity and escaping the confines of modern society."
+      },
+      "final_review": "accept",
+      "reason": "The question tests the stated purpose of Fight Club and the selected answer is directly supported, though it still requires final combined-bank review."
+    },
+    {
+      "movie_id": 550,
+      "title": "Fight Club",
+      "question_id": "research-e783e7f83fe0-t24-Q2",
+      "candidate": {
+        "target_id": "T2",
+        "question": "How does Bob link the Narrator's support-group life to Fight Club?",
+        "options": [
+          "He befriends Robert \"Bob\" Paulsen, a gentle giant with \"bitch tits\" from steroid abuse, who hugs him at the support group and later joins Fight Club.",
+          "He suggests the Narrator visit a support group for testicular cancer.",
+          "He promises not to talk to Marla about him.",
+          "He transforms Fight Club into Project Mayhem."
+        ],
+        "correct_index": 0,
+        "evidence_quote": "He befriends Robert \"Bob\" Paulsen, a gentle giant with \"bitch tits\" from steroid abuse, who hugs him at the support group and later joins Fight Club."
+      },
+      "final_review": "reject",
+      "reason": "The answer copies an unnecessarily long sentence containing unsuitable wording rather than a concise production-grade choice."
+    },
+    {
+      "movie_id": 603,
+      "title": "The Matrix",
+      "question_id": "rescue-ship",
+      "candidate": {
+        "target_id": "T3",
+        "question": "What is the narrative role of Morpheus's hovercraft?",
+        "options": [
+          "It serves as a base for the crew fighting against the machines.",
+          "It houses the remaining free humans in Zion.",
+          "It contains the mainframe access codes Smith seeks.",
+          "It disables the Sentinels with an electromagnetic pulse."
+        ],
+        "correct_index": 0,
+        "evidence_quote": "The Nebuchadnezzar is the hovercraft captained by Morpheus and serves as a base for the crew fighting against the machines."
+      },
+      "final_review": "withheld_by_code",
+      "reason": "selected_answer_not_literal"
+    },
+    {
+      "movie_id": 1124,
+      "title": "The Prestige",
+      "question_id": "research-6bd2d9de6c13-t1-Q1",
+      "candidate": {
+        "target_id": "T1",
+        "question": "What is the central dynamic between Robert Angier and Alfred Borden that drives the story of The Prestige?",
+        "options": [
+          "Two rival stage magicians in Victorian London",
+          "A bitter rivalry born after Julia's death",
+          "Mentors guiding a young assistant named Olivia",
+          "Friends who accidentally cause a theater fire"
+        ],
+        "correct_index": 0,
+        "evidence_quote": "Christopher Nolan's The Prestige (2006) tells the story of two rival stage magicians, Robert Angier and Alfred Borden, in Victorian London."
+      },
+      "final_review": "withheld_by_code",
+      "reason": "quote_not_in_reviewed_evidence, selected_answer_not_literal"
+    },
+    {
+      "movie_id": 120467,
+      "title": "The Grand Budapest Hotel",
+      "question_id": "research-a342008a26db-t1-Q2",
+      "candidate": null,
+      "final_review": "withheld_by_code",
+      "reason": "writer_abstained"
+    },
+    {
+      "movie_id": 157336,
+      "title": "Interstellar",
+      "question_id": "wormhole-location",
+      "candidate": {
+        "target_id": "T3",
+        "question": "What narrative function does the wormhole serve for humanity in Interstellar?",
+        "options": [
+          "It provides a path to another galaxy",
+          "It leads to a secret NASA facility",
+          "It allows volunteers to investigate habitable planets",
+          "It reveals the identity of Murph's ghost"
+        ],
+        "correct_index": 0,
+        "evidence_quote": "Brand reveals a wormhole has appeared near Saturn, providing a path to another galaxy."
+      },
+      "final_review": "withheld_by_code",
+      "reason": "selected_answer_not_literal"
+    },
+    {
+      "movie_id": 157336,
+      "title": "Interstellar",
+      "question_id": "ship-name",
+      "candidate": {
+        "target_id": "T1",
+        "question": "What role does the spacecraft Endurance play for Cooper and his team upon entering the wormhole system?",
+        "options": [
+          "It carries Cooper's team through the wormhole and into a system orbiting a supermassive black hole named Gargantua.",
+          "It serves as a stationary observation post near the event horizon of Gargantua.",
+          "It transports frozen embryos to establish a colony on Edmunds' planet.",
+          "It acts as a rescue vessel for Dr. Mann after he falsifies his data."
+        ],
+        "correct_index": 0,
+        "evidence_quote": "On board the Endurance with Brand's daughter Amelia, the physicist Romilly, the geologist Doyle, and two military robots called TARS and CASE, he travels through the wormhole and into a system orbiting a supermassive black hole named Gargantua."
+      },
+      "final_review": "withheld_by_code",
+      "reason": "selected_answer_not_literal"
+    },
+    {
+      "movie_id": 157336,
+      "title": "Interstellar",
+      "question_id": "generated-slingshot-time-59c997d23d21",
+      "candidate": {
+        "target_id": "T2",
+        "question": "Why is the slingshot maneuver around Gargantua considered costly for Cooper and Brand?",
+        "options": [
+          "Because the maneuver will cost enormous time due to dilation and will require shedding mass.",
+          "Because it requires detaching TARS to lighten the craft before entering the wormhole.",
+          "Because it exposes the crew to radiation levels that freeze the embryos inside.",
+          "Because it prevents them from reaching the secret NASA facility in Murph's room."
+        ],
+        "correct_index": 0,
+        "evidence_quote": "Cooper realizes they can slingshot around the black hole to reach Edmunds' planet, but the maneuver will cost enormous time due to dilation and will require shedding mass."
+      },
+      "final_review": "withheld_by_code",
+      "reason": "quote_not_in_reviewed_evidence, selected_answer_not_literal"
+    },
+    {
+      "movie_id": 157336,
+      "title": "Interstellar",
+      "question_id": "generated-colony-cargo-20b1852c1d6c",
+      "candidate": {
+        "target_id": "T3",
+        "question": "What is the primary purpose of carrying frozen human embryos aboard the spacecraft Endurance?",
+        "options": [
+          "To colonize a new world if Plan A fails.",
+          "To provide a backup crew for the Lazarus expedition.",
+          "To serve as a seed for a colony on Miller's planet.",
+          "To ensure that measurements from inside a black hole are preserved."
+        ],
+        "correct_index": 0,
+        "evidence_quote": "Plan B: Carry 5,000 frozen human embryos aboard the spacecraft Endurance, and colonize a new world if Plan A fails."
+      },
+      "final_review": "withheld_by_code",
+      "reason": "selected_answer_not_literal"
+    },
+    {
+      "movie_id": 157336,
+      "title": "Interstellar",
+      "question_id": "research-929a17806629-t3-Q2",
+      "candidate": {
+        "target_id": "T1",
+        "question": "What do the planets beyond the wormhole represent for humanity?",
+        "options": [
+          "possible new homes",
+          "a trap for explorers",
+          "a source of infinite energy",
+          "a place to hide from time"
+        ],
+        "correct_index": 0,
+        "evidence_quote": "On the other side: another galaxy containing a dozen planets that might be fit for human habitation."
+      },
+      "final_review": "withheld_by_code",
+      "reason": "selected_answer_not_literal"
+    }
+  ],
+  "publication": {
+    "authorized": false,
+    "database_mutated": false
+  }
+}

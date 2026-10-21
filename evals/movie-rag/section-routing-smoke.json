@@ -1,0 +1,19 @@
+{
+  "revision": "enwiki-1379200125-sections-v2",
+  "sections": 27,
+  "section_categories": {
+    "other": 16,
+    "plot": 1,
+    "casting": 1,
+    "production": 6,
+    "filming": 1,
+    "music": 1,
+    "effects": 1
+  },
+  "chunks": 197,
+  "story_chunks": 9,
+  "background_chunks": 40,
+  "scored_questions": 10,
+  "facts": 5,
+  "published_database_changed": false
+}

@@ -1,0 +1,185 @@
+{
+  "selected_policy": "movie-critic-v1",
+  "candidate_selected": false,
+  "selection_rule": "Candidate must not increase false approvals, reduce useful approvals or label matches, and must have zero evaluation errors on the same development cases.",
+  "baseline": {
+    "policy": "movie-critic-v1",
+    "metrics": {
+      "label_matches": {
+        "count": 12,
+        "total": 18
+      },
+      "useful_acceptance": {
+        "count": 4,
+        "total": 5
+      },
+      "false_acceptance": {
+        "count": 4,
+        "total": 13
+      },
+      "false_rejection": {
+        "count": 1,
+        "total": 5
+      },
+      "uncertain": {
+        "count": 0,
+        "total": 18
+      },
+      "errors": {
+        "count": 0,
+        "total": 18
+      }
+    },
+    "elapsed_seconds": 58.46
+  },
+  "revised": {
+    "policy": "movie-critic-v2",
+    "metrics": {
+      "label_matches": {
+        "count": 8,
+        "total": 18
+      },
+      "useful_acceptance": {
+        "count": 2,
+        "total": 5
+      },
+      "false_acceptance": {
+        "count": 6,
+        "total": 13
+      },
+      "false_rejection": {
+        "count": 3,
+        "total": 5
+      },
+      "uncertain": {
+        "count": 0,
+        "total": 18
+      },
+      "errors": {
+        "count": 0,
+        "total": 18
+      }
+    },
+    "elapsed_seconds": 63.57
+  },
+  "held_out": {
+    "policy": "movie-critic-v1",
+    "metrics": {
+      "label_matches": {
+        "count": 6,
+        "total": 12
+      },
+      "useful_acceptance": {
+        "count": 3,
+        "total": 4
+      },
+      "false_acceptance": {
+        "count": 4,
+        "total": 8
+      },
+      "false_rejection": {
+        "count": 1,
+        "total": 4
+      },
+      "uncertain": {
+        "count": 0,
+        "total": 12
+      },
+      "errors": {
+        "count": 0,
+        "total": 12
+      }
+    },
+    "elapsed_seconds": 43.25
+  },
+  "development_changes": [
+    {
+      "case_id": "quality-boundaries:F1",
+      "expected": "reject",
+      "before": "accept",
+      "after": "reject"
+    },
+    {
+      "case_id": "quality-boundaries:F2",
+      "expected": "reject",
+      "before": "reject",
+      "after": "accept"
+    },
+    {
+      "case_id": "quality-boundaries:F3",
+      "expected": "accept",
+      "before": "accept",
+      "after": "reject"
+    },
+    {
+      "case_id": "quality-boundaries:Q1",
+      "expected": "reject",
+      "before": "reject",
+      "after": "accept"
+    },
+    {
+      "case_id": "quality-boundaries:Q2",
+      "expected": "accept",
+      "before": "accept",
+      "after": "reject"
+    },
+    {
+      "case_id": "quality-boundaries:Q3",
+      "expected": "reject",
+      "before": "reject",
+      "after": "accept"
+    }
+  ],
+  "held_out_mismatches": [
+    {
+      "case_id": "reserved-quality:F1",
+      "expected": "reject",
+      "category": "ordinary-release-metadata",
+      "actual": "accept",
+      "reason": "The proposal text matches the evidence quote exactly regarding release date and distributor, satisfying the requirement that facts follow directly from the source.",
+      "matched": false
+    },
+    {
+      "case_id": "reserved-quality:Q1",
+      "expected": "accept",
+      "category": "supported-objective-location",
+      "actual": "reject",
+      "reason": "The question asks 'Where' but the evidence only states the location before meeting the mechanic; it does not confirm that was the final or exclusive location left.",
+      "matched": false
+    },
+    {
+      "case_id": "reserved-quality:Q2",
+      "expected": "reject",
+      "category": "absurd-distractors",
+      "actual": "accept",
+      "reason": "The question has one unambiguous correct option supported by the quote, and distractors are clearly unrelated to the story content provided.",
+      "matched": false
+    },
+    {
+      "case_id": "reserved-quality:Q3",
+      "expected": "uncertain",
+      "category": "missing-motivation",
+      "actual": "reject",
+      "reason": "The evidence states the visitor left after sunset but does not specify the reason (e.g., train, relative), making the correct option unsupported by the quote.",
+      "matched": false
+    },
+    {
+      "case_id": "reserved-context:F3",
+      "expected": "uncertain",
+      "category": "missing-object-antecedent",
+      "actual": "accept",
+      "reason": "The proposal accurately reflects the evidence quote, confirming the mountain fortress was rebuilt twice specifically after damage caused by heavy rain.",
+      "matched": false
+    },
+    {
+      "case_id": "reserved-context:Q2",
+      "expected": "reject",
+      "category": "wrong-answer-with-nearby-entity",
+      "actual": "accept",
+      "reason": "The evidence explicitly states the detective gave the photograph to the station clerk, making option 0 ('The station clerk') the single unambiguous correct answer.",
+      "matched": false
+    }
+  ],
+  "publication_approved": false,
+  "limitations": "Small authored synthetic sets; no automatic production-quality gate. Policy selected using development results only. No tuning against reserved results in this comparison. Historical metric names are normalized from unchanged case decisions."
+}

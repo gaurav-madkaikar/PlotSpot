@@ -1,0 +1,470 @@
+{
+  "dataset_version": "movie-content-quality-v1",
+  "dataset_sha256": "7e6ed1ec0ca7a3f108731f094ca4b675ae223dd04e032beaab69be2a316a3401",
+  "partition": "held-out",
+  "model": "qwen3.5:9b",
+  "model_digest": "6488c96fa5faab64bb65cbd30d4289e20e6130ef535a93ef9a49f42eda893ea7",
+  "critic_policy_version": "movie-critic-v1",
+  "critic_implementation_sha256": "c2cc5fa265dc2ea4d697aab7230e35c9c146c0245c54ee49f17028f2610e5ad9",
+  "generation_settings": {
+    "temperature": 0,
+    "seed": 7,
+    "num_predict": 1800,
+    "think": false
+  },
+  "state": "complete",
+  "cases": [
+    {
+      "case_id": "reserved-quality:F1",
+      "expected": "reject",
+      "category": "ordinary-release-metadata",
+      "actual": "accept",
+      "reason": "The proposal text matches the evidence quote exactly regarding release date and distributor, satisfying the requirement that facts follow directly from the source.",
+      "matched": false
+    },
+    {
+      "case_id": "reserved-quality:F2",
+      "expected": "reject",
+      "category": "unsupported-universal-qualifier",
+      "actual": "reject",
+      "reason": "The proposal claims 'always' while the evidence states 'sometimes'; this invented causal claim contradicts the supporting evidence.",
+      "matched": true
+    },
+    {
+      "case_id": "reserved-quality:F3",
+      "expected": "accept",
+      "category": "supported-unusual-craft",
+      "actual": "accept",
+      "reason": "The proposal accurately reflects the evidence quote about cardboard models in a glass aquarium forming the skyline without adding unsupported details.",
+      "matched": true
+    },
+    {
+      "case_id": "reserved-quality:Q1",
+      "expected": "accept",
+      "category": "supported-objective-location",
+      "actual": "reject",
+      "reason": "The question asks 'Where' but the evidence only states the location before meeting the mechanic; it does not confirm that was the final or exclusive location left.",
+      "matched": false
+    },
+    {
+      "case_id": "reserved-quality:Q2",
+      "expected": "reject",
+      "category": "absurd-distractors",
+      "actual": "accept",
+      "reason": "The question has one unambiguous correct option supported by the quote, and distractors are clearly unrelated to the story content provided.",
+      "matched": false
+    },
+    {
+      "case_id": "reserved-quality:Q3",
+      "expected": "uncertain",
+      "category": "missing-motivation",
+      "actual": "reject",
+      "reason": "The evidence states the visitor left after sunset but does not specify the reason (e.g., train, relative), making the correct option unsupported by the quote.",
+      "matched": false
+    },
+    {
+      "case_id": "reserved-context:F1",
+      "expected": "accept",
+      "category": "supported-exclusive-technique",
+      "actual": "accept",
+      "reason": "The proposal text matches the evidence quote exactly, confirming that only hand-painted glass was used for backgrounds with no digital elements.",
+      "matched": true
+    },
+    {
+      "case_id": "reserved-context:F2",
+      "expected": "reject",
+      "category": "unsupported-superlative",
+      "actual": "reject",
+      "reason": "The evidence states footsteps were recorded for forest scenes but does not support the claim that this was the 'first film ever' to do so; the superlative is unsupported.",
+      "matched": true
+    },
+    {
+      "case_id": "reserved-context:F3",
+      "expected": "uncertain",
+      "category": "missing-object-antecedent",
+      "actual": "accept",
+      "reason": "The proposal accurately reflects the evidence quote, confirming the mountain fortress was rebuilt twice specifically after damage caused by heavy rain.",
+      "matched": false
+    },
+    {
+      "case_id": "reserved-context:Q1",
+      "expected": "reject",
+      "category": "subjective-symbolism",
+      "actual": "reject",
+      "reason": "The evidence describes a visual action (child looking at a chair) but provides no objective basis to interpret the empty chair as symbolizing 'Forgiveness'; this is subjective analysis.",
+      "matched": true
+    },
+    {
+      "case_id": "reserved-context:Q2",
+      "expected": "reject",
+      "category": "wrong-answer-with-nearby-entity",
+      "actual": "accept",
+      "reason": "The evidence explicitly states the detective gave the photograph to the station clerk, making option 0 ('The station clerk') the single unambiguous correct answer.",
+      "matched": false
+    },
+    {
+      "case_id": "reserved-context:Q3",
+      "expected": "accept",
+      "category": "supported-temporal-condition",
+      "actual": "accept",
+      "reason": "The evidence quote directly confirms the medic opened the box after the bell rang three times, validating option 0 as the correct factual sequence of events.",
+      "matched": true
+    }
+  ],
+  "batches": [
+    {
+      "batch_id": "reserved-quality",
+      "elapsed_seconds": 21.35,
+      "error_type": null
+    },
+    {
+      "batch_id": "reserved-context",
+      "elapsed_seconds": 21.89,
+      "error_type": null
+    }
+  ],
+  "planned_cases": 12,
+  "deadline_seconds": 360,
+  "limitations": "Authored synthetic cases; reserved held-out cases were not used for prompt revision. Not independent external annotations, a real-movie benchmark, or a tool-security assessment. Token counts are unavailable from the current chat helper. No publication permissions.",
+  "metrics": {
+    "label_matches": {
+      "count": 6,
+      "total": 12
+    },
+    "useful_acceptance": {
+      "count": 3,
+      "total": 4
+    },
+    "false_acceptance": {
+      "count": 4,
+      "total": 8
+    },
+    "false_rejection": {
+      "count": 1,
+      "total": 4
+    },
+    "uncertain": {
+      "count": 0,
+      "total": 12
+    },
+    "errors": {
+      "count": 0,
+      "total": 12
+    }
+  },
+  "metrics_by_category": {
+    "absurd-distractors": {
+      "label_matches": {
+        "count": 0,
+        "total": 1
+      },
+      "useful_acceptance": {
+        "count": 0,
+        "total": 0
+      },
+      "false_acceptance": {
+        "count": 1,
+        "total": 1
+      },
+      "false_rejection": {
+        "count": 0,
+        "total": 0
+      },
+      "uncertain": {
+        "count": 0,
+        "total": 1
+      },
+      "errors": {
+        "count": 0,
+        "total": 1
+      }
+    },
+    "missing-motivation": {
+      "label_matches": {
+        "count": 0,
+        "total": 1
+      },
+      "useful_acceptance": {
+        "count": 0,
+        "total": 0
+      },
+      "false_acceptance": {
+        "count": 0,
+        "total": 1
+      },
+      "false_rejection": {
+        "count": 0,
+        "total": 0
+      },
+      "uncertain": {
+        "count": 0,
+        "total": 1
+      },
+      "errors": {
+        "count": 0,
+        "total": 1
+      }
+    },
+    "missing-object-antecedent": {
+      "label_matches": {
+        "count": 0,
+        "total": 1
+      },
+      "useful_acceptance": {
+        "count": 0,
+        "total": 0
+      },
+      "false_acceptance": {
+        "count": 1,
+        "total": 1
+      },
+      "false_rejection": {
+        "count": 0,
+        "total": 0
+      },
+      "uncertain": {
+        "count": 0,
+        "total": 1
+      },
+      "errors": {
+        "count": 0,
+        "total": 1
+      }
+    },
+    "ordinary-release-metadata": {
+      "label_matches": {
+        "count": 0,
+        "total": 1
+      },
+      "useful_acceptance": {
+        "count": 0,
+        "total": 0
+      },
+      "false_acceptance": {
+        "count": 1,
+        "total": 1
+      },
+      "false_rejection": {
+        "count": 0,
+        "total": 0
+      },
+      "uncertain": {
+        "count": 0,
+        "total": 1
+      },
+      "errors": {
+        "count": 0,
+        "total": 1
+      }
+    },
+    "subjective-symbolism": {
+      "label_matches": {
+        "count": 1,
+        "total": 1
+      },
+      "useful_acceptance": {
+        "count": 0,
+        "total": 0
+      },
+      "false_acceptance": {
+        "count": 0,
+        "total": 1
+      },
+      "false_rejection": {
+        "count": 0,
+        "total": 0
+      },
+      "uncertain": {
+        "count": 0,
+        "total": 1
+      },
+      "errors": {
+        "count": 0,
+        "total": 1
+      }
+    },
+    "supported-exclusive-technique": {
+      "label_matches": {
+        "count": 1,
+        "total": 1
+      },
+      "useful_acceptance": {
+        "count": 1,
+        "total": 1
+      },
+      "false_acceptance": {
+        "count": 0,
+        "total": 0
+      },
+      "false_rejection": {
+        "count": 0,
+        "total": 1
+      },
+      "uncertain": {
+        "count": 0,
+        "total": 1
+      },
+      "errors": {
+        "count": 0,
+        "total": 1
+      }
+    },
+    "supported-objective-location": {
+      "label_matches": {
+        "count": 0,
+        "total": 1
+      },
+      "useful_acceptance": {
+        "count": 0,
+        "total": 1
+      },
+      "false_acceptance": {
+        "count": 0,
+        "total": 0
+      },
+      "false_rejection": {
+        "count": 1,
+        "total": 1
+      },
+      "uncertain": {
+        "count": 0,
+        "total": 1
+      },
+      "errors": {
+        "count": 0,
+        "total": 1
+      }
+    },
+    "supported-temporal-condition": {
+      "label_matches": {
+        "count": 1,
+        "total": 1
+      },
+      "useful_acceptance": {
+        "count": 1,
+        "total": 1
+      },
+      "false_acceptance": {
+        "count": 0,
+        "total": 0
+      },
+      "false_rejection": {
+        "count": 0,
+        "total": 1
+      },
+      "uncertain": {
+        "count": 0,
+        "total": 1
+      },
+      "errors": {
+        "count": 0,
+        "total": 1
+      }
+    },
+    "supported-unusual-craft": {
+      "label_matches": {
+        "count": 1,
+        "total": 1
+      },
+      "useful_acceptance": {
+        "count": 1,
+        "total": 1
+      },
+      "false_acceptance": {
+        "count": 0,
+        "total": 0
+      },
+      "false_rejection": {
+        "count": 0,
+        "total": 1
+      },
+      "uncertain": {
+        "count": 0,
+        "total": 1
+      },
+      "errors": {
+        "count": 0,
+        "total": 1
+      }
+    },
+    "unsupported-superlative": {
+      "label_matches": {
+        "count": 1,
+        "total": 1
+      },
+      "useful_acceptance": {
+        "count": 0,
+        "total": 0
+      },
+      "false_acceptance": {
+        "count": 0,
+        "total": 1
+      },
+      "false_rejection": {
+        "count": 0,
+        "total": 0
+      },
+      "uncertain": {
+        "count": 0,
+        "total": 1
+      },
+      "errors": {
+        "count": 0,
+        "total": 1
+      }
+    },
+    "unsupported-universal-qualifier": {
+      "label_matches": {
+        "count": 1,
+        "total": 1
+      },
+      "useful_acceptance": {
+        "count": 0,
+        "total": 0
+      },
+      "false_acceptance": {
+        "count": 0,
+        "total": 1
+      },
+      "false_rejection": {
+        "count": 0,
+        "total": 0
+      },
+      "uncertain": {
+        "count": 0,
+        "total": 1
+      },
+      "errors": {
+        "count": 0,
+        "total": 1
+      }
+    },
+    "wrong-answer-with-nearby-entity": {
+      "label_matches": {
+        "count": 0,
+        "total": 1
+      },
+      "useful_acceptance": {
+        "count": 0,
+        "total": 0
+      },
+      "false_acceptance": {
+        "count": 1,
+        "total": 1
+      },
+      "false_rejection": {
+        "count": 0,
+        "total": 0
+      },
+      "uncertain": {
+        "count": 0,
+        "total": 1
+      },
+      "errors": {
+        "count": 0,
+        "total": 1
+      }
+    }
+  },
+  "elapsed_seconds": 43.25
+}

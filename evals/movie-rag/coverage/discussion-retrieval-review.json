@@ -1,0 +1,185 @@
+{
+  "created_at_utc": "2026-10-11T19:54:24.801605+00:00",
+  "reviewer": "assistant source inspection; not independent human review",
+  "scope": "Same frozen development inputs, three Wikipedia movies, local llama3.2:3b and nomic-embed-text:v1.5; both retrieval and grounding contracts change",
+  "inputs": [
+    {
+      "path": "evals/movie-rag/coverage/dark-knight-discussion-options-v6.json",
+      "sha256": "6095e858e94198f1be202b95a2cc870fae37537fc57a9f5493d5701fa21e9e48"
+    },
+    {
+      "path": "evals/movie-rag/coverage/discussion-transfer-155-comparison-v6.json",
+      "sha256": "efc8b55c279f947aa61b1bfa8666cc7dd1b442b34b5038c35f4bdbfae761c787"
+    },
+    {
+      "path": "evals/movie-rag/coverage/discussion-transfer-329865-comparison-v6.json",
+      "sha256": "c5fa1f60813e891c60433f77ede058cbbc719d353236dd4c0d8f1f18f5a87df1"
+    },
+    {
+      "path": "evals/movie-rag/coverage/discussion-transfer-546554-comparison-v6.json",
+      "sha256": "8d624bb7c4f9d4a7ef6ca5795b37bfe3dc89477d5e05165b955dd0110e07adbe"
+    }
+  ],
+  "metrics": {
+    "candidate": {
+      "automated_passed": 15,
+      "total": 17,
+      "annotated_supporting_hit_at_3": 14,
+      "answerable_cases": 14,
+      "generation_errors": 0,
+      "expected_abstentions_passed": 3,
+      "expected_abstentions": 3,
+      "observed_median_seconds": 4.894
+    },
+    "baseline": {
+      "automated_passed": 11,
+      "total": 17,
+      "annotated_supporting_hit_at_3": 11,
+      "answerable_cases": 14,
+      "generation_errors": 0,
+      "expected_abstentions_passed": 3,
+      "expected_abstentions": 3,
+      "observed_median_seconds": 1.708
+    }
+  },
+  "grounding_six_case_report": "evals/grounding/discussion-options-v6.json",
+  "assistant_review": [
+    {
+      "id": "composers",
+      "automated_pass": true,
+      "failures_retained": [],
+      "assistant_citation_review": "supported",
+      "note": "075 names both composers; 076 and later quotes are unnecessary for this question."
+    },
+    {
+      "id": "working-title",
+      "automated_pass": true,
+      "failures_retained": [],
+      "assistant_citation_review": "supported",
+      "note": "050 contains the exact cover title in the offered full window. The selected excerpt is longer than needed and ends mid-sentence."
+    },
+    {
+      "id": "dents-decoy",
+      "automated_pass": true,
+      "failures_retained": [],
+      "assistant_citation_review": "supported",
+      "note": "012 explicitly states the lure-the-Joker reason. The previous baseline misses this evidence and abstains."
+    },
+    {
+      "id": "ending-legacy",
+      "automated_pass": false,
+      "failures_retained": [
+        "Missing expected phrase group: ['hero', 'faith', 'hope']"
+      ],
+      "assistant_citation_review": "supported",
+      "note": "016 supports the returned corruption-harms-Gotham reason. The frozen phrase check requires hero/faith/hope and rejects this supported paraphrase. Grade is retained."
+    },
+    {
+      "id": "missing-private-diary",
+      "automated_pass": true,
+      "failures_retained": [],
+      "assistant_citation_review": "appropriate_abstention",
+      "note": "Abstains; personal diary content is absent."
+    },
+    {
+      "id": "ferry-event",
+      "automated_pass": true,
+      "failures_retained": [],
+      "assistant_citation_review": "supported",
+      "note": "015 explicitly supports refusal to kill. The additional 014 fragment does not add necessary support."
+    },
+    {
+      "id": "makeup-craft",
+      "automated_pass": false,
+      "failures_retained": [
+        "No labelled supporting passage cited"
+      ],
+      "assistant_citation_review": "incomplete",
+      "note": "074 is a clipped continuation and omits Ledger being instructed to scrunch his face. The complete setup is in retrieved 073, which was not cited. This remains an incomplete citation, not an annotation-only failure."
+    },
+    {
+      "id": "ending-analysis",
+      "automated_pass": true,
+      "failures_retained": [],
+      "assistant_citation_review": "supported",
+      "note": "144 explicitly supports the stated thematic interpretation. It is article analysis, not an objective uniquely correct interpretation."
+    },
+    {
+      "id": "missing-rating",
+      "automated_pass": true,
+      "failures_retained": [],
+      "assistant_citation_review": "appropriate_abstention",
+      "note": "Abstains; the app user has supplied no personal rating."
+    },
+    {
+      "id": "future-visions",
+      "automated_pass": true,
+      "failures_retained": [],
+      "assistant_citation_review": "supported",
+      "note": "011 explicitly describes future premonitions, rather than the earlier misleading flashback passage."
+    },
+    {
+      "id": "future-help",
+      "automated_pass": true,
+      "failures_retained": [],
+      "assistant_citation_review": "supported",
+      "note": "011 explicitly states the reciprocal help in 3,000 years."
+    },
+    {
+      "id": "original-score",
+      "automated_pass": true,
+      "failures_retained": [],
+      "assistant_citation_review": "supported",
+      "note": "033 names the composer. Other selected sentences are unnecessary; they map to the same cited passage."
+    },
+    {
+      "id": "missing-private-talk",
+      "automated_pass": true,
+      "failures_retained": [],
+      "assistant_citation_review": "appropriate_abstention",
+      "note": "Abstains; a private user conversation is absent."
+    },
+    {
+      "id": "false-alibi",
+      "automated_pass": true,
+      "failures_retained": [],
+      "assistant_citation_review": "supported",
+      "note": "007 explicitly links the false alibi to protecting Marta from blame."
+    },
+    {
+      "id": "medicine-recognition",
+      "automated_pass": true,
+      "failures_retained": [],
+      "assistant_citation_review": "supported",
+      "note": "011 explicitly states recognition by viscosity and experience as a nurse. No unrelated 009 citation is selected in this run."
+    },
+    {
+      "id": "stage-knife",
+      "automated_pass": true,
+      "failures_retained": [],
+      "assistant_citation_review": "supported",
+      "note": "013 explicitly identifies the harmless retractable stage knife. In prior runs, arrest-only answers were also reasonable under this broadly worded question but failed the frozen phrase check; those reports are retained."
+    },
+    {
+      "id": "title-origin",
+      "automated_pass": true,
+      "failures_retained": [],
+      "assistant_citation_review": "supported",
+      "note": "022 explicitly identifies the Radiohead song. One extra full-window quote is unnecessary but maps to that same supporting passage."
+    }
+  ],
+  "preservation": {
+    "saved_banks_unchanged": true,
+    "count": 11,
+    "script_policy_unchanged": true,
+    "inception_more_questions_gate": true
+  },
+  "limitations": [
+    "Labels were assistant-authored before first outputs and repeatedly consumed during tuning; this is not a holdout or production accuracy estimate.",
+    "Original grades/labels remain unchanged; phrase checks and supporting-ID annotations are incomplete.",
+    "Exact excerpt presence does not prove entailment; unnecessary quotes and incomplete citations remain.",
+    "Observed warm sequential timings include changed prompt size and model/cache state; no production throughput or isolated retrieval speed claim.",
+    "No automatic content publication, script-gate qualification or parallel-agent experiment.",
+    "v1-v5 reports retain unsuccessful intermediate approaches, including response validation errors and incorrect citation bindings."
+  ]
+}

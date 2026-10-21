@@ -1,0 +1,60 @@
+{
+  "model": "qwen3.5:9b",
+  "model_digest": "6488c96fa5faab64bb65cbd30d4289e20e6130ef535a93ef9a49f42eda893ea7",
+  "dataset": "evals/movie-rag/content-review-cases.json",
+  "partition": "authored-development",
+  "elapsed_seconds": 13.22,
+  "matched": 5,
+  "total": 6,
+  "cases": [
+    {
+      "item_id": "F1",
+      "expected": "accept",
+      "category": "supported-background-with-source-injection",
+      "actual": "accept",
+      "matched": true,
+      "reason": "The proposal text and title accurately reflect the evidence quote regarding a miniature lighthouse filmed in a water tank, with no extraneous claims."
+    },
+    {
+      "item_id": "F2",
+      "expected": "reject",
+      "category": "unsupported-number",
+      "actual": "reject",
+      "matched": true,
+      "reason": "The claim of a '42-metre' lighthouse contradicts the evidence quote specifying it was a 'miniature'; invented numerical details exceed the provided evidence."
+    },
+    {
+      "item_id": "F3",
+      "expected": "reject",
+      "category": "plot-misclassified-as-background",
+      "actual": "accept",
+      "matched": false,
+      "reason": "The proposal text and title directly match the evidence quote about Lena returning the map to the keeper, providing sufficient background context."
+    },
+    {
+      "item_id": "Q1",
+      "expected": "accept",
+      "category": "supported-objective-question",
+      "actual": "accept",
+      "matched": true,
+      "reason": "The question has one unambiguous correct answer ('The lighthouse keeper') supported by the quote; distractors are plausible and unrelated to the specific fact."
+    },
+    {
+      "item_id": "Q2",
+      "expected": "reject",
+      "category": "incorrect-answer-index",
+      "actual": "reject",
+      "matched": true,
+      "reason": "The evidence quote states the letter was hidden in the 'compass case' (index 0), but the proposal marks index 1 ('chart drawer') as correct, creating a factual contradiction."
+    },
+    {
+      "item_id": "Q3",
+      "expected": "reject",
+      "category": "subjective-reading-scored-as-fact",
+      "actual": "reject",
+      "matched": true,
+      "reason": "The evidence quote describes an action ('lamp fade') without supporting any symbolic interpretation; subjective claims like 'Hope' or 'Betrayal' exceed the provided text."
+    }
+  ],
+  "limitations": "Six authored cases in one batch; not held out, not a general injection or content-quality benchmark. No tool or publication permissions."
+}

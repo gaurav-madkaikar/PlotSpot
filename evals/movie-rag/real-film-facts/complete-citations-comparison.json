@@ -1,0 +1,66 @@
+{
+  "baseline_report_sha256": "5ea1233d3c0f424c802f6562763c0f3625ff8ace6e5b5efa75e12b299fc5789c",
+  "final_generation_report_sha256": "30509e4fc706695424276cd75060dc40a417ed89129bc9f51c2d9d171255b967",
+  "background_policy_sha256": "43df65ba65620feb7c163096fa1a066090f32fd8d65443d40a0716f26e8510d6",
+  "dataset_usage": "Consumed development rerun, not held-out or independent accuracy. Final run is generation-only; labelled challenge results are preserved separately.",
+  "publication_approved": false,
+  "earlier_clipped_quote": "Hewitt penned the English-language dialogue, which they wrote in order to match the characters' original Japanese-language lip movements.",
+  "final_complete_quote": "Screenwriters Cindy Davis Hewitt and Donald H. Hewitt penned the English-language dialogue, which they wrote in order to match the characters' original Japanese-language lip movements.",
+  "all_seven_generated_quotes_complete": true,
+  "items": [
+    {
+      "movie_id": 496243,
+      "item_id": "F1",
+      "complete_source_sentence": true,
+      "eligible_draft": false,
+      "assistant_inspection": "withhold unsupported cause"
+    },
+    {
+      "movie_id": 496243,
+      "item_id": "F2",
+      "complete_source_sentence": true,
+      "eligible_draft": true,
+      "assistant_inspection": "supported distinct-take editing"
+    },
+    {
+      "movie_id": 129,
+      "item_id": "F1",
+      "complete_source_sentence": true,
+      "eligible_draft": true,
+      "assistant_inspection": "supported dubbing detail with repaired full-name citation"
+    },
+    {
+      "movie_id": 120467,
+      "item_id": "F1",
+      "complete_source_sentence": true,
+      "eligible_draft": true,
+      "assistant_inspection": "supported research; shorten the artist list for product wording"
+    },
+    {
+      "movie_id": 438631,
+      "item_id": "F1",
+      "complete_source_sentence": true,
+      "eligible_draft": false,
+      "assistant_inspection": "supported but withheld; critic imports an unsupported material-versus-lighting distinction"
+    },
+    {
+      "movie_id": 546554,
+      "item_id": "F1",
+      "complete_source_sentence": true,
+      "eligible_draft": true,
+      "assistant_inspection": "needs wording repair: remembering roles should be remembering character names"
+    },
+    {
+      "movie_id": 37165,
+      "item_id": "F1",
+      "complete_source_sentence": true,
+      "eligible_draft": true,
+      "assistant_inspection": "supported catalog pose research"
+    }
+  ],
+  "remaining_issues": [
+    "Knives Out memory-object wording drift",
+    "Dune conservative rejection with unsupported explanation",
+    "Parasite withheld causal wording; critic reason mentions an absent detail"
+  ]
+}

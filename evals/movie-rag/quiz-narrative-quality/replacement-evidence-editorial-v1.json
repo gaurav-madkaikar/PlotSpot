@@ -1,0 +1,686 @@
+{
+  "generated_at": "2026-10-21T10:22:31.558971+00:00",
+  "policy": "assistant-replacement-evidence-editorial-v1",
+  "status": "proposal_only",
+  "published": false,
+  "source_report_sha256": "cc622828bd49885490cbc2a2d5b4b8887feb1ab1be55094f826c3c55b6be9a8e",
+  "summary": {
+    "targets": 33,
+    "accepted": 16,
+    "rejected": 17
+  },
+  "items": [
+    {
+      "movie_id": 13,
+      "title": "Forrest Gump",
+      "question_id": "research-423740447f00-t1-Q2",
+      "source_status": "supported",
+      "editorial_decision": "accept",
+      "reason": "The selected passage or pair explicitly supports the requested replacement relation.",
+      "selected_evidence": [
+        {
+          "source_id": "web-13-s-63173d243d5f3f16e4ee",
+          "source_label": "plotspoiler.com · Forrest Gump (1994) - Plot Summary & Spoilers | The Plot Spoiler Forrest Gump (1994)",
+          "source_ref": "https://plotspoiler.com/title/422/movie-1994-forrest-gump",
+          "revision": "web-ff8271eaf076151f614acc4c623de782cde8de512407b598b54be31964970b5f",
+          "section_title": "What is the plot?",
+          "excerpt": "Heartbroken, Forrest spends the next three years in a relentless cross-country run, becoming famous again.",
+          "bm25": 41.312271,
+          "publisher": "plotspoiler.com",
+          "source_kind": "web"
+        },
+        {
+          "source_id": "web-13-s-63173d243d5f3f16e4ee",
+          "source_label": "plotspoiler.com · Forrest Gump (1994) - Plot Summary & Spoilers | The Plot Spoiler Forrest Gump (1994)",
+          "source_ref": "https://plotspoiler.com/title/422/movie-1994-forrest-gump",
+          "revision": "web-ff8271eaf076151f614acc4c623de782cde8de512407b598b54be31964970b5f",
+          "section_title": "How does Forrest's running journey impact his character development?",
+          "excerpt": "After Jenny leaves him, he embarks on a cross-country run that lasts for over three years.",
+          "bm25": 30.700659,
+          "publisher": "plotspoiler.com",
+          "source_kind": "web"
+        }
+      ]
+    },
+    {
+      "movie_id": 13,
+      "title": "Forrest Gump",
+      "question_id": "research-423740447f00-t6-Q2",
+      "source_status": "supported",
+      "editorial_decision": "accept",
+      "reason": "The selected passage or pair explicitly supports the requested replacement relation.",
+      "selected_evidence": [
+        {
+          "source_id": "web-13-s-eefc3e16e3f31f649dfd",
+          "source_label": "moviesense.io · Forrest Gump (1994) Ending Explained - What Does the Finale Mean? | MovieSense Forrest Gump — Ending Explained",
+          "source_ref": "https://moviesense.io/forrest-gump/ending-explained",
+          "revision": "web-ee3826f5153d054a47ed7492fe8229ba6003773bd7a0462506cf5bb30fc3ecab",
+          "section_title": "⚠️ Spoiler Analysis",
+          "excerpt": "It is here that the film's major twist is revealed: Jenny has a son, also named Forrest, and Forrest is the father.",
+          "bm25": 41.35543,
+          "publisher": "moviesense.io",
+          "source_kind": "web"
+        },
+        {
+          "source_id": "web-13-s-90363a67c6c1fa60d55f",
+          "source_label": "www.taylortailored.co.uk · Forrest Gump (1994) Summary: Plot, Ending, Themes — Spoiler-Free + Full Spoilers | Taylor Tailored Forrest Gump (1994) Summary",
+          "source_ref": "https://www.taylortailored.co.uk/film-summaries/forrest-gump-1994-summary",
+          "revision": "web-1f94d297be8082388aae231c755f9c69e5099d077026cd093660a593bb3f5a0a",
+          "section_title": "The Domino Chain",
+          "excerpt": "Because Jenny has a son, therefore Forrest’s life shifts from running through history to raising a child.",
+          "bm25": 12.226536,
+          "publisher": "taylortailored.co.uk",
+          "source_kind": "web"
+        }
+      ]
+    },
+    {
+      "movie_id": 13,
+      "title": "Forrest Gump",
+      "question_id": "research-423740447f00-t9-Q1",
+      "source_status": "supported",
+      "editorial_decision": "reject",
+      "reason": "The selected passages identify later encounters but do not establish how they redirect Forrest’s journey.",
+      "selected_evidence": [
+        {
+          "source_id": "web-13-s-63173d243d5f3f16e4ee",
+          "source_label": "plotspoiler.com · Forrest Gump (1994) - Plot Summary & Spoilers | The Plot Spoiler Forrest Gump (1994)",
+          "source_ref": "https://plotspoiler.com/title/422/movie-1994-forrest-gump",
+          "revision": "web-ff8271eaf076151f614acc4c623de782cde8de512407b598b54be31964970b5f",
+          "section_title": "What is the plot?",
+          "excerpt": "After his discharge, Forrest finds himself at an antiwar rally in Washington, D.C., where he encounters a bitter and alcoholic Lieutenant Dan and his beloved Jenny, who is following a hippie lifestyle.",
+          "bm25": 66.501106,
+          "publisher": "plotspoiler.com",
+          "source_kind": "web"
+        },
+        {
+          "source_id": "web-13-s-63173d243d5f3f16e4ee",
+          "source_label": "plotspoiler.com · Forrest Gump (1994) - Plot Summary & Spoilers | The Plot Spoiler Forrest Gump (1994)",
+          "source_ref": "https://plotspoiler.com/title/422/movie-1994-forrest-gump",
+          "revision": "web-ff8271eaf076151f614acc4c623de782cde8de512407b598b54be31964970b5f",
+          "section_title": "What is the plot?",
+          "excerpt": "Lieutenant Dan, now a bitter and broken man, joins Forrest on the boat.",
+          "bm25": 14.850552,
+          "publisher": "plotspoiler.com",
+          "source_kind": "web"
+        }
+      ]
+    },
+    {
+      "movie_id": 13,
+      "title": "Forrest Gump",
+      "question_id": "research-423740447f00-t10-Q1",
+      "source_status": "supported",
+      "editorial_decision": "accept",
+      "reason": "The selected passage or pair explicitly supports the requested replacement relation.",
+      "selected_evidence": [
+        {
+          "source_id": "web-13-s-a07def0be1a19933c8e0",
+          "source_label": "gekbuzz.com · What Happens at the End of Forrest Gump? Explained Clearly - GekBuzz What Happens at the End of Forrest Gump? Explained Clearly",
+          "source_ref": "https://gekbuzz.com/what-happens-at-the-end-of-forrest-gump/",
+          "revision": "web-a4972ddecb4200b7adce2708855ddaac1a1696e1f45dc82f3dd91f7bf78c7215",
+          "section_title": "What Happens to Forrest and His Family?",
+          "excerpt": "At the film’s conclusion, Forrest is a single father raising his son after Jenny’s passing.",
+          "bm25": 11.555125,
+          "publisher": "gekbuzz.com",
+          "source_kind": "web"
+        },
+        {
+          "source_id": "web-13-s-90363a67c6c1fa60d55f",
+          "source_label": "www.taylortailored.co.uk · Forrest Gump (1994) Summary: Plot, Ending, Themes — Spoiler-Free + Full Spoilers | Taylor Tailored Forrest Gump (1994) Summary",
+          "source_ref": "https://www.taylortailored.co.uk/film-summaries/forrest-gump-1994-summary",
+          "revision": "web-1f94d297be8082388aae231c755f9c69e5099d077026cd093660a593bb3f5a0a",
+          "section_title": "The Domino Chain",
+          "excerpt": "Because Jenny is ill, therefore the story compresses into marriage, loss, and fatherhood.",
+          "bm25": 8.988401,
+          "publisher": "taylortailored.co.uk",
+          "source_kind": "web"
+        }
+      ]
+    },
+    {
+      "movie_id": 13,
+      "title": "Forrest Gump",
+      "question_id": "research-423740447f00-t11-Q2",
+      "source_status": "supported",
+      "editorial_decision": "accept",
+      "reason": "The selected passage or pair explicitly supports the requested replacement relation.",
+      "selected_evidence": [
+        {
+          "source_id": "web-13-s-63173d243d5f3f16e4ee",
+          "source_label": "plotspoiler.com · Forrest Gump (1994) - Plot Summary & Spoilers | The Plot Spoiler Forrest Gump (1994)",
+          "source_ref": "https://plotspoiler.com/title/422/movie-1994-forrest-gump",
+          "revision": "web-ff8271eaf076151f614acc4c623de782cde8de512407b598b54be31964970b5f",
+          "section_title": "What is the plot?",
+          "excerpt": "Forrest returns to Alabama and buys a shrimping boat, fulfilling Bubba's dream.",
+          "bm25": 35.058616,
+          "publisher": "plotspoiler.com",
+          "source_kind": "web"
+        },
+        {
+          "source_id": "web-13-s-90363a67c6c1fa60d55f",
+          "source_label": "www.taylortailored.co.uk · Forrest Gump (1994) Summary: Plot, Ending, Themes — Spoiler-Free + Full Spoilers | Taylor Tailored Forrest Gump (1994) Summary",
+          "source_ref": "https://www.taylortailored.co.uk/film-summaries/forrest-gump-1994-summary",
+          "revision": "web-1f94d297be8082388aae231c755f9c69e5099d077026cd093660a593bb3f5a0a",
+          "section_title": "The Domino Chain",
+          "excerpt": "Because Bubba dies, therefore Forrest inherits a promise and a future plan (shrimping).",
+          "bm25": 14.540101,
+          "publisher": "taylortailored.co.uk",
+          "source_kind": "web"
+        }
+      ]
+    },
+    {
+      "movie_id": 129,
+      "title": "Spirited Away",
+      "question_id": "research-a97564d0da89-t3-Q3",
+      "source_status": "supported",
+      "editorial_decision": "accept",
+      "reason": "The selected passage or pair explicitly supports the requested replacement relation.",
+      "selected_evidence": [
+        {
+          "source_id": "tmdb-129",
+          "source_label": "The Movie Database (TMDB) · Spirited Away",
+          "source_ref": "https://www.themoviedb.org/movie/129",
+          "revision": "tmdb-details-86e41acdf50125845741c9c3e95cb85e85ad5c14f667602a314c424bf7992290-v1",
+          "section_title": "Overview",
+          "excerpt": "A young girl, Chihiro, becomes trapped in a strange new world of spirits.",
+          "bm25": 34.775974,
+          "publisher": "themoviedb.org",
+          "source_kind": "provider"
+        },
+        {
+          "source_id": "web-129-s-0ac58378901c5e885033",
+          "source_label": "filmcolossus.com · Spirited Away (2001) | The Definitive Explanation - Film Colossus Spirited Away (2001) | The Definitive Explanation",
+          "source_ref": "https://filmcolossus.com/spirited-away-2001-explained",
+          "revision": "web-3489657358025d49b8d9935fa6cf6bfa9b916798f83478bb1fee555cd55ae197",
+          "section_title": "Greed and gluttony",
+          "excerpt": "Chihiro’s parents are transformed into pigs due to their gluttonous consumption of food from the spirit world.",
+          "bm25": 13.700896,
+          "publisher": "filmcolossus.com",
+          "source_kind": "web"
+        }
+      ]
+    },
+    {
+      "movie_id": 155,
+      "title": "The Dark Knight",
+      "question_id": "laus-hideout",
+      "source_status": "insufficient",
+      "editorial_decision": "reject",
+      "reason": "No passage explicitly establishes why capturing Lau matters to Batman, Gordon, and Dent's case against the mob. Passages discuss John Blake, Gordon in a hospital bed, actor reviews, or general vigilante sentiment, but none provide the specific motivation or consequence regarding 'Lau' as requested.",
+      "selected_evidence": []
+    },
+    {
+      "movie_id": 278,
+      "title": "The Shawshank Redemption",
+      "question_id": "research-4630dcebf37c-t5-Q1",
+      "source_status": "supported",
+      "editorial_decision": "accept",
+      "reason": "The selected passage or pair explicitly supports the requested replacement relation.",
+      "selected_evidence": [
+        {
+          "source_id": "tmdb-278",
+          "source_label": "The Movie Database (TMDB) · The Shawshank Redemption",
+          "source_ref": "https://www.themoviedb.org/movie/278",
+          "revision": "tmdb-details-90995059a16e79c330cb114d6827cfcfd9d8aac3ccba82c0dccab28479f85e72-v1",
+          "section_title": "Overview",
+          "excerpt": "During his long stretch in prison, Dufresne comes to be admired by the other inmates -- including an older prisoner named Red -- for his integrity and unquenchable sense of hope.",
+          "bm25": 8.417442,
+          "publisher": "themoviedb.org",
+          "source_kind": "provider"
+        }
+      ]
+    },
+    {
+      "movie_id": 278,
+      "title": "The Shawshank Redemption",
+      "question_id": "research-4630dcebf37c-t29-Q2",
+      "source_status": "insufficient",
+      "editorial_decision": "reject",
+      "reason": "No passage explicitly describes what evidence Andy carries out of Shawshank (specifically the ledger) or how it exposes Norton's corruption. Passages discuss ALS essays, general escape success, religion/movies, actor chemistry, or posters, but none mention the ledger or the specific mechanism of exs",
+      "selected_evidence": []
+    },
+    {
+      "movie_id": 550,
+      "title": "Fight Club",
+      "question_id": "research-e783e7f83fe0-t1-Q1",
+      "source_status": "supported",
+      "editorial_decision": "accept",
+      "reason": "The selected passage or pair explicitly supports the requested replacement relation.",
+      "selected_evidence": [
+        {
+          "source_id": "web-550-s-907004ab162483278f6f",
+          "source_label": "plotspoiler.com · Fight Club (1999) - Plot Summary & Spoilers | The Plot Spoiler Fight Club (1999)",
+          "source_ref": "https://plotspoiler.com/title/410/movie-1999-fight-club",
+          "revision": "web-31c84770cd483917f684e1edd3b9e3fcb1a78e9080a7b56f2be215eaba737d50",
+          "section_title": "What is the purpose of Fight Club and how does it evolve throughout the film?",
+          "excerpt": "Fight Club begins as a secret society where men gather to engage in bare-knuckle fighting as a means of reclaiming their masculinity and escaping the confines of modern society.",
+          "bm25": 11.64697,
+          "publisher": "plotspoiler.com",
+          "source_kind": "web"
+        },
+        {
+          "source_id": "web-550-s-4c7ebcc21b1fc6a78278",
+          "source_label": "christian-hardinghaus.de · Fight Club Ending Explained 1999: Plot Twist & Interpretations Fight Club Ending Explained: Plot Twist, Tyler Durden & Interpretations",
+          "source_ref": "https://christian-hardinghaus.de/en/fight-club-ending-explained/",
+          "revision": "web-25597acf57e2afd64d9c4fc8da8ce5e4e14e1a29a0e2b886a55f93a1d8d4fc19",
+          "section_title": "Reading 3: A Critique of Performative Masculinity",
+          "excerpt": "Fight club begins as a ritual of sensation: men hit each other to feel real.",
+          "bm25": 8.445175,
+          "publisher": "christian-hardinghaus.de",
+          "source_kind": "web"
+        }
+      ]
+    },
+    {
+      "movie_id": 550,
+      "title": "Fight Club",
+      "question_id": "research-e783e7f83fe0-t24-Q2",
+      "source_status": "supported",
+      "editorial_decision": "accept",
+      "reason": "The selected passage or pair explicitly supports the requested replacement relation.",
+      "selected_evidence": [
+        {
+          "source_id": "web-550-s-907004ab162483278f6f",
+          "source_label": "plotspoiler.com · Fight Club (1999) - Plot Summary & Spoilers | The Plot Spoiler Fight Club (1999)",
+          "source_ref": "https://plotspoiler.com/title/410/movie-1999-fight-club",
+          "revision": "web-31c84770cd483917f684e1edd3b9e3fcb1a78e9080a7b56f2be215eaba737d50",
+          "section_title": "The Descent into Chaos",
+          "excerpt": "He befriends Robert \"Bob\" Paulsen, a gentle giant with \"bitch tits\" from steroid abuse, who hugs him at the support group and later joins Fight Club.",
+          "bm25": 21.793017,
+          "publisher": "plotspoiler.com",
+          "source_kind": "web"
+        }
+      ]
+    },
+    {
+      "movie_id": 603,
+      "title": "The Matrix",
+      "question_id": "rescue-ship",
+      "source_status": "supported",
+      "editorial_decision": "accept",
+      "reason": "The selected passage or pair explicitly supports the requested replacement relation.",
+      "selected_evidence": [
+        {
+          "source_id": "web-603-s-046a95ea822aa944a735",
+          "source_label": "plotspoiler.com · The Matrix (1999) - Plot Summary & Spoilers | The Plot Spoiler The Matrix (1999)",
+          "source_ref": "https://plotspoiler.com/title/312/movie-1999-the-matrix",
+          "revision": "web-caab2ebc6e6d07efb1543092c544a0558ed38cec315e4a2936a264100836c0b6",
+          "section_title": "What is the significance of the Nebuchadnezzar and its crew?",
+          "excerpt": "The Nebuchadnezzar is the hovercraft captained by Morpheus and serves as a base for the crew fighting against the machines.",
+          "bm25": 14.528669,
+          "publisher": "plotspoiler.com",
+          "source_kind": "web"
+        },
+        {
+          "source_id": "web-603-s-046a95ea822aa944a735",
+          "source_label": "plotspoiler.com · The Matrix (1999) - Plot Summary & Spoilers | The Plot Spoiler The Matrix (1999)",
+          "source_ref": "https://plotspoiler.com/title/312/movie-1999-the-matrix",
+          "revision": "web-caab2ebc6e6d07efb1543092c544a0558ed38cec315e4a2936a264100836c0b6",
+          "section_title": "What is the plot?",
+          "excerpt": "A mechanical arm ejects Neo, and he is rescued by Morpheus's hovercraft, the Nebuchadnezzar.",
+          "bm25": 13.400625,
+          "publisher": "plotspoiler.com",
+          "source_kind": "web"
+        }
+      ]
+    },
+    {
+      "movie_id": 680,
+      "title": "Pulp Fiction",
+      "question_id": "research-86a3da84985e-t1-Q1",
+      "source_status": "insufficient",
+      "editorial_decision": "reject",
+      "reason": "Passages E5 and E6 mention Butch risks returning for a gold watch but do not explicitly state the motivation is 'to return and explain the family watch.' Passages E7 and E8 describe the monologue and Butch jumping out a window but omit the specific explanation of the watch's familial significance. E",
+      "selected_evidence": []
+    },
+    {
+      "movie_id": 1124,
+      "title": "The Prestige",
+      "question_id": "research-6bd2d9de6c13-t1-Q1",
+      "source_status": "supported",
+      "editorial_decision": "accept",
+      "reason": "The selected passage or pair explicitly supports the requested replacement relation.",
+      "selected_evidence": [
+        {
+          "source_id": "web-1124-s-4388158f463e14684647",
+          "source_label": "www.taylortailored.co.uk · The Prestige Ending Explained: How The Film Tricks Its Audience | Taylor Tailored The Prestige Ending Explained: How The Film Makes You Part Of The Trick",
+          "source_ref": "https://www.taylortailored.co.uk/film-summaries/the-prestige-ending-explained-how-the-film-makes-you-part-of-the-trick",
+          "revision": "web-6e2776f6061a90adf254c7baaeb082ff96dc1102e5f7cf4c4b76099edf40f2e6",
+          "section_title": "The Secret Was In Front Of You",
+          "excerpt": "Christopher Nolan’s The Prestige (2006) tells the story of two rival stage magicians, Robert Angier and Alfred Borden, in Victorian London.",
+          "bm25": 13.291054,
+          "publisher": "taylortailored.co.uk",
+          "source_kind": "web"
+        },
+        {
+          "source_id": "web-1124-s-4388158f463e14684647",
+          "source_label": "www.taylortailored.co.uk · The Prestige Ending Explained: How The Film Tricks Its Audience | Taylor Tailored The Prestige Ending Explained: How The Film Makes You Part Of The Trick",
+          "source_ref": "https://www.taylortailored.co.uk/film-summaries/the-prestige-ending-explained-how-the-film-makes-you-part-of-the-trick",
+          "revision": "web-b1bf5537f229c8c86101ac301ec62215dc4d258303d7dd52691fcbaa0ad491c8",
+          "section_title": "The Secret Was In Front Of You",
+          "excerpt": "Christopher Nolan’s The Prestige (2006) tells the story of two rival stage magicians, Robert Angier and Alfred Borden, in Victorian London.",
+          "bm25": 13.291054,
+          "publisher": "taylortailored.co.uk",
+          "source_kind": "web"
+        }
+      ]
+    },
+    {
+      "movie_id": 1124,
+      "title": "The Prestige",
+      "question_id": "research-6bd2d9de6c13-t10-Q1",
+      "source_status": "insufficient",
+      "editorial_decision": "reject",
+      "reason": "Passage E3 mentions Borden's daughter Jess but frames the death as a blessing for a 'wholesome, unitary life' without detailing how the double life specifically affected Sarah or Jess during the story. Passages E1, E5, and E6 discuss the mechanics of the double life (hiring Gerald Root, identical",
+      "selected_evidence": []
+    },
+    {
+      "movie_id": 1124,
+      "title": "The Prestige",
+      "question_id": "research-6bd2d9de6c13-t17-Q2",
+      "source_status": "insufficient",
+      "editorial_decision": "reject",
+      "reason": "The brief requests the consequence of Angier shooting Borden (specifically omitting finger count). Passages E3 and E4 mention losing fingers but do not explicitly state that Angier shot Borden or describe the immediate consequence of that specific act in the requested manner. They describe a general",
+      "selected_evidence": []
+    },
+    {
+      "movie_id": 8587,
+      "title": "The Lion King",
+      "question_id": "research-b4c4933bed48-t1-Q2",
+      "source_status": "supported",
+      "editorial_decision": "reject",
+      "reason": "The selected passage describes Rafiki presenting Simba and Nala’s child, not Rafiki’s role during Simba’s birth presentation.",
+      "selected_evidence": [
+        {
+          "source_id": "web-8587-s-b5036298735f0989aa0b",
+          "source_label": "moviesense.io · The Lion King (1994) Ending Explained - What Does the Finale Mean? | MovieSense The Lion King — Ending Explained",
+          "source_ref": "https://moviesense.io/the-lion-king/ending-explained",
+          "revision": "web-cf9542659fea0f64d1b3974913d4d18afacebb3732992f7bf28c2c89f92d2a45",
+          "section_title": "⚠️ Spoiler Analysis",
+          "excerpt": "The final scene mirrors the opening, with Rafiki presenting Simba and Nala's newborn cub, signifying the continuation of the Circle of Life and the restoration of balance.",
+          "bm25": 8.846667,
+          "publisher": "moviesense.io",
+          "source_kind": "web"
+        }
+      ]
+    },
+    {
+      "movie_id": 8587,
+      "title": "The Lion King",
+      "question_id": "research-b4c4933bed48-t13-Q3",
+      "source_status": "insufficient",
+      "editorial_decision": "reject",
+      "reason": "The brief requests the consequence of Simba's collapse: Timon and Pumbaa rescuing him. The provided passages describe Simba going into exile, meeting Timon and Pumbaa, or them cheering him up during exile. None of the passages explicitly state that they rescued him from a collapse or describe the 'p",
+      "selected_evidence": []
+    },
+    {
+      "movie_id": 10681,
+      "title": "WALL·E",
+      "question_id": "research-a7b58936b8bc-t10-Q3",
+      "source_status": "insufficient",
+      "editorial_decision": "reject",
+      "reason": "Passages E1-E5 describe the plant's launch, EVE's realization, or WALL·E finding purpose, but none explicitly establish the specific event of their 'reconciliation' changing their 'joint effort' to protect the plant. Passage E3 shows him showing her the plant, which is not sufficient evidence of a '",
+      "selected_evidence": []
+    },
+    {
+      "movie_id": 27205,
+      "title": "Inception",
+      "question_id": "script-rag-74e285b37039",
+      "source_status": "insufficient",
+      "editorial_decision": "reject",
+      "reason": "Passages E1-E6 describe the descent into Limbo and the duration (fifty subjective years), but none explicitly establish the 'lasting consequence' that Mal continues to believe reality is a dream. The brief requires omitting the exact duration, yet passages E5 and E6 explicitly state 'fifty', failing",
+      "selected_evidence": []
+    },
+    {
+      "movie_id": 76341,
+      "title": "Mad Max: Fury Road",
+      "question_id": "research-600f039b5e2b-t1-Q2",
+      "source_status": "insufficient",
+      "editorial_decision": "reject",
+      "reason": "Passages E1-E8 describe Max's backstory, production details, or general chase scenes. None of the passages explicitly state that Nux sacrifices himself by blocking the canyon behind the group to help them escape. The specific action and its consequence are not established in the provided text.",
+      "selected_evidence": []
+    },
+    {
+      "movie_id": 76341,
+      "title": "Mad Max: Fury Road",
+      "question_id": "research-600f039b5e2b-t6-Q2",
+      "source_status": "insufficient",
+      "editorial_decision": "reject",
+      "reason": "The passages describe Furiosa's character, the cast, and her rebellion, but none explicitly establish the specific consequences requested: Vuvalini deaths, Toast's capture, or Furiosa's injury. The text mentions she has a mechanical arm (implying past injury) but does not detail the immediate event,",
+      "selected_evidence": []
+    },
+    {
+      "movie_id": 76341,
+      "title": "Mad Max: Fury Road",
+      "question_id": "research-600f039b5e2b-t8-Q1",
+      "source_status": "insufficient",
+      "editorial_decision": "reject",
+      "reason": "The passages discuss the vehicle as a character, Max's mission, and Furiosa's background. None of the text describes Joe overtaking the Rig or the specific consequences of that action on the chase dynamics.",
+      "selected_evidence": []
+    },
+    {
+      "movie_id": 76341,
+      "title": "Mad Max: Fury Road",
+      "question_id": "research-600f039b5e2b-t27-Q1",
+      "source_status": "insufficient",
+      "editorial_decision": "reject",
+      "reason": "The passages discuss the film's reception, theatrical release, and general reimagining. None of the text mentions Furiosa's discovery that the Green Place is gone or the status of the remaining group.",
+      "selected_evidence": []
+    },
+    {
+      "movie_id": 120467,
+      "title": "The Grand Budapest Hotel",
+      "question_id": "research-a342008a26db-t1-Q2",
+      "source_status": "supported",
+      "editorial_decision": "accept",
+      "reason": "The selected passage or pair explicitly supports the requested replacement relation.",
+      "selected_evidence": [
+        {
+          "source_id": "web-120467-s-3d2d3b141e68bc3f3c18",
+          "source_label": "web.archive.org · ‘The Grand Budapest Hotel’ Review: Wes Anderson’s Best Ever Is a Whimsical Crime Caper ‘The Grand Budapest Hotel’ Review: Wes Anderson’s Best Ever Is a Whimsical Crime Caper",
+          "source_ref": "https://web.archive.org/web/20170709223941/https://www.thedailybeast.com/the-grand-budapest-hotel-review-wes-andersons-best-ever-is-a-whimsical-crime-caper",
+          "revision": "web-4f61931e403db13e040334dcaccf3345280f607f669ab616aaa8c0fa6fb9a1e3",
+          "section_title": "02.06.14 2:00 PM ET",
+          "excerpt": "Set in the fictional European land of Zubrowka shortly before the Second World War, a delightful cast of characters battle it out over a disputed will and a stolen oil painting as a horde of pseudo-Nazis scour the mountains in search of fugitives.",
+          "bm25": 9.598291,
+          "publisher": "archive.org",
+          "source_kind": "web"
+        }
+      ]
+    },
+    {
+      "movie_id": 157336,
+      "title": "Interstellar",
+      "question_id": "wormhole-location",
+      "source_status": "supported",
+      "editorial_decision": "accept",
+      "reason": "The selected passage or pair explicitly supports the requested replacement relation.",
+      "selected_evidence": [
+        {
+          "source_id": "web-157336-s-7e4ba04161922de2309a",
+          "source_label": "www.taylortailored.co.uk · Interstellar plot summary: ending, themes, meaning | Taylor Tailored Interstellar Film Summary Interstellar plot summary: a father, a dying Earth, and a message sent through",
+          "source_ref": "https://www.taylortailored.co.uk/film-summaries/interstellar-film-summary",
+          "revision": "web-017ec37b8bc74a74ab4ed52e553f59d827a2dbe48f621a058fec6c04bcfb0036",
+          "section_title": "Time dilation — extreme gravity and high-speed travel make time pass differently for different observers.",
+          "excerpt": "Brand reveals a wormhole has appeared near Saturn, providing a path to another galaxy.",
+          "bm25": 20.984903,
+          "publisher": "taylortailored.co.uk",
+          "source_kind": "web"
+        },
+        {
+          "source_id": "web-157336-s-87475fae3acf49c4ba83",
+          "source_label": "plotspoiler.com · Interstellar (2014) - Plot Summary & Spoilers | The Plot Spoiler Interstellar (2014)",
+          "source_ref": "https://plotspoiler.com/title/103/movie-2014-interstellar",
+          "revision": "web-a6df7b629281c3b1461c67bf3ef5165f806b339b0f293cf7d014dbebce015f4b",
+          "section_title": "What is the plot?",
+          "excerpt": "Through this wormhole lies another galaxy, home to twelve potentially habitable planets orbiting the supermassive black hole Gargantua.",
+          "bm25": 11.224891,
+          "publisher": "plotspoiler.com",
+          "source_kind": "web"
+        }
+      ]
+    },
+    {
+      "movie_id": 157336,
+      "title": "Interstellar",
+      "question_id": "ship-name",
+      "source_status": "supported",
+      "editorial_decision": "accept",
+      "reason": "The selected passage or pair explicitly supports the requested replacement relation.",
+      "selected_evidence": [
+        {
+          "source_id": "web-157336-s-4922cff331344d8fb999",
+          "source_label": "filmlookup.com · Interstellar (2014) plot summary: full story, key moments & themes — FilmLookup Interstellar (2014) — full plot summary",
+          "source_ref": "https://filmlookup.com/movies/interstellar/plot-summary/",
+          "revision": "web-f16e42c1c77287cfef147dc5ede221aa40a1974242ef786a84521d18153614df",
+          "section_title": "The story",
+          "excerpt": "On board the Endurance with Brand's daughter Amelia, the physicist Romilly, the geologist Doyle, and two military robots called TARS and CASE, he travels through the wormhole and into a system orbiting a supermassive black hole named Gargantua.",
+          "bm25": 13.462989,
+          "publisher": "filmlookup.com",
+          "source_kind": "web"
+        }
+      ]
+    },
+    {
+      "movie_id": 157336,
+      "title": "Interstellar",
+      "question_id": "generated-slingshot-time-59c997d23d21",
+      "source_status": "supported",
+      "editorial_decision": "accept",
+      "reason": "The selected passage or pair explicitly supports the requested replacement relation.",
+      "selected_evidence": [
+        {
+          "source_id": "web-157336-s-7e4ba04161922de2309a",
+          "source_label": "www.taylortailored.co.uk · Interstellar plot summary: ending, themes, meaning | Taylor Tailored Interstellar Film Summary Interstellar plot summary: a father, a dying Earth, and a message sent through",
+          "source_ref": "https://www.taylortailored.co.uk/film-summaries/interstellar-film-summary",
+          "revision": "web-017ec37b8bc74a74ab4ed52e553f59d827a2dbe48f621a058fec6c04bcfb0036",
+          "section_title": "Act II: Escalation and Midpoint Shift",
+          "excerpt": "Cooper realizes they can slingshot around the black hole to reach Edmunds’ planet, but the maneuver will cost enormous time due to dilation and will require shedding mass.",
+          "bm25": 20.70115,
+          "publisher": "taylortailored.co.uk",
+          "source_kind": "web"
+        },
+        {
+          "source_id": "web-157336-s-c6ebbb84179f184cb5a1",
+          "source_label": "filmlookup.com · Interstellar ending explained: the twist, final scene, and meaning — FilmLookup Interstellar: the twist, final scene, and what the ending means.",
+          "source_ref": "https://filmlookup.com/movies/interstellar/ending-explained/",
+          "revision": "web-f4388403fcc1c5da3361f82b7333513d399f92866dc009b66e5ae94cdbcf3372",
+          "section_title": "Why does Cooper age so little while Murph dies of old age?",
+          "excerpt": "Three separate effects stack across Cooper's journey: the hour on Miller's planet costs the crew twenty-three years on Earth because of its proximity to Gargantua, the slingshot maneuver around the black hole's event horizon costs more, and the tesseract sequence is, from Cooper's reference frame, a matter of minutes.",
+          "bm25": 14.591363,
+          "publisher": "filmlookup.com",
+          "source_kind": "web"
+        }
+      ]
+    },
+    {
+      "movie_id": 157336,
+      "title": "Interstellar",
+      "question_id": "generated-colony-cargo-20b1852c1d6c",
+      "source_status": "supported",
+      "editorial_decision": "accept",
+      "reason": "The selected passage or pair explicitly supports the requested replacement relation.",
+      "selected_evidence": [
+        {
+          "source_id": "web-157336-s-87475fae3acf49c4ba83",
+          "source_label": "plotspoiler.com · Interstellar (2014) - Plot Summary & Spoilers | The Plot Spoiler Interstellar (2014)",
+          "source_ref": "https://plotspoiler.com/title/103/movie-2014-interstellar",
+          "revision": "web-a6df7b629281c3b1461c67bf3ef5165f806b339b0f293cf7d014dbebce015f4b",
+          "section_title": "What is the plot?",
+          "excerpt": "Plan B: Carry 5,000 frozen human embryos aboard the spacecraft Endurance, and colonize a new world if Plan A fails.",
+          "bm25": 28.85401,
+          "publisher": "plotspoiler.com",
+          "source_kind": "web"
+        },
+        {
+          "source_id": "web-157336-s-c6ebbb84179f184cb5a1",
+          "source_label": "filmlookup.com · Interstellar ending explained: the twist, final scene, and meaning — FilmLookup Interstellar: the twist, final scene, and what the ending means.",
+          "source_ref": "https://filmlookup.com/movies/interstellar/ending-explained/",
+          "revision": "web-f4388403fcc1c5da3361f82b7333513d399f92866dc009b66e5ae94cdbcf3372",
+          "section_title": "Institutional lying as a kind of love",
+          "excerpt": "The private mission was a seed: send frozen embryos through the wormhole and let humanity start over on the other side, while the planet he was already abandoning believed it was being saved.",
+          "bm25": 18.502409,
+          "publisher": "filmlookup.com",
+          "source_kind": "web"
+        }
+      ]
+    },
+    {
+      "movie_id": 157336,
+      "title": "Interstellar",
+      "question_id": "generated-booby-trap-8bb6c51c5a44",
+      "source_status": "supported",
+      "editorial_decision": "reject",
+      "reason": "The selected passage establishes Mann’s deception and attempted hijacking but not the requested booby-trap consequence.",
+      "selected_evidence": [
+        {
+          "source_id": "web-157336-s-c6ebbb84179f184cb5a1",
+          "source_label": "filmlookup.com · Interstellar ending explained: the twist, final scene, and meaning — FilmLookup Interstellar: the twist, final scene, and what the ending means.",
+          "source_ref": "https://filmlookup.com/movies/interstellar/ending-explained/",
+          "revision": "web-f4388403fcc1c5da3361f82b7333513d399f92866dc009b66e5ae94cdbcf3372",
+          "section_title": "Mann's betrayal and the slingshot decision",
+          "excerpt": "Dr. Mann's distress signal turns out to be a falsified beacon — his planet is uninhabitable, and he tries to murder Cooper to hijack the Endurance back to Earth.",
+          "bm25": 10.176045,
+          "publisher": "filmlookup.com",
+          "source_kind": "web"
+        }
+      ]
+    },
+    {
+      "movie_id": 157336,
+      "title": "Interstellar",
+      "question_id": "research-929a17806629-t3-Q2",
+      "source_status": "supported",
+      "editorial_decision": "accept",
+      "reason": "The selected passage or pair explicitly supports the requested replacement relation.",
+      "selected_evidence": [
+        {
+          "source_id": "web-157336-s-da4a12dbb1848e224864",
+          "source_label": "variety.com · 'Interstellar' Review: Christopher Nolan Goes to Infinity and Beyond 'Interstellar' Review: Christopher Nolan Goes to Infinity and Beyond Film Review: ‘Interstellar’",
+          "source_ref": "https://variety.com/2014/film/reviews/film-review-interstellar-1201338475/",
+          "revision": "web-5381bbc0a9d6199117d33cfd7fcf56dd45cb50c1933a1beba350e999cb05bc88",
+          "section_title": "Russell Brand's Criminal Trial Begins in London as He Faces Rape and Sexual Assault Charges",
+          "excerpt": "On the other side: another galaxy containing a dozen planets that might be fit for human habitation.",
+          "bm25": 57.025459,
+          "publisher": "variety.com",
+          "source_kind": "web"
+        },
+        {
+          "source_id": "web-157336-s-87475fae3acf49c4ba83",
+          "source_label": "plotspoiler.com · Interstellar (2014) - Plot Summary & Spoilers | The Plot Spoiler Interstellar (2014)",
+          "source_ref": "https://plotspoiler.com/title/103/movie-2014-interstellar",
+          "revision": "web-a6df7b629281c3b1461c67bf3ef5165f806b339b0f293cf7d014dbebce015f4b",
+          "section_title": "What is the plot?",
+          "excerpt": "Through this wormhole lies another galaxy, home to twelve potentially habitable planets orbiting the supermassive black hole Gargantua.",
+          "bm25": 23.048191,
+          "publisher": "plotspoiler.com",
+          "source_kind": "web"
+        }
+      ]
+    },
+    {
+      "movie_id": 329865,
+      "title": "Arrival",
+      "question_id": "ship-count",
+      "source_status": "insufficient",
+      "editorial_decision": "reject",
+      "reason": "No passage explicitly describes how the worldwide arrivals force countries to coordinate and share interpretations. Passage E7 mentions collaboration but lacks the causal link to the arrivals forcing it, and other passages discuss general themes or unrelated details.",
+      "selected_evidence": []
+    },
+    {
+      "movie_id": 496243,
+      "title": "Parasite",
+      "question_id": "flood-refuge",
+      "source_status": "insufficient",
+      "editorial_decision": "reject",
+      "reason": "Passage E1 mentions the flood but frames it with excessive symbolic language ('symbolic rain', 'symbolic sewers') rather than establishing the concrete consequence for the Kim family's precarity as requested. Passage E2 discusses set construction, not consequences. No passage explicitly links the",
+      "selected_evidence": []
+    }
+  ],
+  "publication": {
+    "authorized": false,
+    "database_mutated": false
+  }
+}

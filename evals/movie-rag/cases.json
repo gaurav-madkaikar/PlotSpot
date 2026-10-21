@@ -1,0 +1,36 @@
+{
+  "version": "movie-rag-dev-v2",
+  "split": "development",
+  "source_snapshot": "e75a7bb9fce05a8541de5c8596eb11b7273c819d3dfdff654e29c45e06829ad8",
+  "cases": [
+    {
+      "id": "composer",
+      "question": "Who composed the music for Interstellar?",
+      "expected_status": "answered",
+      "relevant_passage_ids": [
+        "e75a7bb9fce05a8541de5c8596eb11b7_042"
+      ],
+      "required_phrase_groups": [
+        [
+          "Hans Zimmer"
+        ]
+      ]
+    },
+    {
+      "id": "missing-personal-evidence",
+      "question": "What did I write in my private diary after watching Interstellar?",
+      "expected_status": "insufficient_evidence",
+      "relevant_passage_ids": [],
+      "required_phrase_groups": []
+    },
+    {
+      "id": "primary-instrument",
+      "question": "Which instrument was chosen as the primary instrument for the score?",
+      "expected_status": "answered",
+      "relevant_passage_ids": [
+        "e75a7bb9fce05a8541de5c8596eb11b7_043"
+      ],
+      "required_phrase_groups": [["organ"]]
+    }
+  ]
+}

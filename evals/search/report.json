@@ -1,0 +1,448 @@
+{
+  "dataset_sha256": "786641cc0491626a9f98e4919e8cc0606150aeb5062bec7a7506b4646fb3f240",
+  "threshold": 0.8,
+  "candidate_movies": 10,
+  "scorer": "Python difflib.SequenceMatcher ratio, autojunk=False",
+  "scope": "Offline ten-film seed and cast; small hand-labeled suite, not all TMDB",
+  "summary": {
+    "dev": {
+      "cases": 20,
+      "typo_cases": 12,
+      "exact_baseline_hits": 0,
+      "suggestion_top3_hits": 11,
+      "negative_cases": 5,
+      "negative_false_suggestions": 0,
+      "exact_cases": 3,
+      "exact_unwanted_suggestions": 0
+    },
+    "holdout": {
+      "cases": 10,
+      "typo_cases": 6,
+      "exact_baseline_hits": 1,
+      "suggestion_top3_hits": 6,
+      "negative_cases": 3,
+      "negative_false_suggestions": 0,
+      "exact_cases": 1,
+      "exact_unwanted_suggestions": 0
+    }
+  },
+  "outcomes": [
+    {
+      "split": "dev",
+      "category": "typo",
+      "query": "Intersteler",
+      "label": "Interstellar",
+      "kind": "movie",
+      "suggestions": [
+        {
+          "label": "Interstellar",
+          "kind": "movie",
+          "movie_ids": [
+            157336
+          ],
+          "score": 0.8695652173913043
+        }
+      ],
+      "top3_hit": true,
+      "exact_baseline_hit": false
+    },
+    {
+      "split": "dev",
+      "category": "typo",
+      "query": "Incepton",
+      "label": "Inception",
+      "kind": "movie",
+      "suggestions": [
+        {
+          "label": "Inception",
+          "kind": "movie",
+          "movie_ids": [
+            27205
+          ],
+          "score": 0.9411764705882353
+        }
+      ],
+      "top3_hit": true,
+      "exact_baseline_hit": false
+    },
+    {
+      "split": "dev",
+      "category": "typo",
+      "query": "Arival",
+      "label": "Arrival",
+      "kind": "movie",
+      "suggestions": [
+        {
+          "label": "Arrival",
+          "kind": "movie",
+          "movie_ids": [
+            329865
+          ],
+          "score": 0.9230769230769231
+        }
+      ],
+      "top3_hit": true,
+      "exact_baseline_hit": false
+    },
+    {
+      "split": "dev",
+      "category": "typo",
+      "query": "The Matrx",
+      "label": "The Matrix",
+      "kind": "movie",
+      "suggestions": [
+        {
+          "label": "The Matrix",
+          "kind": "movie",
+          "movie_ids": [
+            603
+          ],
+          "score": 0.9473684210526315
+        }
+      ],
+      "top3_hit": true,
+      "exact_baseline_hit": false
+    },
+    {
+      "split": "dev",
+      "category": "typo",
+      "query": "Knives Ot",
+      "label": "Knives Out",
+      "kind": "movie",
+      "suggestions": [
+        {
+          "label": "Knives Out",
+          "kind": "movie",
+          "movie_ids": [
+            546554
+          ],
+          "score": 0.9473684210526315
+        }
+      ],
+      "top3_hit": true,
+      "exact_baseline_hit": false
+    },
+    {
+      "split": "dev",
+      "category": "typo",
+      "query": "Parsite",
+      "label": "Parasite",
+      "kind": "movie",
+      "suggestions": [
+        {
+          "label": "Parasite",
+          "kind": "movie",
+          "movie_ids": [
+            496243
+          ],
+          "score": 0.9333333333333333
+        }
+      ],
+      "top3_hit": true,
+      "exact_baseline_hit": false
+    },
+    {
+      "split": "dev",
+      "category": "typo",
+      "query": "Spirited Awy",
+      "label": "Spirited Away",
+      "kind": "movie",
+      "suggestions": [
+        {
+          "label": "Spirited Away",
+          "kind": "movie",
+          "movie_ids": [
+            129
+          ],
+          "score": 0.96
+        }
+      ],
+      "top3_hit": true,
+      "exact_baseline_hit": false
+    },
+    {
+      "split": "dev",
+      "category": "typo",
+      "query": "Truman Shwo",
+      "label": "The Truman Show",
+      "kind": "movie",
+      "suggestions": [],
+      "top3_hit": false,
+      "exact_baseline_hit": false
+    },
+    {
+      "split": "dev",
+      "category": "typo",
+      "query": "Amy Admas",
+      "label": "Amy Adams",
+      "kind": "actor",
+      "suggestions": [
+        {
+          "label": "Amy Adams",
+          "kind": "actor",
+          "movie_ids": [
+            329865
+          ],
+          "score": 0.8888888888888888
+        }
+      ],
+      "top3_hit": true,
+      "exact_baseline_hit": false
+    },
+    {
+      "split": "dev",
+      "category": "typo",
+      "query": "Jim Carey",
+      "label": "Jim Carrey",
+      "kind": "actor",
+      "suggestions": [
+        {
+          "label": "Jim Carrey",
+          "kind": "actor",
+          "movie_ids": [
+            37165
+          ],
+          "score": 0.9473684210526315
+        }
+      ],
+      "top3_hit": true,
+      "exact_baseline_hit": false
+    },
+    {
+      "split": "dev",
+      "category": "typo",
+      "query": "Leonardo DiCapro",
+      "label": "Leonardo DiCaprio",
+      "kind": "actor",
+      "suggestions": [
+        {
+          "label": "Leonardo DiCaprio",
+          "kind": "actor",
+          "movie_ids": [
+            27205
+          ],
+          "score": 0.9696969696969697
+        }
+      ],
+      "top3_hit": true,
+      "exact_baseline_hit": false
+    },
+    {
+      "split": "dev",
+      "category": "typo",
+      "query": "Keanu Reevs",
+      "label": "Keanu Reeves",
+      "kind": "actor",
+      "suggestions": [
+        {
+          "label": "Keanu Reeves",
+          "kind": "actor",
+          "movie_ids": [
+            603
+          ],
+          "score": 0.9565217391304348
+        }
+      ],
+      "top3_hit": true,
+      "exact_baseline_hit": false
+    },
+    {
+      "split": "holdout",
+      "category": "typo",
+      "query": "Interstelar",
+      "label": "Interstellar",
+      "kind": "movie",
+      "suggestions": [
+        {
+          "label": "Interstellar",
+          "kind": "movie",
+          "movie_ids": [
+            157336
+          ],
+          "score": 0.9565217391304348
+        }
+      ],
+      "top3_hit": true,
+      "exact_baseline_hit": false
+    },
+    {
+      "split": "holdout",
+      "category": "typo",
+      "query": "Incepiton",
+      "label": "Inception",
+      "kind": "movie",
+      "suggestions": [
+        {
+          "label": "Inception",
+          "kind": "movie",
+          "movie_ids": [
+            27205
+          ],
+          "score": 0.8888888888888888
+        }
+      ],
+      "top3_hit": true,
+      "exact_baseline_hit": false
+    },
+    {
+      "split": "holdout",
+      "category": "typo",
+      "query": "Grand Budpest Hotel",
+      "label": "The Grand Budapest Hotel",
+      "kind": "movie",
+      "suggestions": [
+        {
+          "label": "The Grand Budapest Hotel",
+          "kind": "movie",
+          "movie_ids": [
+            120467
+          ],
+          "score": 0.8837209302325582
+        }
+      ],
+      "top3_hit": true,
+      "exact_baseline_hit": false
+    },
+    {
+      "split": "holdout",
+      "category": "typo",
+      "query": "Spirted Away",
+      "label": "Spirited Away",
+      "kind": "movie",
+      "suggestions": [
+        {
+          "label": "Spirited Away",
+          "kind": "movie",
+          "movie_ids": [
+            129
+          ],
+          "score": 0.96
+        }
+      ],
+      "top3_hit": true,
+      "exact_baseline_hit": false
+    },
+    {
+      "split": "holdout",
+      "category": "typo",
+      "query": "Matthew McConaughe",
+      "label": "Matthew McConaughey",
+      "kind": "actor",
+      "suggestions": [
+        {
+          "label": "Matthew McConaughey",
+          "kind": "actor",
+          "movie_ids": [
+            157336
+          ],
+          "score": 0.972972972972973
+        }
+      ],
+      "top3_hit": true,
+      "exact_baseline_hit": true
+    },
+    {
+      "split": "holdout",
+      "category": "typo",
+      "query": "Daniel Crag",
+      "label": "Daniel Craig",
+      "kind": "actor",
+      "suggestions": [
+        {
+          "label": "Daniel Craig",
+          "kind": "actor",
+          "movie_ids": [
+            546554
+          ],
+          "score": 0.9565217391304348
+        }
+      ],
+      "top3_hit": true,
+      "exact_baseline_hit": false
+    },
+    {
+      "split": "dev",
+      "category": "exact",
+      "query": "Arrival",
+      "suggestions": [],
+      "unwanted_suggestion": false
+    },
+    {
+      "split": "dev",
+      "category": "exact",
+      "query": "Amy Adams",
+      "suggestions": [],
+      "unwanted_suggestion": false
+    },
+    {
+      "split": "dev",
+      "category": "exact",
+      "query": "Dune",
+      "suggestions": [],
+      "unwanted_suggestion": false
+    },
+    {
+      "split": "holdout",
+      "category": "exact",
+      "query": "Interstellar",
+      "suggestions": [],
+      "unwanted_suggestion": false
+    },
+    {
+      "split": "dev",
+      "category": "negative",
+      "query": "restaurants near me",
+      "suggestions": [],
+      "unwanted_suggestion": false
+    },
+    {
+      "split": "dev",
+      "category": "negative",
+      "query": "zzzzzzzz",
+      "suggestions": [],
+      "unwanted_suggestion": false
+    },
+    {
+      "split": "dev",
+      "category": "negative",
+      "query": "weather tomorrow",
+      "suggestions": [],
+      "unwanted_suggestion": false
+    },
+    {
+      "split": "dev",
+      "category": "negative",
+      "query": "buy a laptop",
+      "suggestions": [],
+      "unwanted_suggestion": false
+    },
+    {
+      "split": "dev",
+      "category": "negative",
+      "query": "qwertyuiop",
+      "suggestions": [],
+      "unwanted_suggestion": false
+    },
+    {
+      "split": "holdout",
+      "category": "negative",
+      "query": "tax calculator",
+      "suggestions": [],
+      "unwanted_suggestion": false
+    },
+    {
+      "split": "holdout",
+      "category": "negative",
+      "query": "football scores",
+      "suggestions": [],
+      "unwanted_suggestion": false
+    },
+    {
+      "split": "holdout",
+      "category": "negative",
+      "query": "asdfghjkl",
+      "suggestions": [],
+      "unwanted_suggestion": false
+    }
+  ]
+}

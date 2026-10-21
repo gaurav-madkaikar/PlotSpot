@@ -1,0 +1,886 @@
+{
+  "generated_at": "2026-10-16T13:20:52.745696+00:00",
+  "policy": "assistant-source-review-prepublication-v1",
+  "artifact_revision": "final-v3",
+  "movie_count": 20,
+  "all_jobs_reviewable": true,
+  "all_sources_verified": true,
+  "all_selections_compile": true,
+  "movies": [
+    {
+      "movie_id": 27205,
+      "title": "Inception",
+      "state": "needs_review",
+      "job_id": "09ee095c837e417d99d394a1ffa77910",
+      "report_sha256": "7797547e4e5a22ec62eea35d5a4e7525aff30fb7aea7bf752ec3ea2c8224eca9",
+      "candidate_item_ids": [
+        "t2-F1",
+        "t1-Q2"
+      ],
+      "candidate_facts": 1,
+      "candidate_questions": 1,
+      "combined_facts": 6,
+      "combined_questions": 12,
+      "coverage": {
+        "policy": "two-publisher-movie-content-v1",
+        "facts": {
+          "items": 6,
+          "publishers": [
+            "archive.org",
+            "wikipedia.org"
+          ]
+        },
+        "quiz": {
+          "items": 12,
+          "publishers": [
+            "themoviedb.org",
+            "wikipedia.org"
+          ]
+        },
+        "complete": true
+      },
+      "selection_compiles": true,
+      "sources_verified": true,
+      "review_export": ".cache/expanded20/reviews/approved-final-v3/27205-09ee095c837e417d99d394a1ffa77910.json",
+      "selection": ".cache/expanded20/selections/final-v3/27205.json"
+    },
+    {
+      "movie_id": 157336,
+      "title": "Interstellar (film)",
+      "state": "needs_review",
+      "job_id": "929a1780662943aeaf5a88258ce6ba27",
+      "report_sha256": "24575f90d238f7b45affeae0bd6d6391d802bdde97c2afcda4943c08162995d1",
+      "candidate_item_ids": [
+        "t3-Q2"
+      ],
+      "candidate_facts": 0,
+      "candidate_questions": 1,
+      "combined_facts": 6,
+      "combined_questions": 15,
+      "coverage": {
+        "policy": "two-publisher-movie-content-v1",
+        "facts": {
+          "items": 6,
+          "publishers": [
+            "caltech.edu",
+            "wikipedia.org"
+          ]
+        },
+        "quiz": {
+          "items": 15,
+          "publishers": [
+            "variety.com",
+            "wikipedia.org"
+          ]
+        },
+        "complete": true
+      },
+      "selection_compiles": true,
+      "sources_verified": true,
+      "review_export": ".cache/expanded20/reviews/approved-final-v3/157336-929a1780662943aeaf5a88258ce6ba27.json",
+      "selection": ".cache/expanded20/selections/final-v3/157336.json"
+    },
+    {
+      "movie_id": 329865,
+      "title": "Arrival (film)",
+      "state": "needs_review",
+      "job_id": "e35d6fd375544fcca593b9c219c3bdd6",
+      "report_sha256": "6bd600c2cc23ce1f747fc4c78e8ac7321a61972ebd3d79ad71492eee00462c53",
+      "candidate_item_ids": [
+        "t4-C1"
+      ],
+      "candidate_facts": 0,
+      "candidate_questions": 1,
+      "combined_facts": 8,
+      "combined_questions": 12,
+      "coverage": {
+        "policy": "two-publisher-movie-content-v1",
+        "facts": {
+          "items": 8,
+          "publishers": [
+            "bfi.org.uk",
+            "time.com",
+            "wikipedia.org"
+          ]
+        },
+        "quiz": {
+          "items": 12,
+          "publishers": [
+            "slate.com",
+            "wikipedia.org"
+          ]
+        },
+        "complete": true
+      },
+      "selection_compiles": true,
+      "sources_verified": true,
+      "review_export": ".cache/expanded20/reviews/approved-final-v3/329865-e35d6fd375544fcca593b9c219c3bdd6.json",
+      "selection": ".cache/expanded20/selections/final-v3/329865.json"
+    },
+    {
+      "movie_id": 603,
+      "title": "The Matrix",
+      "state": "needs_review",
+      "job_id": "39ceaa5645524736bc7629bfeeb43a25",
+      "report_sha256": "83fda977a2fff7b44dcc63eeff02f14c0ac55e6df4597d53533bfc339d0e115b",
+      "candidate_item_ids": [
+        "t2-F1",
+        "t7-C1"
+      ],
+      "candidate_facts": 1,
+      "candidate_questions": 1,
+      "combined_facts": 6,
+      "combined_questions": 10,
+      "coverage": {
+        "policy": "two-publisher-movie-content-v1",
+        "facts": {
+          "items": 6,
+          "publishers": [
+            "archive.org",
+            "wikipedia.org"
+          ]
+        },
+        "quiz": {
+          "items": 10,
+          "publishers": [
+            "thisisbarry.com",
+            "wikipedia.org"
+          ]
+        },
+        "complete": true
+      },
+      "selection_compiles": true,
+      "sources_verified": true,
+      "review_export": ".cache/expanded20/reviews/approved-final-v3/603-39ceaa5645524736bc7629bfeeb43a25.json",
+      "selection": ".cache/expanded20/selections/final-v3/603.json"
+    },
+    {
+      "movie_id": 546554,
+      "title": "Knives Out",
+      "state": "needs_review",
+      "job_id": "15f18152719f4da3bbd58179b625b723",
+      "report_sha256": "035f609d47c69adb84edadc5e9cf76da91a5ae5bd8d6b4a0ef5b60fb8c9c37bb",
+      "candidate_item_ids": [
+        "t1-F1",
+        "t4-C1"
+      ],
+      "candidate_facts": 1,
+      "candidate_questions": 1,
+      "combined_facts": 6,
+      "combined_questions": 10,
+      "coverage": {
+        "policy": "two-publisher-movie-content-v1",
+        "facts": {
+          "items": 6,
+          "publishers": [
+            "deadline.com",
+            "wikipedia.org"
+          ]
+        },
+        "quiz": {
+          "items": 10,
+          "publishers": [
+            "slate.com",
+            "wikipedia.org"
+          ]
+        },
+        "complete": true
+      },
+      "selection_compiles": true,
+      "sources_verified": true,
+      "review_export": ".cache/expanded20/reviews/approved-final-v3/546554-15f18152719f4da3bbd58179b625b723.json",
+      "selection": ".cache/expanded20/selections/final-v3/546554.json"
+    },
+    {
+      "movie_id": 496243,
+      "title": "Parasite (2019 film)",
+      "state": "needs_review",
+      "job_id": "d0ef19fec3ad413d977c47a02aa4d7ff",
+      "report_sha256": "9cf48fb4480c7f43793f1fe1cb3fcf718ba3ddc85fad629766fecffa4737d95e",
+      "candidate_item_ids": [
+        "t2-F1",
+        "t1-Q1"
+      ],
+      "candidate_facts": 1,
+      "candidate_questions": 1,
+      "combined_facts": 6,
+      "combined_questions": 11,
+      "coverage": {
+        "policy": "two-publisher-movie-content-v1",
+        "facts": {
+          "items": 6,
+          "publishers": [
+            "archive.org",
+            "wikipedia.org"
+          ]
+        },
+        "quiz": {
+          "items": 11,
+          "publishers": [
+            "variety.com",
+            "wikipedia.org"
+          ]
+        },
+        "complete": true
+      },
+      "selection_compiles": true,
+      "sources_verified": true,
+      "review_export": ".cache/expanded20/reviews/approved-final-v3/496243-d0ef19fec3ad413d977c47a02aa4d7ff.json",
+      "selection": ".cache/expanded20/selections/final-v3/496243.json"
+    },
+    {
+      "movie_id": 129,
+      "title": "Spirited Away",
+      "state": "needs_review",
+      "job_id": "a97564d0da894d6790028e011bf162a5",
+      "report_sha256": "81a54b3193887674457e5d9ce97990db615fd306bdf43ca0169bafa5352dc8bf",
+      "candidate_item_ids": [
+        "t2-F1",
+        "t3-Q3"
+      ],
+      "candidate_facts": 1,
+      "candidate_questions": 1,
+      "combined_facts": 6,
+      "combined_questions": 11,
+      "coverage": {
+        "policy": "two-publisher-movie-content-v1",
+        "facts": {
+          "items": 6,
+          "publishers": [
+            "deadline.com",
+            "wikipedia.org"
+          ]
+        },
+        "quiz": {
+          "items": 11,
+          "publishers": [
+            "themoviedb.org",
+            "wikipedia.org"
+          ]
+        },
+        "complete": true
+      },
+      "selection_compiles": true,
+      "sources_verified": true,
+      "review_export": ".cache/expanded20/reviews/approved-final-v3/129-a97564d0da894d6790028e011bf162a5.json",
+      "selection": ".cache/expanded20/selections/final-v3/129.json"
+    },
+    {
+      "movie_id": 37165,
+      "title": "The Truman Show",
+      "state": "needs_review",
+      "job_id": "0f201d0320a948c9aa35d158bc9fc2ec",
+      "report_sha256": "d25930f8e9d132dc1793ee7fb695cef7cc4e70ca8a3108f0dc93d251f74fa5a1",
+      "candidate_item_ids": [
+        "t4-F1",
+        "t1-C1"
+      ],
+      "candidate_facts": 1,
+      "candidate_questions": 1,
+      "combined_facts": 6,
+      "combined_questions": 10,
+      "coverage": {
+        "policy": "two-publisher-movie-content-v1",
+        "facts": {
+          "items": 6,
+          "publishers": [
+            "theasc.com",
+            "wikipedia.org"
+          ]
+        },
+        "quiz": {
+          "items": 10,
+          "publishers": [
+            "themoviedb.org",
+            "wikipedia.org"
+          ]
+        },
+        "complete": true
+      },
+      "selection_compiles": true,
+      "sources_verified": true,
+      "review_export": ".cache/expanded20/reviews/approved-final-v3/37165-0f201d0320a948c9aa35d158bc9fc2ec.json",
+      "selection": ".cache/expanded20/selections/final-v3/37165.json"
+    },
+    {
+      "movie_id": 120467,
+      "title": "The Grand Budapest Hotel",
+      "state": "needs_review",
+      "job_id": "a342008a26db486d9a950d469d89f2c5",
+      "report_sha256": "c6bcb1b9717042778c65273b96427e19e0fb16107b5ab7cca711e52f140ebfe2",
+      "candidate_item_ids": [
+        "t4-F1",
+        "t1-Q2"
+      ],
+      "candidate_facts": 1,
+      "candidate_questions": 1,
+      "combined_facts": 6,
+      "combined_questions": 11,
+      "coverage": {
+        "policy": "two-publisher-movie-content-v1",
+        "facts": {
+          "items": 6,
+          "publishers": [
+            "filmmakermagazine.com",
+            "wikipedia.org"
+          ]
+        },
+        "quiz": {
+          "items": 11,
+          "publishers": [
+            "themoviedb.org",
+            "wikipedia.org"
+          ]
+        },
+        "complete": true
+      },
+      "selection_compiles": true,
+      "sources_verified": true,
+      "review_export": ".cache/expanded20/reviews/approved-final-v3/120467-a342008a26db486d9a950d469d89f2c5.json",
+      "selection": ".cache/expanded20/selections/final-v3/120467.json"
+    },
+    {
+      "movie_id": 438631,
+      "title": "Dune (2021 film)",
+      "state": "needs_review",
+      "job_id": "419b709b44ef45eb95be0f0bbb37f3c4",
+      "report_sha256": "947d1dd5083a438e62c9c8a2ecbe5a6790a27cc51443eba7a157e4f7a9f31656",
+      "candidate_item_ids": [
+        "t3-F1",
+        "t1-Q1"
+      ],
+      "candidate_facts": 1,
+      "candidate_questions": 1,
+      "combined_facts": 6,
+      "combined_questions": 11,
+      "coverage": {
+        "policy": "two-publisher-movie-content-v1",
+        "facts": {
+          "items": 6,
+          "publishers": [
+            "archive.org",
+            "wikipedia.org"
+          ]
+        },
+        "quiz": {
+          "items": 11,
+          "publishers": [
+            "variety.com",
+            "wikipedia.org"
+          ]
+        },
+        "complete": true
+      },
+      "selection_compiles": true,
+      "sources_verified": true,
+      "review_export": ".cache/expanded20/reviews/approved-final-v3/438631-419b709b44ef45eb95be0f0bbb37f3c4.json",
+      "selection": ".cache/expanded20/selections/final-v3/438631.json"
+    },
+    {
+      "movie_id": 155,
+      "title": "The Dark Knight",
+      "state": "needs_review",
+      "job_id": "f559e8b9817d4eb585d31d185c601424",
+      "report_sha256": "0f912eff8e2ae46aa1fa3d0ba9eb805bf262193173a06170956bbab735312eb7",
+      "candidate_item_ids": [
+        "t11-F1",
+        "t1-Q2"
+      ],
+      "candidate_facts": 1,
+      "candidate_questions": 1,
+      "combined_facts": 6,
+      "combined_questions": 11,
+      "coverage": {
+        "policy": "two-publisher-movie-content-v1",
+        "facts": {
+          "items": 6,
+          "publishers": [
+            "archive.org",
+            "wikipedia.org"
+          ]
+        },
+        "quiz": {
+          "items": 11,
+          "publishers": [
+            "themoviedb.org",
+            "wikipedia.org"
+          ]
+        },
+        "complete": true
+      },
+      "selection_compiles": true,
+      "sources_verified": true,
+      "review_export": ".cache/expanded20/reviews/approved-final-v3/155-f559e8b9817d4eb585d31d185c601424.json",
+      "selection": ".cache/expanded20/selections/final-v3/155.json"
+    },
+    {
+      "movie_id": 278,
+      "title": "The Shawshank Redemption",
+      "state": "needs_review",
+      "job_id": "4630dcebf37c4363848ae6a4c8accebf",
+      "report_sha256": "6e44ddc9c21e4d8324d444a750a2b076b335fdb0f9d1d6d5ff386d1646ac5f0b",
+      "candidate_item_ids": [
+        "t2-F1",
+        "t6-F2",
+        "t14-F1",
+        "t14-F2",
+        "t20-F1",
+        "t1-Q2",
+        "t1-Q3",
+        "t3-Q1",
+        "t3-Q2",
+        "t5-Q1",
+        "t15-Q1",
+        "t15-Q2",
+        "t15-Q3",
+        "t17-Q3",
+        "t29-Q2"
+      ],
+      "candidate_facts": 5,
+      "candidate_questions": 10,
+      "combined_facts": 5,
+      "combined_questions": 10,
+      "coverage": {
+        "policy": "two-publisher-movie-content-v1",
+        "facts": {
+          "items": 5,
+          "publishers": [
+            "rollingstone.com",
+            "wikipedia.org"
+          ]
+        },
+        "quiz": {
+          "items": 10,
+          "publishers": [
+            "themoviedb.org",
+            "variety.com",
+            "wikipedia.org"
+          ]
+        },
+        "complete": true
+      },
+      "selection_compiles": true,
+      "sources_verified": true,
+      "review_export": ".cache/expanded20/reviews/approved-final-v3/278-4630dcebf37c4363848ae6a4c8accebf.json",
+      "selection": ".cache/expanded20/selections/final-v3/278.json"
+    },
+    {
+      "movie_id": 238,
+      "title": "The Godfather",
+      "state": "needs_review",
+      "job_id": "b2fb98bba6e14e91b72348386d99f65c",
+      "report_sha256": "f19a22af63a65304329426b4c30834f4908f39b0e8fdd8d9f11e1d36fbf8d947",
+      "candidate_item_ids": [
+        "t2-F2",
+        "t3-F1",
+        "t10-F1",
+        "t10-F2",
+        "t24-F1",
+        "t1-Q1",
+        "t1-Q2",
+        "t1-Q3",
+        "t7-Q1",
+        "t7-Q3",
+        "t17-Q1",
+        "t17-Q2",
+        "t17-Q3",
+        "t29-Q1",
+        "t29-Q3"
+      ],
+      "candidate_facts": 5,
+      "candidate_questions": 10,
+      "combined_facts": 5,
+      "combined_questions": 10,
+      "coverage": {
+        "policy": "two-publisher-movie-content-v1",
+        "facts": {
+          "items": 5,
+          "publishers": [
+            "bestlifeonline.com",
+            "wikipedia.org"
+          ]
+        },
+        "quiz": {
+          "items": 10,
+          "publishers": [
+            "themoviedb.org",
+            "wikipedia.org"
+          ]
+        },
+        "complete": true
+      },
+      "selection_compiles": true,
+      "sources_verified": true,
+      "review_export": ".cache/expanded20/reviews/approved-final-v3/238-b2fb98bba6e14e91b72348386d99f65c.json",
+      "selection": ".cache/expanded20/selections/final-v3/238.json"
+    },
+    {
+      "movie_id": 680,
+      "title": "Pulp Fiction",
+      "state": "needs_review",
+      "job_id": "86a3da84985e420da7f4c51b4ec76a8c",
+      "report_sha256": "de168d8ca971938c2cbba1b6d0ce177ffd96fdb441a199d720ae63e4cfcfee23",
+      "candidate_item_ids": [
+        "t2-F1",
+        "t3-F1",
+        "t4-F1",
+        "t5-F2",
+        "t7-F1",
+        "t1-Q1",
+        "t1-Q2",
+        "t6-Q1",
+        "t6-Q2",
+        "t8-Q1",
+        "t8-Q2",
+        "t8-Q3",
+        "t10-Q1",
+        "t13-Q2",
+        "t13-Q3"
+      ],
+      "candidate_facts": 5,
+      "candidate_questions": 10,
+      "combined_facts": 5,
+      "combined_questions": 10,
+      "coverage": {
+        "policy": "two-publisher-movie-content-v1",
+        "facts": {
+          "items": 5,
+          "publishers": [
+            "variety.com",
+            "wikipedia.org"
+          ]
+        },
+        "quiz": {
+          "items": 10,
+          "publishers": [
+            "archive.org",
+            "wikipedia.org"
+          ]
+        },
+        "complete": true
+      },
+      "selection_compiles": true,
+      "sources_verified": true,
+      "review_export": ".cache/expanded20/reviews/approved-final-v3/680-86a3da84985e420da7f4c51b4ec76a8c.json",
+      "selection": ".cache/expanded20/selections/final-v3/680.json"
+    },
+    {
+      "movie_id": 550,
+      "title": "Fight Club",
+      "state": "needs_review",
+      "job_id": "e783e7f83fe04310a20b203d66aebdc6",
+      "report_sha256": "781e42ff67347dd9e283b5afb7c17133c92c141f2741ad4c158fbfa6b8cd650d",
+      "candidate_item_ids": [
+        "t2-F1",
+        "t2-F2",
+        "t5-F2",
+        "t6-F1",
+        "t7-F1",
+        "t1-Q1",
+        "t1-Q3",
+        "t3-Q3",
+        "t4-Q2",
+        "t8-Q1",
+        "t9-Q2",
+        "t10-Q3",
+        "t11-Q3",
+        "t24-Q2",
+        "t24-Q3"
+      ],
+      "candidate_facts": 5,
+      "candidate_questions": 10,
+      "combined_facts": 5,
+      "combined_questions": 10,
+      "coverage": {
+        "policy": "two-publisher-movie-content-v1",
+        "facts": {
+          "items": 5,
+          "publishers": [
+            "thefincheranalyst.com",
+            "wikipedia.org"
+          ]
+        },
+        "quiz": {
+          "items": 10,
+          "publishers": [
+            "filmlookup.com",
+            "plotspoiler.com",
+            "themoviedb.org",
+            "wikipedia.org"
+          ]
+        },
+        "complete": true
+      },
+      "selection_compiles": true,
+      "sources_verified": true,
+      "review_export": ".cache/expanded20/reviews/approved-final-v3/550-e783e7f83fe04310a20b203d66aebdc6.json",
+      "selection": ".cache/expanded20/selections/final-v3/550.json"
+    },
+    {
+      "movie_id": 13,
+      "title": "Forrest Gump",
+      "state": "needs_review",
+      "job_id": "423740447f004863b8cd55cdd1c9fdb0",
+      "report_sha256": "af79a97fa93a4011a78ac6693e6b33100e270e263fdb5b8b55cf34d054474705",
+      "candidate_item_ids": [
+        "t2-F1",
+        "t3-F1",
+        "t5-F2",
+        "t7-F2",
+        "t8-F1",
+        "t1-Q2",
+        "t6-Q2",
+        "t9-Q1",
+        "t9-Q2",
+        "t10-Q1",
+        "t11-Q2",
+        "t12-Q3",
+        "t13-Q2",
+        "t13-Q3",
+        "t16-Q3"
+      ],
+      "candidate_facts": 5,
+      "candidate_questions": 10,
+      "combined_facts": 5,
+      "combined_questions": 10,
+      "coverage": {
+        "policy": "two-publisher-movie-content-v1",
+        "facts": {
+          "items": 5,
+          "publishers": [
+            "afi.com",
+            "denofgeek.com",
+            "wikipedia.org"
+          ]
+        },
+        "quiz": {
+          "items": 10,
+          "publishers": [
+            "moviesense.io",
+            "plotspoiler.com",
+            "wikipedia.org"
+          ]
+        },
+        "complete": true
+      },
+      "selection_compiles": true,
+      "sources_verified": true,
+      "review_export": ".cache/expanded20/reviews/approved-final-v3/13-423740447f004863b8cd55cdd1c9fdb0.json",
+      "selection": ".cache/expanded20/selections/final-v3/13.json"
+    },
+    {
+      "movie_id": 1124,
+      "title": "The Prestige",
+      "state": "needs_review",
+      "job_id": "6bd2d9de6c134dd68bf190d01a69edeb",
+      "report_sha256": "92a4f438fd900b1fdfcdd7eda3a2cd8cc4b73eb97fb99add26a1be73f07e5551",
+      "candidate_item_ids": [
+        "t2-F1",
+        "t3-F1",
+        "t4-F1",
+        "t5-F1",
+        "t6-F1",
+        "t1-Q1",
+        "t1-Q3",
+        "t7-Q1",
+        "t7-Q3",
+        "t9-Q2",
+        "t10-Q1",
+        "t10-Q2",
+        "t10-Q3",
+        "t11-Q1",
+        "t17-Q2"
+      ],
+      "candidate_facts": 5,
+      "candidate_questions": 10,
+      "combined_facts": 5,
+      "combined_questions": 10,
+      "coverage": {
+        "policy": "two-publisher-movie-content-v1",
+        "facts": {
+          "items": 5,
+          "publishers": [
+            "alltherightmovies.com",
+            "screenrant.com",
+            "wikipedia.org"
+          ]
+        },
+        "quiz": {
+          "items": 10,
+          "publishers": [
+            "geektyrant.com",
+            "wikipedia.org"
+          ]
+        },
+        "complete": true
+      },
+      "selection_compiles": true,
+      "sources_verified": true,
+      "review_export": ".cache/expanded20/reviews/approved-final-v3/1124-6bd2d9de6c134dd68bf190d01a69edeb.json",
+      "selection": ".cache/expanded20/selections/final-v3/1124.json"
+    },
+    {
+      "movie_id": 10681,
+      "title": "WALL-E",
+      "state": "needs_review",
+      "job_id": "a7b58936b8bc41688280384eaa30d055",
+      "report_sha256": "0ed7f3a5194328dcd66c7bcb98cebe1809ea56644b2904d3effc315f79c194df",
+      "candidate_item_ids": [
+        "t2-F1",
+        "t2-F2",
+        "t6-F1",
+        "t7-F1",
+        "t12-F2",
+        "t1-Q2",
+        "t1-Q3",
+        "t3-Q1",
+        "t3-Q3",
+        "t4-Q3",
+        "t5-Q3",
+        "t8-Q1",
+        "t8-Q2",
+        "t8-Q3",
+        "t10-Q3"
+      ],
+      "candidate_facts": 5,
+      "candidate_questions": 10,
+      "combined_facts": 5,
+      "combined_questions": 10,
+      "coverage": {
+        "policy": "two-publisher-movie-content-v1",
+        "facts": {
+          "items": 5,
+          "publishers": [
+            "archive.org",
+            "wikipedia.org"
+          ]
+        },
+        "quiz": {
+          "items": 10,
+          "publishers": [
+            "hollywoodreporter.com",
+            "themoviedb.org",
+            "wikipedia.org"
+          ]
+        },
+        "complete": true
+      },
+      "selection_compiles": true,
+      "sources_verified": true,
+      "review_export": ".cache/expanded20/reviews/approved-final-v3/10681-a7b58936b8bc41688280384eaa30d055.json",
+      "selection": ".cache/expanded20/selections/final-v3/10681.json"
+    },
+    {
+      "movie_id": 8587,
+      "title": "The Lion King",
+      "state": "needs_review",
+      "job_id": "b4c4933bed484ae49f7c229e76c42dc3",
+      "report_sha256": "539eb2208428225a30ed2ed0e1ea8dba3b8d653e21dde9f493b2705abdb44914",
+      "candidate_item_ids": [
+        "t2-F1",
+        "t3-F1",
+        "t7-F1",
+        "t8-F1",
+        "t43-F1",
+        "t1-Q1",
+        "t1-Q2",
+        "t4-Q1",
+        "t4-Q3",
+        "t5-Q3",
+        "t6-Q2",
+        "t10-Q3",
+        "t11-Q3",
+        "t13-Q1",
+        "t13-Q3"
+      ],
+      "candidate_facts": 5,
+      "candidate_questions": 10,
+      "combined_facts": 5,
+      "combined_questions": 10,
+      "coverage": {
+        "policy": "two-publisher-movie-content-v1",
+        "facts": {
+          "items": 5,
+          "publishers": [
+            "denofgeek.com",
+            "wikipedia.org"
+          ]
+        },
+        "quiz": {
+          "items": 10,
+          "publishers": [
+            "archive.org",
+            "themoviedb.org",
+            "wikipedia.org"
+          ]
+        },
+        "complete": true
+      },
+      "selection_compiles": true,
+      "sources_verified": true,
+      "review_export": ".cache/expanded20/reviews/approved-final-v3/8587-b4c4933bed484ae49f7c229e76c42dc3.json",
+      "selection": ".cache/expanded20/selections/final-v3/8587.json"
+    },
+    {
+      "movie_id": 76341,
+      "title": "Mad Max: Fury Road",
+      "state": "needs_review",
+      "job_id": "600f039b5e2b44359f335f4ed4219f1d",
+      "report_sha256": "bee2fe4ebba28e3fb02f5b145dad805c232030bc3af742e1b06fb9b30f35175c",
+      "candidate_item_ids": [
+        "t2-F1",
+        "t3-F1",
+        "t3-F2",
+        "t4-F1",
+        "t5-F1",
+        "t1-Q1",
+        "t1-Q2",
+        "t6-Q1",
+        "t6-Q2",
+        "t6-Q3",
+        "t7-Q1",
+        "t8-Q1",
+        "t14-Q2",
+        "t27-Q1",
+        "t46-Q2"
+      ],
+      "candidate_facts": 5,
+      "candidate_questions": 10,
+      "combined_facts": 5,
+      "combined_questions": 10,
+      "coverage": {
+        "policy": "two-publisher-movie-content-v1",
+        "facts": {
+          "items": 5,
+          "publishers": [
+            "variety.com",
+            "wikipedia.org"
+          ]
+        },
+        "quiz": {
+          "items": 10,
+          "publishers": [
+            "vanityfair.com",
+            "wikipedia.org"
+          ]
+        },
+        "complete": true
+      },
+      "selection_compiles": true,
+      "sources_verified": true,
+      "review_export": ".cache/expanded20/reviews/approved-final-v3/76341-600f039b5e2b44359f335f4ed4219f1d.json",
+      "selection": ".cache/expanded20/selections/final-v3/76341.json"
+    }
+  ],
+  "known_legacy_findings": [],
+  "resolved_legacy_findings": [
+    {
+      "movie_id": 329865,
+      "item_id": "research-f283ad4acdf0-t2-F1",
+      "field": "fact.title",
+      "previous_value": "Cinematographer Young drew on Martina Hoogland Ivanow's photography for exterior dread.",
+      "resolved_value": "Photography shaped the exterior dread",
+      "resolution": "Reworded the legacy sentence-style title without changing its claim, citation, or derived research candidates."
+    }
+  ]
+}

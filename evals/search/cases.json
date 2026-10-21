@@ -1,0 +1,188 @@
+[
+  {
+    "split": "dev",
+    "category": "typo",
+    "query": "Intersteler",
+    "label": "Interstellar",
+    "kind": "movie"
+  },
+  {
+    "split": "dev",
+    "category": "typo",
+    "query": "Incepton",
+    "label": "Inception",
+    "kind": "movie"
+  },
+  {
+    "split": "dev",
+    "category": "typo",
+    "query": "Arival",
+    "label": "Arrival",
+    "kind": "movie"
+  },
+  {
+    "split": "dev",
+    "category": "typo",
+    "query": "The Matrx",
+    "label": "The Matrix",
+    "kind": "movie"
+  },
+  {
+    "split": "dev",
+    "category": "typo",
+    "query": "Knives Ot",
+    "label": "Knives Out",
+    "kind": "movie"
+  },
+  {
+    "split": "dev",
+    "category": "typo",
+    "query": "Parsite",
+    "label": "Parasite",
+    "kind": "movie"
+  },
+  {
+    "split": "dev",
+    "category": "typo",
+    "query": "Spirited Awy",
+    "label": "Spirited Away",
+    "kind": "movie"
+  },
+  {
+    "split": "dev",
+    "category": "typo",
+    "query": "Truman Shwo",
+    "label": "The Truman Show",
+    "kind": "movie"
+  },
+  {
+    "split": "dev",
+    "category": "typo",
+    "query": "Amy Admas",
+    "label": "Amy Adams",
+    "kind": "actor"
+  },
+  {
+    "split": "dev",
+    "category": "typo",
+    "query": "Jim Carey",
+    "label": "Jim Carrey",
+    "kind": "actor"
+  },
+  {
+    "split": "dev",
+    "category": "typo",
+    "query": "Leonardo DiCapro",
+    "label": "Leonardo DiCaprio",
+    "kind": "actor"
+  },
+  {
+    "split": "dev",
+    "category": "typo",
+    "query": "Keanu Reevs",
+    "label": "Keanu Reeves",
+    "kind": "actor"
+  },
+  {
+    "split": "holdout",
+    "category": "typo",
+    "query": "Interstelar",
+    "label": "Interstellar",
+    "kind": "movie"
+  },
+  {
+    "split": "holdout",
+    "category": "typo",
+    "query": "Incepiton",
+    "label": "Inception",
+    "kind": "movie"
+  },
+  {
+    "split": "holdout",
+    "category": "typo",
+    "query": "Grand Budpest Hotel",
+    "label": "The Grand Budapest Hotel",
+    "kind": "movie"
+  },
+  {
+    "split": "holdout",
+    "category": "typo",
+    "query": "Spirted Away",
+    "label": "Spirited Away",
+    "kind": "movie"
+  },
+  {
+    "split": "holdout",
+    "category": "typo",
+    "query": "Matthew McConaughe",
+    "label": "Matthew McConaughey",
+    "kind": "actor"
+  },
+  {
+    "split": "holdout",
+    "category": "typo",
+    "query": "Daniel Crag",
+    "label": "Daniel Craig",
+    "kind": "actor"
+  },
+  {
+    "split": "dev",
+    "category": "exact",
+    "query": "Arrival"
+  },
+  {
+    "split": "dev",
+    "category": "exact",
+    "query": "Amy Adams"
+  },
+  {
+    "split": "dev",
+    "category": "exact",
+    "query": "Dune"
+  },
+  {
+    "split": "holdout",
+    "category": "exact",
+    "query": "Interstellar"
+  },
+  {
+    "split": "dev",
+    "category": "negative",
+    "query": "restaurants near me"
+  },
+  {
+    "split": "dev",
+    "category": "negative",
+    "query": "zzzzzzzz"
+  },
+  {
+    "split": "dev",
+    "category": "negative",
+    "query": "weather tomorrow"
+  },
+  {
+    "split": "dev",
+    "category": "negative",
+    "query": "buy a laptop"
+  },
+  {
+    "split": "dev",
+    "category": "negative",
+    "query": "qwertyuiop"
+  },
+  {
+    "split": "holdout",
+    "category": "negative",
+    "query": "tax calculator"
+  },
+  {
+    "split": "holdout",
+    "category": "negative",
+    "query": "football scores"
+  },
+  {
+    "split": "holdout",
+    "category": "negative",
+    "query": "asdfghjkl"
+  }
+]

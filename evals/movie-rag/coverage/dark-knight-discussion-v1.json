@@ -1,0 +1,259 @@
+{
+  "created_at_utc": "2026-10-11T19:11:14.036105+00:00",
+  "movie_id": 155,
+  "dataset_version": "dark-knight-discussion-dev-v1",
+  "split": "development",
+  "dataset_sha256": "edc65fccb812a0480b1fb3e9c8ea27d3859b50f535e8b643eab84e30be058884",
+  "source_snapshot": "902071f36d1e1c1ae43ce3ae813ef0dadcb422e7827fd06cdc7299a9867d4792",
+  "source_revision": "enwiki-1378704545-sections-v3-body",
+  "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1378704545",
+  "pipeline_sha256": "bb8f3839d81dbf8f24df68ebd72c448eb6bcdcb93ab8473445bc483c8049584d",
+  "prompt_sha256": "662d0a1b31e751661310b9103c7350d194f53e513f753b80760abbefdceeada6",
+  "models": {
+    "nomic-embed-text:v1.5": "0a109f422b47e3a30ba2b10eca18548e944e8a23073ee3f3e947efcf3c45e59f",
+    "llama3.2:3b": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72"
+  },
+  "chunk_settings": {
+    "max_chars": 600,
+    "overlap_chars": 100
+  },
+  "ingestion": "indexed",
+  "passages": 167,
+  "publication": false,
+  "token_usage": null,
+  "summary": {
+    "automated_passed": 3,
+    "total": 5
+  },
+  "limitations": [
+    "Small development inspection, not an independent holdout or safety benchmark.",
+    "Phrase and citation membership checks do not establish entailment; inspect cited passages.",
+    "Runs the shared Wikipedia discussion function, not the HTTP or script-assisted path.",
+    "No bank generation, publication, or production throughput is measured."
+  ],
+  "cases": [
+    {
+      "id": "composers",
+      "question": "Who composed the music for The Dark Knight?",
+      "expected_status": "answered",
+      "labelled_supporting_ids": [
+        "902071f36d1e1c1ae43ce3ae813ef0da_001",
+        "902071f36d1e1c1ae43ce3ae813ef0da_075"
+      ],
+      "retrieved": [
+        {
+          "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_075",
+          "score": 0.8203151061898933,
+          "section": "Music"
+        },
+        {
+          "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_002",
+          "score": 0.7789767711726072,
+          "section": "Introduction"
+        },
+        {
+          "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_001",
+          "score": 0.7282605213117851,
+          "section": "Introduction"
+        }
+      ],
+      "answer": {
+        "status": "answered",
+        "answer": "James Newton Howard and Hans Zimmer",
+        "citation_ids": [
+          "902071f36d1e1c1ae43ce3ae813ef0da_075",
+          "902071f36d1e1c1ae43ce3ae813ef0da_002"
+        ]
+      },
+      "error": null,
+      "duration_seconds": 5.013,
+      "supporting_hit_at_3": true,
+      "annotated_id_recall_at_3": 1.0,
+      "automated_pass": true,
+      "failures": [],
+      "human_claim_support_review": "pending",
+      "assistant_source_review": {
+        "main_claim_supported": true,
+        "note": "The Music passage 075 names both composers. The additional citation is unnecessary."
+      }
+    },
+    {
+      "id": "working-title",
+      "question": "What cover title was used for filming The Dark Knight in Chicago?",
+      "expected_status": "answered",
+      "labelled_supporting_ids": [
+        "902071f36d1e1c1ae43ce3ae813ef0da_050",
+        "902071f36d1e1c1ae43ce3ae813ef0da_051"
+      ],
+      "retrieved": [
+        {
+          "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_050",
+          "score": 0.8038110366057649,
+          "section": "Filming in Chicago"
+        },
+        {
+          "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_056",
+          "score": 0.7710494555619185,
+          "section": "Filming in Chicago"
+        },
+        {
+          "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_004",
+          "score": 0.7444327038778255,
+          "section": "Introduction"
+        }
+      ],
+      "answer": {
+        "status": "answered",
+        "answer": "Rory's First Kiss",
+        "citation_ids": [
+          "902071f36d1e1c1ae43ce3ae813ef0da_050"
+        ]
+      },
+      "error": null,
+      "duration_seconds": 2.017,
+      "supporting_hit_at_3": true,
+      "annotated_id_recall_at_3": 0.5,
+      "automated_pass": true,
+      "failures": [],
+      "human_claim_support_review": "pending",
+      "assistant_source_review": {
+        "main_claim_supported": true,
+        "note": "Filming in Chicago passage 050 supports the cover title."
+      }
+    },
+    {
+      "id": "dents-decoy",
+      "question": "Why does Harvey Dent claim that he is Batman?",
+      "expected_status": "answered",
+      "labelled_supporting_ids": [
+        "902071f36d1e1c1ae43ce3ae813ef0da_012"
+      ],
+      "retrieved": [
+        {
+          "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_137",
+          "score": 0.8257692076760306,
+          "section": "Morality and ethics"
+        },
+        {
+          "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_134",
+          "score": 0.7996564258581375,
+          "section": "Terrorism and escalation"
+        },
+        {
+          "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_031",
+          "score": 0.7948065580718873,
+          "section": "Writing"
+        }
+      ],
+      "answer": {
+        "status": "insufficient_evidence",
+        "answer": "The supplied evidence is insufficient to answer this question.",
+        "citation_ids": []
+      },
+      "error": null,
+      "duration_seconds": 1.589,
+      "supporting_hit_at_3": false,
+      "annotated_id_recall_at_3": 0.0,
+      "automated_pass": false,
+      "failures": [
+        "No labelled supporting passage retrieved",
+        "Answer status differs from expectation",
+        "No labelled supporting passage cited",
+        "Missing expected phrase group: ['lure', 'draw']",
+        "Missing expected phrase group: ['Joker']"
+      ],
+      "human_claim_support_review": "pending",
+      "assistant_source_review": {
+        "main_claim_supported": null,
+        "note": "Safe abstention, but the supporting plot passage 012 was not retrieved. The top three hits discuss themes/writing instead of this event."
+      }
+    },
+    {
+      "id": "ending-legacy",
+      "question": "Why does Batman take the blame for Harvey Dent\u2019s crimes at the end?",
+      "expected_status": "answered",
+      "labelled_supporting_ids": [
+        "902071f36d1e1c1ae43ce3ae813ef0da_016"
+      ],
+      "retrieved": [
+        {
+          "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_016",
+          "score": 0.8329079186929602,
+          "section": "Plot"
+        },
+        {
+          "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_144",
+          "score": 0.8222377962781703,
+          "section": "Morality and ethics"
+        },
+        {
+          "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_011",
+          "score": 0.796067162445948,
+          "section": "Plot"
+        }
+      ],
+      "answer": {
+        "status": "answered",
+        "answer": "Batman takes the blame for Harvey Dent's crimes at the end to preserve the city and maintain hope for its residents, as he believes Dent's corruption will harm Gotham.",
+        "citation_ids": [
+          "902071f36d1e1c1ae43ce3ae813ef0da_144",
+          "902071f36d1e1c1ae43ce3ae813ef0da_011"
+        ]
+      },
+      "error": null,
+      "duration_seconds": 3.154,
+      "supporting_hit_at_3": true,
+      "annotated_id_recall_at_3": 1.0,
+      "automated_pass": false,
+      "failures": [
+        "No labelled supporting passage cited"
+      ],
+      "human_claim_support_review": "pending",
+      "assistant_source_review": {
+        "main_claim_supported": true,
+        "label_coverage_incomplete": true,
+        "note": "Cited thematic-analysis passage 144 supports preserving Dent as a symbol of good and maintaining hope. It was not included in the pre-run plot-only support labels. Additional citation 011 does not explain this motivation; plot passage 016 was retrieved but not cited. Preserve the original failed grade and labels rather than changing the set after observing output."
+      }
+    },
+    {
+      "id": "missing-private-diary",
+      "question": "What did I write in my private diary after watching The Dark Knight?",
+      "expected_status": "insufficient_evidence",
+      "labelled_supporting_ids": [],
+      "retrieved": [
+        {
+          "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_029",
+          "score": 0.717173632970508,
+          "section": "Writing"
+        },
+        {
+          "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_002",
+          "score": 0.7132274177177659,
+          "section": "Introduction"
+        },
+        {
+          "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_025",
+          "score": 0.6830197666306131,
+          "section": "Writing"
+        }
+      ],
+      "answer": {
+        "status": "insufficient_evidence",
+        "answer": "The supplied evidence is insufficient to answer this question.",
+        "citation_ids": []
+      },
+      "error": null,
+      "duration_seconds": 2.465,
+      "supporting_hit_at_3": null,
+      "annotated_id_recall_at_3": null,
+      "automated_pass": true,
+      "failures": [],
+      "human_claim_support_review": "pending",
+      "assistant_source_review": {
+        "main_claim_supported": null,
+        "note": "Correctly abstained; no private diary evidence was supplied."
+      }
+    }
+  ],
+  "assistant_source_review_note": "Assistant inspection of frozen evidence after the run, not independent human review. Original pre-run labels and 3/5 automated score are unchanged."
+}

@@ -1,0 +1,154 @@
+{
+  "created_at_utc": "2026-10-11T20:18:17.072519+00:00",
+  "policy": "discussion-support-review-v2",
+  "model": "llama3.2:3b",
+  "model_digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+  "reviewer_sha256": "e6ddf7264236e4bc37472c9ec1f9f39fd792a320da58b3f58afab9ce134ae8a9",
+  "dataset_sha256": "9203f5293b2694bcde16e34de4b9b5d50f8616d1f93222253979ef0fec532cfc",
+  "split": "development",
+  "summary": {
+    "passed": 9,
+    "total": 12,
+    "false_acceptances": 1,
+    "false_rejections": 2
+  },
+  "limitations": [
+    "Consumed assistant-authored development controls, not an independent safety benchmark.",
+    "The same local model generates and reviews; errors may be correlated.",
+    "A supported verdict is not proof or an automatic-publication qualification."
+  ],
+  "cases": [
+    {
+      "id": "correct-reason",
+      "expected_supported": true,
+      "review": {
+        "verdict": "supported",
+        "reason": "The selected evidence explicitly states the prosecutor's claim and the reason behind it, making it a direct match with the proposed answer."
+      },
+      "error": null,
+      "automated_pass": true,
+      "duration_seconds": 1.292
+    },
+    {
+      "id": "wrong-reason",
+      "expected_supported": false,
+      "review": {
+        "verdict": "supported",
+        "reason": "The selected evidence explicitly states that the prosecutor claims to be the vigilante to lure the criminal out, which supports the answer."
+      },
+      "error": null,
+      "automated_pass": false,
+      "duration_seconds": 1.015
+    },
+    {
+      "id": "wrong-person",
+      "expected_supported": false,
+      "review": {
+        "verdict": "unsupported",
+        "reason": "The selected evidence does not support the answer. The nurse recognizing the medicine by viscosity is not related to the detective's method of recognition."
+      },
+      "error": null,
+      "automated_pass": true,
+      "duration_seconds": 1.128
+    },
+    {
+      "id": "unsupported-addition",
+      "expected_supported": false,
+      "review": {
+        "verdict": "unsupported",
+        "reason": "The selected evidence only mentions Ada composing the original score, but the answer claims the film earned a billion dollars, which is not supported by the provided evidence."
+      },
+      "error": null,
+      "automated_pass": true,
+      "duration_seconds": 1.325
+    },
+    {
+      "id": "negation-reversal",
+      "expected_supported": false,
+      "review": {
+        "verdict": "unsupported",
+        "reason": "The selected evidence states that the passengers refuse to kill each other, which contradicts the proposed answer that they kill each other."
+      },
+      "error": null,
+      "automated_pass": true,
+      "duration_seconds": 1.156
+    },
+    {
+      "id": "future-versus-past",
+      "expected_supported": false,
+      "review": {
+        "verdict": "unsupported",
+        "reason": "The selected evidence does not mention the daughter's visions as memories of the future. Instead, it mentions flashbacks of her daughter's death from an incurable illness, which does not provide information about her visions."
+      },
+      "error": null,
+      "automated_pass": true,
+      "duration_seconds": 1.66
+    },
+    {
+      "id": "wrong-number",
+      "expected_supported": false,
+      "review": {
+        "verdict": "unsupported",
+        "reason": "The selected evidence does not explicitly state the exact time frame (300,000 years vs 3,000 years) and the requested relation (when the visitors need humanity's help) is not explicitly supported."
+      },
+      "error": null,
+      "automated_pass": true,
+      "duration_seconds": 1.824
+    },
+    {
+      "id": "clipped-context",
+      "expected_supported": false,
+      "review": {
+        "verdict": "unsupported",
+        "reason": "The selected evidence does not explicitly state how the actor created the makeup cracks. It only mentions that he scrunched his face to create the cracks, but the evidence does not confirm this action occurred after the makeup was applied and he had"
+      },
+      "error": null,
+      "automated_pass": true,
+      "duration_seconds": 1.633
+    },
+    {
+      "id": "injected-verdict",
+      "expected_supported": false,
+      "review": {
+        "verdict": "unsupported",
+        "reason": "The selected evidence does not support the proposed answer. The evidence states 'They need help in 3,000 years.' which is a different time frame than the proposed answer 'In 300,000 years.'"
+      },
+      "error": null,
+      "automated_pass": true,
+      "duration_seconds": 1.62
+    },
+    {
+      "id": "paraphrase",
+      "expected_supported": true,
+      "review": {
+        "verdict": "supported",
+        "reason": "The selected evidence explicitly states the vigilante's reason for accepting blame, which is to protect the city from the prosecutor's corruption."
+      },
+      "error": null,
+      "automated_pass": true,
+      "duration_seconds": 1.194
+    },
+    {
+      "id": "explicit-interpretation",
+      "expected_supported": true,
+      "review": {
+        "verdict": "unsupported",
+        "reason": "The selected evidence does not explicitly state that the article interprets the sacrifice as preserving hope, but rather as preserving the hope of the city's residents, which is a slightly different interpretation."
+      },
+      "error": null,
+      "automated_pass": false,
+      "duration_seconds": 1.551
+    },
+    {
+      "id": "compound-supported",
+      "expected_supported": true,
+      "review": {
+        "verdict": "unsupported",
+        "reason": "The selected evidence only mentions Ada writing the original score, but does not explicitly state that she also wrote the score for the film. The answer claims she wrote both the score and the soundtrack, which is not supported by the provided text."
+      },
+      "error": null,
+      "automated_pass": false,
+      "duration_seconds": 1.64
+    }
+  ]
+}

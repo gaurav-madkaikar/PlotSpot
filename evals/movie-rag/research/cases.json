@@ -1,0 +1,17 @@
+{
+  "version": "research-operations-development-v1",
+  "split": "development",
+  "authorship": "Assistant-authored operational expectations frozen before execution; not semantic-quality labels.",
+  "cases": [
+    {"id": "complete", "fault": "none", "expected": ["complete", "complete"]},
+    {"id": "missing-story", "fault": "story-error", "expected": ["failed", "complete"]},
+    {"id": "missing-background", "fault": "background-error", "expected": ["complete", "failed"]},
+    {"id": "one-article-missing", "fault": "partial-background", "expected": ["complete", "partial"]},
+    {"id": "wrong-movie", "fault": "wrong-movie", "expected": ["complete", "failed"]},
+    {"id": "unregistered-host", "fault": "wrong-host", "expected": ["complete", "failed"]},
+    {"id": "plot-as-production", "fault": "wrong-purpose", "expected": ["complete", "failed"]},
+    {"id": "malformed-researcher", "fault": "wrong-shape", "expected": ["complete", "failed"]},
+    {"id": "background-timeout", "fault": "timeout", "expected": ["complete", "timed_out"]},
+    {"id": "cancelled-workflow", "fault": "cancellation", "expected": ["cancelled", "cancelled"]}
+  ]
+}

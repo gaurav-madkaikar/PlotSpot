@@ -1,0 +1,26 @@
+{
+  "split": "development",
+  "label_author": "assistant source inspection before model outputs",
+  "models_not_used_for_labels": true,
+  "limitations": [
+    "Additional development checks chosen after the known Dark Knight gap; not an independent human holdout.",
+    "Supporting IDs are annotated matches, not necessarily every valid alternative in the article."
+  ],
+  "datasets": {
+    "155": {
+      "path": "discussion-transfer-155-cases.json",
+      "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1378704545",
+      "cases": 4
+    },
+    "329865": {
+      "path": "discussion-transfer-329865-cases.json",
+      "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1377517038",
+      "cases": 4
+    },
+    "546554": {
+      "path": "discussion-transfer-546554-cases.json",
+      "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1378593030",
+      "cases": 4
+    }
+  }
+}

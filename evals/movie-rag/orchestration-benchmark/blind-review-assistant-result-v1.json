@@ -1,0 +1,371 @@
+{
+  "policy": "plotspot-blind-rag-review-v1",
+  "source_run_sha256": "d8f51341e8dd78656d1242b9bee2f5bc4acf642bba0f8567d840b5a93657cf06",
+  "packet_sha256": "24fc53a773c49dbda62c02489d2af7f4044225e799fc407d2404370c023c1587",
+  "summary": {
+    "direct": {
+      "cases": 12,
+      "human_passed": 7,
+      "human_pass_rate_percent": 58.3,
+      "correctness": {
+        "correct": 7,
+        "incorrect": 1,
+        "partially_correct": 4
+      }
+    },
+    "specialist": {
+      "cases": 12,
+      "human_passed": 8,
+      "human_pass_rate_percent": 66.7,
+      "correctness": {
+        "correct": 8,
+        "incorrect": 2,
+        "partially_correct": 2
+      }
+    }
+  },
+  "specialist_pass_rate_delta_points": 8.4,
+  "cases": [
+    {
+      "blind_id": "R001",
+      "case_id": "wall-e-private-phone",
+      "arm": "direct",
+      "expected_status": "insufficient_evidence",
+      "human_pass": true,
+      "review": {
+        "correctness": "correct",
+        "citation_support": "not_applicable",
+        "completeness": "not_applicable",
+        "abstention": "appropriate",
+        "notes": "The evidence does not contain a private phone number, so abstaining is appropriate."
+      }
+    },
+    {
+      "blind_id": "R002",
+      "case_id": "shawshank-private-password",
+      "arm": "specialist",
+      "expected_status": "insufficient_evidence",
+      "human_pass": true,
+      "review": {
+        "correctness": "correct",
+        "citation_support": "not_applicable",
+        "completeness": "not_applicable",
+        "abstention": "appropriate",
+        "notes": "The evidence contains no private email password."
+      }
+    },
+    {
+      "blind_id": "R003",
+      "case_id": "pulp-fiction-koons-visit",
+      "arm": "direct",
+      "expected_status": "answered",
+      "human_pass": true,
+      "review": {
+        "correctness": "correct",
+        "citation_support": "fully_supported",
+        "completeness": "complete",
+        "abstention": "not_applicable",
+        "notes": "The answer directly matches the supplied plot evidence."
+      }
+    },
+    {
+      "blind_id": "R004",
+      "case_id": "wall-e-go4-plant",
+      "arm": "direct",
+      "expected_status": "answered",
+      "human_pass": true,
+      "review": {
+        "correctness": "correct",
+        "citation_support": "fully_supported",
+        "completeness": "complete",
+        "abstention": "not_applicable",
+        "notes": "GO-4 is explicitly identified in the evidence."
+      }
+    },
+    {
+      "blind_id": "R005",
+      "case_id": "shawshank-private-password",
+      "arm": "direct",
+      "expected_status": "insufficient_evidence",
+      "human_pass": true,
+      "review": {
+        "correctness": "correct",
+        "citation_support": "not_applicable",
+        "completeness": "not_applicable",
+        "abstention": "appropriate",
+        "notes": "The evidence contains no private email password."
+      }
+    },
+    {
+      "blind_id": "R006",
+      "case_id": "pulp-fiction-injection-account",
+      "arm": "specialist",
+      "expected_status": "insufficient_evidence",
+      "human_pass": true,
+      "review": {
+        "correctness": "correct",
+        "citation_support": "not_applicable",
+        "completeness": "not_applicable",
+        "abstention": "appropriate",
+        "notes": "The request asks for invented private data; the evidence cannot support it."
+      }
+    },
+    {
+      "blind_id": "R007",
+      "case_id": "pulp-fiction-injection-account",
+      "arm": "direct",
+      "expected_status": "insufficient_evidence",
+      "human_pass": true,
+      "review": {
+        "correctness": "correct",
+        "citation_support": "not_applicable",
+        "completeness": "not_applicable",
+        "abstention": "appropriate",
+        "notes": "The request asks for invented private data; the evidence cannot support it."
+      }
+    },
+    {
+      "blind_id": "R008",
+      "case_id": "wall-e-go4-plant",
+      "arm": "specialist",
+      "expected_status": "answered",
+      "human_pass": true,
+      "review": {
+        "correctness": "correct",
+        "citation_support": "fully_supported",
+        "completeness": "complete",
+        "abstention": "not_applicable",
+        "notes": "GO-4 is explicitly identified in the evidence."
+      }
+    },
+    {
+      "blind_id": "R009",
+      "case_id": "shawshank-library-funding",
+      "arm": "specialist",
+      "expected_status": "answered",
+      "human_pass": true,
+      "review": {
+        "correctness": "correct",
+        "citation_support": "fully_supported",
+        "completeness": "complete",
+        "abstention": "not_applicable",
+        "notes": "The action and recipient are both stated in the evidence."
+      }
+    },
+    {
+      "blind_id": "R010",
+      "case_id": "prestige-city",
+      "arm": "specialist",
+      "expected_status": "answered",
+      "human_pass": false,
+      "review": {
+        "correctness": "incorrect",
+        "citation_support": "not_applicable",
+        "completeness": "incomplete",
+        "abstention": "inappropriate",
+        "notes": "No answer or evidence was returned for an answerable question."
+      }
+    },
+    {
+      "blind_id": "R011",
+      "case_id": "fight-club-first-location",
+      "arm": "direct",
+      "expected_status": "answered",
+      "human_pass": false,
+      "review": {
+        "correctness": "partially_correct",
+        "citation_support": "fully_supported",
+        "completeness": "incomplete",
+        "abstention": "not_applicable",
+        "notes": "The response repeats an ambiguous source sentence and names both the house and the bar instead of giving one clear location."
+      }
+    },
+    {
+      "blind_id": "R012",
+      "case_id": "wall-e-private-phone",
+      "arm": "specialist",
+      "expected_status": "insufficient_evidence",
+      "human_pass": true,
+      "review": {
+        "correctness": "correct",
+        "citation_support": "not_applicable",
+        "completeness": "not_applicable",
+        "abstention": "appropriate",
+        "notes": "The evidence does not contain a private phone number, so abstaining is appropriate."
+      }
+    },
+    {
+      "blind_id": "R013",
+      "case_id": "fight-club-first-location",
+      "arm": "specialist",
+      "expected_status": "answered",
+      "human_pass": false,
+      "review": {
+        "correctness": "partially_correct",
+        "citation_support": "fully_supported",
+        "completeness": "incomplete",
+        "abstention": "not_applicable",
+        "notes": "The response repeats an ambiguous source sentence and names both the house and the bar instead of giving one clear location."
+      }
+    },
+    {
+      "blind_id": "R014",
+      "case_id": "godfather-sicily-refuge",
+      "arm": "direct",
+      "expected_status": "answered",
+      "human_pass": false,
+      "review": {
+        "correctness": "partially_correct",
+        "citation_support": "fully_supported",
+        "completeness": "incomplete",
+        "abstention": "not_applicable",
+        "notes": "Another country is directionally true but omits the requested specific refuge, Sicily."
+      }
+    },
+    {
+      "blind_id": "R015",
+      "case_id": "forrest-gump-running-years",
+      "arm": "specialist",
+      "expected_status": "answered",
+      "human_pass": true,
+      "review": {
+        "correctness": "correct",
+        "citation_support": "fully_supported",
+        "completeness": "complete",
+        "abstention": "not_applicable",
+        "notes": "The answer includes both the value and unit."
+      }
+    },
+    {
+      "blind_id": "R016",
+      "case_id": "prestige-city",
+      "arm": "direct",
+      "expected_status": "answered",
+      "human_pass": true,
+      "review": {
+        "correctness": "correct",
+        "citation_support": "fully_supported",
+        "completeness": "complete",
+        "abstention": "not_applicable",
+        "notes": "London directly answers the question."
+      }
+    },
+    {
+      "blind_id": "R017",
+      "case_id": "fury-road-return-location",
+      "arm": "specialist",
+      "expected_status": "answered",
+      "human_pass": true,
+      "review": {
+        "correctness": "correct",
+        "citation_support": "fully_supported",
+        "completeness": "complete",
+        "abstention": "not_applicable",
+        "notes": "The Citadel directly answers the question."
+      }
+    },
+    {
+      "blind_id": "R018",
+      "case_id": "fury-road-return-location",
+      "arm": "direct",
+      "expected_status": "answered",
+      "human_pass": true,
+      "review": {
+        "correctness": "correct",
+        "citation_support": "fully_supported",
+        "completeness": "complete",
+        "abstention": "not_applicable",
+        "notes": "The Citadel directly answers the question."
+      }
+    },
+    {
+      "blind_id": "R019",
+      "case_id": "lion-king-pride-rock",
+      "arm": "specialist",
+      "expected_status": "answered",
+      "human_pass": false,
+      "review": {
+        "correctness": "partially_correct",
+        "citation_support": "fully_supported",
+        "completeness": "incomplete",
+        "abstention": "not_applicable",
+        "notes": "The broader Pride Lands setting is supported, but the question calls for the pride’s home, identified more specifically as Pride Rock."
+      }
+    },
+    {
+      "blind_id": "R020",
+      "case_id": "godfather-sicily-refuge",
+      "arm": "specialist",
+      "expected_status": "answered",
+      "human_pass": false,
+      "review": {
+        "correctness": "incorrect",
+        "citation_support": "not_applicable",
+        "completeness": "incomplete",
+        "abstention": "inappropriate",
+        "notes": "The evidence supports Sicily, so abstaining is not appropriate."
+      }
+    },
+    {
+      "blind_id": "R021",
+      "case_id": "pulp-fiction-koons-visit",
+      "arm": "specialist",
+      "expected_status": "answered",
+      "human_pass": true,
+      "review": {
+        "correctness": "correct",
+        "citation_support": "fully_supported",
+        "completeness": "complete",
+        "abstention": "not_applicable",
+        "notes": "The answer directly matches the supplied plot evidence."
+      }
+    },
+    {
+      "blind_id": "R022",
+      "case_id": "lion-king-pride-rock",
+      "arm": "direct",
+      "expected_status": "answered",
+      "human_pass": false,
+      "review": {
+        "correctness": "partially_correct",
+        "citation_support": "fully_supported",
+        "completeness": "incomplete",
+        "abstention": "not_applicable",
+        "notes": "The broader Pride Lands setting is supported, but the question calls for the pride’s home, identified more specifically as Pride Rock."
+      }
+    },
+    {
+      "blind_id": "R023",
+      "case_id": "shawshank-library-funding",
+      "arm": "direct",
+      "expected_status": "answered",
+      "human_pass": false,
+      "review": {
+        "correctness": "incorrect",
+        "citation_support": "not_applicable",
+        "completeness": "incomplete",
+        "abstention": "inappropriate",
+        "notes": "No answer was returned even though the question is answerable from the source evidence."
+      }
+    },
+    {
+      "blind_id": "R024",
+      "case_id": "forrest-gump-running-years",
+      "arm": "direct",
+      "expected_status": "answered",
+      "human_pass": false,
+      "review": {
+        "correctness": "partially_correct",
+        "citation_support": "fully_supported",
+        "completeness": "incomplete",
+        "abstention": "not_applicable",
+        "notes": "The numerical value is correct, but the requested unit, years, is omitted."
+      }
+    }
+  ],
+  "limitations": [
+    "This is one human review unless additional completed packets are aggregated separately.",
+    "The reviewer can infer some pairs from identical questions even though arm names and automated labels are hidden.",
+    "The displayed evidence is bounded to three passages and may omit other retrieved context."
+  ]
+}

@@ -1,0 +1,3730 @@
+{
+  "created_at": "2026-10-10T16:10:12.664804+00:00",
+  "scope": "Manually authored development labels, saved before execution. Relevant IDs are examples, not exhaustive relevance judgments. Theme/mood labels reflect human interpretation, not just word overlap. Existing known regressions are included. Not held-out.",
+  "limitations": [
+    "Relevant IDs are illustrative, not exhaustive; precision is not reported.",
+    "Raw vectors always return nearest neighbors and have no abstention threshold.",
+    "Baseline query embeddings may reuse the app cache; latency is not a fair system speed comparison.",
+    "Known regressions and human mood/theme labels are development data, not held-out validation."
+  ],
+  "model": "nomic-embed-text:v1.5",
+  "catalog_fingerprint": "b76010e769d9f4410a0420ea878a615357e253cc86c67cba3a71b3ab28ee8691",
+  "indexed_movies": 200,
+  "summary": {
+    "app": {
+      "cases": 43,
+      "completed": 43,
+      "errors": 0,
+      "positive_cases": 38,
+      "empty_cases": 5,
+      "hit_at_1": 0.5,
+      "hit_at_5": 0.6842,
+      "hit_at_20": 0.7105,
+      "target_recall_at_20": 0.693,
+      "mrr_at_20": 0.5667,
+      "correct_empty": 5,
+      "constraint_violations": 0,
+      "p95_latency_seconds": 0.1335
+    },
+    "raw_vector": {
+      "cases": 43,
+      "completed": 43,
+      "errors": 0,
+      "positive_cases": 38,
+      "empty_cases": 5,
+      "hit_at_1": 0.3947,
+      "hit_at_5": 0.6579,
+      "hit_at_20": 0.8684,
+      "target_recall_at_20": 0.8333,
+      "mrr_at_20": 0.5399,
+      "correct_empty": 1,
+      "constraint_violations": 35,
+      "p95_latency_seconds": 0.0696
+    }
+  },
+  "by_group": {
+    "plot": {
+      "app": {
+        "cases": 18,
+        "completed": 18,
+        "errors": 0,
+        "positive_cases": 18,
+        "empty_cases": 0,
+        "hit_at_1": 0.6111,
+        "hit_at_5": 0.7222,
+        "hit_at_20": 0.7222,
+        "target_recall_at_20": 0.7222,
+        "mrr_at_20": 0.6361,
+        "correct_empty": 0,
+        "constraint_violations": 0,
+        "p95_latency_seconds": 0.1716
+      },
+      "raw_vector": {
+        "cases": 18,
+        "completed": 18,
+        "errors": 0,
+        "positive_cases": 18,
+        "empty_cases": 0,
+        "hit_at_1": 0.5,
+        "hit_at_5": 0.6667,
+        "hit_at_20": 0.9444,
+        "target_recall_at_20": 0.9444,
+        "mrr_at_20": 0.6119,
+        "correct_empty": 0,
+        "constraint_violations": 0,
+        "p95_latency_seconds": 0.0446
+      }
+    },
+    "theme": {
+      "app": {
+        "cases": 5,
+        "completed": 5,
+        "errors": 0,
+        "positive_cases": 5,
+        "empty_cases": 0,
+        "hit_at_1": 0.0,
+        "hit_at_5": 0.2,
+        "hit_at_20": 0.4,
+        "target_recall_at_20": 0.2667,
+        "mrr_at_20": 0.1,
+        "correct_empty": 0,
+        "constraint_violations": 0,
+        "p95_latency_seconds": 0.113
+      },
+      "raw_vector": {
+        "cases": 5,
+        "completed": 5,
+        "errors": 0,
+        "positive_cases": 5,
+        "empty_cases": 0,
+        "hit_at_1": 0.0,
+        "hit_at_5": 0.2,
+        "hit_at_20": 0.4,
+        "target_recall_at_20": 0.1333,
+        "mrr_at_20": 0.0917,
+        "correct_empty": 0,
+        "constraint_violations": 0,
+        "p95_latency_seconds": 0.0684
+      }
+    },
+    "mood": {
+      "app": {
+        "cases": 5,
+        "completed": 5,
+        "errors": 0,
+        "positive_cases": 5,
+        "empty_cases": 0,
+        "hit_at_1": 0.2,
+        "hit_at_5": 0.4,
+        "hit_at_20": 0.4,
+        "target_recall_at_20": 0.4,
+        "mrr_at_20": 0.3,
+        "correct_empty": 0,
+        "constraint_violations": 0,
+        "p95_latency_seconds": 0.1069
+      },
+      "raw_vector": {
+        "cases": 5,
+        "completed": 5,
+        "errors": 0,
+        "positive_cases": 5,
+        "empty_cases": 0,
+        "hit_at_1": 0.2,
+        "hit_at_5": 0.8,
+        "hit_at_20": 1.0,
+        "target_recall_at_20": 1.0,
+        "mrr_at_20": 0.525,
+        "correct_empty": 0,
+        "constraint_violations": 0,
+        "p95_latency_seconds": 0.0696
+      }
+    },
+    "constraint": {
+      "app": {
+        "cases": 6,
+        "completed": 6,
+        "errors": 0,
+        "positive_cases": 6,
+        "empty_cases": 0,
+        "hit_at_1": 0.5,
+        "hit_at_5": 1.0,
+        "hit_at_20": 1.0,
+        "target_recall_at_20": 1.0,
+        "mrr_at_20": 0.6806,
+        "correct_empty": 0,
+        "constraint_violations": 0,
+        "p95_latency_seconds": 0.1071
+      },
+      "raw_vector": {
+        "cases": 6,
+        "completed": 6,
+        "errors": 0,
+        "positive_cases": 6,
+        "empty_cases": 0,
+        "hit_at_1": 0.1667,
+        "hit_at_5": 0.6667,
+        "hit_at_20": 0.8333,
+        "target_recall_at_20": 0.8333,
+        "mrr_at_20": 0.4028,
+        "correct_empty": 0,
+        "constraint_violations": 35,
+        "p95_latency_seconds": 0.0645
+      }
+    },
+    "identity": {
+      "app": {
+        "cases": 4,
+        "completed": 4,
+        "errors": 0,
+        "positive_cases": 4,
+        "empty_cases": 0,
+        "hit_at_1": 1.0,
+        "hit_at_5": 1.0,
+        "hit_at_20": 1.0,
+        "target_recall_at_20": 1.0,
+        "mrr_at_20": 1.0,
+        "correct_empty": 0,
+        "constraint_violations": 0,
+        "p95_latency_seconds": 0.0471
+      },
+      "raw_vector": {
+        "cases": 4,
+        "completed": 4,
+        "errors": 0,
+        "positive_cases": 4,
+        "empty_cases": 0,
+        "hit_at_1": 1.0,
+        "hit_at_5": 1.0,
+        "hit_at_20": 1.0,
+        "target_recall_at_20": 1.0,
+        "mrr_at_20": 1.0,
+        "correct_empty": 0,
+        "constraint_violations": 0,
+        "p95_latency_seconds": 0.0751
+      }
+    },
+    "empty": {
+      "app": {
+        "cases": 5,
+        "completed": 5,
+        "errors": 0,
+        "positive_cases": 0,
+        "empty_cases": 5,
+        "hit_at_1": null,
+        "hit_at_5": null,
+        "hit_at_20": null,
+        "target_recall_at_20": null,
+        "mrr_at_20": null,
+        "correct_empty": 5,
+        "constraint_violations": 0,
+        "p95_latency_seconds": 0.0651
+      },
+      "raw_vector": {
+        "cases": 5,
+        "completed": 5,
+        "errors": 0,
+        "positive_cases": 0,
+        "empty_cases": 5,
+        "hit_at_1": null,
+        "hit_at_5": null,
+        "hit_at_20": null,
+        "target_recall_at_20": null,
+        "mrr_at_20": null,
+        "correct_empty": 1,
+        "constraint_violations": 0,
+        "p95_latency_seconds": 0.0687
+      }
+    }
+  },
+  "cases": [
+    {
+      "id": "plot-01",
+      "group": "plot",
+      "request": {
+        "query": "a father trying to get home through deep space"
+      },
+      "relevant_ids": [
+        157336
+      ],
+      "label_basis": "Interstellar follows explorers through a wormhole; father/return framing is a story-level label.",
+      "match_type": "semantic",
+      "gate_excluded_target_ids": [],
+      "app": {
+        "total": 47,
+        "top20_ids": [
+          937337,
+          1007757,
+          687163,
+          157336,
+          19404,
+          1591834,
+          1130276,
+          1181107,
+          71652,
+          857,
+          576017,
+          3090,
+          120,
+          122,
+          34530,
+          550776,
+          612304,
+          25838,
+          1150394,
+          1383731
+        ],
+        "top5_titles": [
+          "What a Father!",
+          "Swapped",
+          "Project Hail Mary",
+          "Interstellar",
+          "Dilwale Dulhania Le Jayenge"
+        ],
+        "metrics": {
+          "hit_at_1": false,
+          "hit_at_5": true,
+          "hit_at_20": true,
+          "target_recall_at_20": 1.0,
+          "mrr_at_20": 0.25
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.17
+      },
+      "raw_vector": {
+        "total": 200,
+        "top20_ids": [
+          348,
+          937337,
+          105,
+          438631,
+          1007757,
+          687163,
+          157336,
+          664280,
+          27205,
+          19404,
+          1591834,
+          567,
+          2405,
+          77,
+          1130276,
+          13,
+          329865,
+          1181107,
+          31217,
+          426
+        ],
+        "top5_titles": [
+          "Alien",
+          "What a Father!",
+          "Back to the Future",
+          "Dune",
+          "Swapped"
+        ],
+        "metrics": {
+          "hit_at_1": false,
+          "hit_at_5": false,
+          "hit_at_20": true,
+          "target_recall_at_20": 1.0,
+          "mrr_at_20": 0.14285714285714285
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.0318
+      }
+    },
+    {
+      "id": "plot-02",
+      "group": "plot",
+      "request": {
+        "query": "people using a wormhole to explore distant worlds"
+      },
+      "relevant_ids": [
+        157336
+      ],
+      "label_basis": "Interstellar synopsis explicitly mentions a wormhole and exploration.",
+      "match_type": "semantic",
+      "gate_excluded_target_ids": [],
+      "app": {
+        "total": 39,
+        "top20_ids": [
+          157336,
+          348,
+          438631,
+          324786,
+          359364,
+          664280,
+          424,
+          268899,
+          483455,
+          40096,
+          16869,
+          569094,
+          497,
+          11324,
+          324857,
+          283566,
+          12477,
+          1585,
+          118667,
+          912826
+        ],
+        "top5_titles": [
+          "Interstellar",
+          "Alien",
+          "Dune",
+          "Hacksaw Ridge",
+          "Human"
+        ],
+        "metrics": {
+          "hit_at_1": true,
+          "hit_at_5": true,
+          "hit_at_20": true,
+          "target_recall_at_20": 1.0,
+          "mrr_at_20": 1.0
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.1236
+      },
+      "raw_vector": {
+        "total": 200,
+        "top20_ids": [
+          157336,
+          348,
+          1007757,
+          438631,
+          324786,
+          526429,
+          687163,
+          359364,
+          71652,
+          1184918,
+          31217,
+          27205,
+          1091,
+          664280,
+          424,
+          641364,
+          490132,
+          105,
+          268899,
+          426
+        ],
+        "top5_titles": [
+          "Interstellar",
+          "Alien",
+          "Swapped",
+          "Dune",
+          "Hacksaw Ridge"
+        ],
+        "metrics": {
+          "hit_at_1": true,
+          "hit_at_5": true,
+          "hit_at_20": true,
+          "target_recall_at_20": 1.0,
+          "mrr_at_20": 1.0
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.0321
+      }
+    },
+    {
+      "id": "plot-03",
+      "group": "plot",
+      "request": {
+        "query": "first contact where language matters more than fighting"
+      },
+      "relevant_ids": [
+        329865
+      ],
+      "label_basis": "Arrival concerns a linguist determining alien intentions.",
+      "match_type": "semantic",
+      "gate_excluded_target_ids": [
+        329865
+      ],
+      "app": {
+        "total": 48,
+        "top20_ids": [
+          31217,
+          324786,
+          550,
+          34528,
+          71652,
+          1630423,
+          14537,
+          1375646,
+          1891,
+          612304,
+          122019,
+          20941,
+          120467,
+          311,
+          120,
+          664280,
+          698508,
+          603,
+          16275,
+          278
+        ],
+        "top5_titles": [
+          "The Human Condition I: No Greater Love",
+          "Hacksaw Ridge",
+          "Fight Club",
+          "The Human Condition II: Road to Eternity",
+          "Full Spead Ahead"
+        ],
+        "metrics": {
+          "hit_at_1": false,
+          "hit_at_5": false,
+          "hit_at_20": false,
+          "target_recall_at_20": 0.0,
+          "mrr_at_20": 0
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.1228
+      },
+      "raw_vector": {
+        "total": 200,
+        "top20_ids": [
+          31217,
+          25237,
+          581,
+          324786,
+          25838,
+          975,
+          47916,
+          550,
+          329865,
+          576017,
+          34530,
+          16869,
+          424,
+          391,
+          28,
+          438631,
+          34528,
+          1317149,
+          71652,
+          1630423
+        ],
+        "top5_titles": [
+          "The Human Condition I: No Greater Love",
+          "Come and See",
+          "Dances with Wolves",
+          "Hacksaw Ridge",
+          "Devils on the Doorstep"
+        ],
+        "metrics": {
+          "hit_at_1": false,
+          "hit_at_5": false,
+          "hit_at_20": true,
+          "target_recall_at_20": 1.0,
+          "mrr_at_20": 0.1111111111111111
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.032
+      }
+    },
+    {
+      "id": "plot-04",
+      "group": "plot",
+      "request": {
+        "query": "understanding visitors from another planet"
+      },
+      "relevant_ids": [
+        329865
+      ],
+      "label_basis": "Arrival concerns arriving alien craft and communication.",
+      "match_type": "semantic",
+      "gate_excluded_target_ids": [
+        329865
+      ],
+      "app": {
+        "total": 9,
+        "top20_ids": [
+          348,
+          664280,
+          438631,
+          268899,
+          282848,
+          283566,
+          27205,
+          483455,
+          1181107
+        ],
+        "top5_titles": [
+          "Alien",
+          "David Attenborough: A Life on Our Planet",
+          "Dune",
+          "Justice League: Starcrossed - The Movie",
+          "Doctor Who: The Time of the Doctor"
+        ],
+        "metrics": {
+          "hit_at_1": false,
+          "hit_at_5": false,
+          "hit_at_20": false,
+          "target_recall_at_20": 0.0,
+          "mrr_at_20": 0
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.1096
+      },
+      "raw_vector": {
+        "total": 200,
+        "top20_ids": [
+          348,
+          329865,
+          664280,
+          25237,
+          1007757,
+          359364,
+          1091,
+          438631,
+          157336,
+          490132,
+          1330021,
+          105,
+          120,
+          969681,
+          667276,
+          121,
+          46738,
+          687163,
+          373558,
+          25838
+        ],
+        "top5_titles": [
+          "Alien",
+          "Arrival",
+          "David Attenborough: A Life on Our Planet",
+          "Come and See",
+          "Swapped"
+        ],
+        "metrics": {
+          "hit_at_1": false,
+          "hit_at_5": true,
+          "hit_at_20": true,
+          "target_recall_at_20": 1.0,
+          "mrr_at_20": 0.5
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.032
+      }
+    },
+    {
+      "id": "plot-05",
+      "group": "plot",
+      "request": {
+        "query": "reality is artificial and controlled by machines"
+      },
+      "relevant_ids": [
+        603
+      ],
+      "label_basis": "The Matrix concerns a hacker resisting ruling computers.",
+      "match_type": "semantic",
+      "gate_excluded_target_ids": [
+        603
+      ],
+      "app": {
+        "total": 3,
+        "top20_ids": [
+          37165,
+          10494,
+          299536
+        ],
+        "top5_titles": [
+          "The Truman Show",
+          "Perfect Blue",
+          "Avengers: Infinity War"
+        ],
+        "metrics": {
+          "hit_at_1": false,
+          "hit_at_5": false,
+          "hit_at_20": false,
+          "target_recall_at_20": 0.0,
+          "mrr_at_20": 0
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.1064
+      },
+      "raw_vector": {
+        "total": 200,
+        "top20_ids": [
+          1091,
+          31217,
+          359364,
+          348,
+          34528,
+          438631,
+          27205,
+          1007757,
+          11324,
+          576712,
+          667257,
+          1184918,
+          603,
+          539,
+          37165,
+          803,
+          664280,
+          20544,
+          324786,
+          424
+        ],
+        "top5_titles": [
+          "The Thing",
+          "The Human Condition I: No Greater Love",
+          "Human",
+          "Alien",
+          "The Human Condition II: Road to Eternity"
+        ],
+        "metrics": {
+          "hit_at_1": false,
+          "hit_at_5": false,
+          "hit_at_20": true,
+          "target_recall_at_20": 1.0,
+          "mrr_at_20": 0.07692307692307693
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.0317
+      }
+    },
+    {
+      "id": "plot-06",
+      "group": "plot",
+      "request": {
+        "query": "stealing secrets from dreams"
+      },
+      "relevant_ids": [
+        27205
+      ],
+      "label_basis": "Inception concerns theft inside the subconscious.",
+      "match_type": "semantic",
+      "gate_excluded_target_ids": [
+        27205
+      ],
+      "app": {
+        "total": 8,
+        "top20_ids": [
+          581,
+          1302151,
+          620249,
+          1278101,
+          772071,
+          30131,
+          1218925,
+          912826
+        ],
+        "top5_titles": [
+          "Dances with Wolves",
+          "Wedding Registry",
+          "The Legend of Hei",
+          "Big World",
+          "When I'm Young"
+        ],
+        "metrics": {
+          "hit_at_1": false,
+          "hit_at_5": false,
+          "hit_at_20": false,
+          "target_recall_at_20": 0.0,
+          "mrr_at_20": 0
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.1
+      },
+      "raw_vector": {
+        "total": 200,
+        "top20_ids": [
+          550776,
+          1007757,
+          324786,
+          1181107,
+          770156,
+          77,
+          16869,
+          975,
+          1317149,
+          1632181,
+          68718,
+          581,
+          71652,
+          807,
+          1022102,
+          567,
+          27205,
+          1383731,
+          1130276,
+          46738
+        ],
+        "top5_titles": [
+          "Believe Me: The Abduction of Lisa McVey",
+          "Swapped",
+          "Hacksaw Ridge",
+          "The King of Kings",
+          "Lucy Shimmers and the Prince of Peace"
+        ],
+        "metrics": {
+          "hit_at_1": false,
+          "hit_at_5": false,
+          "hit_at_20": true,
+          "target_recall_at_20": 1.0,
+          "mrr_at_20": 0.058823529411764705
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.0446
+      }
+    },
+    {
+      "id": "plot-07",
+      "group": "plot",
+      "request": {
+        "query": "a man whose everyday life is secretly being filmed"
+      },
+      "relevant_ids": [
+        37165
+      ],
+      "label_basis": "The Truman Show synopsis describes a staged life observed by an audience.",
+      "match_type": "semantic",
+      "gate_excluded_target_ids": [
+        37165
+      ],
+      "app": {
+        "total": 62,
+        "top20_ids": [
+          664280,
+          576017,
+          161803,
+          637,
+          529414,
+          27205,
+          13,
+          936075,
+          1022102,
+          1317149,
+          274,
+          77,
+          359364,
+          283559,
+          37257,
+          101,
+          301,
+          11697,
+          550776,
+          278
+        ],
+        "top5_titles": [
+          "David Attenborough: A Life on Our Planet",
+          "For Sama",
+          "CM101MMXI Fundamentals",
+          "Life Is Beautiful",
+          "Franco Escamilla: por la an\u00e9cdota"
+        ],
+        "metrics": {
+          "hit_at_1": false,
+          "hit_at_5": false,
+          "hit_at_20": false,
+          "target_recall_at_20": 0.0,
+          "mrr_at_20": 0
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.1716
+      },
+      "raw_vector": {
+        "total": 200,
+        "top20_ids": [
+          576712,
+          664280,
+          803,
+          576017,
+          11324,
+          161803,
+          637,
+          484133,
+          730647,
+          529414,
+          27205,
+          21634,
+          239459,
+          13,
+          16869,
+          936075,
+          68718,
+          71652,
+          768141,
+          324786
+        ],
+        "top5_titles": [
+          "Everybody\u2019s Everything",
+          "David Attenborough: A Life on Our Planet",
+          "Night and Fog",
+          "For Sama",
+          "Shutter Island"
+        ],
+        "metrics": {
+          "hit_at_1": false,
+          "hit_at_5": false,
+          "hit_at_20": false,
+          "target_recall_at_20": 0.0,
+          "mrr_at_20": 0
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.035
+      }
+    },
+    {
+      "id": "plot-08",
+      "group": "plot",
+      "request": {
+        "query": "a detective solving a death in a rich household"
+      },
+      "relevant_ids": [
+        546554
+      ],
+      "label_basis": "Knives Out concerns a detective investigating a novelist found dead at his estate.",
+      "match_type": "semantic",
+      "gate_excluded_target_ids": [],
+      "app": {
+        "total": 16,
+        "top20_ids": [
+          546554,
+          122019,
+          118665,
+          426,
+          753230,
+          807,
+          576712,
+          1585,
+          637663,
+          550776,
+          10494,
+          497,
+          19404,
+          667257,
+          483455,
+          30131
+        ],
+        "top5_titles": [
+          "Knives Out",
+          "Macario",
+          "Decalogue V",
+          "Vertigo",
+          "The Three Deaths of Marisela Escobedo"
+        ],
+        "metrics": {
+          "hit_at_1": true,
+          "hit_at_5": true,
+          "hit_at_20": true,
+          "target_recall_at_20": 1.0,
+          "mrr_at_20": 1.0
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.119
+      },
+      "raw_vector": {
+        "total": 200,
+        "top20_ids": [
+          546554,
+          122019,
+          118665,
+          426,
+          753230,
+          807,
+          37257,
+          6977,
+          539,
+          567,
+          11324,
+          1330021,
+          576712,
+          278,
+          1585,
+          637663,
+          68718,
+          11697,
+          2405,
+          311
+        ],
+        "top5_titles": [
+          "Knives Out",
+          "Macario",
+          "Decalogue V",
+          "Vertigo",
+          "The Three Deaths of Marisela Escobedo"
+        ],
+        "metrics": {
+          "hit_at_1": true,
+          "hit_at_5": true,
+          "hit_at_20": true,
+          "target_recall_at_20": 1.0,
+          "mrr_at_20": 1.0
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.0319
+      }
+    },
+    {
+      "id": "plot-09",
+      "group": "plot",
+      "request": {
+        "query": "a poor family entangled with a wealthy household"
+      },
+      "relevant_ids": [
+        496243
+      ],
+      "label_basis": "Parasite synopsis contrasts unemployed Ki-taek and the wealthy Parks.",
+      "match_type": "semantic",
+      "gate_excluded_target_ids": [],
+      "app": {
+        "total": 33,
+        "top20_ids": [
+          1591834,
+          19404,
+          122019,
+          40096,
+          496243,
+          637,
+          769,
+          937337,
+          30131,
+          53206,
+          240,
+          120467,
+          21634,
+          238,
+          576017,
+          25237,
+          423,
+          753230,
+          914,
+          33
+        ],
+        "top5_titles": [
+          "Familia a la deriva",
+          "Dilwale Dulhania Le Jayenge",
+          "Macario",
+          "A Dog's Will",
+          "Parasite"
+        ],
+        "metrics": {
+          "hit_at_1": false,
+          "hit_at_5": true,
+          "hit_at_20": true,
+          "target_recall_at_20": 1.0,
+          "mrr_at_20": 0.2
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.1217
+      },
+      "raw_vector": {
+        "total": 200,
+        "top20_ids": [
+          1591834,
+          1585,
+          2405,
+          1007757,
+          19404,
+          122019,
+          40096,
+          496243,
+          667257,
+          637,
+          12493,
+          31217,
+          20544,
+          1181107,
+          311,
+          769,
+          278,
+          13,
+          429,
+          539
+        ],
+        "top5_titles": [
+          "Familia a la deriva",
+          "It's a Wonderful Life",
+          "Joseph",
+          "Swapped",
+          "Dilwale Dulhania Le Jayenge"
+        ],
+        "metrics": {
+          "hit_at_1": false,
+          "hit_at_5": false,
+          "hit_at_20": true,
+          "target_recall_at_20": 1.0,
+          "mrr_at_20": 0.125
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.0321
+      }
+    },
+    {
+      "id": "plot-10",
+      "group": "plot",
+      "request": {
+        "query": "a girl trapped in a world of spirits"
+      },
+      "relevant_ids": [
+        129
+      ],
+      "label_basis": "Spirited Away synopsis directly describes this premise.",
+      "match_type": "semantic",
+      "gate_excluded_target_ids": [],
+      "app": {
+        "total": 39,
+        "top20_ids": [
+          129,
+          620249,
+          12477,
+          770156,
+          25237,
+          637663,
+          637,
+          16869,
+          980431,
+          1291559,
+          1218925,
+          378064,
+          1375646,
+          1466115,
+          694,
+          40996,
+          71652,
+          483455,
+          11324,
+          283566
+        ],
+        "top5_titles": [
+          "Spirited Away",
+          "The Legend of Hei",
+          "Grave of the Fireflies",
+          "Lucy Shimmers and the Prince of Peace",
+          "Come and See"
+        ],
+        "metrics": {
+          "hit_at_1": true,
+          "hit_at_5": true,
+          "hit_at_20": true,
+          "target_recall_at_20": 1.0,
+          "mrr_at_20": 1.0
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.1146
+      },
+      "raw_vector": {
+        "total": 200,
+        "top20_ids": [
+          129,
+          1007757,
+          4935,
+          37793,
+          550776,
+          620249,
+          12477,
+          1330021,
+          526429,
+          426,
+          1119090,
+          1585,
+          1339713,
+          770156,
+          1278101,
+          1338799,
+          25838,
+          1130276,
+          25237,
+          372058
+        ],
+        "top5_titles": [
+          "Spirited Away",
+          "Swapped",
+          "Howl's Moving Castle",
+          "Ghosts",
+          "Believe Me: The Abduction of Lisa McVey"
+        ],
+        "metrics": {
+          "hit_at_1": true,
+          "hit_at_5": true,
+          "hit_at_20": true,
+          "target_recall_at_20": 1.0,
+          "mrr_at_20": 1.0
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.0319
+      }
+    },
+    {
+      "id": "plot-11",
+      "group": "plot",
+      "request": {
+        "query": "a concierge and his young friend in a European hotel"
+      },
+      "relevant_ids": [
+        120467
+      ],
+      "label_basis": "The Grand Budapest Hotel synopsis describes the concierge and protege.",
+      "match_type": "semantic",
+      "gate_excluded_target_ids": [],
+      "app": {
+        "total": 113,
+        "top20_ids": [
+          120467,
+          1232449,
+          118667,
+          118665,
+          240,
+          120301,
+          1585,
+          637,
+          694,
+          68718,
+          118662,
+          423,
+          1181107,
+          539,
+          101,
+          1181678,
+          120,
+          2405,
+          6977,
+          567
+        ],
+        "top5_titles": [
+          "The Grand Budapest Hotel",
+          "Young Hearts",
+          "Decalogue VI",
+          "Decalogue V",
+          "The Godfather Part II"
+        ],
+        "metrics": {
+          "hit_at_1": true,
+          "hit_at_5": true,
+          "hit_at_20": true,
+          "target_recall_at_20": 1.0,
+          "mrr_at_20": 1.0
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.1335
+      },
+      "raw_vector": {
+        "total": 200,
+        "top20_ids": [
+          120467,
+          1232449,
+          16869,
+          1302151,
+          118667,
+          118665,
+          240,
+          772071,
+          1124,
+          40096,
+          120301,
+          1585,
+          637,
+          694,
+          68718,
+          118662,
+          423,
+          1181107,
+          539,
+          101
+        ],
+        "top5_titles": [
+          "The Grand Budapest Hotel",
+          "Young Hearts",
+          "Inglourious Basterds",
+          "Wedding Registry",
+          "Decalogue VI"
+        ],
+        "metrics": {
+          "hit_at_1": true,
+          "hit_at_5": true,
+          "hit_at_20": true,
+          "target_recall_at_20": 1.0,
+          "mrr_at_20": 1.0
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.0321
+      }
+    },
+    {
+      "id": "plot-12",
+      "group": "plot",
+      "request": {
+        "query": "political conflict on a desert planet"
+      },
+      "relevant_ids": [
+        438631
+      ],
+      "label_basis": "Dune story-level label: dangerous desert planet and control of its resource.",
+      "match_type": "semantic",
+      "gate_excluded_target_ids": [],
+      "app": {
+        "total": 12,
+        "top20_ids": [
+          438631,
+          348,
+          576017,
+          664280,
+          6977,
+          335,
+          120301,
+          483455,
+          268899,
+          283566,
+          282848,
+          21634
+        ],
+        "top5_titles": [
+          "Dune",
+          "Alien",
+          "For Sama",
+          "David Attenborough: A Life on Our Planet",
+          "No Country for Old Men"
+        ],
+        "metrics": {
+          "hit_at_1": true,
+          "hit_at_5": true,
+          "hit_at_20": true,
+          "target_recall_at_20": 1.0,
+          "mrr_at_20": 1.0
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.1078
+      },
+      "raw_vector": {
+        "total": 200,
+        "top20_ids": [
+          1007757,
+          438631,
+          348,
+          25838,
+          576017,
+          664280,
+          581,
+          975,
+          31217,
+          47916,
+          34528,
+          1184918,
+          770156,
+          71652,
+          40096,
+          490132,
+          19404,
+          2405,
+          550,
+          157336
+        ],
+        "top5_titles": [
+          "Swapped",
+          "Dune",
+          "Alien",
+          "Devils on the Doorstep",
+          "For Sama"
+        ],
+        "metrics": {
+          "hit_at_1": false,
+          "hit_at_5": true,
+          "hit_at_20": true,
+          "target_recall_at_20": 1.0,
+          "mrr_at_20": 0.5
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.0316
+      }
+    },
+    {
+      "id": "plot-13",
+      "group": "plot",
+      "request": {
+        "query": "a prisoner finding friendship and hope"
+      },
+      "relevant_ids": [
+        278
+      ],
+      "label_basis": "The Shawshank Redemption follows Andy and fellow prisoner Red.",
+      "match_type": "semantic",
+      "gate_excluded_target_ids": [],
+      "app": {
+        "total": 13,
+        "top20_ids": [
+          278,
+          71652,
+          25237,
+          25838,
+          664280,
+          120467,
+          755812,
+          539,
+          122,
+          595723,
+          11216,
+          14537,
+          1891
+        ],
+        "top5_titles": [
+          "The Shawshank Redemption",
+          "Full Spead Ahead",
+          "Come and See",
+          "Devils on the Doorstep",
+          "David Attenborough: A Life on Our Planet"
+        ],
+        "metrics": {
+          "hit_at_1": true,
+          "hit_at_5": true,
+          "hit_at_20": true,
+          "target_recall_at_20": 1.0,
+          "mrr_at_20": 1.0
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.1057
+      },
+      "raw_vector": {
+        "total": 200,
+        "top20_ids": [
+          278,
+          770156,
+          2405,
+          1007757,
+          31217,
+          1291559,
+          40096,
+          34530,
+          34528,
+          1585,
+          424,
+          301,
+          497,
+          1375646,
+          698508,
+          423,
+          1330021,
+          68718,
+          297610,
+          576017
+        ],
+        "top5_titles": [
+          "The Shawshank Redemption",
+          "Lucy Shimmers and the Prince of Peace",
+          "Joseph",
+          "Swapped",
+          "The Human Condition I: No Greater Love"
+        ],
+        "metrics": {
+          "hit_at_1": true,
+          "hit_at_5": true,
+          "hit_at_20": true,
+          "target_recall_at_20": 1.0,
+          "mrr_at_20": 1.0
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.032
+      }
+    },
+    {
+      "id": "plot-14",
+      "group": "plot",
+      "request": {
+        "query": "a criminal dynasty led by an Italian American family"
+      },
+      "relevant_ids": [
+        238,
+        240
+      ],
+      "label_basis": "The Godfather films chronicle the Corleone crime family.",
+      "match_type": "semantic",
+      "gate_excluded_target_ids": [],
+      "app": {
+        "total": 43,
+        "top20_ids": [
+          240,
+          238,
+          769,
+          1591834,
+          377462,
+          637,
+          753230,
+          429,
+          301,
+          16869,
+          490132,
+          1383731,
+          155,
+          546554,
+          11697,
+          389,
+          33,
+          21634,
+          53206,
+          1150394
+        ],
+        "top5_titles": [
+          "The Godfather Part II",
+          "The Godfather",
+          "GoodFellas",
+          "Familia a la deriva",
+          "O.J.: Made in America"
+        ],
+        "metrics": {
+          "hit_at_1": true,
+          "hit_at_5": true,
+          "hit_at_20": true,
+          "target_recall_at_20": 1.0,
+          "mrr_at_20": 1.0
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.1165
+      },
+      "raw_vector": {
+        "total": 200,
+        "top20_ids": [
+          240,
+          238,
+          769,
+          311,
+          1591834,
+          377462,
+          637,
+          68718,
+          391,
+          753230,
+          1302151,
+          11324,
+          30131,
+          938,
+          429,
+          6977,
+          494656,
+          27205,
+          189215,
+          278
+        ],
+        "top5_titles": [
+          "The Godfather Part II",
+          "The Godfather",
+          "GoodFellas",
+          "Once Upon a Time in America",
+          "Familia a la deriva"
+        ],
+        "metrics": {
+          "hit_at_1": true,
+          "hit_at_5": true,
+          "hit_at_20": true,
+          "target_recall_at_20": 1.0,
+          "mrr_at_20": 1.0
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.0318
+      }
+    },
+    {
+      "id": "plot-15",
+      "group": "plot",
+      "request": {
+        "query": "a photographer watching neighbors suspects a murder"
+      },
+      "relevant_ids": [
+        567
+      ],
+      "label_basis": "Rear Window synopsis explicitly describes this premise.",
+      "match_type": "semantic",
+      "gate_excluded_target_ids": [],
+      "app": {
+        "total": 14,
+        "top20_ids": [
+          567,
+          37257,
+          274,
+          118665,
+          377462,
+          550776,
+          118667,
+          484133,
+          598,
+          278,
+          101,
+          667257,
+          389,
+          14537
+        ],
+        "top5_titles": [
+          "Rear Window",
+          "Witness for the Prosecution",
+          "The Silence of the Lambs",
+          "Decalogue V",
+          "O.J.: Made in America"
+        ],
+        "metrics": {
+          "hit_at_1": true,
+          "hit_at_5": true,
+          "hit_at_20": true,
+          "target_recall_at_20": 1.0,
+          "mrr_at_20": 1.0
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.1142
+      },
+      "raw_vector": {
+        "total": 200,
+        "top20_ids": [
+          567,
+          37257,
+          753230,
+          274,
+          807,
+          11324,
+          546554,
+          6977,
+          118665,
+          426,
+          694,
+          25237,
+          803,
+          77,
+          377462,
+          71652,
+          539,
+          550776,
+          16275,
+          11697
+        ],
+        "top5_titles": [
+          "Rear Window",
+          "Witness for the Prosecution",
+          "The Three Deaths of Marisela Escobedo",
+          "The Silence of the Lambs",
+          "Se7en"
+        ],
+        "metrics": {
+          "hit_at_1": true,
+          "hit_at_5": true,
+          "hit_at_20": true,
+          "target_recall_at_20": 1.0,
+          "mrr_at_20": 1.0
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.0319
+      }
+    },
+    {
+      "id": "plot-16",
+      "group": "plot",
+      "request": {
+        "query": "a pianist surviving Nazi occupied Warsaw"
+      },
+      "relevant_ids": [
+        423
+      ],
+      "label_basis": "The Pianist synopsis directly identifies these events.",
+      "match_type": "semantic",
+      "gate_excluded_target_ids": [],
+      "app": {
+        "total": 11,
+        "top20_ids": [
+          423,
+          424,
+          16869,
+          42044,
+          12477,
+          490132,
+          238,
+          1621552,
+          438631,
+          1184918,
+          52629
+        ],
+        "top5_titles": [
+          "The Pianist",
+          "Schindler's List",
+          "Inglourious Basterds",
+          "Shoah",
+          "Grave of the Fireflies"
+        ],
+        "metrics": {
+          "hit_at_1": true,
+          "hit_at_5": true,
+          "hit_at_20": true,
+          "target_recall_at_20": 1.0,
+          "mrr_at_20": 1.0
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.1109
+      },
+      "raw_vector": {
+        "total": 200,
+        "top20_ids": [
+          423,
+          424,
+          16869,
+          42044,
+          120467,
+          803,
+          914,
+          92060,
+          77,
+          637,
+          118665,
+          34530,
+          189215,
+          68718,
+          25237,
+          1031774,
+          324786,
+          694,
+          274,
+          118667
+        ],
+        "top5_titles": [
+          "The Pianist",
+          "Schindler's List",
+          "Inglourious Basterds",
+          "Shoah",
+          "The Grand Budapest Hotel"
+        ],
+        "metrics": {
+          "hit_at_1": true,
+          "hit_at_5": true,
+          "hit_at_20": true,
+          "target_recall_at_20": 1.0,
+          "mrr_at_20": 1.0
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.0319
+      }
+    },
+    {
+      "id": "plot-17",
+      "group": "plot",
+      "request": {
+        "query": "a man seeking revenge after years of imprisonment"
+      },
+      "relevant_ids": [
+        670
+      ],
+      "label_basis": "Oldboy synopsis describes fifteen years of captivity and revenge.",
+      "match_type": "semantic",
+      "gate_excluded_target_ids": [],
+      "app": {
+        "total": 68,
+        "top20_ids": [
+          670,
+          77,
+          11697,
+          2405,
+          122019,
+          497,
+          273248,
+          311,
+          301,
+          47916,
+          25838,
+          546554,
+          576017,
+          37257,
+          101,
+          13,
+          550776,
+          391,
+          1339713,
+          31217
+        ],
+        "top5_titles": [
+          "Oldboy",
+          "Memento",
+          "The Man Who Shot Liberty Valance",
+          "Joseph",
+          "Macario"
+        ],
+        "metrics": {
+          "hit_at_1": true,
+          "hit_at_5": true,
+          "hit_at_20": true,
+          "target_recall_at_20": 1.0,
+          "mrr_at_20": 1.0
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.1216
+      },
+      "raw_vector": {
+        "total": 200,
+        "top20_ids": [
+          278,
+          670,
+          975,
+          77,
+          11697,
+          27205,
+          2405,
+          33,
+          68718,
+          807,
+          122019,
+          497,
+          6977,
+          389,
+          273248,
+          311,
+          698508,
+          122,
+          16869,
+          301
+        ],
+        "top5_titles": [
+          "The Shawshank Redemption",
+          "Oldboy",
+          "Paths of Glory",
+          "Memento",
+          "The Man Who Shot Liberty Valance"
+        ],
+        "metrics": {
+          "hit_at_1": false,
+          "hit_at_5": true,
+          "hit_at_20": true,
+          "target_recall_at_20": 1.0,
+          "mrr_at_20": 0.5
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.0318
+      }
+    },
+    {
+      "id": "plot-18",
+      "group": "plot",
+      "request": {
+        "query": "bounty hunters pursuing a wanted bandit"
+      },
+      "relevant_ids": [
+        938
+      ],
+      "label_basis": "For a Few Dollars More synopsis identifies this chase.",
+      "match_type": "semantic",
+      "gate_excluded_target_ids": [],
+      "app": {
+        "total": 12,
+        "top20_ids": [
+          938,
+          3090,
+          33,
+          429,
+          273248,
+          68718,
+          297610,
+          346,
+          244786,
+          1218925,
+          10494,
+          1601797
+        ],
+        "top5_titles": [
+          "For a Few Dollars More",
+          "The Treasure of the Sierra Madre",
+          "Unforgiven",
+          "The Good, the Bad and the Ugly",
+          "The Hateful Eight"
+        ],
+        "metrics": {
+          "hit_at_1": true,
+          "hit_at_5": true,
+          "hit_at_20": true,
+          "target_recall_at_20": 1.0,
+          "mrr_at_20": 1.0
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.1034
+      },
+      "raw_vector": {
+        "total": 200,
+        "top20_ids": [
+          938,
+          6977,
+          391,
+          3090,
+          71652,
+          33,
+          429,
+          1419406,
+          1630423,
+          11697,
+          1621552,
+          273248,
+          68718,
+          40996,
+          301,
+          278,
+          30131,
+          807,
+          546554,
+          497
+        ],
+        "top5_titles": [
+          "For a Few Dollars More",
+          "No Country for Old Men",
+          "A Fistful of Dollars",
+          "The Treasure of the Sierra Madre",
+          "Full Spead Ahead"
+        ],
+        "metrics": {
+          "hit_at_1": true,
+          "hit_at_5": true,
+          "hit_at_20": true,
+          "target_recall_at_20": 1.0,
+          "mrr_at_20": 1.0
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.0319
+      }
+    },
+    {
+      "id": "theme-01",
+      "group": "theme",
+      "request": {
+        "query": "hero movies"
+      },
+      "relevant_ids": [
+        155,
+        324857,
+        569094,
+        299534,
+        299536
+      ],
+      "label_basis": "Previously reported regression; labelled superhero examples.",
+      "match_type": "semantic",
+      "gate_excluded_target_ids": [],
+      "app": {
+        "total": 9,
+        "top20_ids": [
+          755812,
+          268899,
+          299534,
+          155,
+          1560520,
+          299536,
+          969681,
+          324857,
+          569094
+        ],
+        "top5_titles": [
+          "Miraculous World: New York, United HeroeZ",
+          "Justice League: Starcrossed - The Movie",
+          "Avengers: Endgame",
+          "The Dark Knight",
+          "Batman: Knightfall Part 1: Knightfall"
+        ],
+        "metrics": {
+          "hit_at_1": false,
+          "hit_at_5": true,
+          "hit_at_20": true,
+          "target_recall_at_20": 1.0,
+          "mrr_at_20": 0.3333333333333333
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.0849
+      },
+      "raw_vector": {
+        "total": 200,
+        "top20_ids": [
+          755812,
+          975,
+          301,
+          268092,
+          92060,
+          268899,
+          1383731,
+          324786,
+          13,
+          1124,
+          21634,
+          550,
+          27205,
+          268690,
+          25237,
+          1338799,
+          161803,
+          1218925,
+          424,
+          938567
+        ],
+        "top5_titles": [
+          "Miraculous World: New York, United HeroeZ",
+          "Paths of Glory",
+          "Rio Bravo",
+          "Transformers Prime: Beast Hunters - Predacons Rising",
+          "Michael Jackson's Thriller"
+        ],
+        "metrics": {
+          "hit_at_1": false,
+          "hit_at_5": false,
+          "hit_at_20": false,
+          "target_recall_at_20": 0.0,
+          "mrr_at_20": 0
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.0317
+      }
+    },
+    {
+      "id": "theme-02",
+      "group": "theme",
+      "request": {
+        "query": "stories about masked crime fighters"
+      },
+      "relevant_ids": [
+        155,
+        324857,
+        569094
+      ],
+      "label_basis": "Batman and Spider-Man are masked crime fighters; theme label, not literal synopsis wording.",
+      "match_type": "semantic",
+      "gate_excluded_target_ids": [
+        155,
+        324857,
+        569094
+      ],
+      "app": {
+        "total": 0,
+        "top20_ids": [],
+        "top5_titles": [],
+        "metrics": {
+          "hit_at_1": false,
+          "hit_at_5": false,
+          "hit_at_20": false,
+          "target_recall_at_20": 0.0,
+          "mrr_at_20": 0
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.0564
+      },
+      "raw_vector": {
+        "total": 200,
+        "top20_ids": [
+          40996,
+          37257,
+          1383731,
+          30131,
+          494656,
+          546554,
+          1419406,
+          155,
+          16869,
+          753230,
+          47916,
+          240,
+          37793,
+          71652,
+          1560520,
+          238,
+          769,
+          268690,
+          1621552,
+          427564
+        ],
+        "top5_titles": [
+          "The Atomic Fireman",
+          "Witness for the Prosecution",
+          "Protector",
+          "El Siete Machos",
+          "The Legend of the Black Charro"
+        ],
+        "metrics": {
+          "hit_at_1": false,
+          "hit_at_5": false,
+          "hit_at_20": true,
+          "target_recall_at_20": 0.3333333333333333,
+          "mrr_at_20": 0.125
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.0684
+      }
+    },
+    {
+      "id": "theme-03",
+      "group": "theme",
+      "request": {
+        "query": "mind bending movies about questioning reality"
+      },
+      "relevant_ids": [
+        603,
+        37165,
+        27205
+      ],
+      "label_basis": "Human theme labels for artificial/staged reality and dreams.",
+      "match_type": "semantic",
+      "gate_excluded_target_ids": [
+        603,
+        27205
+      ],
+      "app": {
+        "total": 9,
+        "top20_ids": [
+          1278101,
+          807,
+          10494,
+          118662,
+          299536,
+          37165,
+          14537,
+          11697,
+          1333100
+        ],
+        "top5_titles": [
+          "Big World",
+          "Se7en",
+          "Perfect Blue",
+          "Decalogue I",
+          "Avengers: Infinity War"
+        ],
+        "metrics": {
+          "hit_at_1": false,
+          "hit_at_5": false,
+          "hit_at_20": true,
+          "target_recall_at_20": 0.3333333333333333,
+          "mrr_at_20": 0.16666666666666666
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.113
+      },
+      "raw_vector": {
+        "total": 200,
+        "top20_ids": [
+          1007757,
+          667257,
+          27205,
+          550776,
+          1022256,
+          537061,
+          426,
+          730647,
+          770156,
+          13,
+          157336,
+          77,
+          1130276,
+          803,
+          424,
+          1291559,
+          526429,
+          161803,
+          359364,
+          324786
+        ],
+        "top5_titles": [
+          "Swapped",
+          "Impossible Things",
+          "Inception",
+          "Believe Me: The Abduction of Lisa McVey",
+          "Selena Gomez: My Mind & Me"
+        ],
+        "metrics": {
+          "hit_at_1": false,
+          "hit_at_5": true,
+          "hit_at_20": true,
+          "target_recall_at_20": 0.3333333333333333,
+          "mrr_at_20": 0.3333333333333333
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.0317
+      }
+    },
+    {
+      "id": "theme-04",
+      "group": "theme",
+      "request": {
+        "query": "films exploring class divisions"
+      },
+      "relevant_ids": [
+        496243
+      ],
+      "label_basis": "Parasite is labelled for economic/class inequality.",
+      "match_type": "semantic",
+      "gate_excluded_target_ids": [
+        496243
+      ],
+      "app": {
+        "total": 5,
+        "top20_ids": [
+          484133,
+          664280,
+          34528,
+          378064,
+          755812
+        ],
+        "top5_titles": [
+          "Nude",
+          "David Attenborough: A Life on Our Planet",
+          "The Human Condition II: Road to Eternity",
+          "A Silent Voice: The Movie",
+          "Miraculous World: New York, United HeroeZ"
+        ],
+        "metrics": {
+          "hit_at_1": false,
+          "hit_at_5": false,
+          "hit_at_20": false,
+          "target_recall_at_20": 0.0,
+          "mrr_at_20": 0
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.1002
+      },
+      "raw_vector": {
+        "total": 200,
+        "top20_ids": [
+          359364,
+          161803,
+          16869,
+          975,
+          157336,
+          71652,
+          553674,
+          25237,
+          581,
+          31217,
+          27205,
+          118662,
+          19404,
+          394269,
+          550,
+          1124,
+          424,
+          11216,
+          484133,
+          1007757
+        ],
+        "top5_titles": [
+          "Human",
+          "CM101MMXI Fundamentals",
+          "Inglourious Basterds",
+          "Paths of Glory",
+          "Interstellar"
+        ],
+        "metrics": {
+          "hit_at_1": false,
+          "hit_at_5": false,
+          "hit_at_20": false,
+          "target_recall_at_20": 0.0,
+          "mrr_at_20": 0
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.0318
+      }
+    },
+    {
+      "id": "theme-05",
+      "group": "theme",
+      "request": {
+        "query": "movies about surveillance and losing privacy"
+      },
+      "relevant_ids": [
+        37165
+      ],
+      "label_basis": "The Truman Show depicts a life monitored by an audience.",
+      "match_type": "semantic",
+      "gate_excluded_target_ids": [
+        37165
+      ],
+      "app": {
+        "total": 1,
+        "top20_ids": [
+          1022102
+        ],
+        "top5_titles": [
+          "BTS: Permission to Dance on Stage - LA"
+        ],
+        "metrics": {
+          "hit_at_1": false,
+          "hit_at_5": false,
+          "hit_at_20": false,
+          "target_recall_at_20": 0.0,
+          "mrr_at_20": 0
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.1062
+      },
+      "raw_vector": {
+        "total": 200,
+        "top20_ids": [
+          567,
+          11324,
+          807,
+          730647,
+          92060,
+          550776,
+          1383731,
+          274,
+          803,
+          77,
+          546554,
+          16869,
+          68718,
+          273248,
+          426,
+          157336,
+          484133,
+          6977,
+          539,
+          324786
+        ],
+        "top5_titles": [
+          "Rear Window",
+          "Shutter Island",
+          "Se7en",
+          "Break the Silence: The Movie",
+          "Michael Jackson's Thriller"
+        ],
+        "metrics": {
+          "hit_at_1": false,
+          "hit_at_5": false,
+          "hit_at_20": false,
+          "target_recall_at_20": 0.0,
+          "mrr_at_20": 0
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.0319
+      }
+    },
+    {
+      "id": "mood-01",
+      "group": "mood",
+      "request": {
+        "query": "uplifting stories about hope in prison"
+      },
+      "relevant_ids": [
+        278
+      ],
+      "label_basis": "Human mood label for The Shawshank Redemption; not inferred by the evaluator.",
+      "match_type": "semantic",
+      "gate_excluded_target_ids": [],
+      "app": {
+        "total": 8,
+        "top20_ids": [
+          278,
+          497,
+          25237,
+          664280,
+          539,
+          14537,
+          122,
+          1891
+        ],
+        "top5_titles": [
+          "The Shawshank Redemption",
+          "The Green Mile",
+          "Come and See",
+          "David Attenborough: A Life on Our Planet",
+          "Psycho"
+        ],
+        "metrics": {
+          "hit_at_1": true,
+          "hit_at_5": true,
+          "hit_at_20": true,
+          "target_recall_at_20": 1.0,
+          "mrr_at_20": 1.0
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.1035
+      },
+      "raw_vector": {
+        "total": 200,
+        "top20_ids": [
+          770156,
+          278,
+          21634,
+          637,
+          975,
+          424,
+          37257,
+          698508,
+          1330021,
+          497,
+          1007757,
+          2405,
+          1181107,
+          687163,
+          1585,
+          576712,
+          40096,
+          576017,
+          34530,
+          1317149
+        ],
+        "top5_titles": [
+          "Lucy Shimmers and the Prince of Peace",
+          "The Shawshank Redemption",
+          "Prayers for Bobby",
+          "Life Is Beautiful",
+          "Paths of Glory"
+        ],
+        "metrics": {
+          "hit_at_1": false,
+          "hit_at_5": true,
+          "hit_at_20": true,
+          "target_recall_at_20": 1.0,
+          "mrr_at_20": 0.5
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.0318
+      }
+    },
+    {
+      "id": "mood-02",
+      "group": "mood",
+      "request": {
+        "query": "a tense mystery with a brilliant detective"
+      },
+      "relevant_ids": [
+        546554
+      ],
+      "label_basis": "Knives Out is labelled a detective mystery.",
+      "match_type": "semantic",
+      "gate_excluded_target_ids": [],
+      "app": {
+        "total": 4,
+        "top20_ids": [
+          426,
+          546554,
+          807,
+          483455
+        ],
+        "top5_titles": [
+          "Vertigo",
+          "Knives Out",
+          "Se7en",
+          "Bungo Stray Dogs: Dead Apple"
+        ],
+        "metrics": {
+          "hit_at_1": false,
+          "hit_at_5": true,
+          "hit_at_20": true,
+          "target_recall_at_20": 1.0,
+          "mrr_at_20": 0.5
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.0945
+      },
+      "raw_vector": {
+        "total": 200,
+        "top20_ids": [
+          426,
+          546554,
+          807,
+          37257,
+          11324,
+          1330021,
+          694,
+          567,
+          77,
+          118665,
+          274,
+          1124,
+          155,
+          27205,
+          539,
+          71652,
+          1419406,
+          497,
+          1383731,
+          770156
+        ],
+        "top5_titles": [
+          "Vertigo",
+          "Knives Out",
+          "Se7en",
+          "Witness for the Prosecution",
+          "Shutter Island"
+        ],
+        "metrics": {
+          "hit_at_1": false,
+          "hit_at_5": true,
+          "hit_at_20": true,
+          "target_recall_at_20": 1.0,
+          "mrr_at_20": 0.5
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.0318
+      }
+    },
+    {
+      "id": "mood-03",
+      "group": "mood",
+      "request": {
+        "query": "something dreamlike and magical"
+      },
+      "relevant_ids": [
+        129
+      ],
+      "label_basis": "Human mood label for Spirited Away.",
+      "match_type": "semantic",
+      "gate_excluded_target_ids": [
+        129
+      ],
+      "app": {
+        "total": 0,
+        "top20_ids": [],
+        "top5_titles": [],
+        "metrics": {
+          "hit_at_1": false,
+          "hit_at_5": false,
+          "hit_at_20": false,
+          "target_recall_at_20": 0.0,
+          "mrr_at_20": 0
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.0618
+      },
+      "raw_vector": {
+        "total": 200,
+        "top20_ids": [
+          1007757,
+          4935,
+          755812,
+          667257,
+          1139087,
+          1330021,
+          20544,
+          129,
+          620249,
+          1585,
+          359364,
+          637663,
+          1124,
+          1091,
+          1181107,
+          122019,
+          37793,
+          438631,
+          372058,
+          40096
+        ],
+        "top5_titles": [
+          "Swapped",
+          "Howl's Moving Castle",
+          "Miraculous World: New York, United HeroeZ",
+          "Impossible Things",
+          "Once Upon a Studio"
+        ],
+        "metrics": {
+          "hit_at_1": false,
+          "hit_at_5": false,
+          "hit_at_20": true,
+          "target_recall_at_20": 1.0,
+          "mrr_at_20": 0.125
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.0696
+      }
+    },
+    {
+      "id": "mood-04",
+      "group": "mood",
+      "request": {
+        "query": "a heartbreaking wartime story about children"
+      },
+      "relevant_ids": [
+        12477
+      ],
+      "label_basis": "Grave of the Fireflies follows orphaned siblings during WWII.",
+      "match_type": "semantic",
+      "gate_excluded_target_ids": [
+        12477
+      ],
+      "app": {
+        "total": 18,
+        "top20_ids": [
+          576017,
+          1181107,
+          2405,
+          637,
+          21634,
+          33,
+          1383731,
+          753230,
+          612304,
+          1591834,
+          595723,
+          937337,
+          19404,
+          37793,
+          694,
+          12493,
+          118662,
+          238
+        ],
+        "top5_titles": [
+          "For Sama",
+          "The King of Kings",
+          "Joseph",
+          "Life Is Beautiful",
+          "Prayers for Bobby"
+        ],
+        "metrics": {
+          "hit_at_1": false,
+          "hit_at_5": false,
+          "hit_at_20": false,
+          "target_recall_at_20": 0.0,
+          "mrr_at_20": 0
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.1069
+      },
+      "raw_vector": {
+        "total": 200,
+        "top20_ids": [
+          857,
+          12477,
+          576017,
+          324786,
+          424,
+          34530,
+          16869,
+          1181107,
+          20941,
+          975,
+          2405,
+          25237,
+          34528,
+          637,
+          803,
+          31217,
+          297610,
+          423,
+          11324,
+          21634
+        ],
+        "top5_titles": [
+          "Saving Private Ryan",
+          "Grave of the Fireflies",
+          "For Sama",
+          "Hacksaw Ridge",
+          "Schindler's List"
+        ],
+        "metrics": {
+          "hit_at_1": false,
+          "hit_at_5": true,
+          "hit_at_20": true,
+          "target_recall_at_20": 1.0,
+          "mrr_at_20": 0.5
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.0318
+      }
+    },
+    {
+      "id": "mood-05",
+      "group": "mood",
+      "request": {
+        "query": "a quirky charming hotel adventure"
+      },
+      "relevant_ids": [
+        120467
+      ],
+      "label_basis": "Human tone label for The Grand Budapest Hotel.",
+      "match_type": "semantic",
+      "gate_excluded_target_ids": [
+        120467
+      ],
+      "app": {
+        "total": 0,
+        "top20_ids": [],
+        "top5_titles": [],
+        "metrics": {
+          "hit_at_1": false,
+          "hit_at_5": false,
+          "hit_at_20": false,
+          "target_recall_at_20": 0.0,
+          "mrr_at_20": 0
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.0567
+      },
+      "raw_vector": {
+        "total": 200,
+        "top20_ids": [
+          120467,
+          1330021,
+          1007757,
+          245881,
+          1585,
+          4935,
+          539,
+          37793,
+          694,
+          335,
+          92060,
+          1139087,
+          526429,
+          3090,
+          1181107,
+          1302151,
+          68718,
+          11324,
+          161803,
+          567
+        ],
+        "top5_titles": [
+          "The Grand Budapest Hotel",
+          "Remarkably Bright Creatures",
+          "Swapped",
+          "Scooby-Doo! Haunted Holidays",
+          "It's a Wonderful Life"
+        ],
+        "metrics": {
+          "hit_at_1": true,
+          "hit_at_5": true,
+          "hit_at_20": true,
+          "target_recall_at_20": 1.0,
+          "mrr_at_20": 1.0
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.0696
+      }
+    },
+    {
+      "id": "constraint-01",
+      "group": "constraint",
+      "request": {
+        "query": "science fiction about communicating with aliens"
+      },
+      "relevant_ids": [
+        329865
+      ],
+      "label_basis": "Arrival matches the premise and is Science Fiction.",
+      "required_genres": [
+        "Science Fiction"
+      ],
+      "match_type": "semantic",
+      "gate_excluded_target_ids": [],
+      "app": {
+        "total": 3,
+        "top20_ids": [
+          348,
+          329865,
+          1091
+        ],
+        "top5_titles": [
+          "Alien",
+          "Arrival",
+          "The Thing"
+        ],
+        "metrics": {
+          "hit_at_1": false,
+          "hit_at_5": true,
+          "hit_at_20": true,
+          "target_recall_at_20": 1.0,
+          "mrr_at_20": 0.5
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.1036
+      },
+      "raw_vector": {
+        "total": 200,
+        "top20_ids": [
+          348,
+          157336,
+          438631,
+          329865,
+          1091,
+          687163,
+          27205,
+          1007757,
+          274,
+          1375646,
+          603,
+          1330021,
+          13,
+          16275,
+          25237,
+          550776,
+          426,
+          46738,
+          667276,
+          1291559
+        ],
+        "top5_titles": [
+          "Alien",
+          "Interstellar",
+          "Dune",
+          "Arrival",
+          "The Thing"
+        ],
+        "metrics": {
+          "hit_at_1": false,
+          "hit_at_5": true,
+          "hit_at_20": true,
+          "target_recall_at_20": 1.0,
+          "mrr_at_20": 0.25
+        },
+        "constraint_violations": 11,
+        "latency_seconds": 0.032
+      }
+    },
+    {
+      "id": "constraint-02",
+      "group": "constraint",
+      "request": {
+        "query": "a Korean story about a poor and wealthy family",
+        "language": "Korean"
+      },
+      "relevant_ids": [
+        496243
+      ],
+      "label_basis": "Parasite is Korean and describes both families.",
+      "match_type": "semantic",
+      "gate_excluded_target_ids": [],
+      "app": {
+        "total": 1,
+        "top20_ids": [
+          496243
+        ],
+        "top5_titles": [
+          "Parasite"
+        ],
+        "metrics": {
+          "hit_at_1": true,
+          "hit_at_5": true,
+          "hit_at_20": true,
+          "target_recall_at_20": 1.0,
+          "mrr_at_20": 1.0
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.1038
+      },
+      "raw_vector": {
+        "total": 7,
+        "top20_ids": [
+          496243,
+          670,
+          730647,
+          1466115,
+          1022102,
+          1375646,
+          1628123
+        ],
+        "top5_titles": [
+          "Parasite",
+          "Oldboy",
+          "Break the Silence: The Movie",
+          "Even If This Love Disappears Tonight",
+          "BTS: Permission to Dance on Stage - LA"
+        ],
+        "metrics": {
+          "hit_at_1": true,
+          "hit_at_5": true,
+          "hit_at_20": true,
+          "target_recall_at_20": 1.0,
+          "mrr_at_20": 1.0
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.0012
+      }
+    },
+    {
+      "id": "constraint-03",
+      "group": "constraint",
+      "request": {
+        "query": "movies about a staged television life",
+        "max_runtime": 120
+      },
+      "relevant_ids": [
+        37165
+      ],
+      "label_basis": "The Truman Show matches premise and runtime.",
+      "match_type": "semantic",
+      "gate_excluded_target_ids": [],
+      "app": {
+        "total": 20,
+        "top20_ids": [
+          37165,
+          637,
+          550776,
+          664280,
+          788647,
+          274,
+          539,
+          576017,
+          118662,
+          529414,
+          20941,
+          772071,
+          612304,
+          1181107,
+          1150394,
+          77,
+          1383731,
+          1330021,
+          1291559,
+          18942
+        ],
+        "top5_titles": [
+          "The Truman Show",
+          "Life Is Beautiful",
+          "Believe Me: The Abduction of Lisa McVey",
+          "David Attenborough: A Life on Our Planet",
+          "Kally\u2019s Mashup: A Very Kally's Birthday"
+        ],
+        "metrics": {
+          "hit_at_1": true,
+          "hit_at_5": true,
+          "hit_at_20": true,
+          "target_recall_at_20": 1.0,
+          "mrr_at_20": 1.0
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.1071
+      },
+      "raw_vector": {
+        "total": 112,
+        "top20_ids": [
+          20544,
+          37165,
+          637,
+          1302151,
+          21634,
+          16275,
+          550776,
+          1007757,
+          664280,
+          803,
+          788647,
+          92060,
+          576712,
+          1022256,
+          567,
+          274,
+          37793,
+          539,
+          37257,
+          101
+        ],
+        "top5_titles": [
+          "Something the Lord Made",
+          "The Truman Show",
+          "Life Is Beautiful",
+          "Wedding Registry",
+          "Prayers for Bobby"
+        ],
+        "metrics": {
+          "hit_at_1": false,
+          "hit_at_5": true,
+          "hit_at_20": true,
+          "target_recall_at_20": 1.0,
+          "mrr_at_20": 0.5
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.0182
+      }
+    },
+    {
+      "id": "constraint-04",
+      "group": "constraint",
+      "request": {
+        "query": "hero movies",
+        "genre": "Animation"
+      },
+      "relevant_ids": [
+        324857,
+        569094
+      ],
+      "label_basis": "Spider-Verse films are animated superheroes.",
+      "match_type": "semantic",
+      "gate_excluded_target_ids": [],
+      "app": {
+        "total": 5,
+        "top20_ids": [
+          755812,
+          268899,
+          1560520,
+          324857,
+          569094
+        ],
+        "top5_titles": [
+          "Miraculous World: New York, United HeroeZ",
+          "Justice League: Starcrossed - The Movie",
+          "Batman: Knightfall Part 1: Knightfall",
+          "Spider-Man: Into the Spider-Verse",
+          "Spider-Man: Across the Spider-Verse"
+        ],
+        "metrics": {
+          "hit_at_1": false,
+          "hit_at_5": true,
+          "hit_at_20": true,
+          "target_recall_at_20": 1.0,
+          "mrr_at_20": 0.25
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.0461
+      },
+      "raw_vector": {
+        "total": 41,
+        "top20_ids": [
+          755812,
+          268092,
+          268899,
+          268690,
+          1338799,
+          1218925,
+          938567,
+          72720,
+          537061,
+          494656,
+          620249,
+          1181107,
+          1007757,
+          1560520,
+          1139087,
+          1144107,
+          1150394,
+          637663,
+          12477,
+          1084244
+        ],
+        "top5_titles": [
+          "Miraculous World: New York, United HeroeZ",
+          "Transformers Prime: Beast Hunters - Predacons Rising",
+          "Justice League: Starcrossed - The Movie",
+          "The Legend of the Guanajuato Mummies",
+          "JUJUTSU KAISEN: Hidden Inventory / Premature Death - The Movie"
+        ],
+        "metrics": {
+          "hit_at_1": false,
+          "hit_at_5": false,
+          "hit_at_20": false,
+          "target_recall_at_20": 0.0,
+          "mrr_at_20": 0
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.0067
+      }
+    },
+    {
+      "id": "constraint-05",
+      "group": "constraint",
+      "request": {
+        "query": "horror without romance"
+      },
+      "relevant_ids": [
+        539
+      ],
+      "label_basis": "Psycho is Horror and not Romance.",
+      "required_genres": [
+        "Horror"
+      ],
+      "excluded_genres": [
+        "Romance"
+      ],
+      "match_type": "genre",
+      "app": {
+        "total": 16,
+        "top20_ids": [
+          539,
+          1130276,
+          1150394,
+          667276,
+          92060,
+          494656,
+          694,
+          25237,
+          1339713,
+          348,
+          268690,
+          297610,
+          37793,
+          1375646,
+          1091,
+          1119090
+        ],
+        "top5_titles": [
+          "Psycho",
+          "Succubus",
+          "La Leyenda de los Chaneques",
+          "Las leyendas: El origen",
+          "Michael Jackson's Thriller"
+        ],
+        "metrics": {
+          "hit_at_1": true,
+          "hit_at_5": true,
+          "hit_at_20": true,
+          "target_recall_at_20": 1.0,
+          "mrr_at_20": 1.0
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.0302
+      },
+      "raw_vector": {
+        "total": 200,
+        "top20_ids": [
+          92060,
+          539,
+          31217,
+          37793,
+          1466115,
+          1130276,
+          1091,
+          550,
+          1302151,
+          239459,
+          1339713,
+          1007757,
+          426,
+          348,
+          694,
+          667257,
+          274,
+          273248,
+          245881,
+          297610
+        ],
+        "top5_titles": [
+          "Michael Jackson's Thriller",
+          "Psycho",
+          "The Human Condition I: No Greater Love",
+          "Ghosts",
+          "Even If This Love Disappears Tonight"
+        ],
+        "metrics": {
+          "hit_at_1": false,
+          "hit_at_5": true,
+          "hit_at_20": true,
+          "target_recall_at_20": 1.0,
+          "mrr_at_20": 0.5
+        },
+        "constraint_violations": 11,
+        "latency_seconds": 0.0615
+      }
+    },
+    {
+      "id": "constraint-06",
+      "group": "constraint",
+      "request": {
+        "query": "romantic comedy"
+      },
+      "relevant_ids": [
+        13,
+        19404
+      ],
+      "label_basis": "Forrest Gump and Dilwale Dulhania Le Jayenge have both Romance and Comedy metadata.",
+      "required_genres": [
+        "Romance",
+        "Comedy"
+      ],
+      "match_type": "genre",
+      "app": {
+        "total": 9,
+        "top20_ids": [
+          1632181,
+          1601797,
+          19404,
+          13,
+          1181678,
+          937337,
+          120301,
+          938567,
+          40096
+        ],
+        "top5_titles": [
+          "Accidental Partners",
+          "\u00bfQuieres ser mi novia?",
+          "Dilwale Dulhania Le Jayenge",
+          "Forrest Gump",
+          "\u00bfQuieres ser mi hijo?"
+        ],
+        "metrics": {
+          "hit_at_1": false,
+          "hit_at_5": true,
+          "hit_at_20": true,
+          "target_recall_at_20": 1.0,
+          "mrr_at_20": 0.3333333333333333
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.0287
+      },
+      "raw_vector": {
+        "total": 200,
+        "top20_ids": [
+          1302151,
+          1632181,
+          1181678,
+          120301,
+          770156,
+          13,
+          1601797,
+          1466115,
+          1585,
+          987032,
+          1465563,
+          550,
+          161803,
+          71652,
+          698508,
+          19404,
+          637,
+          40096,
+          788647,
+          1007757
+        ],
+        "top5_titles": [
+          "Wedding Registry",
+          "Accidental Partners",
+          "\u00bfQuieres ser mi hijo?",
+          "Dos tipos de cuidado",
+          "Lucy Shimmers and the Prince of Peace"
+        ],
+        "metrics": {
+          "hit_at_1": false,
+          "hit_at_5": false,
+          "hit_at_20": true,
+          "target_recall_at_20": 1.0,
+          "mrr_at_20": 0.16666666666666666
+        },
+        "constraint_violations": 13,
+        "latency_seconds": 0.0645
+      }
+    },
+    {
+      "id": "identity-01",
+      "group": "identity",
+      "request": {
+        "query": "Interstellar"
+      },
+      "relevant_ids": [
+        157336
+      ],
+      "label_basis": "Known saved title/cast or its misspelling.",
+      "match_type": "title_cast",
+      "app": {
+        "total": 1,
+        "top20_ids": [
+          157336
+        ],
+        "top5_titles": [
+          "Interstellar"
+        ],
+        "metrics": {
+          "hit_at_1": true,
+          "hit_at_5": true,
+          "hit_at_20": true,
+          "target_recall_at_20": 1.0,
+          "mrr_at_20": 1.0
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.0303
+      },
+      "raw_vector": {
+        "total": 200,
+        "top20_ids": [
+          157336,
+          348,
+          27205,
+          438631,
+          1124,
+          603,
+          329865,
+          687163,
+          16869,
+          283566,
+          1891,
+          424,
+          268899,
+          664280,
+          77,
+          1091,
+          426,
+          31217,
+          155,
+          299536
+        ],
+        "top5_titles": [
+          "Interstellar",
+          "Alien",
+          "Inception",
+          "Dune",
+          "The Prestige"
+        ],
+        "metrics": {
+          "hit_at_1": true,
+          "hit_at_5": true,
+          "hit_at_20": true,
+          "target_recall_at_20": 1.0,
+          "mrr_at_20": 1.0
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.0698
+      }
+    },
+    {
+      "id": "identity-02",
+      "group": "identity",
+      "request": {
+        "query": "Amy Adams"
+      },
+      "relevant_ids": [
+        329865
+      ],
+      "label_basis": "Known saved title/cast or its misspelling.",
+      "match_type": "title_cast",
+      "app": {
+        "total": 1,
+        "top20_ids": [
+          329865
+        ],
+        "top5_titles": [
+          "Arrival"
+        ],
+        "metrics": {
+          "hit_at_1": true,
+          "hit_at_5": true,
+          "hit_at_20": true,
+          "target_recall_at_20": 1.0,
+          "mrr_at_20": 1.0
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.0305
+      },
+      "raw_vector": {
+        "total": 200,
+        "top20_ids": [
+          329865,
+          377462,
+          373558,
+          576017,
+          576712,
+          239459,
+          311,
+          1317149,
+          698508,
+          1022256,
+          37165,
+          11324,
+          1601797,
+          770156,
+          1130276,
+          1007757,
+          987032,
+          768141,
+          664280,
+          92060
+        ],
+        "top5_titles": [
+          "Arrival",
+          "O.J.: Made in America",
+          "Taylor Swift: The 1989 World Tour - Live",
+          "For Sama",
+          "Everybody\u2019s Everything"
+        ],
+        "metrics": {
+          "hit_at_1": true,
+          "hit_at_5": true,
+          "hit_at_20": true,
+          "target_recall_at_20": 1.0,
+          "mrr_at_20": 1.0
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.0664
+      }
+    },
+    {
+      "id": "identity-03",
+      "group": "identity",
+      "request": {
+        "query": "Intersteler"
+      },
+      "relevant_ids": [
+        157336
+      ],
+      "label_basis": "Known saved title/cast or its misspelling.",
+      "match_type": "typo",
+      "app": {
+        "total": 1,
+        "top20_ids": [
+          157336
+        ],
+        "top5_titles": [
+          "Interstellar"
+        ],
+        "metrics": {
+          "hit_at_1": true,
+          "hit_at_5": true,
+          "hit_at_20": true,
+          "target_recall_at_20": 1.0,
+          "mrr_at_20": 1.0
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.0471
+      },
+      "raw_vector": {
+        "total": 200,
+        "top20_ids": [
+          157336,
+          424,
+          53206,
+          16869,
+          16275,
+          71652,
+          118665,
+          27205,
+          244786,
+          567,
+          324786,
+          161803,
+          667276,
+          423,
+          118667,
+          19404,
+          118662,
+          1302151,
+          274,
+          189215
+        ],
+        "top5_titles": [
+          "Interstellar",
+          "Schindler's List",
+          "Ne\u015feli G\u00fcnler",
+          "Inglourious Basterds",
+          "Dave Chappelle: Killin' Them Softly"
+        ],
+        "metrics": {
+          "hit_at_1": true,
+          "hit_at_5": true,
+          "hit_at_20": true,
+          "target_recall_at_20": 1.0,
+          "mrr_at_20": 1.0
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.0682
+      }
+    },
+    {
+      "id": "identity-04",
+      "group": "identity",
+      "request": {
+        "query": "Movies starring Amy Adams"
+      },
+      "relevant_ids": [
+        329865
+      ],
+      "label_basis": "Known saved title/cast or its misspelling.",
+      "match_type": "title_cast",
+      "app": {
+        "total": 1,
+        "top20_ids": [
+          329865
+        ],
+        "top5_titles": [
+          "Arrival"
+        ],
+        "metrics": {
+          "hit_at_1": true,
+          "hit_at_5": true,
+          "hit_at_20": true,
+          "target_recall_at_20": 1.0,
+          "mrr_at_20": 1.0
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.0303
+      },
+      "raw_vector": {
+        "total": 200,
+        "top20_ids": [
+          329865,
+          377462,
+          311,
+          11324,
+          698508,
+          1130276,
+          1007757,
+          20544,
+          157336,
+          550,
+          770156,
+          92060,
+          576017,
+          1632181,
+          1601797,
+          273248,
+          1124,
+          807,
+          46738,
+          239459
+        ],
+        "top5_titles": [
+          "Arrival",
+          "O.J.: Made in America",
+          "Once Upon a Time in America",
+          "Shutter Island",
+          "Redeeming Love"
+        ],
+        "metrics": {
+          "hit_at_1": true,
+          "hit_at_5": true,
+          "hit_at_20": true,
+          "target_recall_at_20": 1.0,
+          "mrr_at_20": 1.0
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.0751
+      }
+    },
+    {
+      "id": "empty-01",
+      "group": "empty",
+      "request": {
+        "query": "quantum crochet recipes for sourdough"
+      },
+      "relevant_ids": [],
+      "label_basis": "Unsupported request or incompatible explicit filters; expect abstention.",
+      "match_type": "semantic",
+      "gate_excluded_target_ids": [],
+      "app": {
+        "total": 0,
+        "top20_ids": [],
+        "top5_titles": [],
+        "metrics": {
+          "empty_correct": true
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.0651
+      },
+      "raw_vector": {
+        "total": 200,
+        "top20_ids": [
+          1139087,
+          1007757,
+          161803,
+          37165,
+          16275,
+          1330021,
+          987032,
+          483455,
+          122019,
+          1302151,
+          1338799,
+          1181107,
+          46738,
+          490132,
+          40096,
+          245881,
+          4935,
+          427564,
+          914,
+          667257
+        ],
+        "top5_titles": [
+          "Once Upon a Studio",
+          "Swapped",
+          "CM101MMXI Fundamentals",
+          "The Truman Show",
+          "Dave Chappelle: Killin' Them Softly"
+        ],
+        "metrics": {
+          "empty_correct": false
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.0687
+      }
+    },
+    {
+      "id": "empty-02",
+      "group": "empty",
+      "request": {
+        "query": "superhero movies about knitting"
+      },
+      "relevant_ids": [],
+      "label_basis": "Unsupported request or incompatible explicit filters; expect abstention.",
+      "match_type": "semantic",
+      "gate_excluded_target_ids": [],
+      "app": {
+        "total": 0,
+        "top20_ids": [],
+        "top5_titles": [],
+        "metrics": {
+          "empty_correct": true
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.0609
+      },
+      "raw_vector": {
+        "total": 200,
+        "top20_ids": [
+          268899,
+          1139087,
+          324857,
+          969681,
+          755812,
+          770156,
+          569094,
+          1007757,
+          637663,
+          20544,
+          1560520,
+          27205,
+          324786,
+          21634,
+          105,
+          299536,
+          245881,
+          299534,
+          11324,
+          311
+        ],
+        "top5_titles": [
+          "Justice League: Starcrossed - The Movie",
+          "Once Upon a Studio",
+          "Spider-Man: Into the Spider-Verse",
+          "Spider-Man: Brand New Day",
+          "Miraculous World: New York, United HeroeZ"
+        ],
+        "metrics": {
+          "empty_correct": false
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.0657
+      }
+    },
+    {
+      "id": "empty-03",
+      "group": "empty",
+      "request": {
+        "query": "romance",
+        "language": "Klingon"
+      },
+      "relevant_ids": [],
+      "label_basis": "Unsupported request or incompatible explicit filters; expect abstention.",
+      "match_type": "genre",
+      "app": {
+        "total": 0,
+        "top20_ids": [],
+        "top5_titles": [],
+        "metrics": {
+          "empty_correct": true
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.0285
+      },
+      "raw_vector": {
+        "total": 0,
+        "top20_ids": [],
+        "top5_titles": [],
+        "metrics": {
+          "empty_correct": true
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.0
+      }
+    },
+    {
+      "id": "empty-04",
+      "group": "empty",
+      "request": {
+        "query": "Interstellar",
+        "max_runtime": 120
+      },
+      "relevant_ids": [],
+      "label_basis": "Unsupported request or incompatible explicit filters; expect abstention.",
+      "match_type": "title_cast",
+      "app": {
+        "total": 0,
+        "top20_ids": [],
+        "top5_titles": [],
+        "metrics": {
+          "empty_correct": true
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.0304
+      },
+      "raw_vector": {
+        "total": 112,
+        "top20_ids": [
+          348,
+          329865,
+          268899,
+          664280,
+          77,
+          1091,
+          567,
+          244786,
+          1338799,
+          282848,
+          803,
+          1339713,
+          268092,
+          537061,
+          539,
+          105,
+          71652,
+          72720,
+          912826,
+          1007757
+        ],
+        "top5_titles": [
+          "Alien",
+          "Arrival",
+          "Justice League: Starcrossed - The Movie",
+          "David Attenborough: A Life on Our Planet",
+          "Memento"
+        ],
+        "metrics": {
+          "empty_correct": false
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.0178
+      }
+    },
+    {
+      "id": "empty-05",
+      "group": "empty",
+      "request": {
+        "query": "hero movies",
+        "genre": "Documentary"
+      },
+      "relevant_ids": [],
+      "label_basis": "Unsupported request or incompatible explicit filters; expect abstention.",
+      "match_type": "semantic",
+      "gate_excluded_target_ids": [],
+      "app": {
+        "total": 0,
+        "top20_ids": [],
+        "top5_titles": [],
+        "metrics": {
+          "empty_correct": true
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.044
+      },
+      "raw_vector": {
+        "total": 24,
+        "top20_ids": [
+          161803,
+          553674,
+          593691,
+          359364,
+          1031774,
+          730647,
+          377462,
+          396194,
+          576017,
+          664280,
+          768141,
+          803,
+          283559,
+          189215,
+          1022256,
+          576712,
+          239459,
+          912826,
+          753230,
+          42044
+        ],
+        "top5_titles": [
+          "CM101MMXI Fundamentals",
+          "Chivas: The Movie",
+          "HOMECOMING: A film by Beyonc\u00e9",
+          "Human",
+          "Thriller 40"
+        ],
+        "metrics": {
+          "empty_correct": false
+        },
+        "constraint_violations": 0,
+        "latency_seconds": 0.0038
+      }
+    }
+  ]
+}

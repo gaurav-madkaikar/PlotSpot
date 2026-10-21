@@ -1,0 +1,212 @@
+{
+  "quiz": [
+    {
+      "id": "marta-role",
+      "question": "What is Marta’s connection to Harlan?",
+      "options": [
+        "His literary agent",
+        "His nurse",
+        "His estranged daughter",
+        "His housekeeper"
+      ],
+      "correct_index": 1,
+      "explanation": "Marta is Harlan’s nurse, which puts her at the center of the medication mystery.",
+      "evidence_markers": [
+        "Harlan's nurse Marta Cabrera"
+      ],
+      "kind": "plot"
+    },
+    {
+      "id": "lie-reaction",
+      "question": "What makes telling a lie especially difficult for Marta?",
+      "options": [
+        "She starts laughing",
+        "She loses her voice",
+        "She vomits",
+        "She faints"
+      ],
+      "correct_index": 2,
+      "explanation": "Marta cannot lie without vomiting, a trait that shapes both the investigation and its resolution.",
+      "evidence_markers": [
+        "cannot lie without vomiting"
+      ],
+      "kind": "plot"
+    },
+    {
+      "id": "unexpected-heir",
+      "question": "Who inherits Harlan’s entire fortune and property?",
+      "options": [
+        "Linda",
+        "Walt",
+        "Ransom",
+        "Marta"
+      ],
+      "correct_index": 3,
+      "explanation": "Harlan leaves everything to Marta, shocking the Thrombey family.",
+      "evidence_markers": [
+        "Marta is bequeathed his entire fortune and property"
+      ],
+      "kind": "plot"
+    },
+    {
+      "id": "blackmail-clue",
+      "question": "Which document appears in the blackmail note sent to Marta?",
+      "options": [
+        "A partial toxicology report",
+        "An altered will",
+        "A police interview transcript",
+        "A hospital discharge record"
+      ],
+      "correct_index": 0,
+      "explanation": "The note contains a partial copy of Harlan’s toxicology report.",
+      "evidence_markers": [
+        "partial photocopy of Harlan's toxicology report"
+      ],
+      "kind": "plot"
+    },
+    {
+      "id": "true-medication",
+      "question": "What helped Marta administer the right medicine despite the switched labels?",
+      "options": [
+        "A warning from Harlan",
+        "A second prescription",
+        "The medicine’s viscosity",
+        "A message from Fran"
+      ],
+      "correct_index": 2,
+      "explanation": "Her nursing experience lets her recognize the medicine by viscosity without reading the label.",
+      "evidence_markers": [
+        "correct medication",
+        "recognizing it by viscosity"
+      ],
+      "kind": "plot"
+    },
+    {
+      "id": "hidden-client",
+      "question": "Who secretly hired Benoit Blanc?",
+      "options": [
+        "Walt",
+        "Ransom",
+        "Linda",
+        "Fran"
+      ],
+      "correct_index": 1,
+      "explanation": "Ransom anonymously hires Blanc to entrap Marta after Harlan’s death is reported as suicide.",
+      "evidence_markers": [
+        "Ransom anonymously hired Blanc"
+      ],
+      "kind": "plot"
+    },
+    {
+      "id": "office-fire",
+      "question": "Why does Ransom burn down the medical examiner’s office?",
+      "options": [
+        "To conceal a forged will",
+        "To threaten Blanc",
+        "To frame Harlan’s publisher",
+        "To destroy evidence of Marta’s innocence"
+      ],
+      "correct_index": 3,
+      "explanation": "The toxicology evidence could clear Marta; Ransom burns the office to destroy it.",
+      "evidence_markers": [
+        "burned down the medical examiner's office to destroy evidence of her innocence"
+      ],
+      "kind": "plot"
+    },
+    {
+      "id": "final-bluff",
+      "question": "What lie draws a confession out of Ransom?",
+      "options": [
+        "Fran is still alive",
+        "Blanc has arrested Walt",
+        "The will has been overturned",
+        "Harlan recorded the medication swap"
+      ],
+      "correct_index": 0,
+      "explanation": "Marta says Fran survived, prompting Ransom to admit his involvement in her overdose.",
+      "evidence_markers": [
+        "Fran is alive",
+        "confessing to murder"
+      ],
+      "kind": "ending"
+    },
+    {
+      "id": "knife-twist",
+      "question": "Why does Ransom’s last attack fail?",
+      "options": [
+        "Blanc catches his arm",
+        "Marta wears a protective vest",
+        "He grabs a retractable stage knife",
+        "The blade misses her"
+      ],
+      "correct_index": 2,
+      "explanation": "The knife from Harlan’s collection is a harmless retractable stage prop.",
+      "evidence_markers": [
+        "harmless retractable stage knife"
+      ],
+      "kind": "ending"
+    },
+    {
+      "id": "balcony-finale",
+      "question": "Where is Marta in the final scene while the family gathers outside?",
+      "options": [
+        "At the police station",
+        "On the mansion’s balcony",
+        "In Harlan’s office",
+        "At Fran’s hospital"
+      ],
+      "correct_index": 1,
+      "explanation": "Marta stands on the balcony of her new mansion, holding Harlan’s coffee mug.",
+      "evidence_markers": [
+        "Marta watches from the balcony"
+      ],
+      "kind": "ending"
+    }
+  ],
+  "facts": [
+    {
+      "id": "radiohead-title",
+      "title": "A Radiohead title",
+      "text": "Rian Johnson borrowed the film’s title from Radiohead’s song of the same name. He thought it suited a murder mystery.",
+      "evidence_markers": [
+        "film's name from the Radiohead song"
+      ]
+    },
+    {
+      "id": "adventure-name",
+      "title": "A mystery-book namesake",
+      "text": "Harlan Thrombey’s name came from Who Killed Harlowe Thrombey?, a 1981 Choose Your Own Adventure mystery.",
+      "evidence_markers": [
+        "name Harlan Thrombey",
+        "1981 Choose Your Own Adventure"
+      ]
+    },
+    {
+      "id": "built-office",
+      "title": "The mansion’s missing room",
+      "text": "Neither filming mansion had enough upstairs space for Harlan’s office. Production designer David Crank built the office and an adjoining hallway on soundstages.",
+      "evidence_markers": [
+        "neither of which had sufficient space",
+        "David Crank constructed the office set",
+        "soundstages"
+      ]
+    },
+    {
+      "id": "mechanical-props",
+      "title": "A collector’s moving treasures",
+      "text": "A museum referred the prop team to a local restorer with a private collection of mechanical automata. Another collector transported and installed the pieces on set.",
+      "evidence_markers": [
+        "local restorer",
+        "transport the automata and install them"
+      ]
+    },
+    {
+      "id": "abbey-road-score",
+      "title": "A score recorded at Abbey Road",
+      "text": "Nathan Johnson recorded the Knives Out score with an orchestra at London’s Abbey Road Studios.",
+      "evidence_markers": [
+        "Nathan recorded the Knives Out score with an orchestra at Abbey Road Studios"
+      ]
+    }
+  ]
+}
