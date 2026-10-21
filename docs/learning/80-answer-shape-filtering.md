@@ -55,3 +55,27 @@ The run recorded one `no_natural_exact_answer_span` target and continued. Checkp
 Across the three passes, four distinct candidates are now provisional: the earlier Lion King and Fight Club replacements plus the Forrest fatherhood and Shawshank hope questions. They are not a complete replacement set and have not passed final whole-bank novelty review.
 
 No saved quiz, publication receipt or runtime gate changed.
+
+## Whole-bank novelty review
+
+The four distinct editorial accepts were pinned by their source-report and
+candidate hashes, then compared with every other question in the current bank
+for their movie. The exact question being replaced was removed from the
+comparison; leaving it in would make every legitimate replacement look like a
+duplicate of its own predecessor.
+
+The bounded local reviewer marked three candidates new and clearly worded:
+
+- The Lion King: Scar's conspiracy as the conflict threatening Simba's future rule;
+- Fight Club: the stated purpose of the first Fight Club gathering; and
+- The Shawshank Redemption: Andy maintaining hope during imprisonment.
+
+The Forrest Gump fatherhood candidate was withheld because the reviewer linked
+it to the existing ending question about Jenny's son. This may be a conservative
+false duplicate—the questions test relationship change and name recall
+respectively—but fail-closed evaluation does not override an uncertain semantic
+decision after seeing it.
+
+The report is proposal-only: three items are ready for a final reviewed
+selection, none is published, and the twenty saved banks and receipts remain
+unchanged. The local reviewer is not an independent human evaluator.
