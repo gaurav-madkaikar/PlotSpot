@@ -71,7 +71,7 @@
 - Produces: `load_intent_contracts(path: Path, *, manifest: CompletionManifest) -> dict[str, NarrativeIntent]`.
 - Produces artifact policy `quiz-replacement-completion-manifest-v1` with lane counts `13 intent`, `17 evidence`, `1 novelty`.
 
-- [ ] **Step 1: Write failing manifest and contract tests**
+- [x] **Step 1: Write failing manifest and contract tests**
 
 ```python
 import pytest
@@ -141,13 +141,13 @@ def test_manifest_requires_exact_lane_counts_and_unique_target_identity():
         )
 ```
 
-- [ ] **Step 2: Run the focused test and verify the missing-module failure**
+- [x] **Step 2: Run the focused test and verify the missing-module failure**
 
 Run: `cd backend && .venv/bin/python -m pytest tests/test_quiz_replacement_completion.py -q`
 
 Expected: FAIL because `movie_companion.quiz_replacement_completion` does not exist.
 
-- [ ] **Step 3: Implement strict models and lane derivation**
+- [x] **Step 3: Implement strict models and lane derivation**
 
 ```python
 from collections import Counter
@@ -219,7 +219,7 @@ class CompletionManifest(StrictRecord):
 
 Build lanes from reviewed state, never from title-specific hard-coding: three `ready_for_final_selection` rows are resolved; the sole editorial accept withheld by whole-bank novelty becomes `novelty`; accepted evidence without a ready/ambiguous candidate becomes `intent`; rejected evidence becomes `evidence`. Hash each current saved quiz with the canonical JSON helper already used by `review_provisional_quiz_replacements.py`.
 
-- [ ] **Step 4: Add contract loading and target consistency checks**
+- [x] **Step 4: Add contract loading and target consistency checks**
 
 ```python
 def load_intent_contracts(path: Path, *, manifest: CompletionManifest):
@@ -235,7 +235,7 @@ def load_intent_contracts(path: Path, *, manifest: CompletionManifest):
 
 Create `replacement-intent-contracts-v1.json` with one reviewed contract for each of the thirty `intent` and `evidence` lane targets. Use concise aliases grounded in the replacement brief; forbidden details must be literal strings such as a count, duration or name that the brief explicitly excludes.
 
-- [ ] **Step 5: Generate and verify the frozen manifest**
+- [x] **Step 5: Generate and verify the frozen manifest**
 
 Run:
 
@@ -252,7 +252,7 @@ cd backend
 
 Expected: the manifest reports exactly 31 unresolved targets across `13/17/1`, and all focused tests pass.
 
-- [ ] **Step 6: Commit the frozen completion scope**
+- [x] **Step 6: Commit the frozen completion scope**
 
 ```bash
 git add backend/src/movie_companion/quiz_replacement_completion.py \
