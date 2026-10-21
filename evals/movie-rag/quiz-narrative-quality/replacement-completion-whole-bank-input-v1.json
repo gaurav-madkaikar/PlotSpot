@@ -1,0 +1,25 @@
+{
+  "policy": "provisional-whole-bank-novelty-input-v1",
+  "scope": "Completion editorial accepts plus the unresolved fatherhood-versus-name novelty case; proposal-only and independently reviewed.",
+  "items": [
+    {
+      "source_report": "evals/movie-rag/quiz-narrative-quality/replacement-completion-editorial-v1.json",
+      "source_report_sha256": "5810455ee62bf9e5b6f40a69abe3f9f6de71111a1d808cd04e11ae79aee51539",
+      "movie_id": 157336,
+      "question_id": "wormhole-location",
+      "candidate_sha256": "0c03b0ce69c8139c1df0873a1332ed8db5a51e6989eb2ebe5e175f126b39bcc7"
+    },
+    {
+      "source_report": "evals/movie-rag/quiz-narrative-quality/replacement-shaped-span-editorial-v1.json",
+      "source_report_sha256": "3578041962efe1f856fafc2b0992161689eb08dbe0770a3374c568fd495c7441",
+      "movie_id": 13,
+      "question_id": "research-423740447f00-t10-Q1",
+      "candidate_sha256": "fdd9f89f1342204ee70143511ece177fee77b6955a1d72bd9ea2df8cbb0a05fc",
+      "adjudication_context": {
+        "candidate_intent": "understand how Forrest's relationship and responsibility change when he becomes a father",
+        "compared_bank_intent": "recall the name of Jenny's son",
+        "decision_rule": "Treat the candidate as duplicate only when answering it demonstrates essentially the same viewer knowledge as the compared bank question."
+      }
+    }
+  ]
+}

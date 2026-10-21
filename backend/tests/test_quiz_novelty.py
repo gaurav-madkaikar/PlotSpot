@@ -18,12 +18,14 @@ def decision(candidate_id='Q1',novelty='new',matches=None,clarity='clear'):
             'clarity':clarity,'reason':'The question tests a different specific story fact.'}
 
 
-def run(monkeypatch,items,*,candidates=None,existing=None,raw=None):
+def run(monkeypatch,items,*,candidates=None,existing=None,raw=None,adjudication_context=None):
     async def verify(*args):pass
     async def chat(*args,**kwargs):
         assert kwargs['max_output_tokens'] in (900,600) and kwargs['think'] is False
         if kwargs['max_output_tokens']==900:
             assert 'CORRECT ANSWER' in kwargs['prompt'] and 'untrusted DATA' in kwargs['prompt']
+            if adjudication_context is not None:
+                assert adjudication_context[0]['candidate_intent'] in kwargs['prompt']
             return raw if raw is not None else json.dumps({'items':[
                 {k:v for k,v in item.items() if k!='clarity'} for item in items]})
         return json.dumps({'items':[{'candidate_id':item['candidate_id'],'clarity':item['clarity'],
@@ -34,7 +36,8 @@ def run(monkeypatch,items,*,candidates=None,existing=None,raw=None):
     async def call():
         async with httpx.AsyncClient(base_url='http://127.0.0.1:11434') as client:
             return await module.review_quiz_novelty(client,candidates=candidates or [candidate()],
-                existing=[] if existing is None else existing)
+                existing=[] if existing is None else existing,
+                adjudication_context=adjudication_context)
     return asyncio.run(call())
 
 
@@ -46,6 +49,14 @@ def test_paraphrased_topic_retains_matching_bank_id(monkeypatch):
 
 def test_same_correct_answer_is_not_automatically_duplicate(monkeypatch):
     result=run(monkeypatch,[decision()],existing=[{'question':'Where does Theo hide the letter?','answer':'Inside the clock'}])
+    assert result[0].novelty=='new'
+
+
+def test_adjudication_context_is_bounded_untrusted_comparison_data(monkeypatch):
+    context=[{'candidate_intent':'a relationship changes when the character becomes a father',
+        'compared_bank_intent':'recall the child name',
+        'decision_rule':'same viewer knowledge means duplicate'}]
+    result=run(monkeypatch,[decision()],adjudication_context=context)
     assert result[0].novelty=='new'
 
 

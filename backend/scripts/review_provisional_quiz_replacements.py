@@ -22,6 +22,10 @@ ROOT = Path(__file__).resolve().parents[2]
 MODEL = "qwen3.5:9b"
 POLICY = "provisional-whole-bank-novelty-review-v1"
 ACCEPTED_EDITORIAL_DECISIONS = {"accept", "editorial_accept"}
+ADJUDICATION_RULE = (
+    "Treat the candidate as duplicate only when answering it demonstrates "
+    "essentially the same viewer knowledge as the compared bank question."
+)
 
 
 def sha256_bytes(value: bytes) -> str:
@@ -35,7 +39,7 @@ def canonical_sha256(value: object) -> str:
     return sha256_bytes(encoded)
 
 
-def load_candidate(selection: dict) -> tuple[dict, str]:
+def validate_selection(selection: dict) -> dict:
     required = {
         "source_report",
         "source_report_sha256",
@@ -43,8 +47,44 @@ def load_candidate(selection: dict) -> tuple[dict, str]:
         "question_id",
         "candidate_sha256",
     }
-    if not isinstance(selection, dict) or set(selection) != required:
+    allowed = required | {"adjudication_context"}
+    if (
+        not isinstance(selection, dict)
+        or not required <= set(selection) <= allowed
+        or any(not isinstance(selection[key], expected) for key, expected in (
+            ("source_report", str), ("source_report_sha256", str),
+            ("movie_id", int), ("question_id", str), ("candidate_sha256", str),
+        ))
+    ):
         raise ValueError("Invalid provisional selection")
+    context = selection.get("adjudication_context")
+    if context is not None:
+        fields = {"candidate_intent", "compared_bank_intent", "decision_rule"}
+        if (
+            not isinstance(context, dict)
+            or set(context) != fields
+            or any(
+                not isinstance(context[key], str)
+                or not 1 <= len(context[key].strip()) <= 300
+                for key in fields
+            )
+            or context["decision_rule"] != ADJUDICATION_RULE
+        ):
+            raise ValueError("Invalid novelty adjudication context")
+    return selection
+
+
+def ready_from_reviews(reviews, error_type):
+    return bool(
+        error_type is None
+        and len(reviews) == 1
+        and reviews[0].novelty == "new"
+        and reviews[0].clarity == "clear"
+    )
+
+
+def load_candidate(selection: dict) -> tuple[dict, str]:
+    selection = validate_selection(selection)
     source_path = ROOT / selection["source_report"]
     source_bytes = source_path.read_bytes()
     if sha256_bytes(source_bytes) != selection["source_report_sha256"]:
@@ -114,6 +154,7 @@ async def main(args) -> None:
         timeout=180,
     ) as client:
         for selection in packet["items"]:
+            selection = validate_selection(selection)
             began = monotonic()
             error_type = None
             review_records: list[dict] = []
@@ -137,14 +178,11 @@ async def main(args) -> None:
             )
             try:
                 reviews = await review_quiz_novelty(
-                    client, candidates=[proposal], existing=existing, model=MODEL
+                    client, candidates=[proposal], existing=existing, model=MODEL,
+                    adjudication_context=[selection.get("adjudication_context")],
                 )
                 review_records = [review.record() for review in reviews]
-                ready = bool(
-                    len(reviews) == 1
-                    and reviews[0].novelty == "new"
-                    and reviews[0].clarity == "clear"
-                )
+                ready = ready_from_reviews(reviews, None)
             except (ValueError, httpx.HTTPError, TimeoutError) as exc:
                 error_type = type(exc).__name__
             current = store.load(selection["movie_id"])
@@ -156,6 +194,7 @@ async def main(args) -> None:
                 "movie_id": selection["movie_id"],
                 "question_id": selection["question_id"],
                 "source_report": selection["source_report"],
+                "adjudication_context": selection.get("adjudication_context"),
                 "candidate": candidate,
                 "replaced_question": saved_old_question,
                 "comparison_question_count": len(existing),

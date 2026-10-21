@@ -57,3 +57,34 @@ def test_frozen_packet_resolves_only_editorial_accepts():
 
     assert len(candidates) == 4
     assert all(candidate["question"] and len(candidate["options"]) == 4 for candidate in candidates)
+
+
+def test_adjudication_context_is_released_as_data_not_prompt_authority():
+    packet = {
+        "source_report": "evals/movie-rag/quiz-narrative-quality/replacement-shaped-span-editorial-v1.json",
+        "source_report_sha256": "0" * 64,
+        "movie_id": 13,
+        "question_id": "q-forrest",
+        "candidate_sha256": "1" * 64,
+        "adjudication_context": {
+            "candidate_intent": "how Forrest's relationship changes when he becomes a father",
+            "compared_bank_intent": "recall the name of Jenny's son",
+            "decision_rule": MODULE.ADJUDICATION_RULE,
+        },
+    }
+
+    normalized = MODULE.validate_selection(packet)
+
+    assert normalized["adjudication_context"]["decision_rule"] == MODULE.ADJUDICATION_RULE
+
+
+def test_uncertain_novelty_is_always_withheld():
+    uncertain = SimpleNamespace(novelty="uncertain", clarity="clear")
+    duplicate = SimpleNamespace(novelty="duplicate", clarity="clear")
+    unclear = SimpleNamespace(novelty="new", clarity="needs_edit")
+    ready = SimpleNamespace(novelty="new", clarity="clear")
+    assert MODULE.ready_from_reviews([uncertain], None) is False
+    assert MODULE.ready_from_reviews([duplicate], None) is False
+    assert MODULE.ready_from_reviews([unclear], None) is False
+    assert MODULE.ready_from_reviews([ready], "TimeoutError") is False
+    assert MODULE.ready_from_reviews([ready], None) is True

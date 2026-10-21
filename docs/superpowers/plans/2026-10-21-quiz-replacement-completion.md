@@ -756,7 +756,7 @@ git commit -m "eval: generate intent-bound quiz replacements"
 - Produces: `validate_selection(selection: dict) -> dict` and `ready_from_reviews(reviews: list[NoveltyReview], error_type: str | None) -> bool`.
 - Preserves: `review_quiz_novelty(...)` remains the decision engine; only `new + clear` becomes ready.
 
-- [ ] **Step 1: Write failing adjudication-context tests**
+- [x] **Step 1: Write failing adjudication-context tests**
 
 ```python
 from types import SimpleNamespace
@@ -791,13 +791,13 @@ def test_uncertain_novelty_is_always_withheld():
     assert MODULE.ready_from_reviews([ready], None) is True
 ```
 
-- [ ] **Step 2: Run provisional review tests and verify failure**
+- [x] **Step 2: Run provisional review tests and verify failure**
 
 Run: `cd backend && .venv/bin/python -m pytest tests/test_provisional_quiz_replacements.py -q`
 
 Expected: FAIL because contextual adjudication is not yet accepted by the packet schema.
 
-- [ ] **Step 3: Add bounded independent adjudication context**
+- [x] **Step 3: Add bounded independent adjudication context**
 
 Validate each optional context field as non-empty text of at most 300 characters. Append it to the novelty review input as untrusted comparison data; do not tell the model which verdict to choose. Keep the rule explicit:
 
@@ -810,7 +810,7 @@ ADJUDICATION_RULE = (
 
 Hash the full input packet, preserve the bank hash before and after each review, and continue withholding `duplicate`, `uncertain`, `needs_edit` or any error.
 
-- [ ] **Step 4: Create the assistant editorial report**
+- [x] **Step 4: Create the assistant editorial report**
 
 Review every critic-approved candidate against:
 
@@ -823,7 +823,7 @@ Review every critic-approved candidate against:
 
 Write one row per completion target with `final_review` equal to `editorial_accept`, `editorial_reject` or `pipeline_withheld`, plus a concrete `reason`. Validate the report against the candidate-report hash before it becomes whole-bank input.
 
-- [ ] **Step 5: Run whole-bank review for all editorial accepts and the ambiguous candidate**
+- [x] **Step 5: Run whole-bank review for all editorial accepts and the ambiguous candidate**
 
 ```bash
 cd backend
@@ -835,7 +835,7 @@ cd backend
 
 Expected: every input receives a recorded novelty and clarity result or a target-level error; only `new + clear` rows are ready.
 
-- [ ] **Step 6: Run tests and commit review artifacts**
+- [x] **Step 6: Run tests and commit review artifacts**
 
 Run: `cd backend && .venv/bin/python -m pytest tests/test_provisional_quiz_replacements.py tests/test_quiz_novelty.py -q`
 
