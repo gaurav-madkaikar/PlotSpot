@@ -1,0 +1,261 @@
+{
+  "description": "Fresh v3 development cases frozen before model execution.",
+  "cases": [
+    {
+      "id": "repair-development-motive",
+      "mode": "quiz",
+      "expected_accept": true,
+      "label_reason": "Central explicit motivation.",
+      "evidence": [
+        {
+          "alias": "W1",
+          "text": "Jora enters the sealed mine to rescue Marek before the icefall reaches the lower chamber."
+        },
+        {
+          "alias": "S1",
+          "text": "Jora goes into the sealed mine because Marek must be rescued before the icefall arrives."
+        }
+      ],
+      "draft": {
+        "kind": "event",
+        "question": "Why does Jora enter the sealed mine?",
+        "answer": "to rescue Marek before the icefall reaches the lower chamber",
+        "wiki_alias": "W1",
+        "wiki_quote": "Jora enters the sealed mine to rescue Marek before the icefall reaches the lower chamber.",
+        "script_alias": "S1",
+        "script_quote": "Jora goes into the sealed mine because Marek must be rescued before the icefall arrives.",
+        "options": [
+          "to rescue Marek before the icefall reaches the lower chamber",
+          "to search for gold",
+          "to hide from the council",
+          "to repair a lantern"
+        ],
+        "correct_index": 0
+      }
+    },
+    {
+      "id": "repair-development-consequence",
+      "mode": "quiz",
+      "expected_accept": true,
+      "label_reason": "Central cause and consequence.",
+      "evidence": [
+        {
+          "alias": "W1",
+          "text": "When Jora breaks the dam gate, the river changes course and the invading army loses its road into Selis."
+        },
+        {
+          "alias": "S1",
+          "text": "Jora breaks the dam gate; the redirected river cuts off the army’s route to Selis."
+        }
+      ],
+      "draft": {
+        "kind": "event",
+        "question": "What follows when Jora breaks the dam gate?",
+        "answer": "the river changes course and the invading army loses its road into Selis",
+        "wiki_alias": "W1",
+        "wiki_quote": "When Jora breaks the dam gate, the river changes course and the invading army loses its road into Selis.",
+        "script_alias": "S1",
+        "script_quote": "Jora breaks the dam gate; the redirected river cuts off the army’s route to Selis.",
+        "options": [
+          "the river changes course and the invading army loses its road into Selis",
+          "the mine fills with gold",
+          "the army captures the council",
+          "the river disappears"
+        ],
+        "correct_index": 0
+      }
+    },
+    {
+      "id": "repair-development-trust",
+      "mode": "quiz",
+      "expected_accept": true,
+      "label_reason": "Meaningful relationship change.",
+      "evidence": [
+        {
+          "alias": "W1",
+          "text": "Jora shares the evacuation plan with Marek after Marek risks capture to free the miners."
+        },
+        {
+          "alias": "S1",
+          "text": "Because Marek risked capture to free the miners, Jora now trusts Marek with the evacuation plan."
+        }
+      ],
+      "draft": {
+        "kind": "event",
+        "question": "Why does Jora share the evacuation plan with Marek?",
+        "answer": "Marek risks capture to free the miners",
+        "wiki_alias": "W1",
+        "wiki_quote": "Jora shares the evacuation plan with Marek after Marek risks capture to free the miners.",
+        "script_alias": "S1",
+        "script_quote": "Because Marek risked capture to free the miners, Jora now trusts Marek with the evacuation plan.",
+        "options": [
+          "Marek risks capture to free the miners",
+          "Marek owns the mine",
+          "the council orders silence",
+          "the plan is already public"
+        ],
+        "correct_index": 0
+      }
+    },
+    {
+      "id": "repair-development-rule",
+      "mode": "quiz",
+      "expected_accept": true,
+      "label_reason": "Central story rule.",
+      "evidence": [
+        {
+          "alias": "W1",
+          "text": "The mine lift moves only when one person above and one below pull their levers at the same time."
+        },
+        {
+          "alias": "S1",
+          "text": "Two people on opposite levels must pull both levers together to move the lift."
+        }
+      ],
+      "draft": {
+        "kind": "event",
+        "question": "What must happen for the mine lift to move?",
+        "answer": "one person above and one below pull their levers at the same time",
+        "wiki_alias": "W1",
+        "wiki_quote": "The mine lift moves only when one person above and one below pull their levers at the same time.",
+        "script_alias": "S1",
+        "script_quote": "Two people on opposite levels must pull both levers together to move the lift.",
+        "options": [
+          "one person above and one below pull their levers at the same time",
+          "a single lever is broken",
+          "the warning bell rings",
+          "the river reaches the mine"
+        ],
+        "correct_index": 0
+      }
+    },
+    {
+      "id": "repair-development-granular",
+      "mode": "quiz",
+      "expected_accept": false,
+      "label_reason": "Minor location recall.",
+      "evidence": [
+        {
+          "alias": "W1",
+          "text": "Jora stores a spare green glove in locker seventeen before the council meeting."
+        },
+        {
+          "alias": "S1",
+          "text": "The spare green glove remains in locker seventeen during the meeting."
+        }
+      ],
+      "draft": {
+        "kind": "event",
+        "question": "Where is Jora’s spare green glove?",
+        "answer": "locker seventeen",
+        "wiki_alias": "W1",
+        "wiki_quote": "Jora stores a spare green glove in locker seventeen before the council meeting.",
+        "script_alias": "S1",
+        "script_quote": "The spare green glove remains in locker seventeen during the meeting.",
+        "options": [
+          "locker seventeen",
+          "locker four",
+          "the mine lift",
+          "the council hall"
+        ],
+        "correct_index": 0
+      }
+    },
+    {
+      "id": "repair-development-conflict",
+      "mode": "quiz",
+      "expected_accept": false,
+      "label_reason": "Conflicting actor and outcome.",
+      "evidence": [
+        {
+          "alias": "W1",
+          "text": "Jora breaks the dam gate and redirects the river away from the farms."
+        },
+        {
+          "alias": "S1",
+          "text": "Marek repairs the dam gate before Jora arrives, so the river never changes course."
+        }
+      ],
+      "draft": {
+        "kind": "event",
+        "question": "Whose action redirects the river?",
+        "answer": "Jora",
+        "wiki_alias": "W1",
+        "wiki_quote": "Jora breaks the dam gate and redirects the river away from the farms.",
+        "script_alias": "S1",
+        "script_quote": "Marek repairs the dam gate before Jora arrives, so the river never changes course.",
+        "options": [
+          "Jora",
+          "Marek",
+          "the miners",
+          "the council"
+        ],
+        "correct_index": 0
+      }
+    },
+    {
+      "id": "repair-development-wrong-cause",
+      "mode": "quiz",
+      "expected_accept": false,
+      "label_reason": "Answer is present but has the wrong causal relation.",
+      "evidence": [
+        {
+          "alias": "W1",
+          "text": "Jora carries a silver whistle, but the approaching icefall causes the evacuation."
+        },
+        {
+          "alias": "S1",
+          "text": "The icefall forces everyone to evacuate while Jora carries a whistle."
+        }
+      ],
+      "draft": {
+        "kind": "event",
+        "question": "What causes the evacuation?",
+        "answer": "a silver whistle",
+        "wiki_alias": "W1",
+        "wiki_quote": "Jora carries a silver whistle, but the approaching icefall causes the evacuation.",
+        "script_alias": "S1",
+        "script_quote": "The icefall forces everyone to evacuate while Jora carries a whistle.",
+        "options": [
+          "a silver whistle",
+          "the approaching icefall",
+          "a council vote",
+          "a broken cart"
+        ],
+        "correct_index": 0
+      }
+    },
+    {
+      "id": "repair-development-ambiguous",
+      "mode": "quiz",
+      "expected_accept": false,
+      "label_reason": "Two valid options.",
+      "evidence": [
+        {
+          "alias": "W1",
+          "text": "Jora approves both the ridge tunnel and the river path for evacuation."
+        },
+        {
+          "alias": "S1",
+          "text": "The ridge tunnel and river path are both safe evacuation routes."
+        }
+      ],
+      "draft": {
+        "kind": "event",
+        "question": "Which route is approved for evacuation?",
+        "answer": "the ridge tunnel",
+        "wiki_alias": "W1",
+        "wiki_quote": "Jora approves both the ridge tunnel and the river path for evacuation.",
+        "script_alias": "S1",
+        "script_quote": "The ridge tunnel and river path are both safe evacuation routes.",
+        "options": [
+          "the ridge tunnel",
+          "the river path",
+          "the mine shaft",
+          "the market road"
+        ],
+        "correct_index": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "run_date": "2026-10-13",
+  "provider": "duckduckgo",
+  "models": [
+    "llama3.2:3b",
+    "qwen3.5:9b",
+    "nomic-embed-text:v1.5"
+  ],
+  "cases": [
+    {
+      "id": "nasa",
+      "question": "Where do the dust coordinates lead Cooper and Murph?",
+      "expected_status": "answered",
+      "status": "answered",
+      "answer": "to a hidden NASA facility",
+      "citations": [
+        {
+          "url": "https://www.taylortailored.co.uk/film-summaries/interstellar-film-summary",
+          "revision": "web-017ec37b8bc74a74ab4ed52e553f59d827a2dbe48f621a058fec6c04bcfb0036",
+          "passage_id": "56f970e4c6f08303f123550ff65e007c_003"
+        }
+      ],
+      "coverage": {
+        "branches": [
+          {
+            "provider": "duckduckgo",
+            "purpose": "story",
+            "requested_web_pages": 5,
+            "accepted_web_pages": 5,
+            "degraded": false,
+            "errors": [
+              {
+                "rank": 5,
+                "reason": "SourceRejected"
+              }
+            ],
+            "cache": "hit",
+            "policy": "movie-public-source-v1"
+          },
+          {
+            "provider": "duckduckgo",
+            "purpose": "background",
+            "requested_web_pages": 5,
+            "accepted_web_pages": 0,
+            "degraded": true,
+            "errors": [
+              {
+                "rank": 0,
+                "reason": "search_unavailable"
+              }
+            ],
+            "cache": "hit",
+            "policy": "movie-public-source-v1"
+          },
+          {
+            "script": "available_draft",
+            "parts": 3,
+            "released_film_verified": false
+          }
+        ],
+        "source_count": 10,
+        "degraded": true,
+        "wikipedia": "available",
+        "reviewed_articles": 0,
+        "retrieval": {
+          "available_passages": 693,
+          "candidate_passages": 107,
+          "budget": 400
+        }
+      },
+      "seconds": 37.194
+    },
+    {
+      "id": "unknown",
+      "question": "What is the password to the production team\u2019s private email account?",
+      "expected_status": "insufficient_evidence",
+      "status": "insufficient_evidence",
+      "answer": "The supplied evidence is insufficient to answer this question.",
+      "citations": [],
+      "coverage": {
+        "branches": [
+          {
+            "provider": "duckduckgo",
+            "purpose": "story",
+            "requested_web_pages": 5,
+            "accepted_web_pages": 5,
+            "degraded": false,
+            "errors": [
+              {
+                "rank": 5,
+                "reason": "SourceRejected"
+              }
+            ],
+            "cache": "hit",
+            "policy": "movie-public-source-v1"
+          },
+          {
+            "provider": "duckduckgo",
+            "purpose": "background",
+            "requested_web_pages": 5,
+            "accepted_web_pages": 0,
+            "degraded": true,
+            "errors": [
+              {
+                "rank": 0,
+                "reason": "search_unavailable"
+              }
+            ],
+            "cache": "hit",
+            "policy": "movie-public-source-v1"
+          },
+          {
+            "script": "available_draft",
+            "parts": 3,
+            "released_film_verified": false
+          }
+        ],
+        "source_count": 10,
+        "degraded": true,
+        "wikipedia": "available",
+        "reviewed_articles": 0,
+        "retrieval": {
+          "available_passages": 693,
+          "candidate_passages": 117,
+          "budget": 400
+        }
+      },
+      "seconds": 8.08
+    }
+  ],
+  "published_banks_unchanged": true,
+  "scope": "Two consumed development smoke cases, using a retained Wikipedia snapshot and cached public sources; not a general accuracy benchmark.",
+  "checks": {
+    "nasa_answer_matches_expected_location": true,
+    "unknown_abstains": true
+  }
+}

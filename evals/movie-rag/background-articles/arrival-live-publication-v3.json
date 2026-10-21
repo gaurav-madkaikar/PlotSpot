@@ -1,0 +1,27 @@
+{
+  "movie_id": 329865,
+  "facts": 7,
+  "questions": 10,
+  "added_fact_ids": [
+    "article-3833be093fbccbc75775c06f",
+    "article-bd72d9410e4e467dd4872ad3"
+  ],
+  "reading_sources": [
+    [
+      "BFI",
+      "article",
+      "2021-09-22"
+    ],
+    [
+      "TIME",
+      "interview",
+      "2017-02-22"
+    ]
+  ],
+  "fresh_reads_match_saved_database": true,
+  "repeated_fact_reads_identical": true,
+  "quiz_preserved_by_publication": true,
+  "quiz_items_sha256": "f089802df3aa6ff758607f077ad868acd022ddcf32135adb484a5dcbff0fc5dc",
+  "implementation_sha256": "35b7fb2d2e2454cd0bbae2f8eea1c852103cefa33ebf693acd9cf51d0165ab2d",
+  "inception_quiz_gate_unchanged": true
+}

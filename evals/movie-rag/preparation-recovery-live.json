@@ -1,0 +1,37 @@
+{
+  "saved_collections_unchanged": true,
+  "story_policy_unchanged": true,
+  "published": false,
+  "movies": [
+    {
+      "movie_id": 27205,
+      "facts": {
+        "status": "ready",
+        "items": 5,
+        "repeat_equal": true
+      },
+      "quiz": {
+        "status": "ready",
+        "items": 11,
+        "repeat_equal": true
+      }
+    },
+    {
+      "movie_id": 329865,
+      "facts": {
+        "status": "ready",
+        "items": 7,
+        "repeat_equal": true
+      },
+      "quiz": {
+        "status": "ready",
+        "items": 10,
+        "repeat_equal": true
+      }
+    }
+  ],
+  "health_status": 200,
+  "preparation_status_http": 200,
+  "preparation_available": true,
+  "internal_state": "cancelled"
+}

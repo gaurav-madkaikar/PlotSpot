@@ -1,0 +1,166 @@
+{
+  "policy": "reviewed-background-rag-v1",
+  "implementation_sha256": "dba159046b0a889ef39d2e7eddb4d51186bb8310fdc2b25e9d00ebac0a8b782e",
+  "movie_id": 329865,
+  "model": "qwen3.5:9b",
+  "model_digest": "6488c96fa5faab64bb65cbd30d4289e20e6130ef535a93ef9a49f42eda893ea7",
+  "embedding_model": "nomic-embed-text:v1.5",
+  "embedding_digest": "0a109f422b47e3a30ba2b10eca18548e944e8a23073ee3f3e947efcf3c45e59f",
+  "saved_prepared_at": "2026-10-10T19:36:18.887467+00:00",
+  "published": false,
+  "index_only": false,
+  "sources": [
+    {
+      "id": "time-arrival",
+      "revision": "article-bfe3876862cdb31f17c6aeb7b7e9fcf92a251717638b88d699309a09dd2ab008",
+      "text_sha256": "9e2284bbccbeb4d1c6cdc5fcf992bfb2a638556884f1dac28cc2da5545a53c2c",
+      "content_sha256": "22e4525fe493620bf5fcd3fc46fd37d8ec1465185debe0efd46affd8bd1bb67a",
+      "source_ref": "https://time.com/4677598/arrival-oscar-cinematography/",
+      "published_at": "2017-02-22",
+      "retrieved_at": "2026-10-11T12:49:17.320321+00:00",
+      "retrieval": {
+        "index": "indexed",
+        "query_sha256": "d295d76e56170910a4e9a6ad756aa9dcf84a385e1850a6caa10b923562016411",
+        "hits": [
+          {
+            "passage_id": "6224226bb4c53969c2c3e00170f3b1e2_003",
+            "score": 0.7809907458391028,
+            "origin": {
+              "movie_id": 329865,
+              "source_id": "time-arrival",
+              "source_ref": "https://time.com/4677598/arrival-oscar-cinematography/",
+              "revision": "article-bfe3876862cdb31f17c6aeb7b7e9fcf92a251717638b88d699309a09dd2ab008",
+              "section_title": "Background 3",
+              "section_category": "filming",
+              "start": 1176,
+              "end": 1643
+            }
+          },
+          {
+            "passage_id": "6224226bb4c53969c2c3e00170f3b1e2_000",
+            "score": 0.7103040167438431,
+            "origin": {
+              "movie_id": 329865,
+              "source_id": "time-arrival",
+              "source_ref": "https://time.com/4677598/arrival-oscar-cinematography/",
+              "revision": "article-bfe3876862cdb31f17c6aeb7b7e9fcf92a251717638b88d699309a09dd2ab008",
+              "section_title": "Background 1",
+              "section_category": "production",
+              "start": 0,
+              "end": 600
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "bfi-arrival",
+      "revision": "article-4cbb73d5e23b3e42b6ef8241cc8efe42dab22e005963fd8e62b7ac9822d899be",
+      "text_sha256": "91f7f092eaa0d6313e0a26a20b0e3acc014ea515a26880c3f46a275182d4bd67",
+      "content_sha256": "f634f8fc7a051f226366563a9c62cbbd3f0179231931e25092939ccbd1bc577c",
+      "source_ref": "https://www.bfi.org.uk/features/strange-new-worlds-craft-denis-villeneuve",
+      "published_at": "2021-09-22",
+      "retrieved_at": "2026-10-11T12:49:17.494970+00:00",
+      "retrieval": {
+        "index": "indexed",
+        "query_sha256": "a647f83ad3e69dd8053d8649708b3f4331166ba41c5df7a2eba8ec0bab98abfa",
+        "hits": [
+          {
+            "passage_id": "7203c2726f777620596bb8509b006031_000",
+            "score": 0.7379148544928746,
+            "origin": {
+              "movie_id": 329865,
+              "source_id": "bfi-arrival",
+              "source_ref": "https://www.bfi.org.uk/features/strange-new-worlds-craft-denis-villeneuve",
+              "revision": "article-4cbb73d5e23b3e42b6ef8241cc8efe42dab22e005963fd8e62b7ac9822d899be",
+              "section_title": "Background 1",
+              "section_category": "music",
+              "start": 0,
+              "end": 314
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "candidates": [
+    {
+      "id": "time-arrival:F1",
+      "source_id": "time-arrival",
+      "proposal": {
+        "title": "Light and Space Inspiration",
+        "text": "Production designer Patrice Vermette and director Denis Villeneuve were deeply influenced by James Turrell's Shallow Space Constructions, which use light to question human perception.",
+        "passage_id": "P2",
+        "evidence_quote": "In this case, both men were deeply influenced by the artist James Turrell's Shallow Space Constructions, a series of artworks that use light and space to question the nature of human perception."
+      },
+      "origin": {
+        "movie_id": 329865,
+        "source_id": "time-arrival",
+        "source_ref": "https://time.com/4677598/arrival-oscar-cinematography/",
+        "revision": "article-bfe3876862cdb31f17c6aeb7b7e9fcf92a251717638b88d699309a09dd2ab008",
+        "section_title": "Background 1",
+        "section_category": "production",
+        "start": 0,
+        "end": 600
+      },
+      "evidence_sha256": "e8de7b303f7e5bb441d1384c7667e442d9b923ccc2e02d398d2228e4eaae9a8b",
+      "critic_decision": "reject",
+      "critic_reason": "Deterministic checks failed: quote_not_in_source",
+      "eligible_for_review": false
+    },
+    {
+      "id": "time-arrival:F2",
+      "source_id": "time-arrival",
+      "proposal": {
+        "title": "Visual Dread Inspiration",
+        "text": "Cinematographer Bradford Young drew inspiration from photographer Martina Hoogland Ivanow to create a sense of dread and chaos outside the spaceship.",
+        "passage_id": "P1",
+        "evidence_quote": "Outside of the spaceship, Young was inspired by the work of photographer Martina Hoogland Ivanow to create a sense of dread and chaos in direct opposition to the Zen-like nature of Louise's safe and sacred zones."
+      },
+      "origin": {
+        "movie_id": 329865,
+        "source_id": "time-arrival",
+        "source_ref": "https://time.com/4677598/arrival-oscar-cinematography/",
+        "revision": "article-bfe3876862cdb31f17c6aeb7b7e9fcf92a251717638b88d699309a09dd2ab008",
+        "section_title": "Background 3",
+        "section_category": "filming",
+        "start": 1176,
+        "end": 1643
+      },
+      "evidence_sha256": "4b8a9fdc9830150a0c096a685efade4e5f536b93aa5dbabda915682d7ab259de",
+      "critic_decision": "reject",
+      "critic_reason": "Deterministic checks failed: quote_not_in_source",
+      "eligible_for_review": false
+    },
+    {
+      "id": "bfi-arrival:F1",
+      "source_id": "bfi-arrival",
+      "proposal": {
+        "title": "Avant-Garde Sound Design",
+        "text": "Composer J\u00f3hannsson eschews the traditional overarching emotional music of the genre to take a more avant-garde approach, which knits seamlessly with the sound design to bring together the human and alien sides of the story.",
+        "passage_id": "P1",
+        "evidence_quote": "Composer J\u00f3hannsson eschews the traditional overarching emotional music of the genre to take a more avant-garde approach, which knits seamlessly with the sound design to bring together the human and alien sides of the story."
+      },
+      "origin": {
+        "movie_id": 329865,
+        "source_id": "bfi-arrival",
+        "source_ref": "https://www.bfi.org.uk/features/strange-new-worlds-craft-denis-villeneuve",
+        "revision": "article-4cbb73d5e23b3e42b6ef8241cc8efe42dab22e005963fd8e62b7ac9822d899be",
+        "section_title": "Background 1",
+        "section_category": "music",
+        "start": 0,
+        "end": 314
+      },
+      "evidence_sha256": "91f7f092eaa0d6313e0a26a20b0e3acc014ea515a26880c3f46a275182d4bd67",
+      "critic_decision": "accept",
+      "critic_reason": "The proposal text is a direct excerpt from the source passage, accurately reflecting J\u00f3hannsson's avant-garde approach and integration with sound design without adding external claims or altering facts.",
+      "eligible_for_review": true
+    }
+  ],
+  "errors": [],
+  "seconds": 41.28,
+  "source_cache": {
+    "time-arrival": "refreshed",
+    "bfi-arrival": "refreshed"
+  }
+}

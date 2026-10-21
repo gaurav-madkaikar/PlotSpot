@@ -1,0 +1,261 @@
+{
+  "description": "Narrative-aligned authored development cases frozen before model execution.",
+  "cases": [
+    {
+      "id": "narrative-development-motivation",
+      "mode": "quiz",
+      "expected_accept": true,
+      "label_reason": "The question tests a central, explicitly stated character motivation.",
+      "evidence": [
+        {
+          "alias": "W1",
+          "text": "Mara leaves the village to rescue Ivo, who is trapped by the storm."
+        },
+        {
+          "alias": "S1",
+          "text": "Mara sets off because Ivo needs rescue from the approaching storm."
+        }
+      ],
+      "draft": {
+        "kind": "event",
+        "question": "Why does Mara leave the village?",
+        "answer": "to rescue Ivo",
+        "wiki_alias": "W1",
+        "wiki_quote": "Mara leaves the village to rescue Ivo, who is trapped by the storm.",
+        "script_alias": "S1",
+        "script_quote": "Mara sets off because Ivo needs rescue from the approaching storm.",
+        "options": [
+          "to rescue Ivo",
+          "to collect a reward",
+          "to attend a ceremony",
+          "to find a lost diary"
+        ],
+        "correct_index": 0
+      }
+    },
+    {
+      "id": "narrative-development-consequence",
+      "mode": "quiz",
+      "expected_accept": true,
+      "label_reason": "The question tests a supported cause-and-consequence relation.",
+      "evidence": [
+        {
+          "alias": "W1",
+          "text": "When Mara opens the spillway, the village road floods and the travelers must take the mountain path."
+        },
+        {
+          "alias": "S1",
+          "text": "Mara opens the spillway; water covers the village road, forcing everyone toward the mountain path."
+        }
+      ],
+      "draft": {
+        "kind": "event",
+        "question": "What immediate consequence follows when Mara opens the spillway?",
+        "answer": "the village road floods",
+        "wiki_alias": "W1",
+        "wiki_quote": "When Mara opens the spillway, the village road floods and the travelers must take the mountain path.",
+        "script_alias": "S1",
+        "script_quote": "Mara opens the spillway; water covers the village road, forcing everyone toward the mountain path.",
+        "options": [
+          "the village road floods",
+          "the bridge repairs itself",
+          "the storm ends",
+          "the gate locks"
+        ],
+        "correct_index": 0
+      }
+    },
+    {
+      "id": "narrative-development-relationship",
+      "mode": "quiz",
+      "expected_accept": true,
+      "label_reason": "The question tests a meaningful relationship change and the choice behind it.",
+      "evidence": [
+        {
+          "alias": "W1",
+          "text": "Mara returns the compass to Ivo because she decides to trust him again."
+        },
+        {
+          "alias": "S1",
+          "text": "Having chosen to trust Ivo again, Mara hands the compass back to him."
+        }
+      ],
+      "draft": {
+        "kind": "event",
+        "question": "Why does Mara return the compass to Ivo?",
+        "answer": "she decides to trust him again",
+        "wiki_alias": "W1",
+        "wiki_quote": "Mara returns the compass to Ivo because she decides to trust him again.",
+        "script_alias": "S1",
+        "script_quote": "Having chosen to trust Ivo again, Mara hands the compass back to him.",
+        "options": [
+          "she decides to trust him again",
+          "she wants to sell it",
+          "she fears the mayor",
+          "she forgets its purpose"
+        ],
+        "correct_index": 0
+      }
+    },
+    {
+      "id": "narrative-development-story-rule",
+      "mode": "quiz",
+      "expected_accept": true,
+      "label_reason": "The question tests a central story rule rather than an isolated object.",
+      "evidence": [
+        {
+          "alias": "W1",
+          "text": "The sealed gate opens only when Mara and Ivo turn the compass together."
+        },
+        {
+          "alias": "S1",
+          "text": "Mara and Ivo must turn the compass together before the sealed gate will open."
+        }
+      ],
+      "draft": {
+        "kind": "event",
+        "question": "What must the two rivals do to open the sealed gate?",
+        "answer": "turn the compass together",
+        "wiki_alias": "W1",
+        "wiki_quote": "The sealed gate opens only when Mara and Ivo turn the compass together.",
+        "script_alias": "S1",
+        "script_quote": "Mara and Ivo must turn the compass together before the sealed gate will open.",
+        "options": [
+          "turn the compass together",
+          "break the compass",
+          "wait for sunrise",
+          "say the mayor’s name"
+        ],
+        "correct_index": 0
+      }
+    },
+    {
+      "id": "narrative-development-granular-location",
+      "mode": "quiz",
+      "expected_accept": false,
+      "label_reason": "Accurate but isolated location recall is intentionally ineligible.",
+      "evidence": [
+        {
+          "alias": "W1",
+          "text": "Mara leaves a blue cup on the third shelf before speaking with Ivo."
+        },
+        {
+          "alias": "S1",
+          "text": "Before the conversation, Mara puts the blue cup on the third shelf."
+        }
+      ],
+      "draft": {
+        "kind": "event",
+        "question": "Where does Mara leave the blue cup?",
+        "answer": "the third shelf",
+        "wiki_alias": "W1",
+        "wiki_quote": "Mara leaves a blue cup on the third shelf before speaking with Ivo.",
+        "script_alias": "S1",
+        "script_quote": "Before the conversation, Mara puts the blue cup on the third shelf.",
+        "options": [
+          "the third shelf",
+          "the table",
+          "the windowsill",
+          "the floor"
+        ],
+        "correct_index": 0
+      }
+    },
+    {
+      "id": "narrative-development-conflict",
+      "mode": "quiz",
+      "expected_accept": false,
+      "label_reason": "The sources contradict both the actor and consequence.",
+      "evidence": [
+        {
+          "alias": "W1",
+          "text": "Mara opens the spillway, so the village road floods."
+        },
+        {
+          "alias": "S1",
+          "text": "Ivo, not Mara, opens the spillway; the village road remains dry."
+        }
+      ],
+      "draft": {
+        "kind": "event",
+        "question": "Whose choice causes the village road to flood?",
+        "answer": "Mara",
+        "wiki_alias": "W1",
+        "wiki_quote": "Mara opens the spillway, so the village road floods.",
+        "script_alias": "S1",
+        "script_quote": "Ivo, not Mara, opens the spillway; the village road remains dry.",
+        "options": [
+          "Mara",
+          "Ivo",
+          "the mayor",
+          "the travelers"
+        ],
+        "correct_index": 0
+      }
+    },
+    {
+      "id": "narrative-development-wrong-cause",
+      "mode": "quiz",
+      "expected_accept": false,
+      "label_reason": "The answer appears in the evidence but does not satisfy the causal relation.",
+      "evidence": [
+        {
+          "alias": "W1",
+          "text": "Mara carries a lantern, but the storm forces her to leave the village."
+        },
+        {
+          "alias": "S1",
+          "text": "Because of the storm, Mara leaves while carrying a lantern for light."
+        }
+      ],
+      "draft": {
+        "kind": "event",
+        "question": "What forces Mara to leave the village?",
+        "answer": "a lantern",
+        "wiki_alias": "W1",
+        "wiki_quote": "Mara carries a lantern, but the storm forces her to leave the village.",
+        "script_alias": "S1",
+        "script_quote": "Because of the storm, Mara leaves while carrying a lantern for light.",
+        "options": [
+          "a lantern",
+          "the storm",
+          "a letter",
+          "a ceremony"
+        ],
+        "correct_index": 0
+      }
+    },
+    {
+      "id": "narrative-development-ambiguous",
+      "mode": "quiz",
+      "expected_accept": false,
+      "label_reason": "Two options are supported, so the item is not uniquely scorable.",
+      "evidence": [
+        {
+          "alias": "W1",
+          "text": "Mara chooses both the river path and the forest path as safe escape routes."
+        },
+        {
+          "alias": "S1",
+          "text": "Mara marks the river path and the forest path as two safe ways out."
+        }
+      ],
+      "draft": {
+        "kind": "event",
+        "question": "Which path does Mara choose as a safe escape route?",
+        "answer": "the river path",
+        "wiki_alias": "W1",
+        "wiki_quote": "Mara chooses both the river path and the forest path as safe escape routes.",
+        "script_alias": "S1",
+        "script_quote": "Mara marks the river path and the forest path as two safe ways out.",
+        "options": [
+          "the river path",
+          "the forest path",
+          "the desert path",
+          "the tunnel"
+        ],
+        "correct_index": 0
+      }
+    }
+  ]
+}

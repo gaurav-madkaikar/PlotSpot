@@ -1,0 +1,47 @@
+{
+  "policy": "plotspot-direct-first-cascade-v1",
+  "frozen_at": "2026-10-17T00:00:00+05:30",
+  "dataset": "evals/movie-rag/orchestration-benchmark/holdout-v2-cascade.json",
+  "dataset_sha256": "512a6df26f0afc5d2ff31c08b7b08744bbc5216083fe0aee10e1cce70e65e9b4",
+  "development_evidence": "Trigger choices use only the already consumed v1 comparison. The v2 holdout was frozen before this policy was implemented or executed.",
+  "arms": {
+    "direct": "One hybrid retrieval and grounded llama3.2:3b answer without support review.",
+    "specialist": "The existing context recovery plus qwen3.5:9b support-review pipeline.",
+    "cascade": "Run direct first. Run the unchanged specialist arm only when one of the frozen deterministic triggers fires; otherwise return direct."
+  },
+  "fallback_triggers_in_order": [
+    "direct_generation_or_validation_error",
+    "direct_invalid_response",
+    "direct_insufficient_evidence",
+    "requested_time_unit_missing_from_answer",
+    "generic_location_answer"
+  ],
+  "generic_location_answers": [
+    "another country",
+    "another place",
+    "a place",
+    "somewhere",
+    "a location",
+    "the location",
+    "the area"
+  ],
+  "primary_metrics": [
+    "automated pass count over all 30 cases",
+    "answerable pass count over 22 cases",
+    "missing-evidence pass count over 8 controls"
+  ],
+  "cost_metrics": [
+    "fallback count and reason",
+    "median and p95 end-to-end latency",
+    "chat and embedding calls",
+    "reported prompt and output tokens"
+  ],
+  "decision_rule": "Adopt the cascade only if it has no fewer automated passes than direct, preserves all direct missing-evidence passes, and uses fewer chat calls than always-specialist. A quality tie is reported as a cost tradeoff, not an improvement.",
+  "analysis_rules": [
+    "No trigger, threshold, label, source snapshot, prompt, model or retrieval setting may be changed after seeing v2 outcomes.",
+    "Cascade cost is the sum of direct and specialist measurements on fallback cases because production would run them sequentially.",
+    "The same frozen direct and specialist outputs may be composed into the cascade because the trigger reads only direct output and fixed traces.",
+    "Report paired per-case outcomes and limitations; do not claim statistical significance from 30 cases.",
+    "Do not use this v2 holdout again to tune a v2 policy."
+  ]
+}

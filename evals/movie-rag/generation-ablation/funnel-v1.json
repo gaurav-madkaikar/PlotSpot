@@ -1,0 +1,229 @@
+{
+  "policy": "plotspot-generation-orchestration-ablation-v1",
+  "input_movies": 20,
+  "inputs": [
+    {
+      "path": "/Users/gmadkaik/Documents/ai-projects/movie-companion/.cache/expanded20/reviews/approved-final-v3/13-423740447f004863b8cd55cdd1c9fdb0.json",
+      "sha256": "7a8e16759183a8d74693bec883b1c5e32665ddb08c38e8828a74e691b5113780",
+      "movie_id": 13,
+      "report_sha256": "af79a97fa93a4011a78ac6693e6b33100e270e263fdb5b8b55cf34d054474705",
+      "candidates": 40
+    },
+    {
+      "path": "/Users/gmadkaik/Documents/ai-projects/movie-companion/.cache/expanded20/reviews/approved-final-v3/129-a97564d0da894d6790028e011bf162a5.json",
+      "sha256": "35a470aed1d12cb89d427d74f1a5db32c3f429ceb6c4bdf1c5cf6fdf08dc3efb",
+      "movie_id": 129,
+      "report_sha256": "81a54b3193887674457e5d9ce97990db615fd306bdf43ca0169bafa5352dc8bf",
+      "candidates": 8
+    },
+    {
+      "path": "/Users/gmadkaik/Documents/ai-projects/movie-companion/.cache/expanded20/reviews/approved-final-v3/155-f559e8b9817d4eb585d31d185c601424.json",
+      "sha256": "84efb399349c7f36b167f205e123df1b1c966e0295c55edc040823a61670001e",
+      "movie_id": 155,
+      "report_sha256": "0f912eff8e2ae46aa1fa3d0ba9eb805bf262193173a06170956bbab735312eb7",
+      "candidates": 21
+    },
+    {
+      "path": "/Users/gmadkaik/Documents/ai-projects/movie-companion/.cache/expanded20/reviews/approved-final-v3/238-b2fb98bba6e14e91b72348386d99f65c.json",
+      "sha256": "1c09ca0a81cb945e720c2bfe3acfcbd238b201ba4b443f5035fc438683c4523c",
+      "movie_id": 238,
+      "report_sha256": "f19a22af63a65304329426b4c30834f4908f39b0e8fdd8d9f11e1d36fbf8d947",
+      "candidates": 48
+    },
+    {
+      "path": "/Users/gmadkaik/Documents/ai-projects/movie-companion/.cache/expanded20/reviews/approved-final-v3/278-4630dcebf37c4363848ae6a4c8accebf.json",
+      "sha256": "31c9649169ad624d36aa9e9c773d2ba75d2d717165cd6c99b1301b8963ab9b5f",
+      "movie_id": 278,
+      "report_sha256": "6e44ddc9c21e4d8324d444a750a2b076b335fdb0f9d1d6d5ff386d1646ac5f0b",
+      "candidates": 57
+    },
+    {
+      "path": "/Users/gmadkaik/Documents/ai-projects/movie-companion/.cache/expanded20/reviews/approved-final-v3/550-e783e7f83fe04310a20b203d66aebdc6.json",
+      "sha256": "67f6487bdd7e2ce62179ff20cf75873677d502bfe6bae8508ae1f87c2d8c3fc2",
+      "movie_id": 550,
+      "report_sha256": "781e42ff67347dd9e283b5afb7c17133c92c141f2741ad4c158fbfa6b8cd650d",
+      "candidates": 63
+    },
+    {
+      "path": "/Users/gmadkaik/Documents/ai-projects/movie-companion/.cache/expanded20/reviews/approved-final-v3/603-39ceaa5645524736bc7629bfeeb43a25.json",
+      "sha256": "fca4b8a77b260e73dd5cdd64bb639a7933b4683ba538f5214fca2b204d21e671",
+      "movie_id": 603,
+      "report_sha256": "83fda977a2fff7b44dcc63eeff02f14c0ac55e6df4597d53533bfc339d0e115b",
+      "candidates": 6
+    },
+    {
+      "path": "/Users/gmadkaik/Documents/ai-projects/movie-companion/.cache/expanded20/reviews/approved-final-v3/680-86a3da84985e420da7f4c51b4ec76a8c.json",
+      "sha256": "5a8ac4f447e7024abc800535af9b417dc5543a0253dbca90c23b690b3e43c0db",
+      "movie_id": 680,
+      "report_sha256": "de168d8ca971938c2cbba1b6d0ce177ffd96fdb441a199d720ae63e4cfcfee23",
+      "candidates": 31
+    },
+    {
+      "path": "/Users/gmadkaik/Documents/ai-projects/movie-companion/.cache/expanded20/reviews/approved-final-v3/1124-6bd2d9de6c134dd68bf190d01a69edeb.json",
+      "sha256": "383dd0eced714cfd0536395cdd0e911f2ecc357c024bc4d0025f4f44d30be26c",
+      "movie_id": 1124,
+      "report_sha256": "92a4f438fd900b1fdfcdd7eda3a2cd8cc4b73eb97fb99add26a1be73f07e5551",
+      "candidates": 27
+    },
+    {
+      "path": "/Users/gmadkaik/Documents/ai-projects/movie-companion/.cache/expanded20/reviews/approved-final-v3/8587-b4c4933bed484ae49f7c229e76c42dc3.json",
+      "sha256": "2cdb12ab663e5993058392701c1292bd31d94acbee42c7a7dbf2e09075b0b30c",
+      "movie_id": 8587,
+      "report_sha256": "539eb2208428225a30ed2ed0e1ea8dba3b8d653e21dde9f493b2705abdb44914",
+      "candidates": 56
+    },
+    {
+      "path": "/Users/gmadkaik/Documents/ai-projects/movie-companion/.cache/expanded20/reviews/approved-final-v3/10681-a7b58936b8bc41688280384eaa30d055.json",
+      "sha256": "38d4b9f2a18167810c2794af36ff55883dd339223071728688c678d3b0e59a95",
+      "movie_id": 10681,
+      "report_sha256": "0ed7f3a5194328dcd66c7bcb98cebe1809ea56644b2904d3effc315f79c194df",
+      "candidates": 28
+    },
+    {
+      "path": "/Users/gmadkaik/Documents/ai-projects/movie-companion/.cache/expanded20/reviews/approved-final-v3/27205-09ee095c837e417d99d394a1ffa77910.json",
+      "sha256": "baf7210bcb78956510bdbcad5169386ebf909247ac4703218ba14a40be29b846",
+      "movie_id": 27205,
+      "report_sha256": "7797547e4e5a22ec62eea35d5a4e7525aff30fb7aea7bf752ec3ea2c8224eca9",
+      "candidates": 4
+    },
+    {
+      "path": "/Users/gmadkaik/Documents/ai-projects/movie-companion/.cache/expanded20/reviews/approved-final-v3/37165-0f201d0320a948c9aa35d158bc9fc2ec.json",
+      "sha256": "aaa3ba7ddb3cd4ec6aa369200e2a1810cd4fbaf18f3c38b5e400444103fdb886",
+      "movie_id": 37165,
+      "report_sha256": "d25930f8e9d132dc1793ee7fb695cef7cc4e70ca8a3108f0dc93d251f74fa5a1",
+      "candidates": 4
+    },
+    {
+      "path": "/Users/gmadkaik/Documents/ai-projects/movie-companion/.cache/expanded20/reviews/approved-final-v3/76341-600f039b5e2b44359f335f4ed4219f1d.json",
+      "sha256": "01f5c2aa083ab303dad6bb0525d1027e19209fc8651b14c49e5fba64c41325bd",
+      "movie_id": 76341,
+      "report_sha256": "bee2fe4ebba28e3fb02f5b145dad805c232030bc3af742e1b06fb9b30f35175c",
+      "candidates": 93
+    },
+    {
+      "path": "/Users/gmadkaik/Documents/ai-projects/movie-companion/.cache/expanded20/reviews/approved-final-v3/120467-a342008a26db486d9a950d469d89f2c5.json",
+      "sha256": "fbbf185dff942e0c870e4d377e1f2089e76a65ce9ac15d889182c06966311e02",
+      "movie_id": 120467,
+      "report_sha256": "c6bcb1b9717042778c65273b96427e19e0fb16107b5ab7cca711e52f140ebfe2",
+      "candidates": 8
+    },
+    {
+      "path": "/Users/gmadkaik/Documents/ai-projects/movie-companion/.cache/expanded20/reviews/approved-final-v3/157336-929a1780662943aeaf5a88258ce6ba27.json",
+      "sha256": "12128d5d17b38d9625f93962ad444b9f2c3f675c4f7097e3ad610b5e030c96df",
+      "movie_id": 157336,
+      "report_sha256": "24575f90d238f7b45affeae0bd6d6391d802bdde97c2afcda4943c08162995d1",
+      "candidates": 6
+    },
+    {
+      "path": "/Users/gmadkaik/Documents/ai-projects/movie-companion/.cache/expanded20/reviews/approved-final-v3/329865-e35d6fd375544fcca593b9c219c3bdd6.json",
+      "sha256": "9372fc6fe6d6b8fe02bb256a4aa59589637482223f4ae3e74284c2677aa1bc7b",
+      "movie_id": 329865,
+      "report_sha256": "6bd600c2cc23ce1f747fc4c78e8ac7321a61972ebd3d79ad71492eee00462c53",
+      "candidates": 7
+    },
+    {
+      "path": "/Users/gmadkaik/Documents/ai-projects/movie-companion/.cache/expanded20/reviews/approved-final-v3/438631-419b709b44ef45eb95be0f0bbb37f3c4.json",
+      "sha256": "11580aeeea6a882445932effdd1204bce0bfc8322ca46bac60064efc0e563e68",
+      "movie_id": 438631,
+      "report_sha256": "947d1dd5083a438e62c9c8a2ecbe5a6790a27cc51443eba7a157e4f7a9f31656",
+      "candidates": 5
+    },
+    {
+      "path": "/Users/gmadkaik/Documents/ai-projects/movie-companion/.cache/expanded20/reviews/approved-final-v3/496243-d0ef19fec3ad413d977c47a02aa4d7ff.json",
+      "sha256": "9911fe607b86e3d1ba3cac291cd2ad863112d5c0c35345628b632ab3c86f8682",
+      "movie_id": 496243,
+      "report_sha256": "9cf48fb4480c7f43793f1fe1cb3fcf718ba3ddc85fad629766fecffa4737d95e",
+      "candidates": 4
+    },
+    {
+      "path": "/Users/gmadkaik/Documents/ai-projects/movie-companion/.cache/expanded20/reviews/approved-final-v3/546554-15f18152719f4da3bbd58179b625b723.json",
+      "sha256": "1dd001b58d99ad347f32fd418341bfe7edd17c73ecd3ba49a512d51076155508",
+      "movie_id": 546554,
+      "report_sha256": "035f609d47c69adb84edadc5e9cf76da91a5ae5bd8d6b4a0ef5b60fb8c9c37bb",
+      "candidates": 8
+    }
+  ],
+  "comparison": {
+    "direct_writer": {
+      "outputs_requiring_review": 524,
+      "known_published_items_present": 155
+    },
+    "writer_plus_critic": {
+      "outputs_requiring_review": 484,
+      "known_published_items_present": 155
+    },
+    "writer_plus_critic_and_readiness": {
+      "outputs_requiring_review": 185,
+      "known_published_items_present": 155
+    }
+  },
+  "overall": {
+    "writer_candidates": 524,
+    "critic_accepted": 484,
+    "specialist_ready": 185,
+    "reviewed_published": 155,
+    "critic_reduction_percent": 7.6,
+    "full_pipeline_workload_reduction_percent": 64.7,
+    "readiness_reduction_after_critic_percent": 61.8,
+    "published_conversion_from_writer_percent": 29.6,
+    "published_conversion_from_ready_percent": 83.8,
+    "reviewed_published_retained_by_critic": 155,
+    "reviewed_published_retained_by_readiness": 155,
+    "critic_decisions": {
+      "accept": 484,
+      "reject": 22,
+      "uncertain": 18
+    },
+    "ready_not_published": 30
+  },
+  "by_kind": {
+    "fact": {
+      "writer_candidates": 146,
+      "critic_accepted": 122,
+      "specialist_ready": 68,
+      "reviewed_published": 54,
+      "critic_reduction_percent": 16.4,
+      "full_pipeline_workload_reduction_percent": 53.4,
+      "readiness_reduction_after_critic_percent": 44.3,
+      "published_conversion_from_writer_percent": 37.0,
+      "published_conversion_from_ready_percent": 79.4,
+      "reviewed_published_retained_by_critic": 54,
+      "reviewed_published_retained_by_readiness": 54,
+      "critic_decisions": {
+        "accept": 122,
+        "reject": 9,
+        "uncertain": 15
+      },
+      "ready_not_published": 14
+    },
+    "question": {
+      "writer_candidates": 378,
+      "critic_accepted": 362,
+      "specialist_ready": 117,
+      "reviewed_published": 101,
+      "critic_reduction_percent": 4.2,
+      "full_pipeline_workload_reduction_percent": 69.0,
+      "readiness_reduction_after_critic_percent": 67.7,
+      "published_conversion_from_writer_percent": 26.7,
+      "published_conversion_from_ready_percent": 86.3,
+      "reviewed_published_retained_by_critic": 101,
+      "reviewed_published_retained_by_readiness": 101,
+      "critic_decisions": {
+        "accept": 362,
+        "reject": 13,
+        "uncertain": 3
+      },
+      "ready_not_published": 16
+    }
+  },
+  "publication": false,
+  "interpretation": "The full specialist pipeline substantially reduced candidate-review workload while retaining every candidate later selected for reviewed publication. The critic alone contributed little reduction; readiness, novelty and corroboration gates did most of the filtering.",
+  "limitations": [
+    "Reviewed publication selection is a high-confidence positive set, not a complete good/bad label for every unselected candidate.",
+    "Published conversion is not semantic precision because valid candidates may be omitted for capacity or topic overlap.",
+    "The arms reuse the same writer candidates; this isolates downstream filtering rather than comparing two independent generations.",
+    "Historical per-call latency and token totals are not comparable across the durable jobs and are excluded.",
+    "Assistant source review is not independent human annotation; a blinded candidate review remains required for semantic quality."
+  ],
+  "created_at": "2026-10-17T09:22:56.984508+00:00"
+}

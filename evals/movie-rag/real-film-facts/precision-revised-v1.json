@@ -1,0 +1,813 @@
+{
+  "dataset_sha256": "9bba11937d8d7a37005d86adac22688ac4216dae0387be8454ed1d73e4bb3c1d",
+  "sources": [
+    {
+      "movie_id": 496243,
+      "snapshot_sha256": "68e96d2fdde06b5935c8277469603695d0f3cdb2820779c939cf7c01b3dae9ed",
+      "revision": "enwiki-1377908085-sections-v3-body",
+      "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1377908085"
+    },
+    {
+      "movie_id": 129,
+      "snapshot_sha256": "601fbdba987f2ec6cb8f280c0db0cad6d4cea99521011722100a37264e2866bc",
+      "revision": "enwiki-1378275530-sections-v3-body",
+      "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1378275530"
+    },
+    {
+      "movie_id": 120467,
+      "snapshot_sha256": "b1cadb7f2ce7907f4c1935f76603bb95bc9e763baa6032a06a4a49629f10e0d8",
+      "revision": "enwiki-1379203663-sections-v3-body",
+      "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379203663"
+    },
+    {
+      "movie_id": 438631,
+      "snapshot_sha256": "e814e197dccfc2a22e21ab9906cbce4e8d77430fe6fcc2c4f784752a9448b7c4",
+      "revision": "enwiki-1379707655-sections-v3-body",
+      "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379707655"
+    },
+    {
+      "movie_id": 546554,
+      "snapshot_sha256": "6c714663f2370b9ca1bdd5a1dc7899c9f2ac90f8776b1d39b63edbc0d07100bd",
+      "revision": "enwiki-1378593030-sections-v3-body",
+      "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1378593030"
+    },
+    {
+      "movie_id": 37165,
+      "snapshot_sha256": "004d0225b0fcefcb6fbc5fc15889dc6a553e906da6e6b962406c1cfca5aa7041",
+      "revision": "enwiki-1378575188-sections-v3-body",
+      "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1378575188"
+    }
+  ],
+  "background_policy_sha256": "bd34039a65efe9a423b7563f1527a645946ea59083f182ab163e5e3bb4351547",
+  "runner_sha256": "6f19003eee6b3038b39e4dae099fddae9cd8ae1cda85c11ed4f26f7631f3d3ab",
+  "model": "qwen3.5:9b",
+  "model_digest": "6488c96fa5faab64bb65cbd30d4289e20e6130ef535a93ef9a49f42eda893ea7",
+  "mode": "challenge-and-generation",
+  "publication_approved": false,
+  "state": "running",
+  "limitations": "Fresh assistant-authored real-film challenge labels frozen before the first run; consumed development evidence after inference, not independent external annotations. Short Wikipedia production excerpts, not full retrieval, publisher reliability, prompt-injection coverage or catalog-wide generation accuracy. Generated proposals are unlabelled observations requiring separate inspection. No publication permissions.",
+  "quality": {
+    "dataset_version": "real-film-fact-precision-v1",
+    "dataset_sha256": "801d3b27f09fedb86b7b8a2706e135c8b6859e7c223168170400dda97c652b1a",
+    "partition": "development",
+    "model": "qwen3.5:9b",
+    "model_digest": "6488c96fa5faab64bb65cbd30d4289e20e6130ef535a93ef9a49f42eda893ea7",
+    "critic_policy_version": "background-precision-critic-v1",
+    "critic_implementation_sha256": "d9be0e07d22d1413c4e3ee8a0e4f1140a6d3af01e7814c8bc8a4bb0582b3c745",
+    "generation_settings": {
+      "temperature": 0,
+      "seed": 7,
+      "num_predict": 1800,
+      "think": false
+    },
+    "state": "complete",
+    "cases": [
+      {
+        "case_id": "precision-496243:F1",
+        "expected": "accept",
+        "category": "useful-supported",
+        "actual": "reject",
+        "reason": "The proposal text 'An edit assembled from multiple takes' and 'joined different takes of the same shot' aligns with the evidence quote's mention of 'stitched together different takes'. However, the qualifier 'sometimes' in the source is contradicted by the proposal's definitive phrasing which implies a general practice without frequency limitation. The content is generic production detail.",
+        "matched": false,
+        "assessment": {
+          "item_id": "F1",
+          "entities": "supported",
+          "wording": "supported",
+          "qualifiers": "contradicted_or_exceeds",
+          "quote": "supported",
+          "content": "duplicate_or_uninteresting",
+          "reason": "The proposal text 'An edit assembled from multiple takes' and 'joined different takes of the same shot' aligns with the evidence quote's mention of 'stitched together different takes'. However, the qualifier 'sometimes' in the source is contradicted by the proposal's definitive phrasing which implies a general practice without frequency limitation. The content is generic production detail."
+        }
+      },
+      {
+        "case_id": "precision-496243:F2",
+        "expected": "reject",
+        "category": "stronger-qualifier",
+        "actual": "reject",
+        "reason": "The proposal changes the source's 'sometimes' to 'always', which is a stronger qualifier not supported by the text. The entity and wording regarding joining takes are consistent, but the frequency claim exceeds the source. Content remains generic.",
+        "matched": true,
+        "assessment": {
+          "item_id": "F2",
+          "entities": "supported",
+          "wording": "contradicted_or_exceeds",
+          "qualifiers": "contradicted_or_exceeds",
+          "quote": "supported",
+          "content": "duplicate_or_uninteresting",
+          "reason": "The proposal changes the source's 'sometimes' to 'always', which is a stronger qualifier not supported by the text. The entity and wording regarding joining takes are consistent, but the frequency claim exceeds the source. Content remains generic."
+        }
+      },
+      {
+        "case_id": "precision-496243:F3",
+        "expected": "uncertain",
+        "category": "missing-full-name",
+        "actual": "reject",
+        "reason": "The proposal accurately reflects the source's statement that 'Bong chose to shoot the film without traditional coverage'. All qualifiers, entities, and wording match the evidence. Content is generic production detail.",
+        "matched": false,
+        "assessment": {
+          "item_id": "F3",
+          "entities": "supported",
+          "wording": "supported",
+          "qualifiers": "supported",
+          "quote": "supported",
+          "content": "duplicate_or_uninteresting",
+          "reason": "The proposal accurately reflects the source's statement that 'Bong chose to shoot the film without traditional coverage'. All qualifiers, entities, and wording match the evidence. Content is generic production detail."
+        }
+      },
+      {
+        "case_id": "precision-129:F1",
+        "expected": "accept",
+        "category": "useful-supported",
+        "actual": "reject",
+        "reason": "The proposal accurately identifies the screenwriters (Cindy Davis Hewitt and Donald H. Hewitt), the action (writing English dialogue), the object (characters' original Japanese lip movements), and the causal link between them as stated in the source text. No invented identities or mechanisms are present.",
+        "matched": false,
+        "assessment": {
+          "item_id": "F1",
+          "entities": "supported",
+          "wording": "supported",
+          "qualifiers": "supported",
+          "quote": "supported",
+          "content": "plot_or_metadata",
+          "reason": "The proposal accurately identifies the screenwriters (Cindy Davis Hewitt and Donald H. Hewitt), the action (writing English dialogue), the object (characters' original Japanese lip movements), and the causal link between them as stated in the source text. No invented identities or mechanisms are present."
+        }
+      },
+      {
+        "case_id": "precision-129:F2",
+        "expected": "reject",
+        "category": "reversed-language",
+        "actual": "reject",
+        "reason": "The proposal claims the writers wrote the 'original Japanese dialogue' to match English lip movements. The source text explicitly states they penned the 'English-language dialogue' to match the 'original Japanese-language lip movements.' This reverses the direction of the action and attributes the creation of the original language (Japanese) to the English screenwriters, which contradicts the fact",
+        "matched": true,
+        "assessment": {
+          "item_id": "F2",
+          "entities": "contradicted_or_exceeds",
+          "wording": "contradicted_or_exceeds",
+          "qualifiers": "contradicted_or_exceeds",
+          "quote": "contradicted_or_exceeds",
+          "content": "plot_or_metadata",
+          "reason": "The proposal claims the writers wrote the 'original Japanese dialogue' to match English lip movements. The source text explicitly states they penned the 'English-language dialogue' to match the 'original Japanese-language lip movements.' This reverses the direction of the action and attributes the creation of the original language (Japanese) to the English screenwriters, which contradicts the fact"
+        }
+      },
+      {
+        "case_id": "precision-129:F3",
+        "expected": "reject",
+        "category": "changed-object",
+        "actual": "reject",
+        "reason": "The proposal claims the writers 'composed the English soundtrack.' The source text identifies them as 'Screenwriters' who penned 'dialogue,' not a soundtrack. This invents a different object (soundtrack vs dialogue) and a different action (composing music vs writing dialogue), contradicting the supported fact.",
+        "matched": true,
+        "assessment": {
+          "item_id": "F3",
+          "entities": "contradicted_or_exceeds",
+          "wording": "contradicted_or_exceeds",
+          "qualifiers": "contradicted_or_exceeds",
+          "quote": "contradicted_or_exceeds",
+          "content": "plot_or_metadata",
+          "reason": "The proposal claims the writers 'composed the English soundtrack.' The source text identifies them as 'Screenwriters' who penned 'dialogue,' not a soundtrack. This invents a different object (soundtrack vs dialogue) and a different action (composing music vs writing dialogue), contradicting the supported fact."
+        }
+      },
+      {
+        "case_id": "precision-120467:F1",
+        "expected": "accept",
+        "category": "useful-supported",
+        "actual": "reject",
+        "reason": "The proposal claims costumes were drawn from 'photographs and paintings'. The evidence quote supports the inclusion of both photographers (Hurrell, Man Ray) and painters (van Dongen, Klimt, etc.), confirming the mix of media. However, the qualifier 'drawn from' implies a direct derivation which is slightly stronger than 'researched', but acceptable as a synonym for using sources. The main issue is",
+        "matched": false,
+        "assessment": {
+          "item_id": "F1",
+          "entities": "supported",
+          "wording": "supported",
+          "qualifiers": "contradicted_or_exceeds",
+          "quote": "supported",
+          "content": "duplicate_or_uninteresting",
+          "reason": "The proposal claims costumes were drawn from 'photographs and paintings'. The evidence quote supports the inclusion of both photographers (Hurrell, Man Ray) and painters (van Dongen, Klimt, etc.), confirming the mix of media. However, the qualifier 'drawn from' implies a direct derivation which is slightly stronger than 'researched', but acceptable as a synonym for using sources. The main issue is"
+        }
+      },
+      {
+        "case_id": "precision-120467:F2",
+        "expected": "uncertain",
+        "category": "missing-full-name",
+        "actual": "reject",
+        "reason": "The proposal lists Man Ray and Gustav Klimt as researched subjects. The evidence quote explicitly names these two artists among others (Hurrell, van Dongen, Grosz, de Lempicka). The wording 'researched 1930s uniforms and artworks' matches the source text's 'researched 1930s uniform design and period artwork'. This is a faithful subset. However, it omits George Hurrell and Kees van Dongen who are '",
+        "matched": false,
+        "assessment": {
+          "item_id": "F2",
+          "entities": "supported",
+          "wording": "supported",
+          "qualifiers": "contradicted_or_exceeds",
+          "quote": "supported",
+          "content": "duplicate_or_uninteresting",
+          "reason": "The proposal lists Man Ray and Gustav Klimt as researched subjects. The evidence quote explicitly names these two artists among others (Hurrell, van Dongen, Grosz, de Lempicka). The wording 'researched 1930s uniforms and artworks' matches the source text's 'researched 1930s uniform design and period artwork'. This is a faithful subset. However, it omits George Hurrell and Kees van Dongen who are '"
+        }
+      },
+      {
+        "case_id": "precision-120467:F3",
+        "expected": "reject",
+        "category": "unsupported-exclusivity",
+        "actual": "reject",
+        "reason": "The proposal claims photographs were the 'only' research source. The evidence quote explicitly lists painters (Kees van Dongen, Gustav Klimt, George Grosz, Tamara de Lempicka) alongside photographers. This directly contradicts the claim of 'only' photographs. The qualifier 'used... as the only' is an invented restriction not supported by the text which shows a mix of sources. The quote does not '",
+        "matched": true,
+        "assessment": {
+          "item_id": "F3",
+          "entities": "contradicted_or_exceeds",
+          "wording": "contradicted_or_exceeds",
+          "qualifiers": "contradicted_or_exceeds",
+          "quote": "insufficient_context",
+          "content": "duplicate_or_uninteresting",
+          "reason": "The proposal claims photographs were the 'only' research source. The evidence quote explicitly lists painters (Kees van Dongen, Gustav Klimt, George Grosz, Tamara de Lempicka) alongside photographers. This directly contradicts the claim of 'only' photographs. The qualifier 'used... as the only' is an invented restriction not supported by the text which shows a mix of sources. The quote does not '"
+        }
+      },
+      {
+        "case_id": "precision-438631:F1",
+        "expected": "accept",
+        "category": "useful-supported",
+        "actual": "reject",
+        "reason": "The proposal text 'Dune used sandscreens...' is a faithful synonym of the source text regarding the use of sandscreens for brightness. The evidence quote supports this directly. No new entities or causes are invented. However, the content is generic production detail repeated from the source without specific craft nuance beyond the basic fact.",
+        "matched": false,
+        "assessment": {
+          "item_id": "F1",
+          "entities": "insufficient_context",
+          "wording": "supported",
+          "qualifiers": "supported",
+          "quote": "supported",
+          "content": "duplicate_or_uninteresting",
+          "reason": "The proposal text 'Dune used sandscreens...' is a faithful synonym of the source text regarding the use of sandscreens for brightness. The evidence quote supports this directly. No new entities or causes are invented. However, the content is generic production detail repeated from the source without specific craft nuance beyond the basic fact."
+        }
+      },
+      {
+        "case_id": "precision-438631:F2",
+        "expected": "reject",
+        "category": "invented-material",
+        "actual": "reject",
+        "reason": "The proposal claims the crew built sandscreens 'from real desert sand'. The source text and evidence quote only state that sandscreens were used to simulate luminance; they do not specify the material composition (real sand vs. other materials). This invented detail about the material constitutes an exceed/contradiction of the supported fact. Additionally, the quote does not support the specific '",
+        "matched": true,
+        "assessment": {
+          "item_id": "F2",
+          "entities": "contradicted_or_exceeds",
+          "wording": "contradicted_or_exceeds",
+          "qualifiers": "contradicted_or_exceeds",
+          "quote": "insufficient_context",
+          "content": "duplicate_or_uninteresting",
+          "reason": "The proposal claims the crew built sandscreens 'from real desert sand'. The source text and evidence quote only state that sandscreens were used to simulate luminance; they do not specify the material composition (real sand vs. other materials). This invented detail about the material constitutes an exceed/contradiction of the supported fact. Additionally, the quote does not support the specific '"
+        }
+      },
+      {
+        "case_id": "precision-438631:F3",
+        "expected": "uncertain",
+        "category": "missing-person",
+        "actual": "reject",
+        "reason": "The proposal attributes the action to 'Cinematographer Greig Fraser'. The source text and evidence quote mention no specific person, only that 'Sandscreens' were used. Introducing a specific named entity (Greig Fraser) and his role is an invented identity not supported by the provided text. Therefore, entities are insufficient_context (or contradicted if external knowledge implies he didn't do it,",
+        "matched": false,
+        "assessment": {
+          "item_id": "F3",
+          "entities": "insufficient_context",
+          "wording": "contradicted_or_exceeds",
+          "qualifiers": "supported",
+          "quote": "insufficient_context",
+          "content": "duplicate_or_uninteresting",
+          "reason": "The proposal attributes the action to 'Cinematographer Greig Fraser'. The source text and evidence quote mention no specific person, only that 'Sandscreens' were used. Introducing a specific named entity (Greig Fraser) and his role is an invented identity not supported by the provided text. Therefore, entities are insufficient_context (or contradicted if external knowledge implies he didn't do it,"
+        }
+      },
+      {
+        "case_id": "precision-546554:F1",
+        "expected": "accept",
+        "category": "useful-supported",
+        "actual": "reject",
+        "reason": "The proposal claims specific musicians (Joni Mitchell, Steely Dan's Donald Fagen) were used to make names easier to remember. The evidence quote supports the entity and wording but contradicts the qualifier 'to make the names easier to remember' because the source explicitly states it was a 'simple practice to remember,' which is a different causal mechanism than making roles in the story easier. ",
+        "matched": false,
+        "assessment": {
+          "item_id": "F1",
+          "entities": "supported",
+          "wording": "supported",
+          "qualifiers": "contradicted_or_exceeds",
+          "quote": "supported",
+          "content": "duplicate_or_uninteresting",
+          "reason": "The proposal claims specific musicians (Joni Mitchell, Steely Dan's Donald Fagen) were used to make names easier to remember. The evidence quote supports the entity and wording but contradicts the qualifier 'to make the names easier to remember' because the source explicitly states it was a 'simple practice to remember,' which is a different causal mechanism than making roles in the story easier. "
+        }
+      },
+      {
+        "case_id": "precision-546554:F2",
+        "expected": "reject",
+        "category": "changed-object",
+        "actual": "reject",
+        "reason": "The proposal claims characters were named after musicians to make their 'roles in the story' easier to remember. The evidence quote states it was a 'simple practice to remember,' not specifically for roles in the story, contradicting the wording and qualifier. ",
+        "matched": true,
+        "assessment": {
+          "item_id": "F2",
+          "entities": "supported",
+          "wording": "contradicted_or_exceeds",
+          "qualifiers": "contradicted_or_exceeds",
+          "quote": "supported",
+          "content": "duplicate_or_uninteresting",
+          "reason": "The proposal claims characters were named after musicians to make their 'roles in the story' easier to remember. The evidence quote states it was a 'simple practice to remember,' not specifically for roles in the story, contradicting the wording and qualifier. "
+        }
+      },
+      {
+        "case_id": "precision-546554:F3",
+        "expected": "uncertain",
+        "category": "missing-full-name",
+        "actual": "reject",
+        "reason": "The proposal accurately reflects the source text: Rian Johnson named characters after musicians he enjoyed to make names easier to remember. The evidence quote supports all aspects including entities, wording, qualifiers, and quote. ",
+        "matched": false,
+        "assessment": {
+          "item_id": "F3",
+          "entities": "supported",
+          "wording": "supported",
+          "qualifiers": "supported",
+          "quote": "supported",
+          "content": "duplicate_or_uninteresting",
+          "reason": "The proposal accurately reflects the source text: Rian Johnson named characters after musicians he enjoyed to make names easier to remember. The evidence quote supports all aspects including entities, wording, qualifiers, and quote. "
+        }
+      },
+      {
+        "case_id": "precision-37165:F1",
+        "expected": "accept",
+        "category": "useful-supported",
+        "actual": "error",
+        "reason": "No valid judgement returned.",
+        "matched": false
+      },
+      {
+        "case_id": "precision-37165:F2",
+        "expected": "reject",
+        "category": "invented-cause",
+        "actual": "error",
+        "reason": "No valid judgement returned.",
+        "matched": false
+      },
+      {
+        "case_id": "precision-37165:F3",
+        "expected": "reject",
+        "category": "stronger-qualifier",
+        "actual": "error",
+        "reason": "No valid judgement returned.",
+        "matched": false
+      }
+    ],
+    "batches": [
+      {
+        "batch_id": "precision-496243",
+        "elapsed_seconds": 27.39,
+        "error_type": null
+      },
+      {
+        "batch_id": "precision-129",
+        "elapsed_seconds": 30.5,
+        "error_type": null
+      },
+      {
+        "batch_id": "precision-120467",
+        "elapsed_seconds": 37.29,
+        "error_type": null
+      },
+      {
+        "batch_id": "precision-438631",
+        "elapsed_seconds": 37.34,
+        "error_type": null
+      },
+      {
+        "batch_id": "precision-546554",
+        "elapsed_seconds": 29.28,
+        "error_type": null
+      },
+      {
+        "batch_id": "precision-37165",
+        "elapsed_seconds": 15.65,
+        "error_type": "ValueError"
+      }
+    ],
+    "planned_cases": 18,
+    "deadline_seconds": 300,
+    "limitations": "Fresh assistant-authored real-film challenge labels frozen before the first run; consumed development evidence after inference, not independent external annotations. Short Wikipedia production excerpts, not full retrieval, publisher reliability, prompt-injection coverage or catalog-wide generation accuracy. Generated proposals are unlabelled observations requiring separate inspection. No publication permissions.",
+    "metrics": {
+      "label_matches": {
+        "count": 6,
+        "total": 18
+      },
+      "useful_acceptance": {
+        "count": 0,
+        "total": 6
+      },
+      "false_acceptance": {
+        "count": 0,
+        "total": 12
+      },
+      "false_rejection": {
+        "count": 5,
+        "total": 6
+      },
+      "uncertain": {
+        "count": 0,
+        "total": 18
+      },
+      "errors": {
+        "count": 3,
+        "total": 18
+      }
+    },
+    "metrics_by_category": {
+      "changed-object": {
+        "label_matches": {
+          "count": 2,
+          "total": 2
+        },
+        "useful_acceptance": {
+          "count": 0,
+          "total": 0
+        },
+        "false_acceptance": {
+          "count": 0,
+          "total": 2
+        },
+        "false_rejection": {
+          "count": 0,
+          "total": 0
+        },
+        "uncertain": {
+          "count": 0,
+          "total": 2
+        },
+        "errors": {
+          "count": 0,
+          "total": 2
+        }
+      },
+      "invented-cause": {
+        "label_matches": {
+          "count": 0,
+          "total": 1
+        },
+        "useful_acceptance": {
+          "count": 0,
+          "total": 0
+        },
+        "false_acceptance": {
+          "count": 0,
+          "total": 1
+        },
+        "false_rejection": {
+          "count": 0,
+          "total": 0
+        },
+        "uncertain": {
+          "count": 0,
+          "total": 1
+        },
+        "errors": {
+          "count": 1,
+          "total": 1
+        }
+      },
+      "invented-material": {
+        "label_matches": {
+          "count": 1,
+          "total": 1
+        },
+        "useful_acceptance": {
+          "count": 0,
+          "total": 0
+        },
+        "false_acceptance": {
+          "count": 0,
+          "total": 1
+        },
+        "false_rejection": {
+          "count": 0,
+          "total": 0
+        },
+        "uncertain": {
+          "count": 0,
+          "total": 1
+        },
+        "errors": {
+          "count": 0,
+          "total": 1
+        }
+      },
+      "missing-full-name": {
+        "label_matches": {
+          "count": 0,
+          "total": 3
+        },
+        "useful_acceptance": {
+          "count": 0,
+          "total": 0
+        },
+        "false_acceptance": {
+          "count": 0,
+          "total": 3
+        },
+        "false_rejection": {
+          "count": 0,
+          "total": 0
+        },
+        "uncertain": {
+          "count": 0,
+          "total": 3
+        },
+        "errors": {
+          "count": 0,
+          "total": 3
+        }
+      },
+      "missing-person": {
+        "label_matches": {
+          "count": 0,
+          "total": 1
+        },
+        "useful_acceptance": {
+          "count": 0,
+          "total": 0
+        },
+        "false_acceptance": {
+          "count": 0,
+          "total": 1
+        },
+        "false_rejection": {
+          "count": 0,
+          "total": 0
+        },
+        "uncertain": {
+          "count": 0,
+          "total": 1
+        },
+        "errors": {
+          "count": 0,
+          "total": 1
+        }
+      },
+      "reversed-language": {
+        "label_matches": {
+          "count": 1,
+          "total": 1
+        },
+        "useful_acceptance": {
+          "count": 0,
+          "total": 0
+        },
+        "false_acceptance": {
+          "count": 0,
+          "total": 1
+        },
+        "false_rejection": {
+          "count": 0,
+          "total": 0
+        },
+        "uncertain": {
+          "count": 0,
+          "total": 1
+        },
+        "errors": {
+          "count": 0,
+          "total": 1
+        }
+      },
+      "stronger-qualifier": {
+        "label_matches": {
+          "count": 1,
+          "total": 2
+        },
+        "useful_acceptance": {
+          "count": 0,
+          "total": 0
+        },
+        "false_acceptance": {
+          "count": 0,
+          "total": 2
+        },
+        "false_rejection": {
+          "count": 0,
+          "total": 0
+        },
+        "uncertain": {
+          "count": 0,
+          "total": 2
+        },
+        "errors": {
+          "count": 1,
+          "total": 2
+        }
+      },
+      "unsupported-exclusivity": {
+        "label_matches": {
+          "count": 1,
+          "total": 1
+        },
+        "useful_acceptance": {
+          "count": 0,
+          "total": 0
+        },
+        "false_acceptance": {
+          "count": 0,
+          "total": 1
+        },
+        "false_rejection": {
+          "count": 0,
+          "total": 0
+        },
+        "uncertain": {
+          "count": 0,
+          "total": 1
+        },
+        "errors": {
+          "count": 0,
+          "total": 1
+        }
+      },
+      "useful-supported": {
+        "label_matches": {
+          "count": 0,
+          "total": 6
+        },
+        "useful_acceptance": {
+          "count": 0,
+          "total": 6
+        },
+        "false_acceptance": {
+          "count": 0,
+          "total": 0
+        },
+        "false_rejection": {
+          "count": 5,
+          "total": 6
+        },
+        "uncertain": {
+          "count": 0,
+          "total": 6
+        },
+        "errors": {
+          "count": 1,
+          "total": 6
+        }
+      }
+    },
+    "elapsed_seconds": 177.46
+  },
+  "generation": {
+    "state": "running",
+    "planned_movies": 6,
+    "movies": [
+      {
+        "movie_id": 496243,
+        "batch_id": "precision-496243",
+        "error_type": null,
+        "evidence": [
+          {
+            "passage_id": "P1",
+            "purpose": "background",
+            "text": "According to editor Yang Jin-mo, Bong chose to shoot the film without traditional coverage. To give them more editing options with limited shots, they sometimes stitched together different takes of the same shot.",
+            "origin": {
+              "movie_id": 496243,
+              "source_id": "enwiki-56746570",
+              "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1377908085",
+              "revision": "enwiki-1377908085-sections-v3-body",
+              "section_title": "Editing",
+              "section_category": "production",
+              "start": 15736,
+              "end": 15948
+            }
+          }
+        ],
+        "proposals": {
+          "facts": [
+            {
+              "title": "Editing Strategy",
+              "text": "Editor Yang Jin-mo stated director Bong chose to shoot without traditional coverage to gain more editing options with limited shots.",
+              "passage_id": "P1",
+              "evidence_quote": "According to editor Yang Jin-mo, Bong chose to shoot the film without traditional coverage."
+            },
+            {
+              "title": "Shot Construction",
+              "text": "To provide more editing options with limited shots, the crew sometimes stitched together different takes of the same shot.",
+              "passage_id": "P1",
+              "evidence_quote": "To give them more editing options with limited shots, they sometimes stitched together different takes of the same shot."
+            }
+          ],
+          "questions": []
+        },
+        "checks": [
+          {
+            "kind": "fact",
+            "index": 0,
+            "passage_id": "P1",
+            "support_checks_passed": true,
+            "problems": [],
+            "semantic_review_required": true
+          },
+          {
+            "kind": "fact",
+            "index": 1,
+            "passage_id": "P1",
+            "support_checks_passed": true,
+            "problems": [],
+            "semantic_review_required": true
+          }
+        ],
+        "decisions": [
+          {
+            "item_id": "F1",
+            "decision": "reject",
+            "reason": "The proposal text adds a specific motive ('gain more editing options') and outcome ('limited shots') that are present in the source text, but the source explicitly states 'To give them more editing options with limited shots' as the reason for stitching takes. The proposal claims this was done to 'gain more editing options', which matches the source's stated purpose. However, the qualifier check: ",
+            "assessment": {
+              "item_id": "F1",
+              "entities": "supported",
+              "wording": "supported",
+              "qualifiers": "contradicted_or_exceeds",
+              "quote": "supported",
+              "content": "duplicate_or_uninteresting",
+              "reason": "The proposal text adds a specific motive ('gain more editing options') and outcome ('limited shots') that are present in the source text, but the source explicitly states 'To give them more editing options with limited shots' as the reason for stitching takes. The proposal claims this was done to 'gain more editing options', which matches the source's stated purpose. However, the qualifier check: "
+            },
+            "problems": [],
+            "eligible_draft": false
+          },
+          {
+            "item_id": "F2",
+            "decision": "reject",
+            "reason": "The proposal text is a direct excerpt from the source text. All entities, wording, qualifiers, and quotes match exactly. The content is a specific production detail (stitching takes) but since it repeats the same topic as F1 without adding new craft/artistic reference beyond what's already in the source, it falls under duplicate_or_uninteresting.",
+            "assessment": {
+              "item_id": "F2",
+              "entities": "supported",
+              "wording": "supported",
+              "qualifiers": "supported",
+              "quote": "supported",
+              "content": "duplicate_or_uninteresting",
+              "reason": "The proposal text is a direct excerpt from the source text. All entities, wording, qualifiers, and quotes match exactly. The content is a specific production detail (stitching takes) but since it repeats the same topic as F1 without adding new craft/artistic reference beyond what's already in the source, it falls under duplicate_or_uninteresting."
+            },
+            "problems": [],
+            "eligible_draft": false
+          }
+        ],
+        "elapsed_seconds": 32.27
+      },
+      {
+        "movie_id": 129,
+        "batch_id": "precision-129",
+        "error_type": null,
+        "evidence": [
+          {
+            "passage_id": "P1",
+            "purpose": "background",
+            "text": "Screenwriters Cindy Davis Hewitt and Donald H. Hewitt penned the English-language dialogue, which they wrote in order to match the characters' original Japanese-language lip movements.",
+            "origin": {
+              "movie_id": 129,
+              "source_id": "enwiki-70091",
+              "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1378275530",
+              "revision": "enwiki-1378275530-sections-v3-body",
+              "section_title": "English dub",
+              "section_category": "production",
+              "start": 14984,
+              "end": 15168
+            }
+          }
+        ],
+        "proposals": {
+          "facts": [
+            {
+              "title": "English Dub Dialogue",
+              "text": "Screenwriters Cindy Davis Hewitt and Donald H. Hewitt penned English dialogue specifically to match the characters' original Japanese lip movements.",
+              "passage_id": "P1",
+              "evidence_quote": "Screenwriters Cindy Davis Hewitt and Donald H. Hewitt penned the English-language dialogue, which they wrote in order to match the characters' original Japanese-language lip movements."
+            }
+          ],
+          "questions": []
+        },
+        "checks": [
+          {
+            "kind": "fact",
+            "index": 0,
+            "passage_id": "P1",
+            "support_checks_passed": true,
+            "problems": [],
+            "semantic_review_required": true
+          }
+        ],
+        "decisions": [
+          {
+            "item_id": "F1",
+            "decision": "reject",
+            "reason": "The proposal text matches the source text exactly regarding screenwriters Cindy Davis Hewitt and Donald H. Hewitt penning English dialogue to match Japanese lip movements. The evidence quote supports this core detail without adding new mechanisms or changing identities. The content relates to production details (screenwriting/dubbing) rather than generic metadata, though it touches on story events",
+            "assessment": {
+              "item_id": "F1",
+              "entities": "supported",
+              "wording": "supported",
+              "qualifiers": "supported",
+              "quote": "supported",
+              "content": "plot_or_metadata",
+              "reason": "The proposal text matches the source text exactly regarding screenwriters Cindy Davis Hewitt and Donald H. Hewitt penning English dialogue to match Japanese lip movements. The evidence quote supports this core detail without adding new mechanisms or changing identities. The content relates to production details (screenwriting/dubbing) rather than generic metadata, though it touches on story events"
+            },
+            "problems": [],
+            "eligible_draft": false
+          }
+        ],
+        "elapsed_seconds": 22.02
+      }
+    ],
+    "publication_approved": false,
+    "limitations": "Fresh assistant-authored real-film challenge labels frozen before the first run; consumed development evidence after inference, not independent external annotations. Short Wikipedia production excerpts, not full retrieval, publisher reliability, prompt-injection coverage or catalog-wide generation accuracy. Generated proposals are unlabelled observations requiring separate inspection. No publication permissions.",
+    "elapsed_seconds": 54.29,
+    "observations": {
+      "completed_movies": 2,
+      "error_movies": 0,
+      "proposed_facts": 3,
+      "eligible_drafts": 0
+    }
+  }
+}

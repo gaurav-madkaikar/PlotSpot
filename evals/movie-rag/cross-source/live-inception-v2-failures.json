@@ -1,0 +1,13 @@
+{
+  "implementation_sha256": "3d6aeab900baaa26a765cf52719911ad209cf3cf4f3b1d3f48a295dba703e0e1",
+  "source_mode": "saved reviewed Wikipedia snapshot plus cached screenplay",
+  "discussion": {
+    "status": "insufficient_evidence",
+    "reason": "Generated source quote was not literal; withheld before semantic review."
+  },
+  "quiz": {
+    "status": "validation_failure",
+    "reason": "Two generated answer indices disagreed with their option text; no publication."
+  },
+  "saved_collection_changed": false
+}

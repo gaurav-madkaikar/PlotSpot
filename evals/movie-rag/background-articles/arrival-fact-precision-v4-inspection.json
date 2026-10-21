@@ -1,0 +1,45 @@
+{
+  "report_sha256": "f984cbf350d9a6e11f18291763bde28a07e85e5cd2e4245d60ddc858cc7f48c3",
+  "implementation_sha256": "d8711e21b57386bce2bd17c1687b6d2d169c4a91ea6e0929def1165400350298",
+  "published": false,
+  "candidate_count": 4,
+  "automated_eligible": 2,
+  "seconds": 53.59,
+  "cached_articles": {
+    "time-arrival": "cached",
+    "bfi-arrival": "cached"
+  },
+  "cached_vector_indexes": {
+    "time-arrival": "cached",
+    "bfi-arrival": "cached"
+  },
+  "preceding_context_added_hits": 0,
+  "all_source_spans_verified": true,
+  "items": [
+    {
+      "id": "time-arrival:F1",
+      "automated_eligible": true,
+      "disposition": "withhold_pending_narrower_claim",
+      "inspection_note": "Supplied context contains both full names, but the selected quote alone does not state mood-board creation; the claim combines separate sentences and the Visual Inspiration heading is generic. Narrow the fact before publication."
+    },
+    {
+      "id": "time-arrival:F2",
+      "automated_eligible": false,
+      "disposition": "withhold",
+      "inspection_note": "Gloomy is absent from the chosen quotation; inspiration versus used wording also needs care. Generic title and overlap with saved photographer material remain. Critic attribution explanation is overstated."
+    },
+    {
+      "id": "bfi-arrival:F1",
+      "automated_eligible": false,
+      "disposition": "withhold_duplicate",
+      "inspection_note": "Supported compositional approach, but it repeats the existing saved sound-design topic and is correctly ineligible."
+    },
+    {
+      "id": "bfi-arrival:F2",
+      "automated_eligible": true,
+      "disposition": "supported_with_copy_edit",
+      "inspection_note": "Voice techniques are supported by the supplied musical context; trim the generic to-support-the-narrative ending before any publication."
+    }
+  ],
+  "limitations": "Implementing assistant inspection of consumed cached sources, not independent annotations. No eligible candidate automatically published. Name coverage alone is not entailment or complete evidence for a combined claim. No preceding-context addition occurred in this actual retrieval; that behavior is covered by isolated contract cases."
+}

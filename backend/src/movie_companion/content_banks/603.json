@@ -1,0 +1,213 @@
+{
+  "quiz": [
+    {
+      "id": "neo-name",
+      "question": "What is Neo’s name outside his hacker identity?",
+      "options": [
+        "Thomas Anderson",
+        "John Connor",
+        "Michael Crane",
+        "David Bowman"
+      ],
+      "correct_index": 0,
+      "explanation": "Neo is the hacker identity of computer programmer Thomas Anderson.",
+      "evidence_markers": [
+        "Thomas Anderson",
+        "computer programmer"
+      ],
+      "kind": "plot"
+    },
+    {
+      "id": "pill-choice",
+      "question": "Which pill does Neo take to uncover the truth about the Matrix?",
+      "options": [
+        "The blue pill",
+        "The white pill",
+        "The red pill",
+        "The green pill"
+      ],
+      "correct_index": 2,
+      "explanation": "Neo chooses the red pill and awakens outside the simulation.",
+      "evidence_markers": [
+        "Neo takes the red pill"
+      ],
+      "kind": "plot"
+    },
+    {
+      "id": "rescue-ship",
+      "question": "What is the name of Morpheus’s hovercraft?",
+      "options": [
+        "Endurance",
+        "Nebuchadnezzar",
+        "Nostromo",
+        "Discovery"
+      ],
+      "correct_index": 1,
+      "explanation": "Morpheus rescues Neo aboard the Nebuchadnezzar.",
+      "evidence_markers": [
+        "hovercraft Nebuchadnezzar"
+      ],
+      "kind": "plot"
+    },
+    {
+      "id": "human-refuge",
+      "question": "Where have the remaining free humans established their refuge?",
+      "options": [
+        "The Oracle’s apartment",
+        "A lunar station",
+        "A desert colony",
+        "Zion"
+      ],
+      "correct_index": 3,
+      "explanation": "Zion is the underground refuge of the remaining free humans.",
+      "evidence_markers": [
+        "underground refuge called Zion"
+      ],
+      "kind": "plot"
+    },
+    {
+      "id": "agent-nature",
+      "question": "What are the Agents within the Matrix?",
+      "options": [
+        "Sentient programs protecting the system",
+        "Humans secretly helping Morpheus",
+        "Pilots controlling the hovercraft",
+        "Holograms with no ability to act"
+      ],
+      "correct_index": 0,
+      "explanation": "The Agents are sentient programs that protect the simulation.",
+      "evidence_markers": [
+        "sentient programs that protect the system"
+      ],
+      "kind": "plot"
+    },
+    {
+      "id": "crew-betrayal",
+      "question": "Which crew member betrays the team to return to the Matrix’s comforts?",
+      "options": [
+        "Tank",
+        "Trinity",
+        "Cypher",
+        "Mouse"
+      ],
+      "correct_index": 2,
+      "explanation": "Cypher betrays the team because he wants to return to the simulated life.",
+      "evidence_markers": [
+        "betrayed by Cypher",
+        "virtual comforts"
+      ],
+      "kind": "plot"
+    },
+    {
+      "id": "cypher-stopped",
+      "question": "Who stops Cypher before he can kill Neo and Trinity?",
+      "options": [
+        "Morpheus",
+        "Tank",
+        "The Oracle",
+        "Agent Smith"
+      ],
+      "correct_index": 1,
+      "explanation": "Tank kills Cypher and extracts the surviving crew members.",
+      "evidence_markers": [
+        "he is killed by Tank"
+      ],
+      "kind": "plot"
+    },
+    {
+      "id": "smith-codes",
+      "question": "What does Smith seek while interrogating Morpheus?",
+      "options": [
+        "Neo’s bank password",
+        "The Oracle’s street address",
+        "A launch code for the hovercraft",
+        "Access codes for Zion’s mainframe"
+      ],
+      "correct_index": 3,
+      "explanation": "Smith wants Zion’s mainframe codes to help the machines destroy the resistance.",
+      "evidence_markers": [
+        "access codes for Zion's mainframe"
+      ],
+      "kind": "plot"
+    },
+    {
+      "id": "rescue-partner",
+      "question": "Who returns to the Matrix with Neo to rescue Morpheus?",
+      "options": [
+        "Trinity",
+        "Cypher",
+        "Tank",
+        "The Oracle"
+      ],
+      "correct_index": 0,
+      "explanation": "Neo and Trinity re-enter the Matrix together to rescue Morpheus.",
+      "evidence_markers": [
+        "re-enters the Matrix with Trinity"
+      ],
+      "kind": "plot"
+    },
+    {
+      "id": "ship-defense",
+      "question": "What disables the Sentinels as Neo escapes the Matrix?",
+      "options": [
+        "A missile from Zion",
+        "Smith’s destruction",
+        "The ship’s electromagnetic pulse",
+        "The Oracle shutting down the simulation"
+      ],
+      "correct_index": 2,
+      "explanation": "The Nebuchadnezzar’s electromagnetic pulse disables the Sentinels.",
+      "evidence_markers": [
+        "electromagnetic pulse disables the Sentinels"
+      ],
+      "kind": "ending"
+    }
+  ],
+  "facts": [
+    {
+      "id": "storyboard-pitch",
+      "title": "A 600-page visual pitch",
+      "text": "Geof Darrow and Steve Skroce created a 600-page storyboard showing the film shot by shot. It helped win studio approval.",
+      "evidence_markers": [
+        "600-page",
+        "storyboard eventually earned the approval"
+      ]
+    },
+    {
+      "id": "martial-training",
+      "title": "Four months before the cameras rolled",
+      "text": "The Wachowskis scheduled four months of training with martial-arts choreographer Yuen Woo-ping to prepare the cast for wire work.",
+      "evidence_markers": [
+        "four months of training",
+        "Yuen Woo-ping"
+      ]
+    },
+    {
+      "id": "dark-city-set",
+      "title": "A rooftop with another movie’s history",
+      "text": "The rooftop set used for Trinity’s early escape was left over from Dark City.",
+      "evidence_markers": [
+        "rooftop set",
+        "Dark City"
+      ]
+    },
+    {
+      "id": "sound-layering",
+      "title": "Almost fifty sounds for one pod",
+      "text": "Sound designer Dane A. Davis layered almost fifty sounds to create the sound of a human pod closing.",
+      "evidence_markers": [
+        "Dane A. Davis",
+        "almost fifty sounds"
+      ]
+    },
+    {
+      "id": "bullet-time-cameras",
+      "title": "Still cameras making a moving moment",
+      "text": "Bullet time used an array of cameras triggered fractions of a second apart, allowing slowed action while the viewpoint moved around it.",
+      "evidence_markers": [
+        "fractions of a second",
+        "super slow-motion effect"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,213 @@
+{
+  "quiz": [
+    {
+      "id": "scholars-gift",
+      "question": "What does Min-hyuk give the Kim family as a promise of wealth?",
+      "options": [
+        "A signed contract",
+        "A scholar’s rock",
+        "An antique watch",
+        "A gold coin"
+      ],
+      "correct_index": 1,
+      "explanation": "Min-hyuk gives the family a scholar’s rock meant to bring wealth.",
+      "evidence_markers": [
+        "Min-hyuk gives them a scholar's rock meant to promise wealth"
+      ],
+      "kind": "plot"
+    },
+    {
+      "id": "first-position",
+      "question": "Which job first brings Ki-woo into the Park household?",
+      "options": [
+        "Driver",
+        "Math tutor",
+        "English tutor",
+        "Gardener"
+      ],
+      "correct_index": 2,
+      "explanation": "Ki-woo takes over Min-hyuk’s English tutoring job for Da-hye.",
+      "evidence_markers": [
+        "job as an English tutor for Da-hye"
+      ],
+      "kind": "plot"
+    },
+    {
+      "id": "jessicas-role",
+      "question": "What role does Ki-jung claim under the name Jessica?",
+      "options": [
+        "An art therapist",
+        "A music teacher",
+        "A language tutor",
+        "A family doctor"
+      ],
+      "correct_index": 0,
+      "explanation": "Ki-jung poses as an art therapist for Da-song.",
+      "evidence_markers": [
+        "\"Jessica,\" actually Ki-jung, as an art therapist"
+      ],
+      "kind": "plot"
+    },
+    {
+      "id": "allergy-scheme",
+      "question": "Which allergy do the Kims exploit to get Moon-gwang dismissed?",
+      "options": [
+        "Peanuts",
+        "Shellfish",
+        "Milk",
+        "Peaches"
+      ],
+      "correct_index": 3,
+      "explanation": "They use Moon-gwang’s peach allergy to make Mrs Park believe the housekeeper has tuberculosis.",
+      "evidence_markers": [
+        "peach allergy",
+        "tuberculosis"
+      ],
+      "kind": "plot"
+    },
+    {
+      "id": "bunker-refuge",
+      "question": "Why has Geun-sae been living in the hidden bunker?",
+      "options": [
+        "To hide from the police",
+        "To hide from loan sharks",
+        "To guard the house",
+        "To recover from an illness"
+      ],
+      "correct_index": 1,
+      "explanation": "Moon-gwang’s husband Geun-sae has been hiding from loan sharks.",
+      "evidence_markers": [
+        "Geun-sae, has been hiding from loan sharks"
+      ],
+      "kind": "plot"
+    },
+    {
+      "id": "exposure-threat",
+      "question": "What gives Moon-gwang leverage over the Kim family?",
+      "options": [
+        "A forged certificate",
+        "A letter from Min-hyuk",
+        "A video revealing their deception",
+        "The Parks’ bank records"
+      ],
+      "correct_index": 2,
+      "explanation": "After their identities are exposed, Moon-gwang films the Kims and threatens to show the Parks.",
+      "evidence_markers": [
+        "Moon-gwang films them and threatens to expose their deception"
+      ],
+      "kind": "plot"
+    },
+    {
+      "id": "flood-refuge",
+      "question": "Where do the Kims take shelter after their flat floods?",
+      "options": [
+        "A gymnasium",
+        "The Parks’ guest room",
+        "A subway station",
+        "A hotel lobby"
+      ],
+      "correct_index": 0,
+      "explanation": "The rain floods their flat with sewage water, forcing them into a gymnasium with other displaced people.",
+      "evidence_markers": [
+        "flat with sewage water",
+        "shelter in a gymnasium"
+      ],
+      "kind": "plot"
+    },
+    {
+      "id": "rock-reversal",
+      "question": "What does Geun-sae use to knock Ki-woo unconscious?",
+      "options": [
+        "A kitchen knife",
+        "A metal pipe",
+        "A bottle",
+        "The scholar’s rock"
+      ],
+      "correct_index": 3,
+      "explanation": "Geun-sae strikes Ki-woo with the scholar’s rock in the bunker.",
+      "evidence_markers": [
+        "Geun-sae bludgeons Ki-woo with the rock"
+      ],
+      "kind": "ending"
+    },
+    {
+      "id": "light-message",
+      "question": "How does Ki-woo discover that his father is still alive?",
+      "options": [
+        "A secret phone call",
+        "A Morse-code light message",
+        "A letter left at the gym",
+        "A report from the police"
+      ],
+      "correct_index": 1,
+      "explanation": "Ki-woo spots a Morse-code message in a light at the house; Ki-taek sends it from the bunker.",
+      "evidence_markers": [
+        "Morse code message in a light",
+        "Ki-taek"
+      ],
+      "kind": "ending"
+    },
+    {
+      "id": "final-promise",
+      "question": "What does Ki-woo promise his father in his final letter?",
+      "options": [
+        "To leave Seoul",
+        "To surrender to the police",
+        "To earn enough to buy the house",
+        "To ask the Parks for help"
+      ],
+      "correct_index": 2,
+      "explanation": "He vows to earn enough to buy the house and free Ki-taek.",
+      "evidence_markers": [
+        "vowing to earn enough money one day to buy the house and free him"
+      ],
+      "kind": "ending"
+    }
+  ],
+  "facts": [
+    {
+      "id": "tutoring-origin",
+      "title": "An idea rooted in a real tutoring job",
+      "text": "Bong Joon Ho had tutored the son of a wealthy Seoul family in his early twenties. He considered turning that experience into a stage production.",
+      "evidence_markers": [
+        "tutor for the son of a wealthy family in Seoul",
+        "stage production"
+      ]
+    },
+    {
+      "id": "subtitle-invention",
+      "title": "How the subtitles found ram-don",
+      "text": "Subtitle translator Darcy Paquet rendered the noodle dish jjapaguri as ram-don, combining ramen and udon for English-speaking viewers.",
+      "evidence_markers": [
+        "Paquet rendered jjapaguri",
+        "ramen-udon"
+      ]
+    },
+    {
+      "id": "custom-house",
+      "title": "A mansion built for the camera",
+      "text": "The Parks’ house was a specially constructed set. Its ground floor and garden stood on an outdoor lot, while the basement and first floor were built on set.",
+      "evidence_markers": [
+        "Parks' house was a specially constructed set",
+        "empty outdoor lot"
+      ]
+    },
+    {
+      "id": "editing-tool",
+      "title": "An older tool behind the edit",
+      "text": "Editor Yang Jin-mo cut Parasite in Final Cut Pro 7, software that had not been updated since 2011.",
+      "evidence_markers": [
+        "Yang edited the film using Final Cut Pro 7"
+      ]
+    },
+    {
+      "id": "credits-song",
+      "title": "A familiar voice in the end credits",
+      "text": "Bong wrote the end-credit song Soju han jan. Choi Woo-shik, who plays Ki-woo, performed it.",
+      "evidence_markers": [
+        "written by Bong and performed by Choi Woo-shik",
+        "end credits"
+      ]
+    }
+  ]
+}

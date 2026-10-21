@@ -1,0 +1,12 @@
+[
+  {"query":"A thoughtful science fiction story about communicating with aliens", "expected_movie_id":329865},
+  {"query":"A father travels through space to save humanity and return to his children", "expected_movie_id":157336},
+  {"query":"A detective investigating a wealthy family after a suspicious death", "expected_movie_id":546554},
+  {"query":"A Korean thriller about economic inequality between two families", "expected_movie_id":496243, "language":"Korean"},
+  {"query":"A young girl finding courage in a magical world of spirits", "expected_movie_id":129},
+  {"query":"A hacker discovers that reality is a computer simulation", "expected_movie_id":603},
+  {"query":"An ordinary man discovers his life is a television show", "expected_movie_id":37165, "max_runtime":120},
+  {"query":"A stylish comedy adventure about a concierge in a European hotel", "expected_movie_id":120467},
+  {"query":"A desert planet with political conflict over a valuable resource", "expected_movie_id":438631},
+  {"query":"A heist that enters people's dreams and changes their ideas", "expected_movie_id":27205}
+]

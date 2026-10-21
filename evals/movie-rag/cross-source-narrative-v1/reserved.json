@@ -1,0 +1,261 @@
+{
+  "description": "Narrative-aligned held-back authored cases frozen before model execution.",
+  "cases": [
+    {
+      "id": "narrative-reserved-motivation",
+      "mode": "quiz",
+      "expected_accept": true,
+      "label_reason": "The question tests a central, explicitly stated character motivation.",
+      "evidence": [
+        {
+          "alias": "W1",
+          "text": "Elin leaves the village to rescue Tomas, who is trapped by the flood."
+        },
+        {
+          "alias": "S1",
+          "text": "Elin sets off because Tomas needs rescue from the approaching flood."
+        }
+      ],
+      "draft": {
+        "kind": "event",
+        "question": "Why does Elin leave the village?",
+        "answer": "to rescue Tomas",
+        "wiki_alias": "W1",
+        "wiki_quote": "Elin leaves the village to rescue Tomas, who is trapped by the flood.",
+        "script_alias": "S1",
+        "script_quote": "Elin sets off because Tomas needs rescue from the approaching flood.",
+        "options": [
+          "to rescue Tomas",
+          "to collect a reward",
+          "to attend a ceremony",
+          "to find a lost diary"
+        ],
+        "correct_index": 0
+      }
+    },
+    {
+      "id": "narrative-reserved-consequence",
+      "mode": "quiz",
+      "expected_accept": true,
+      "label_reason": "The question tests a supported cause-and-consequence relation.",
+      "evidence": [
+        {
+          "alias": "W1",
+          "text": "When Elin opens the spillway, the village road floods and the travelers must take the mountain path."
+        },
+        {
+          "alias": "S1",
+          "text": "Elin opens the spillway; water covers the village road, forcing everyone toward the mountain path."
+        }
+      ],
+      "draft": {
+        "kind": "event",
+        "question": "What immediate consequence follows when Elin opens the spillway?",
+        "answer": "the village road floods",
+        "wiki_alias": "W1",
+        "wiki_quote": "When Elin opens the spillway, the village road floods and the travelers must take the mountain path.",
+        "script_alias": "S1",
+        "script_quote": "Elin opens the spillway; water covers the village road, forcing everyone toward the mountain path.",
+        "options": [
+          "the village road floods",
+          "the bridge repairs itself",
+          "the storm ends",
+          "the gate locks"
+        ],
+        "correct_index": 0
+      }
+    },
+    {
+      "id": "narrative-reserved-relationship",
+      "mode": "quiz",
+      "expected_accept": true,
+      "label_reason": "The question tests a meaningful relationship change and the choice behind it.",
+      "evidence": [
+        {
+          "alias": "W1",
+          "text": "Elin returns the compass to Tomas because she decides to trust him again."
+        },
+        {
+          "alias": "S1",
+          "text": "Having chosen to trust Tomas again, Elin hands the compass back to him."
+        }
+      ],
+      "draft": {
+        "kind": "event",
+        "question": "Why does Elin return the compass to Tomas?",
+        "answer": "she decides to trust him again",
+        "wiki_alias": "W1",
+        "wiki_quote": "Elin returns the compass to Tomas because she decides to trust him again.",
+        "script_alias": "S1",
+        "script_quote": "Having chosen to trust Tomas again, Elin hands the compass back to him.",
+        "options": [
+          "she decides to trust him again",
+          "she wants to sell it",
+          "she fears the mayor",
+          "she forgets its purpose"
+        ],
+        "correct_index": 0
+      }
+    },
+    {
+      "id": "narrative-reserved-story-rule",
+      "mode": "quiz",
+      "expected_accept": true,
+      "label_reason": "The question tests a central story rule rather than an isolated object.",
+      "evidence": [
+        {
+          "alias": "W1",
+          "text": "The sealed gate opens only when Elin and Tomas turn the compass together."
+        },
+        {
+          "alias": "S1",
+          "text": "Elin and Tomas must turn the compass together before the sealed gate will open."
+        }
+      ],
+      "draft": {
+        "kind": "event",
+        "question": "What must the two rivals do to open the sealed gate?",
+        "answer": "turn the compass together",
+        "wiki_alias": "W1",
+        "wiki_quote": "The sealed gate opens only when Elin and Tomas turn the compass together.",
+        "script_alias": "S1",
+        "script_quote": "Elin and Tomas must turn the compass together before the sealed gate will open.",
+        "options": [
+          "turn the compass together",
+          "break the compass",
+          "wait for sunrise",
+          "say the mayor’s name"
+        ],
+        "correct_index": 0
+      }
+    },
+    {
+      "id": "narrative-reserved-granular-location",
+      "mode": "quiz",
+      "expected_accept": false,
+      "label_reason": "Accurate but isolated location recall is intentionally ineligible.",
+      "evidence": [
+        {
+          "alias": "W1",
+          "text": "Elin leaves a blue cup on the third shelf before speaking with Tomas."
+        },
+        {
+          "alias": "S1",
+          "text": "Before the conversation, Elin puts the blue cup on the third shelf."
+        }
+      ],
+      "draft": {
+        "kind": "event",
+        "question": "Where does Elin leave the blue cup?",
+        "answer": "the third shelf",
+        "wiki_alias": "W1",
+        "wiki_quote": "Elin leaves a blue cup on the third shelf before speaking with Tomas.",
+        "script_alias": "S1",
+        "script_quote": "Before the conversation, Elin puts the blue cup on the third shelf.",
+        "options": [
+          "the third shelf",
+          "the table",
+          "the windowsill",
+          "the floor"
+        ],
+        "correct_index": 0
+      }
+    },
+    {
+      "id": "narrative-reserved-conflict",
+      "mode": "quiz",
+      "expected_accept": false,
+      "label_reason": "The sources contradict both the actor and consequence.",
+      "evidence": [
+        {
+          "alias": "W1",
+          "text": "Elin opens the spillway, so the village road floods."
+        },
+        {
+          "alias": "S1",
+          "text": "Tomas, not Elin, opens the spillway; the village road remains dry."
+        }
+      ],
+      "draft": {
+        "kind": "event",
+        "question": "Whose choice causes the village road to flood?",
+        "answer": "Elin",
+        "wiki_alias": "W1",
+        "wiki_quote": "Elin opens the spillway, so the village road floods.",
+        "script_alias": "S1",
+        "script_quote": "Tomas, not Elin, opens the spillway; the village road remains dry.",
+        "options": [
+          "Elin",
+          "Tomas",
+          "the mayor",
+          "the travelers"
+        ],
+        "correct_index": 0
+      }
+    },
+    {
+      "id": "narrative-reserved-wrong-cause",
+      "mode": "quiz",
+      "expected_accept": false,
+      "label_reason": "The answer appears in the evidence but does not satisfy the causal relation.",
+      "evidence": [
+        {
+          "alias": "W1",
+          "text": "Elin carries a lantern, but the flood forces her to leave the village."
+        },
+        {
+          "alias": "S1",
+          "text": "Because of the flood, Elin leaves while carrying a lantern for light."
+        }
+      ],
+      "draft": {
+        "kind": "event",
+        "question": "What forces Elin to leave the village?",
+        "answer": "a lantern",
+        "wiki_alias": "W1",
+        "wiki_quote": "Elin carries a lantern, but the flood forces her to leave the village.",
+        "script_alias": "S1",
+        "script_quote": "Because of the flood, Elin leaves while carrying a lantern for light.",
+        "options": [
+          "a lantern",
+          "the flood",
+          "a letter",
+          "a ceremony"
+        ],
+        "correct_index": 0
+      }
+    },
+    {
+      "id": "narrative-reserved-ambiguous",
+      "mode": "quiz",
+      "expected_accept": false,
+      "label_reason": "Two options are supported, so the item is not uniquely scorable.",
+      "evidence": [
+        {
+          "alias": "W1",
+          "text": "Elin chooses both the river path and the forest path as safe escape routes."
+        },
+        {
+          "alias": "S1",
+          "text": "Elin marks the river path and the forest path as two safe ways out."
+        }
+      ],
+      "draft": {
+        "kind": "event",
+        "question": "Which path does Elin choose as a safe escape route?",
+        "answer": "the river path",
+        "wiki_alias": "W1",
+        "wiki_quote": "Elin chooses both the river path and the forest path as safe escape routes.",
+        "script_alias": "S1",
+        "script_quote": "Elin marks the river path and the forest path as two safe ways out.",
+        "options": [
+          "the river path",
+          "the forest path",
+          "the desert path",
+          "the tunnel"
+        ],
+        "correct_index": 0
+      }
+    }
+  ]
+}

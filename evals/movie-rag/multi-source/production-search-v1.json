@@ -1,0 +1,18 @@
+{
+  "trace": {
+    "provider": "duckduckgo",
+    "purpose": "background",
+    "requested_web_pages": 5,
+    "accepted_web_pages": 0,
+    "degraded": true,
+    "errors": [
+      {
+        "rank": 0,
+        "reason": "search_unavailable"
+      }
+    ],
+    "cache": "miss",
+    "policy": "movie-public-source-v1"
+  },
+  "sources": []
+}

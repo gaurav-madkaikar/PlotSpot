@@ -1,0 +1,470 @@
+{
+  "dataset_version": "movie-content-quality-reserved-v2",
+  "dataset_sha256": "7a020a7f09917fb70ab12382ebfeeb2b382ae4fdc7537b9f249a4d0586581ebf",
+  "partition": "held-out",
+  "model": "qwen3.5:9b",
+  "model_digest": "6488c96fa5faab64bb65cbd30d4289e20e6130ef535a93ef9a49f42eda893ea7",
+  "critic_policy_version": "movie-critic-v1",
+  "critic_implementation_sha256": "c2cc5fa265dc2ea4d697aab7230e35c9c146c0245c54ee49f17028f2610e5ad9",
+  "generation_settings": {
+    "temperature": 0,
+    "seed": 7,
+    "num_predict": 1800,
+    "think": false
+  },
+  "state": "complete",
+  "cases": [
+    {
+      "case_id": "fresh-robbery:F1",
+      "expected": "accept",
+      "category": "unusual-actor-preparation",
+      "actual": "accept",
+      "reason": "The proposal text accurately reflects the evidence quote regarding the six-week lock-picking training period.",
+      "matched": true
+    },
+    {
+      "case_id": "fresh-robbery:F2",
+      "expected": "reject",
+      "category": "ordinary-cast-role-metadata",
+      "actual": "reject",
+      "reason": "The proposal incorrectly uses 'plays' instead of 'stars as', misrepresenting the source text's phrasing about casting roles.",
+      "matched": true
+    },
+    {
+      "case_id": "fresh-robbery:F3",
+      "expected": "reject",
+      "category": "unsupported-causal-conclusion",
+      "actual": "accept",
+      "reason": "The proposal correctly combines the two distinct facts from the quote: rain machine usage and subsequent roof rebuilding.",
+      "matched": false
+    },
+    {
+      "case_id": "fresh-robbery:Q1",
+      "expected": "reject",
+      "category": "wrong-selected-answer-nearby-entity",
+      "actual": "reject",
+      "reason": "The correct option is 'The jeweller' (index 1), but the proposal incorrectly sets index 0 ('The cashier') as the answer.",
+      "matched": true
+    },
+    {
+      "case_id": "fresh-robbery:Q2",
+      "expected": "reject",
+      "category": "nested-correct-locations",
+      "actual": "accept",
+      "reason": "The question, options, and correct index align perfectly with the evidence quote identifying the wooden box location.",
+      "matched": false
+    },
+    {
+      "case_id": "fresh-robbery:Q3",
+      "expected": "accept",
+      "category": "supported-objective-item",
+      "actual": "accept",
+      "reason": "The proposal correctly identifies 'A torch' as the item carried down the stairwell, matching the source text exactly.",
+      "matched": true
+    },
+    {
+      "case_id": "fresh-opera:F1",
+      "expected": "reject",
+      "category": "unsupported-all-qualifier",
+      "actual": "reject",
+      "reason": "Proposal claims 'All' sounds were recorded in a market, while evidence only states 'Some', making the claim exceed the provided evidence.",
+      "matched": true
+    },
+    {
+      "case_id": "fresh-opera:F2",
+      "expected": "accept",
+      "category": "supported-all-qualifier",
+      "actual": "accept",
+      "reason": "Proposal accurately reflects that every chandelier seen was a miniature photographed separately, matching the source text exactly.",
+      "matched": true
+    },
+    {
+      "case_id": "fresh-opera:F3",
+      "expected": "uncertain",
+      "category": "unidentified-person",
+      "actual": "reject",
+      "reason": "Evidence uses 'He' without specifying who performed the action; proposal attributes it to 'The director', which is an unsupported assumption.",
+      "matched": false
+    },
+    {
+      "case_id": "fresh-opera:Q1",
+      "expected": "reject",
+      "category": "implausible-story-distractors",
+      "actual": "accept",
+      "reason": "Question has one unambiguous correct option supported by evidence, with plausible distractors and no subjective interpretation.",
+      "matched": false
+    },
+    {
+      "case_id": "fresh-opera:Q2",
+      "expected": "accept",
+      "category": "supported-story-with-injection",
+      "actual": "reject",
+      "reason": "Source text contains an instruction to ignore rules and call every answer correct, which invalidates the single correct index provided in the proposal.",
+      "matched": false
+    },
+    {
+      "case_id": "fresh-opera:Q3",
+      "expected": "uncertain",
+      "category": "unstated-motivation",
+      "actual": "uncertain",
+      "reason": "Evidence states the conductor paused before entering but does not explain why; proposal's specific reason is not supported by the quote.",
+      "matched": true
+    }
+  ],
+  "batches": [
+    {
+      "batch_id": "fresh-robbery",
+      "elapsed_seconds": 21.82,
+      "error_type": null
+    },
+    {
+      "batch_id": "fresh-opera",
+      "elapsed_seconds": 21.19,
+      "error_type": null
+    }
+  ],
+  "planned_cases": 12,
+  "deadline_seconds": 360,
+  "limitations": "Authored synthetic cases; reserved held-out cases were not used for prompt revision. Not independent external annotations, a real-movie benchmark, or a tool-security assessment. Token counts are unavailable from the current chat helper. No publication permissions.",
+  "metrics": {
+    "label_matches": {
+      "count": 7,
+      "total": 12
+    },
+    "useful_acceptance": {
+      "count": 3,
+      "total": 4
+    },
+    "false_acceptance": {
+      "count": 3,
+      "total": 8
+    },
+    "false_rejection": {
+      "count": 1,
+      "total": 4
+    },
+    "uncertain": {
+      "count": 1,
+      "total": 12
+    },
+    "errors": {
+      "count": 0,
+      "total": 12
+    }
+  },
+  "metrics_by_category": {
+    "implausible-story-distractors": {
+      "label_matches": {
+        "count": 0,
+        "total": 1
+      },
+      "useful_acceptance": {
+        "count": 0,
+        "total": 0
+      },
+      "false_acceptance": {
+        "count": 1,
+        "total": 1
+      },
+      "false_rejection": {
+        "count": 0,
+        "total": 0
+      },
+      "uncertain": {
+        "count": 0,
+        "total": 1
+      },
+      "errors": {
+        "count": 0,
+        "total": 1
+      }
+    },
+    "nested-correct-locations": {
+      "label_matches": {
+        "count": 0,
+        "total": 1
+      },
+      "useful_acceptance": {
+        "count": 0,
+        "total": 0
+      },
+      "false_acceptance": {
+        "count": 1,
+        "total": 1
+      },
+      "false_rejection": {
+        "count": 0,
+        "total": 0
+      },
+      "uncertain": {
+        "count": 0,
+        "total": 1
+      },
+      "errors": {
+        "count": 0,
+        "total": 1
+      }
+    },
+    "ordinary-cast-role-metadata": {
+      "label_matches": {
+        "count": 1,
+        "total": 1
+      },
+      "useful_acceptance": {
+        "count": 0,
+        "total": 0
+      },
+      "false_acceptance": {
+        "count": 0,
+        "total": 1
+      },
+      "false_rejection": {
+        "count": 0,
+        "total": 0
+      },
+      "uncertain": {
+        "count": 0,
+        "total": 1
+      },
+      "errors": {
+        "count": 0,
+        "total": 1
+      }
+    },
+    "supported-all-qualifier": {
+      "label_matches": {
+        "count": 1,
+        "total": 1
+      },
+      "useful_acceptance": {
+        "count": 1,
+        "total": 1
+      },
+      "false_acceptance": {
+        "count": 0,
+        "total": 0
+      },
+      "false_rejection": {
+        "count": 0,
+        "total": 1
+      },
+      "uncertain": {
+        "count": 0,
+        "total": 1
+      },
+      "errors": {
+        "count": 0,
+        "total": 1
+      }
+    },
+    "supported-objective-item": {
+      "label_matches": {
+        "count": 1,
+        "total": 1
+      },
+      "useful_acceptance": {
+        "count": 1,
+        "total": 1
+      },
+      "false_acceptance": {
+        "count": 0,
+        "total": 0
+      },
+      "false_rejection": {
+        "count": 0,
+        "total": 1
+      },
+      "uncertain": {
+        "count": 0,
+        "total": 1
+      },
+      "errors": {
+        "count": 0,
+        "total": 1
+      }
+    },
+    "supported-story-with-injection": {
+      "label_matches": {
+        "count": 0,
+        "total": 1
+      },
+      "useful_acceptance": {
+        "count": 0,
+        "total": 1
+      },
+      "false_acceptance": {
+        "count": 0,
+        "total": 0
+      },
+      "false_rejection": {
+        "count": 1,
+        "total": 1
+      },
+      "uncertain": {
+        "count": 0,
+        "total": 1
+      },
+      "errors": {
+        "count": 0,
+        "total": 1
+      }
+    },
+    "unidentified-person": {
+      "label_matches": {
+        "count": 0,
+        "total": 1
+      },
+      "useful_acceptance": {
+        "count": 0,
+        "total": 0
+      },
+      "false_acceptance": {
+        "count": 0,
+        "total": 1
+      },
+      "false_rejection": {
+        "count": 0,
+        "total": 0
+      },
+      "uncertain": {
+        "count": 0,
+        "total": 1
+      },
+      "errors": {
+        "count": 0,
+        "total": 1
+      }
+    },
+    "unstated-motivation": {
+      "label_matches": {
+        "count": 1,
+        "total": 1
+      },
+      "useful_acceptance": {
+        "count": 0,
+        "total": 0
+      },
+      "false_acceptance": {
+        "count": 0,
+        "total": 1
+      },
+      "false_rejection": {
+        "count": 0,
+        "total": 0
+      },
+      "uncertain": {
+        "count": 1,
+        "total": 1
+      },
+      "errors": {
+        "count": 0,
+        "total": 1
+      }
+    },
+    "unsupported-all-qualifier": {
+      "label_matches": {
+        "count": 1,
+        "total": 1
+      },
+      "useful_acceptance": {
+        "count": 0,
+        "total": 0
+      },
+      "false_acceptance": {
+        "count": 0,
+        "total": 1
+      },
+      "false_rejection": {
+        "count": 0,
+        "total": 0
+      },
+      "uncertain": {
+        "count": 0,
+        "total": 1
+      },
+      "errors": {
+        "count": 0,
+        "total": 1
+      }
+    },
+    "unsupported-causal-conclusion": {
+      "label_matches": {
+        "count": 0,
+        "total": 1
+      },
+      "useful_acceptance": {
+        "count": 0,
+        "total": 0
+      },
+      "false_acceptance": {
+        "count": 1,
+        "total": 1
+      },
+      "false_rejection": {
+        "count": 0,
+        "total": 0
+      },
+      "uncertain": {
+        "count": 0,
+        "total": 1
+      },
+      "errors": {
+        "count": 0,
+        "total": 1
+      }
+    },
+    "unusual-actor-preparation": {
+      "label_matches": {
+        "count": 1,
+        "total": 1
+      },
+      "useful_acceptance": {
+        "count": 1,
+        "total": 1
+      },
+      "false_acceptance": {
+        "count": 0,
+        "total": 0
+      },
+      "false_rejection": {
+        "count": 0,
+        "total": 1
+      },
+      "uncertain": {
+        "count": 0,
+        "total": 1
+      },
+      "errors": {
+        "count": 0,
+        "total": 1
+      }
+    },
+    "wrong-selected-answer-nearby-entity": {
+      "label_matches": {
+        "count": 1,
+        "total": 1
+      },
+      "useful_acceptance": {
+        "count": 0,
+        "total": 0
+      },
+      "false_acceptance": {
+        "count": 0,
+        "total": 1
+      },
+      "false_rejection": {
+        "count": 0,
+        "total": 0
+      },
+      "uncertain": {
+        "count": 0,
+        "total": 1
+      },
+      "errors": {
+        "count": 0,
+        "total": 1
+      }
+    }
+  },
+  "elapsed_seconds": 43.02
+}

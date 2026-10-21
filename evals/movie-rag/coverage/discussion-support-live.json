@@ -1,0 +1,88 @@
+{
+  "created_at_utc": "2026-10-11T20:33:50.032240+00:00",
+  "type": "development HTTP smoke, not quality or throughput qualification",
+  "health": {
+    "status": "ok",
+    "data_source": "tmdb"
+  },
+  "cases": [
+    {
+      "movie_id": 155,
+      "question": "How did Ledger's facial expressions help create the Joker's makeup?",
+      "allow_spoilers": true,
+      "response": {
+        "status": "answered",
+        "answer": "Ledger's facial expressions helped create the Joker's makeup by scrunching up his face to create different cracks and textures once the makeup was applied, as instructed by makeup artist John Caglione Jr.",
+        "answer_kind": "event",
+        "script_context": null,
+        "citations": [
+          {
+            "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_073",
+            "source_label": "English Wikipedia contributors: The Dark Knight",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1378704545",
+            "revision": "enwiki-1378704545-sections-v3-body",
+            "excerpt": "style tie that Ledger suggested.[151] Prosthetics supervisor Conor O'Sullivan created Joker's scars, which he partly based on a scarred delivery man he met, and used his own technique to create and apply the supple, skin-like prosthesis.[33][152] John Caglione Jr designed Joker's \"organic\" makeup to look as though it had been worn for days; this idea was partly based on more of Bacon's works. Caglione Jr used a theatrical makeup technique for the application; he instructed Ledger to scrunch up his face so different cracks and textures were created once the makeup was applied and Ledger relaxed"
+          },
+          {
+            "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_074",
+            "source_label": "English Wikipedia contributors: The Dark Knight",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1378704545",
+            "revision": "enwiki-1378704545-sections-v3-body",
+            "excerpt": "is face so different cracks and textures were created once the makeup was applied and Ledger relaxed. Ledger always applied the lipstick himself, believing it was essential to his characterization.[33][153][154]\n\n"
+          }
+        ]
+      },
+      "duration_seconds": 10.332
+    },
+    {
+      "movie_id": 155,
+      "question": "Why does Harvey Dent claim he is Batman?",
+      "allow_spoilers": true,
+      "response": {
+        "status": "answered",
+        "answer": "to lure the Joker out",
+        "answer_kind": "event",
+        "script_context": null,
+        "citations": [
+          {
+            "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_012",
+            "source_label": "English Wikipedia contributors: The Dark Knight",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1378704545",
+            "revision": "enwiki-1378704545-sections-v3-body",
+            "excerpt": "ler Alfred Pennyworth says that \"some men just want to watch the world burn.\" Dent claims he is Batman to lure the Joker out, who attacks the police convoy transporting Dent. Batman and Gordon apprehend the Joker, and Gordon is promoted to commissioner. At the police station, Batman interrogates the Joker, who says he finds Batman entertaining and has no intention of killing him. Having deduced Batman's feelings for Rachel, the Joker reveals she and Dent are being held separately in buildings rigged to explode. Batman races to rescue Rachel while Gordon and the other officers go after Dent, bu"
+          }
+        ]
+      },
+      "duration_seconds": 7.143
+    },
+    {
+      "movie_id": 155,
+      "question": "How did Ledger's facial expressions help create the Joker's makeup?",
+      "allow_spoilers": false,
+      "response": {
+        "status": "spoiler_permission_required",
+        "answer": "This source can contain story details. Allow spoilers above before asking a question.",
+        "answer_kind": "event",
+        "script_context": null,
+        "citations": []
+      },
+      "duration_seconds": 0.004
+    }
+  ],
+  "saved_content": {
+    "saved_banks_unchanged": true,
+    "count": 11,
+    "script_policy_unchanged": true,
+    "inception_more_questions_gate": true
+  },
+  "ui_verification": {
+    "question": "How did Ledger's facial expressions help create the Joker's makeup?",
+    "answer_visible": "Ledger's facial expressions helped create the Joker's makeup by scrunching up his face to create different cracks and textures once the makeup was applied, as instructed by makeup artist John Caglione Jr.",
+    "source_revision": "1378704545",
+    "both_source_cards_expanded": true,
+    "screenshot": ".cache/proof/discussion-support.png",
+    "spoiler_preference_restored": true,
+    "allow_spoilers_after_check": false,
+    "restored_section": "discuss"
+  }
+}

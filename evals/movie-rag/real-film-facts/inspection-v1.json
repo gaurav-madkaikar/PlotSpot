@@ -1,0 +1,59 @@
+{
+  "baseline_report_sha256": "5ea1233d3c0f424c802f6562763c0f3625ff8ace6e5b5efa75e12b299fc5789c",
+  "method": "Assistant inspection of all seven outputs against their frozen source passages; consumed development observations, not independent annotations or accuracy labels.",
+  "publication_approved": false,
+  "items": [
+    {
+      "movie_id": 496243,
+      "item_id": "F1",
+      "assessment": "withhold",
+      "reason": "Adds a causal claim for avoiding traditional coverage. Its quote only establishes the shooting choice. The critic appropriately withheld it, but its reason mentions stitching, which this proposal does not mention."
+    },
+    {
+      "movie_id": 496243,
+      "item_id": "F2",
+      "assessment": "retain-for-review",
+      "reason": "Distinct-take editing is supported and paraphrased. No publication authorized by this observation."
+    },
+    {
+      "movie_id": 129,
+      "item_id": "F1",
+      "assessment": "needs-citation-repair",
+      "reason": "Full passage supports the names and dubbing process, but the code-owned quote starts at Hewitt after H. The sentence splitter treated a personal initial as a sentence end. Critic approval missed the incomplete citation."
+    },
+    {
+      "movie_id": 120467,
+      "item_id": "F1",
+      "assessment": "retain-for-review",
+      "reason": "Research period and all named photographers/painters appear in the quote. Wording is long but within the configured limit; a shorter list would improve the product."
+    },
+    {
+      "movie_id": 438631,
+      "item_id": "F1",
+      "assessment": "supported-but-withheld",
+      "reason": "The excerpt explicitly says sandscreens simulate natural desert luminance. The critic claims this concerns a surface property rather than lighting, which is not established by the source; its explanation imports an unsupported distinction."
+    },
+    {
+      "movie_id": 546554,
+      "item_id": "F1",
+      "assessment": "needs-wording-repair",
+      "reason": "The source establishes musician-based character naming as a memory aid. The proposal changes the remembered object to roles; prefer remembering character names to avoid this extra interpretation."
+    },
+    {
+      "movie_id": 37165,
+      "item_id": "F1",
+      "assessment": "retain-for-review",
+      "reason": "Actor research, catalog decade and pose development are directly supported. The compressed description of her role does not change the production detail."
+    }
+  ],
+  "preservation": {
+    "all_ten_saved_collections_unchanged": true,
+    "background_policy_unchanged": true,
+    "background_policy_sha256": "35b7fb2d2e2454cd0bbae2f8eea1c852103cefa33ebf693acd9cf51d0165ab2d"
+  },
+  "next_actions": [
+    "Repair complete-sentence selection for personal initials and honorifics before expanding sources.",
+    "Add development checks for self-contained citations and claim qualifier/object drift; preserve baseline failures.",
+    "Require fresh independent or separately authored cases before broader automatic publication; generator and critic share one model."
+  ]
+}

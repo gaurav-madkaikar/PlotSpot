@@ -1,0 +1,13 @@
+{
+  "movie_id": 329865,
+  "job_id": "f283ad4acdf04365b659217f6d84d44f",
+  "report_sha256": "16ea75ba5ec62293c1d8da8d5ffc4fa49b99e48bd029b843d61411b9d1c2a608",
+  "item_ids": [
+    "t1-Q1",
+    "t2-F1",
+    "t5-Q1"
+  ],
+  "reviewer": "Codex primary agent: complete-source and saved-topic inspection",
+  "review_kind": "assistant_source_review",
+  "reviewed_sources_and_novelty": true
+}

@@ -1,0 +1,1661 @@
+{
+  "created_at_utc": "2026-10-11T21:48:45.684873+00:00",
+  "initial_module_hashes": {
+    "/Users/gmadkaik/Documents/ai-projects/movie-companion/backend/src/movie_companion/discussion_context.py": "8a1ea19036e80bc5d9c3a08caf24fbfa6437f7c8410e4864b9692635be786b73",
+    "/Users/gmadkaik/Documents/ai-projects/movie-companion/backend/src/movie_companion/discussion_support.py": "17b0f74500f94eaa3968d53b3a5fe02ef9a4141e14885d2ecb08efd213585c6c",
+    "/Users/gmadkaik/Documents/ai-projects/movie-companion/backend/src/movie_companion/discussion_retrieval.py": "2084660632a45e8d0c4afbbf33fcf9344d0c36abca84270f046e8406864636c8",
+    "/Users/gmadkaik/Documents/ai-projects/movie-companion/backend/src/movie_companion/grounding_learning.py": "07662797b22db162ef6e7545fc66c8a1ecd8b06f806c63ef12654713ccabdd89",
+    "/Users/gmadkaik/Documents/ai-projects/movie-companion/backend/src/movie_companion/movie_qa_learning.py": "2bb658560782526485f370404b5c0a61637d68e2b7c3f68dd875b7401a4d35d5"
+  },
+  "code_changed_during_run": false,
+  "movie_id": 329865,
+  "dataset_version": "discussion-transfer-329865-dev-v1",
+  "split": "development",
+  "dataset_sha256": "584cff295411c5043513bc8ec229f452ac5f2b93d2ac2b249f5891745af1633e",
+  "source_snapshot": "89f7bcf5fc9b8c405c2e6775e296c5d620ed1639ad843f67053dffb02b8a1fde",
+  "source_revision": "enwiki-1377517038-sections-v3-body",
+  "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1377517038",
+  "pipeline_sha256": "7b7bb20c6b51d329d0e323504b793e47f4b397efd4f49ed2ec0f4bd86872ced3",
+  "prompt_sha256": "3368bd3fa022a7e924a6ce26aa9eb84cf92544f6e1f1797a0cf3a16dc22ae88c",
+  "grounding_module_sha256": "07662797b22db162ef6e7545fc66c8a1ecd8b06f806c63ef12654713ccabdd89",
+  "retrieval_policy": "discussion-hybrid-v2",
+  "grounding_policy": "grounded-relation-support-v1",
+  "retriever_sha256": "2084660632a45e8d0c4afbbf33fcf9344d0c36abca84270f046e8406864636c8",
+  "context_sha256": "8a1ea19036e80bc5d9c3a08caf24fbfa6437f7c8410e4864b9692635be786b73",
+  "reviewer_sha256": "17b0f74500f94eaa3968d53b3a5fe02ef9a4141e14885d2ecb08efd213585c6c",
+  "comparison": {
+    "order": "alternating baseline/candidate per case; sequential",
+    "baseline_kind": "support-v1",
+    "baseline_sha256": {
+      "grounding_learning": "ba0c8392c0043f01642c0b3bfc37cc822a8afb3342fd37d4718db0f39f9b15d5",
+      "movie_qa_learning": "7130eaba9aa299338ea2e077d4c96731234b653702783c698c435fc4d18e0f4d",
+      "discussion_context": "50d12e9401c749998d4c279d53818f58e530112920d5da38fe7425d191a4318c",
+      "discussion_support": "1c3cae905f72fcf3c11470303c6c40d32e248db03b6ef109fb256e94e235acd3"
+    },
+    "baseline_automated_passed": 3,
+    "baseline_generation_errors": 0
+  },
+  "models": {
+    "nomic-embed-text:v1.5": "0a109f422b47e3a30ba2b10eca18548e944e8a23073ee3f3e947efcf3c45e59f",
+    "llama3.2:3b": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+    "qwen3.5:9b": "6488c96fa5faab64bb65cbd30d4289e20e6130ef535a93ef9a49f42eda893ea7"
+  },
+  "chunk_settings": {
+    "max_chars": 600,
+    "overlap_chars": 100
+  },
+  "ingestion": "cached",
+  "passages": 54,
+  "publication": false,
+  "token_usage": null,
+  "summary": {
+    "automated_passed": 3,
+    "total": 4
+  },
+  "limitations": [
+    "Small development inspection, not an independent holdout or safety benchmark.",
+    "Phrase and citation membership checks do not establish entailment; inspect cited passages.",
+    "Runs the shared Wikipedia discussion function, not the HTTP or script-assisted path.",
+    "No bank generation, publication, or production throughput is measured."
+  ],
+  "cases": [
+    {
+      "id": "future-visions",
+      "question": "What does Louise discover about the visions of her daughter in the story?",
+      "expected_status": "answered",
+      "labelled_supporting_ids": [
+        "89f7bcf5fc9b8c405c2e6775e296c5d6_011"
+      ],
+      "retrieved": [
+        {
+          "passage_id": "89f7bcf5fc9b8c405c2e6775e296c5d6_011",
+          "score": 0.6702315101173791,
+          "section": "Plot"
+        },
+        {
+          "passage_id": "89f7bcf5fc9b8c405c2e6775e296c5d6_006",
+          "score": 0.6868278822263852,
+          "section": "Plot"
+        },
+        {
+          "passage_id": "89f7bcf5fc9b8c405c2e6775e296c5d6_007",
+          "score": 0.5602224902684824,
+          "section": "Plot"
+        }
+      ],
+      "answer": {
+        "status": "insufficient_evidence",
+        "answer": "The supplied evidence is insufficient to answer this question.",
+        "citation_ids": []
+      },
+      "error": null,
+      "duration_seconds": 12.314,
+      "supporting_hit_at_3": true,
+      "annotated_id_recall_at_3": 1.0,
+      "automated_pass": false,
+      "failures": [
+        "Answer status differs from expectation",
+        "No labelled supporting passage cited",
+        "Missing expected phrase group: ['future', 'premonition']"
+      ],
+      "human_claim_support_review": "pending",
+      "retrieval_trace": {
+        "policy": "discussion-hybrid-v2",
+        "scope": "story",
+        "classified": true,
+        "eligible_passages": 54,
+        "routed_passages": 9,
+        "lexical_anchor": "89f7bcf5fc9b8c405c2e6775e296c5d6_011",
+        "selected_ids": [
+          "89f7bcf5fc9b8c405c2e6775e296c5d6_011",
+          "89f7bcf5fc9b8c405c2e6775e296c5d6_006",
+          "89f7bcf5fc9b8c405c2e6775e296c5d6_007"
+        ],
+        "vector_top": [
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_006",
+            "cosine": 0.6868278822263852
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_011",
+            "cosine": 0.6702315101173791
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_013",
+            "cosine": 0.6279191406453931
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_014",
+            "cosine": 0.5987058054907008
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_012",
+            "cosine": 0.5939882485533865
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_010",
+            "cosine": 0.5721506309872453
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_007",
+            "cosine": 0.5602224902684824
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_008",
+            "cosine": 0.5566887015357894
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_009",
+            "cosine": 0.553441621010123
+          }
+        ],
+        "lexical_top": [
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_011",
+            "bm25": 6.454630562844427
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_007",
+            "bm25": 5.496658727540132
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_006",
+            "bm25": 4.041543152729668
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_010",
+            "bm25": 2.9065226242866538
+          }
+        ],
+        "selected_ranks": [
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_011",
+            "rrf": 0.03252247488101534,
+            "vector_rank": 2,
+            "lexical_rank": 1
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_006",
+            "rrf": 0.032266458495966696,
+            "vector_rank": 1,
+            "lexical_rank": 3
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_007",
+            "rrf": 0.031054405392392875,
+            "vector_rank": 7,
+            "lexical_rank": 2
+          }
+        ]
+      },
+      "grounding_trace": {
+        "type": "grounding",
+        "policy": "grounded-relation-support-v1",
+        "support": [
+          {
+            "passage_id": "89f7bcf5fc9b8c405c2e6775e296c5d6_007",
+            "citation_ids": [
+              "89f7bcf5fc9b8c405c2e6775e296c5d6_007"
+            ],
+            "quote": "As Banks studies the language, she starts to have flashback-like visions of her daughter."
+          },
+          {
+            "passage_id": "89f7bcf5fc9b8c405c2e6775e296c5d6_011",
+            "citation_ids": [
+              "89f7bcf5fc9b8c405c2e6775e296c5d6_011"
+            ],
+            "quote": "Banks realizes the \"weapon\" is their language."
+          },
+          {
+            "passage_id": "89f7bcf5fc9b8c405c2e6775e296c5d6_011",
+            "citation_ids": [
+              "89f7bcf5fc9b8c405c2e6775e296c5d6_011"
+            ],
+            "quote": "Learning the language alters humans' linear perception of time, allowing them to experience memories of future events."
+          }
+        ],
+        "note": "Exact quote presence is checked; semantic claim support still requires evaluation."
+      },
+      "context_trace": {
+        "type": "context",
+        "policy": "discussion-sentence-context-v2",
+        "anchor_ids": [
+          "89f7bcf5fc9b8c405c2e6775e296c5d6_011",
+          "89f7bcf5fc9b8c405c2e6775e296c5d6_006",
+          "89f7bcf5fc9b8c405c2e6775e296c5d6_007"
+        ],
+        "generation_ids": [
+          "89f7bcf5fc9b8c405c2e6775e296c5d6_011",
+          "89f7bcf5fc9b8c405c2e6775e296c5d6_006",
+          "89f7bcf5fc9b8c405c2e6775e296c5d6_007",
+          "89f7bcf5fc9b8c405c2e6775e296c5d6_010",
+          "89f7bcf5fc9b8c405c2e6775e296c5d6_012",
+          "89f7bcf5fc9b8c405c2e6775e296c5d6_008"
+        ],
+        "options": 16,
+        "identity_context_ids": [
+          "89f7bcf5fc9b8c405c2e6775e296c5d6_006"
+        ]
+      },
+      "support_review": {
+        "type": "support_review",
+        "policy": "discussion-support-review-v5",
+        "verdict": "unsupported",
+        "reason": "The evidence states that learning the language allows experiencing 'memories of future events,' implying a change in perception rather than literal premonitions of an unborn child. The proposed answer claims the daughter 'will not be born until' the",
+        "evidence_answer": "Banks realizes the \"weapon\" is their language. Learning the language alters humans' linear perception of time, allowing them to experience memories of future events.",
+        "evidence_quotes": [
+          "Learning the language alters humans' linear perception of time, allowing them to experience memories of future events."
+        ],
+        "identity_context": [
+          {
+            "quote": "Linguist Louise Banks's daughter Hannah dies at the age of twelve from an incurable illness.",
+            "citation_ids": [
+              "89f7bcf5fc9b8c405c2e6775e296c5d6_006"
+            ]
+          }
+        ]
+      },
+      "baseline": {
+        "id": "future-visions",
+        "question": "What does Louise discover about the visions of her daughter in the story?",
+        "expected_status": "answered",
+        "labelled_supporting_ids": [
+          "89f7bcf5fc9b8c405c2e6775e296c5d6_011"
+        ],
+        "retrieved": [
+          {
+            "passage_id": "89f7bcf5fc9b8c405c2e6775e296c5d6_011",
+            "score": 0.6702315101173791,
+            "section": "Plot"
+          },
+          {
+            "passage_id": "89f7bcf5fc9b8c405c2e6775e296c5d6_006",
+            "score": 0.6868278822263852,
+            "section": "Plot"
+          },
+          {
+            "passage_id": "89f7bcf5fc9b8c405c2e6775e296c5d6_007",
+            "score": 0.5602224902684824,
+            "section": "Plot"
+          }
+        ],
+        "answer": {
+          "status": "insufficient_evidence",
+          "answer": "The supplied evidence is insufficient to answer this question.",
+          "citation_ids": []
+        },
+        "error": null,
+        "duration_seconds": 11.856,
+        "supporting_hit_at_3": true,
+        "annotated_id_recall_at_3": 1.0,
+        "automated_pass": false,
+        "failures": [
+          "Answer status differs from expectation",
+          "No labelled supporting passage cited",
+          "Missing expected phrase group: ['future', 'premonition']"
+        ],
+        "human_claim_support_review": "pending",
+        "retrieval_trace": {
+          "policy": "discussion-hybrid-v2",
+          "scope": "story",
+          "classified": true,
+          "eligible_passages": 54,
+          "routed_passages": 9,
+          "lexical_anchor": "89f7bcf5fc9b8c405c2e6775e296c5d6_011",
+          "selected_ids": [
+            "89f7bcf5fc9b8c405c2e6775e296c5d6_011",
+            "89f7bcf5fc9b8c405c2e6775e296c5d6_006",
+            "89f7bcf5fc9b8c405c2e6775e296c5d6_007"
+          ],
+          "vector_top": [
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_006",
+              "cosine": 0.6868278822263852
+            },
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_011",
+              "cosine": 0.6702315101173791
+            },
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_013",
+              "cosine": 0.6279191406453931
+            },
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_014",
+              "cosine": 0.5987058054907008
+            },
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_012",
+              "cosine": 0.5939882485533865
+            },
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_010",
+              "cosine": 0.5721506309872453
+            },
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_007",
+              "cosine": 0.5602224902684824
+            },
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_008",
+              "cosine": 0.5566887015357894
+            },
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_009",
+              "cosine": 0.553441621010123
+            }
+          ],
+          "lexical_top": [
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_011",
+              "bm25": 6.454630562844427
+            },
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_007",
+              "bm25": 5.496658727540132
+            },
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_006",
+              "bm25": 4.041543152729668
+            },
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_010",
+              "bm25": 2.9065226242866538
+            }
+          ],
+          "selected_ranks": [
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_011",
+              "rrf": 0.03252247488101534,
+              "vector_rank": 2,
+              "lexical_rank": 1
+            },
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_006",
+              "rrf": 0.032266458495966696,
+              "vector_rank": 1,
+              "lexical_rank": 3
+            },
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_007",
+              "rrf": 0.031054405392392875,
+              "vector_rank": 7,
+              "lexical_rank": 2
+            }
+          ]
+        },
+        "grounding_trace": {
+          "type": "grounding",
+          "policy": "grounded-sentence-support-v1",
+          "support": [
+            {
+              "passage_id": "89f7bcf5fc9b8c405c2e6775e296c5d6_007",
+              "citation_ids": [
+                "89f7bcf5fc9b8c405c2e6775e296c5d6_007"
+              ],
+              "quote": "As Banks studies the language, she starts to have flashback-like visions of her daughter."
+            },
+            {
+              "passage_id": "89f7bcf5fc9b8c405c2e6775e296c5d6_011",
+              "citation_ids": [
+                "89f7bcf5fc9b8c405c2e6775e296c5d6_011"
+              ],
+              "quote": "Banks realizes the \"weapon\" is their language."
+            },
+            {
+              "passage_id": "89f7bcf5fc9b8c405c2e6775e296c5d6_011",
+              "citation_ids": [
+                "89f7bcf5fc9b8c405c2e6775e296c5d6_011"
+              ],
+              "quote": "Learning the language alters humans' linear perception of time, allowing them to experience memories of future events."
+            }
+          ],
+          "note": "Exact quote presence is checked; semantic claim support still requires evaluation."
+        },
+        "context_trace": {
+          "type": "context",
+          "policy": "discussion-sentence-context-v1",
+          "anchor_ids": [
+            "89f7bcf5fc9b8c405c2e6775e296c5d6_011",
+            "89f7bcf5fc9b8c405c2e6775e296c5d6_006",
+            "89f7bcf5fc9b8c405c2e6775e296c5d6_007"
+          ],
+          "generation_ids": [
+            "89f7bcf5fc9b8c405c2e6775e296c5d6_011",
+            "89f7bcf5fc9b8c405c2e6775e296c5d6_006",
+            "89f7bcf5fc9b8c405c2e6775e296c5d6_007",
+            "89f7bcf5fc9b8c405c2e6775e296c5d6_010",
+            "89f7bcf5fc9b8c405c2e6775e296c5d6_012",
+            "89f7bcf5fc9b8c405c2e6775e296c5d6_008"
+          ],
+          "options": 16
+        },
+        "support_review": {
+          "type": "support_review",
+          "policy": "discussion-support-review-v4",
+          "verdict": "unsupported",
+          "reason": "The selected evidence identifies the protagonist as 'Banks', whereas the question and answer refer to a character named 'Louise'. The evidence does not mention Louise or her daughter, nor does it state that Banks' visions are premonitions of a future"
+        }
+      }
+    },
+    {
+      "id": "future-help",
+      "question": "Why do the heptapods help humanity in the story?",
+      "expected_status": "answered",
+      "labelled_supporting_ids": [
+        "89f7bcf5fc9b8c405c2e6775e296c5d6_011"
+      ],
+      "retrieved": [
+        {
+          "passage_id": "89f7bcf5fc9b8c405c2e6775e296c5d6_007",
+          "score": 0.7301619344778639,
+          "section": "Plot"
+        },
+        {
+          "passage_id": "89f7bcf5fc9b8c405c2e6775e296c5d6_013",
+          "score": 0.6838111074482344,
+          "section": "Plot"
+        },
+        {
+          "passage_id": "89f7bcf5fc9b8c405c2e6775e296c5d6_011",
+          "score": 0.6529155862601672,
+          "section": "Plot"
+        }
+      ],
+      "answer": {
+        "status": "answered",
+        "answer": "Because in 3,000 years' time they will need humanity's help in return.",
+        "citation_ids": [
+          "89f7bcf5fc9b8c405c2e6775e296c5d6_011"
+        ]
+      },
+      "error": null,
+      "duration_seconds": 11.795,
+      "supporting_hit_at_3": true,
+      "annotated_id_recall_at_3": 1.0,
+      "automated_pass": true,
+      "failures": [],
+      "human_claim_support_review": "pending",
+      "retrieval_trace": {
+        "policy": "discussion-hybrid-v2",
+        "scope": "story",
+        "classified": true,
+        "eligible_passages": 54,
+        "routed_passages": 9,
+        "lexical_anchor": "89f7bcf5fc9b8c405c2e6775e296c5d6_011",
+        "selected_ids": [
+          "89f7bcf5fc9b8c405c2e6775e296c5d6_007",
+          "89f7bcf5fc9b8c405c2e6775e296c5d6_013",
+          "89f7bcf5fc9b8c405c2e6775e296c5d6_011"
+        ],
+        "vector_top": [
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_007",
+            "cosine": 0.7301619344778639
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_012",
+            "cosine": 0.7027058124778446
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_009",
+            "cosine": 0.6875844551773516
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_010",
+            "cosine": 0.6866863943908802
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_013",
+            "cosine": 0.6838111074482344
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_006",
+            "cosine": 0.6821377130545782
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_014",
+            "cosine": 0.678881185177064
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_011",
+            "cosine": 0.6529155862601672
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_008",
+            "cosine": 0.6399587595877448
+          }
+        ],
+        "lexical_top": [
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_011",
+            "bm25": 7.621151576508588
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_013",
+            "bm25": 4.382987391963265
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_007",
+            "bm25": 2.1362579956171546
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_014",
+            "bm25": 1.3833043724135232
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_008",
+            "bm25": 1.3207932834295497
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_010",
+            "bm25": 1.3207932834295497
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_012",
+            "bm25": 1.3109199402150613
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_009",
+            "bm25": 1.2728598374076583
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_006",
+            "bm25": 1.2282836944881246
+          }
+        ],
+        "selected_ranks": [
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_007",
+            "rrf": 0.032266458495966696,
+            "vector_rank": 1,
+            "lexical_rank": 3
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_013",
+            "rrf": 0.0315136476426799,
+            "vector_rank": 5,
+            "lexical_rank": 2
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_011",
+            "rrf": 0.031099324975891997,
+            "vector_rank": 8,
+            "lexical_rank": 1
+          }
+        ]
+      },
+      "grounding_trace": {
+        "type": "grounding",
+        "policy": "grounded-relation-support-v1",
+        "support": [
+          {
+            "passage_id": "89f7bcf5fc9b8c405c2e6775e296c5d6_011",
+            "citation_ids": [
+              "89f7bcf5fc9b8c405c2e6775e296c5d6_011"
+            ],
+            "quote": "Costello explains that they have come to help humanity, because in 3,000 years' time they will need humanity's help in return."
+          }
+        ],
+        "note": "Exact quote presence is checked; semantic claim support still requires evaluation."
+      },
+      "context_trace": {
+        "type": "context",
+        "policy": "discussion-sentence-context-v2",
+        "anchor_ids": [
+          "89f7bcf5fc9b8c405c2e6775e296c5d6_007",
+          "89f7bcf5fc9b8c405c2e6775e296c5d6_013",
+          "89f7bcf5fc9b8c405c2e6775e296c5d6_011"
+        ],
+        "generation_ids": [
+          "89f7bcf5fc9b8c405c2e6775e296c5d6_007",
+          "89f7bcf5fc9b8c405c2e6775e296c5d6_013",
+          "89f7bcf5fc9b8c405c2e6775e296c5d6_011",
+          "89f7bcf5fc9b8c405c2e6775e296c5d6_006",
+          "89f7bcf5fc9b8c405c2e6775e296c5d6_008",
+          "89f7bcf5fc9b8c405c2e6775e296c5d6_012"
+        ],
+        "options": 16,
+        "identity_context_ids": []
+      },
+      "support_review": {
+        "type": "support_review",
+        "policy": "discussion-support-review-v5",
+        "verdict": "supported",
+        "reason": "The proposed answer is a direct extraction of the reason stated in the evidence for the heptapods' action of helping humanity.",
+        "evidence_answer": "They have come to help humanity because in 3,000 years' time they will need humanity's help in return.",
+        "evidence_quotes": [
+          "Costello explains that they have come to help humanity, because in 3,000 years' time they will need humanity's help in return."
+        ],
+        "identity_context": []
+      },
+      "baseline": {
+        "id": "future-help",
+        "question": "Why do the heptapods help humanity in the story?",
+        "expected_status": "answered",
+        "labelled_supporting_ids": [
+          "89f7bcf5fc9b8c405c2e6775e296c5d6_011"
+        ],
+        "retrieved": [
+          {
+            "passage_id": "89f7bcf5fc9b8c405c2e6775e296c5d6_007",
+            "score": 0.7301619344778639,
+            "section": "Plot"
+          },
+          {
+            "passage_id": "89f7bcf5fc9b8c405c2e6775e296c5d6_013",
+            "score": 0.6838111074482344,
+            "section": "Plot"
+          },
+          {
+            "passage_id": "89f7bcf5fc9b8c405c2e6775e296c5d6_011",
+            "score": 0.6529155862601672,
+            "section": "Plot"
+          }
+        ],
+        "answer": {
+          "status": "answered",
+          "answer": "Because in 3,000 years' time they will need humanity's help in return.",
+          "citation_ids": [
+            "89f7bcf5fc9b8c405c2e6775e296c5d6_011"
+          ]
+        },
+        "error": null,
+        "duration_seconds": 7.624,
+        "supporting_hit_at_3": true,
+        "annotated_id_recall_at_3": 1.0,
+        "automated_pass": true,
+        "failures": [],
+        "human_claim_support_review": "pending",
+        "retrieval_trace": {
+          "policy": "discussion-hybrid-v2",
+          "scope": "story",
+          "classified": true,
+          "eligible_passages": 54,
+          "routed_passages": 9,
+          "lexical_anchor": "89f7bcf5fc9b8c405c2e6775e296c5d6_011",
+          "selected_ids": [
+            "89f7bcf5fc9b8c405c2e6775e296c5d6_007",
+            "89f7bcf5fc9b8c405c2e6775e296c5d6_013",
+            "89f7bcf5fc9b8c405c2e6775e296c5d6_011"
+          ],
+          "vector_top": [
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_007",
+              "cosine": 0.7301619344778639
+            },
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_012",
+              "cosine": 0.7027058124778446
+            },
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_009",
+              "cosine": 0.6875844551773516
+            },
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_010",
+              "cosine": 0.6866863943908802
+            },
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_013",
+              "cosine": 0.6838111074482344
+            },
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_006",
+              "cosine": 0.6821377130545782
+            },
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_014",
+              "cosine": 0.678881185177064
+            },
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_011",
+              "cosine": 0.6529155862601672
+            },
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_008",
+              "cosine": 0.6399587595877448
+            }
+          ],
+          "lexical_top": [
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_011",
+              "bm25": 7.621151576508588
+            },
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_013",
+              "bm25": 4.382987391963265
+            },
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_007",
+              "bm25": 2.1362579956171546
+            },
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_014",
+              "bm25": 1.3833043724135232
+            },
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_008",
+              "bm25": 1.3207932834295497
+            },
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_010",
+              "bm25": 1.3207932834295497
+            },
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_012",
+              "bm25": 1.3109199402150613
+            },
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_009",
+              "bm25": 1.2728598374076583
+            },
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_006",
+              "bm25": 1.2282836944881246
+            }
+          ],
+          "selected_ranks": [
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_007",
+              "rrf": 0.032266458495966696,
+              "vector_rank": 1,
+              "lexical_rank": 3
+            },
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_013",
+              "rrf": 0.0315136476426799,
+              "vector_rank": 5,
+              "lexical_rank": 2
+            },
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_011",
+              "rrf": 0.031099324975891997,
+              "vector_rank": 8,
+              "lexical_rank": 1
+            }
+          ]
+        },
+        "grounding_trace": {
+          "type": "grounding",
+          "policy": "grounded-sentence-support-v1",
+          "support": [
+            {
+              "passage_id": "89f7bcf5fc9b8c405c2e6775e296c5d6_011",
+              "citation_ids": [
+                "89f7bcf5fc9b8c405c2e6775e296c5d6_011"
+              ],
+              "quote": "Costello explains that they have come to help humanity, because in 3,000 years' time they will need humanity's help in return."
+            }
+          ],
+          "note": "Exact quote presence is checked; semantic claim support still requires evaluation."
+        },
+        "context_trace": {
+          "type": "context",
+          "policy": "discussion-sentence-context-v1",
+          "anchor_ids": [
+            "89f7bcf5fc9b8c405c2e6775e296c5d6_007",
+            "89f7bcf5fc9b8c405c2e6775e296c5d6_013",
+            "89f7bcf5fc9b8c405c2e6775e296c5d6_011"
+          ],
+          "generation_ids": [
+            "89f7bcf5fc9b8c405c2e6775e296c5d6_007",
+            "89f7bcf5fc9b8c405c2e6775e296c5d6_013",
+            "89f7bcf5fc9b8c405c2e6775e296c5d6_011",
+            "89f7bcf5fc9b8c405c2e6775e296c5d6_006",
+            "89f7bcf5fc9b8c405c2e6775e296c5d6_008",
+            "89f7bcf5fc9b8c405c2e6775e296c5d6_012"
+          ],
+          "options": 16
+        },
+        "support_review": {
+          "type": "support_review",
+          "policy": "discussion-support-review-v4",
+          "verdict": "supported",
+          "reason": "The selected evidence explicitly states that the heptapods came to help humanity 'because in 3,000 years' time they will need humanity's help in return,' which directly matches both the proposed answer and the question asking for the reason."
+        }
+      }
+    },
+    {
+      "id": "original-score",
+      "question": "Who wrote Arrival\u2019s original score?",
+      "expected_status": "answered",
+      "labelled_supporting_ids": [
+        "89f7bcf5fc9b8c405c2e6775e296c5d6_033"
+      ],
+      "retrieved": [
+        {
+          "passage_id": "89f7bcf5fc9b8c405c2e6775e296c5d6_033",
+          "score": 0.7952971433116821,
+          "section": "Music and soundtrack"
+        },
+        {
+          "passage_id": "89f7bcf5fc9b8c405c2e6775e296c5d6_000",
+          "score": 0.6900224203202737,
+          "section": "Introduction"
+        },
+        {
+          "passage_id": "89f7bcf5fc9b8c405c2e6775e296c5d6_005",
+          "score": 0.5845782125062695,
+          "section": "Introduction"
+        }
+      ],
+      "answer": {
+        "status": "answered",
+        "answer": "J\u00f3hann J\u00f3hannsson",
+        "citation_ids": [
+          "89f7bcf5fc9b8c405c2e6775e296c5d6_033"
+        ]
+      },
+      "error": null,
+      "duration_seconds": 11.856,
+      "supporting_hit_at_3": true,
+      "annotated_id_recall_at_3": 1.0,
+      "automated_pass": true,
+      "failures": [],
+      "human_claim_support_review": "pending",
+      "retrieval_trace": {
+        "policy": "discussion-hybrid-v2",
+        "scope": "all",
+        "classified": true,
+        "eligible_passages": 54,
+        "routed_passages": 54,
+        "lexical_anchor": "89f7bcf5fc9b8c405c2e6775e296c5d6_005",
+        "selected_ids": [
+          "89f7bcf5fc9b8c405c2e6775e296c5d6_033",
+          "89f7bcf5fc9b8c405c2e6775e296c5d6_000",
+          "89f7bcf5fc9b8c405c2e6775e296c5d6_005"
+        ],
+        "vector_top": [
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_033",
+            "cosine": 0.7952971433116821
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_002",
+            "cosine": 0.7573588902476883
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_003",
+            "cosine": 0.7490094067951533
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_017",
+            "cosine": 0.7441557499558501
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_000",
+            "cosine": 0.6900224203202737
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_049",
+            "cosine": 0.6745974931995018
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_042",
+            "cosine": 0.6655448339679852
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_031",
+            "cosine": 0.6636119070562814
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_040",
+            "cosine": 0.6626782098908347
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_047",
+            "cosine": 0.6562347257972387
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_044",
+            "cosine": 0.6495147654652038
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_045",
+            "cosine": 0.6357857792713053
+          }
+        ],
+        "lexical_top": [
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_005",
+            "bm25": 5.429162677104119
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_034",
+            "bm25": 5.151029671438829
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_033",
+            "bm25": 4.738176925723921
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_052",
+            "bm25": 4.626686287604773
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_021",
+            "bm25": 3.6076457058210583
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_004",
+            "bm25": 3.4340100570080225
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_042",
+            "bm25": 2.94669031840977
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_044",
+            "bm25": 2.8605131915144066
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_000",
+            "bm25": 1.8655500838871606
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_030",
+            "bm25": 1.8388997891784993
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_046",
+            "bm25": 1.7963896275704088
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_020",
+            "bm25": 1.7691248526102512
+          }
+        ],
+        "selected_ranks": [
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_033",
+            "rrf": 0.032266458495966696,
+            "vector_rank": 1,
+            "lexical_rank": 3
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_000",
+            "rrf": 0.029877369007803793,
+            "vector_rank": 5,
+            "lexical_rank": 9
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_005",
+            "rrf": 0.02938045560996381,
+            "vector_rank": 17,
+            "lexical_rank": 1
+          }
+        ]
+      },
+      "grounding_trace": {
+        "type": "grounding",
+        "policy": "grounded-relation-support-v1",
+        "support": [
+          {
+            "passage_id": "89f7bcf5fc9b8c405c2e6775e296c5d6_033",
+            "citation_ids": [
+              "89f7bcf5fc9b8c405c2e6775e296c5d6_033"
+            ],
+            "quote": "J\u00f3hann J\u00f3hannsson began writing the score as the shooting started, drawing on the screenplay and concept art for inspiration."
+          },
+          {
+            "passage_id": "89f7bcf5fc9b8c405c2e6775e296c5d6_033",
+            "citation_ids": [
+              "89f7bcf5fc9b8c405c2e6775e296c5d6_033"
+            ],
+            "quote": "He developed one of the main themes in the first week using vocals and experimental piano loops."
+          },
+          {
+            "passage_id": "89f7bcf5fc9b8c405c2e6775e296c5d6_033",
+            "citation_ids": [
+              "89f7bcf5fc9b8c405c2e6775e296c5d6_033"
+            ],
+            "quote": "The original soundtrack was released by Deutsche Grammophon on November 11, 2016."
+          }
+        ],
+        "note": "Exact quote presence is checked; semantic claim support still requires evaluation."
+      },
+      "context_trace": {
+        "type": "context",
+        "policy": "discussion-sentence-context-v2",
+        "anchor_ids": [
+          "89f7bcf5fc9b8c405c2e6775e296c5d6_033",
+          "89f7bcf5fc9b8c405c2e6775e296c5d6_000",
+          "89f7bcf5fc9b8c405c2e6775e296c5d6_005"
+        ],
+        "generation_ids": [
+          "89f7bcf5fc9b8c405c2e6775e296c5d6_033",
+          "89f7bcf5fc9b8c405c2e6775e296c5d6_000",
+          "89f7bcf5fc9b8c405c2e6775e296c5d6_005",
+          "89f7bcf5fc9b8c405c2e6775e296c5d6_034",
+          "89f7bcf5fc9b8c405c2e6775e296c5d6_004"
+        ],
+        "options": 10,
+        "identity_context_ids": []
+      },
+      "support_review": {
+        "type": "support_review",
+        "policy": "discussion-support-review-v5",
+        "verdict": "supported",
+        "reason": "The selected evidence explicitly names J\u00f3hann J\u00f3hannsson as the person who began writing the score and developed its themes, directly supporting the proposed answer that he wrote the original score.",
+        "evidence_answer": "J\u00f3hann J\u00f3hannsson",
+        "evidence_quotes": [
+          "J\u00f3hann J\u00f3hannsson began writing the score as the shooting started, drawing on the screenplay and concept art for inspiration.",
+          "He developed one of the main themes in the first week using vocals and experimental piano loops.",
+          "The original soundtrack was released by Deutsche Grammophon on November 11, 2016."
+        ],
+        "identity_context": []
+      },
+      "baseline": {
+        "id": "original-score",
+        "question": "Who wrote Arrival\u2019s original score?",
+        "expected_status": "answered",
+        "labelled_supporting_ids": [
+          "89f7bcf5fc9b8c405c2e6775e296c5d6_033"
+        ],
+        "retrieved": [
+          {
+            "passage_id": "89f7bcf5fc9b8c405c2e6775e296c5d6_033",
+            "score": 0.7952971433116821,
+            "section": "Music and soundtrack"
+          },
+          {
+            "passage_id": "89f7bcf5fc9b8c405c2e6775e296c5d6_000",
+            "score": 0.6900224203202737,
+            "section": "Introduction"
+          },
+          {
+            "passage_id": "89f7bcf5fc9b8c405c2e6775e296c5d6_005",
+            "score": 0.5845782125062695,
+            "section": "Introduction"
+          }
+        ],
+        "answer": {
+          "status": "answered",
+          "answer": "J\u00f3hann J\u00f3hannsson",
+          "citation_ids": [
+            "89f7bcf5fc9b8c405c2e6775e296c5d6_033"
+          ]
+        },
+        "error": null,
+        "duration_seconds": 10.669,
+        "supporting_hit_at_3": true,
+        "annotated_id_recall_at_3": 1.0,
+        "automated_pass": true,
+        "failures": [],
+        "human_claim_support_review": "pending",
+        "retrieval_trace": {
+          "policy": "discussion-hybrid-v2",
+          "scope": "all",
+          "classified": true,
+          "eligible_passages": 54,
+          "routed_passages": 54,
+          "lexical_anchor": "89f7bcf5fc9b8c405c2e6775e296c5d6_005",
+          "selected_ids": [
+            "89f7bcf5fc9b8c405c2e6775e296c5d6_033",
+            "89f7bcf5fc9b8c405c2e6775e296c5d6_000",
+            "89f7bcf5fc9b8c405c2e6775e296c5d6_005"
+          ],
+          "vector_top": [
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_033",
+              "cosine": 0.7952971433116821
+            },
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_002",
+              "cosine": 0.7573588902476883
+            },
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_003",
+              "cosine": 0.7490094067951533
+            },
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_017",
+              "cosine": 0.7441557499558501
+            },
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_000",
+              "cosine": 0.6900224203202737
+            },
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_049",
+              "cosine": 0.6745974931995018
+            },
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_042",
+              "cosine": 0.6655448339679852
+            },
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_031",
+              "cosine": 0.6636119070562814
+            },
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_040",
+              "cosine": 0.6626782098908347
+            },
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_047",
+              "cosine": 0.6562347257972387
+            },
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_044",
+              "cosine": 0.6495147654652038
+            },
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_045",
+              "cosine": 0.6357857792713053
+            }
+          ],
+          "lexical_top": [
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_005",
+              "bm25": 5.429162677104119
+            },
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_034",
+              "bm25": 5.151029671438829
+            },
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_033",
+              "bm25": 4.738176925723921
+            },
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_052",
+              "bm25": 4.626686287604773
+            },
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_021",
+              "bm25": 3.6076457058210583
+            },
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_004",
+              "bm25": 3.4340100570080225
+            },
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_042",
+              "bm25": 2.94669031840977
+            },
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_044",
+              "bm25": 2.8605131915144066
+            },
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_000",
+              "bm25": 1.8655500838871606
+            },
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_030",
+              "bm25": 1.8388997891784993
+            },
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_046",
+              "bm25": 1.7963896275704088
+            },
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_020",
+              "bm25": 1.7691248526102512
+            }
+          ],
+          "selected_ranks": [
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_033",
+              "rrf": 0.032266458495966696,
+              "vector_rank": 1,
+              "lexical_rank": 3
+            },
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_000",
+              "rrf": 0.029877369007803793,
+              "vector_rank": 5,
+              "lexical_rank": 9
+            },
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_005",
+              "rrf": 0.02938045560996381,
+              "vector_rank": 17,
+              "lexical_rank": 1
+            }
+          ]
+        },
+        "grounding_trace": {
+          "type": "grounding",
+          "policy": "grounded-sentence-support-v1",
+          "support": [
+            {
+              "passage_id": "89f7bcf5fc9b8c405c2e6775e296c5d6_033",
+              "citation_ids": [
+                "89f7bcf5fc9b8c405c2e6775e296c5d6_033"
+              ],
+              "quote": "J\u00f3hann J\u00f3hannsson began writing the score as the shooting started, drawing on the screenplay and concept art for inspiration."
+            },
+            {
+              "passage_id": "89f7bcf5fc9b8c405c2e6775e296c5d6_033",
+              "citation_ids": [
+                "89f7bcf5fc9b8c405c2e6775e296c5d6_033"
+              ],
+              "quote": "He developed one of the main themes in the first week using vocals and experimental piano loops."
+            },
+            {
+              "passage_id": "89f7bcf5fc9b8c405c2e6775e296c5d6_033",
+              "citation_ids": [
+                "89f7bcf5fc9b8c405c2e6775e296c5d6_033"
+              ],
+              "quote": "The original soundtrack was released by Deutsche Grammophon on November 11, 2016."
+            }
+          ],
+          "note": "Exact quote presence is checked; semantic claim support still requires evaluation."
+        },
+        "context_trace": {
+          "type": "context",
+          "policy": "discussion-sentence-context-v1",
+          "anchor_ids": [
+            "89f7bcf5fc9b8c405c2e6775e296c5d6_033",
+            "89f7bcf5fc9b8c405c2e6775e296c5d6_000",
+            "89f7bcf5fc9b8c405c2e6775e296c5d6_005"
+          ],
+          "generation_ids": [
+            "89f7bcf5fc9b8c405c2e6775e296c5d6_033",
+            "89f7bcf5fc9b8c405c2e6775e296c5d6_000",
+            "89f7bcf5fc9b8c405c2e6775e296c5d6_005",
+            "89f7bcf5fc9b8c405c2e6775e296c5d6_034",
+            "89f7bcf5fc9b8c405c2e6775e296c5d6_004"
+          ],
+          "options": 10
+        },
+        "support_review": {
+          "type": "support_review",
+          "policy": "discussion-support-review-v4",
+          "verdict": "supported",
+          "reason": "The selected evidence explicitly states that J\u00f3hann J\u00f3hannsson began writing the score for the film (referred to as 'the shooting' and linked to the screenplay), which directly supports the claim that he wrote the original score. The other details (v"
+        }
+      }
+    },
+    {
+      "id": "missing-private-talk",
+      "question": "What did I tell my friends privately after watching Arrival?",
+      "expected_status": "insufficient_evidence",
+      "labelled_supporting_ids": [],
+      "retrieved": [
+        {
+          "passage_id": "89f7bcf5fc9b8c405c2e6775e296c5d6_002",
+          "score": 0.7042806269223464,
+          "section": "Introduction"
+        },
+        {
+          "passage_id": "89f7bcf5fc9b8c405c2e6775e296c5d6_022",
+          "score": 0.6409906842039665,
+          "section": "Development and pre-production"
+        },
+        {
+          "passage_id": "89f7bcf5fc9b8c405c2e6775e296c5d6_003",
+          "score": 0.6997953924104146,
+          "section": "Introduction"
+        }
+      ],
+      "answer": {
+        "status": "insufficient_evidence",
+        "answer": "The supplied evidence is insufficient to answer this question.",
+        "citation_ids": []
+      },
+      "error": null,
+      "duration_seconds": 3.487,
+      "supporting_hit_at_3": null,
+      "annotated_id_recall_at_3": null,
+      "automated_pass": true,
+      "failures": [],
+      "human_claim_support_review": "pending",
+      "retrieval_trace": {
+        "policy": "discussion-hybrid-v2",
+        "scope": "all",
+        "classified": true,
+        "eligible_passages": 54,
+        "routed_passages": 54,
+        "lexical_anchor": "89f7bcf5fc9b8c405c2e6775e296c5d6_022",
+        "selected_ids": [
+          "89f7bcf5fc9b8c405c2e6775e296c5d6_002",
+          "89f7bcf5fc9b8c405c2e6775e296c5d6_022",
+          "89f7bcf5fc9b8c405c2e6775e296c5d6_003"
+        ],
+        "vector_top": [
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_002",
+            "cosine": 0.7042806269223464
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_017",
+            "cosine": 0.7020129246022649
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_003",
+            "cosine": 0.6997953924104146
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_044",
+            "cosine": 0.6698051402240435
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_021",
+            "cosine": 0.6565469714519225
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_042",
+            "cosine": 0.6548111495362062
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_045",
+            "cosine": 0.6475564443073575
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_049",
+            "cosine": 0.6467271833283667
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_000",
+            "cosine": 0.6462361018186253
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_022",
+            "cosine": 0.6409906842039665
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_033",
+            "cosine": 0.6336337949798801
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_047",
+            "cosine": 0.6324331097838581
+          }
+        ],
+        "lexical_top": [
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_022",
+            "bm25": 2.249857533294257
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_024",
+            "bm25": 2.148947197565244
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_018",
+            "bm25": 2.101812087834077
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_036",
+            "bm25": 2.101812087834077
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_035",
+            "bm25": 2.0715208632718514
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_000",
+            "bm25": 1.8655500838871606
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_038",
+            "bm25": 1.7419017829241075
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_003",
+            "bm25": 1.7231531764167176
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_040",
+            "bm25": 1.7045769720837567
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_002",
+            "bm25": 1.6425996420810964
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_051",
+            "bm25": 1.609166350235157
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_047",
+            "bm25": 1.2091028235804635
+          }
+        ],
+        "selected_ranks": [
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_002",
+            "rrf": 0.030679156908665108,
+            "vector_rank": 1,
+            "lexical_rank": 10
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_022",
+            "rrf": 0.030679156908665108,
+            "vector_rank": 10,
+            "lexical_rank": 1
+          },
+          {
+            "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_003",
+            "rrf": 0.03057889822595705,
+            "vector_rank": 3,
+            "lexical_rank": 8
+          }
+        ]
+      },
+      "grounding_trace": {
+        "type": "grounding",
+        "policy": "grounded-relation-support-v1",
+        "support": [],
+        "note": "Exact quote presence is checked; semantic claim support still requires evaluation."
+      },
+      "context_trace": {
+        "type": "context",
+        "policy": "discussion-sentence-context-v2",
+        "anchor_ids": [
+          "89f7bcf5fc9b8c405c2e6775e296c5d6_002",
+          "89f7bcf5fc9b8c405c2e6775e296c5d6_022",
+          "89f7bcf5fc9b8c405c2e6775e296c5d6_003"
+        ],
+        "generation_ids": [
+          "89f7bcf5fc9b8c405c2e6775e296c5d6_002",
+          "89f7bcf5fc9b8c405c2e6775e296c5d6_022",
+          "89f7bcf5fc9b8c405c2e6775e296c5d6_003",
+          "89f7bcf5fc9b8c405c2e6775e296c5d6_021",
+          "89f7bcf5fc9b8c405c2e6775e296c5d6_023",
+          "89f7bcf5fc9b8c405c2e6775e296c5d6_004"
+        ],
+        "options": 10,
+        "identity_context_ids": []
+      },
+      "support_review": null,
+      "baseline": {
+        "id": "missing-private-talk",
+        "question": "What did I tell my friends privately after watching Arrival?",
+        "expected_status": "insufficient_evidence",
+        "labelled_supporting_ids": [],
+        "retrieved": [
+          {
+            "passage_id": "89f7bcf5fc9b8c405c2e6775e296c5d6_002",
+            "score": 0.7042806269223464,
+            "section": "Introduction"
+          },
+          {
+            "passage_id": "89f7bcf5fc9b8c405c2e6775e296c5d6_022",
+            "score": 0.6409906842039665,
+            "section": "Development and pre-production"
+          },
+          {
+            "passage_id": "89f7bcf5fc9b8c405c2e6775e296c5d6_003",
+            "score": 0.6997953924104146,
+            "section": "Introduction"
+          }
+        ],
+        "answer": {
+          "status": "insufficient_evidence",
+          "answer": "The supplied evidence is insufficient to answer this question.",
+          "citation_ids": []
+        },
+        "error": null,
+        "duration_seconds": 0.898,
+        "supporting_hit_at_3": null,
+        "annotated_id_recall_at_3": null,
+        "automated_pass": true,
+        "failures": [],
+        "human_claim_support_review": "pending",
+        "retrieval_trace": {
+          "policy": "discussion-hybrid-v2",
+          "scope": "all",
+          "classified": true,
+          "eligible_passages": 54,
+          "routed_passages": 54,
+          "lexical_anchor": "89f7bcf5fc9b8c405c2e6775e296c5d6_022",
+          "selected_ids": [
+            "89f7bcf5fc9b8c405c2e6775e296c5d6_002",
+            "89f7bcf5fc9b8c405c2e6775e296c5d6_022",
+            "89f7bcf5fc9b8c405c2e6775e296c5d6_003"
+          ],
+          "vector_top": [
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_002",
+              "cosine": 0.7042806269223464
+            },
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_017",
+              "cosine": 0.7020129246022649
+            },
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_003",
+              "cosine": 0.6997953924104146
+            },
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_044",
+              "cosine": 0.6698051402240435
+            },
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_021",
+              "cosine": 0.6565469714519225
+            },
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_042",
+              "cosine": 0.6548111495362062
+            },
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_045",
+              "cosine": 0.6475564443073575
+            },
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_049",
+              "cosine": 0.6467271833283667
+            },
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_000",
+              "cosine": 0.6462361018186253
+            },
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_022",
+              "cosine": 0.6409906842039665
+            },
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_033",
+              "cosine": 0.6336337949798801
+            },
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_047",
+              "cosine": 0.6324331097838581
+            }
+          ],
+          "lexical_top": [
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_022",
+              "bm25": 2.249857533294257
+            },
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_024",
+              "bm25": 2.148947197565244
+            },
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_018",
+              "bm25": 2.101812087834077
+            },
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_036",
+              "bm25": 2.101812087834077
+            },
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_035",
+              "bm25": 2.0715208632718514
+            },
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_000",
+              "bm25": 1.8655500838871606
+            },
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_038",
+              "bm25": 1.7419017829241075
+            },
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_003",
+              "bm25": 1.7231531764167176
+            },
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_040",
+              "bm25": 1.7045769720837567
+            },
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_002",
+              "bm25": 1.6425996420810964
+            },
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_051",
+              "bm25": 1.609166350235157
+            },
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_047",
+              "bm25": 1.2091028235804635
+            }
+          ],
+          "selected_ranks": [
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_002",
+              "rrf": 0.030679156908665108,
+              "vector_rank": 1,
+              "lexical_rank": 10
+            },
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_022",
+              "rrf": 0.030679156908665108,
+              "vector_rank": 10,
+              "lexical_rank": 1
+            },
+            {
+              "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_003",
+              "rrf": 0.03057889822595705,
+              "vector_rank": 3,
+              "lexical_rank": 8
+            }
+          ]
+        },
+        "grounding_trace": {
+          "type": "grounding",
+          "policy": "grounded-sentence-support-v1",
+          "support": [],
+          "note": "Exact quote presence is checked; semantic claim support still requires evaluation."
+        },
+        "context_trace": {
+          "type": "context",
+          "policy": "discussion-sentence-context-v1",
+          "anchor_ids": [
+            "89f7bcf5fc9b8c405c2e6775e296c5d6_002",
+            "89f7bcf5fc9b8c405c2e6775e296c5d6_022",
+            "89f7bcf5fc9b8c405c2e6775e296c5d6_003"
+          ],
+          "generation_ids": [
+            "89f7bcf5fc9b8c405c2e6775e296c5d6_002",
+            "89f7bcf5fc9b8c405c2e6775e296c5d6_022",
+            "89f7bcf5fc9b8c405c2e6775e296c5d6_003",
+            "89f7bcf5fc9b8c405c2e6775e296c5d6_021",
+            "89f7bcf5fc9b8c405c2e6775e296c5d6_023",
+            "89f7bcf5fc9b8c405c2e6775e296c5d6_004"
+          ],
+          "options": 10
+        },
+        "support_review": null
+      }
+    }
+  ]
+}

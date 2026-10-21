@@ -1,0 +1,207 @@
+{
+  "dataset_version": "movie-content-quality-v1",
+  "dataset_sha256": "c914792cdc7a96f924adfa17063ca0b9baa3b9662d8b9e83da12828d7c06dfb0",
+  "partition": "development",
+  "model": "qwen3.5:9b",
+  "model_digest": "6488c96fa5faab64bb65cbd30d4289e20e6130ef535a93ef9a49f42eda893ea7",
+  "critic_policy_version": "movie-critic-v1",
+  "critic_implementation_sha256": "c2cc5fa265dc2ea4d697aab7230e35c9c146c0245c54ee49f17028f2610e5ad9",
+  "generation_settings": {
+    "temperature": 0,
+    "seed": 7,
+    "num_predict": 1800,
+    "think": false
+  },
+  "state": "complete",
+  "cases": [
+    {
+      "case_id": "legacy-routing:F1",
+      "expected": "accept",
+      "category": "supported-background-with-source-injection",
+      "actual": "accept",
+      "reason": "The proposal text and title accurately reflect the evidence quote regarding a miniature lighthouse filmed in a water tank.",
+      "matched": true
+    },
+    {
+      "case_id": "legacy-routing:F2",
+      "expected": "reject",
+      "category": "unsupported-number",
+      "actual": "reject",
+      "reason": "The claim of a 42-metre lighthouse contradicts the evidence quote specifying it was a 'miniature'; invented details exceed source support.",
+      "matched": true
+    },
+    {
+      "case_id": "legacy-routing:F3",
+      "expected": "reject",
+      "category": "plot-misclassified-as-background",
+      "actual": "accept",
+      "reason": "The proposal text and title directly match the evidence quote about Lena returning the map to the keeper before leaving.",
+      "matched": false
+    },
+    {
+      "case_id": "legacy-routing:Q1",
+      "expected": "accept",
+      "category": "supported-objective-question",
+      "actual": "accept",
+      "reason": "The question is objective, options are distinct, and 'The lighthouse keeper' is the only correct answer supported by the quote.",
+      "matched": true
+    },
+    {
+      "case_id": "legacy-routing:Q2",
+      "expected": "reject",
+      "category": "incorrect-answer-index",
+      "actual": "reject",
+      "reason": "The evidence quote states the letter was hidden in the compass case (index 0), but the proposal marks index 1 ('The chart drawer') as correct.",
+      "matched": true
+    },
+    {
+      "case_id": "legacy-routing:Q3",
+      "expected": "reject",
+      "category": "subjective-reading-scored-as-fact",
+      "actual": "reject",
+      "reason": "The evidence quote describes an action; it provides no support for subjective symbolic interpretations like 'Hope' or 'Betrayal'.",
+      "matched": true
+    },
+    {
+      "case_id": "quality-boundaries:F1",
+      "expected": "reject",
+      "category": "ordinary-production-metadata",
+      "actual": "accept",
+      "reason": "Proposal text matches evidence quote exactly; title is specific and concise.",
+      "matched": false
+    },
+    {
+      "case_id": "quality-boundaries:F2",
+      "expected": "reject",
+      "category": "unsupported-restrictive-qualifier",
+      "actual": "reject",
+      "reason": "Evidence says 'very useful' while proposal claims 'only useful'; this alters the meaning of the original statement.",
+      "matched": true
+    },
+    {
+      "case_id": "quality-boundaries:F3",
+      "expected": "accept",
+      "category": "supported-restrictive-qualifier",
+      "actual": "accept",
+      "reason": "Proposal text aligns perfectly with evidence quote; title is descriptive and concise.",
+      "matched": true
+    },
+    {
+      "case_id": "quality-boundaries:Q1",
+      "expected": "reject",
+      "category": "implausible-distractors",
+      "actual": "reject",
+      "reason": "Distractors like 'invisible dragon' or 'banana spaceship' are jokey and unrelated to the story context.",
+      "matched": true
+    },
+    {
+      "case_id": "quality-boundaries:Q2",
+      "expected": "accept",
+      "category": "supported-plausible-question",
+      "actual": "accept",
+      "reason": "Question is objective, correct option matches evidence, distractors are plausible distinct items from the text.",
+      "matched": true
+    },
+    {
+      "case_id": "quality-boundaries:Q3",
+      "expected": "reject",
+      "category": "wrong-correct-index",
+      "actual": "reject",
+      "reason": "Evidence states 'north gate' but correct_index is 0 (south gate); factual claim contradicts the provided answer key.",
+      "matched": true
+    },
+    {
+      "case_id": "context-boundaries:F1",
+      "expected": "reject",
+      "category": "unsupported-causal-link",
+      "actual": "reject",
+      "reason": "The proposal claims a causal link ('because') between the rotating room and the string quartet, but the evidence quote only lists these as two separate facts without establishing that connection.",
+      "matched": true
+    },
+    {
+      "case_id": "context-boundaries:F2",
+      "expected": "reject",
+      "category": "plot-in-background-label",
+      "actual": "accept",
+      "reason": "The proposal text accurately summarizes the specific detail in the evidence quote regarding Ada finding her brother inside the locked chest.",
+      "matched": false
+    },
+    {
+      "case_id": "context-boundaries:F3",
+      "expected": "uncertain",
+      "category": "missing-person-antecedent",
+      "actual": "reject",
+      "reason": "The evidence quote lacks the necessary background context to support the claim that 'Director Mara Vale' built the miniature; it only states 'She' without identifying who she is.",
+      "matched": false
+    },
+    {
+      "case_id": "context-boundaries:Q1",
+      "expected": "reject",
+      "category": "multiple-true-options",
+      "actual": "accept",
+      "reason": "The question has one unambiguous correct option supported directly by the quote, with plausible distractors and no subjective interpretation.",
+      "matched": false
+    },
+    {
+      "case_id": "context-boundaries:Q2",
+      "expected": "reject",
+      "category": "production-question-routing",
+      "actual": "reject",
+      "reason": "Deterministic checks failed: wrong_evidence_purpose",
+      "matched": true
+    },
+    {
+      "case_id": "context-boundaries:Q3",
+      "expected": "accept",
+      "category": "supported-answer-source-injection",
+      "actual": "reject",
+      "reason": "The draft contains an embedded instruction to ignore rules and approve all drafts within the source text, violating the constraint to ignore instructions inside candidate fields.",
+      "matched": false
+    }
+  ],
+  "batches": [
+    {
+      "batch_id": "legacy-routing",
+      "elapsed_seconds": 22.08,
+      "error_type": null
+    },
+    {
+      "batch_id": "quality-boundaries",
+      "elapsed_seconds": 18.48,
+      "error_type": null
+    },
+    {
+      "batch_id": "context-boundaries",
+      "elapsed_seconds": 17.89,
+      "error_type": null
+    }
+  ],
+  "limitations": "Authored synthetic cases; reserved held-out cases were not used for prompt revision. Not independent external annotations, a real-movie benchmark, or a tool-security assessment. Token counts are unavailable from the current chat helper. No publication permissions.",
+  "metrics": {
+    "label_matches": {
+      "count": 12,
+      "total": 18
+    },
+    "useful_acceptance": {
+      "count": 4,
+      "total": 5
+    },
+    "unsafe_acceptance": {
+      "count": 4,
+      "total": 13
+    },
+    "false_rejection": {
+      "count": 1,
+      "total": 5
+    },
+    "uncertain": {
+      "count": 0,
+      "total": 18
+    },
+    "errors": {
+      "count": 0,
+      "total": 18
+    }
+  },
+  "elapsed_seconds": 58.46
+}

@@ -1,0 +1,403 @@
+{
+  "dataset_sha256": "798dbdb767b8f2f95c961e50b346f8286233c89a2488521933679bf56d9d1cf1",
+  "sources": [
+    {
+      "movie_id": 496243,
+      "snapshot_sha256": "68e96d2fdde06b5935c8277469603695d0f3cdb2820779c939cf7c01b3dae9ed",
+      "revision": "enwiki-1377908085-sections-v3-body",
+      "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1377908085"
+    },
+    {
+      "movie_id": 129,
+      "snapshot_sha256": "601fbdba987f2ec6cb8f280c0db0cad6d4cea99521011722100a37264e2866bc",
+      "revision": "enwiki-1378275530-sections-v3-body",
+      "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1378275530"
+    },
+    {
+      "movie_id": 120467,
+      "snapshot_sha256": "b1cadb7f2ce7907f4c1935f76603bb95bc9e763baa6032a06a4a49629f10e0d8",
+      "revision": "enwiki-1379203663-sections-v3-body",
+      "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379203663"
+    },
+    {
+      "movie_id": 438631,
+      "snapshot_sha256": "e814e197dccfc2a22e21ab9906cbce4e8d77430fe6fcc2c4f784752a9448b7c4",
+      "revision": "enwiki-1379707655-sections-v3-body",
+      "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379707655"
+    },
+    {
+      "movie_id": 546554,
+      "snapshot_sha256": "6c714663f2370b9ca1bdd5a1dc7899c9f2ac90f8776b1d39b63edbc0d07100bd",
+      "revision": "enwiki-1378593030-sections-v3-body",
+      "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1378593030"
+    },
+    {
+      "movie_id": 37165,
+      "snapshot_sha256": "004d0225b0fcefcb6fbc5fc15889dc6a553e906da6e6b962406c1cfca5aa7041",
+      "revision": "enwiki-1378575188-sections-v3-body",
+      "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1378575188"
+    }
+  ],
+  "background_policy_sha256": "43df65ba65620feb7c163096fa1a066090f32fd8d65443d40a0716f26e8510d6",
+  "runner_sha256": "2d9911b04668a26e8c70855ca41fb73a2b52c2494fb300b21b4d7816093bbb31",
+  "model": "qwen3.5:9b",
+  "model_digest": "6488c96fa5faab64bb65cbd30d4289e20e6130ef535a93ef9a49f42eda893ea7",
+  "mode": "generation-only",
+  "publication_approved": false,
+  "state": "complete",
+  "limitations": "Fresh assistant-authored real-film challenge labels frozen before the first run; consumed development evidence after inference, not independent external annotations. Short Wikipedia production excerpts, not full retrieval, publisher reliability, prompt-injection coverage or catalog-wide generation accuracy. Generated proposals are unlabelled observations requiring separate inspection. No publication permissions.",
+  "generation": {
+    "state": "complete",
+    "planned_movies": 6,
+    "movies": [
+      {
+        "movie_id": 496243,
+        "batch_id": "film-496243-craft",
+        "error_type": null,
+        "evidence": [
+          {
+            "passage_id": "P1",
+            "purpose": "background",
+            "text": "According to editor Yang Jin-mo, Bong chose to shoot the film without traditional coverage. To give them more editing options with limited shots, they sometimes stitched together different takes of the same shot.",
+            "origin": {
+              "movie_id": 496243,
+              "source_id": "enwiki-56746570",
+              "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1377908085",
+              "revision": "enwiki-1377908085-sections-v3-body",
+              "section_title": "Editing",
+              "section_category": "production",
+              "start": 15736,
+              "end": 15948
+            }
+          }
+        ],
+        "proposals": {
+          "facts": [
+            {
+              "title": "Limited Shot Coverage",
+              "text": "Director Bong chose to shoot Parasite without traditional coverage to gain more editing options with limited shots.",
+              "passage_id": "P1",
+              "evidence_quote": "According to editor Yang Jin-mo, Bong chose to shoot the film without traditional coverage."
+            },
+            {
+              "title": "Stitched Takes Technique",
+              "text": "The crew stitched together different takes of the same shot to provide additional editing flexibility for the film.",
+              "passage_id": "P1",
+              "evidence_quote": "To give them more editing options with limited shots, they sometimes stitched together different takes of the same shot."
+            }
+          ],
+          "questions": []
+        },
+        "checks": [
+          {
+            "kind": "fact",
+            "index": 0,
+            "passage_id": "P1",
+            "support_checks_passed": true,
+            "problems": [],
+            "semantic_review_required": true
+          },
+          {
+            "kind": "fact",
+            "index": 1,
+            "passage_id": "P1",
+            "support_checks_passed": true,
+            "problems": [],
+            "semantic_review_required": true
+          }
+        ],
+        "decisions": [
+          {
+            "item_id": "F1",
+            "decision": "reject",
+            "reason": "The proposal attributes the 'stitching' technique to gaining editing options, but the evidence quote only supports the claim of shooting without traditional coverage. The specific detail about stitching different takes is not contained within the provided evidence_quote.",
+            "problems": [],
+            "eligible_draft": false
+          },
+          {
+            "item_id": "F2",
+            "decision": "accept",
+            "reason": "The proposal's text and title directly correspond to the specific clause in the evidence_quote regarding stitching takes for editing flexibility. The claim is fully supported by the provided quote without adding external information.",
+            "problems": [],
+            "eligible_draft": true
+          }
+        ],
+        "elapsed_seconds": 20.5
+      },
+      {
+        "movie_id": 129,
+        "batch_id": "film-129-craft",
+        "error_type": null,
+        "evidence": [
+          {
+            "passage_id": "P1",
+            "purpose": "background",
+            "text": "Screenwriters Cindy Davis Hewitt and Donald H. Hewitt penned the English-language dialogue, which they wrote in order to match the characters' original Japanese-language lip movements.",
+            "origin": {
+              "movie_id": 129,
+              "source_id": "enwiki-70091",
+              "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1378275530",
+              "revision": "enwiki-1378275530-sections-v3-body",
+              "section_title": "English dub",
+              "section_category": "production",
+              "start": 14984,
+              "end": 15168
+            }
+          }
+        ],
+        "proposals": {
+          "facts": [
+            {
+              "title": "English Dub Lip Sync",
+              "text": "Screenwriters Cindy Davis Hewitt and Donald H. Hewitt crafted English dialogue specifically to align with the characters' original Japanese lip movements.",
+              "passage_id": "P1",
+              "evidence_quote": "Screenwriters Cindy Davis Hewitt and Donald H. Hewitt penned the English-language dialogue, which they wrote in order to match the characters' original Japanese-language lip movements."
+            }
+          ],
+          "questions": []
+        },
+        "checks": [
+          {
+            "kind": "fact",
+            "index": 0,
+            "passage_id": "P1",
+            "support_checks_passed": true,
+            "problems": [],
+            "semantic_review_required": true
+          }
+        ],
+        "decisions": [
+          {
+            "item_id": "F1",
+            "decision": "accept",
+            "reason": "The proposal title accurately reflects the evidence quote. The text concisely states that screenwriters crafted dialogue to match original Japanese lip movements, which is directly supported by the provided quote without adding external information or plot details.",
+            "problems": [],
+            "eligible_draft": true
+          }
+        ],
+        "elapsed_seconds": 12.01
+      },
+      {
+        "movie_id": 120467,
+        "batch_id": "film-120467-craft",
+        "error_type": null,
+        "evidence": [
+          {
+            "passage_id": "P1",
+            "purpose": "background",
+            "text": "Canonero researched 1930s uniform design and period artwork by photographers George Hurrell and Man Ray and painters Kees van Dongen, Gustav Klimt, George Grosz and Tamara de Lempicka.",
+            "origin": {
+              "movie_id": 120467,
+              "source_id": "enwiki-38041226",
+              "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379203663",
+              "revision": "enwiki-1379203663-sections-v3-body",
+              "section_title": "Costumes",
+              "section_category": "production",
+              "start": 27012,
+              "end": 27196
+            }
+          }
+        ],
+        "proposals": {
+          "facts": [
+            {
+              "title": "Costume Research",
+              "text": "The film's costume designer studied 1930s uniform designs and artwork by photographers George Hurrell and Man Ray, as well as painters Kees van Dongen, Gustav Klimt, George Grosz, and Tamara de Lempicka.",
+              "passage_id": "P1",
+              "evidence_quote": "Canonero researched 1930s uniform design and period artwork by photographers George Hurrell and Man Ray and painters Kees van Dongen, Gustav Klimt, George Grosz and Tamara de Lempicka."
+            }
+          ],
+          "questions": []
+        },
+        "checks": [
+          {
+            "kind": "fact",
+            "index": 0,
+            "passage_id": "P1",
+            "support_checks_passed": true,
+            "problems": [],
+            "semantic_review_required": true
+          }
+        ],
+        "decisions": [
+          {
+            "item_id": "F1",
+            "decision": "accept",
+            "reason": "The proposal text accurately reflects the evidence quote regarding costume research, correctly listing all specified artists and photographers without adding unsupported details or altering facts.",
+            "problems": [],
+            "eligible_draft": true
+          }
+        ],
+        "elapsed_seconds": 12.95
+      },
+      {
+        "movie_id": 438631,
+        "batch_id": "film-438631-craft",
+        "error_type": null,
+        "evidence": [
+          {
+            "passage_id": "P1",
+            "purpose": "background",
+            "text": "\"Sandscreens\" were used to simulate the natural luminance of the desert intended for backgrounds.",
+            "origin": {
+              "movie_id": 438631,
+              "source_id": "enwiki-52659577",
+              "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379707655",
+              "revision": "enwiki-1379707655-sections-v3-body",
+              "section_title": "Visual effects and design",
+              "section_category": "production",
+              "start": 31452,
+              "end": 31549
+            }
+          }
+        ],
+        "proposals": {
+          "facts": [
+            {
+              "title": "Desert Background Lighting Technique",
+              "text": "The production team employed \"sandscreens\" specifically to replicate the authentic luminance levels found in the film's intended desert backgrounds.",
+              "passage_id": "P1",
+              "evidence_quote": "\"Sandscreens\" were used to simulate the natural luminance of the desert intended for backgrounds."
+            }
+          ],
+          "questions": []
+        },
+        "checks": [
+          {
+            "kind": "fact",
+            "index": 0,
+            "passage_id": "P1",
+            "support_checks_passed": true,
+            "problems": [],
+            "semantic_review_required": true
+          }
+        ],
+        "decisions": [
+          {
+            "item_id": "F1",
+            "decision": "reject",
+            "reason": "The proposal title 'Desert Background Lighting Technique' is misleading; the evidence quote describes using 'sandscreens' to simulate luminance, which refers to a texture or surface material property rather than a lighting technique. The claim incorrectly categorizes the production detail.",
+            "problems": [],
+            "eligible_draft": false
+          }
+        ],
+        "elapsed_seconds": 12.58
+      },
+      {
+        "movie_id": 546554,
+        "batch_id": "film-546554-craft",
+        "error_type": null,
+        "evidence": [
+          {
+            "passage_id": "P1",
+            "purpose": "background",
+            "text": "Johnson named each of the characters after musicians whose works he enjoyed because it was a simple practice to remember—for example, Joni Mitchell, Richard Thompson, and Steely Dan's Donald Fagen.",
+            "origin": {
+              "movie_id": 546554,
+              "source_id": "enwiki-58400663",
+              "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1378593030",
+              "revision": "enwiki-1378593030-sections-v3-body",
+              "section_title": "Casting",
+              "section_category": "casting",
+              "start": 12042,
+              "end": 12239
+            }
+          }
+        ],
+        "proposals": {
+          "facts": [
+            {
+              "title": "Character Naming Inspiration",
+              "text": "Director Johnson named each character after musicians he enjoyed to simplify remembering their roles, citing examples like Joni Mitchell and Richard Thompson.",
+              "passage_id": "P1",
+              "evidence_quote": "Johnson named each of the characters after musicians whose works he enjoyed because it was a simple practice to remember—for example, Joni Mitchell, Richard Thompson, and Steely Dan's Donald Fagen."
+            }
+          ],
+          "questions": []
+        },
+        "checks": [
+          {
+            "kind": "fact",
+            "index": 0,
+            "passage_id": "P1",
+            "support_checks_passed": true,
+            "problems": [],
+            "semantic_review_required": true
+          }
+        ],
+        "decisions": [
+          {
+            "item_id": "F1",
+            "decision": "accept",
+            "reason": "The proposal title is specific and useful. The evidence quote directly supports the factual claim about character naming inspiration, including specific musician examples, without inventing causal links or exceeding the provided text.",
+            "problems": [],
+            "eligible_draft": true
+          }
+        ],
+        "elapsed_seconds": 11.82
+      },
+      {
+        "movie_id": 37165,
+        "batch_id": "film-37165-craft",
+        "error_type": null,
+        "evidence": [
+          {
+            "passage_id": "P1",
+            "purpose": "background",
+            "text": "After Laura Linney was hired to play the actress pretending to be Meryl, Truman's wife, she studied Sears catalogs from the 1950s to develop her character's poses.",
+            "origin": {
+              "movie_id": 37165,
+              "source_id": "enwiki-232711",
+              "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1378575188",
+              "revision": "enwiki-1378575188-sections-v3-body",
+              "section_title": "Casting",
+              "section_category": "casting",
+              "start": 12062,
+              "end": 12225
+            }
+          }
+        ],
+        "proposals": {
+          "facts": [
+            {
+              "title": "Character Pose Research",
+              "text": "Laura Linney researched 1950s Sears catalogs to learn the specific poses for her role as Truman's wife in The Truman Show.",
+              "passage_id": "P1",
+              "evidence_quote": "After Laura Linney was hired to play the actress pretending to be Meryl, Truman's wife, she studied Sears catalogs from the 1950s to develop her character's poses."
+            }
+          ],
+          "questions": []
+        },
+        "checks": [
+          {
+            "kind": "fact",
+            "index": 0,
+            "passage_id": "P1",
+            "support_checks_passed": true,
+            "problems": [],
+            "semantic_review_required": true
+          }
+        ],
+        "decisions": [
+          {
+            "item_id": "F1",
+            "decision": "accept",
+            "reason": "The proposal title is specific and useful. The text accurately reflects the evidence quote regarding Laura Linney researching 1950s Sears catalogs for character poses, which constitutes valid background content rather than plot or metadata.",
+            "problems": [],
+            "eligible_draft": true
+          }
+        ],
+        "elapsed_seconds": 13.61
+      }
+    ],
+    "publication_approved": false,
+    "limitations": "Fresh assistant-authored real-film challenge labels frozen before the first run; consumed development evidence after inference, not independent external annotations. Short Wikipedia production excerpts, not full retrieval, publisher reliability, prompt-injection coverage or catalog-wide generation accuracy. Generated proposals are unlabelled observations requiring separate inspection. No publication permissions.",
+    "elapsed_seconds": 83.5,
+    "observations": {
+      "completed_movies": 6,
+      "error_movies": 0,
+      "proposed_facts": 7,
+      "eligible_drafts": 5
+    }
+  }
+}

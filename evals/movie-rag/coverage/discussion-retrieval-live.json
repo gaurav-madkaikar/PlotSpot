@@ -1,0 +1,82 @@
+{
+  "created_at_utc": "2026-10-11T19:54:35.447516+00:00",
+  "grounding_policy": "grounded-support-options-v3",
+  "type": "development HTTP smoke, not a throughput or quality benchmark",
+  "health": {
+    "status": "ok",
+    "data_source": "tmdb"
+  },
+  "cases": [
+    {
+      "movie_id": 155,
+      "question": "Why does Harvey Dent claim he is Batman?",
+      "allow_spoilers": true,
+      "response": {
+        "status": "answered",
+        "answer": "to lure the Joker out",
+        "answer_kind": "event",
+        "script_context": null,
+        "citations": [
+          {
+            "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_012",
+            "source_label": "English Wikipedia contributors: The Dark Knight",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1378704545",
+            "revision": "enwiki-1378704545-sections-v3-body",
+            "excerpt": "ler Alfred Pennyworth says that \"some men just want to watch the world burn.\" Dent claims he is Batman to lure the Joker out, who attacks the police convoy transporting Dent. Batman and Gordon apprehend the Joker, and Gordon is promoted to commissioner. At the police station, Batman interrogates the Joker, who says he finds Batman entertaining and has no intention of killing him. Having deduced Batman's feelings for Rachel, the Joker reveals she and Dent are being held separately in buildings rigged to explode. Batman races to rescue Rachel while Gordon and the other officers go after Dent, bu"
+          }
+        ]
+      },
+      "duration_seconds": 7.627
+    },
+    {
+      "movie_id": 329865,
+      "question": "What does Louise discover about her visions of her daughter in the story?",
+      "allow_spoilers": true,
+      "response": {
+        "status": "answered",
+        "answer": "She discovers that her visions of her daughter are premonitions, and her daughter will not be born until sometime in the future.",
+        "answer_kind": "event",
+        "script_context": null,
+        "citations": [
+          {
+            "passage_id": "89f7bcf5fc9b8c405c2e6775e296c5d6_011",
+            "source_label": "English Wikipedia contributors: Arrival (film)",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1377517038",
+            "revision": "enwiki-1377517038-sections-v3-body",
+            "excerpt": " which sends down a transport pod. Abbott has been mortally injured as a result of the explosion. Costello explains that they have come to help humanity, because in 3,000 years' time they will need humanity's help in return. Banks realizes the \"weapon\" is their language. Learning the language alters humans' linear perception of time, allowing them to experience memories of future events. Banks's visions of her daughter are revealed to be premonitions; her daughter will not be born until sometime in the future.\n\nBanks returns to the camp as it is being evacuated and tells Donnelly that the alie"
+          }
+        ]
+      },
+      "duration_seconds": 4.018
+    },
+    {
+      "movie_id": 155,
+      "question": "Why does Harvey Dent claim he is Batman?",
+      "allow_spoilers": false,
+      "response": {
+        "status": "spoiler_permission_required",
+        "answer": "This source can contain story details. Allow spoilers above before asking a question.",
+        "answer_kind": "event",
+        "script_context": null,
+        "citations": []
+      },
+      "duration_seconds": 0.007
+    }
+  ],
+  "saved_content": {
+    "saved_banks_unchanged": true,
+    "count": 11,
+    "script_policy_unchanged": true,
+    "inception_more_questions_gate": true
+  },
+  "ui_verification": {
+    "question": "Why does Harvey Dent claim he is Batman?",
+    "answer_visible": "to lure the Joker out",
+    "source_revision": "1378704545",
+    "source_expanded": true,
+    "screenshot": ".cache/proof/discussion-retrieval.png",
+    "spoiler_preference_restored": true,
+    "restored_section": "facts",
+    "allow_spoilers_after_check": false
+  }
+}

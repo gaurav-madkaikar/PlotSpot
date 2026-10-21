@@ -1,0 +1,303 @@
+{
+  "checked_at": "2026-10-11T18:51:13.483845+00:00",
+  "saved_movies": 2619,
+  "cold_index_build_ms": 253.38,
+  "prepared_local_search": [
+    {
+      "query": "Interstell",
+      "milliseconds": 7.63,
+      "total": 27
+    },
+    {
+      "query": "Interstellar",
+      "milliseconds": 8.48,
+      "total": 27
+    },
+    {
+      "query": "Casablanca",
+      "milliseconds": 5.99,
+      "total": 40
+    },
+    {
+      "query": "sydney sweene",
+      "milliseconds": 7.63,
+      "total": 51
+    }
+  ],
+  "http": [
+    {
+      "query": "Interstell",
+      "local_preview": {
+        "milliseconds": 314.7,
+        "first_ids": [
+          157336,
+          398188,
+          1391726
+        ],
+        "titles": [
+          "Interstellar",
+          "Interstellar Wars",
+          "Interstellar Stella"
+        ],
+        "total": 27,
+        "partial": false
+      },
+      "completed_discovery": {
+        "milliseconds": 937.12,
+        "first_ids": [
+          157336,
+          398188,
+          1391726
+        ],
+        "titles": [
+          "Interstellar",
+          "Interstellar Wars",
+          "Interstellar Stella"
+        ],
+        "total": 30,
+        "partial": false
+      },
+      "repeated_complete": {
+        "milliseconds": 1.85,
+        "first_ids": [
+          157336,
+          398188,
+          1391726
+        ],
+        "titles": [
+          "Interstellar",
+          "Interstellar Wars",
+          "Interstellar Stella"
+        ],
+        "total": 30,
+        "partial": false
+      }
+    },
+    {
+      "query": "Casablanca",
+      "local_preview": {
+        "milliseconds": 18.67,
+        "first_ids": [
+          289,
+          603404,
+          794504
+        ],
+        "titles": [
+          "Casablanca",
+          "Casablanca",
+          "Casablanca"
+        ],
+        "total": 40,
+        "partial": false
+      },
+      "completed_discovery": {
+        "milliseconds": 369.06,
+        "first_ids": [
+          289,
+          603404,
+          794504
+        ],
+        "titles": [
+          "Casablanca",
+          "Casablanca",
+          "Casablanca"
+        ],
+        "total": 40,
+        "partial": false
+      },
+      "repeated_complete": {
+        "milliseconds": 2.43,
+        "first_ids": [
+          289,
+          603404,
+          794504
+        ],
+        "titles": [
+          "Casablanca",
+          "Casablanca",
+          "Casablanca"
+        ],
+        "total": 40,
+        "partial": false
+      }
+    },
+    {
+      "query": "The Secret of Roan Inish",
+      "local_preview": {
+        "milliseconds": 416.08,
+        "first_ids": [],
+        "titles": [],
+        "total": 0,
+        "partial": false
+      },
+      "completed_discovery": {
+        "milliseconds": 970.27,
+        "first_ids": [
+          14334
+        ],
+        "titles": [
+          "The Secret of Roan Inish"
+        ],
+        "total": 1,
+        "partial": false
+      },
+      "repeated_complete": {
+        "milliseconds": 2.59,
+        "first_ids": [
+          14334
+        ],
+        "titles": [
+          "The Secret of Roan Inish"
+        ],
+        "total": 1,
+        "partial": false
+      }
+    }
+  ],
+  "limits": "Single-process local development smoke measurements; different cache/catalog state from previous measurements. Excludes typing debounce, rendering and production concurrency. Final startup-warmed measurements follow a backend restart; all three queried titles are now saved.",
+  "completion_suggestions": [
+    {
+      "label": "Interstellar",
+      "kind": "movie",
+      "movie_ids": [
+        157336
+      ],
+      "score": 0.9090909090909091
+    }
+  ],
+  "final_checked_at": "2026-10-11T18:53:32.814368+00:00",
+  "startup_warmed_http": [
+    {
+      "query": "Interstell",
+      "local_preview": {
+        "milliseconds": 28.57,
+        "first_ids": [
+          157336,
+          398188,
+          1391726
+        ],
+        "titles": [
+          "Interstellar",
+          "Interstellar Wars",
+          "Interstellar Stella"
+        ],
+        "total": 27,
+        "partial": false
+      },
+      "completed_discovery": {
+        "milliseconds": 796.74,
+        "first_ids": [
+          157336,
+          398188,
+          1391726
+        ],
+        "titles": [
+          "Interstellar",
+          "Interstellar Wars",
+          "Interstellar Stella"
+        ],
+        "total": 30,
+        "partial": false
+      },
+      "repeated_complete": {
+        "milliseconds": 2.14,
+        "first_ids": [
+          157336,
+          398188,
+          1391726
+        ],
+        "titles": [
+          "Interstellar",
+          "Interstellar Wars",
+          "Interstellar Stella"
+        ],
+        "total": 30,
+        "partial": false
+      }
+    },
+    {
+      "query": "Casablanca",
+      "local_preview": {
+        "milliseconds": 10.13,
+        "first_ids": [
+          289,
+          603404,
+          794504
+        ],
+        "titles": [
+          "Casablanca",
+          "Casablanca",
+          "Casablanca"
+        ],
+        "total": 40,
+        "partial": false
+      },
+      "completed_discovery": {
+        "milliseconds": 372.14,
+        "first_ids": [
+          289,
+          603404,
+          794504
+        ],
+        "titles": [
+          "Casablanca",
+          "Casablanca",
+          "Casablanca"
+        ],
+        "total": 40,
+        "partial": false
+      },
+      "repeated_complete": {
+        "milliseconds": 2.42,
+        "first_ids": [
+          289,
+          603404,
+          794504
+        ],
+        "titles": [
+          "Casablanca",
+          "Casablanca",
+          "Casablanca"
+        ],
+        "total": 40,
+        "partial": false
+      }
+    },
+    {
+      "query": "The Secret of Roan Inish",
+      "local_preview": {
+        "milliseconds": 16.87,
+        "first_ids": [
+          14334
+        ],
+        "titles": [
+          "The Secret of Roan Inish"
+        ],
+        "total": 1,
+        "partial": false
+      },
+      "completed_discovery": {
+        "milliseconds": 232.47,
+        "first_ids": [
+          14334
+        ],
+        "titles": [
+          "The Secret of Roan Inish"
+        ],
+        "total": 1,
+        "partial": false
+      },
+      "repeated_complete": {
+        "milliseconds": 1.59,
+        "first_ids": [
+          14334
+        ],
+        "titles": [
+          "The Secret of Roan Inish"
+        ],
+        "total": 1,
+        "partial": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "inventory": {
+    "129": {
+      "movie_id": 129,
+      "discussion": true,
+      "quiz": true,
+      "facts": true
+    },
+    "155": {
+      "movie_id": 155,
+      "discussion": true,
+      "quiz": true,
+      "facts": true
+    },
+    "603": {
+      "movie_id": 603,
+      "discussion": true,
+      "quiz": true,
+      "facts": true
+    },
+    "27205": {
+      "movie_id": 27205,
+      "discussion": true,
+      "quiz": true,
+      "facts": true
+    },
+    "37165": {
+      "movie_id": 37165,
+      "discussion": true,
+      "quiz": true,
+      "facts": true
+    },
+    "120467": {
+      "movie_id": 120467,
+      "discussion": true,
+      "quiz": true,
+      "facts": true
+    },
+    "157336": {
+      "movie_id": 157336,
+      "discussion": true,
+      "quiz": true,
+      "facts": true
+    },
+    "329865": {
+      "movie_id": 329865,
+      "discussion": true,
+      "quiz": true,
+      "facts": true
+    },
+    "438631": {
+      "movie_id": 438631,
+      "discussion": true,
+      "quiz": true,
+      "facts": true
+    },
+    "496243": {
+      "movie_id": 496243,
+      "discussion": true,
+      "quiz": true,
+      "facts": true
+    },
+    "546554": {
+      "movie_id": 546554,
+      "discussion": true,
+      "quiz": true,
+      "facts": true
+    }
+  },
+  "saved_reads": {
+    "facts": {
+      "count": 5,
+      "spoiler_consent_required": true,
+      "repeat_equal": true
+    },
+    "quiz": {
+      "count": 10,
+      "spoiler_consent_required": true,
+      "repeat_equal": true
+    }
+  },
+  "discussion_consent": true,
+  "notes": [
+    "Saved reads were checked via HTTP; absence of generation is covered by dependency-isolation regression checks."
+  ],
+  "discussion_http": {
+    "question": "Who composed the music for The Dark Knight?",
+    "duration_seconds": 7.938,
+    "response": {
+      "status": "answered",
+      "answer": "James Newton Howard and Hans Zimmer",
+      "answer_kind": "event",
+      "script_context": null,
+      "citations": [
+        {
+          "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_075",
+          "source_label": "English Wikipedia contributors: The Dark Knight",
+          "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1378704545",
+          "revision": "enwiki-1378704545-sections-v3-body",
+          "excerpt": "Music\n\nMain article: The Dark Knight (soundtrack) James Newton Howard and Hans Zimmer \u2013 Why So Serious? Zimmer based Joker's theme around two notes that would become increasingly \"agitated as the track progressed. He added a \"punk\" influence alongside inspirations from electronic and rock music.\" Problems playing this file? See media help.\n\nComposers James Newton Howard and Hans Zimmer, who had also worked on Batman Begins, scored The Dark Knight because Nolan believed it was important to bridge the musical-narrative gap between the films. The score was recorded at Air Studios, London. Howard "
+        },
+        {
+          "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_002",
+          "source_label": "English Wikipedia contributors: The Dark Knight",
+          "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1378704545",
+          "revision": "enwiki-1378704545-sections-v3-body",
+          "excerpt": "\n\nBox office$1.009 billion[c]\n\nThe Dark Knight is a 2008 superhero film directed by Christopher Nolan, who co-wrote the screenplay with his brother Jonathan. Based on the DC Comics superhero Batman, it is the sequel to Batman Begins (2005), and the second installment in The Dark Knight trilogy. The plot follows the vigilante Batman, police lieutenant James Gordon, and district attorney Harvey Dent, who form an alliance to dismantle organized crime in Gotham City. Their efforts are derailed by the Joker, an anarchistic mastermind who seeks to test how far Batman will go to save the city from ch"
+        }
+      ]
+    }
+  }
+}

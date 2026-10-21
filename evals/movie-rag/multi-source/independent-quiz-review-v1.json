@@ -1,0 +1,39 @@
+{
+  "workflow_sha256": "e3624beef18512111fa2c4167313243f851a0af9397152f3bf4771d675e9e0dd",
+  "cases": [
+    {
+      "question": "What is the status of Murph's death in Interstellar?",
+      "answer": "She dies off-screen after solving the gravity equation",
+      "independent_status": "unsupported",
+      "reason": "The selected evidence states that Murph is an adult scientist working on the gravity equation but does not mention her death or confirm it occurs off-screen; the proposed answer introduces a fact (her death) not present in the evidence.",
+      "old_retained": false,
+      "eligible_after_independent_review": false
+    },
+    {
+      "question": "When does Professor Brand's death occur relative to Cooper's return?",
+      "answer": "Towards the end of the film, after Cooper returns",
+      "independent_status": "unsupported",
+      "reason": "The selected evidence states that Cooper promises to return and leaves his watch for time comparison, but it does not state when Professor Brand dies or confirm that his death occurs after Cooper's return. The proposed answer claims the death happens",
+      "old_retained": false,
+      "eligible_after_independent_review": false
+    },
+    {
+      "question": "What are the names of the two military robots that accompany Cooper aboard the Endurance?",
+      "answer": "TARS and CASE",
+      "independent_status": "supported",
+      "reason": "The selected evidence explicitly lists 'robots TARS and CASE' as part of the crew accompanying Cooper on the Endurance mission, directly confirming the names requested in the question.",
+      "old_retained": true,
+      "eligible_after_independent_review": true
+    },
+    {
+      "question": "How many years pass on Earth for every hour spent on Miller's planet due to time dilation?",
+      "answer": "Seven years",
+      "independent_status": "unsupported",
+      "reason": "The evidence states that 23 years elapsed on Earth (Endurance) for the duration of the visit to Miller's planet, whereas the proposed answer claims seven years. The factual claim in the proposed answer conflicts with the provided evidence.",
+      "old_retained": true,
+      "eligible_after_independent_review": false
+    }
+  ],
+  "published": false,
+  "scope": "Four consumed development candidates. Two misleading claims rejected, one supported true candidate, one correct ratio withheld because retrieved reference sentences did not establish it. No publication."
+}

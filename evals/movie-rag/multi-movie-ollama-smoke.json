@@ -1,0 +1,42 @@
+{
+  "chat_model": "llama3.2:3b",
+  "embedding_model": "nomic-embed-text:v1.5",
+  "results": [
+    {
+      "movie_id": 329865,
+      "question": "Who directed Arrival?",
+      "elapsed_seconds": 6.47,
+      "result": {
+        "status": "answered",
+        "answer": "Denis Villeneuve",
+        "citations": [
+          {
+            "passage_id": "89f7bcf5fc9b8c405c2e6775e296c5d6_002",
+            "source_label": "English Wikipedia contributors: Arrival (film)",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1377517038",
+            "revision": "enwiki-1377517038-sections-v3-body",
+            "excerpt": "inutes[1]\n\nCountryUnited States\n\nLanguageEnglish\n\nBudget$47 million[2]\n\nBox office$213.6 million[3]\n\nArrival is a 2016 American science fiction drama film directed by Denis Villeneuve and written by Eric Heisserer, based on the 1998 novella \"Story of Your Life\" by Ted Chiang. The film stars Amy Adams as Louise Banks, a linguist engaged by the United States Army to discover how to communicate with extraterrestrials who have arrived on Earth, before tensions lead to war. Jeremy Renner, Forest Whitaker, and Michael Stuhlbarg appear in supporting roles.\n\nArrival had its world premiere at the Venic"
+          }
+        ]
+      }
+    },
+    {
+      "movie_id": 37165,
+      "question": "Who directed The Truman Show?",
+      "elapsed_seconds": 3.45,
+      "result": {
+        "status": "answered",
+        "answer": "Peter Weir",
+        "citations": [
+          {
+            "passage_id": "0cab92271d696171c8f167ca89272db4_001",
+            "source_label": "English Wikipedia contributors: The Truman Show",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1378575188",
+            "revision": "enwiki-1378575188-sections-v3-body",
+            "excerpt": "\n\nRelease dates\n\nJune 1, 1998 (1998-06-01) (Los Angeles)\n\nJune 5, 1998 (1998-06-05) (United States)\n\nRunning time103 minutes[1]\n\nCountryUnited States\n\nLanguageEnglish\n\nBudget$60 million\n\nBox office$264 million\n\nThe Truman Show is a 1998 American comedy-drama film[2] directed by Peter Weir, and written and co-produced by Andrew Niccol. It stars Jim Carrey as Truman Burbank, a man who is unaware that he is living on a colossal soundstage, and that his life is the subject of a reality television show. The film's supporting cast includes Laura Linney, Ed Harris, Noah Emmerich, Natascha McElhone, H"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,222 @@
+[
+  {
+    "id": 27205,
+    "title": "Inception",
+    "year": 2010,
+    "runtime_minutes": 148,
+    "language": "English",
+    "genres": [
+      "Science Fiction",
+      "Thriller"
+    ],
+    "director": "Christopher Nolan",
+    "cast": [
+      "Leonardo DiCaprio",
+      "Joseph Gordon-Levitt",
+      "Elliot Page"
+    ],
+    "overview": "A specialist in navigating dreams takes on an assignment that tests the boundary between imagination and reality.",
+    "tagline": "Every idea begins somewhere.",
+    "cover_url": "/covers/27205.svg",
+    "source": "demo",
+    "artwork_kind": "illustration"
+  },
+  {
+    "id": 157336,
+    "title": "Interstellar",
+    "year": 2014,
+    "runtime_minutes": 169,
+    "language": "English",
+    "genres": [
+      "Science Fiction",
+      "Drama"
+    ],
+    "director": "Christopher Nolan",
+    "cast": [
+      "Matthew McConaughey",
+      "Anne Hathaway",
+      "Jessica Chastain"
+    ],
+    "overview": "As Earth faces an uncertain future, a pilot joins a journey beyond familiar space, balancing humanity’s hopes with the family he leaves behind.",
+    "tagline": "A journey beyond the familiar.",
+    "cover_url": "/covers/157336.svg",
+    "source": "demo",
+    "artwork_kind": "illustration"
+  },
+  {
+    "id": 329865,
+    "title": "Arrival",
+    "year": 2016,
+    "runtime_minutes": 116,
+    "language": "English",
+    "genres": [
+      "Science Fiction",
+      "Drama"
+    ],
+    "director": "Denis Villeneuve",
+    "cast": [
+      "Amy Adams",
+      "Jeremy Renner",
+      "Forest Whitaker"
+    ],
+    "overview": "A linguist is recruited to communicate with mysterious visitors, turning language and understanding into the centre of a global challenge.",
+    "tagline": "Understanding changes everything.",
+    "cover_url": "/covers/329865.svg",
+    "source": "demo",
+    "artwork_kind": "illustration"
+  },
+  {
+    "id": 603,
+    "title": "The Matrix",
+    "year": 1999,
+    "runtime_minutes": 136,
+    "language": "English",
+    "genres": [
+      "Science Fiction",
+      "Action"
+    ],
+    "director": "Lana Wachowski & Lilly Wachowski",
+    "cast": [
+      "Keanu Reeves",
+      "Laurence Fishburne",
+      "Carrie-Anne Moss"
+    ],
+    "overview": "A programmer’s search for answers leads him to question the everyday world and the systems that shape it.",
+    "tagline": "Look a little closer.",
+    "cover_url": "/covers/603.svg",
+    "source": "demo",
+    "artwork_kind": "illustration"
+  },
+  {
+    "id": 546554,
+    "title": "Knives Out",
+    "year": 2019,
+    "runtime_minutes": 131,
+    "language": "English",
+    "genres": [
+      "Mystery",
+      "Comedy"
+    ],
+    "director": "Rian Johnson",
+    "cast": [
+      "Daniel Craig",
+      "Ana de Armas",
+      "Chris Evans"
+    ],
+    "overview": "An unusual detective investigates a novelist’s death, navigating a family full of conflicting accounts and carefully guarded interests.",
+    "tagline": "Everyone has a version.",
+    "cover_url": "/covers/546554.svg",
+    "source": "demo",
+    "artwork_kind": "illustration"
+  },
+  {
+    "id": 496243,
+    "title": "Parasite",
+    "year": 2019,
+    "runtime_minutes": 132,
+    "language": "Korean",
+    "genres": [
+      "Thriller",
+      "Drama"
+    ],
+    "director": "Bong Joon-ho",
+    "cast": [
+      "Song Kang-ho",
+      "Choi Woo-shik",
+      "Park So-dam"
+    ],
+    "overview": "Two families from different economic worlds become entangled in a sharp exploration of aspiration, inequality, and the spaces people inhabit.",
+    "tagline": "A different view from every floor.",
+    "cover_url": "/covers/496243.svg",
+    "source": "demo",
+    "artwork_kind": "illustration"
+  },
+  {
+    "id": 129,
+    "title": "Spirited Away",
+    "year": 2001,
+    "runtime_minutes": 125,
+    "language": "Japanese",
+    "genres": [
+      "Animation",
+      "Fantasy"
+    ],
+    "director": "Hayao Miyazaki",
+    "cast": [
+      "Rumi Hiiragi",
+      "Miyu Irino",
+      "Mari Natsuki"
+    ],
+    "overview": "A young girl enters a strange spirit world and must find her courage in a place where familiar rules no longer apply.",
+    "tagline": "A world just out of sight.",
+    "cover_url": "/covers/129.svg",
+    "source": "demo",
+    "artwork_kind": "illustration"
+  },
+  {
+    "id": 37165,
+    "title": "The Truman Show",
+    "year": 1998,
+    "runtime_minutes": 103,
+    "language": "English",
+    "genres": [
+      "Drama",
+      "Comedy"
+    ],
+    "director": "Peter Weir",
+    "cast": [
+      "Jim Carrey",
+      "Laura Linney",
+      "Ed Harris"
+    ],
+    "overview": "An ordinary man begins noticing unusual patterns in his seemingly perfect town and grows curious about the limits of his everyday life.",
+    "tagline": "What lies beyond the horizon?",
+    "cover_url": "/covers/37165.svg",
+    "source": "demo",
+    "artwork_kind": "illustration"
+  },
+  {
+    "id": 120467,
+    "title": "The Grand Budapest Hotel",
+    "year": 2014,
+    "runtime_minutes": 100,
+    "language": "English",
+    "genres": [
+      "Comedy",
+      "Adventure"
+    ],
+    "director": "Wes Anderson",
+    "cast": [
+      "Ralph Fiennes",
+      "Tony Revolori",
+      "Saoirse Ronan"
+    ],
+    "overview": "A hotel concierge and his young colleague navigate an elaborate adventure amid the changing fortunes of a grand European hotel.",
+    "tagline": "An extraordinary place to stay.",
+    "cover_url": "/covers/120467.svg",
+    "source": "demo",
+    "artwork_kind": "illustration"
+  },
+  {
+    "id": 438631,
+    "title": "Dune",
+    "year": 2021,
+    "runtime_minutes": 155,
+    "language": "English",
+    "genres": [
+      "Science Fiction",
+      "Adventure"
+    ],
+    "director": "Denis Villeneuve",
+    "cast": [
+      "Timothée Chalamet",
+      "Rebecca Ferguson",
+      "Zendaya"
+    ],
+    "overview": "A young heir travels to a desert planet where powerful interests compete over a vital resource, bringing family, politics, and ecology into conflict.",
+    "tagline": "The desert keeps its secrets.",
+    "cover_url": "/covers/438631.svg",
+    "source": "demo",
+    "artwork_kind": "illustration"
+  }
+]

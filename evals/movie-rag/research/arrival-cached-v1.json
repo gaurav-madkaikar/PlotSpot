@@ -1,0 +1,1434 @@
+{
+  "type": "development scheduling and draft inspection, not quality qualification",
+  "movie_id": 329865,
+  "cached_sources": true,
+  "runs": [
+    {
+      "mode": "sequential",
+      "research": {
+        "policy": "bounded-movie-research-v1",
+        "movie_id": 329865,
+        "mode": "sequential",
+        "seconds": 0.010477,
+        "events": [
+          {
+            "purpose": "story",
+            "event": "started",
+            "offset_seconds": 2.2e-05
+          },
+          {
+            "purpose": "story",
+            "event": "complete",
+            "offset_seconds": 0.001282
+          },
+          {
+            "purpose": "background",
+            "event": "started",
+            "offset_seconds": 0.001284
+          },
+          {
+            "purpose": "background",
+            "event": "complete",
+            "offset_seconds": 0.010473
+          }
+        ],
+        "model_calls": 0,
+        "published": false,
+        "branches": [
+          {
+            "purpose": "story",
+            "status": "complete",
+            "seconds": 0.001255,
+            "errors": [],
+            "sources": [
+              {
+                "source_id": "enwiki-43991244",
+                "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1377517038",
+                "revision": "enwiki-1377517038-sections-v3-body",
+                "sha256": "1e0483565dd1c62d96e04be0f39c5fc74522f65b81fd0cd56f64a896a3860ea4"
+              }
+            ]
+          },
+          {
+            "purpose": "background",
+            "status": "complete",
+            "seconds": 0.009185,
+            "errors": [],
+            "sources": [
+              {
+                "source_id": "time-arrival",
+                "source_ref": "https://time.com/4677598/arrival-oscar-cinematography/",
+                "revision": "article-bfe3876862cdb31f17c6aeb7b7e9fcf92a251717638b88d699309a09dd2ab008",
+                "sha256": "c4158f8ba859c02a648dc8e4c3b2016e05b63efa9b91444bb49f6f45c5c676ea"
+              },
+              {
+                "source_id": "bfi-arrival",
+                "source_ref": "https://www.bfi.org.uk/features/strange-new-worlds-craft-denis-villeneuve",
+                "revision": "article-4cbb73d5e23b3e42b6ef8241cc8efe42dab22e005963fd8e62b7ac9822d899be",
+                "sha256": "fa1be175ec8714ef94fd6ea1daeb018239e82d99ccb4c8c2953fa8121a454788"
+              }
+            ]
+          }
+        ]
+      },
+      "preparation": {
+        "policy": "research-preparation-inspection-v1",
+        "implementation_sha256": {
+          "movie_research.py": "52154700f3576eeaf6f28fb43d5b419b19f5ca605190df1a1607d22f9fe4df3f",
+          "research_preparation.py": "272180db7f347201f45fc9938a08a0e25a43456ba67d4022bee88f01435e32ef",
+          "content_evidence_retrieval.py": "430ee606cd6c87114e5b1b4cdf5ffc3cdcc10dcab45b0e0c7e043cc916d175ba",
+          "content_proposal_learning.py": "ee1d0a5e46b0178e0941970c00fe48c8018a6c2cb455ee8551ad92fed113ab97",
+          "structured_content_review.py": "baccad37400e69b9ad6bc75598b527021a144ad31944e77ef4f850752970284f",
+          "background_fact_workflow.py": "09703a74b88758201ea47e30a70072d77d443c6ad3402792f002ea2a50f6b9d9",
+          "background_fact_review.py": "34e85089cebccd79f05266a8e878de64b6230b7b495fa5481d1f0e0b7e6675ea",
+          "background_articles.py": "e1505e3954c8898c0e34e6fbcbfbfdb1f95eca78c8b562d7beb1a3b9df9e4436",
+          "background_registry.py": "61d43fb11693d52bf821a2e75c6d1a894e02448e6fc50ae00be88fdd7c56c93e",
+          "proposal_evidence.py": "39870c5dde1e5a712c5191cbdc1edecca0e7c1c66fd045ad33dc84f4cb52a7be",
+          "source_sections.py": "69bb2ab860e8f96bb67dcc6b226d0d8c79fddffbb3b1e559da0400fb779568e7",
+          "sentence_spans.py": "bb35bf3b1844a8dc356e30f0bd17f35f61397612604783e0ff08552708064667",
+          "ingestion_learning.py": "667187b7fce030b089cc48033d9c2fb8d728d79e220a11e01961bbdd48cfef30",
+          "evidence_store.py": "4376381764265497159813b241cd33d65b9b5fc3b96b0810fcced61f4ae5d311",
+          "retrieval_learning.py": "b2a9124437a7630a65f715f1134eda7ae657fbd24e361b63000a0908f2b3a0a5",
+          "embedding_learning.py": "03fb3844cdb6aa85f5739e96304054b761a88f40a38b3adda70195a676a83198",
+          "ollama_learning.py": "686a266d8a7d9f3ab4504bfe05e893ce26c1514b991fecbfd7e2c69337747ccc",
+          "local_models.py": "e723dc425ec7d8f91ca7be6c8d73b7c6a1b4cda1722783a9cecbac0f66174471",
+          "content_proposals.py": "576a6a10fe33944920706a73f2d04b6eef74d596ab39b48a6b787ecbc30ca9fa",
+          "wikipedia_source.py": "b40e51a43ee081be98528ce3685a16fce11b24b5018e6fca37b3a62918e10546"
+        },
+        "research": {
+          "policy": "bounded-movie-research-v1",
+          "movie_id": 329865,
+          "mode": "sequential",
+          "seconds": 0.010477,
+          "events": [
+            {
+              "purpose": "story",
+              "event": "started",
+              "offset_seconds": 2.2e-05
+            },
+            {
+              "purpose": "story",
+              "event": "complete",
+              "offset_seconds": 0.001282
+            },
+            {
+              "purpose": "background",
+              "event": "started",
+              "offset_seconds": 0.001284
+            },
+            {
+              "purpose": "background",
+              "event": "complete",
+              "offset_seconds": 0.010473
+            }
+          ],
+          "model_calls": 0,
+          "published": false,
+          "branches": [
+            {
+              "purpose": "story",
+              "status": "complete",
+              "seconds": 0.001255,
+              "errors": [],
+              "sources": [
+                {
+                  "source_id": "enwiki-43991244",
+                  "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1377517038",
+                  "revision": "enwiki-1377517038-sections-v3-body",
+                  "sha256": "1e0483565dd1c62d96e04be0f39c5fc74522f65b81fd0cd56f64a896a3860ea4"
+                }
+              ]
+            },
+            {
+              "purpose": "background",
+              "status": "complete",
+              "seconds": 0.009185,
+              "errors": [],
+              "sources": [
+                {
+                  "source_id": "time-arrival",
+                  "source_ref": "https://time.com/4677598/arrival-oscar-cinematography/",
+                  "revision": "article-bfe3876862cdb31f17c6aeb7b7e9fcf92a251717638b88d699309a09dd2ab008",
+                  "sha256": "c4158f8ba859c02a648dc8e4c3b2016e05b63efa9b91444bb49f6f45c5c676ea"
+                },
+                {
+                  "source_id": "bfi-arrival",
+                  "source_ref": "https://www.bfi.org.uk/features/strange-new-worlds-craft-denis-villeneuve",
+                  "revision": "article-4cbb73d5e23b3e42b6ef8241cc8efe42dab22e005963fd8e62b7ac9822d899be",
+                  "sha256": "fa1be175ec8714ef94fd6ea1daeb018239e82d99ccb4c8c2953fa8121a454788"
+                }
+              ]
+            }
+          ]
+        },
+        "models": {
+          "nomic-embed-text:v1.5": "0a109f422b47e3a30ba2b10eca18548e944e8a23073ee3f3e947efcf3c45e59f",
+          "qwen3.5:9b": "6488c96fa5faab64bb65cbd30d4289e20e6130ef535a93ef9a49f42eda893ea7"
+        },
+        "local_model_concurrency": 1,
+        "published": false,
+        "branches": [
+          {
+            "purpose": "story",
+            "research_status": "complete",
+            "state": "inspected",
+            "result": {
+              "retrieval": {
+                "version": "content-topic-retrieval-v2",
+                "embedding_model": "nomic-embed-text:v1.5",
+                "snapshot_state": "indexed",
+                "snapshot_key": "89f7bcf5fc9b8c405c2e6775e296c5d620ed1639ad843f67053dffb02b8a1fde",
+                "max_chars": 600,
+                "overlap_chars": 100,
+                "spoiler_policy": "internal_drafts_allow_spoilers_not_published",
+                "queries": [
+                  {
+                    "purpose": "story",
+                    "topic": "main character goals and important decisions",
+                    "top_windows": [
+                      {
+                        "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_011",
+                        "score": 0.626443
+                      },
+                      {
+                        "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_006",
+                        "score": 0.614579
+                      },
+                      {
+                        "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_013",
+                        "score": 0.610579
+                      },
+                      {
+                        "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_014",
+                        "score": 0.602602
+                      },
+                      {
+                        "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_012",
+                        "score": 0.595742
+                      },
+                      {
+                        "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_009",
+                        "score": 0.565094
+                      }
+                    ],
+                    "selected": [
+                      {
+                        "start": 5299,
+                        "end": 5852,
+                        "window_id": "89f7bcf5fc9b8c405c2e6775e296c5d6_011",
+                        "score": 0.626443,
+                        "section": "Plot"
+                      },
+                      {
+                        "start": 2843,
+                        "end": 2935,
+                        "window_id": "89f7bcf5fc9b8c405c2e6775e296c5d6_006",
+                        "score": 0.614579,
+                        "section": "Plot"
+                      }
+                    ]
+                  },
+                  {
+                    "purpose": "background",
+                    "topic": "unusual practical filming techniques and production challenges",
+                    "top_windows": [
+                      {
+                        "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_028",
+                        "score": 0.633604
+                      },
+                      {
+                        "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_029",
+                        "score": 0.631288
+                      },
+                      {
+                        "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_026",
+                        "score": 0.625985
+                      },
+                      {
+                        "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_025",
+                        "score": 0.612445
+                      },
+                      {
+                        "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_027",
+                        "score": 0.612062
+                      },
+                      {
+                        "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_024",
+                        "score": 0.611885
+                      }
+                    ],
+                    "selected": [
+                      {
+                        "start": 13206,
+                        "end": 13773,
+                        "window_id": "89f7bcf5fc9b8c405c2e6775e296c5d6_028",
+                        "score": 0.633604,
+                        "section": "Visual effects"
+                      },
+                      {
+                        "start": 12327,
+                        "end": 12641,
+                        "window_id": "89f7bcf5fc9b8c405c2e6775e296c5d6_026",
+                        "score": 0.625985,
+                        "section": "Filming"
+                      }
+                    ]
+                  }
+                ],
+                "batch_count": 1
+              },
+              "evidence": [
+                {
+                  "passage_id": "P1",
+                  "purpose": "story",
+                  "text": "Banks goes alone to the Montana craft, which sends down a transport pod. Abbott has been mortally injured as a result of the explosion. Costello explains that they have come to help humanity, because in 3,000 years' time they will need humanity's help in return. Banks realizes the \"weapon\" is their language. Learning the language alters humans' linear perception of time, allowing them to experience memories of future events. Banks's visions of her daughter are revealed to be premonitions; her daughter will not be born until sometime in the future.",
+                  "origin": {
+                    "movie_id": 329865,
+                    "source_id": "enwiki-43991244",
+                    "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1377517038",
+                    "revision": "enwiki-1377517038-sections-v3-body",
+                    "section_title": "Plot",
+                    "section_category": "plot",
+                    "start": 5299,
+                    "end": 5852
+                  }
+                },
+                {
+                  "passage_id": "P2",
+                  "purpose": "story",
+                  "text": "Linguist Louise Banks's daughter Hannah dies at the age of twelve from an incurable illness.",
+                  "origin": {
+                    "movie_id": 329865,
+                    "source_id": "enwiki-43991244",
+                    "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1377517038",
+                    "revision": "enwiki-1377517038-sections-v3-body",
+                    "section_title": "Plot",
+                    "section_category": "plot",
+                    "start": 2843,
+                    "end": 2935
+                  }
+                }
+              ],
+              "proposals": {
+                "facts": [],
+                "questions": [
+                  {
+                    "question": "What does Costello explain is the reason the aliens have come to help humanity?",
+                    "options": [
+                      "To provide a weapon that can alter human perception of time",
+                      "Because in 3,000 years' time they will need humanity's help in return",
+                      "To cure incurable illnesses affecting children on Earth",
+                      "To establish a permanent military base in Montana"
+                    ],
+                    "correct_index": 1,
+                    "passage_id": "P1",
+                    "evidence_quote": "Costello explains that they have come to help humanity, because in 3,000 years' time they will need humanity's help in return."
+                  },
+                  {
+                    "question": "How are Louise Banks's visions of her daughter revealed to be?",
+                    "options": [
+                      "Hallucinations caused by the explosion at the Montana craft",
+                      "Premonitions of events that will happen in the future",
+                      "Flashbacks to memories from her childhood before joining the linguistics team",
+                      "Dreams induced by the alien language altering her sleep patterns"
+                    ],
+                    "correct_index": 1,
+                    "passage_id": "P1",
+                    "evidence_quote": "Banks's visions of her daughter are revealed to be premonitions; her daughter will not be born until sometime in the future."
+                  }
+                ]
+              },
+              "review": {
+                "items": [
+                  {
+                    "item_id": "Q1",
+                    "decision": "accept",
+                    "reason": "Criteria: supported, eligible. The evidence quote explicitly states Costello's explanation matches option 1 exactly. Options 0, 2, and 3 are not supported by the text (option 0 is a misinterpretation of 'weapon', options 2 and 3 are invented).",
+                    "assessment": {
+                      "item_id": "Q1",
+                      "support": "supported",
+                      "content": "eligible",
+                      "supported_option_indices": [
+                        1
+                      ],
+                      "plausible_options": true,
+                      "reason": "The evidence quote explicitly states Costello's explanation matches option 1 exactly. Options 0, 2, and 3 are not supported by the text (option 0 is a misinterpretation of 'weapon', options 2 and 3 are invented)."
+                    }
+                  },
+                  {
+                    "item_id": "Q2",
+                    "decision": "accept",
+                    "reason": "Criteria: supported, eligible. The evidence quote explicitly states the visions are revealed to be premonitions. Option 1 matches this exactly. Options 0, 2, and 3 are not supported by the text.",
+                    "assessment": {
+                      "item_id": "Q2",
+                      "support": "supported",
+                      "content": "eligible",
+                      "supported_option_indices": [
+                        1
+                      ],
+                      "plausible_options": true,
+                      "reason": "The evidence quote explicitly states the visions are revealed to be premonitions. Option 1 matches this exactly. Options 0, 2, and 3 are not supported by the text."
+                    }
+                  }
+                ],
+                "model_calls": 1
+              },
+              "checks": [
+                {
+                  "kind": "question",
+                  "index": 0,
+                  "passage_id": "P1",
+                  "support_checks_passed": true,
+                  "problems": [],
+                  "semantic_review_required": true
+                },
+                {
+                  "kind": "question",
+                  "index": 1,
+                  "passage_id": "P1",
+                  "support_checks_passed": true,
+                  "problems": [],
+                  "semantic_review_required": true
+                }
+              ],
+              "eligible_for_review": [
+                "Q1",
+                "Q2"
+              ]
+            },
+            "seconds": 57.223846
+          },
+          {
+            "purpose": "background",
+            "research_status": "complete",
+            "state": "inspected",
+            "result": {
+              "candidates": [
+                {
+                  "id": "time-arrival:F1",
+                  "proposal": {
+                    "title": "Visual Inspiration",
+                    "text": "Production designer Patrice Vermette created mood boards using colors and lights, inspired by James Turrell's Shallow Space Constructions artworks.",
+                    "passage_id": "P2",
+                    "evidence_quote": "In this case, both men were deeply influenced by the artist James Turrell\u2019s Shallow Space Constructions, a series of artworks that use light and space to question the nature of human perception."
+                  },
+                  "origin": {
+                    "movie_id": 329865,
+                    "source_id": "time-arrival",
+                    "source_ref": "https://time.com/4677598/arrival-oscar-cinematography/",
+                    "revision": "article-bfe3876862cdb31f17c6aeb7b7e9fcf92a251717638b88d699309a09dd2ab008",
+                    "section_title": "Background 1",
+                    "section_category": "production",
+                    "start": 0,
+                    "end": 563
+                  },
+                  "checks": {
+                    "kind": "fact",
+                    "index": 0,
+                    "passage_id": "P2",
+                    "support_checks_passed": true,
+                    "problems": [],
+                    "semantic_review_required": true
+                  },
+                  "review": {
+                    "item_id": "F1",
+                    "decision": "accept",
+                    "reason": "The proposal accurately reflects the evidence quote regarding Patrice Vermette and James Turrell's influence on mood boards, using concise wording without plot details.",
+                    "assessment": {
+                      "item_id": "F1",
+                      "missing_mentions": [],
+                      "semantic_decision": "accept",
+                      "reason": "The proposal accurately reflects the evidence quote regarding Patrice Vermette and James Turrell's influence on mood boards, using concise wording without plot details."
+                    }
+                  },
+                  "complete_source_sentence": true,
+                  "copied_source_prose": false,
+                  "eligible_for_review": true
+                },
+                {
+                  "id": "time-arrival:F2",
+                  "proposal": {
+                    "title": "Set Atmosphere",
+                    "text": "Cinematographer Young used Martina Hoogland Ivanow's gloomy photography to create dread outside the spaceship, opposing Louise's safe zones.",
+                    "passage_id": "P1",
+                    "evidence_quote": "Outside of the spaceship, Young was inspired by the work of photographer Martina Hoogland Ivanow to create a sense of dread and chaos in direct opposition to the Zen-like nature of Louise\u2019s safe and sacred zones."
+                  },
+                  "origin": {
+                    "movie_id": 329865,
+                    "source_id": "time-arrival",
+                    "source_ref": "https://time.com/4677598/arrival-oscar-cinematography/",
+                    "revision": "article-bfe3876862cdb31f17c6aeb7b7e9fcf92a251717638b88d699309a09dd2ab008",
+                    "section_title": "Background 3",
+                    "section_category": "filming",
+                    "start": 1176,
+                    "end": 1643
+                  },
+                  "checks": {
+                    "kind": "fact",
+                    "index": 1,
+                    "passage_id": "P1",
+                    "support_checks_passed": true,
+                    "problems": [],
+                    "semantic_review_required": true
+                  },
+                  "review": {
+                    "item_id": "F2",
+                    "decision": "reject",
+                    "reason": "The proposal incorrectly attributes 'gloomy photography' to the cinematographer Young; the evidence quote explicitly states Young was inspired by photographer Martina Hoogland Ivanow's work, not that Young used her style.",
+                    "assessment": {
+                      "item_id": "F2",
+                      "missing_mentions": [],
+                      "semantic_decision": "reject",
+                      "reason": "The proposal incorrectly attributes 'gloomy photography' to the cinematographer Young; the evidence quote explicitly states Young was inspired by photographer Martina Hoogland Ivanow's work, not that Young used her style."
+                    }
+                  },
+                  "complete_source_sentence": true,
+                  "copied_source_prose": false,
+                  "eligible_for_review": false
+                },
+                {
+                  "id": "bfi-arrival:F1",
+                  "proposal": {
+                    "title": "Sound Approach",
+                    "text": "Composer J\u00f3hannsson avoided traditional emotional music, using an avant-garde style that blends with sound design to unite human and alien story elements.",
+                    "passage_id": "P1",
+                    "evidence_quote": "Composer J\u00f3hannsson eschews the traditional overarching emotional music of the genre to take a more avant-garde approach, which knits seamlessly with the sound design to bring together the human and alien sides of the story."
+                  },
+                  "origin": {
+                    "movie_id": 329865,
+                    "source_id": "bfi-arrival",
+                    "source_ref": "https://www.bfi.org.uk/features/strange-new-worlds-craft-denis-villeneuve",
+                    "revision": "article-4cbb73d5e23b3e42b6ef8241cc8efe42dab22e005963fd8e62b7ac9822d899be",
+                    "section_title": "Background 1",
+                    "section_category": "music",
+                    "start": 0,
+                    "end": 314
+                  },
+                  "checks": {
+                    "kind": "fact",
+                    "index": 0,
+                    "passage_id": "P1",
+                    "support_checks_passed": true,
+                    "problems": [],
+                    "semantic_review_required": true
+                  },
+                  "review": {
+                    "item_id": "F1",
+                    "decision": "accept",
+                    "reason": "The proposal accurately summarizes the evidence quote regarding J\u00f3hannsson's avant-garde approach and its integration with sound design to unite human and alien elements.",
+                    "assessment": {
+                      "item_id": "F1",
+                      "missing_mentions": [],
+                      "semantic_decision": "accept",
+                      "reason": "The proposal accurately summarizes the evidence quote regarding J\u00f3hannsson's avant-garde approach and its integration with sound design to unite human and alien elements."
+                    }
+                  },
+                  "complete_source_sentence": true,
+                  "copied_source_prose": false,
+                  "eligible_for_review": false
+                },
+                {
+                  "id": "bfi-arrival:F2",
+                  "proposal": {
+                    "title": "Vocal Techniques",
+                    "text": "The score features key human voices ranging from extended harmonies to guttural throat singing to support the narrative.",
+                    "passage_id": "P1",
+                    "evidence_quote": "Human voices are absolutely key, from extended harmonies to more guttural throat singing."
+                  },
+                  "origin": {
+                    "movie_id": 329865,
+                    "source_id": "bfi-arrival",
+                    "source_ref": "https://www.bfi.org.uk/features/strange-new-worlds-craft-denis-villeneuve",
+                    "revision": "article-4cbb73d5e23b3e42b6ef8241cc8efe42dab22e005963fd8e62b7ac9822d899be",
+                    "section_title": "Background 1",
+                    "section_category": "music",
+                    "start": 0,
+                    "end": 314
+                  },
+                  "checks": {
+                    "kind": "fact",
+                    "index": 1,
+                    "passage_id": "P1",
+                    "support_checks_passed": true,
+                    "problems": [],
+                    "semantic_review_required": true
+                  },
+                  "review": {
+                    "item_id": "F2",
+                    "decision": "accept",
+                    "reason": "The proposal correctly extracts the specific details about human voices, extended harmonies, and guttural throat singing directly from the provided evidence quote.",
+                    "assessment": {
+                      "item_id": "F2",
+                      "missing_mentions": [],
+                      "semantic_decision": "accept",
+                      "reason": "The proposal correctly extracts the specific details about human voices, extended harmonies, and guttural throat singing directly from the provided evidence quote."
+                    }
+                  },
+                  "complete_source_sentence": true,
+                  "copied_source_prose": false,
+                  "eligible_for_review": true
+                }
+              ],
+              "errors": [],
+              "sources": [
+                {
+                  "source_id": "time-arrival",
+                  "retrieval": {
+                    "index": "indexed",
+                    "query_sha256": "d295d76e56170910a4e9a6ad756aa9dcf84a385e1850a6caa10b923562016411",
+                    "hits": [
+                      {
+                        "passage_id": "6224226bb4c53969c2c3e00170f3b1e2_003",
+                        "score": 0.7809907458391028,
+                        "origin": {
+                          "movie_id": 329865,
+                          "source_id": "time-arrival",
+                          "source_ref": "https://time.com/4677598/arrival-oscar-cinematography/",
+                          "revision": "article-bfe3876862cdb31f17c6aeb7b7e9fcf92a251717638b88d699309a09dd2ab008",
+                          "section_title": "Background 3",
+                          "section_category": "filming",
+                          "start": 1176,
+                          "end": 1643
+                        },
+                        "preceding_context_added": false
+                      },
+                      {
+                        "passage_id": "6224226bb4c53969c2c3e00170f3b1e2_000",
+                        "score": 0.7103040167438431,
+                        "origin": {
+                          "movie_id": 329865,
+                          "source_id": "time-arrival",
+                          "source_ref": "https://time.com/4677598/arrival-oscar-cinematography/",
+                          "revision": "article-bfe3876862cdb31f17c6aeb7b7e9fcf92a251717638b88d699309a09dd2ab008",
+                          "section_title": "Background 1",
+                          "section_category": "production",
+                          "start": 0,
+                          "end": 563
+                        },
+                        "preceding_context_added": false
+                      }
+                    ]
+                  },
+                  "evidence": [
+                    {
+                      "passage_id": "P1",
+                      "purpose": "background",
+                      "text": "Outside of the spaceship, Young was inspired by the work of photographer Martina Hoogland Ivanow to create a sense of dread and chaos in direct opposition to the Zen-like nature of Louise\u2019s safe and sacred zones. In her book, Speedway, Ivanow creates gloomy, ominous images from mundane situations: a simple landscape becomes a Twin Peaks-like world where the unknown could be lurking in the dark; a motorcycle pilot is transformed into a shadowy, threatening figure.",
+                      "origin": {
+                        "movie_id": 329865,
+                        "source_id": "time-arrival",
+                        "source_ref": "https://time.com/4677598/arrival-oscar-cinematography/",
+                        "revision": "article-bfe3876862cdb31f17c6aeb7b7e9fcf92a251717638b88d699309a09dd2ab008",
+                        "section_title": "Background 3",
+                        "section_category": "filming",
+                        "start": 1176,
+                        "end": 1643
+                      }
+                    },
+                    {
+                      "passage_id": "P2",
+                      "purpose": "background",
+                      "text": "That\u2019s where Patrice Vermette, the film\u2019s production designer, comes in. \u201cWith any movies I do, my process is very similar,\u201d Vermette tells TIME. \u201cI start by creating mood boards and collections of images that are only emotional reactions to the script. It could be colors, lights, marbles, rocks.\u201d Then, he and the director work out where to go with that inspiration. In this case, both men were deeply influenced by the artist James Turrell\u2019s Shallow Space Constructions, a series of artworks that use light and space to question the nature of human perception.",
+                      "origin": {
+                        "movie_id": 329865,
+                        "source_id": "time-arrival",
+                        "source_ref": "https://time.com/4677598/arrival-oscar-cinematography/",
+                        "revision": "article-bfe3876862cdb31f17c6aeb7b7e9fcf92a251717638b88d699309a09dd2ab008",
+                        "section_title": "Background 1",
+                        "section_category": "production",
+                        "start": 0,
+                        "end": 563
+                      }
+                    }
+                  ]
+                },
+                {
+                  "source_id": "bfi-arrival",
+                  "retrieval": {
+                    "index": "indexed",
+                    "query_sha256": "a647f83ad3e69dd8053d8649708b3f4331166ba41c5df7a2eba8ec0bab98abfa",
+                    "hits": [
+                      {
+                        "passage_id": "7203c2726f777620596bb8509b006031_000",
+                        "score": 0.7379148544928746,
+                        "origin": {
+                          "movie_id": 329865,
+                          "source_id": "bfi-arrival",
+                          "source_ref": "https://www.bfi.org.uk/features/strange-new-worlds-craft-denis-villeneuve",
+                          "revision": "article-4cbb73d5e23b3e42b6ef8241cc8efe42dab22e005963fd8e62b7ac9822d899be",
+                          "section_title": "Background 1",
+                          "section_category": "music",
+                          "start": 0,
+                          "end": 314
+                        },
+                        "preceding_context_added": false
+                      }
+                    ]
+                  },
+                  "evidence": [
+                    {
+                      "passage_id": "P1",
+                      "purpose": "background",
+                      "text": "Composer J\u00f3hannsson eschews the traditional overarching emotional music of the genre to take a more avant-garde approach, which knits seamlessly with the sound design to bring together the human and alien sides of the story. Human voices are absolutely key, from extended harmonies to more guttural throat singing.",
+                      "origin": {
+                        "movie_id": 329865,
+                        "source_id": "bfi-arrival",
+                        "source_ref": "https://www.bfi.org.uk/features/strange-new-worlds-craft-denis-villeneuve",
+                        "revision": "article-4cbb73d5e23b3e42b6ef8241cc8efe42dab22e005963fd8e62b7ac9822d899be",
+                        "section_title": "Background 1",
+                        "section_category": "music",
+                        "start": 0,
+                        "end": 314
+                      }
+                    }
+                  ]
+                }
+              ],
+              "published": false
+            },
+            "seconds": 60.906401
+          }
+        ],
+        "seconds": 118.130742,
+        "code_changed_during_run": false
+      },
+      "total_seconds": 118.141219
+    },
+    {
+      "mode": "parallel",
+      "research": {
+        "policy": "bounded-movie-research-v1",
+        "movie_id": 329865,
+        "mode": "parallel",
+        "seconds": 0.019546,
+        "events": [
+          {
+            "purpose": "story",
+            "event": "started",
+            "offset_seconds": 0.000273
+          },
+          {
+            "purpose": "background",
+            "event": "started",
+            "offset_seconds": 0.000393
+          },
+          {
+            "purpose": "story",
+            "event": "complete",
+            "offset_seconds": 0.003129
+          },
+          {
+            "purpose": "background",
+            "event": "complete",
+            "offset_seconds": 0.019454
+          }
+        ],
+        "model_calls": 0,
+        "published": false,
+        "branches": [
+          {
+            "purpose": "story",
+            "status": "complete",
+            "seconds": 0.002848,
+            "errors": [],
+            "sources": [
+              {
+                "source_id": "enwiki-43991244",
+                "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1377517038",
+                "revision": "enwiki-1377517038-sections-v3-body",
+                "sha256": "1e0483565dd1c62d96e04be0f39c5fc74522f65b81fd0cd56f64a896a3860ea4"
+              }
+            ]
+          },
+          {
+            "purpose": "background",
+            "status": "complete",
+            "seconds": 0.019056,
+            "errors": [],
+            "sources": [
+              {
+                "source_id": "time-arrival",
+                "source_ref": "https://time.com/4677598/arrival-oscar-cinematography/",
+                "revision": "article-bfe3876862cdb31f17c6aeb7b7e9fcf92a251717638b88d699309a09dd2ab008",
+                "sha256": "c4158f8ba859c02a648dc8e4c3b2016e05b63efa9b91444bb49f6f45c5c676ea"
+              },
+              {
+                "source_id": "bfi-arrival",
+                "source_ref": "https://www.bfi.org.uk/features/strange-new-worlds-craft-denis-villeneuve",
+                "revision": "article-4cbb73d5e23b3e42b6ef8241cc8efe42dab22e005963fd8e62b7ac9822d899be",
+                "sha256": "fa1be175ec8714ef94fd6ea1daeb018239e82d99ccb4c8c2953fa8121a454788"
+              }
+            ]
+          }
+        ]
+      },
+      "preparation": {
+        "policy": "research-preparation-inspection-v1",
+        "implementation_sha256": {
+          "movie_research.py": "52154700f3576eeaf6f28fb43d5b419b19f5ca605190df1a1607d22f9fe4df3f",
+          "research_preparation.py": "272180db7f347201f45fc9938a08a0e25a43456ba67d4022bee88f01435e32ef",
+          "content_evidence_retrieval.py": "430ee606cd6c87114e5b1b4cdf5ffc3cdcc10dcab45b0e0c7e043cc916d175ba",
+          "content_proposal_learning.py": "ee1d0a5e46b0178e0941970c00fe48c8018a6c2cb455ee8551ad92fed113ab97",
+          "structured_content_review.py": "baccad37400e69b9ad6bc75598b527021a144ad31944e77ef4f850752970284f",
+          "background_fact_workflow.py": "09703a74b88758201ea47e30a70072d77d443c6ad3402792f002ea2a50f6b9d9",
+          "background_fact_review.py": "34e85089cebccd79f05266a8e878de64b6230b7b495fa5481d1f0e0b7e6675ea",
+          "background_articles.py": "e1505e3954c8898c0e34e6fbcbfbfdb1f95eca78c8b562d7beb1a3b9df9e4436",
+          "background_registry.py": "61d43fb11693d52bf821a2e75c6d1a894e02448e6fc50ae00be88fdd7c56c93e",
+          "proposal_evidence.py": "39870c5dde1e5a712c5191cbdc1edecca0e7c1c66fd045ad33dc84f4cb52a7be",
+          "source_sections.py": "69bb2ab860e8f96bb67dcc6b226d0d8c79fddffbb3b1e559da0400fb779568e7",
+          "sentence_spans.py": "bb35bf3b1844a8dc356e30f0bd17f35f61397612604783e0ff08552708064667",
+          "ingestion_learning.py": "667187b7fce030b089cc48033d9c2fb8d728d79e220a11e01961bbdd48cfef30",
+          "evidence_store.py": "4376381764265497159813b241cd33d65b9b5fc3b96b0810fcced61f4ae5d311",
+          "retrieval_learning.py": "b2a9124437a7630a65f715f1134eda7ae657fbd24e361b63000a0908f2b3a0a5",
+          "embedding_learning.py": "03fb3844cdb6aa85f5739e96304054b761a88f40a38b3adda70195a676a83198",
+          "ollama_learning.py": "686a266d8a7d9f3ab4504bfe05e893ce26c1514b991fecbfd7e2c69337747ccc",
+          "local_models.py": "e723dc425ec7d8f91ca7be6c8d73b7c6a1b4cda1722783a9cecbac0f66174471",
+          "content_proposals.py": "576a6a10fe33944920706a73f2d04b6eef74d596ab39b48a6b787ecbc30ca9fa",
+          "wikipedia_source.py": "b40e51a43ee081be98528ce3685a16fce11b24b5018e6fca37b3a62918e10546"
+        },
+        "research": {
+          "policy": "bounded-movie-research-v1",
+          "movie_id": 329865,
+          "mode": "parallel",
+          "seconds": 0.019546,
+          "events": [
+            {
+              "purpose": "story",
+              "event": "started",
+              "offset_seconds": 0.000273
+            },
+            {
+              "purpose": "background",
+              "event": "started",
+              "offset_seconds": 0.000393
+            },
+            {
+              "purpose": "story",
+              "event": "complete",
+              "offset_seconds": 0.003129
+            },
+            {
+              "purpose": "background",
+              "event": "complete",
+              "offset_seconds": 0.019454
+            }
+          ],
+          "model_calls": 0,
+          "published": false,
+          "branches": [
+            {
+              "purpose": "story",
+              "status": "complete",
+              "seconds": 0.002848,
+              "errors": [],
+              "sources": [
+                {
+                  "source_id": "enwiki-43991244",
+                  "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1377517038",
+                  "revision": "enwiki-1377517038-sections-v3-body",
+                  "sha256": "1e0483565dd1c62d96e04be0f39c5fc74522f65b81fd0cd56f64a896a3860ea4"
+                }
+              ]
+            },
+            {
+              "purpose": "background",
+              "status": "complete",
+              "seconds": 0.019056,
+              "errors": [],
+              "sources": [
+                {
+                  "source_id": "time-arrival",
+                  "source_ref": "https://time.com/4677598/arrival-oscar-cinematography/",
+                  "revision": "article-bfe3876862cdb31f17c6aeb7b7e9fcf92a251717638b88d699309a09dd2ab008",
+                  "sha256": "c4158f8ba859c02a648dc8e4c3b2016e05b63efa9b91444bb49f6f45c5c676ea"
+                },
+                {
+                  "source_id": "bfi-arrival",
+                  "source_ref": "https://www.bfi.org.uk/features/strange-new-worlds-craft-denis-villeneuve",
+                  "revision": "article-4cbb73d5e23b3e42b6ef8241cc8efe42dab22e005963fd8e62b7ac9822d899be",
+                  "sha256": "fa1be175ec8714ef94fd6ea1daeb018239e82d99ccb4c8c2953fa8121a454788"
+                }
+              ]
+            }
+          ]
+        },
+        "models": {
+          "nomic-embed-text:v1.5": "0a109f422b47e3a30ba2b10eca18548e944e8a23073ee3f3e947efcf3c45e59f",
+          "qwen3.5:9b": "6488c96fa5faab64bb65cbd30d4289e20e6130ef535a93ef9a49f42eda893ea7"
+        },
+        "local_model_concurrency": 1,
+        "published": false,
+        "branches": [
+          {
+            "purpose": "story",
+            "research_status": "complete",
+            "state": "inspected",
+            "result": {
+              "retrieval": {
+                "version": "content-topic-retrieval-v2",
+                "embedding_model": "nomic-embed-text:v1.5",
+                "snapshot_state": "cached",
+                "snapshot_key": "89f7bcf5fc9b8c405c2e6775e296c5d620ed1639ad843f67053dffb02b8a1fde",
+                "max_chars": 600,
+                "overlap_chars": 100,
+                "spoiler_policy": "internal_drafts_allow_spoilers_not_published",
+                "queries": [
+                  {
+                    "purpose": "story",
+                    "topic": "main character goals and important decisions",
+                    "top_windows": [
+                      {
+                        "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_011",
+                        "score": 0.626443
+                      },
+                      {
+                        "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_006",
+                        "score": 0.614579
+                      },
+                      {
+                        "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_013",
+                        "score": 0.610579
+                      },
+                      {
+                        "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_014",
+                        "score": 0.602602
+                      },
+                      {
+                        "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_012",
+                        "score": 0.595742
+                      },
+                      {
+                        "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_009",
+                        "score": 0.565094
+                      }
+                    ],
+                    "selected": [
+                      {
+                        "start": 5299,
+                        "end": 5852,
+                        "window_id": "89f7bcf5fc9b8c405c2e6775e296c5d6_011",
+                        "score": 0.626443,
+                        "section": "Plot"
+                      },
+                      {
+                        "start": 2843,
+                        "end": 2935,
+                        "window_id": "89f7bcf5fc9b8c405c2e6775e296c5d6_006",
+                        "score": 0.614579,
+                        "section": "Plot"
+                      }
+                    ]
+                  },
+                  {
+                    "purpose": "background",
+                    "topic": "unusual practical filming techniques and production challenges",
+                    "top_windows": [
+                      {
+                        "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_028",
+                        "score": 0.633604
+                      },
+                      {
+                        "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_029",
+                        "score": 0.631288
+                      },
+                      {
+                        "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_026",
+                        "score": 0.625985
+                      },
+                      {
+                        "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_025",
+                        "score": 0.612445
+                      },
+                      {
+                        "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_027",
+                        "score": 0.612062
+                      },
+                      {
+                        "id": "89f7bcf5fc9b8c405c2e6775e296c5d6_024",
+                        "score": 0.611885
+                      }
+                    ],
+                    "selected": [
+                      {
+                        "start": 13206,
+                        "end": 13773,
+                        "window_id": "89f7bcf5fc9b8c405c2e6775e296c5d6_028",
+                        "score": 0.633604,
+                        "section": "Visual effects"
+                      },
+                      {
+                        "start": 12327,
+                        "end": 12641,
+                        "window_id": "89f7bcf5fc9b8c405c2e6775e296c5d6_026",
+                        "score": 0.625985,
+                        "section": "Filming"
+                      }
+                    ]
+                  }
+                ],
+                "batch_count": 1
+              },
+              "evidence": [
+                {
+                  "passage_id": "P1",
+                  "purpose": "story",
+                  "text": "Banks goes alone to the Montana craft, which sends down a transport pod. Abbott has been mortally injured as a result of the explosion. Costello explains that they have come to help humanity, because in 3,000 years' time they will need humanity's help in return. Banks realizes the \"weapon\" is their language. Learning the language alters humans' linear perception of time, allowing them to experience memories of future events. Banks's visions of her daughter are revealed to be premonitions; her daughter will not be born until sometime in the future.",
+                  "origin": {
+                    "movie_id": 329865,
+                    "source_id": "enwiki-43991244",
+                    "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1377517038",
+                    "revision": "enwiki-1377517038-sections-v3-body",
+                    "section_title": "Plot",
+                    "section_category": "plot",
+                    "start": 5299,
+                    "end": 5852
+                  }
+                },
+                {
+                  "passage_id": "P2",
+                  "purpose": "story",
+                  "text": "Linguist Louise Banks's daughter Hannah dies at the age of twelve from an incurable illness.",
+                  "origin": {
+                    "movie_id": 329865,
+                    "source_id": "enwiki-43991244",
+                    "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1377517038",
+                    "revision": "enwiki-1377517038-sections-v3-body",
+                    "section_title": "Plot",
+                    "section_category": "plot",
+                    "start": 2843,
+                    "end": 2935
+                  }
+                }
+              ],
+              "proposals": {
+                "facts": [],
+                "questions": [
+                  {
+                    "question": "What does Costello explain is the reason the aliens have come to help humanity?",
+                    "options": [
+                      "To provide a weapon that can alter human perception of time",
+                      "Because in 3,000 years' time they will need humanity's help in return",
+                      "To cure incurable illnesses affecting children on Earth",
+                      "To establish a permanent military base in Montana"
+                    ],
+                    "correct_index": 1,
+                    "passage_id": "P1",
+                    "evidence_quote": "Costello explains that they have come to help humanity, because in 3,000 years' time they will need humanity's help in return."
+                  },
+                  {
+                    "question": "How are Louise Banks's visions of her daughter revealed to be?",
+                    "options": [
+                      "Hallucinations caused by the explosion at the Montana craft",
+                      "Premonitions of events that will happen in the future",
+                      "Flashbacks to memories from her childhood before joining the linguistics team",
+                      "Dreams induced by the alien language altering her sleep patterns"
+                    ],
+                    "correct_index": 1,
+                    "passage_id": "P1",
+                    "evidence_quote": "Banks's visions of her daughter are revealed to be premonitions; her daughter will not be born until sometime in the future."
+                  }
+                ]
+              },
+              "review": {
+                "items": [
+                  {
+                    "item_id": "Q1",
+                    "decision": "accept",
+                    "reason": "Criteria: supported, eligible. The evidence quote explicitly states Costello's explanation matches option 1 exactly. Options 0, 2, and 3 are not supported by the text (option 0 is a misinterpretation of 'weapon', options 2 and 3 are invented).",
+                    "assessment": {
+                      "item_id": "Q1",
+                      "support": "supported",
+                      "content": "eligible",
+                      "supported_option_indices": [
+                        1
+                      ],
+                      "plausible_options": true,
+                      "reason": "The evidence quote explicitly states Costello's explanation matches option 1 exactly. Options 0, 2, and 3 are not supported by the text (option 0 is a misinterpretation of 'weapon', options 2 and 3 are invented)."
+                    }
+                  },
+                  {
+                    "item_id": "Q2",
+                    "decision": "accept",
+                    "reason": "Criteria: supported, eligible. The evidence quote explicitly states the visions are revealed to be premonitions. Option 1 matches this exactly. Options 0, 2, and 3 are not supported by the text.",
+                    "assessment": {
+                      "item_id": "Q2",
+                      "support": "supported",
+                      "content": "eligible",
+                      "supported_option_indices": [
+                        1
+                      ],
+                      "plausible_options": true,
+                      "reason": "The evidence quote explicitly states the visions are revealed to be premonitions. Option 1 matches this exactly. Options 0, 2, and 3 are not supported by the text."
+                    }
+                  }
+                ],
+                "model_calls": 1
+              },
+              "checks": [
+                {
+                  "kind": "question",
+                  "index": 0,
+                  "passage_id": "P1",
+                  "support_checks_passed": true,
+                  "problems": [],
+                  "semantic_review_required": true
+                },
+                {
+                  "kind": "question",
+                  "index": 1,
+                  "passage_id": "P1",
+                  "support_checks_passed": true,
+                  "problems": [],
+                  "semantic_review_required": true
+                }
+              ],
+              "eligible_for_review": [
+                "Q1",
+                "Q2"
+              ]
+            },
+            "seconds": 28.322699
+          },
+          {
+            "purpose": "background",
+            "research_status": "complete",
+            "state": "inspected",
+            "result": {
+              "candidates": [
+                {
+                  "id": "time-arrival:F1",
+                  "proposal": {
+                    "title": "Visual Inspiration",
+                    "text": "Production designer Patrice Vermette created mood boards using colors and lights, inspired by James Turrell's Shallow Space Constructions artworks.",
+                    "passage_id": "P2",
+                    "evidence_quote": "In this case, both men were deeply influenced by the artist James Turrell\u2019s Shallow Space Constructions, a series of artworks that use light and space to question the nature of human perception."
+                  },
+                  "origin": {
+                    "movie_id": 329865,
+                    "source_id": "time-arrival",
+                    "source_ref": "https://time.com/4677598/arrival-oscar-cinematography/",
+                    "revision": "article-bfe3876862cdb31f17c6aeb7b7e9fcf92a251717638b88d699309a09dd2ab008",
+                    "section_title": "Background 1",
+                    "section_category": "production",
+                    "start": 0,
+                    "end": 563
+                  },
+                  "checks": {
+                    "kind": "fact",
+                    "index": 0,
+                    "passage_id": "P2",
+                    "support_checks_passed": true,
+                    "problems": [],
+                    "semantic_review_required": true
+                  },
+                  "review": {
+                    "item_id": "F1",
+                    "decision": "accept",
+                    "reason": "The proposal accurately reflects the evidence quote regarding Patrice Vermette and James Turrell's influence on mood boards, using concise wording without plot details.",
+                    "assessment": {
+                      "item_id": "F1",
+                      "missing_mentions": [],
+                      "semantic_decision": "accept",
+                      "reason": "The proposal accurately reflects the evidence quote regarding Patrice Vermette and James Turrell's influence on mood boards, using concise wording without plot details."
+                    }
+                  },
+                  "complete_source_sentence": true,
+                  "copied_source_prose": false,
+                  "eligible_for_review": true
+                },
+                {
+                  "id": "time-arrival:F2",
+                  "proposal": {
+                    "title": "Set Atmosphere",
+                    "text": "Cinematographer Young used Martina Hoogland Ivanow's gloomy photography to create dread outside the spaceship, opposing Louise's safe zones.",
+                    "passage_id": "P1",
+                    "evidence_quote": "Outside of the spaceship, Young was inspired by the work of photographer Martina Hoogland Ivanow to create a sense of dread and chaos in direct opposition to the Zen-like nature of Louise\u2019s safe and sacred zones."
+                  },
+                  "origin": {
+                    "movie_id": 329865,
+                    "source_id": "time-arrival",
+                    "source_ref": "https://time.com/4677598/arrival-oscar-cinematography/",
+                    "revision": "article-bfe3876862cdb31f17c6aeb7b7e9fcf92a251717638b88d699309a09dd2ab008",
+                    "section_title": "Background 3",
+                    "section_category": "filming",
+                    "start": 1176,
+                    "end": 1643
+                  },
+                  "checks": {
+                    "kind": "fact",
+                    "index": 1,
+                    "passage_id": "P1",
+                    "support_checks_passed": true,
+                    "problems": [],
+                    "semantic_review_required": true
+                  },
+                  "review": {
+                    "item_id": "F2",
+                    "decision": "reject",
+                    "reason": "The proposal incorrectly attributes 'gloomy photography' to the cinematographer Young; the evidence quote explicitly states Young was inspired by photographer Martina Hoogland Ivanow's work, not that Young used her style.",
+                    "assessment": {
+                      "item_id": "F2",
+                      "missing_mentions": [],
+                      "semantic_decision": "reject",
+                      "reason": "The proposal incorrectly attributes 'gloomy photography' to the cinematographer Young; the evidence quote explicitly states Young was inspired by photographer Martina Hoogland Ivanow's work, not that Young used her style."
+                    }
+                  },
+                  "complete_source_sentence": true,
+                  "copied_source_prose": false,
+                  "eligible_for_review": false
+                },
+                {
+                  "id": "bfi-arrival:F1",
+                  "proposal": {
+                    "title": "Sound Approach",
+                    "text": "Composer J\u00f3hannsson avoided traditional emotional music, using an avant-garde style that blends with sound design to unite human and alien story elements.",
+                    "passage_id": "P1",
+                    "evidence_quote": "Composer J\u00f3hannsson eschews the traditional overarching emotional music of the genre to take a more avant-garde approach, which knits seamlessly with the sound design to bring together the human and alien sides of the story."
+                  },
+                  "origin": {
+                    "movie_id": 329865,
+                    "source_id": "bfi-arrival",
+                    "source_ref": "https://www.bfi.org.uk/features/strange-new-worlds-craft-denis-villeneuve",
+                    "revision": "article-4cbb73d5e23b3e42b6ef8241cc8efe42dab22e005963fd8e62b7ac9822d899be",
+                    "section_title": "Background 1",
+                    "section_category": "music",
+                    "start": 0,
+                    "end": 314
+                  },
+                  "checks": {
+                    "kind": "fact",
+                    "index": 0,
+                    "passage_id": "P1",
+                    "support_checks_passed": true,
+                    "problems": [],
+                    "semantic_review_required": true
+                  },
+                  "review": {
+                    "item_id": "F1",
+                    "decision": "accept",
+                    "reason": "The proposal accurately summarizes the evidence quote regarding J\u00f3hannsson's avant-garde approach and its integration with sound design to unite human and alien elements.",
+                    "assessment": {
+                      "item_id": "F1",
+                      "missing_mentions": [],
+                      "semantic_decision": "accept",
+                      "reason": "The proposal accurately summarizes the evidence quote regarding J\u00f3hannsson's avant-garde approach and its integration with sound design to unite human and alien elements."
+                    }
+                  },
+                  "complete_source_sentence": true,
+                  "copied_source_prose": false,
+                  "eligible_for_review": false
+                },
+                {
+                  "id": "bfi-arrival:F2",
+                  "proposal": {
+                    "title": "Vocal Techniques",
+                    "text": "The score features key human voices ranging from extended harmonies to guttural throat singing to support the narrative.",
+                    "passage_id": "P1",
+                    "evidence_quote": "Human voices are absolutely key, from extended harmonies to more guttural throat singing."
+                  },
+                  "origin": {
+                    "movie_id": 329865,
+                    "source_id": "bfi-arrival",
+                    "source_ref": "https://www.bfi.org.uk/features/strange-new-worlds-craft-denis-villeneuve",
+                    "revision": "article-4cbb73d5e23b3e42b6ef8241cc8efe42dab22e005963fd8e62b7ac9822d899be",
+                    "section_title": "Background 1",
+                    "section_category": "music",
+                    "start": 0,
+                    "end": 314
+                  },
+                  "checks": {
+                    "kind": "fact",
+                    "index": 1,
+                    "passage_id": "P1",
+                    "support_checks_passed": true,
+                    "problems": [],
+                    "semantic_review_required": true
+                  },
+                  "review": {
+                    "item_id": "F2",
+                    "decision": "accept",
+                    "reason": "The proposal correctly extracts the specific details about human voices, extended harmonies, and guttural throat singing directly from the provided evidence quote.",
+                    "assessment": {
+                      "item_id": "F2",
+                      "missing_mentions": [],
+                      "semantic_decision": "accept",
+                      "reason": "The proposal correctly extracts the specific details about human voices, extended harmonies, and guttural throat singing directly from the provided evidence quote."
+                    }
+                  },
+                  "complete_source_sentence": true,
+                  "copied_source_prose": false,
+                  "eligible_for_review": true
+                }
+              ],
+              "errors": [],
+              "sources": [
+                {
+                  "source_id": "time-arrival",
+                  "retrieval": {
+                    "index": "cached",
+                    "query_sha256": "d295d76e56170910a4e9a6ad756aa9dcf84a385e1850a6caa10b923562016411",
+                    "hits": [
+                      {
+                        "passage_id": "6224226bb4c53969c2c3e00170f3b1e2_003",
+                        "score": 0.7809907458391028,
+                        "origin": {
+                          "movie_id": 329865,
+                          "source_id": "time-arrival",
+                          "source_ref": "https://time.com/4677598/arrival-oscar-cinematography/",
+                          "revision": "article-bfe3876862cdb31f17c6aeb7b7e9fcf92a251717638b88d699309a09dd2ab008",
+                          "section_title": "Background 3",
+                          "section_category": "filming",
+                          "start": 1176,
+                          "end": 1643
+                        },
+                        "preceding_context_added": false
+                      },
+                      {
+                        "passage_id": "6224226bb4c53969c2c3e00170f3b1e2_000",
+                        "score": 0.7103040167438431,
+                        "origin": {
+                          "movie_id": 329865,
+                          "source_id": "time-arrival",
+                          "source_ref": "https://time.com/4677598/arrival-oscar-cinematography/",
+                          "revision": "article-bfe3876862cdb31f17c6aeb7b7e9fcf92a251717638b88d699309a09dd2ab008",
+                          "section_title": "Background 1",
+                          "section_category": "production",
+                          "start": 0,
+                          "end": 563
+                        },
+                        "preceding_context_added": false
+                      }
+                    ]
+                  },
+                  "evidence": [
+                    {
+                      "passage_id": "P1",
+                      "purpose": "background",
+                      "text": "Outside of the spaceship, Young was inspired by the work of photographer Martina Hoogland Ivanow to create a sense of dread and chaos in direct opposition to the Zen-like nature of Louise\u2019s safe and sacred zones. In her book, Speedway, Ivanow creates gloomy, ominous images from mundane situations: a simple landscape becomes a Twin Peaks-like world where the unknown could be lurking in the dark; a motorcycle pilot is transformed into a shadowy, threatening figure.",
+                      "origin": {
+                        "movie_id": 329865,
+                        "source_id": "time-arrival",
+                        "source_ref": "https://time.com/4677598/arrival-oscar-cinematography/",
+                        "revision": "article-bfe3876862cdb31f17c6aeb7b7e9fcf92a251717638b88d699309a09dd2ab008",
+                        "section_title": "Background 3",
+                        "section_category": "filming",
+                        "start": 1176,
+                        "end": 1643
+                      }
+                    },
+                    {
+                      "passage_id": "P2",
+                      "purpose": "background",
+                      "text": "That\u2019s where Patrice Vermette, the film\u2019s production designer, comes in. \u201cWith any movies I do, my process is very similar,\u201d Vermette tells TIME. \u201cI start by creating mood boards and collections of images that are only emotional reactions to the script. It could be colors, lights, marbles, rocks.\u201d Then, he and the director work out where to go with that inspiration. In this case, both men were deeply influenced by the artist James Turrell\u2019s Shallow Space Constructions, a series of artworks that use light and space to question the nature of human perception.",
+                      "origin": {
+                        "movie_id": 329865,
+                        "source_id": "time-arrival",
+                        "source_ref": "https://time.com/4677598/arrival-oscar-cinematography/",
+                        "revision": "article-bfe3876862cdb31f17c6aeb7b7e9fcf92a251717638b88d699309a09dd2ab008",
+                        "section_title": "Background 1",
+                        "section_category": "production",
+                        "start": 0,
+                        "end": 563
+                      }
+                    }
+                  ]
+                },
+                {
+                  "source_id": "bfi-arrival",
+                  "retrieval": {
+                    "index": "cached",
+                    "query_sha256": "a647f83ad3e69dd8053d8649708b3f4331166ba41c5df7a2eba8ec0bab98abfa",
+                    "hits": [
+                      {
+                        "passage_id": "7203c2726f777620596bb8509b006031_000",
+                        "score": 0.7379148544928746,
+                        "origin": {
+                          "movie_id": 329865,
+                          "source_id": "bfi-arrival",
+                          "source_ref": "https://www.bfi.org.uk/features/strange-new-worlds-craft-denis-villeneuve",
+                          "revision": "article-4cbb73d5e23b3e42b6ef8241cc8efe42dab22e005963fd8e62b7ac9822d899be",
+                          "section_title": "Background 1",
+                          "section_category": "music",
+                          "start": 0,
+                          "end": 314
+                        },
+                        "preceding_context_added": false
+                      }
+                    ]
+                  },
+                  "evidence": [
+                    {
+                      "passage_id": "P1",
+                      "purpose": "background",
+                      "text": "Composer J\u00f3hannsson eschews the traditional overarching emotional music of the genre to take a more avant-garde approach, which knits seamlessly with the sound design to bring together the human and alien sides of the story. Human voices are absolutely key, from extended harmonies to more guttural throat singing.",
+                      "origin": {
+                        "movie_id": 329865,
+                        "source_id": "bfi-arrival",
+                        "source_ref": "https://www.bfi.org.uk/features/strange-new-worlds-craft-denis-villeneuve",
+                        "revision": "article-4cbb73d5e23b3e42b6ef8241cc8efe42dab22e005963fd8e62b7ac9822d899be",
+                        "section_title": "Background 1",
+                        "section_category": "music",
+                        "start": 0,
+                        "end": 314
+                      }
+                    }
+                  ]
+                }
+              ],
+              "published": false
+            },
+            "seconds": 35.647445
+          }
+        ],
+        "seconds": 63.97039,
+        "code_changed_during_run": false
+      },
+      "total_seconds": 63.989936
+    }
+  ],
+  "published": false,
+  "runner_sha256": "ccf84ec879104f5287a73bc463e19b9d043ba82af12e151a84847dc2e886671e",
+  "initial_module_hashes": {
+    "movie_research.py": "52154700f3576eeaf6f28fb43d5b419b19f5ca605190df1a1607d22f9fe4df3f",
+    "research_preparation.py": "272180db7f347201f45fc9938a08a0e25a43456ba67d4022bee88f01435e32ef",
+    "content_evidence_retrieval.py": "430ee606cd6c87114e5b1b4cdf5ffc3cdcc10dcab45b0e0c7e043cc916d175ba",
+    "content_proposal_learning.py": "ee1d0a5e46b0178e0941970c00fe48c8018a6c2cb455ee8551ad92fed113ab97",
+    "structured_content_review.py": "baccad37400e69b9ad6bc75598b527021a144ad31944e77ef4f850752970284f",
+    "background_fact_workflow.py": "09703a74b88758201ea47e30a70072d77d443c6ad3402792f002ea2a50f6b9d9",
+    "background_fact_review.py": "34e85089cebccd79f05266a8e878de64b6230b7b495fa5481d1f0e0b7e6675ea",
+    "background_articles.py": "e1505e3954c8898c0e34e6fbcbfbfdb1f95eca78c8b562d7beb1a3b9df9e4436",
+    "background_registry.py": "61d43fb11693d52bf821a2e75c6d1a894e02448e6fc50ae00be88fdd7c56c93e",
+    "proposal_evidence.py": "39870c5dde1e5a712c5191cbdc1edecca0e7c1c66fd045ad33dc84f4cb52a7be",
+    "source_sections.py": "69bb2ab860e8f96bb67dcc6b226d0d8c79fddffbb3b1e559da0400fb779568e7",
+    "sentence_spans.py": "bb35bf3b1844a8dc356e30f0bd17f35f61397612604783e0ff08552708064667",
+    "ingestion_learning.py": "667187b7fce030b089cc48033d9c2fb8d728d79e220a11e01961bbdd48cfef30",
+    "evidence_store.py": "4376381764265497159813b241cd33d65b9b5fc3b96b0810fcced61f4ae5d311",
+    "retrieval_learning.py": "b2a9124437a7630a65f715f1134eda7ae657fbd24e361b63000a0908f2b3a0a5",
+    "embedding_learning.py": "03fb3844cdb6aa85f5739e96304054b761a88f40a38b3adda70195a676a83198",
+    "ollama_learning.py": "686a266d8a7d9f3ab4504bfe05e893ce26c1514b991fecbfd7e2c69337747ccc",
+    "local_models.py": "e723dc425ec7d8f91ca7be6c8d73b7c6a1b4cda1722783a9cecbac0f66174471",
+    "content_proposals.py": "576a6a10fe33944920706a73f2d04b6eef74d596ab39b48a6b787ecbc30ca9fa",
+    "wikipedia_source.py": "b40e51a43ee081be98528ce3685a16fce11b24b5018e6fca37b3a62918e10546"
+  },
+  "limitations": [
+    "Cached reads do not measure live internet latency.",
+    "Fixed execution order can include model/index warm-up bias.",
+    "Equal inputs and necessary checks do not establish semantic accuracy.",
+    "Local model work stays sequential; these are specialists, not autonomous browsing agents.",
+    "Only the internal CLI uses this workflow; existing HTTP jobs remain Wikipedia-only."
+  ],
+  "code_changed_during_run": false,
+  "saved_bank_unchanged": true,
+  "comparison": {
+    "same_source_inputs": true,
+    "same_inspected_outputs": true,
+    "source_seconds": {
+      "sequential": 0.010477,
+      "parallel": 0.019546
+    },
+    "total_seconds": {
+      "sequential": 118.141219,
+      "parallel": 63.989936
+    }
+  }
+}

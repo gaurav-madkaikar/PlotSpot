@@ -1,0 +1,358 @@
+{
+  "movie_id": 27205,
+  "generator_model": "qwen3.5:9b",
+  "critic_model": "qwen3.5:9b",
+  "verifier_module": "movie_companion.content_proposal_review",
+  "source_manifest": {
+    "source_id": "enwiki-23270459",
+    "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379453144",
+    "revision": "enwiki-1379453144-sections-v3-body",
+    "text_sha256": "4b2420424320cbf6116e8911c454dd9cebf291d0d4266a66bc264a7055e35dd8"
+  },
+  "targets": {
+    "facts": 5,
+    "questions": 10
+  },
+  "facts": [
+    {
+      "title": "Paris Folding Sequence Craft",
+      "text": "For the Paris folding sequence and when Ariadne creates bridges, green screen and CGI were used on location.",
+      "passage_id": "P3",
+      "evidence_quote": "For the \"Paris folding\" sequence and when Ariadne \"creates\" the bridges, green screen and CGI were used on location.[11]: 17",
+      "origin": {
+        "movie_id": 27205,
+        "source_id": "enwiki-23270459",
+        "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379453144",
+        "revision": "enwiki-1379453144-sections-v3-body",
+        "section_title": "Locations and sets",
+        "section_category": "production",
+        "start": 18923,
+        "end": 19263
+      },
+      "batch": 1,
+      "critic_reason": "The proposal title is specific and useful. The text accurately reflects the evidence quote regarding green screen/CGI usage for the Paris sequence and Ariadne's bridges, supported by background context on visual effects enhancement."
+    },
+    {
+      "title": "Camera Format Decisions",
+      "text": "Nolan and Pfister tested Showscan and Super Dimension 70 as potential large-format systems but ultimately decided against either format.",
+      "passage_id": "P4",
+      "evidence_quote": "In addition Nolan and Pfister tested using Showscan and Super Dimension 70 as potential large-format, high-frame-rate camera systems to use for the film, but ultimately decided against either format.[33]: 29",
+      "origin": {
+        "movie_id": 27205,
+        "source_id": "enwiki-23270459",
+        "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379453144",
+        "revision": "enwiki-1379453144-sections-v3-body",
+        "section_title": "Cinematography",
+        "section_category": "production",
+        "start": 22589,
+        "end": 22796
+      },
+      "batch": 1,
+      "critic_reason": "The proposal title is specific. The text directly matches the evidence quote about testing Showscan and Super Dimension 70 before deciding against them, with sufficient background context on camera system selection."
+    }
+  ],
+  "questions": [],
+  "batches": [
+    {
+      "batch": 1,
+      "evidence": [
+        {
+          "passage_id": "P1",
+          "purpose": "story",
+          "text": "Dom Cobb and Arthur are professional thieves who perform corporate espionage using experimental dream-sharing technology to infiltrate their targets' subconscious and extract information. Their latest target Saito is impressed with Cobb's ability to layer multiple dreams within each other. He offers to hire Cobb for the ostensibly impossible job of performing \"inception\": implanting Robert Fischer, the son of Saito's competitor Maurice Fischer, with the idea to dissolve his father's conglomerate.",
+          "origin": {
+            "movie_id": 27205,
+            "source_id": "enwiki-23270459",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379453144",
+            "revision": "enwiki-1379453144-sections-v3-body",
+            "section_title": "Plot",
+            "section_category": "plot",
+            "start": 3004,
+            "end": 3505
+          }
+        },
+        {
+          "passage_id": "P2",
+          "purpose": "story",
+          "text": "In return, Saito promises to clear Cobb's criminal status, allowing him to return home to his children.",
+          "origin": {
+            "movie_id": 27205,
+            "source_id": "enwiki-23270459",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379453144",
+            "revision": "enwiki-1379453144-sections-v3-body",
+            "section_title": "Plot",
+            "section_category": "plot",
+            "start": 3506,
+            "end": 3609
+          }
+        },
+        {
+          "passage_id": "P3",
+          "purpose": "background",
+          "text": "Pfister used six high-speed cameras to capture the sequence from different angles and make sure that they got the shot. The visual effects department enhanced the sequence, adding more destruction and flying debris. For the \"Paris folding\" sequence and when Ariadne \"creates\" the bridges, green screen and CGI were used on location.[11]: 17",
+          "origin": {
+            "movie_id": 27205,
+            "source_id": "enwiki-23270459",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379453144",
+            "revision": "enwiki-1379453144-sections-v3-body",
+            "section_title": "Locations and sets",
+            "section_category": "production",
+            "start": 18923,
+            "end": 19263
+          }
+        },
+        {
+          "passage_id": "P4",
+          "purpose": "background",
+          "text": "In addition Nolan and Pfister tested using Showscan and Super Dimension 70 as potential large-format, high-frame-rate camera systems to use for the film, but ultimately decided against either format.[33]: 29",
+          "origin": {
+            "movie_id": 27205,
+            "source_id": "enwiki-23270459",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379453144",
+            "revision": "enwiki-1379453144-sections-v3-body",
+            "section_title": "Cinematography",
+            "section_category": "production",
+            "start": 22589,
+            "end": 22796
+          }
+        }
+      ],
+      "proposals": {
+        "facts": [
+          {
+            "title": "Paris Folding Sequence Craft",
+            "text": "For the Paris folding sequence and when Ariadne creates bridges, green screen and CGI were used on location.",
+            "passage_id": "P3",
+            "evidence_quote": "For the \"Paris folding\" sequence and when Ariadne \"creates\" the bridges, green screen and CGI were used on location.[11]: 17"
+          },
+          {
+            "title": "Camera Format Decisions",
+            "text": "Nolan and Pfister tested Showscan and Super Dimension 70 as potential large-format systems but ultimately decided against either format.",
+            "passage_id": "P4",
+            "evidence_quote": "In addition Nolan and Pfister tested using Showscan and Super Dimension 70 as potential large-format, high-frame-rate camera systems to use for the film, but ultimately decided against either format.[33]: 29"
+          }
+        ],
+        "questions": [
+          {
+            "question": "What technology was used on location for the Paris folding sequence and when Ariadne creates bridges?",
+            "options": [
+              "Practical miniature models and forced perspective",
+              "Green screen and CGI",
+              "Live-action footage from a moving train",
+              "Hand-painted matte paintings"
+            ],
+            "correct_index": 1,
+            "passage_id": "P3",
+            "evidence_quote": "For the \"Paris folding\" sequence and when Ariadne \"creates\" the bridges, green screen and CGI were used on location.[11]: 17"
+          },
+          {
+            "question": "What did Nolan and Pfister ultimately decide against using for the film?",
+            "options": [
+              "Showscan and Super Dimension 70",
+              "35mm film stock",
+              "Digital intermediate processing",
+              "Anamorphic lenses"
+            ],
+            "correct_index": 0,
+            "passage_id": "P4",
+            "evidence_quote": "In addition Nolan and Pfister tested using Showscan and Super Dimension 70 as potential large-format, high-frame-rate camera systems to use for the film, but ultimately decided against either format.[33]: 29"
+          }
+        ]
+      },
+      "checks": [
+        {
+          "kind": "fact",
+          "index": 0,
+          "passage_id": "P3",
+          "support_checks_passed": true,
+          "problems": [],
+          "semantic_review_required": true
+        },
+        {
+          "kind": "fact",
+          "index": 1,
+          "passage_id": "P4",
+          "support_checks_passed": true,
+          "problems": [],
+          "semantic_review_required": true
+        },
+        {
+          "kind": "question",
+          "index": 0,
+          "passage_id": "P3",
+          "support_checks_passed": false,
+          "problems": [
+            "wrong_evidence_purpose"
+          ],
+          "semantic_review_required": true
+        },
+        {
+          "kind": "question",
+          "index": 1,
+          "passage_id": "P4",
+          "support_checks_passed": false,
+          "problems": [
+            "wrong_evidence_purpose"
+          ],
+          "semantic_review_required": true
+        }
+      ],
+      "review": {
+        "items": [
+          {
+            "item_id": "Q1",
+            "decision": "reject",
+            "reason": "Deterministic checks failed: wrong_evidence_purpose"
+          },
+          {
+            "item_id": "Q2",
+            "decision": "reject",
+            "reason": "Deterministic checks failed: wrong_evidence_purpose"
+          },
+          {
+            "item_id": "F1",
+            "decision": "accept",
+            "reason": "The proposal title is specific and useful. The text accurately reflects the evidence quote regarding green screen/CGI usage for the Paris sequence and Ariadne's bridges, supported by background context on visual effects enhancement."
+          },
+          {
+            "item_id": "F2",
+            "decision": "accept",
+            "reason": "The proposal title is specific. The text directly matches the evidence quote about testing Showscan and Super Dimension 70 before deciding against them, with sufficient background context on camera system selection."
+          }
+        ]
+      },
+      "selection": [
+        {
+          "item_id": "F1",
+          "retained": true,
+          "reason": "critic_accepted_draft"
+        },
+        {
+          "item_id": "F2",
+          "retained": true,
+          "reason": "critic_accepted_draft"
+        },
+        {
+          "item_id": "Q1",
+          "retained": false,
+          "reason": "reject"
+        },
+        {
+          "item_id": "Q2",
+          "retained": false,
+          "reason": "reject"
+        }
+      ]
+    }
+  ],
+  "state": "incomplete",
+  "stop_reason": "evidence_or_batch_budget_exhausted",
+  "publication_approved": false,
+  "saved_collection_changed": false,
+  "evidence_mode": "rag",
+  "elapsed_seconds": 61.29,
+  "retrieval": {
+    "version": "content-topic-retrieval-v1",
+    "embedding_model": "nomic-embed-text:v1.5",
+    "snapshot_state": "cached",
+    "snapshot_key": "5694139d4243ea63f1fabfa9a2a43dd681cd1ba2e44ab93acf167b12db9c4b29",
+    "max_chars": 600,
+    "overlap_chars": 100,
+    "spoiler_policy": "internal_drafts_allow_spoilers_not_published",
+    "queries": [
+      {
+        "purpose": "story",
+        "topic": "main character goals and important decisions",
+        "top_windows": [
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_006",
+            "score": 0.648288
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_012",
+            "score": 0.624185
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_007",
+            "score": 0.615106
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_011",
+            "score": 0.610428
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_010",
+            "score": 0.601163
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_008",
+            "score": 0.595878
+          }
+        ],
+        "selected": [
+          {
+            "start": 3004,
+            "end": 3505,
+            "window_id": "5694139d4243ea63f1fabfa9a2a43dd6_006",
+            "score": 0.648288,
+            "section": "Plot"
+          },
+          {
+            "start": 3506,
+            "end": 3609,
+            "window_id": "5694139d4243ea63f1fabfa9a2a43dd6_006",
+            "score": 0.648288,
+            "section": "Plot"
+          }
+        ]
+      },
+      {
+        "purpose": "background",
+        "topic": "unusual practical filming techniques and production challenges",
+        "top_windows": [
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_040",
+            "score": 0.680022
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_047",
+            "score": 0.667094
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_044",
+            "score": 0.662822
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_046",
+            "score": 0.655917
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_052",
+            "score": 0.65045
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_048",
+            "score": 0.644969
+          }
+        ],
+        "selected": [
+          {
+            "start": 18923,
+            "end": 19263,
+            "window_id": "5694139d4243ea63f1fabfa9a2a43dd6_040",
+            "score": 0.680022,
+            "section": "Locations and sets"
+          },
+          {
+            "start": 22589,
+            "end": 22796,
+            "window_id": "5694139d4243ea63f1fabfa9a2a43dd6_047",
+            "score": 0.667094,
+            "section": "Cinematography"
+          }
+        ]
+      }
+    ],
+    "batch_count": 1
+  }
+}

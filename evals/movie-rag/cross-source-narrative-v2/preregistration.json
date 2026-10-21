@@ -1,0 +1,36 @@
+{
+  "policy": "cross-source-story-v11-instruction-isolation",
+  "dataset_family": "cross-source-narrative-v2",
+  "frozen_at": "2026-10-18T12:00:00+05:30",
+  "authorship": "assistant-authored development labels frozen before any v2 model execution",
+  "partition_order": [
+    "development",
+    "reserved",
+    "adversarial",
+    "real_movies"
+  ],
+  "thresholds": {
+    "false_approvals": 0,
+    "minimum_useful_acceptance": 0.75,
+    "errors": 0,
+    "all_partitions_must_pass": true
+  },
+  "case_counts": {
+    "development": 8,
+    "reserved": 8,
+    "adversarial": 4,
+    "real_movies": 8
+  },
+  "real_movie_cases": "carried forward byte-for-byte because the v1 gate stopped before consuming that partition",
+  "files": {
+    "evals/movie-rag/cross-source-narrative-v2/development.json": "36809d6f2110fae652b42150d28bf0acf5a6dbb44686139cd971464948ad4a29",
+    "evals/movie-rag/cross-source-narrative-v2/reserved.json": "51f27108854626d74e158406d0f3c60877bf46b244f7dc541b302acaab90369b",
+    "evals/movie-rag/cross-source-narrative-v2/adversarial.json": "e71bdb8706c598da3a56e39bedf7d78cb9c9bba51b582842beb4eb8842d70f5a",
+    "evals/movie-rag/story-quality/real-movie-cases-narrative-v1.json": "ca4b04752c144e607107cf90a1e1b4cf0c88d8811d07c80ab824c0e7d65c47e5"
+  },
+  "limitations": [
+    "Authored development labels are not independent human judgments.",
+    "The real-film partition reuses the still-unconsumed v1 file without edits.",
+    "No v2 labels, thresholds or cases may change after model output is observed."
+  ]
+}
