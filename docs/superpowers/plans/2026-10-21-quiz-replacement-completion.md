@@ -992,7 +992,7 @@ git commit -m "eval: assemble complete quiz replacement proposal"
 - Consumes: final completion report and publication audit.
 - Produces: learner-facing explanation and reproducible artifact index.
 
-- [ ] **Step 1: Run all focused tests**
+- [x] **Step 1: Run all focused tests**
 
 ```bash
 cd backend
@@ -1009,7 +1009,7 @@ cd backend
 
 Expected: PASS.
 
-- [ ] **Step 2: Run the full backend suite and static checks**
+- [x] **Step 2: Run the full backend suite and static checks**
 
 ```bash
 cd backend
@@ -1030,7 +1030,7 @@ git diff --check
 
 Expected: all tests pass, `py_compile` is silent, and `git diff --check` reports no errors.
 
-- [ ] **Step 3: Run the publication audit and compare immutable totals**
+- [x] **Step 3: Run the publication audit and compare immutable totals**
 
 Run the existing narrative audit command documented in `evals/README.md`, then verify:
 
@@ -1045,7 +1045,7 @@ Run the existing narrative audit command documented in `evals/README.md`, then v
 
 Restore timestamp-only audit changes after confirming the totals so the branch contains no unrelated report churn.
 
-- [ ] **Step 4: Write the learning note and indexes**
+- [x] **Step 4: Write the learning note and indexes**
 
 Document:
 
@@ -1059,7 +1059,7 @@ Document:
 
 Add direct links to all manifest, contract, evidence, candidate, editorial, whole-bank and final artifacts in `evals/README.md` and record the outcome in `docs/learning/PROGRESS.md`.
 
-- [ ] **Step 5: Commit final verification and documentation**
+- [x] **Step 5: Commit final verification and documentation**
 
 ```bash
 git add docs/learning/81-quiz-replacement-completion.md \
@@ -1067,7 +1067,7 @@ git add docs/learning/81-quiz-replacement-completion.md \
 git commit -m "docs: record quiz replacement completion results"
 ```
 
-- [ ] **Step 6: Push the feature branch and update the existing PR**
+- [x] **Step 6: Push the feature branch and update the existing PR**
 
 Run: `git push plotspot feature/plotspot-initial-import`
 
