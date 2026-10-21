@@ -3,6 +3,7 @@
 from collections import Counter
 import json
 from pathlib import Path
+import re
 from typing import Literal
 
 from pydantic import Field, model_validator
@@ -34,6 +35,52 @@ AnswerShape = Literal[
     "state_change",
     "idea",
 ]
+
+SHAPE_PATTERNS = {
+    "reason": (
+        r"^why\b",
+        r"\bwhat (?:reason|motivates?|motivation|purpose)\b",
+    ),
+    "outcome": (
+        r"\b(?:consequence|result|effect)\b",
+        r"\bwhat happens\b",
+        r"\bhow does .+ (?:affect|change|alter|threaten|expose|redirect|help)\b",
+        r"\bwhat does .+ (?:cause|lead to|change|make possible)\b",
+        r"\bwhat follows\b",
+    ),
+    "role": (
+        r"\b(?:role|function|purpose)\b",
+        r"\bhow does .+ (?:help|enable|allow|serve|carry|rescue|support)\b",
+        r"\bwhat does .+ (?:make possible|provide|enable|allow)\b",
+        r"\bwhy is .+ important\b",
+    ),
+    "relationship": (
+        r"\brelationship\b",
+        r"\bwhat changes between\b",
+        r"\bhow (?:are|is) .+ connected\b",
+        r"\bwho(?:m)? does .+ reconnect\b",
+        r"\bwhat does .+ learn about .+ (?:father|mother|son|daughter|parent)\b",
+    ),
+    "action": (
+        r"^what does\b",
+        r"^how does\b",
+        r"\bwhich (?:choice|action|decision)\b",
+    ),
+    "state_change": (
+        r"\bhow does .+ change\b",
+        r"\bwhat changes\b",
+        r"\bwhat becomes\b",
+        r"\bwhat does .+ (?:discover|learn|realize)\b",
+        r"\bwhat is revealed\b",
+    ),
+    "idea": (
+        r"\bwhat idea\b",
+        r"\bwhich theme\b",
+        r"\bwhat does .+ (?:show|suggest|represent|mean)\b",
+        r"\bcentral conflict\b",
+        r"\bwhat drives\b",
+    ),
+}
 
 
 class NarrativeIntent(StrictRecord):
@@ -118,6 +165,31 @@ class CompletionManifest(StrictRecord):
             "evidence": counts["evidence"],
             "novelty": counts["novelty"],
         }
+
+
+def _normal(value: str):
+    return " ".join(re.findall(r"[a-z0-9]+", value.casefold()))
+
+
+def intent_contract_problems(question: str, answer: str, *, intent: NarrativeIntent):
+    """Check reviewed concepts and question form without inferring movie facts."""
+    if not isinstance(question, str) or not isinstance(answer, str):
+        raise ValueError("Question and answer must be text")
+    combined = _normal(f"{question} {answer}")
+    problems = []
+    if any(
+        not any(_normal(alias) in combined for alias in group)
+        for group in intent.required_concepts
+    ):
+        problems.append("missing_required_concept")
+    if any(_normal(detail) in combined for detail in intent.forbidden_details):
+        problems.append("forbidden_detail")
+    if not any(
+        re.search(pattern, question.casefold())
+        for pattern in SHAPE_PATTERNS[intent.expected_answer_shape]
+    ):
+        problems.append("answer_shape_mismatch")
+    return problems
 
 
 def load_completion_manifest(path: Path):

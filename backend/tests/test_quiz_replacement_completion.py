@@ -5,6 +5,7 @@ import pytest
 from movie_companion.quiz_replacement_completion import (
     CompletionManifest,
     NarrativeIntent,
+    intent_contract_problems,
     load_completion_manifest,
     load_intent_contracts,
 )
@@ -169,3 +170,57 @@ def test_completion_manifest_loader_checks_proposal_metadata_and_summary(tmp_pat
     path.write_text(json.dumps(payload))
     with pytest.raises(ValueError, match="summary changed"):
         load_completion_manifest(path)
+
+
+def test_intent_contract_requires_every_concept_group_and_blocks_forbidden_details():
+    intent = NarrativeIntent(
+        question_id="q1",
+        focus="Simba's return",
+        relation="motivation",
+        required_concepts=[["protect", "save"], ["kingdom", "Pride Lands"]],
+        forbidden_details=["three years"],
+        expected_answer_shape="reason",
+    )
+
+    assert (
+        intent_contract_problems(
+            "Why does Simba return to the Pride Lands?",
+            "To protect his kingdom",
+            intent=intent,
+        )
+        == []
+    )
+    assert "missing_required_concept" in intent_contract_problems(
+        "Why does Simba return?", "Because he remembers home", intent=intent
+    )
+    assert "forbidden_detail" in intent_contract_problems(
+        "Why does Simba return after three years?",
+        "To protect his kingdom",
+        intent=intent,
+    )
+
+
+@pytest.mark.parametrize(
+    "shape,question,answer",
+    [
+        ("reason", "Who begins the meeting?", "Tyler Durden"),
+        ("outcome", "Where does the family go?", "A temporary shelter"),
+        ("role", "What is the ship called?", "The Endurance"),
+        ("relationship", "Who is the child?", "Forrest's son"),
+        ("state_change", "Where is the Green Place?", "It is gone"),
+        ("idea", "What object is stolen?", "A painting"),
+    ],
+)
+def test_expected_answer_shape_rejects_granular_question_forms(shape, question, answer):
+    intent = NarrativeIntent(
+        question_id="q2",
+        focus="the requested narrative relation",
+        relation="motivation" if shape == "reason" else "consequence",
+        required_concepts=[[answer]],
+        forbidden_details=[],
+        expected_answer_shape=shape,
+    )
+
+    assert "answer_shape_mismatch" in intent_contract_problems(
+        question, answer, intent=intent
+    )

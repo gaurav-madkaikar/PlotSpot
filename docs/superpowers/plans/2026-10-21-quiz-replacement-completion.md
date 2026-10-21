@@ -277,7 +277,7 @@ git commit -m "eval: freeze quiz replacement completion scope"
 - Changes: `generate_locked_drafts(client, targets, *, model=MODEL)` expects each target to contain serialized `intent`.
 - Preserves: code-owned exact answer copying and the existing `ReplacementDrafts` return type.
 
-- [ ] **Step 1: Write failing deterministic intent tests**
+- [x] **Step 1: Write failing deterministic intent tests**
 
 ```python
 def test_intent_contract_requires_every_concept_group_and_blocks_forbidden_details():
@@ -307,13 +307,13 @@ def test_expected_answer_shape_rejects_a_reason_answered_by_an_identity():
     )
 ```
 
-- [ ] **Step 2: Run the focused tests and verify failure**
+- [x] **Step 2: Run the focused tests and verify failure**
 
 Run: `cd backend && .venv/bin/python -m pytest tests/test_quiz_replacement_completion.py tests/test_quiz_replacement_span_writer.py -q`
 
 Expected: FAIL because `intent_contract_problems` and writer contract handling are absent.
 
-- [ ] **Step 3: Implement normalized concept and question-shape checks**
+- [x] **Step 3: Implement normalized concept and question-shape checks**
 
 ```python
 SHAPE_PATTERNS = {
@@ -345,7 +345,7 @@ def intent_contract_problems(question: str, answer: str, *, intent: NarrativeInt
 
 Keep this deliberately conservative. It recognizes reviewed aliases and ordinary question forms; it does not infer themes or movie facts.
 
-- [ ] **Step 4: Release the contract to the writer and run code-owned checks**
+- [x] **Step 4: Release the contract to the writer and run code-owned checks**
 
 Add serialized `intent` to each writer record, update the prompt to state that every required-concept group needs one alias and no forbidden detail may appear, then apply the deterministic check after the selected exact answer is copied:
 
@@ -365,7 +365,7 @@ LockedGeneration = dict[str, dict[str, object]]
 
 Update `prepare_locked_span_quiz_replacements.py` and its tests to read `answer_spans` from this record while preserving its previous shaped-span output.
 
-- [ ] **Step 5: Run writer, workflow and intent suites**
+- [x] **Step 5: Run writer, workflow and intent suites**
 
 Run:
 
@@ -379,7 +379,7 @@ cd backend
 
 Expected: PASS, including exact answer copying, cross-target isolation and explicit `intent_contract_not_satisfied` reasons.
 
-- [ ] **Step 6: Commit intent-constrained generation**
+- [x] **Step 6: Commit intent-constrained generation**
 
 ```bash
 git add backend/src/movie_companion/quiz_replacement_completion.py \

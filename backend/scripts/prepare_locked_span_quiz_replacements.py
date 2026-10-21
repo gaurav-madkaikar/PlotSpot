@@ -51,14 +51,21 @@ async def run(args):
                                  trust_env=False,follow_redirects=False) as client:
         await verify_local_model(client,MODEL)
         for start in range(0,len(pending),3):
-            batch=pending[start:start+3];drafts,spans=await generate_locked_drafts(client,batch)
+            batch=pending[start:start+3];drafts,writer_info=await generate_locked_drafts(client,batch)
             reviewed=await review_drafts(client,targets=batch,drafts=drafts)
-            for row in reviewed:
+            reviewed_by_alias={row['target_id']:row for row in reviewed}
+            for index,target in enumerate(batch):
+                alias=f'T{index+1}'
+                if not writer_info[alias]['writer_problems']:continue
+                reviewed_by_alias[alias]={'target_id':alias,'candidate':None,
+                    'deterministic_problems':writer_info[alias]['writer_problems'],
+                    'critic':None,'ready_for_assistant_review':False}
+            for row in sorted(reviewed_by_alias.values(),key=lambda item:int(item['target_id'][1:])):
                 target=batch[int(row['target_id'][1:])-1]
                 rows.append({'movie_id':target['movie_id'],'title':target['title'],
                     'question_id':target['question_id'],'old_question':target['old_question'],
                     'replacement_brief':target['replacement_brief'],'reviewed_evidence':target['evidence'],
-                    'answer_spans':spans[row['target_id']],
+                    'answer_spans':writer_info[row['target_id']]['answer_spans'],
                     **{key:value for key,value in row.items() if key!='target_id'}})
             atomic_json(args.output,{'status':'running','policy':POLICY,'planned':len(work),
                 'completed':len(rows),'items':rows,'published':False})
