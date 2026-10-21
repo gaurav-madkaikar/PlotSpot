@@ -863,7 +863,7 @@ git commit -m "eval: review completed quiz replacements"
 - Produces: `exact_scope(original: dict, decisions: list[dict]) -> None`, `verify_hash(label: str, value: object, expected: str) -> None`, and `build_final_report(decisions: list[dict], input_hashes: dict[str, str]) -> dict`.
 - Produces final policy `quiz-replacement-completion-final-v1` with exactly thirty-four decisions.
 
-- [ ] **Step 1: Write failing complete-accounting tests**
+- [x] **Step 1: Write failing complete-accounting tests**
 
 ```python
 def original_review():
@@ -904,13 +904,13 @@ def test_final_report_has_no_publication_authority():
     assert report["publication"] == {"authorized": False, "database_mutated": False}
 ```
 
-- [ ] **Step 2: Run assembler tests and verify failure**
+- [x] **Step 2: Run assembler tests and verify failure**
 
 Run: `cd backend && .venv/bin/python -m pytest tests/test_assemble_quiz_replacement_completion.py -q`
 
 Expected: FAIL because the assembler does not exist.
 
-- [ ] **Step 3: Implement hash-pinned exact-scope assembly**
+- [x] **Step 3: Implement hash-pinned exact-scope assembly**
 
 ```python
 def exact_scope(original, decisions):
@@ -952,7 +952,7 @@ def build_final_report(decisions, input_hashes):
 
 Before adding a ready row, revalidate candidate hash, source report hash, current bank hash, grounding, intent checks, novelty `new`, wording `clear` and assistant editorial acceptance. Sort output by `(movie_id, question_id)` and include per-lane funnel counts, latency, retries, accepted/rejected new sources and grouped withheld reasons.
 
-- [ ] **Step 4: Generate and inspect the final proposal**
+- [x] **Step 4: Generate and inspect the final proposal**
 
 ```bash
 cd backend
@@ -968,7 +968,7 @@ cd backend
 
 Expected: summary totals equal 34; each withheld row contains a concrete reason; publication remains disabled.
 
-- [ ] **Step 5: Run assembler tests and commit**
+- [x] **Step 5: Run assembler tests and commit**
 
 Run: `cd backend && .venv/bin/python -m pytest tests/test_assemble_quiz_replacement_completion.py tests/test_quiz_replacement_completion.py -q`
 
