@@ -323,7 +323,7 @@ def test_loader_rejects_symlink_escape_and_oversized_file(tmp_path):
     assert warnings[0].code == "invalid_source"
 ```
 
-Add an integration test that calls `load_evaluation_suites(PROJECT_ROOT)` and asserts all nine registered IDs are returned, none has status `error`, and every percentage metric has a denominator.
+Add an integration test that calls `load_evaluation_suites(PROJECT_ROOT)` and asserts all ten registered suite IDs from the nine artifacts are returned, none has status `error`, and every percentage metric has a denominator. The search report deliberately becomes separate development and held-out suites so category filters never mix their denominators.
 
 - [ ] **Step 2: Run the focused test and confirm missing registry modules**
 
