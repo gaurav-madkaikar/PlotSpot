@@ -3,6 +3,7 @@ import asyncio
 import sqlite3
 from datetime import timedelta
 from contextlib import AsyncExitStack, asynccontextmanager
+from pathlib import Path as FilePath
 from typing import Annotated, Literal
 
 import httpx
@@ -41,6 +42,10 @@ from .story_rag import StoryRag
 from pydantic import BaseModel, StrictBool
 from .research_jobs import ResearchPreparationJobs
 from .preparation_routes import router as preparation_router
+from .lab_routes import router as lab_router
+from .lab_runs import LabRunReader
+from .lab_service import LabService
+from .wikipedia_source import MOVIE_ARTICLES
 
 
 @asynccontextmanager
@@ -87,6 +92,15 @@ async def lifespan(app: FastAPI):
             app.state.questions.story = StoryRag(scripts)
             app.state.preparation = ResearchPreparationJobs(wiki, ollama, app.state.questions.slot,
                 corpus=corpus,identity_loader=movie_identity,require_diverse_sources=True)
+            if settings.lab_enabled:
+                app.state.lab = LabService(
+                    FilePath(__file__).resolve().parents[3],
+                    LabRunReader(
+                        app.state.preparation.store.path,
+                        app.state.questions.story.trace_root,
+                        MOVIE_ARTICLES.get,
+                    ),
+                )
             if settings.data_source == "tmdb":
                 try:
                     prepared = await asyncio.to_thread(app.state.unified_discovery.index.get)
@@ -109,6 +123,7 @@ app.include_router(preparation_router)
 app.include_router(account_router)
 app.include_router(history_router)
 app.include_router(community_router)
+app.include_router(lab_router)
 app.add_middleware(AccountBoundary)
 
 @app.exception_handler(AccountError)
