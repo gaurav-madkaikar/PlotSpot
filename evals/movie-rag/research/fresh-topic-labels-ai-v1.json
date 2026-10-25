@@ -1,0 +1,15 @@
+{
+  "dataset_sha256": "84ee291ef81eb57db6030307565646aa50184da16792a49317180d3d08c4c10f",
+  "reviewer": "Independent spec-review agent, blinded to model outputs",
+  "review_kind": "independent_ai_review",
+  "human_review": false,
+  "labels": {
+    "A": "NEW",
+    "B": "DUPLICATE",
+    "C": "DUPLICATE",
+    "D": "NEW",
+    "E": "NEW",
+    "F": "UNCLEAR"
+  },
+  "limitations": "Six fictional pairs; not a production qualification or independent human evaluation."
+}

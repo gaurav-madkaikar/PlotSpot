@@ -1,0 +1,89 @@
+{
+  "mocked": false,
+  "additions": [
+    {
+      "id": "generated-tidal-wave-4640a9e34cc1",
+      "origin": "generated",
+      "question": "Who dies in the knee-high water?",
+      "kind": "plot",
+      "options": [
+        "Brand",
+        "Cooper",
+        "Doyle",
+        "Mann"
+      ],
+      "correct_index": 2,
+      "explanation": "They land in knee-high water and find only wreckage from Miller's expedition before a gigantic tidal wave kills Doyle and waterlogs the lander's engines.",
+      "citations": [
+        {
+          "passage_id": "17688ac2f74a50178ede3963a6d2f53a",
+          "source_label": "English Wikipedia contributors: Interstellar (film)",
+          "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379200125",
+          "revision": "enwiki-1379200125-plaintext-v1",
+          "excerpt": "y, and Doyle, traverses the wormhole after a two-year voyage to Saturn. Cooper, Doyle, and Brand use a lander to investigate Miller's planet, where time is severely dilated. They land in knee-high water and find only wreckage from Miller's expedition before a gigantic tidal wave kills Doyle and waterlogs the lander's engines.\n\nBy the time they leave the planet, Cooper and Brand discover that 23 years have elapsed on the Endurance. Having enough fuel left for only one of the remaining planets, Cooper and Romilly decide to go to Mann's planet, despite Brand's protests, as he is still broadcastin"
+        }
+      ]
+    },
+    {
+      "id": "generated-booby-trap-8bb6c51c5a44",
+      "origin": "generated",
+      "question": "Who is killed by a booby trap?",
+      "kind": "plot",
+      "options": [
+        "Brand",
+        "Cooper",
+        "Mann",
+        "Romilly"
+      ],
+      "correct_index": 3,
+      "explanation": "A booby trap set by Mann kills Romilly, but Brand rescues Cooper with the other lander and they race back to the Endurance.",
+      "citations": [
+        {
+          "passage_id": "7fee498f6ad34628d85ae2bbf4de225e",
+          "source_label": "English Wikipedia contributors: Interstellar (film)",
+          "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379200125",
+          "revision": "enwiki-1379200125-plaintext-v1",
+          "excerpt": "measurements from inside a black hole.\n\nOn Mann's planet, they awaken him from cryostasis, and he assures them that colonization is possible, despite the extreme environment. During a scouting mission, Mann attempts to kill Cooper and reveals that he falsified his data in the hope of being rescued. He steals Cooper's lander and heads for the Endurance. A booby trap set by Mann kills Romilly, but Brand rescues Cooper with the other lander and they race back to the Endurance. Mann is killed in a failed manual docking operation, badly damaging the Endurance, but Cooper is able to regain control o"
+        }
+      ]
+    },
+    {
+      "id": "generated-mann-awakening-62f7dd938850",
+      "origin": "generated",
+      "question": "What is used to awaken Mann?",
+      "kind": "plot",
+      "options": [
+        "Cryogenic fluids",
+        "Cryostasis",
+        "Hypothermia",
+        "Thermal shock"
+      ],
+      "correct_index": 1,
+      "explanation": "On Mann's planet, they awaken him from cryostasis, and he assures them that colonization is possible, despite the extreme environment.",
+      "citations": [
+        {
+          "passage_id": "7fee498f6ad34628d85ae2bbf4de225e",
+          "source_label": "English Wikipedia contributors: Interstellar (film)",
+          "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379200125",
+          "revision": "enwiki-1379200125-plaintext-v1",
+          "excerpt": "measurements from inside a black hole.\n\nOn Mann's planet, they awaken him from cryostasis, and he assures them that colonization is possible, despite the extreme environment. During a scouting mission, Mann attempts to kill Cooper and reveals that he falsified his data in the hope of being rescued. He steals Cooper's lander and heads for the Endurance. A booby trap set by Mann kills Romilly, but Brand rescues Cooper with the other lander and they race back to the Endurance. Mann is killed in a failed manual docking operation, badly damaging the Endurance, but Cooper is able to regain control o"
+        }
+      ]
+    }
+  ],
+  "correctEvidenceHidden": true,
+  "wrongOptionLetter": true,
+  "persistedOnReload": true,
+  "overflow": false,
+  "pageErrors": [],
+  "human_review": {
+    "rejected_question_ids": [
+      "generated-mann-awakening-62f7dd938850"
+    ],
+    "accepted_question_ids": [
+      "generated-tidal-wave-4640a9e34cc1",
+      "generated-booby-trap-8bb6c51c5a44"
+    ],
+    "reason": "Awakened FROM cryostasis, not awakened USING cryostasis. Removed incorrect causal wording; retained two supported questions."
+  }
+}

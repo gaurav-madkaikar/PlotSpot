@@ -1,0 +1,251 @@
+{
+  "description": "Fresh authored synthetic cross-source cases; not independently collected movie annotations.",
+  "cases": [
+    {
+      "id": "development-location",
+      "mode": "quiz",
+      "expected_accept": true,
+      "label_reason": "The selected location is supported in both sources.",
+      "evidence": [
+        {
+          "alias": "W1",
+          "text": "Mara hides the compass in the tower before Ivo arrives."
+        },
+        {
+          "alias": "S1",
+          "text": "Mara places the compass in the tower, away from the visitor."
+        }
+      ],
+      "draft": {
+        "kind": "event",
+        "question": "Where does Mara hide the compass?",
+        "answer": "tower",
+        "wiki_alias": "W1",
+        "wiki_quote": "Mara hides the compass in the tower before Ivo arrives.",
+        "script_alias": "S1",
+        "script_quote": "Mara places the compass in the tower, away from the visitor.",
+        "options": [
+          "tower",
+          "attic",
+          "cellar",
+          "courtyard"
+        ],
+        "correct_index": 0
+      }
+    },
+    {
+      "id": "development-conflict",
+      "mode": "quiz",
+      "expected_accept": false,
+      "label_reason": "The script and released account contradict the same location.",
+      "evidence": [
+        {
+          "alias": "W1",
+          "text": "Mara hides the compass in the tower before Ivo arrives."
+        },
+        {
+          "alias": "S1",
+          "text": "Mara hides the compass in the attic, not in the tower."
+        }
+      ],
+      "draft": {
+        "kind": "event",
+        "question": "Where does Mara hide the compass?",
+        "answer": "tower",
+        "wiki_alias": "W1",
+        "wiki_quote": "Mara hides the compass in the tower before Ivo arrives.",
+        "script_alias": "S1",
+        "script_quote": "Mara hides the compass in the attic, not in the tower.",
+        "options": [
+          "tower",
+          "attic",
+          "cellar",
+          "courtyard"
+        ],
+        "correct_index": 0
+      }
+    },
+    {
+      "id": "development-person",
+      "mode": "quiz",
+      "expected_accept": false,
+      "label_reason": "The script assigns the action to a different character.",
+      "evidence": [
+        {
+          "alias": "W1",
+          "text": "Mara hides the compass in the tower before Ivo arrives."
+        },
+        {
+          "alias": "S1",
+          "text": "Ivo hides the compass in the tower; Mara never touches it."
+        }
+      ],
+      "draft": {
+        "kind": "event",
+        "question": "Where does Mara hide the compass?",
+        "answer": "tower",
+        "wiki_alias": "W1",
+        "wiki_quote": "Mara hides the compass in the tower before Ivo arrives.",
+        "script_alias": "S1",
+        "script_quote": "Ivo hides the compass in the tower; Mara never touches it.",
+        "options": [
+          "tower",
+          "attic",
+          "cellar",
+          "courtyard"
+        ],
+        "correct_index": 0
+      }
+    },
+    {
+      "id": "development-motive",
+      "mode": "quiz",
+      "expected_accept": true,
+      "label_reason": "The same stated motivation is supported in both sources.",
+      "evidence": [
+        {
+          "alias": "W1",
+          "text": "Mara leaves the village to rescue Ivo, who is trapped by the storm."
+        },
+        {
+          "alias": "S1",
+          "text": "Mara sets off to rescue Ivo from the approaching storm."
+        }
+      ],
+      "draft": {
+        "kind": "event",
+        "question": "Why does Mara leave the village?",
+        "answer": "to rescue Ivo",
+        "wiki_alias": "W1",
+        "wiki_quote": "Mara leaves the village to rescue Ivo, who is trapped by the storm.",
+        "script_alias": "S1",
+        "script_quote": "Mara sets off to rescue Ivo from the approaching storm.",
+        "options": [
+          "to rescue Ivo",
+          "to collect a reward",
+          "to find a lost diary",
+          "to attend a ceremony"
+        ],
+        "correct_index": 0
+      }
+    },
+    {
+      "id": "development-cause",
+      "mode": "quiz",
+      "expected_accept": false,
+      "label_reason": "The selected noun occurs in the account but is not the stated cause.",
+      "evidence": [
+        {
+          "alias": "W1",
+          "text": "Mara carries a lantern, but the storm forces Mara to leave the village."
+        },
+        {
+          "alias": "S1",
+          "text": "Because of the storm, Mara leaves, carrying a lantern for light."
+        }
+      ],
+      "draft": {
+        "kind": "event",
+        "question": "What forces Mara to leave the village?",
+        "answer": "lantern",
+        "wiki_alias": "W1",
+        "wiki_quote": "Mara carries a lantern, but the storm forces Mara to leave the village.",
+        "script_alias": "S1",
+        "script_quote": "Because of the storm, Mara leaves, carrying a lantern for light.",
+        "options": [
+          "lantern",
+          "curfew",
+          "a letter",
+          "a threat"
+        ],
+        "correct_index": 0
+      }
+    },
+    {
+      "id": "development-ambiguous",
+      "mode": "quiz",
+      "expected_accept": false,
+      "label_reason": "Two answer options are supported, so the question is not uniquely scored.",
+      "evidence": [
+        {
+          "alias": "W1",
+          "text": "Mara brings both the compass and a lantern into the tower."
+        },
+        {
+          "alias": "S1",
+          "text": "Mara enters the tower carrying the compass and a lantern."
+        }
+      ],
+      "draft": {
+        "kind": "event",
+        "question": "What does Mara bring into the tower?",
+        "answer": "compass",
+        "wiki_alias": "W1",
+        "wiki_quote": "Mara brings both the compass and a lantern into the tower.",
+        "script_alias": "S1",
+        "script_quote": "Mara enters the tower carrying the compass and a lantern.",
+        "options": [
+          "compass",
+          "a lantern",
+          "a bicycle",
+          "a painting"
+        ],
+        "correct_index": 0
+      }
+    },
+    {
+      "id": "development-interpretation",
+      "mode": "discussion",
+      "expected_accept": true,
+      "label_reason": "A cautious possible reading grounded in the same event, not author intent.",
+      "evidence": [
+        {
+          "alias": "W1",
+          "text": "Mara returns the compass to Ivo after deciding to trust Ivo."
+        },
+        {
+          "alias": "S1",
+          "text": "Mara hands the compass back to Ivo, saying that trust matters."
+        }
+      ],
+      "draft": {
+        "kind": "interpretation",
+        "question": "What might returning the compass represent?",
+        "answer": "Returning the compass could represent renewed trust.",
+        "wiki_alias": "W1",
+        "wiki_quote": "Mara returns the compass to Ivo after deciding to trust Ivo.",
+        "script_alias": "S1",
+        "script_quote": "Mara hands the compass back to Ivo, saying that trust matters.",
+        "options": [],
+        "correct_index": null
+      }
+    },
+    {
+      "id": "development-intent",
+      "mode": "discussion",
+      "expected_accept": false,
+      "label_reason": "The claimed definitive author intent is not supported by either source.",
+      "evidence": [
+        {
+          "alias": "W1",
+          "text": "Mara returns the compass to Ivo after deciding to trust Ivo."
+        },
+        {
+          "alias": "S1",
+          "text": "Mara hands the compass back to Ivo, saying that trust matters."
+        }
+      ],
+      "draft": {
+        "kind": "interpretation",
+        "question": "What hidden message did the director definitely intend?",
+        "answer": "The director definitely intended the object to symbolize political rebellion.",
+        "wiki_alias": "W1",
+        "wiki_quote": "Mara returns the compass to Ivo after deciding to trust Ivo.",
+        "script_alias": "S1",
+        "script_quote": "Mara hands the compass back to Ivo, saying that trust matters.",
+        "options": [],
+        "correct_index": null
+      }
+    }
+  ]
+}

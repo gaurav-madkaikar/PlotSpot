@@ -1,0 +1,216 @@
+{
+  "quiz": [
+    {
+      "id": "louise-profession",
+      "question": "What expertise brings Louise Banks onto the first-contact team?",
+      "options": [
+        "Linguistics",
+        "Astronomy",
+        "Military strategy",
+        "Neurosurgery"
+      ],
+      "correct_index": 0,
+      "explanation": "Banks is recruited as a linguist to help understand the visitors.",
+      "evidence_markers": [
+        "Linguist Louise Banks"
+      ],
+      "kind": "plot"
+    },
+    {
+      "id": "ship-count",
+      "question": "How many alien spacecraft arrive around Earth?",
+      "options": [
+        "Seven",
+        "Nine",
+        "Twelve",
+        "Twenty-four"
+      ],
+      "correct_index": 2,
+      "explanation": "Twelve spacecraft arrive at locations around the planet.",
+      "evidence_markers": [
+        "Twelve extraterrestrial spacecraft"
+      ],
+      "kind": "plot"
+    },
+    {
+      "id": "alien-nicknames",
+      "question": "What nicknames does Ian give the two aliens?",
+      "options": [
+        "Romeo and Juliet",
+        "Abbott and Costello",
+        "Alpha and Omega",
+        "Sherlock and Watson"
+      ],
+      "correct_index": 1,
+      "explanation": "Ian nicknames the two heptapods Abbott and Costello.",
+      "evidence_markers": [
+        "Donnelly nicknames them Abbott and Costello"
+      ],
+      "kind": "plot"
+    },
+    {
+      "id": "dangerous-translation",
+      "question": "Which translated word causes alarm when the aliens describe their offer?",
+      "options": [
+        "Memory",
+        "Journey",
+        "Peace",
+        "Weapon"
+      ],
+      "correct_index": 3,
+      "explanation": "The translation “weapon” alarms governments; Banks argues it may mean a tool or means.",
+      "evidence_markers": [
+        "offer weapon",
+        "tool"
+      ],
+      "kind": "plot"
+    },
+    {
+      "id": "message-pieces",
+      "question": "Why does Banks think the nations must share their findings?",
+      "options": [
+        "Each ship holds a different part of the complete message",
+        "Only China has a working radio",
+        "The aliens refuse to speak to scientists",
+        "Every ship uses a different human language"
+      ],
+      "correct_index": 0,
+      "explanation": "Each craft supplies one part of a message that requires international cooperation to decipher.",
+      "evidence_markers": [
+        "full message is split between the twelve craft"
+      ],
+      "kind": "plot"
+    },
+    {
+      "id": "future-help",
+      "question": "Why do the heptapods say they are helping humanity now?",
+      "options": [
+        "They need Earth’s minerals immediately",
+        "They want a permanent military base",
+        "They will need humanity’s help in 3,000 years",
+        "They are searching for a lost human ship"
+      ],
+      "correct_index": 2,
+      "explanation": "Costello says the heptapods will need humanity’s help in 3,000 years.",
+      "evidence_markers": [
+        "3,000 years",
+        "help in return"
+      ],
+      "kind": "plot"
+    },
+    {
+      "id": "language-gift",
+      "question": "What does learning the heptapods’ language change for Louise?",
+      "options": [
+        "Her ability to breathe aboard the ship",
+        "Her perception of time",
+        "Her memories of learning Chinese",
+        "Her physical age"
+      ],
+      "correct_index": 1,
+      "explanation": "The language changes linear time perception, allowing memories of future events.",
+      "evidence_markers": [
+        "linear perception of time",
+        "future events"
+      ],
+      "kind": "plot"
+    },
+    {
+      "id": "hannah-visions",
+      "question": "What are Louise’s apparent memories of Hannah revealed to be?",
+      "options": [
+        "Simulations created by the army",
+        "Memories of an alien childhood",
+        "Scenes from another planet",
+        "Premonitions of her future daughter"
+      ],
+      "correct_index": 3,
+      "explanation": "The visions concern a daughter who has not yet been born.",
+      "evidence_markers": [
+        "visions of her daughter",
+        "premonitions"
+      ],
+      "kind": "ending"
+    },
+    {
+      "id": "shang-call",
+      "question": "What does Louise recite to General Shang to help stop the attack?",
+      "options": [
+        "His wife’s dying words",
+        "The spacecraft’s coordinates",
+        "A secret launch code",
+        "The names of all twelve ships"
+      ],
+      "correct_index": 0,
+      "explanation": "She recites his wife’s dying words, using information learned during a future meeting.",
+      "evidence_markers": [
+        "recited his wife's dying words"
+      ],
+      "kind": "plot"
+    },
+    {
+      "id": "language-book",
+      "question": "What is the title of the book Louise writes about the heptapod language?",
+      "options": [
+        "The Shape of Memory",
+        "Twelve Visitors",
+        "The Universal Language",
+        "A History of Tomorrow"
+      ],
+      "correct_index": 2,
+      "explanation": "Her book is The Universal Language, a guide to the heptapods’ language.",
+      "evidence_markers": [
+        "book called The Universal Language"
+      ],
+      "kind": "ending"
+    }
+  ],
+  "facts": [
+    {
+      "id": "title-change",
+      "title": "A title that took a different direction",
+      "text": "Villeneuve changed the original title because it sounded like a romantic comedy to him. Arrival was the first suggestion from his producers and writers.",
+      "evidence_markers": [
+        "romantic comedy",
+        "Arrival was the first"
+      ]
+    },
+    {
+      "id": "quebec-montana",
+      "title": "Quebec standing in for Montana",
+      "text": "The production filmed mainly around Montreal; Saint-Fabien represented Montana. Principal photography lasted 56 days.",
+      "evidence_markers": [
+        "56 days",
+        "Saint-Fabien serving as Montana"
+      ]
+    },
+    {
+      "id": "asteroid-ships",
+      "title": "Spacecraft with an asteroid reference",
+      "text": "The look of the heptapods’ ships was inspired by asteroid 15 Eunomia.",
+      "evidence_markers": [
+        "asteroid 15 Eunomia",
+        "inspiration"
+      ]
+    },
+    {
+      "id": "linguistics-team",
+      "title": "Real linguists behind first contact",
+      "text": "McGill linguists advised on the production: Morgan Sonderegger on alien sounds, Lisa Travis on workplace sets, and Jessica Coon on the script.",
+      "evidence_markers": [
+        "Morgan Sonderegger",
+        "Lisa Travis",
+        "Jessica Coon"
+      ]
+    },
+    {
+      "id": "score-eligibility",
+      "title": "A score outside the Oscar race",
+      "text": "The prominent use of Max Richter’s existing music made Jóhann Jóhannsson’s score ineligible for the Academy Award for Best Original Score.",
+      "evidence_markers": [
+        "Max Richter",
+        "deemed ineligible"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "movie_id": 155,
+  "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1378704545",
+  "source_revision": "enwiki-1378704545-sections-v3-body",
+  "source_sha256": "9675f01668a1227be824d36982edf94b09156a8dd9faec2c819a2fa0d5dee779",
+  "bank_sha256": "7cb16f32d807f07c5c9fe072864eec740094435d905017b32937d9b9212767bb",
+  "method": "assistant-authored, assistant-source-inspected; no bank-generation model calls",
+  "review": {
+    "fact_claims": 5,
+    "scored_story_questions": 10,
+    "distractor_sets_inspected": 10,
+    "all_citations_exact_source_substrings": true,
+    "story_and_background_branches_checked": true,
+    "subjective_hidden_meanings_not_scored": true
+  },
+  "items": {
+    "facts": [
+      "working-title",
+      "post-office-imax-test",
+      "batpod-training",
+      "jokers-makeup",
+      "character-composers"
+    ],
+    "quiz": [
+      {
+        "id": "last-bank-robber",
+        "answer": "The Joker"
+      },
+      {
+        "id": "bruces-exit-plan",
+        "answer": "He hopes Dent\u2019s success will let him retire as Batman"
+      },
+      {
+        "id": "laus-hideout",
+        "answer": "Hong Kong"
+      },
+      {
+        "id": "jokers-price",
+        "answer": "Half of the mob\u2019s hidden fortune"
+      },
+      {
+        "id": "dents-decoy",
+        "answer": "To lure the Joker out"
+      },
+      {
+        "id": "switched-rescue",
+        "answer": "The Joker gave their locations in reverse"
+      },
+      {
+        "id": "scarred-coin",
+        "answer": "His half-scarred, two-headed coin"
+      },
+      {
+        "id": "ferry-choice",
+        "answer": "Both groups refuse to kill the other"
+      },
+      {
+        "id": "protecting-dents-legacy",
+        "answer": "To preserve Dent as the hero Gotham needs"
+      },
+      {
+        "id": "foxs-final-action",
+        "answer": "Lucius Fox destroys it"
+      }
+    ]
+  },
+  "stored_equals_compiled": true,
+  "original_ten_preserved": {
+    "129": true,
+    "603": true,
+    "27205": true,
+    "37165": true,
+    "120467": true,
+    "157336": true,
+    "329865": true,
+    "438631": true,
+    "496243": true,
+    "546554": true
+  },
+  "original_ten_sha256": {
+    "129": "aae7fc6a704006eb374d14d3a96a7d7172173be2721d8cd607fbdb5594ab7dcc",
+    "603": "c2a5e4c584c06e7fe1bc8e810195514b60ffa3549c66b0ee96c26893937b951a",
+    "27205": "f76f306d1f7411f9fe6726bf515b92320a7068e01e6c4e1602238cc3fcf41ec1",
+    "37165": "100607a24642d50ee537a47d9b528ceefb603e7b3b337615f7ec4681b4862f05",
+    "120467": "eaae8820cd886a455748911813ac47be25cc8cbd7adf79c8e125551a12945ed5",
+    "157336": "6c5fbfe08e14656adf7128f3fa361a730726ee479e4e7f58979ca26bc2a9e263",
+    "329865": "f18daa71603108d7cf30656ad4d64ca81e14eb3ddecae7bbe2f0fe31657918c2",
+    "438631": "fe80cada027e7c50c57d15b163e218fc259135dde7accd6666edc17c8eb1019b",
+    "496243": "4a90e6859105e9ab3432c061d67c71d0b2d8ba093e97c6b09e21facafb4296bf",
+    "546554": "e02017418c10b340a20081be3f6fb1a38feca332ed7d6f24222d1cac1828d0d0"
+  },
+  "limitations": [
+    "Source inspection is not independent human review or a held-out agent evaluation.",
+    "Wikipedia is secondary evidence; no new screenplay or publisher-news source is registered.",
+    "Shared starter publication does not qualify automatic generation or more-question expansion."
+  ]
+}

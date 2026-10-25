@@ -1,0 +1,85 @@
+{
+  "date": "2026-10-10",
+  "scope": "Real app endpoint development smoke check; repeated composer question, missing personal evidence, and permission gate. Not a holdout benchmark.",
+  "chat_model": "llama3.2:3b",
+  "embedding_model": "nomic-embed-text:v1.5",
+  "model_digest": null,
+  "sampling": "Ollama defaults; not pinned",
+  "prompt_version": "Current build_grounded_prompt; hash not captured for these smoke runs",
+  "cases": [
+    {
+      "question": "Who composed the music for Interstellar?",
+      "allow_spoilers": false,
+      "expected_status": "spoiler_permission_required",
+      "observed_status": "spoiler_permission_required",
+      "http_status": 200,
+      "elapsed_seconds": 0.0,
+      "answer": "This source can contain story details. Allow spoilers above before asking a question.",
+      "citation_ids": [],
+      "source_revisions": [],
+      "status_matches_expectation": true
+    },
+    {
+      "question": "Who composed the music for Interstellar?",
+      "allow_spoilers": true,
+      "expected_status": "answered",
+      "observed_status": "answered",
+      "http_status": 200,
+      "elapsed_seconds": 11.5,
+      "answer": "Hans Zimmer composed the music for Interstellar.",
+      "citation_ids": [
+        "e75a7bb9fce05a8541de5c8596eb11b7_042",
+        "e75a7bb9fce05a8541de5c8596eb11b7_043"
+      ],
+      "source_revisions": [
+        "enwiki-1379200125-plaintext-v1"
+      ],
+      "status_matches_expectation": true
+    },
+    {
+      "question": "Who composed the music for Interstellar?",
+      "allow_spoilers": true,
+      "expected_status": "answered",
+      "observed_status": "answered",
+      "http_status": 200,
+      "elapsed_seconds": 1.87,
+      "answer": "Hans Zimmer composed the music for Interstellar.",
+      "citation_ids": [
+        "e75a7bb9fce05a8541de5c8596eb11b7_042",
+        "e75a7bb9fce05a8541de5c8596eb11b7_043"
+      ],
+      "source_revisions": [
+        "enwiki-1379200125-plaintext-v1"
+      ],
+      "status_matches_expectation": true
+    },
+    {
+      "question": "What did I write in my private diary after watching Interstellar?",
+      "allow_spoilers": true,
+      "expected_status": "insufficient_evidence",
+      "observed_status": "insufficient_evidence",
+      "http_status": 200,
+      "elapsed_seconds": 2.27,
+      "answer": "The supplied evidence is insufficient to answer this question.",
+      "citation_ids": [],
+      "source_revisions": [],
+      "status_matches_expectation": true
+    }
+  ],
+  "human_review": "Composer answer is supported by the returned Music excerpt naming Hans Zimmer. Extra citations are not all necessary. No broad accuracy or security score is inferred.",
+  "browser_check": {
+    "real_providers": true,
+    "question": "Who composed the music for Interstellar?",
+    "http_status": 200,
+    "answer": "Hans Zimmer composed the music for Interstellar.",
+    "citation_count": 3,
+    "application_errors": 0,
+    "mobile_horizontal_overflow": false
+  },
+  "limitations": [
+    "Small development sample, repeated question is not an independent case.",
+    "Latency includes variable model warm-up/source and document-cache state; no controlled speed improvement claim.",
+    "Citation membership is validated; general entailment quality has not been evaluated.",
+    "Browser responses may choose different citation sets across generations."
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "development_gate_passed": true,
+  "experimental_policy": "movie-structured-critic-v3",
+  "default_verifier": "baseline",
+  "automatic_publication_allowed": false,
+  "fresh_reserved_baseline": {
+    "report": "content-quality-held-out-v2-baseline-ollama.json",
+    "metrics": {
+      "label_matches": {
+        "count": 7,
+        "total": 12
+      },
+      "useful_acceptance": {
+        "count": 3,
+        "total": 4
+      },
+      "false_acceptance": {
+        "count": 3,
+        "total": 8
+      },
+      "false_rejection": {
+        "count": 1,
+        "total": 4
+      },
+      "uncertain": {
+        "count": 1,
+        "total": 12
+      },
+      "errors": {
+        "count": 0,
+        "total": 12
+      }
+    },
+    "elapsed_seconds": 43.02
+  },
+  "fresh_reserved_structured": {
+    "report": "content-quality-held-out-v2-structured-v3-ollama.json",
+    "metrics": {
+      "label_matches": {
+        "count": 7,
+        "total": 12
+      },
+      "useful_acceptance": {
+        "count": 3,
+        "total": 4
+      },
+      "false_acceptance": {
+        "count": 3,
+        "total": 8
+      },
+      "false_rejection": {
+        "count": 1,
+        "total": 4
+      },
+      "uncertain": {
+        "count": 1,
+        "total": 12
+      },
+      "errors": {
+        "count": 0,
+        "total": 12
+      }
+    },
+    "elapsed_seconds": 86.91
+  },
+  "adoption_reason": "No quality gain demonstrated on the fresh reserved set, with approximately twice the elapsed time. Keep structured verification optional and traceable; retain the existing default.",
+  "evaluation_protocol": "Fresh sources frozen before first structured development results. V1/V2 failures informed V3 through development cases only. Final V3 was frozen before reading reserved baseline scores; each policy evaluated once on the same fresh set. No changes against reserved outcomes.",
+  "limitations": "Small authored synthetic sets, single observations per policy, not independent external annotations or production quality/security evidence. Reserved cases are now consumed."
+}

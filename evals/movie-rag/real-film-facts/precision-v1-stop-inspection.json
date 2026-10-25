@@ -1,0 +1,33 @@
+{
+  "report_sha256": "42f5ca10921fd723305ab70222f29d46687e16850209b631810bd34d3e81692f",
+  "quality_state": "complete",
+  "quality_metrics": {
+    "label_matches": {
+      "count": 6,
+      "total": 18
+    },
+    "useful_acceptance": {
+      "count": 0,
+      "total": 6
+    },
+    "false_acceptance": {
+      "count": 0,
+      "total": 12
+    },
+    "false_rejection": {
+      "count": 5,
+      "total": 6
+    },
+    "uncertain": {
+      "count": 0,
+      "total": 18
+    },
+    "errors": {
+      "count": 3,
+      "total": 18
+    }
+  },
+  "generation_unfinished": true,
+  "reason": "Candidate loses all useful approvals and times out the final challenge batch. Stopped unqualified generation after first checkpoint; original report preserved. No publication.",
+  "publication_approved": false
+}

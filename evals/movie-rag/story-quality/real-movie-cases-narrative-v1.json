@@ -1,0 +1,222 @@
+{
+  "kind": "preregistered_real_movie_narrative_cases_v1",
+  "note": "Reuses pinned source spans from the earlier authored development set, but freezes narrative-aligned questions before this dataset is run. Development evidence, not an independent human benchmark.",
+  "cases": [
+    {
+      "id": "inception-limbo-years",
+      "movie_id": 27205,
+      "expected_accept": true,
+      "label_reason": "Both accounts support the lasting consequence of Limbo for Mal’s sense of reality.",
+      "wiki_revision": "enwiki-1379453144-sections-v3-body",
+      "wiki_start": 4947,
+      "wiki_end": 5288,
+      "script_revision": "imsdb-scenes-v1-b2318593c69efc77e2ab42006e975adc0d288d131322ba3220624a55bd013a0f",
+      "script_start": 92680,
+      "script_end": 93393,
+      "retrieval_query": "What belief persists for Mal after she and Cobb wake from Limbo? Answer: she was dreaming",
+      "draft": {
+        "kind": "event",
+        "question": "What belief persists for Mal after she and Cobb wake from Limbo?",
+        "answer": "she was dreaming",
+        "wiki_alias": "W1",
+        "script_alias": "S1",
+        "options": [
+          "she was dreaming",
+          "Cobb had abandoned her",
+          "Saito controlled her",
+          "Ariadne was her sister"
+        ],
+        "correct_index": 0
+      }
+    },
+    {
+      "id": "inception-chemist",
+      "movie_id": 27205,
+      "expected_accept": true,
+      "label_reason": "Both accounts identify the expertise Yusuf contributes to making the layered plan possible.",
+      "wiki_revision": "enwiki-1379453144-sections-v3-body",
+      "wiki_start": 3611,
+      "wiki_end": 4014,
+      "script_revision": "imsdb-scenes-v1-b2318593c69efc77e2ab42006e975adc0d288d131322ba3220624a55bd013a0f",
+      "script_start": 44958,
+      "script_end": 45972,
+      "retrieval_query": "What expertise does Yusuf contribute to Cobb’s team? Answer: a chemist",
+      "draft": {
+        "kind": "event",
+        "question": "What expertise does Yusuf contribute to Cobb’s team?",
+        "answer": "a chemist",
+        "wiki_alias": "W1",
+        "script_alias": "S1",
+        "options": [
+          "a chemist",
+          "an architect",
+          "a lawyer",
+          "a pilot"
+        ],
+        "correct_index": 0
+      }
+    },
+    {
+      "id": "inception-saito-offer",
+      "movie_id": 27205,
+      "expected_accept": true,
+      "label_reason": "Both accounts connect Cobb’s choice to the chance to return to his children.",
+      "wiki_revision": "enwiki-1379453144-sections-v3-body",
+      "wiki_start": 3506,
+      "wiki_end": 3609,
+      "script_revision": "imsdb-scenes-v1-b2318593c69efc77e2ab42006e975adc0d288d131322ba3220624a55bd013a0f",
+      "script_start": 25390,
+      "script_end": 26501,
+      "retrieval_query": "What motivates Cobb to consider Saito’s inception job? Answer: return home to his children",
+      "draft": {
+        "kind": "event",
+        "question": "What motivates Cobb to consider Saito’s inception job?",
+        "answer": "return home to his children",
+        "wiki_alias": "W1",
+        "script_alias": "S1",
+        "options": [
+          "return home to his children",
+          "inherit Saito’s airline",
+          "become a dream architect",
+          "expose Arthur’s betrayal"
+        ],
+        "correct_index": 0
+      }
+    },
+    {
+      "id": "matrix-red-pill",
+      "movie_id": 603,
+      "expected_accept": true,
+      "label_reason": "Both accounts make the red pill the choice that commits Neo to learning the truth.",
+      "wiki_revision": "enwiki-1379344781-sections-v3-body",
+      "wiki_start": 4294,
+      "wiki_end": 4837,
+      "script_revision": "imsdb-scenes-v1-f3b7d7c6313a6b3bfaef394d69ab08f97cc11e4514e6e6e39b7adf517bca4548",
+      "script_start": 36539,
+      "script_end": 37739,
+      "retrieval_query": "What choice commits Neo to uncovering the truth about the Matrix? Answer: a red pill",
+      "draft": {
+        "kind": "event",
+        "question": "What choice commits Neo to uncovering the truth about the Matrix?",
+        "answer": "a red pill",
+        "wiki_alias": "W1",
+        "script_alias": "S1",
+        "options": [
+          "a red pill",
+          "a blue pill",
+          "a tracking device",
+          "a telephone call"
+        ],
+        "correct_index": 0
+      }
+    },
+    {
+      "id": "inception-version-conflict",
+      "movie_id": 27205,
+      "expected_accept": false,
+      "label_reason": "Released account says Ariadne kills Mal; this version shows Ariadne lowering her gun at Cobb’s request instead.",
+      "wiki_revision": "enwiki-1379453144-sections-v3-body",
+      "wiki_start": 6225,
+      "wiki_end": 6541,
+      "script_revision": "imsdb-scenes-v1-b2318593c69efc77e2ab42006e975adc0d288d131322ba3220624a55bd013a0f",
+      "script_start": 151884,
+      "script_end": 152102,
+      "retrieval_query": "Who kills Mal’s projection in Limbo? Answer: Ariadne",
+      "draft": {
+        "kind": "event",
+        "question": "Who kills Mal’s projection in Limbo?",
+        "answer": "Ariadne",
+        "wiki_alias": "W1",
+        "script_alias": "S1",
+        "options": [
+          "Ariadne",
+          "Cobb",
+          "Robert",
+          "Saito"
+        ],
+        "correct_index": 0
+      }
+    },
+    {
+      "id": "matrix-sky-version-conflict",
+      "movie_id": 603,
+      "expected_accept": false,
+      "label_reason": "Released account attributes blackening to humans; 1996 script depicts machine destruction causing it. Do not reconcile from memory.",
+      "wiki_revision": "enwiki-1379344781-sections-v3-body",
+      "wiki_start": 5006,
+      "wiki_end": 5578,
+      "script_revision": "imsdb-scenes-v1-f3b7d7c6313a6b3bfaef394d69ab08f97cc11e4514e6e6e39b7adf517bca4548",
+      "script_start": 51763,
+      "script_end": 52963,
+      "retrieval_query": "Who blackened the sky during the war against the machines? Answer: Humans",
+      "draft": {
+        "kind": "event",
+        "question": "Who blackened the sky during the war against the machines?",
+        "answer": "Humans",
+        "wiki_alias": "W1",
+        "script_alias": "S1",
+        "options": [
+          "Humans",
+          "Agents",
+          "Sentinels",
+          "Neo"
+        ],
+        "correct_index": 0
+      }
+    },
+    {
+      "id": "matrix-wrong-cause",
+      "movie_id": 603,
+      "expected_accept": false,
+      "label_reason": "Copied nouns do not answer the motivation question; answer literal membership is insufficient.",
+      "wiki_revision": "enwiki-1379344781-sections-v3-body",
+      "wiki_start": 4294,
+      "wiki_end": 4837,
+      "script_revision": "imsdb-scenes-v1-f3b7d7c6313a6b3bfaef394d69ab08f97cc11e4514e6e6e39b7adf517bca4548",
+      "script_start": 36539,
+      "script_end": 37739,
+      "retrieval_query": "Why does Neo take the red pill? Answer: invasive cables",
+      "draft": {
+        "kind": "event",
+        "question": "Why does Neo take the red pill?",
+        "answer": "invasive cables",
+        "wiki_alias": "W1",
+        "script_alias": "S1",
+        "options": [
+          "invasive cables",
+          "a robotic tracking device",
+          "his abdomen",
+          "the first level"
+        ],
+        "correct_index": 0
+      }
+    },
+    {
+      "id": "matrix-two-valid-options",
+      "movie_id": 603,
+      "expected_accept": false,
+      "label_reason": "Both red and blue are offered; no unique correct answer.",
+      "wiki_revision": "enwiki-1379344781-sections-v3-body",
+      "wiki_start": 4294,
+      "wiki_end": 4837,
+      "script_revision": "imsdb-scenes-v1-f3b7d7c6313a6b3bfaef394d69ab08f97cc11e4514e6e6e39b7adf517bca4548",
+      "script_start": 36539,
+      "script_end": 37739,
+      "retrieval_query": "Which pill does Morpheus offer Neo as a choice? Answer: a red pill",
+      "draft": {
+        "kind": "event",
+        "question": "Which pill does Morpheus offer Neo as a choice?",
+        "answer": "a red pill",
+        "wiki_alias": "W1",
+        "script_alias": "S1",
+        "options": [
+          "a red pill",
+          "a blue pill",
+          "a green pill",
+          "a white pill"
+        ],
+        "correct_index": 0
+      }
+    }
+  ]
+}

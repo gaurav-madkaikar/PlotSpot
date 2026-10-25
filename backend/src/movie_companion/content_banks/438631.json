@@ -1,0 +1,213 @@
+{
+  "quiz": [
+    {
+      "id": "new-fief",
+      "question": "Which planet is Duke Leto ordered to take over?",
+      "options": [
+        "Giedi Prime",
+        "Salusa Secundus",
+        "Arrakis",
+        "Caladan"
+      ],
+      "correct_index": 2,
+      "explanation": "The Emperor assigns Leto to replace House Harkonnen as the ruler of Arrakis.",
+      "evidence_markers": [
+        "Leto Atreides is assigned",
+        "fiefholder of Arrakis"
+      ],
+      "kind": "plot"
+    },
+    {
+      "id": "spice-purpose",
+      "question": "Besides heightened awareness, what makes spice essential to the empire?",
+      "options": [
+        "It enables interstellar travel",
+        "It repairs shields",
+        "It creates drinking water",
+        "It powers all weapons"
+      ],
+      "correct_index": 0,
+      "explanation": "Spice is key to interstellar travel.",
+      "evidence_markers": [
+        "Spice is also key to interstellar travel"
+      ],
+      "kind": "plot"
+    },
+    {
+      "id": "jessicas-defiance",
+      "question": "How did Jessica disobey the Bene Gesserit’s breeding plan?",
+      "options": [
+        "She left Caladan",
+        "She married a Fremen",
+        "She taught Leto the Voice",
+        "She bore a son rather than the instructed daughter"
+      ],
+      "correct_index": 3,
+      "explanation": "The Bene Gesserit ordered a daughter, but Jessica gave birth to Paul.",
+      "evidence_markers": [
+        "instructed her to bear a daughter",
+        "Jessica disobeyed and bore a son"
+      ],
+      "kind": "plot"
+    },
+    {
+      "id": "box-test",
+      "question": "What does the gom jabbar test assess in Paul?",
+      "options": [
+        "His skill with a blade",
+        "His humanity and impulse control",
+        "His knowledge of spice",
+        "His loyalty to the Emperor"
+      ],
+      "correct_index": 1,
+      "explanation": "The Reverend Mother tests Paul’s humanity and impulse control.",
+      "evidence_markers": [
+        "gom jabbar test to assess his humanity and impulse control"
+      ],
+      "kind": "plot"
+    },
+    {
+      "id": "fremen-chief",
+      "question": "Which Fremen leader negotiates with Duke Leto?",
+      "options": [
+        "Jamis",
+        "Rabban",
+        "Stilgar",
+        "Duncan Idaho"
+      ],
+      "correct_index": 2,
+      "explanation": "Leto meets and negotiates with the Fremen chieftain Stilgar.",
+      "evidence_markers": [
+        "negotiates with Fremen chieftain Stilgar"
+      ],
+      "kind": "plot"
+    },
+    {
+      "id": "yuehs-bargain",
+      "question": "What does Yueh hope to gain by handing Leto over to the Baron?",
+      "options": [
+        "The return of his imprisoned wife",
+        "Control of Arrakis",
+        "A place among the Fremen",
+        "An end to spice harvesting"
+      ],
+      "correct_index": 0,
+      "explanation": "Yueh plans to exchange Leto for his wife, whom the Baron holds prisoner.",
+      "evidence_markers": [
+        "exchange him for his wife, the Baron's prisoner"
+      ],
+      "kind": "plot"
+    },
+    {
+      "id": "poison-capsule",
+      "question": "Where does Yueh hide the poison gas capsule for Leto?",
+      "options": [
+        "Inside a signet ring",
+        "In his sleeve",
+        "In a shield generator",
+        "In a replacement tooth"
+      ],
+      "correct_index": 3,
+      "explanation": "Yueh replaces one of Leto’s teeth with a poison gas capsule intended to kill the Baron.",
+      "evidence_markers": [
+        "one of Leto's teeth with a poison gas capsule"
+      ],
+      "kind": "plot"
+    },
+    {
+      "id": "desert-captors",
+      "question": "How does Jessica overpower the captors taking her and Paul into the desert?",
+      "options": [
+        "She activates a shield",
+        "She uses the Voice",
+        "She summons a sandworm",
+        "She signals Duncan"
+      ],
+      "correct_index": 1,
+      "explanation": "Jessica uses the Bene Gesserit Voice technique to overpower their captors.",
+      "evidence_markers": [
+        "Jessica uses the Voice technique"
+      ],
+      "kind": "plot"
+    },
+    {
+      "id": "idahos-sacrifice",
+      "question": "Who sacrifices himself so Paul and Jessica can escape the Sardaukar?",
+      "options": [
+        "Thufir Hawat",
+        "Gurney Halleck",
+        "Duncan Idaho",
+        "Stilgar"
+      ],
+      "correct_index": 2,
+      "explanation": "Duncan stays to fight the Sardaukar, giving Paul and Jessica a chance to escape.",
+      "evidence_markers": [
+        "Duncan sacrifices himself to enable Paul and Jessica to escape"
+      ],
+      "kind": "plot"
+    },
+    {
+      "id": "ritual-duel",
+      "question": "Which Fremen challenges Paul to the duel near the film’s ending?",
+      "options": [
+        "Jamis",
+        "Stilgar",
+        "Chani",
+        "Liet Kynes"
+      ],
+      "correct_index": 0,
+      "explanation": "Jamis challenges Paul to a ritual duel to the death; Paul accepts and wins.",
+      "evidence_markers": [
+        "Fremen warrior Jamis challenges them to a ritual duel"
+      ],
+      "kind": "ending"
+    }
+  ],
+  "facts": [
+    {
+      "id": "giant-ornithopters",
+      "title": "Aircraft props that needed a cargo plane",
+      "text": "Two functional ornithopter models weighed over eleven tons. An Antonov cargo plane transported them to filming locations in Hungary and Jordan.",
+      "evidence_markers": [
+        "Two functional ornithopter models",
+        "Antonov cargo plane"
+      ]
+    },
+    {
+      "id": "organic-worms",
+      "title": "Tree bark helped shape the sandworms",
+      "text": "The sandworms’ skin texture was based on tree bark and mud flats. Their early design drew on whales with baleen in their mouths.",
+      "evidence_markers": [
+        "inspired by whales with baleen",
+        "skin texture was based on tree bark and mud flats"
+      ]
+    },
+    {
+      "id": "film-roundtrip",
+      "title": "Digital footage took a trip through film",
+      "text": "The finished footage was transferred to 35 mm film and scanned back to 4K to give the digital images a more film-like look.",
+      "evidence_markers": [
+        "footage was transferred to 35mm film stock",
+        "scanned back to 4K"
+      ]
+    },
+    {
+      "id": "church-bagpipes",
+      "title": "Thirty bagpipes in a church",
+      "text": "Zimmer found thirty bagpipe players around Edinburgh during the pandemic and recorded them in a church for the House Atreides theme.",
+      "evidence_markers": [
+        "bagpipes for the House Atreides theme",
+        "30 bagpipe players"
+      ]
+    },
+    {
+      "id": "language-designer",
+      "title": "A language specialist from Game of Thrones",
+      "text": "David J. Peterson, who created languages for Game of Thrones, joined Dune as a constructed-language developer.",
+      "evidence_markers": [
+        "Game of Thrones language creator David J. Peterson",
+        "constructed language developer"
+      ]
+    }
+  ]
+}

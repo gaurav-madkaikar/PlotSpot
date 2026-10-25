@@ -1,0 +1,218 @@
+{
+  "quiz": [
+    {
+      "id": "fischer-plan",
+      "question": "What idea is Cobb hired to plant in Robert Fischer’s mind?",
+      "options": [
+        "Sell his airline",
+        "Dissolve his father’s company",
+        "Become an architect",
+        "Join Saito’s company"
+      ],
+      "correct_index": 1,
+      "explanation": "The mission is to persuade Fischer to dissolve his father’s conglomerate.",
+      "evidence_markers": [
+        "implanting Robert Fischer",
+        "dissolve"
+      ],
+      "kind": "plot"
+    },
+    {
+      "id": "cobb-reward",
+      "question": "What does Saito promise Cobb in exchange for completing the job?",
+      "options": [
+        "A new identity as a chemist",
+        "Ownership of the airline",
+        "A way home to his children",
+        "Control of Fischer’s company"
+      ],
+      "correct_index": 2,
+      "explanation": "Saito offers to clear Cobb’s criminal status so he can return to his children.",
+      "evidence_markers": [
+        "clear Cobb's criminal status",
+        "children"
+      ],
+      "kind": "plot"
+    },
+    {
+      "id": "dream-architect",
+      "question": "Who designs the architecture of the team’s three dream levels?",
+      "options": [
+        "Ariadne",
+        "Arthur",
+        "Eames",
+        "Yusuf"
+      ],
+      "correct_index": 0,
+      "explanation": "Ariadne designs the dream environments; Cobb avoids the job because Mal’s projection could sabotage them.",
+      "evidence_markers": [
+        "Ariadne is tasked",
+        "architecture"
+      ],
+      "kind": "plot"
+    },
+    {
+      "id": "first-dream",
+      "question": "Whose dream provides the rainy city in the first level?",
+      "options": [
+        "Arthur’s",
+        "Fischer’s",
+        "Eames’s",
+        "Yusuf’s"
+      ],
+      "correct_index": 3,
+      "explanation": "Yusuf dreams the rainy city that forms the first level.",
+      "evidence_markers": [
+        "raining city dreamt by Yusuf"
+      ],
+      "kind": "plot"
+    },
+    {
+      "id": "trained-target",
+      "question": "Why does Fischer’s subconscious attack the team?",
+      "options": [
+        "He recognizes Cobb from childhood",
+        "He has been trained to defend against dream intrusion",
+        "Saito has already told him the plan",
+        "Arthur deliberately summons the attackers"
+      ],
+      "correct_index": 1,
+      "explanation": "Fischer has subconscious defensive projections because he has been trained to anticipate intrusion.",
+      "evidence_markers": [
+        "trained to anticipate",
+        "defensive projections"
+      ],
+      "kind": "plot"
+    },
+    {
+      "id": "sedative-risk",
+      "question": "Under Yusuf’s powerful sedative, where does dying in a dream send someone?",
+      "options": [
+        "Directly back to the plane",
+        "Into a new hotel room",
+        "Into Limbo",
+        "Into Ariadne’s first dream"
+      ],
+      "correct_index": 2,
+      "explanation": "The sedative prevents the usual wake-up and sends the dreamer into Limbo.",
+      "evidence_markers": [
+        "Yusuf's sedatives",
+        "Limbo"
+      ],
+      "kind": "plot"
+    },
+    {
+      "id": "second-level",
+      "question": "Where is Arthur’s second-level dream set?",
+      "options": [
+        "A hotel",
+        "An airport",
+        "A hospital",
+        "A mountain fortress"
+      ],
+      "correct_index": 0,
+      "explanation": "The second level is a hotel dreamed by Arthur.",
+      "evidence_markers": [
+        "a hotel dreamed by Arthur"
+      ],
+      "kind": "plot"
+    },
+    {
+      "id": "browning-disguise",
+      "question": "Who impersonates Fischer’s godfather Peter Browning?",
+      "options": [
+        "Saito",
+        "Cobb",
+        "Yusuf",
+        "Eames"
+      ],
+      "correct_index": 3,
+      "explanation": "Eames uses Browning’s identity to introduce the idea of an alternate will.",
+      "evidence_markers": [
+        "Eames impersonates",
+        "Peter Browning"
+      ],
+      "kind": "plot"
+    },
+    {
+      "id": "kick-timing",
+      "question": "What early event forces Arthur and Eames to improvise their synchronized kicks?",
+      "options": [
+        "Fischer boarding the plane",
+        "Yusuf driving off a bridge",
+        "Cobb dropping his spinning top",
+        "Saito leaving the fortress"
+      ],
+      "correct_index": 1,
+      "explanation": "Yusuf drives off the bridge too soon, forcing the other dream levels to adjust their kicks.",
+      "evidence_markers": [
+        "Yusuf performs his kick too soon",
+        "bridge"
+      ],
+      "kind": "plot"
+    },
+    {
+      "id": "final-top",
+      "question": "What does Cobb do before seeing the final result of the spinning top?",
+      "options": [
+        "He knocks it over",
+        "He gives it to Saito",
+        "He joins his children",
+        "He takes another sedative"
+      ],
+      "correct_index": 2,
+      "explanation": "Cobb goes to his children before observing the result; the quiz does not claim the ending proves dream or reality.",
+      "evidence_markers": [
+        "joins his children before",
+        "observe the result"
+      ],
+      "kind": "ending"
+    }
+  ],
+  "facts": [
+    {
+      "id": "rotating-corridor",
+      "title": "A hallway that really turned",
+      "text": "The hotel corridor was a physical set that rotated through 360 degrees, making the changing gravity part of the actors’ performance.",
+      "evidence_markers": [
+        "rotated a full 360 degrees"
+      ]
+    },
+    {
+      "id": "nitrogen-bistro",
+      "title": "Explosions without explosives",
+      "text": "For the Paris café sequence, the crew used high-pressure nitrogen because local authorities would not allow real explosives.",
+      "evidence_markers": [
+        "High-pressure nitrogen",
+        "real explosives"
+      ]
+    },
+    {
+      "id": "road-train",
+      "title": "A train built for the street",
+      "text": "The street-chase train was built on a tractor-trailer chassis, using fiberglass molds taken from real train parts.",
+      "evidence_markers": [
+        "chassis of a tractor trailer",
+        "fiberglass molds"
+      ]
+    },
+    {
+      "id": "miniature-fortress",
+      "title": "A fortress in miniature",
+      "text": "The effects team built a miniature mountain fortress and blew it up for the film, combining practical work with digital effects.",
+      "evidence_markers": [
+        "miniatures of the mountain fortress",
+        "blew it up"
+      ]
+    },
+    {
+      "id": "marr-guitar",
+      "title": "A familiar guitarist in the score",
+      "text": "Former Smiths guitarist Johnny Marr played on Hans Zimmer’s score. Zimmer also worked elements of Édith Piaf’s song into the music.",
+      "evidence_markers": [
+        "Johnny Marr",
+        "reworked pieces of the song"
+      ]
+    }
+  ]
+}

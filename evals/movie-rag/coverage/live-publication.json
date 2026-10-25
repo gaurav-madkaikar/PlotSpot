@@ -1,0 +1,158 @@
+{
+  "checked_at": "2026-10-11T13:25:42.814058+00:00",
+  "method": "assistant-authored-source-reviewed-starter-banks",
+  "model_calls": 0,
+  "existing_four_collections_unchanged": true,
+  "movies": [
+    {
+      "movie_id": 546554,
+      "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1378593030",
+      "source_revision": "enwiki-1378593030-sections-v3-body",
+      "source_text_sha256": "b43deb1a0a475fbc96f41132733661dbd3d61232604e8744b170fe290204ae73",
+      "bank_sha256": "94c09c1a32700d2b2acd6a3f96f0016b63577d87bebbbe32481c33647ebc2ec5",
+      "facts": 5,
+      "scored_questions": 10,
+      "repeat_reads_equal": true,
+      "spoilers_off_hides_content": true,
+      "features": {
+        "movie_id": 546554,
+        "discussion": true,
+        "quiz": true,
+        "facts": true
+      },
+      "review": {
+        "all_15_items_inspected_against_exact_excerpts_and_source_context": true,
+        "distinct_questions_and_answers_reviewed": true,
+        "story_questions_only": true,
+        "filmmaking_facts_only": true
+      },
+      "quiz_items": [
+        {
+          "id": "marta-role",
+          "answer": "His nurse",
+          "passage_id": "4826241e80c21c6b484c1460f651ba9e"
+        },
+        {
+          "id": "lie-reaction",
+          "answer": "She vomits",
+          "passage_id": "f76f3f2f198231f93d71f6e6154e14b9"
+        },
+        {
+          "id": "unexpected-heir",
+          "answer": "Marta",
+          "passage_id": "fcfab57730b52d8e7f154d6c53142133"
+        },
+        {
+          "id": "blackmail-clue",
+          "answer": "A partial toxicology report",
+          "passage_id": "96bdc147e8e62e920549d7206a18a97b"
+        },
+        {
+          "id": "true-medication",
+          "answer": "The medicine\u2019s viscosity",
+          "passage_id": "a2a23b2912fd5e5a1c93f43bd0289264"
+        },
+        {
+          "id": "hidden-client",
+          "answer": "Ransom",
+          "passage_id": "8c088bd1862fec097197ee619c291a6d"
+        },
+        {
+          "id": "office-fire",
+          "answer": "To destroy evidence of Marta\u2019s innocence",
+          "passage_id": "9b175bf77d13ee772ca0420f489db54e"
+        },
+        {
+          "id": "final-bluff",
+          "answer": "Fran is still alive",
+          "passage_id": "fdb93ffb4d6a56ad365f4e84b06e9b0f"
+        },
+        {
+          "id": "knife-twist",
+          "answer": "He grabs a retractable stage knife",
+          "passage_id": "839c6512199160ed8d145d49db7c7117"
+        },
+        {
+          "id": "balcony-finale",
+          "answer": "On the mansion\u2019s balcony",
+          "passage_id": "ec387dac6426d05dcc5588bfd6537336"
+        }
+      ]
+    },
+    {
+      "movie_id": 37165,
+      "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1378575188",
+      "source_revision": "enwiki-1378575188-sections-v3-body",
+      "source_text_sha256": "0c6c65fe8d8090e270a4d0579325f775f5239341aa06162c20eac455a79091d8",
+      "bank_sha256": "e192133ba98b961509c7c915d7f16beb27ad9492be27e9d5282aafead6e8134c",
+      "facts": 5,
+      "scored_questions": 10,
+      "repeat_reads_equal": true,
+      "spoilers_off_hides_content": true,
+      "features": {
+        "movie_id": 37165,
+        "discussion": true,
+        "quiz": true,
+        "facts": true
+      },
+      "review": {
+        "all_15_items_inspected_against_exact_excerpts_and_source_context": true,
+        "distinct_questions_and_answers_reviewed": true,
+        "story_questions_only": true,
+        "filmmaking_facts_only": true
+      },
+      "quiz_items": [
+        {
+          "id": "seahaven-secret",
+          "answer": "A vast television soundstage",
+          "passage_id": "f9a2a1f67bac58b68a0e5e54dbcc975c"
+        },
+        {
+          "id": "world-controller",
+          "answer": "Christof",
+          "passage_id": "f9a2a1f67bac58b68a0e5e54dbcc975c"
+        },
+        {
+          "id": "water-fear",
+          "answer": "It stages his father\u2019s death in a boating accident",
+          "passage_id": "71a89c2fb12ee9618776626a1dd156fe"
+        },
+        {
+          "id": "fiji-dream",
+          "answer": "He is told Sylvia has moved there",
+          "passage_id": "bd1f29750944c8619e5a0a27bc54bbee"
+        },
+        {
+          "id": "outside-allies",
+          "answer": "Free Truman",
+          "passage_id": "28b6eeed7c45951ca420ddb8bed89331"
+        },
+        {
+          "id": "radio-glitch",
+          "answer": "A transmission describing his movements",
+          "passage_id": "cb18587a760220c3a5cc28556f977f4d"
+        },
+        {
+          "id": "basement-escape",
+          "answer": "Through a makeshift tunnel",
+          "passage_id": "f82758a0043171894921de35ca9634f1"
+        },
+        {
+          "id": "last-obstacle",
+          "answer": "A violent storm",
+          "passage_id": "edd7a00fc52bbeeeddddc402ba74a017"
+        },
+        {
+          "id": "world-edge",
+          "answer": "The soundstage wall",
+          "passage_id": "972d9bce11235b09ce0269d52751ed75"
+        },
+        {
+          "id": "final-choice",
+          "answer": "He says his catchphrase, bows and exits",
+          "passage_id": "7896685db6107c6e6ebd9e4cca9e18dd"
+        }
+      ]
+    }
+  ]
+}

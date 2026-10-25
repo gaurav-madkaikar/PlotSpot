@@ -1,0 +1,222 @@
+{
+  "kind": "preregistered_real_movie_development_cases",
+  "note": "Authored from reviewed cached source versions before changing the retrieval policy. Small development set, not a held-out safety benchmark. References keep full script text private.",
+  "cases": [
+    {
+      "id": "inception-limbo-years",
+      "movie_id": 27205,
+      "expected_accept": true,
+      "label_reason": "Both accounts specify fifty subjective years; one night is elapsed real-world time.",
+      "wiki_revision": "enwiki-1379453144-sections-v3-body",
+      "wiki_start": 4947,
+      "wiki_end": 5288,
+      "script_revision": "imsdb-scenes-v1-b2318593c69efc77e2ab42006e975adc0d288d131322ba3220624a55bd013a0f",
+      "script_start": 92680,
+      "script_end": 93393,
+      "retrieval_query": "How long do Cobb and Mal experience in Limbo during their dream-sharing experiment? Answer: fifty years",
+      "draft": {
+        "kind": "event",
+        "question": "How long do Cobb and Mal experience in Limbo during their dream-sharing experiment?",
+        "answer": "fifty years",
+        "wiki_alias": "W1",
+        "script_alias": "S1",
+        "options": [
+          "fifty years",
+          "one night",
+          "three days",
+          "ten months"
+        ],
+        "correct_index": 0
+      }
+    },
+    {
+      "id": "inception-chemist",
+      "movie_id": 27205,
+      "expected_accept": true,
+      "label_reason": "Released account calls Yusuf a chemist; screenplay recommends Yusuf when asked for a chemist.",
+      "wiki_revision": "enwiki-1379453144-sections-v3-body",
+      "wiki_start": 3611,
+      "wiki_end": 4014,
+      "script_revision": "imsdb-scenes-v1-b2318593c69efc77e2ab42006e975adc0d288d131322ba3220624a55bd013a0f",
+      "script_start": 44958,
+      "script_end": 45972,
+      "retrieval_query": "Which chemist does Cobb recruit for the team? Answer: Yusuf",
+      "draft": {
+        "kind": "event",
+        "question": "Which chemist does Cobb recruit for the team?",
+        "answer": "Yusuf",
+        "wiki_alias": "W1",
+        "script_alias": "S1",
+        "options": [
+          "Yusuf",
+          "Arthur",
+          "Eames",
+          "Saito"
+        ],
+        "correct_index": 0
+      }
+    },
+    {
+      "id": "inception-saito-offer",
+      "movie_id": 27205,
+      "expected_accept": true,
+      "label_reason": "Both accounts connect the offer to rejoining Cobb’s family/children.",
+      "wiki_revision": "enwiki-1379453144-sections-v3-body",
+      "wiki_start": 3506,
+      "wiki_end": 3609,
+      "script_revision": "imsdb-scenes-v1-b2318593c69efc77e2ab42006e975adc0d288d131322ba3220624a55bd013a0f",
+      "script_start": 25390,
+      "script_end": 26501,
+      "retrieval_query": "What does Saito offer Cobb a chance to return home to? Answer: his children",
+      "draft": {
+        "kind": "event",
+        "question": "What does Saito offer Cobb a chance to return home to?",
+        "answer": "his children",
+        "wiki_alias": "W1",
+        "script_alias": "S1",
+        "options": [
+          "his children",
+          "his former employer",
+          "his old school",
+          "his bank"
+        ],
+        "correct_index": 0
+      }
+    },
+    {
+      "id": "matrix-red-pill",
+      "movie_id": 603,
+      "expected_accept": true,
+      "label_reason": "Both accounts show Neo choosing the red pill.",
+      "wiki_revision": "enwiki-1379344781-sections-v3-body",
+      "wiki_start": 4294,
+      "wiki_end": 4837,
+      "script_revision": "imsdb-scenes-v1-f3b7d7c6313a6b3bfaef394d69ab08f97cc11e4514e6e6e39b7adf517bca4548",
+      "script_start": 36539,
+      "script_end": 37739,
+      "retrieval_query": "Which pill does Neo take to uncover the truth about the Matrix? Answer: the red pill",
+      "draft": {
+        "kind": "event",
+        "question": "Which pill does Neo take to uncover the truth about the Matrix?",
+        "answer": "the red pill",
+        "wiki_alias": "W1",
+        "script_alias": "S1",
+        "options": [
+          "the red pill",
+          "the blue pill",
+          "a green pill",
+          "a white pill"
+        ],
+        "correct_index": 0
+      }
+    },
+    {
+      "id": "inception-version-conflict",
+      "movie_id": 27205,
+      "expected_accept": false,
+      "label_reason": "Released account says Ariadne kills Mal; this version shows Ariadne lowering her gun at Cobb’s request instead.",
+      "wiki_revision": "enwiki-1379453144-sections-v3-body",
+      "wiki_start": 6225,
+      "wiki_end": 6541,
+      "script_revision": "imsdb-scenes-v1-b2318593c69efc77e2ab42006e975adc0d288d131322ba3220624a55bd013a0f",
+      "script_start": 151884,
+      "script_end": 152102,
+      "retrieval_query": "Who kills Mal’s projection in Limbo? Answer: Ariadne",
+      "draft": {
+        "kind": "event",
+        "question": "Who kills Mal’s projection in Limbo?",
+        "answer": "Ariadne",
+        "wiki_alias": "W1",
+        "script_alias": "S1",
+        "options": [
+          "Ariadne",
+          "Cobb",
+          "Robert",
+          "Saito"
+        ],
+        "correct_index": 0
+      }
+    },
+    {
+      "id": "matrix-sky-version-conflict",
+      "movie_id": 603,
+      "expected_accept": false,
+      "label_reason": "Released account attributes blackening to humans; 1996 script depicts machine destruction causing it. Do not reconcile from memory.",
+      "wiki_revision": "enwiki-1379344781-sections-v3-body",
+      "wiki_start": 5006,
+      "wiki_end": 5578,
+      "script_revision": "imsdb-scenes-v1-f3b7d7c6313a6b3bfaef394d69ab08f97cc11e4514e6e6e39b7adf517bca4548",
+      "script_start": 51763,
+      "script_end": 52963,
+      "retrieval_query": "Who blackened the sky during the war against the machines? Answer: Humans",
+      "draft": {
+        "kind": "event",
+        "question": "Who blackened the sky during the war against the machines?",
+        "answer": "Humans",
+        "wiki_alias": "W1",
+        "script_alias": "S1",
+        "options": [
+          "Humans",
+          "Agents",
+          "Sentinels",
+          "Neo"
+        ],
+        "correct_index": 0
+      }
+    },
+    {
+      "id": "matrix-wrong-cause",
+      "movie_id": 603,
+      "expected_accept": false,
+      "label_reason": "Copied nouns do not answer the motivation question; answer literal membership is insufficient.",
+      "wiki_revision": "enwiki-1379344781-sections-v3-body",
+      "wiki_start": 4294,
+      "wiki_end": 4837,
+      "script_revision": "imsdb-scenes-v1-f3b7d7c6313a6b3bfaef394d69ab08f97cc11e4514e6e6e39b7adf517bca4548",
+      "script_start": 36539,
+      "script_end": 37739,
+      "retrieval_query": "Why does Neo take the red pill? Answer: invasive cables",
+      "draft": {
+        "kind": "event",
+        "question": "Why does Neo take the red pill?",
+        "answer": "invasive cables",
+        "wiki_alias": "W1",
+        "script_alias": "S1",
+        "options": [
+          "invasive cables",
+          "a robotic tracking device",
+          "his abdomen",
+          "the first level"
+        ],
+        "correct_index": 0
+      }
+    },
+    {
+      "id": "matrix-two-valid-options",
+      "movie_id": 603,
+      "expected_accept": false,
+      "label_reason": "Both red and blue are offered; no unique correct answer.",
+      "wiki_revision": "enwiki-1379344781-sections-v3-body",
+      "wiki_start": 4294,
+      "wiki_end": 4837,
+      "script_revision": "imsdb-scenes-v1-f3b7d7c6313a6b3bfaef394d69ab08f97cc11e4514e6e6e39b7adf517bca4548",
+      "script_start": 36539,
+      "script_end": 37739,
+      "retrieval_query": "Which pill does Morpheus offer Neo as a choice? Answer: a red pill",
+      "draft": {
+        "kind": "event",
+        "question": "Which pill does Morpheus offer Neo as a choice?",
+        "answer": "a red pill",
+        "wiki_alias": "W1",
+        "script_alias": "S1",
+        "options": [
+          "a red pill",
+          "a blue pill",
+          "a green pill",
+          "a white pill"
+        ],
+        "correct_index": 0
+      }
+    }
+  ]
+}

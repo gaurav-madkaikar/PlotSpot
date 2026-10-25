@@ -1,0 +1,106 @@
+{
+  "state": "complete",
+  "publication_performed": false,
+  "background_policy_sha256": "d8711e21b57386bce2bd17c1687b6d2d169c4a91ea6e0929def1165400350298",
+  "report_sha256": {
+    "precision-baseline-v1.json": "6a827ffd1ebcf563ca9e948b4c2a22999a9f18d8216dc4d0b7b26c12aaa81b18",
+    "precision-revised-v1.json": "42f5ca10921fd723305ab70222f29d46687e16850209b631810bd34d3e81692f",
+    "precision-revised-v2-challenge.json": "d2b7f6e7f82343ae43e51b5d0d7c2d9d437425eef50dee3d7147dd3bae5394ab",
+    "precision-final-v3.json": "a3635cb57fd1659bf215fa0891a27765ea80b29762c000065d81b9d8156ea8bc",
+    "precision-final-replay-v4.json": "7c6a381d6fa3c8eef9400536e2e358eeebb5c11fd70637df133dda7c01a9bda1",
+    "precision-final-generation-v4.json": "be0ec1e63dffb14bf742c9f156e1743657f2955bd5c6a4797dd642b8648931e5"
+  },
+  "final_generation": {
+    "completed_movies": 6,
+    "error_movies": 0,
+    "proposed_facts": 7,
+    "eligible_drafts": 4
+  },
+  "generation_seconds": 110.17,
+  "inspected_items": [
+    {
+      "movie_id": 496243,
+      "item_id": "F1",
+      "title": "Editing Strategy",
+      "automated_eligible": false,
+      "inspection_disposition": "withhold",
+      "inspection_note": "The writer assigns the adjacent editing-options purpose to avoiding coverage. The critic correctly rejects that causal expansion."
+    },
+    {
+      "movie_id": 496243,
+      "item_id": "F2",
+      "title": "Shot Construction",
+      "automated_eligible": true,
+      "inspection_disposition": "supported",
+      "inspection_note": "The quoted stitching practice and sometimes qualifier are preserved; no new name is introduced."
+    },
+    {
+      "movie_id": 129,
+      "item_id": "F1",
+      "title": "English Dub Dialogue",
+      "automated_eligible": true,
+      "inspection_disposition": "supported",
+      "inspection_note": "Both full writer names and Japanese-to-English dubbing direction are present in the supplied exact sentence."
+    },
+    {
+      "movie_id": 120467,
+      "item_id": "F1",
+      "title": "Costume Research",
+      "automated_eligible": false,
+      "inspection_disposition": "withhold",
+      "inspection_note": "Verbatim source prose is correctly withheld by the independent copying check despite semantic approval."
+    },
+    {
+      "movie_id": 438631,
+      "item_id": "F1",
+      "title": "Background Lighting Technique",
+      "automated_eligible": false,
+      "inspection_disposition": "withhold_pending_review",
+      "inspection_note": "Source explicitly says luminance; the critic invents a texture interpretation. This appears to be a false rejection, so no automatic generation qualification follows."
+    },
+    {
+      "movie_id": 546554,
+      "item_id": "F1",
+      "title": "Character Naming",
+      "automated_eligible": true,
+      "inspection_disposition": "withhold_pending_rewording",
+      "inspection_note": "Remembering them can mean remembering characters rather than the practice or their names. It avoids the earlier roles wording but still needs clearer wording and inspected support."
+    },
+    {
+      "movie_id": 37165,
+      "item_id": "F1",
+      "title": "Character Preparation",
+      "automated_eligible": true,
+      "inspection_disposition": "supported",
+      "inspection_note": "Catalog decade, actor identity and character-pose preparation are supported; no added causal excuse or certainty."
+    }
+  ],
+  "inspection_supported_count": 3,
+  "development_challenge": {
+    "label_matches": {
+      "count": 18,
+      "total": 18
+    },
+    "useful_acceptance": {
+      "count": 6,
+      "total": 6
+    },
+    "false_acceptance": {
+      "count": 0,
+      "total": 12
+    },
+    "false_rejection": {
+      "count": 0,
+      "total": 6
+    },
+    "uncertain": {
+      "count": 4,
+      "total": 18
+    },
+    "errors": {
+      "count": 0,
+      "total": 18
+    }
+  },
+  "limitations": "Every output inspected by the implementing assistant, not independent adjudication. Eighteen consumed assistant-authored development labels are not held-out accuracy. Final labelled replay makes no new model calls; fresh generation is distinct. Narrow source-local name matching does not establish semantics or guarantee truth. No new automatic generation qualification or consumer content."
+}

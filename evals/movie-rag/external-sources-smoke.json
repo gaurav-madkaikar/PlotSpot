@@ -1,0 +1,25 @@
+{
+  "article_url": "https://authors.library.caltech.edu/records/awp8p-s4d82",
+  "article_revision": "caltech-9f567ec265eba604c6e9bbbb18c453b723e49cbb8a10e1807b9e8f12b8a999d8",
+  "publisher": "ACM",
+  "authors": [
+    "James, Oliver",
+    "Dieckmann, Sylvan",
+    "Pabst, Simon",
+    "Roberts, Paul-George H.",
+    "Thorne, Kip S."
+  ],
+  "published_at": "2015-08",
+  "retrieved_at": "2026-10-10T14:25:34.137060+00:00",
+  "script": {
+    "movie_id": 157336,
+    "title": "Interstellar",
+    "source_ref": "https://imsdb.com/scripts/Interstellar.html",
+    "draft_date": "2008-03-12",
+    "retrieved_at": "2026-10-10T14:25:33.537059+00:00",
+    "content_sha256": "ecf43b61e72c41fb19582cba6277c3c14d30a20a62514d172feeb043a3aacf08"
+  },
+  "script_eligible_for_quiz": false,
+  "fact_count": 6,
+  "quiz_preserved": true
+}

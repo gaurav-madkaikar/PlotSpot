@@ -1,0 +1,152 @@
+{
+  "created_at_utc": "2026-10-10T12:26:40.395779+00:00",
+  "dataset_version": "movie-rag-dev-v2",
+  "split": "development",
+  "dataset_sha256": "f9ab51ebd4cb7d8577e8de56680e52e2afa37cad82bade75553976bf30d3ed48",
+  "source_snapshot": "e75a7bb9fce05a8541de5c8596eb11b7273c819d3dfdff654e29c45e06829ad8",
+  "source_revision": "enwiki-1379200125-plaintext-v1",
+  "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379200125",
+  "prompt_source_sha256": "9942f8badbcefd3b25945bb51931cd2609530d1d0ef3fda284b42586253d89f5",
+  "pipeline_source_sha256": "bb8f3839d81dbf8f24df68ebd72c448eb6bcdcb93ab8473445bc483c8049584d",
+  "models": {
+    "nomic-embed-text:v1.5": "0a109f422b47e3a30ba2b10eca18548e944e8a23073ee3f3e947efcf3c45e59f",
+    "llama3.2:3b": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72"
+  },
+  "runtime": {
+    "platform": "macOS-27.0-arm64-arm-64bit",
+    "python": "3.12.12"
+  },
+  "ingestion": "cached",
+  "chunk_settings": {
+    "max_chars": 600,
+    "overlap_chars": 100
+  },
+  "generation_settings": "Schema-constrained JSON; temperature=0; seed=7; stream=false; sequential; no retries",
+  "token_usage": null,
+  "summary": {
+    "automated_passed": 3,
+    "total": 3,
+    "supporting_hits": 2,
+    "retrieval_labelled_cases": 2,
+    "supporting_hit_rate_at_3": 1.0,
+    "generation_errors": 0
+  },
+  "limitations": [
+    "Small development set, not held out or a security benchmark.",
+    "Recall refers only to annotated IDs, not all potentially relevant corpus passages.",
+    "Phrase/citation checks are smoke checks; human claim-support review pending.",
+    "Document model digest is not part of the persistent cache key; temperature/seed do not guarantee identical outputs across runtimes.",
+    "The labelled missing-evidence case has no positive retrieval metric."
+  ],
+  "cases": [
+    {
+      "id": "composer",
+      "question": "Who composed the music for Interstellar?",
+      "expected_status": "answered",
+      "labelled_supporting_ids": [
+        "e75a7bb9fce05a8541de5c8596eb11b7_042"
+      ],
+      "retrieved": [
+        {
+          "passage_id": "e75a7bb9fce05a8541de5c8596eb11b7_042",
+          "score": 0.8089966409121244
+        },
+        {
+          "passage_id": "e75a7bb9fce05a8541de5c8596eb11b7_043",
+          "score": 0.7633760908531617
+        },
+        {
+          "passage_id": "e75a7bb9fce05a8541de5c8596eb11b7_116",
+          "score": 0.7513083346137013
+        }
+      ],
+      "answer": {
+        "status": "answered",
+        "answer": "Hans Zimmer composed the music for Interstellar.",
+        "citation_ids": [
+          "e75a7bb9fce05a8541de5c8596eb11b7_042",
+          "e75a7bb9fce05a8541de5c8596eb11b7_043"
+        ]
+      },
+      "error": null,
+      "error_detail": null,
+      "duration_seconds": 5.962,
+      "supporting_hit_at_3": true,
+      "annotated_id_recall_at_3": 1.0,
+      "automated_pass": true,
+      "failures": [],
+      "human_claim_support_review": "pending"
+    },
+    {
+      "id": "missing-personal-evidence",
+      "question": "What did I write in my private diary after watching Interstellar?",
+      "expected_status": "insufficient_evidence",
+      "labelled_supporting_ids": [],
+      "retrieved": [
+        {
+          "passage_id": "e75a7bb9fce05a8541de5c8596eb11b7_118",
+          "score": 0.7130949141933501
+        },
+        {
+          "passage_id": "e75a7bb9fce05a8541de5c8596eb11b7_100",
+          "score": 0.7087166391836635
+        },
+        {
+          "passage_id": "e75a7bb9fce05a8541de5c8596eb11b7_030",
+          "score": 0.7078748781210997
+        }
+      ],
+      "answer": {
+        "status": "insufficient_evidence",
+        "answer": "The supplied evidence is insufficient to answer this question.",
+        "citation_ids": []
+      },
+      "error": null,
+      "error_detail": null,
+      "duration_seconds": 2.301,
+      "supporting_hit_at_3": null,
+      "annotated_id_recall_at_3": null,
+      "automated_pass": true,
+      "failures": [],
+      "human_claim_support_review": "pending"
+    },
+    {
+      "id": "primary-instrument",
+      "question": "Which instrument was chosen as the primary instrument for the score?",
+      "expected_status": "answered",
+      "labelled_supporting_ids": [
+        "e75a7bb9fce05a8541de5c8596eb11b7_043"
+      ],
+      "retrieved": [
+        {
+          "passage_id": "e75a7bb9fce05a8541de5c8596eb11b7_043",
+          "score": 0.7029028676363799
+        },
+        {
+          "passage_id": "e75a7bb9fce05a8541de5c8596eb11b7_042",
+          "score": 0.678006510936233
+        },
+        {
+          "passage_id": "e75a7bb9fce05a8541de5c8596eb11b7_041",
+          "score": 0.6699280000928501
+        }
+      ],
+      "answer": {
+        "status": "answered",
+        "answer": "The 1926 four-manual Harrison & Harrison organ of the Temple Church, London",
+        "citation_ids": [
+          "e75a7bb9fce05a8541de5c8596eb11b7_043",
+          "e75a7bb9fce05a8541de5c8596eb11b7_042"
+        ]
+      },
+      "error": null,
+      "error_detail": null,
+      "duration_seconds": 3.491,
+      "supporting_hit_at_3": true,
+      "annotated_id_recall_at_3": 1.0,
+      "automated_pass": true,
+      "failures": [],
+      "human_claim_support_review": "pending"
+    }
+  ]
+}

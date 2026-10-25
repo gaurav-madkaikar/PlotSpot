@@ -1,0 +1,191 @@
+{
+  "model": "llama3.2:3b",
+  "model_digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+  "initial_module_sha256": "657543b05ec8640c95efbac5272d0d1c6d12063f7d40e0e632aaa1707d3e31bd",
+  "code_changed_during_run": false,
+  "dataset_sha256": "2ecd6385852ba3eb01649b184a8ba16967b3d9985ad0360cefce661b635b7332",
+  "cases": [
+    {
+      "id": "paraphrased-topic",
+      "expected_ready_ids": [],
+      "ready_ids": [],
+      "passed": true,
+      "reviews": [
+        {
+          "candidate_id": "Q1",
+          "novelty": "new",
+          "matches": [],
+          "clarity": "needs_edit",
+          "reason": "The question and answer are paraphrased versions of the saved pair B1.",
+          "clarity_reason": "The question asks for a motivation, but the answer is a specific time frame (3,000 years), which doesn't fit the question type."
+        }
+      ],
+      "error_type": null,
+      "seconds": 3.761
+    },
+    {
+      "id": "same-character-new-fact",
+      "expected_ready_ids": [
+        "Q1"
+      ],
+      "ready_ids": [],
+      "passed": false,
+      "reviews": [
+        {
+          "candidate_id": "Q1",
+          "novelty": "duplicate",
+          "matches": [
+            "B1"
+          ],
+          "clarity": "not_reviewed",
+          "reason": "The same answer value (Twelve) is shared with the saved pair B1 for the question 'What is Louise's profession?'.",
+          "clarity_reason": ""
+        }
+      ],
+      "error_type": null,
+      "seconds": 0.768
+    },
+    {
+      "id": "same-event-different-fact",
+      "expected_ready_ids": [
+        "Q1"
+      ],
+      "ready_ids": [],
+      "passed": false,
+      "reviews": [
+        {
+          "candidate_id": "Q1",
+          "novelty": "duplicate",
+          "matches": [
+            "B1"
+          ],
+          "clarity": "not_reviewed",
+          "reason": "The same fact is tested: the location of the hidden vault.",
+          "clarity_reason": ""
+        }
+      ],
+      "error_type": null,
+      "seconds": 0.617
+    },
+    {
+      "id": "same-answer-different-object",
+      "expected_ready_ids": [
+        "Q1"
+      ],
+      "ready_ids": [],
+      "passed": false,
+      "reviews": [
+        {
+          "candidate_id": "Q1",
+          "novelty": "duplicate",
+          "matches": [
+            "B1"
+          ],
+          "clarity": "not_reviewed",
+          "reason": "Shared answer value 'Blue' for different question types",
+          "clarity_reason": ""
+        }
+      ],
+      "error_type": null,
+      "seconds": 0.594
+    },
+    {
+      "id": "awkward-stem",
+      "expected_ready_ids": [],
+      "ready_ids": [],
+      "passed": true,
+      "reviews": [
+        {
+          "candidate_id": "Q1",
+          "novelty": "uncertain",
+          "matches": [],
+          "clarity": "needs_edit",
+          "reason": "The stem ends with revealed to be but asks how rather than what.",
+          "clarity_reason": ""
+        }
+      ],
+      "error_type": null,
+      "seconds": 0.0
+    },
+    {
+      "id": "within-batch-paraphrase",
+      "expected_ready_ids": [
+        "Q1"
+      ],
+      "ready_ids": [],
+      "passed": false,
+      "reviews": [],
+      "error_type": "ValueError",
+      "seconds": 0.799
+    },
+    {
+      "id": "exact-wording",
+      "expected_ready_ids": [],
+      "ready_ids": [],
+      "passed": true,
+      "reviews": [
+        {
+          "candidate_id": "Q1",
+          "novelty": "duplicate",
+          "matches": [
+            "B1"
+          ],
+          "clarity": "needs_edit",
+          "reason": "The question wording already exists.",
+          "clarity_reason": ""
+        }
+      ],
+      "error_type": null,
+      "seconds": 0.0
+    },
+    {
+      "id": "natural-how-process",
+      "expected_ready_ids": [
+        "Q1"
+      ],
+      "ready_ids": [
+        "Q1"
+      ],
+      "passed": true,
+      "reviews": [
+        {
+          "candidate_id": "Q1",
+          "novelty": "new",
+          "matches": [],
+          "clarity": "clear",
+          "reason": "No matching saved pairs or earlier candidates found.",
+          "clarity_reason": "The question is specific and asks for a method (how something is done), which fits the answer type."
+        }
+      ],
+      "error_type": null,
+      "seconds": 1.066
+    },
+    {
+      "id": "natural-how-many",
+      "expected_ready_ids": [
+        "Q1"
+      ],
+      "ready_ids": [
+        "Q1"
+      ],
+      "passed": true,
+      "reviews": [
+        {
+          "candidate_id": "Q1",
+          "novelty": "new",
+          "matches": [],
+          "clarity": "clear",
+          "reason": "No matching saved pairs or earlier candidates.",
+          "clarity_reason": "The question is specific and asks for a number, which is a clear and specific stem."
+        }
+      ],
+      "error_type": null,
+      "seconds": 1.003
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "total": 9
+  },
+  "scope": "Consumed development role comparison, not a holdout or publication qualification"
+}

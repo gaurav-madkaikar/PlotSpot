@@ -1,0 +1,42 @@
+{
+  "arrival_report_sha256": "5841f4642d383c3889bee7d19ee853a9576aeb38e7bad7f8bbc4706299c43f2a",
+  "background_policy_sha256": "43df65ba65620feb7c163096fa1a066090f32fd8d65443d40a0716f26e8510d6",
+  "publication_approved": false,
+  "method": "Assistant review against exact cached excerpts/full selected paragraphs; consumed integration observations, not independent annotations.",
+  "items": [
+    {
+      "id": "time-arrival:F1",
+      "complete_source_sentence": true,
+      "duplicate_of_prior_wording": false,
+      "eligible_for_review": false,
+      "assistant_inspection": "Withhold: writer invents Roger Deakins where the evidence names Young; critic rejects."
+    },
+    {
+      "id": "time-arrival:F2",
+      "complete_source_sentence": true,
+      "duplicate_of_prior_wording": true,
+      "eligible_for_review": false,
+      "assistant_inspection": "Quote is complete; retrieved context resolves production designer/director roles but omits the director full name. The whole cached article identifies Villeneuve. Do not treat role resolution or memory-based name completion as quote-only support. Duplicate gate withholds this draft."
+    },
+    {
+      "id": "bfi-arrival:F1",
+      "complete_source_sentence": true,
+      "duplicate_of_prior_wording": true,
+      "eligible_for_review": false,
+      "assistant_inspection": "Supported score/sound-design description; withheld by saved-fact duplicate check."
+    },
+    {
+      "id": "bfi-arrival:F2",
+      "complete_source_sentence": true,
+      "duplicate_of_prior_wording": false,
+      "eligible_for_review": true,
+      "assistant_inspection": "Supported vocal techniques, complete quote; eligible draft requiring explicit inspection/publication, not automatically published."
+    }
+  ],
+  "preservation": {
+    "all_ten_saved_collections_unchanged": true,
+    "story_policy_unchanged": true,
+    "story_policy_sha256": "c44712c1c03c1a200c9d8b96f4ad572a0e4ccfd89b2ee52bd02636e381bb4bb8"
+  },
+  "limitations": "Quote completeness does not prove claim support, attribution/context sufficiency, topic novelty or overall pipeline quality. The substring duplicate gate does not establish semantic novelty."
+}

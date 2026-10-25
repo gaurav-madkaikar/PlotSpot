@@ -1,0 +1,732 @@
+{
+  "policy": "quiz-replacement-intent-contracts-v1",
+  "status": "reviewed",
+  "manifest_sha256": "0fc5afaa6e6ffa54a74aa8f79f90b1f703ff70e4b0f7a115ee2653f029d5ce04",
+  "items": [
+    {
+      "question_id": "research-423740447f00-t1-Q2",
+      "focus": "heartbreak leading Forrest to run",
+      "relation": "motivation",
+      "required_concepts": [
+        [
+          "heartbroken",
+          "heartbreak",
+          "Jenny leaves"
+        ],
+        [
+          "cross-country run",
+          "running across the country",
+          "begins to run"
+        ]
+      ],
+      "forbidden_details": [
+        "three years",
+        "over three years"
+      ],
+      "expected_answer_shape": "reason",
+      "difficulty": "general_viewer"
+    },
+    {
+      "question_id": "research-423740447f00-t11-Q2",
+      "focus": "Forrest buying the shrimping boat for Bubba",
+      "relation": "motivation",
+      "required_concepts": [
+        [
+          "promise",
+          "dream"
+        ],
+        [
+          "Bubba"
+        ],
+        [
+          "shrimping boat",
+          "shrimp boat"
+        ]
+      ],
+      "forbidden_details": [],
+      "expected_answer_shape": "reason",
+      "difficulty": "general_viewer"
+    },
+    {
+      "question_id": "research-423740447f00-t6-Q2",
+      "focus": "Forrest learning he is Jenny's son's father",
+      "relation": "relationship",
+      "required_concepts": [
+        [
+          "father",
+          "dad",
+          "parent"
+        ],
+        [
+          "Jenny's son",
+          "their son",
+          "her son"
+        ]
+      ],
+      "forbidden_details": [
+        "Forrest Jr.",
+        "Little Forrest"
+      ],
+      "expected_answer_shape": "relationship",
+      "difficulty": "general_viewer"
+    },
+    {
+      "question_id": "research-423740447f00-t9-Q1",
+      "focus": "Forrest reconnecting after military service",
+      "relation": "consequence",
+      "required_concepts": [
+        [
+          "reconnects",
+          "meets again",
+          "reunites"
+        ],
+        [
+          "Jenny",
+          "Lieutenant Dan"
+        ]
+      ],
+      "forbidden_details": [],
+      "expected_answer_shape": "outcome",
+      "difficulty": "general_viewer"
+    },
+    {
+      "question_id": "research-a97564d0da89-t3-Q3",
+      "focus": "the predicament that begins Chihiro's arc",
+      "relation": "consequence",
+      "required_concepts": [
+        [
+          "parents",
+          "mother and father"
+        ],
+        [
+          "transformed into pigs",
+          "become pigs"
+        ],
+        [
+          "trapped in the spirit world",
+          "world of spirits"
+        ]
+      ],
+      "forbidden_details": [],
+      "expected_answer_shape": "outcome",
+      "difficulty": "general_viewer"
+    },
+    {
+      "question_id": "laus-hideout",
+      "focus": "why Lau's capture matters to the case against the mob",
+      "relation": "role",
+      "required_concepts": [
+        [
+          "Lau"
+        ],
+        [
+          "mob",
+          "organized crime"
+        ],
+        [
+          "evidence",
+          "case",
+          "prosecution"
+        ]
+      ],
+      "forbidden_details": [],
+      "expected_answer_shape": "role",
+      "difficulty": "general_viewer"
+    },
+    {
+      "question_id": "research-4630dcebf37c-t29-Q2",
+      "focus": "the evidence Andy carries out of Shawshank",
+      "relation": "consequence",
+      "required_concepts": [
+        [
+          "ledger",
+          "records",
+          "documents"
+        ],
+        [
+          "Norton",
+          "warden"
+        ],
+        [
+          "corruption",
+          "money laundering",
+          "crimes"
+        ]
+      ],
+      "forbidden_details": [],
+      "expected_answer_shape": "outcome",
+      "difficulty": "general_viewer"
+    },
+    {
+      "question_id": "research-e783e7f83fe0-t24-Q2",
+      "focus": "Bob connecting the support group to Fight Club",
+      "relation": "relationship",
+      "required_concepts": [
+        [
+          "Bob",
+          "Robert Paulsen"
+        ],
+        [
+          "support group"
+        ],
+        [
+          "Fight Club"
+        ]
+      ],
+      "forbidden_details": [],
+      "expected_answer_shape": "relationship",
+      "difficulty": "general_viewer"
+    },
+    {
+      "question_id": "rescue-ship",
+      "focus": "the Nebuchadnezzar's function for Morpheus's crew",
+      "relation": "role",
+      "required_concepts": [
+        [
+          "rescue",
+          "rescues"
+        ],
+        [
+          "base",
+          "houses",
+          "carries"
+        ],
+        [
+          "crew",
+          "Morpheus"
+        ]
+      ],
+      "forbidden_details": [],
+      "expected_answer_shape": "role",
+      "difficulty": "general_viewer"
+    },
+    {
+      "question_id": "research-86a3da84985e-t1-Q1",
+      "focus": "Koons visiting Butch about the family watch",
+      "relation": "motivation",
+      "required_concepts": [
+        [
+          "Koons"
+        ],
+        [
+          "Butch"
+        ],
+        [
+          "watch",
+          "family watch"
+        ],
+        [
+          "return",
+          "explain",
+          "history"
+        ]
+      ],
+      "forbidden_details": [],
+      "expected_answer_shape": "reason",
+      "difficulty": "general_viewer"
+    },
+    {
+      "question_id": "research-6bd2d9de6c13-t1-Q1",
+      "focus": "the rivalry driving The Prestige",
+      "relation": "relationship",
+      "required_concepts": [
+        [
+          "Angier"
+        ],
+        [
+          "Borden"
+        ],
+        [
+          "rivalry",
+          "rivals",
+          "competition"
+        ]
+      ],
+      "forbidden_details": [
+        "London"
+      ],
+      "expected_answer_shape": "relationship",
+      "difficulty": "general_viewer"
+    },
+    {
+      "question_id": "research-6bd2d9de6c13-t10-Q1",
+      "focus": "the effect of Borden's double life on his family",
+      "relation": "consequence",
+      "required_concepts": [
+        [
+          "Borden"
+        ],
+        [
+          "double life",
+          "secret"
+        ],
+        [
+          "Sarah",
+          "Jess",
+          "family"
+        ]
+      ],
+      "forbidden_details": [],
+      "expected_answer_shape": "outcome",
+      "difficulty": "general_viewer"
+    },
+    {
+      "question_id": "research-6bd2d9de6c13-t17-Q2",
+      "focus": "the result of Angier shooting Borden during the trick",
+      "relation": "consequence",
+      "required_concepts": [
+        [
+          "Angier"
+        ],
+        [
+          "Borden"
+        ],
+        [
+          "shooting",
+          "shoots",
+          "pistol trick"
+        ],
+        [
+          "injury",
+          "wounded",
+          "fingers"
+        ]
+      ],
+      "forbidden_details": [
+        "two fingers"
+      ],
+      "expected_answer_shape": "outcome",
+      "difficulty": "general_viewer"
+    },
+    {
+      "question_id": "research-b4c4933bed48-t1-Q2",
+      "focus": "Rafiki's function during Simba's presentation",
+      "relation": "role",
+      "required_concepts": [
+        [
+          "Rafiki"
+        ],
+        [
+          "shaman",
+          "adviser",
+          "advisor"
+        ],
+        [
+          "Simba",
+          "presentation"
+        ]
+      ],
+      "forbidden_details": [],
+      "expected_answer_shape": "role",
+      "difficulty": "general_viewer"
+    },
+    {
+      "question_id": "research-b4c4933bed48-t13-Q3",
+      "focus": "the result of Simba's collapse",
+      "relation": "consequence",
+      "required_concepts": [
+        [
+          "Timon",
+          "Pumbaa"
+        ],
+        [
+          "rescue",
+          "save"
+        ],
+        [
+          "new phase",
+          "new life",
+          "recovery"
+        ]
+      ],
+      "forbidden_details": [],
+      "expected_answer_shape": "outcome",
+      "difficulty": "general_viewer"
+    },
+    {
+      "question_id": "research-a7b58936b8bc-t10-Q3",
+      "focus": "what WALL-E and EVE's reconciliation changes",
+      "relation": "consequence",
+      "required_concepts": [
+        [
+          "WALL-E"
+        ],
+        [
+          "EVE"
+        ],
+        [
+          "reconcile",
+          "reconciliation",
+          "work together"
+        ],
+        [
+          "plant",
+          "protect"
+        ]
+      ],
+      "forbidden_details": [],
+      "expected_answer_shape": "outcome",
+      "difficulty": "general_viewer"
+    },
+    {
+      "question_id": "script-rag-74e285b37039",
+      "focus": "Limbo's lasting effect on Mal",
+      "relation": "consequence",
+      "required_concepts": [
+        [
+          "Mal"
+        ],
+        [
+          "reality is a dream",
+          "dream is reality",
+          "still dreaming"
+        ],
+        [
+          "Limbo"
+        ]
+      ],
+      "forbidden_details": [
+        "fifty years",
+        "50 years"
+      ],
+      "expected_answer_shape": "outcome",
+      "difficulty": "general_viewer"
+    },
+    {
+      "question_id": "research-600f039b5e2b-t1-Q2",
+      "focus": "how Nux's sacrifice helps the escape",
+      "relation": "consequence",
+      "required_concepts": [
+        [
+          "Nux"
+        ],
+        [
+          "sacrifice"
+        ],
+        [
+          "blocks the canyon",
+          "blockade",
+          "canyon"
+        ],
+        [
+          "escape",
+          "get away"
+        ]
+      ],
+      "forbidden_details": [],
+      "expected_answer_shape": "outcome",
+      "difficulty": "general_viewer"
+    },
+    {
+      "question_id": "research-600f039b5e2b-t27-Q1",
+      "focus": "Furiosa discovering the Green Place's fate",
+      "relation": "ending",
+      "required_concepts": [
+        [
+          "Furiosa"
+        ],
+        [
+          "Green Place"
+        ],
+        [
+          "gone",
+          "destroyed",
+          "no longer exists"
+        ],
+        [
+          "survivors",
+          "Vuvalini",
+          "small group"
+        ]
+      ],
+      "forbidden_details": [
+        "seven",
+        "7"
+      ],
+      "expected_answer_shape": "state_change",
+      "difficulty": "general_viewer"
+    },
+    {
+      "question_id": "research-600f039b5e2b-t6-Q2",
+      "focus": "the major consequences of Joe's attack",
+      "relation": "consequence",
+      "required_concepts": [
+        [
+          "Vuvalini"
+        ],
+        [
+          "Toast"
+        ],
+        [
+          "Furiosa"
+        ],
+        [
+          "deaths",
+          "capture",
+          "injury"
+        ]
+      ],
+      "forbidden_details": [
+        "five",
+        "5"
+      ],
+      "expected_answer_shape": "outcome",
+      "difficulty": "general_viewer"
+    },
+    {
+      "question_id": "research-600f039b5e2b-t8-Q1",
+      "focus": "how Joe overtaking the Rig changes the chase",
+      "relation": "consequence",
+      "required_concepts": [
+        [
+          "Joe"
+        ],
+        [
+          "War Rig",
+          "Rig"
+        ],
+        [
+          "overtakes",
+          "catches",
+          "intercepts"
+        ],
+        [
+          "escape",
+          "chase",
+          "threat"
+        ]
+      ],
+      "forbidden_details": [],
+      "expected_answer_shape": "outcome",
+      "difficulty": "general_viewer"
+    },
+    {
+      "question_id": "research-a342008a26db-t1-Q2",
+      "focus": "the central conflict over the will and painting",
+      "relation": "story_rule",
+      "required_concepts": [
+        [
+          "disputed will",
+          "inheritance"
+        ],
+        [
+          "stolen painting",
+          "Boy with Apple"
+        ]
+      ],
+      "forbidden_details": [],
+      "expected_answer_shape": "idea",
+      "difficulty": "general_viewer"
+    },
+    {
+      "question_id": "generated-booby-trap-8bb6c51c5a44",
+      "focus": "Mann's deception damaging the mission",
+      "relation": "consequence",
+      "required_concepts": [
+        [
+          "Mann"
+        ],
+        [
+          "deception",
+          "lie",
+          "false data"
+        ],
+        [
+          "booby trap",
+          "explosion"
+        ],
+        [
+          "mission",
+          "Endurance",
+          "crew"
+        ]
+      ],
+      "forbidden_details": [],
+      "expected_answer_shape": "outcome",
+      "difficulty": "general_viewer"
+    },
+    {
+      "question_id": "generated-colony-cargo-20b1852c1d6c",
+      "focus": "what the embryo cargo makes possible",
+      "relation": "role",
+      "required_concepts": [
+        [
+          "embryos",
+          "embryo cargo"
+        ],
+        [
+          "colony",
+          "colonize",
+          "new world"
+        ],
+        [
+          "humanity",
+          "human race"
+        ]
+      ],
+      "forbidden_details": [
+        "5,000",
+        "5000"
+      ],
+      "expected_answer_shape": "role",
+      "difficulty": "general_viewer"
+    },
+    {
+      "question_id": "generated-slingshot-time-59c997d23d21",
+      "focus": "the time cost of the Gargantua slingshot",
+      "relation": "consequence",
+      "required_concepts": [
+        [
+          "Gargantua",
+          "black hole"
+        ],
+        [
+          "slingshot",
+          "maneuver"
+        ],
+        [
+          "time dilation",
+          "enormous time",
+          "decades"
+        ]
+      ],
+      "forbidden_details": [
+        "twenty-three years",
+        "23 years"
+      ],
+      "expected_answer_shape": "outcome",
+      "difficulty": "general_viewer"
+    },
+    {
+      "question_id": "research-929a17806629-t3-Q2",
+      "focus": "what the planets beyond the wormhole mean for humanity",
+      "relation": "role",
+      "required_concepts": [
+        [
+          "planets"
+        ],
+        [
+          "habitable",
+          "new homes",
+          "new home"
+        ],
+        [
+          "humanity",
+          "human habitation"
+        ]
+      ],
+      "forbidden_details": [
+        "twelve",
+        "dozen"
+      ],
+      "expected_answer_shape": "role",
+      "difficulty": "general_viewer"
+    },
+    {
+      "question_id": "ship-name",
+      "focus": "the Endurance's function in the mission",
+      "relation": "role",
+      "required_concepts": [
+        [
+          "Endurance"
+        ],
+        [
+          "crew",
+          "Cooper",
+          "team"
+        ],
+        [
+          "through the wormhole",
+          "mission",
+          "another system"
+        ]
+      ],
+      "forbidden_details": [],
+      "expected_answer_shape": "role",
+      "difficulty": "general_viewer"
+    },
+    {
+      "question_id": "wormhole-location",
+      "focus": "the wormhole's function in the survival mission",
+      "relation": "role",
+      "required_concepts": [
+        [
+          "wormhole"
+        ],
+        [
+          "route",
+          "path",
+          "gateway"
+        ],
+        [
+          "another galaxy"
+        ],
+        [
+          "survival",
+          "habitable",
+          "new home"
+        ]
+      ],
+      "forbidden_details": [],
+      "expected_answer_shape": "role",
+      "difficulty": "general_viewer"
+    },
+    {
+      "question_id": "ship-count",
+      "focus": "how worldwide arrivals change international cooperation",
+      "relation": "consequence",
+      "required_concepts": [
+        [
+          "countries",
+          "nations"
+        ],
+        [
+          "coordinate",
+          "cooperate",
+          "work together"
+        ],
+        [
+          "share",
+          "interpretations",
+          "language"
+        ]
+      ],
+      "forbidden_details": [
+        "twelve",
+        "12"
+      ],
+      "expected_answer_shape": "outcome",
+      "difficulty": "general_viewer"
+    },
+    {
+      "question_id": "flood-refuge",
+      "focus": "the flood's effect on the Kim family",
+      "relation": "consequence",
+      "required_concepts": [
+        [
+          "Kim family",
+          "Kims",
+          "family"
+        ],
+        [
+          "flood"
+        ],
+        [
+          "displaced",
+          "lose their home",
+          "homeless"
+        ],
+        [
+          "precarity",
+          "poverty",
+          "vulnerability"
+        ]
+      ],
+      "forbidden_details": [
+        "gym"
+      ],
+      "expected_answer_shape": "outcome",
+      "difficulty": "general_viewer"
+    }
+  ]
+}

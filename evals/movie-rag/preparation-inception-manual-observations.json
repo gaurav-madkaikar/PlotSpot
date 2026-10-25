@@ -1,0 +1,25 @@
+{
+  "movie_id": 27205,
+  "run_report": "preparation-inception-ollama.json",
+  "review_scope": "Two specific weaknesses found by manual inspection of retained drafts; not an exhaustive labelled quality evaluation.",
+  "observations": [
+    {
+      "batch": 1,
+      "item_id": "F1",
+      "title": "Syncopy Production",
+      "critic_decision": "accept",
+      "manual_decision": "reject_for_product_quality",
+      "reason": "The producer/company statement is supported, but it is ordinary production metadata rather than the unusual, interesting background detail requested for Facts. Support alone does not establish usefulness."
+    },
+    {
+      "batch": 3,
+      "item_id": "F2",
+      "title": "In-Camera Preference",
+      "critic_decision": "accept",
+      "manual_decision": "needs_revision",
+      "reason": "The draft says computer graphics are 'only useful' to build on physical work. The quote says they are 'very useful' to build on or enhance physical work. This introduces an unsupported restrictive qualifier; remove it and review the resulting claim again."
+    }
+  ],
+  "publication_approved": false,
+  "limitations": "These observations are not held-out results, a general accuracy score, or evidence that the remaining drafts are correct."
+}

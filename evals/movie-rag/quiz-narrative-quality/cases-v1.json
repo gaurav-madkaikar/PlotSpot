@@ -1,0 +1,326 @@
+{
+  "policy": "plotspot-narrative-quiz-eval-v1",
+  "partition": "development",
+  "cases": [
+    {
+      "id": "NQ001",
+      "movie": "The Dark Knight",
+      "question": "Why does Bruce publicly support Harvey Dent as Gotham’s protector?",
+      "expected_focus": "choice_or_motivation",
+      "expected_significance": "central",
+      "expected_eligible": true
+    },
+    {
+      "id": "NQ002",
+      "movie": "The Shawshank Redemption",
+      "question": "What does Andy’s repeated letter-writing eventually change about the prison library?",
+      "expected_focus": "cause_or_consequence",
+      "expected_significance": "supporting",
+      "expected_eligible": true
+    },
+    {
+      "id": "NQ003",
+      "movie": "WALL-E",
+      "question": "How does discovering the plant change the Axiom crew’s future?",
+      "expected_focus": "turning_point",
+      "expected_significance": "central",
+      "expected_eligible": true
+    },
+    {
+      "id": "NQ004",
+      "movie": "The Godfather",
+      "question": "Why does Michael take responsibility for killing Sollozzo and McCluskey?",
+      "expected_focus": "choice_or_motivation",
+      "expected_significance": "central",
+      "expected_eligible": true
+    },
+    {
+      "id": "NQ005",
+      "movie": "The Matrix",
+      "question": "What truth does Neo’s choice to follow Morpheus force him to confront?",
+      "expected_focus": "turning_point",
+      "expected_significance": "central",
+      "expected_eligible": true
+    },
+    {
+      "id": "NQ006",
+      "movie": "Spirited Away",
+      "question": "How does remembering Haku’s identity help Chihiro change their situation?",
+      "expected_focus": "relationship",
+      "expected_significance": "central",
+      "expected_eligible": true
+    },
+    {
+      "id": "NQ007",
+      "movie": "Parasite",
+      "question": "What consequence follows when the former housekeeper returns during the storm?",
+      "expected_focus": "cause_or_consequence",
+      "expected_significance": "central",
+      "expected_eligible": true
+    },
+    {
+      "id": "NQ008",
+      "movie": "Arrival",
+      "question": "How does Louise’s understanding of the alien language change her experience of time?",
+      "expected_focus": "theme_or_concept",
+      "expected_significance": "central",
+      "expected_eligible": true
+    },
+    {
+      "id": "NQ009",
+      "movie": "Interstellar",
+      "question": "Why does Murph’s discovery of Cooper’s message become decisive for humanity?",
+      "expected_focus": "cause_or_consequence",
+      "expected_significance": "central",
+      "expected_eligible": true
+    },
+    {
+      "id": "NQ010",
+      "movie": "Inception",
+      "question": "Why must Cobb confront his projection of Mal before the mission can succeed?",
+      "expected_focus": "choice_or_motivation",
+      "expected_significance": "central",
+      "expected_eligible": true
+    },
+    {
+      "id": "NQ011",
+      "movie": "The Truman Show",
+      "question": "How does Truman’s fear of the sea help keep him inside Seahaven?",
+      "expected_focus": "story_rule",
+      "expected_significance": "central",
+      "expected_eligible": true
+    },
+    {
+      "id": "NQ012",
+      "movie": "Dune",
+      "question": "How does Paul’s growing awareness of possible futures affect his choices?",
+      "expected_focus": "theme_or_concept",
+      "expected_significance": "central",
+      "expected_eligible": true
+    },
+    {
+      "id": "NQ013",
+      "movie": "Forrest Gump",
+      "question": "How does Jenny’s return change the direction of Forrest’s life?",
+      "expected_focus": "relationship",
+      "expected_significance": "central",
+      "expected_eligible": true
+    },
+    {
+      "id": "NQ014",
+      "movie": "Fight Club",
+      "question": "What realization changes the Narrator’s understanding of Tyler?",
+      "expected_focus": "turning_point",
+      "expected_significance": "central",
+      "expected_eligible": true
+    },
+    {
+      "id": "NQ015",
+      "movie": "Mad Max: Fury Road",
+      "question": "Why does the group decide to return to the Citadel instead of crossing the wasteland?",
+      "expected_focus": "choice_or_motivation",
+      "expected_significance": "central",
+      "expected_eligible": true
+    },
+    {
+      "id": "NQ016",
+      "movie": "The Lion King",
+      "question": "How does Simba’s belief about Mufasa’s death shape his decision to leave?",
+      "expected_focus": "cause_or_consequence",
+      "expected_significance": "central",
+      "expected_eligible": true
+    },
+    {
+      "id": "NQ017",
+      "movie": "The Prestige",
+      "question": "How does the rivalry between Angier and Borden change what each is willing to sacrifice?",
+      "expected_focus": "relationship",
+      "expected_significance": "central",
+      "expected_eligible": true
+    },
+    {
+      "id": "NQ018",
+      "movie": "Knives Out",
+      "question": "Why does Marta’s inability to lie affect how she responds to the investigation?",
+      "expected_focus": "story_rule",
+      "expected_significance": "supporting",
+      "expected_eligible": true
+    },
+    {
+      "id": "NQ019",
+      "movie": "The Grand Budapest Hotel",
+      "question": "How does Zero’s loyalty to Gustave influence the prison escape?",
+      "expected_focus": "relationship",
+      "expected_significance": "supporting",
+      "expected_eligible": true
+    },
+    {
+      "id": "NQ020",
+      "movie": "Pulp Fiction",
+      "question": "What change in Jules’s outlook leads him to leave his life as a hitman?",
+      "expected_focus": "ending_or_resolution",
+      "expected_significance": "central",
+      "expected_eligible": true
+    },
+    {
+      "id": "NQ021",
+      "movie": "Arrival",
+      "question": "How many alien spacecraft arrive around Earth?",
+      "expected_focus": "granular_recall",
+      "expected_significance": "granular",
+      "expected_eligible": false
+    },
+    {
+      "id": "NQ022",
+      "movie": "Forrest Gump",
+      "question": "How many years does Forrest spend running across the country?",
+      "expected_focus": "granular_recall",
+      "expected_significance": "granular",
+      "expected_eligible": false
+    },
+    {
+      "id": "NQ023",
+      "movie": "The Matrix",
+      "question": "What is the name of Morpheus’s hovercraft?",
+      "expected_focus": "granular_recall",
+      "expected_significance": "granular",
+      "expected_eligible": false
+    },
+    {
+      "id": "NQ024",
+      "movie": "WALL-E",
+      "question": "Which robot places the plant in the escape pod?",
+      "expected_focus": "granular_recall",
+      "expected_significance": "granular",
+      "expected_eligible": false
+    },
+    {
+      "id": "NQ025",
+      "movie": "The Prestige",
+      "question": "In which city does Angier first perform the transported-man trick?",
+      "expected_focus": "granular_recall",
+      "expected_significance": "granular",
+      "expected_eligible": false
+    },
+    {
+      "id": "NQ026",
+      "movie": "The Lion King",
+      "question": "What is the name of the mandrill at Simba’s presentation?",
+      "expected_focus": "granular_recall",
+      "expected_significance": "granular",
+      "expected_eligible": false
+    },
+    {
+      "id": "NQ027",
+      "movie": "Spirited Away",
+      "question": "What is the name of the bathhouse boiler-room worker?",
+      "expected_focus": "granular_recall",
+      "expected_significance": "granular",
+      "expected_eligible": false
+    },
+    {
+      "id": "NQ028",
+      "movie": "The Grand Budapest Hotel",
+      "question": "Which painting is left to Gustave?",
+      "expected_focus": "granular_recall",
+      "expected_significance": "granular",
+      "expected_eligible": false
+    },
+    {
+      "id": "NQ029",
+      "movie": "Dune",
+      "question": "Which planet is Duke Leto ordered to govern?",
+      "expected_focus": "granular_recall",
+      "expected_significance": "granular",
+      "expected_eligible": false
+    },
+    {
+      "id": "NQ030",
+      "movie": "Pulp Fiction",
+      "question": "Who visits young Butch in his apartment?",
+      "expected_focus": "granular_recall",
+      "expected_significance": "granular",
+      "expected_eligible": false
+    },
+    {
+      "id": "NQ031",
+      "movie": "The Godfather",
+      "question": "At which type of restaurant is the gun hidden?",
+      "expected_focus": "granular_recall",
+      "expected_significance": "granular",
+      "expected_eligible": false
+    },
+    {
+      "id": "NQ032",
+      "movie": "Fight Club",
+      "question": "Where do the club members first gather?",
+      "expected_focus": "granular_recall",
+      "expected_significance": "granular",
+      "expected_eligible": false
+    },
+    {
+      "id": "NQ033",
+      "movie": "Parasite",
+      "question": "What object does Min-hyuk give the Kim family?",
+      "expected_focus": "granular_recall",
+      "expected_significance": "granular",
+      "expected_eligible": false
+    },
+    {
+      "id": "NQ034",
+      "movie": "Knives Out",
+      "question": "What is the name of Harlan’s publishing company?",
+      "expected_focus": "granular_recall",
+      "expected_significance": "granular",
+      "expected_eligible": false
+    },
+    {
+      "id": "NQ035",
+      "movie": "The Dark Knight",
+      "question": "What model of vehicle does Bruce use during the chase?",
+      "expected_focus": "granular_recall",
+      "expected_significance": "granular",
+      "expected_eligible": false
+    },
+    {
+      "id": "NQ036",
+      "movie": "Interstellar",
+      "question": "What is the designation of the robot accompanying Cooper?",
+      "expected_focus": "granular_recall",
+      "expected_significance": "granular",
+      "expected_eligible": false
+    },
+    {
+      "id": "NQ037",
+      "movie": "The Shawshank Redemption",
+      "question": "How many years does Andy spend digging the tunnel?",
+      "expected_focus": "granular_recall",
+      "expected_significance": "granular",
+      "expected_eligible": false
+    },
+    {
+      "id": "NQ038",
+      "movie": "Mad Max: Fury Road",
+      "question": "What is the exact name of the war rig’s steering mechanism?",
+      "expected_focus": "granular_recall",
+      "expected_significance": "granular",
+      "expected_eligible": false
+    },
+    {
+      "id": "NQ039",
+      "movie": "The Truman Show",
+      "question": "What numbered exit does Truman pass on his drive?",
+      "expected_focus": "granular_recall",
+      "expected_significance": "granular",
+      "expected_eligible": false
+    },
+    {
+      "id": "NQ040",
+      "movie": "Inception",
+      "question": "What exact number appears on the hotel-room door?",
+      "expected_focus": "granular_recall",
+      "expected_significance": "granular",
+      "expected_eligible": false
+    }
+  ]
+}

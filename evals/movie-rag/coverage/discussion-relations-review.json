@@ -1,0 +1,320 @@
+{
+  "created_at_utc": "2026-10-11T22:02:14.561712+00:00",
+  "reviewer": "assistant source inspection; not independent human review",
+  "scope": "Seventeen unchanged consumed Wikipedia development cases; frozen Lesson 59 support baseline; same sources, original chunks/retrieval and local model digests",
+  "inputs": [
+    {
+      "path": "evals/movie-rag/coverage/dark-knight-discussion-relations-v2.json",
+      "sha256": "90cae62de8b6f3b6932520d490e84023f923c6961ec682a281b57b667842d008"
+    },
+    {
+      "path": "evals/movie-rag/coverage/discussion-transfer-155-relations-v2.json",
+      "sha256": "8ff1eaf8bf04d92419a7e687e466ce60d2b6dda9a4ccb6cfbfe5d703abf2fd71"
+    },
+    {
+      "path": "evals/movie-rag/coverage/discussion-transfer-329865-relations-v2.json",
+      "sha256": "9bd635915d4e768fb1466101d22fe94d974235758b422840e9db00288cc72ece"
+    },
+    {
+      "path": "evals/movie-rag/coverage/discussion-transfer-546554-relations-v2.json",
+      "sha256": "cce63ff599db2d31c1b621be318b2309dfa751fdceaa188e23b41d6ad15f3a8a"
+    }
+  ],
+  "metrics": {
+    "candidate": {
+      "automated_passed": 17,
+      "total": 17,
+      "annotated_supporting_hit_at_3": 14,
+      "answerable_cases": 14,
+      "expected_abstentions_passed": 3,
+      "expected_abstentions": 3,
+      "generation_errors": 0,
+      "observed_median_seconds": 13.494
+    },
+    "baseline": {
+      "automated_passed": 16,
+      "total": 17,
+      "annotated_supporting_hit_at_3": 14,
+      "answerable_cases": 14,
+      "expected_abstentions_passed": 3,
+      "expected_abstentions": 3,
+      "generation_errors": 0,
+      "observed_median_seconds": 8.336
+    }
+  },
+  "support_controls": {
+    "path": "evals/grounding/support-relations-v6.json",
+    "sha256": "b41b1cfd028574186e6427553139af4fc4a462739b461444b42ee98c7702522c",
+    "passed": 20,
+    "total": 20,
+    "false_acceptances": 0,
+    "false_rejections": 0,
+    "original_twelve_expectations_unchanged": true,
+    "new_controls": 8,
+    "independent_holdout": false
+  },
+  "code_stable_in_all_movie_reports": true,
+  "assistant_review": [
+    {
+      "id": "composers",
+      "automated_pass": true,
+      "failures_retained": [],
+      "citation_ids": [
+        "902071f36d1e1c1ae43ce3ae813ef0da_075",
+        "902071f36d1e1c1ae43ce3ae813ef0da_076"
+      ],
+      "identity_context": [
+        {
+          "quote": "Main article: The Dark Knight (soundtrack) James Newton Howard and Hans Zimmer \u2013 Why So Serious?",
+          "citation_ids": [
+            "902071f36d1e1c1ae43ce3ae813ef0da_075"
+          ]
+        }
+      ],
+      "supplemental_context": null,
+      "note": "Final answer agrees with inspected source statements; some selected quotes/context are unnecessary. No independent human review is claimed."
+    },
+    {
+      "id": "working-title",
+      "automated_pass": true,
+      "failures_retained": [],
+      "citation_ids": [
+        "902071f36d1e1c1ae43ce3ae813ef0da_051",
+        "902071f36d1e1c1ae43ce3ae813ef0da_056",
+        "902071f36d1e1c1ae43ce3ae813ef0da_050"
+      ],
+      "identity_context": [
+        {
+          "quote": "See also: Stunts of The Dark Knight A photograph of the Chicago skyline behind Navy Pier.",
+          "citation_ids": [
+            "902071f36d1e1c1ae43ce3ae813ef0da_050"
+          ]
+        }
+      ],
+      "supplemental_context": null,
+      "note": "Final answer agrees with inspected source statements; some selected quotes/context are unnecessary. No independent human review is claimed."
+    },
+    {
+      "id": "dents-decoy",
+      "automated_pass": true,
+      "failures_retained": [],
+      "citation_ids": [
+        "902071f36d1e1c1ae43ce3ae813ef0da_012"
+      ],
+      "identity_context": [],
+      "supplemental_context": null,
+      "note": "Final answer agrees with inspected source statements; some selected quotes/context are unnecessary. No independent human review is claimed."
+    },
+    {
+      "id": "ending-legacy",
+      "automated_pass": true,
+      "failures_retained": [],
+      "citation_ids": [
+        "902071f36d1e1c1ae43ce3ae813ef0da_015",
+        "902071f36d1e1c1ae43ce3ae813ef0da_016"
+      ],
+      "identity_context": [],
+      "supplemental_context": null,
+      "note": "Final answer agrees with inspected source statements; some selected quotes/context are unnecessary. No independent human review is claimed."
+    },
+    {
+      "id": "missing-private-diary",
+      "automated_pass": true,
+      "failures_retained": [],
+      "citation_ids": [],
+      "identity_context": [],
+      "supplemental_context": null,
+      "note": "Appropriate missing-data abstention."
+    },
+    {
+      "id": "ferry-event",
+      "automated_pass": true,
+      "failures_retained": [],
+      "citation_ids": [
+        "902071f36d1e1c1ae43ce3ae813ef0da_014",
+        "902071f36d1e1c1ae43ce3ae813ef0da_015"
+      ],
+      "identity_context": [],
+      "supplemental_context": null,
+      "note": "Final answer agrees with inspected source statements; some selected quotes/context are unnecessary. No independent human review is claimed."
+    },
+    {
+      "id": "makeup-craft",
+      "automated_pass": true,
+      "failures_retained": [],
+      "citation_ids": [
+        "902071f36d1e1c1ae43ce3ae813ef0da_073",
+        "902071f36d1e1c1ae43ce3ae813ef0da_074"
+      ],
+      "identity_context": [],
+      "supplemental_context": {
+        "quote": "John Caglione Jr designed Joker's \"organic\" makeup to look as though it had been worn for days; this idea was partly based on more of Bacon's works.",
+        "citation_ids": [
+          "902071f36d1e1c1ae43ce3ae813ef0da_073"
+        ]
+      },
+      "note": "Technique remains supported by the complete sentence spanning 073/074. Supplement also supplies the generated full artist name from its exact offered source sentence; original citation coverage retained."
+    },
+    {
+      "id": "ending-analysis",
+      "automated_pass": true,
+      "failures_retained": [],
+      "citation_ids": [
+        "902071f36d1e1c1ae43ce3ae813ef0da_144",
+        "902071f36d1e1c1ae43ce3ae813ef0da_145"
+      ],
+      "identity_context": [
+        {
+          "quote": "Although Batman holds to his morals and does not kill the Joker, he is forced to break his code by pushing Dent to his death to save an innocent person.",
+          "citation_ids": [
+            "902071f36d1e1c1ae43ce3ae813ef0da_144"
+          ]
+        }
+      ],
+      "supplemental_context": null,
+      "note": "Final answer agrees with inspected source statements; some selected quotes/context are unnecessary. No independent human review is claimed."
+    },
+    {
+      "id": "missing-rating",
+      "automated_pass": true,
+      "failures_retained": [],
+      "citation_ids": [],
+      "identity_context": [],
+      "supplemental_context": null,
+      "note": "Appropriate missing-data abstention."
+    },
+    {
+      "id": "future-visions",
+      "automated_pass": true,
+      "failures_retained": [],
+      "citation_ids": [
+        "89f7bcf5fc9b8c405c2e6775e296c5d6_007",
+        "89f7bcf5fc9b8c405c2e6775e296c5d6_011",
+        "89f7bcf5fc9b8c405c2e6775e296c5d6_006"
+      ],
+      "identity_context": [
+        {
+          "quote": "Linguist Louise Banks's daughter Hannah dies at the age of twelve from an incurable illness.",
+          "citation_ids": [
+            "89f7bcf5fc9b8c405c2e6775e296c5d6_006"
+          ]
+        }
+      ],
+      "supplemental_context": {
+        "quote": "Banks's visions of her daughter are revealed to be premonitions; her daughter will not be born until sometime in the future.",
+        "citation_ids": [
+          "89f7bcf5fc9b8c405c2e6775e296c5d6_011"
+        ]
+      },
+      "note": "Repaired: surname/name context plus exact premonitions/unborn-daughter supplemental sentence. Final citation union includes 006, 007 and 011. Old baseline abstains; its failed grade is retained."
+    },
+    {
+      "id": "future-help",
+      "automated_pass": true,
+      "failures_retained": [],
+      "citation_ids": [
+        "89f7bcf5fc9b8c405c2e6775e296c5d6_011"
+      ],
+      "identity_context": [],
+      "supplemental_context": null,
+      "note": "Final answer agrees with inspected source statements; some selected quotes/context are unnecessary. No independent human review is claimed."
+    },
+    {
+      "id": "original-score",
+      "automated_pass": true,
+      "failures_retained": [],
+      "citation_ids": [
+        "89f7bcf5fc9b8c405c2e6775e296c5d6_033"
+      ],
+      "identity_context": [],
+      "supplemental_context": null,
+      "note": "Final answer agrees with inspected source statements; some selected quotes/context are unnecessary. No independent human review is claimed."
+    },
+    {
+      "id": "missing-private-talk",
+      "automated_pass": true,
+      "failures_retained": [],
+      "citation_ids": [],
+      "identity_context": [],
+      "supplemental_context": null,
+      "note": "Appropriate missing-data abstention."
+    },
+    {
+      "id": "false-alibi",
+      "automated_pass": true,
+      "failures_retained": [],
+      "citation_ids": [
+        "1179572245185c9f871574a7a54cc205_007",
+        "1179572245185c9f871574a7a54cc205_006"
+      ],
+      "identity_context": [
+        {
+          "quote": "Unbeknownst to Blanc, Harlan's nurse Marta Cabrera believes she injected Harlan with a lethal dose of morphine after mixing up his bedtime medications the night of the party.",
+          "citation_ids": [
+            "1179572245185c9f871574a7a54cc205_006",
+            "1179572245185c9f871574a7a54cc205_007"
+          ]
+        }
+      ],
+      "supplemental_context": null,
+      "note": "Final answer agrees with inspected source statements; some selected quotes/context are unnecessary. No independent human review is claimed."
+    },
+    {
+      "id": "medicine-recognition",
+      "automated_pass": true,
+      "failures_retained": [],
+      "citation_ids": [
+        "1179572245185c9f871574a7a54cc205_011"
+      ],
+      "identity_context": [],
+      "supplemental_context": null,
+      "note": "Final answer agrees with inspected source statements; some selected quotes/context are unnecessary. No independent human review is claimed."
+    },
+    {
+      "id": "stage-knife",
+      "automated_pass": true,
+      "failures_retained": [],
+      "citation_ids": [
+        "1179572245185c9f871574a7a54cc205_013"
+      ],
+      "identity_context": [],
+      "supplemental_context": null,
+      "note": "Final answer agrees with inspected source statements; some selected quotes/context are unnecessary. No independent human review is claimed."
+    },
+    {
+      "id": "title-origin",
+      "automated_pass": true,
+      "failures_retained": [],
+      "citation_ids": [
+        "1179572245185c9f871574a7a54cc205_022"
+      ],
+      "identity_context": [],
+      "supplemental_context": null,
+      "note": "Final answer agrees with inspected source statements; some selected quotes/context are unnecessary. No independent human review is claimed."
+    }
+  ],
+  "observed_limits": [
+    "The name matcher also adds context for film titles; it is a lexical heuristic, not a validated entity resolver.",
+    "Arrival final review derives the direct premonitions sentence but selects the original three quotes in its own evidence_quotes. That subset is not self-contained support; final citations preserve all review-input provenance, including the direct sentence and name context.",
+    "Some rejected controls produce Insufficient evidence in evidence_answer even when an event is stated; binary verdict grading does not measure extraction quality.",
+    "Some passing movie answers retain extra contexts/citations. Exact membership and a supported verdict are not full entailment proof.",
+    "The supplemental selector requires two missing literal terms and can miss paraphrases or retrieve incidental text; review remains necessary.",
+    "Consumed assistant-labelled development data, not production qualification or a representative safety/holdout benchmark.",
+    "First relations-v1 comparison retained the Arrival failure; its early timing observations overlapped seven browser workers and three browser checks timed out. Rerunning browser checks alone with one worker passed all sixteen. Final v2 inference did not overlap browser test workers.",
+    "Observed timing includes local model loading/swapping and the larger structured output; it is not isolated reviewer latency or multi-user throughput.",
+    "Existing script policies and saved banks are separate; no automatic publication is qualified."
+  ],
+  "qualification": false,
+  "live_verification": {
+    "path": "evals/movie-rag/coverage/discussion-relations-live.json",
+    "sha256": "9027c1005281afec9c5abc887cbf8d6463a4a01ac0790740415c865240f94a59",
+    "http_cases_passed": 4,
+    "ui_verified": true,
+    "saved_content": {
+      "saved_banks_unchanged": true,
+      "count": 11,
+      "script_policy_unchanged": true,
+      "inception_more_questions_gate": true
+    }
+  }
+}

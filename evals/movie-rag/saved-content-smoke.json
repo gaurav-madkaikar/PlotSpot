@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-10",
+  "mocked": false,
+  "quizItems": 11,
+  "scoredQuestions": 10,
+  "facts": 5,
+  "scoreVerified": "10/10",
+  "replayVerified": "0/10",
+  "identicalOnReload": true,
+  "preparedAt": "2026-10-10T13:11:54.068426+00:00",
+  "version": "interstellar-reviewed-v2",
+  "overflow": false,
+  "pageErrors": []
+}

@@ -1,0 +1,134 @@
+{
+  "date": "2026-10-10",
+  "mocked": false,
+  "quiz": {
+    "status": "ready",
+    "message": "Your story round is ready.",
+    "items": [
+      {
+        "id": "dust-coordinates",
+        "question": "Where do the dust patterns in Murph's room lead Cooper and Murph in Interstellar?",
+        "kind": "plot",
+        "options": [
+          "A secret NASA facility",
+          "An abandoned school",
+          "A launch site on Mars",
+          "Mann's planet"
+        ],
+        "correct_index": 0,
+        "explanation": "to a secret NASA facility headed by Professor John Brand",
+        "citations": [
+          {
+            "passage_id": "e75a7bb9fce05a8541de5c8596eb11b7_006",
+            "source_label": "English Wikipedia contributors: Interstellar (film)",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379200125",
+            "revision": "enwiki-1379200125-plaintext-v1",
+            "excerpt": "wed former NASA test pilot, works as a farmer and raises his children, Murphy \"Murph\" and Tom, with his father-in-law Donald. Following a dust storm, Cooper and Murph discover that dust patterns in Murph's room, which she had attributed to a ghost, result from a gravitational anomaly. Cooper recognizes the patterns as binary code specifying coordinates, which lead him and Murph to a secret NASA facility headed by Professor John Brand.\n\nBrand explains that 48 years earlier, a wormhole appeared near Saturn, apparently placed there by an unknown intelligence, leading to a system in another galaxy"
+          }
+        ]
+      },
+      {
+        "id": "mann-motive",
+        "question": "Why did Dr. Mann falsify his planet's data in Interstellar?",
+        "kind": "plot",
+        "options": [
+          "To prove the gravity equation",
+          "To make Earth habitable",
+          "In the hope of being rescued",
+          "To stop time dilation"
+        ],
+        "correct_index": 2,
+        "explanation": "rescue",
+        "citations": [
+          {
+            "passage_id": "e75a7bb9fce05a8541de5c8596eb11b7_011",
+            "source_label": "English Wikipedia contributors: Interstellar (film)",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379200125",
+            "revision": "enwiki-1379200125-plaintext-v1",
+            "excerpt": "measurements from inside a black hole.\n\nOn Mann's planet, they awaken him from cryostasis, and he assures them that colonization is possible, despite the extreme environment. During a scouting mission, Mann attempts to kill Cooper and reveals that he falsified his data in the hope of being rescued. He steals Cooper's lander and heads for the Endurance. A booby trap set by Mann kills Romilly, but Brand rescues Cooper with the other lander and they race back to the Endurance. Mann is killed in a failed manual docking operation, badly damaging the Endurance, but Cooper is able to regain control o"
+          }
+        ]
+      },
+      {
+        "id": "watch-message",
+        "question": "How does Cooper send the data TARS collected to Murph from the tesseract in Interstellar?",
+        "kind": "ending",
+        "options": [
+          "Through a radio call",
+          "Using Morse code through her watch's second hand",
+          "By sending a video recording",
+          "By rewriting her notebooks"
+        ],
+        "correct_index": 1,
+        "explanation": "Using Morse code, he manipulates the second hand of her wristwatch to transmit the data TARS collected",
+        "citations": [
+          {
+            "passage_id": "e75a7bb9fce05a8541de5c8596eb11b7_013",
+            "source_label": "English Wikipedia contributors: Interstellar (film)",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379200125",
+            "revision": "enwiki-1379200125-plaintext-v1",
+            "excerpt": " a tesseract made up of infinite copies of Murph's bedroom across moments in time. Cooper deduces that the tesseract was constructed by advanced humans in the far future, and realizes that he had always been Murph's \"ghost\". Using Morse code, he manipulates the second hand of her wristwatch to transmit the data TARS collected, enabling Murph to complete the gravity equation's solution.\n\nThe tesseract, its purpose fulfilled, collapses, ejecting Cooper and TARS. Cooper wakes up on a station orbiting Saturn. He reunites with Murph, now elderly and on her deathbed, who tells him to seek out Brand."
+          }
+        ]
+      },
+      {
+        "id": "watch-meaning",
+        "question": "What might the watch represent when Cooper reaches Murph across time?",
+        "kind": "interpretation",
+        "options": [
+          "A reminder of lost time",
+          "Their enduring connection across time",
+          "A symbol of scientific curiosity",
+          "The burden of Cooper's promise to return"
+        ],
+        "correct_index": 1,
+        "explanation": "One supported reading is that the watch represents Cooper and Murph's enduring connection across time: it becomes the channel through which they work together. Other readings, including lost time or a promise to return, are possible. This is an interpretation, not a confirmed hidden message or a scored answer.\n\nScene evidence: Using Morse code, he manipulates the second hand of her wristwatch to transmit the data TARS collected",
+        "citations": [
+          {
+            "passage_id": "e75a7bb9fce05a8541de5c8596eb11b7_013",
+            "source_label": "English Wikipedia contributors: Interstellar (film)",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379200125",
+            "revision": "enwiki-1379200125-plaintext-v1",
+            "excerpt": " a tesseract made up of infinite copies of Murph's bedroom across moments in time. Cooper deduces that the tesseract was constructed by advanced humans in the far future, and realizes that he had always been Murph's \"ghost\". Using Morse code, he manipulates the second hand of her wristwatch to transmit the data TARS collected, enabling Murph to complete the gravity equation's solution.\n\nThe tesseract, its purpose fulfilled, collapses, ejecting Cooper and TARS. Cooper wakes up on a station orbiting Saturn. He reunites with Murph, now elderly and on her deathbed, who tells him to seek out Brand."
+          }
+        ]
+      }
+    ]
+  },
+  "facts": {
+    "status": "ready",
+    "message": "Production background from Wikipedia; additional web sources are not connected yet.",
+    "items": [
+      {
+        "id": "real-cornfield",
+        "title": "A cornfield grown for the camera",
+        "text": "Production designer Nathan Crowley planted 500 acres (200 hectares) of real corn for the film’s cornfield scene.",
+        "citations": [
+          {
+            "passage_id": "e75a7bb9fce05a8541de5c8596eb11b7_032",
+            "source_label": "English Wikipedia contributors: Interstellar (film)",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379200125",
+            "revision": "enwiki-1379200125-plaintext-v1",
+            "excerpt": " Iceland was used as a filming location for Interstellar, doubling for Mann's planet.\n\nThe film's principal photography was scheduled to last four months.[35] It began on August 6, 2013, in the province of Alberta, Canada.[26] Towns in Alberta where shooting took place included Nanton, Longview, Lethbridge, Fort Macleod, and Okotoks. In Okotoks, filming took place at the Seaman Stadium and the Olde Town Plaza.[41] For a cornfield scene, production designer Nathan Crowley planted 500 acres (200 ha) of corn that would be destroyed in an apocalyptic dust storm scene,[17] intended to be similar to"
+          }
+        ]
+      },
+      {
+        "id": "secret-title",
+        "title": "A secret title with a family connection",
+        "text": "Interstellar was filmed under the secret name Flora’s Letter. Flora is one of Christopher Nolan and producer Emma Thomas’s four children.",
+        "citations": [
+          {
+            "passage_id": "e75a7bb9fce05a8541de5c8596eb11b7_031",
+            "source_label": "English Wikipedia contributors: Interstellar (film)",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379200125",
+            "revision": "enwiki-1379200125-plaintext-v1",
+            "excerpt": "n for keeping details of his productions secret, strove to ensure secrecy for Interstellar. Writing for The Wall Street Journal, Ben Fritz stated, \"The famously secretive filmmaker has gone to extreme lengths to guard the script to ... Interstellar, just as he did with the blockbuster Dark Knight trilogy.\"[40] As one security measure, Interstellar was filmed under the name Flora's Letter,[41] Flora being one of Nolan's four children with producer Emma Thomas.[19]\n\nThe Svínafellsjökull glacier in Iceland was used as a filming location for Interstellar, doubling for Mann's planet.\n\nThe film's pr"
+          }
+        ]
+      }
+    ]
+  },
+  "overflow": false,
+  "pageErrors": []
+}

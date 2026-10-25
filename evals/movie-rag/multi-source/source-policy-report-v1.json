@@ -1,0 +1,80 @@
+{
+  "dataset": "movie-source-policy-v1",
+  "case_count": 12,
+  "passed": 12,
+  "scope": "Authored offline acquisition/routing cases; not live search quality or model accuracy.",
+  "cases": [
+    {
+      "id": "story_full_page",
+      "expected": "accept",
+      "actual": "accept",
+      "passed": true
+    },
+    {
+      "id": "production_full_page",
+      "expected": "accept",
+      "actual": "accept",
+      "passed": true
+    },
+    {
+      "id": "wrong_film",
+      "expected": "reject",
+      "actual": "reject",
+      "passed": true
+    },
+    {
+      "id": "wrong_remake",
+      "expected": "reject",
+      "actual": "reject",
+      "passed": true
+    },
+    {
+      "id": "thin_page",
+      "expected": "reject",
+      "actual": "reject",
+      "passed": true
+    },
+    {
+      "id": "no_identity_heading",
+      "expected": "reject",
+      "actual": "reject",
+      "passed": true
+    },
+    {
+      "id": "source_injection",
+      "expected": "reject",
+      "actual": "reject",
+      "passed": true
+    },
+    {
+      "id": "production_only_not_quiz",
+      "expected": "reject",
+      "actual": "reject",
+      "passed": true
+    },
+    {
+      "id": "plot_only_not_facts",
+      "expected": "reject",
+      "actual": "reject",
+      "passed": true
+    },
+    {
+      "id": "mixed_plot_not_production",
+      "expected": "reject",
+      "actual": "reject",
+      "passed": true
+    },
+    {
+      "id": "scripts_not_facts",
+      "expected": "reject",
+      "actual": "reject",
+      "passed": true
+    },
+    {
+      "id": "literal_ip_target",
+      "expected": "reject",
+      "actual": "reject",
+      "passed": true
+    }
+  ]
+}

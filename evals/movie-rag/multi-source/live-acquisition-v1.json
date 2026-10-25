@@ -1,0 +1,109 @@
+{
+  "trace": {
+    "branches": [
+      {
+        "provider": "duckduckgo",
+        "purpose": "story",
+        "requested_web_pages": 5,
+        "accepted_web_pages": 5,
+        "degraded": false,
+        "errors": [
+          {
+            "rank": 5,
+            "reason": "SourceRejected"
+          }
+        ],
+        "cache": "miss",
+        "policy": "movie-public-source-v1"
+      },
+      {
+        "provider": "duckduckgo",
+        "purpose": "background",
+        "requested_web_pages": 5,
+        "accepted_web_pages": 0,
+        "degraded": true,
+        "errors": [
+          {
+            "rank": 0,
+            "reason": "search_unavailable"
+          }
+        ],
+        "cache": "miss",
+        "policy": "movie-public-source-v1"
+      },
+      {
+        "script": "available_draft",
+        "parts": 3,
+        "released_film_verified": false
+      }
+    ],
+    "source_count": 8,
+    "degraded": true
+  },
+  "sources": [
+    {
+      "url": "https://filmlookup.com/movies/interstellar/ending-explained/",
+      "id": "web-157336-s-c6ebbb84179f184cb5a1",
+      "characters": 28074,
+      "categories": [
+        "plot"
+      ]
+    },
+    {
+      "url": "https://plotspoiler.com/title/103/movie-2014-interstellar",
+      "id": "web-157336-s-87475fae3acf49c4ba83",
+      "characters": 18844,
+      "categories": [
+        "plot"
+      ]
+    },
+    {
+      "url": "https://filmlookup.com/movies/interstellar/plot-summary/",
+      "id": "web-157336-s-4922cff331344d8fb999",
+      "characters": 3626,
+      "categories": [
+        "plot"
+      ]
+    },
+    {
+      "url": "https://www.taylortailored.co.uk/film-summaries/interstellar-film-summary",
+      "id": "web-157336-s-7e4ba04161922de2309a",
+      "characters": 20123,
+      "categories": [
+        "plot"
+      ]
+    },
+    {
+      "url": "https://movieexplainedhub.com/interstellar-movie-explained/",
+      "id": "web-157336-s-9ac9a20114de63ef741a",
+      "characters": 5778,
+      "categories": [
+        "plot"
+      ]
+    },
+    {
+      "url": "https://imsdb.com/scripts/Interstellar.html",
+      "id": "imsdb-157336-part-0",
+      "characters": 77104,
+      "categories": [
+        "plot"
+      ]
+    },
+    {
+      "url": "https://imsdb.com/scripts/Interstellar.html",
+      "id": "imsdb-157336-part-1",
+      "characters": 79956,
+      "categories": [
+        "plot"
+      ]
+    },
+    {
+      "url": "https://imsdb.com/scripts/Interstellar.html",
+      "id": "imsdb-157336-part-2",
+      "characters": 43382,
+      "categories": [
+        "plot"
+      ]
+    }
+  ]
+}

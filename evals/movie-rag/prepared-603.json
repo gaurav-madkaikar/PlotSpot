@@ -1,0 +1,12 @@
+{
+  "movie_id": 603,
+  "state": "published",
+  "version": "reviewed-multi-movie-v1",
+  "source_revision": "enwiki-1379344781-sections-v3-body",
+  "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379344781",
+  "facts": 5,
+  "scored_questions": 10,
+  "reflections": 0,
+  "method": "authored-reviewed-bank",
+  "model_calls": 0
+}

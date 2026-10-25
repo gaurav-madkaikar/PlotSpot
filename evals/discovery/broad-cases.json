@@ -1,0 +1,500 @@
+{
+  "version": 1,
+  "scope": "Manually authored development labels, saved before execution. Relevant IDs are examples, not exhaustive relevance judgments. Theme/mood labels reflect human interpretation, not just word overlap. Existing known regressions are included. Not held-out.",
+  "catalog_fingerprint": "b76010e769d9f4410a0420ea878a615357e253cc86c67cba3a71b3ab28ee8691",
+  "cases": [
+    {
+      "id": "plot-01",
+      "group": "plot",
+      "request": {
+        "query": "a father trying to get home through deep space"
+      },
+      "relevant_ids": [
+        157336
+      ],
+      "label_basis": "Interstellar follows explorers through a wormhole; father/return framing is a story-level label."
+    },
+    {
+      "id": "plot-02",
+      "group": "plot",
+      "request": {
+        "query": "people using a wormhole to explore distant worlds"
+      },
+      "relevant_ids": [
+        157336
+      ],
+      "label_basis": "Interstellar synopsis explicitly mentions a wormhole and exploration."
+    },
+    {
+      "id": "plot-03",
+      "group": "plot",
+      "request": {
+        "query": "first contact where language matters more than fighting"
+      },
+      "relevant_ids": [
+        329865
+      ],
+      "label_basis": "Arrival concerns a linguist determining alien intentions."
+    },
+    {
+      "id": "plot-04",
+      "group": "plot",
+      "request": {
+        "query": "understanding visitors from another planet"
+      },
+      "relevant_ids": [
+        329865
+      ],
+      "label_basis": "Arrival concerns arriving alien craft and communication."
+    },
+    {
+      "id": "plot-05",
+      "group": "plot",
+      "request": {
+        "query": "reality is artificial and controlled by machines"
+      },
+      "relevant_ids": [
+        603
+      ],
+      "label_basis": "The Matrix concerns a hacker resisting ruling computers."
+    },
+    {
+      "id": "plot-06",
+      "group": "plot",
+      "request": {
+        "query": "stealing secrets from dreams"
+      },
+      "relevant_ids": [
+        27205
+      ],
+      "label_basis": "Inception concerns theft inside the subconscious."
+    },
+    {
+      "id": "plot-07",
+      "group": "plot",
+      "request": {
+        "query": "a man whose everyday life is secretly being filmed"
+      },
+      "relevant_ids": [
+        37165
+      ],
+      "label_basis": "The Truman Show synopsis describes a staged life observed by an audience."
+    },
+    {
+      "id": "plot-08",
+      "group": "plot",
+      "request": {
+        "query": "a detective solving a death in a rich household"
+      },
+      "relevant_ids": [
+        546554
+      ],
+      "label_basis": "Knives Out concerns a detective investigating a novelist found dead at his estate."
+    },
+    {
+      "id": "plot-09",
+      "group": "plot",
+      "request": {
+        "query": "a poor family entangled with a wealthy household"
+      },
+      "relevant_ids": [
+        496243
+      ],
+      "label_basis": "Parasite synopsis contrasts unemployed Ki-taek and the wealthy Parks."
+    },
+    {
+      "id": "plot-10",
+      "group": "plot",
+      "request": {
+        "query": "a girl trapped in a world of spirits"
+      },
+      "relevant_ids": [
+        129
+      ],
+      "label_basis": "Spirited Away synopsis directly describes this premise."
+    },
+    {
+      "id": "plot-11",
+      "group": "plot",
+      "request": {
+        "query": "a concierge and his young friend in a European hotel"
+      },
+      "relevant_ids": [
+        120467
+      ],
+      "label_basis": "The Grand Budapest Hotel synopsis describes the concierge and protege."
+    },
+    {
+      "id": "plot-12",
+      "group": "plot",
+      "request": {
+        "query": "political conflict on a desert planet"
+      },
+      "relevant_ids": [
+        438631
+      ],
+      "label_basis": "Dune story-level label: dangerous desert planet and control of its resource."
+    },
+    {
+      "id": "plot-13",
+      "group": "plot",
+      "request": {
+        "query": "a prisoner finding friendship and hope"
+      },
+      "relevant_ids": [
+        278
+      ],
+      "label_basis": "The Shawshank Redemption follows Andy and fellow prisoner Red."
+    },
+    {
+      "id": "plot-14",
+      "group": "plot",
+      "request": {
+        "query": "a criminal dynasty led by an Italian American family"
+      },
+      "relevant_ids": [
+        238,
+        240
+      ],
+      "label_basis": "The Godfather films chronicle the Corleone crime family."
+    },
+    {
+      "id": "plot-15",
+      "group": "plot",
+      "request": {
+        "query": "a photographer watching neighbors suspects a murder"
+      },
+      "relevant_ids": [
+        567
+      ],
+      "label_basis": "Rear Window synopsis explicitly describes this premise."
+    },
+    {
+      "id": "plot-16",
+      "group": "plot",
+      "request": {
+        "query": "a pianist surviving Nazi occupied Warsaw"
+      },
+      "relevant_ids": [
+        423
+      ],
+      "label_basis": "The Pianist synopsis directly identifies these events."
+    },
+    {
+      "id": "plot-17",
+      "group": "plot",
+      "request": {
+        "query": "a man seeking revenge after years of imprisonment"
+      },
+      "relevant_ids": [
+        670
+      ],
+      "label_basis": "Oldboy synopsis describes fifteen years of captivity and revenge."
+    },
+    {
+      "id": "plot-18",
+      "group": "plot",
+      "request": {
+        "query": "bounty hunters pursuing a wanted bandit"
+      },
+      "relevant_ids": [
+        938
+      ],
+      "label_basis": "For a Few Dollars More synopsis identifies this chase."
+    },
+    {
+      "id": "theme-01",
+      "group": "theme",
+      "request": {
+        "query": "hero movies"
+      },
+      "relevant_ids": [
+        155,
+        324857,
+        569094,
+        299534,
+        299536
+      ],
+      "label_basis": "Previously reported regression; labelled superhero examples."
+    },
+    {
+      "id": "theme-02",
+      "group": "theme",
+      "request": {
+        "query": "stories about masked crime fighters"
+      },
+      "relevant_ids": [
+        155,
+        324857,
+        569094
+      ],
+      "label_basis": "Batman and Spider-Man are masked crime fighters; theme label, not literal synopsis wording."
+    },
+    {
+      "id": "theme-03",
+      "group": "theme",
+      "request": {
+        "query": "mind bending movies about questioning reality"
+      },
+      "relevant_ids": [
+        603,
+        37165,
+        27205
+      ],
+      "label_basis": "Human theme labels for artificial/staged reality and dreams."
+    },
+    {
+      "id": "theme-04",
+      "group": "theme",
+      "request": {
+        "query": "films exploring class divisions"
+      },
+      "relevant_ids": [
+        496243
+      ],
+      "label_basis": "Parasite is labelled for economic/class inequality."
+    },
+    {
+      "id": "theme-05",
+      "group": "theme",
+      "request": {
+        "query": "movies about surveillance and losing privacy"
+      },
+      "relevant_ids": [
+        37165
+      ],
+      "label_basis": "The Truman Show depicts a life monitored by an audience."
+    },
+    {
+      "id": "mood-01",
+      "group": "mood",
+      "request": {
+        "query": "uplifting stories about hope in prison"
+      },
+      "relevant_ids": [
+        278
+      ],
+      "label_basis": "Human mood label for The Shawshank Redemption; not inferred by the evaluator."
+    },
+    {
+      "id": "mood-02",
+      "group": "mood",
+      "request": {
+        "query": "a tense mystery with a brilliant detective"
+      },
+      "relevant_ids": [
+        546554
+      ],
+      "label_basis": "Knives Out is labelled a detective mystery."
+    },
+    {
+      "id": "mood-03",
+      "group": "mood",
+      "request": {
+        "query": "something dreamlike and magical"
+      },
+      "relevant_ids": [
+        129
+      ],
+      "label_basis": "Human mood label for Spirited Away."
+    },
+    {
+      "id": "mood-04",
+      "group": "mood",
+      "request": {
+        "query": "a heartbreaking wartime story about children"
+      },
+      "relevant_ids": [
+        12477
+      ],
+      "label_basis": "Grave of the Fireflies follows orphaned siblings during WWII."
+    },
+    {
+      "id": "mood-05",
+      "group": "mood",
+      "request": {
+        "query": "a quirky charming hotel adventure"
+      },
+      "relevant_ids": [
+        120467
+      ],
+      "label_basis": "Human tone label for The Grand Budapest Hotel."
+    },
+    {
+      "id": "constraint-01",
+      "group": "constraint",
+      "request": {
+        "query": "science fiction about communicating with aliens"
+      },
+      "relevant_ids": [
+        329865
+      ],
+      "label_basis": "Arrival matches the premise and is Science Fiction.",
+      "required_genres": [
+        "Science Fiction"
+      ]
+    },
+    {
+      "id": "constraint-02",
+      "group": "constraint",
+      "request": {
+        "query": "a Korean story about a poor and wealthy family",
+        "language": "Korean"
+      },
+      "relevant_ids": [
+        496243
+      ],
+      "label_basis": "Parasite is Korean and describes both families."
+    },
+    {
+      "id": "constraint-03",
+      "group": "constraint",
+      "request": {
+        "query": "movies about a staged television life",
+        "max_runtime": 120
+      },
+      "relevant_ids": [
+        37165
+      ],
+      "label_basis": "The Truman Show matches premise and runtime."
+    },
+    {
+      "id": "constraint-04",
+      "group": "constraint",
+      "request": {
+        "query": "hero movies",
+        "genre": "Animation"
+      },
+      "relevant_ids": [
+        324857,
+        569094
+      ],
+      "label_basis": "Spider-Verse films are animated superheroes."
+    },
+    {
+      "id": "constraint-05",
+      "group": "constraint",
+      "request": {
+        "query": "horror without romance"
+      },
+      "relevant_ids": [
+        539
+      ],
+      "label_basis": "Psycho is Horror and not Romance.",
+      "required_genres": [
+        "Horror"
+      ],
+      "excluded_genres": [
+        "Romance"
+      ]
+    },
+    {
+      "id": "constraint-06",
+      "group": "constraint",
+      "request": {
+        "query": "romantic comedy"
+      },
+      "relevant_ids": [
+        13,
+        19404
+      ],
+      "label_basis": "Forrest Gump and Dilwale Dulhania Le Jayenge have both Romance and Comedy metadata.",
+      "required_genres": [
+        "Romance",
+        "Comedy"
+      ]
+    },
+    {
+      "id": "identity-01",
+      "group": "identity",
+      "request": {
+        "query": "Interstellar"
+      },
+      "relevant_ids": [
+        157336
+      ],
+      "label_basis": "Known saved title/cast or its misspelling."
+    },
+    {
+      "id": "identity-02",
+      "group": "identity",
+      "request": {
+        "query": "Amy Adams"
+      },
+      "relevant_ids": [
+        329865
+      ],
+      "label_basis": "Known saved title/cast or its misspelling."
+    },
+    {
+      "id": "identity-03",
+      "group": "identity",
+      "request": {
+        "query": "Intersteler"
+      },
+      "relevant_ids": [
+        157336
+      ],
+      "label_basis": "Known saved title/cast or its misspelling."
+    },
+    {
+      "id": "identity-04",
+      "group": "identity",
+      "request": {
+        "query": "Movies starring Amy Adams"
+      },
+      "relevant_ids": [
+        329865
+      ],
+      "label_basis": "Known saved title/cast or its misspelling."
+    },
+    {
+      "id": "empty-01",
+      "group": "empty",
+      "request": {
+        "query": "quantum crochet recipes for sourdough"
+      },
+      "relevant_ids": [],
+      "label_basis": "Unsupported request or incompatible explicit filters; expect abstention."
+    },
+    {
+      "id": "empty-02",
+      "group": "empty",
+      "request": {
+        "query": "superhero movies about knitting"
+      },
+      "relevant_ids": [],
+      "label_basis": "Unsupported request or incompatible explicit filters; expect abstention."
+    },
+    {
+      "id": "empty-03",
+      "group": "empty",
+      "request": {
+        "query": "romance",
+        "language": "Klingon"
+      },
+      "relevant_ids": [],
+      "label_basis": "Unsupported request or incompatible explicit filters; expect abstention."
+    },
+    {
+      "id": "empty-04",
+      "group": "empty",
+      "request": {
+        "query": "Interstellar",
+        "max_runtime": 120
+      },
+      "relevant_ids": [],
+      "label_basis": "Unsupported request or incompatible explicit filters; expect abstention."
+    },
+    {
+      "id": "empty-05",
+      "group": "empty",
+      "request": {
+        "query": "hero movies",
+        "genre": "Documentary"
+      },
+      "relevant_ids": [],
+      "label_basis": "Unsupported request or incompatible explicit filters; expect abstention."
+    }
+  ]
+}

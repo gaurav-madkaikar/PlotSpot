@@ -1,0 +1,362 @@
+{
+  "checked_at": "2026-10-11T13:52:02.861470+00:00",
+  "method": "assistant-authored-source-reviewed-starter-banks",
+  "ollama_calls": 0,
+  "existing_six_collections_unchanged": true,
+  "registered_movies": 10,
+  "complete_saved_movies": 10,
+  "new_movies": [
+    {
+      "movie_id": 496243,
+      "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1377908085",
+      "source_revision": "enwiki-1377908085-sections-v3-body",
+      "source_text_sha256": "1c2b1ff65a572e07dca5ed771f535e1ca2cee1339d7b8e0e3d50002492ab591a",
+      "bank_sha256": "926f47b3c331e3381e925fb4d1e6b716303c03f80f99cc5c897a93ae3b323657",
+      "content_version": "reviewed-multi-movie-v2",
+      "facts": 5,
+      "scored_questions": 10,
+      "repeated_reads_equal": true,
+      "spoilers_off_hides_content": true,
+      "review": {
+        "all_fifteen_items_inspected_against_exact_excerpts_and_surrounding_source": true,
+        "selected_answers_and_distractors_reviewed": true,
+        "story_questions_only": true,
+        "production_background_facts_only": true
+      },
+      "quiz_items": [
+        {
+          "id": "scholars-gift",
+          "answer": "A scholar\u2019s rock",
+          "passage_id": "8bd749281d919ac372ebeefb63b5885f"
+        },
+        {
+          "id": "first-position",
+          "answer": "English tutor",
+          "passage_id": "1b667a145f2f120e508d373f3e740eeb"
+        },
+        {
+          "id": "jessicas-role",
+          "answer": "An art therapist",
+          "passage_id": "92905b1be8021fd033aa82312d472a04"
+        },
+        {
+          "id": "allergy-scheme",
+          "answer": "Peaches",
+          "passage_id": "ea9a6638e55e6e4108f2215e0e889003"
+        },
+        {
+          "id": "bunker-refuge",
+          "answer": "To hide from loan sharks",
+          "passage_id": "124163809b29ce2a26d7bdea66e29942"
+        },
+        {
+          "id": "exposure-threat",
+          "answer": "A video revealing their deception",
+          "passage_id": "af76431ff937d00df16213d63287ac80"
+        },
+        {
+          "id": "flood-refuge",
+          "answer": "A gymnasium",
+          "passage_id": "8db74fc3bd07c873f7bf2379d4b44ed2"
+        },
+        {
+          "id": "rock-reversal",
+          "answer": "The scholar\u2019s rock",
+          "passage_id": "b1527f51d979ff4d3ca1fe37ed6df78c"
+        },
+        {
+          "id": "light-message",
+          "answer": "A Morse-code light message",
+          "passage_id": "18f2098ae8f81fa5abefc88c263b98af"
+        },
+        {
+          "id": "final-promise",
+          "answer": "To earn enough to buy the house",
+          "passage_id": "507307ca2735f292810d77c1ab8657a1"
+        }
+      ]
+    },
+    {
+      "movie_id": 129,
+      "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1378275530",
+      "source_revision": "enwiki-1378275530-sections-v3-body",
+      "source_text_sha256": "c0acf6fa6344fd946c53eaf0cfee09a548ef69a40a6b534fa9765deb7b8fd159",
+      "bank_sha256": "d2716db759b4d40b7e5f8a38c85af78b3564eaec110798205eb7a8aadd343d79",
+      "content_version": "reviewed-multi-movie-v2",
+      "facts": 5,
+      "scored_questions": 10,
+      "repeated_reads_equal": true,
+      "spoilers_off_hides_content": true,
+      "review": {
+        "all_fifteen_items_inspected_against_exact_excerpts_and_surrounding_source": true,
+        "selected_answers_and_distractors_reviewed": true,
+        "story_questions_only": true,
+        "production_background_facts_only": true
+      },
+      "quiz_items": [
+        {
+          "id": "parents-transformed",
+          "answer": "They turn into pigs",
+          "passage_id": "d181dab5d8168e60afd2ce45842f9f84"
+        },
+        {
+          "id": "boiler-worker",
+          "answer": "Kamaji",
+          "passage_id": "b7539666ab55c73adede960434f3a97f"
+        },
+        {
+          "id": "name-control",
+          "answer": "By taking their names",
+          "passage_id": "f252ad2548299cddb7957395ec4fae2d"
+        },
+        {
+          "id": "first-customer",
+          "answer": "A polluted river spirit",
+          "passage_id": "2d5123c5807f3b460ae4342163f0a0b7"
+        },
+        {
+          "id": "no-face-payment",
+          "answer": "Gold",
+          "passage_id": "d0f6383b54130cda657be4b181191e79"
+        },
+        {
+          "id": "stolen-object",
+          "answer": "A magic golden seal",
+          "passage_id": "138caecc4e0cab94196a7cc5028bed65"
+        },
+        {
+          "id": "twin-relationship",
+          "answer": "She is her twin sister",
+          "passage_id": "b47d5239178f2372ac037f2f9bf7e8c5"
+        },
+        {
+          "id": "no-face-home",
+          "answer": "With Zeniba",
+          "passage_id": "275de495dedec8d4c012ac4754b923da"
+        },
+        {
+          "id": "hakus-identity",
+          "answer": "The spirit of the Kohaku River",
+          "passage_id": "a3ac0b41118d716299fcbc850978d92a"
+        },
+        {
+          "id": "final-test",
+          "answer": "None of the pigs are her parents",
+          "passage_id": "d1d84ffd82891beab3887a757b7fb75e"
+        }
+      ]
+    },
+    {
+      "movie_id": 120467,
+      "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379203663",
+      "source_revision": "enwiki-1379203663-sections-v3-body",
+      "source_text_sha256": "cfc65609ab54f416127953e37b3d97a689f05ab7bdd2894e413e2e383c671921",
+      "bank_sha256": "4c5a8588158c0feec48cad1b9878ce124bc4bb9846048a55101dcacd188afd83",
+      "content_version": "reviewed-multi-movie-v2",
+      "facts": 5,
+      "scored_questions": 10,
+      "repeated_reads_equal": true,
+      "spoilers_off_hides_content": true,
+      "review": {
+        "all_fifteen_items_inspected_against_exact_excerpts_and_surrounding_source": true,
+        "selected_answers_and_distractors_reviewed": true,
+        "story_questions_only": true,
+        "production_background_facts_only": true
+      },
+      "quiz_items": [
+        {
+          "id": "zero-first-job",
+          "answer": "Lobby boy",
+          "passage_id": "ff6b7f31d261f790fa5de1951dd16d9f"
+        },
+        {
+          "id": "famous-bequest",
+          "answer": "Boy with Apple",
+          "passage_id": "e3c2c5925b8c58a409949715edf8690c"
+        },
+        {
+          "id": "escape-tools",
+          "answer": "Inside Agatha\u2019s pastries",
+          "passage_id": "d2976cbfb46aa7259effa871e876ed8a"
+        },
+        {
+          "id": "concierge-network",
+          "answer": "The Society of the Crossed Keys",
+          "passage_id": "6730b2a04e0ff9a42991a05258b38ce3"
+        },
+        {
+          "id": "false-deposition",
+          "answer": "Dmitri",
+          "passage_id": "92b062a8dd4100251b963a479a8b2def"
+        },
+        {
+          "id": "cliff-rescue",
+          "answer": "He pushes Jopling off the cliff",
+          "passage_id": "d2720dadae7521d542b5bc8c6ddb5812"
+        },
+        {
+          "id": "hotel-conversion",
+          "answer": "A military headquarters",
+          "passage_id": "b9663eed65abb8dc99fea2cf3662be01"
+        },
+        {
+          "id": "pastry-landing",
+          "answer": "A van full of pastries",
+          "passage_id": "deaf20795299e2221a57532b80a8e5cf"
+        },
+        {
+          "id": "second-will",
+          "answer": "On the back of Boy with Apple",
+          "passage_id": "7349fe283ea0cb868ed606e8039c3354"
+        },
+        {
+          "id": "hotel-memory",
+          "answer": "To remember Agatha",
+          "passage_id": "488c32bf1ff904228ee08f3fe1ee69a3"
+        }
+      ]
+    },
+    {
+      "movie_id": 438631,
+      "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379707655",
+      "source_revision": "enwiki-1379707655-sections-v3-body",
+      "source_text_sha256": "c07a1abf2a2671f48514b2843f12e3d52d8619ce26ebb99d00075c265cbeba2f",
+      "bank_sha256": "6cff4cde730e1a50c8443836bd26737e2cdbf150cd00e4cac35d21e07d847633",
+      "content_version": "reviewed-multi-movie-v2",
+      "facts": 5,
+      "scored_questions": 10,
+      "repeated_reads_equal": true,
+      "spoilers_off_hides_content": true,
+      "review": {
+        "all_fifteen_items_inspected_against_exact_excerpts_and_surrounding_source": true,
+        "selected_answers_and_distractors_reviewed": true,
+        "story_questions_only": true,
+        "production_background_facts_only": true
+      },
+      "quiz_items": [
+        {
+          "id": "new-fief",
+          "answer": "Arrakis",
+          "passage_id": "17c4ad78300e774735299265098edee3"
+        },
+        {
+          "id": "spice-purpose",
+          "answer": "It enables interstellar travel",
+          "passage_id": "f80553fe53c0e8509bc8af083f6d8549"
+        },
+        {
+          "id": "jessicas-defiance",
+          "answer": "She bore a son rather than the instructed daughter",
+          "passage_id": "063b577ad309919f0e7f8c49ec5c96d4"
+        },
+        {
+          "id": "box-test",
+          "answer": "His humanity and impulse control",
+          "passage_id": "bf367749773601b250ebec3f5c985b68"
+        },
+        {
+          "id": "fremen-chief",
+          "answer": "Stilgar",
+          "passage_id": "3f8b8458d249bae078fa622fb9f9a1a6"
+        },
+        {
+          "id": "yuehs-bargain",
+          "answer": "The return of his imprisoned wife",
+          "passage_id": "c8ce17d1cec5e35c2d8e235c99f67376"
+        },
+        {
+          "id": "poison-capsule",
+          "answer": "In a replacement tooth",
+          "passage_id": "702dc79ce4db6b1b8187fd8933e6a783"
+        },
+        {
+          "id": "desert-captors",
+          "answer": "She uses the Voice",
+          "passage_id": "0febf22eaed0224aed3935437efa981c"
+        },
+        {
+          "id": "idahos-sacrifice",
+          "answer": "Duncan Idaho",
+          "passage_id": "c9cc0b6b12ddc78266f61ebe3e1a1d56"
+        },
+        {
+          "id": "ritual-duel",
+          "answer": "Jamis",
+          "passage_id": "d06f6674140bda49dd5bb0e5ac0dbafc"
+        }
+      ]
+    }
+  ],
+  "inventory": [
+    {
+      "movie_id": 27205,
+      "title": "Inception",
+      "facts": 5,
+      "scored_questions": 11,
+      "unscored_reflections": 0
+    },
+    {
+      "movie_id": 157336,
+      "title": "Interstellar (film)",
+      "facts": 6,
+      "scored_questions": 14,
+      "unscored_reflections": 1
+    },
+    {
+      "movie_id": 329865,
+      "title": "Arrival (film)",
+      "facts": 7,
+      "scored_questions": 10,
+      "unscored_reflections": 0
+    },
+    {
+      "movie_id": 603,
+      "title": "The Matrix",
+      "facts": 5,
+      "scored_questions": 10,
+      "unscored_reflections": 0
+    },
+    {
+      "movie_id": 546554,
+      "title": "Knives Out",
+      "facts": 5,
+      "scored_questions": 10,
+      "unscored_reflections": 0
+    },
+    {
+      "movie_id": 496243,
+      "title": "Parasite (2019 film)",
+      "facts": 5,
+      "scored_questions": 10,
+      "unscored_reflections": 0
+    },
+    {
+      "movie_id": 129,
+      "title": "Spirited Away",
+      "facts": 5,
+      "scored_questions": 10,
+      "unscored_reflections": 0
+    },
+    {
+      "movie_id": 37165,
+      "title": "The Truman Show",
+      "facts": 5,
+      "scored_questions": 10,
+      "unscored_reflections": 0
+    },
+    {
+      "movie_id": 120467,
+      "title": "The Grand Budapest Hotel",
+      "facts": 5,
+      "scored_questions": 10,
+      "unscored_reflections": 0
+    },
+    {
+      "movie_id": 438631,
+      "title": "Dune (2021 film)",
+      "facts": 5,
+      "scored_questions": 10,
+      "unscored_reflections": 0
+    }
+  ]
+}

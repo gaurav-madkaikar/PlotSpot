@@ -1,0 +1,29 @@
+{
+  "job_id": "f283ad4acdf04365b659217f6d84d44f",
+  "report_sha256": "16ea75ba5ec62293c1d8da8d5ffc4fa49b99e48bd029b843d61411b9d1c2a608",
+  "export_sha256": "694ead563f6cb1397ccf20cbd7f08cda8b8bf0573c00771d007e17d2ba47a5a1",
+  "selection_sha256": "ecd83b714b69395205744273bd70b9f0492b84828f114dfacb35dafc68e3d232",
+  "review_kind": "assistant_source_review",
+  "human_review": false,
+  "selected_ids": [
+    "t1-Q1",
+    "t2-F1",
+    "t5-Q1"
+  ],
+  "retained_candidate_reviews": {
+    "t1-Q1": "Selected: the entire sentence names Banks visiting the Montana craft alone; one option matches. No saved question tests this location/action.",
+    "t2-F1": "Selected: selected TIME sentence explicitly attributes dread outside the spacecraft to Young drawing on Ivanow work; names and purpose occur in the quote. Existing Turrell/score facts cover different craft details.",
+    "t5-Q1": "Selected: complete sentence explicitly names the satellite phone taken from the table. Existing Shang question tests words recited, rather than the device.",
+    "t3-Q2": "Withheld: selected sentence says follow suit without identifying Shang or the ultimatum; question depends on uncited preceding context.",
+    "t4-F2": "Withheld: body closely follows source phrasing and heading is generic. Do not publish just to fill the fact quota.",
+    "t8-Q1": "Withheld: selected sentence attributes mahjong to China, while question attributes it to Banks. Automated acceptance is wrong.",
+    "t8-Q2": "Withheld: Above which location does Weber recruit sounds like a location of recruitment; the source locates the craft. Ambiguous wording."
+  },
+  "bank_sha256_before": "d72fc3cb263ade8c01b1450d99bfcd75524aa7fc6b2b7c991d3eb8f946291f1f",
+  "facts_before": 7,
+  "questions_before": 10,
+  "workflow_sha256": "cb6903cf1ee087cd3c05bd15685ff533443e6dde86d9ffbbae19260774d33a68",
+  "script_policy_sha256": "c44712c1c03c1a200c9d8b96f4ad572a0e4ccfd89b2ee52bd02636e381bb4bb8",
+  "inception_more_questions_gate": true,
+  "limits": "Automated readiness has false accepts. This is explicit assistant source review of one run, not independent human or production qualification."
+}

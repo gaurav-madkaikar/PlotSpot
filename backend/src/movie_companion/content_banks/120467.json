@@ -1,0 +1,212 @@
+{
+  "quiz": [
+    {
+      "id": "zero-first-job",
+      "question": "What is Zero’s first job at the Grand Budapest Hotel?",
+      "options": [
+        "Night manager",
+        "Lobby boy",
+        "Pastry chef",
+        "Head porter"
+      ],
+      "correct_index": 1,
+      "explanation": "Zero begins as a lobby boy working for the concierge, Monsieur Gustave.",
+      "evidence_markers": [
+        "work as a lobby boy"
+      ],
+      "kind": "plot"
+    },
+    {
+      "id": "famous-bequest",
+      "question": "Which painting does Madame D. leave to Gustave?",
+      "options": [
+        "Girl with a Pearl Earring",
+        "The Blue Boy",
+        "Boy with Apple",
+        "The Young Gardener"
+      ],
+      "correct_index": 2,
+      "explanation": "Madame D.’s will leaves Gustave the Renaissance painting Boy with Apple.",
+      "evidence_markers": [
+        "Boy with Apple, to Gustave"
+      ],
+      "kind": "plot"
+    },
+    {
+      "id": "escape-tools",
+      "question": "How are digging tools smuggled to Gustave in prison?",
+      "options": [
+        "Inside Agatha’s pastries",
+        "In a laundry basket",
+        "Inside a hollow book",
+        "In a suitcase lining"
+      ],
+      "correct_index": 0,
+      "explanation": "Zero hides the tools inside pastries made by Agatha, helping Gustave and the other prisoners escape.",
+      "evidence_markers": [
+        "digging tools inside pastries",
+        "others dig their way out"
+      ],
+      "kind": "plot"
+    },
+    {
+      "id": "concierge-network",
+      "question": "Which group helps Gustave and Zero investigate Madame D.’s death?",
+      "options": [
+        "The Hotel Keepers’ League",
+        "The Guild of Porters",
+        "The Zubrowkan Guard",
+        "The Society of the Crossed Keys"
+      ],
+      "correct_index": 3,
+      "explanation": "The Society of the Crossed Keys is a fraternity of concierges that helps their investigation.",
+      "evidence_markers": [
+        "fraternity of concierges known as the Society of the Crossed Keys"
+      ],
+      "kind": "plot"
+    },
+    {
+      "id": "false-deposition",
+      "question": "Who pressured Serge to frame Gustave?",
+      "options": [
+        "Jopling",
+        "Dmitri",
+        "Kovacs",
+        "Zero"
+      ],
+      "correct_index": 1,
+      "explanation": "Dmitri pressured Serge to implicate Gustave and hide evidence of his own involvement.",
+      "evidence_markers": [
+        "Serge was pressured to frame Gustave by Dmitri"
+      ],
+      "kind": "plot"
+    },
+    {
+      "id": "cliff-rescue",
+      "question": "How does Zero save Gustave during the cliffside chase?",
+      "options": [
+        "He lowers a rope",
+        "He calls the police",
+        "He pushes Jopling off the cliff",
+        "He catches Gustave in a cable car"
+      ],
+      "correct_index": 2,
+      "explanation": "Zero pushes Jopling off the cliff, rescuing Gustave.",
+      "evidence_markers": [
+        "Zero rescues Gustave by pushing Jopling off the cliff"
+      ],
+      "kind": "plot"
+    },
+    {
+      "id": "hotel-conversion",
+      "question": "What has the hotel become when Gustave, Zero and Agatha return?",
+      "options": [
+        "A military headquarters",
+        "A hospital",
+        "A boarding school",
+        "An abandoned museum"
+      ],
+      "correct_index": 0,
+      "explanation": "They find the Grand Budapest converted into a military headquarters.",
+      "evidence_markers": [
+        "converted into a military headquarters"
+      ],
+      "kind": "plot"
+    },
+    {
+      "id": "pastry-landing",
+      "question": "What breaks Zero and Agatha’s fall from the balcony?",
+      "options": [
+        "A snowbank",
+        "A laundry cart",
+        "A courtyard fountain",
+        "A van full of pastries"
+      ],
+      "correct_index": 3,
+      "explanation": "They land safely in a van full of pastries.",
+      "evidence_markers": [
+        "falling, safely, into a van full of pastries"
+      ],
+      "kind": "plot"
+    },
+    {
+      "id": "second-will",
+      "question": "Where is Madame D.’s missing second will found?",
+      "options": [
+        "In Gustave’s prison cell",
+        "On the back of Boy with Apple",
+        "Inside Agatha’s recipe book",
+        "In Kovacs’s briefcase"
+      ],
+      "correct_index": 1,
+      "explanation": "The second will is attached to the back of the painting, making Gustave the beneficiary.",
+      "evidence_markers": [
+        "second will",
+        "attached to the back of Boy with Apple"
+      ],
+      "kind": "ending"
+    },
+    {
+      "id": "hotel-memory",
+      "question": "Why does Zero keep the hotel after inheriting Gustave’s fortune?",
+      "options": [
+        "To reopen the prison",
+        "To recover the painting",
+        "To remember Agatha",
+        "To honor Madame D.’s son"
+      ],
+      "correct_index": 2,
+      "explanation": "Zero retains the hotel in memory of Agatha, who died with their infant son.",
+      "evidence_markers": [
+        "retains the hotel in memory of Agatha"
+      ],
+      "kind": "ending"
+    }
+  ],
+  "facts": [
+    {
+      "id": "department-lobby",
+      "title": "A department store became the lobby",
+      "text": "The hotel lobby was filmed in the atrium of the vacant Görlitzer Warenhaus department store. Its upper floors held production offices and equipment storage.",
+      "evidence_markers": [
+        "vacant twentieth-century Görlitzer Warenhaus",
+        "top two floors"
+      ]
+    },
+    {
+      "id": "changing-frame",
+      "title": "The frame changes with the era",
+      "text": "Three aspect ratios help distinguish the story’s time periods. The 1932 scenes use the nearly square Academy ratio.",
+      "evidence_markers": [
+        "three aspect ratios",
+        "Academy ratio for scenes set in 1932"
+      ]
+    },
+    {
+      "id": "tiny-windows",
+      "title": "Real lobby photos lit a miniature hotel",
+      "text": "The miniature hotel’s windows contained boxes lined with photos of the Warenhaus set, creating the illusion of light inside.",
+      "evidence_markers": [
+        "Photos of the Warenhaus set were then glued in boxes installed to each window"
+      ]
+    },
+    {
+      "id": "painted-prop",
+      "title": "Boy with Apple took four months",
+      "text": "English painter Michael Taylor spent four months creating Boy with Apple, drawing inspiration from Renaissance portraiture.",
+      "evidence_markers": [
+        "four-month-long process by English painter Michael Taylor",
+        "Renaissance portraiture"
+      ]
+    },
+    {
+      "id": "historic-palette",
+      "title": "An alpine archive shaped the colors",
+      "text": "Production designer Adam Stockhausen researched the Library of Congress’s photochrom collection of alpine resorts for the film’s visual palette.",
+      "evidence_markers": [
+        "Library of Congress's photochrom print collection of alpine resorts",
+        "visual palette"
+      ]
+    }
+  ]
+}

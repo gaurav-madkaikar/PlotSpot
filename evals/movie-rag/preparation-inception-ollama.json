@@ -1,0 +1,1367 @@
+{
+  "movie_id": 27205,
+  "generator_model": "qwen3.5:9b",
+  "critic_model": "qwen3.5:9b",
+  "source_manifest": {
+    "source_id": "enwiki-23270459",
+    "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379453144",
+    "revision": "enwiki-1379453144-sections-v3-body",
+    "text_sha256": "4b2420424320cbf6116e8911c454dd9cebf291d0d4266a66bc264a7055e35dd8"
+  },
+  "targets": {
+    "facts": 5,
+    "questions": 10
+  },
+  "facts": [
+    {
+      "title": "Syncopy Production",
+      "text": "Emma Thomas and Christopher Nolan produced the film through their company Syncopy.",
+      "passage_id": "P4",
+      "evidence_quote": "Emma Thomas and Christopher Nolan answer questions about Inception. The husband-and-wife team produced the film through their company Syncopy.",
+      "origin": {
+        "movie_id": 27205,
+        "source_id": "enwiki-23270459",
+        "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379453144",
+        "revision": "enwiki-1379453144-sections-v3-body",
+        "section_title": "Development",
+        "section_category": "production",
+        "start": 12958,
+        "end": 13134
+      },
+      "batch": 1,
+      "critic_reason": "The proposal title 'Syncopy Production' accurately reflects the text. The evidence quote explicitly states Emma Thomas and Christopher Nolan produced the film through Syncopy, matching the factual claim without invention or contradiction."
+    },
+    {
+      "title": "Helicopter Opening",
+      "text": "Principal photography started in Tokyo with a scene depicting Saito hiring Cobb during a flight over the city.",
+      "passage_id": "P3",
+      "evidence_quote": "Principal photography began in Tokyo on June 19, 2009, with the scene in which Saito first hires Cobb during a helicopter flight over the city.[26][11]: 13",
+      "origin": {
+        "movie_id": 27205,
+        "source_id": "enwiki-23270459",
+        "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379453144",
+        "revision": "enwiki-1379453144-sections-v3-body",
+        "section_title": "Locations and sets",
+        "section_category": "production",
+        "start": 15943,
+        "end": 16098
+      },
+      "batch": 2,
+      "critic_reason": "The proposal text accurately reflects the evidence quote regarding the start of principal photography in Tokyo and the specific scene involving Saito hiring Cobb during a helicopter flight."
+    },
+    {
+      "title": "Practical Miniatures Over CGI",
+      "text": "Visual effects supervisor Paul Franklin built miniatures of the mountain fortress set and then blew it up for the film.",
+      "passage_id": "P3",
+      "evidence_quote": "To this end, visual effects supervisor Paul Franklin built miniatures of the mountain fortress set and then blew it up for the film.",
+      "origin": {
+        "movie_id": 27205,
+        "source_id": "enwiki-23270459",
+        "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379453144",
+        "revision": "enwiki-1379453144-sections-v3-body",
+        "section_title": "Visual effects",
+        "section_category": "effects",
+        "start": 24914,
+        "end": 25499
+      },
+      "batch": 3,
+      "critic_reason": "The proposal title is specific and useful. The text accurately reflects the evidence quote regarding Paul Franklin building and blowing up miniatures, supported by sufficient background context about practical effects preference."
+    },
+    {
+      "title": "In-Camera Preference",
+      "text": "Nolan preferred practical effects whenever possible, stating that computer graphics are only useful to build on what was achieved physically.",
+      "passage_id": "P3",
+      "evidence_quote": "\"It's always very important to me to do as much as possible in-camera, and then, if necessary, computer graphics are very useful to build on or enhance what you have achieved physically.\"",
+      "origin": {
+        "movie_id": 27205,
+        "source_id": "enwiki-23270459",
+        "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379453144",
+        "revision": "enwiki-1379453144-sections-v3-body",
+        "section_title": "Visual effects",
+        "section_category": "effects",
+        "start": 24914,
+        "end": 25499
+      },
+      "batch": 3,
+      "critic_reason": "The proposal title is specific. The text correctly summarizes Nolan's quote about preferring in-camera work and using CGI only to enhance physical achievements, fully supported by the provided evidence quote."
+    },
+    {
+      "title": "Genre Evolution",
+      "text": "Christopher Nolan originally envisioned Inception as a horror film but shifted to a heist genre to better handle the story's reliance on interior states and memory.",
+      "passage_id": "P4",
+      "evidence_quote": "Nolan had originally envisioned Inception as a horror film,[26] but eventually wrote it as a heist film even though he found that \"traditionally [they] are very deliberately superficial in emotional terms.\"[27]",
+      "origin": {
+        "movie_id": 27205,
+        "source_id": "enwiki-23270459",
+        "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379453144",
+        "revision": "enwiki-1379453144-sections-v3-body",
+        "section_title": "Development",
+        "section_category": "production",
+        "start": 13136,
+        "end": 13667
+      },
+      "batch": 4,
+      "critic_reason": "The proposal accurately reflects the source text: Nolan envisioned a horror film but shifted to heist because traditional heists are 'superficial in emotional terms' and the story relies on interior states. The quote fully supports the claim."
+    }
+  ],
+  "questions": [
+    {
+      "question": "What is the ostensibly impossible job offered to Dom Cobb by Saito?",
+      "options": [
+        "Extracting information from a target's subconscious",
+        "Implanting an idea to dissolve a conglomerate",
+        "Layering multiple dreams within each other",
+        "Clearing Cobb's criminal status"
+      ],
+      "correct_index": 1,
+      "passage_id": "P1",
+      "evidence_quote": "He offers to hire Cobb for the ostensibly impossible job of performing \"inception\": implanting Robert Fischer, the son of Saito's competitor Maurice Fischer, with the idea to dissolve his father's conglomerate.",
+      "origin": {
+        "movie_id": 27205,
+        "source_id": "enwiki-23270459",
+        "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379453144",
+        "revision": "enwiki-1379453144-sections-v3-body",
+        "section_title": "Plot",
+        "section_category": "plot",
+        "start": 3004,
+        "end": 3505
+      },
+      "batch": 1,
+      "critic_reason": "The question targets an objective plot detail supported by the evidence quote. Option 1 ('Implanting an idea...') is the correct answer derived directly from the text, while other options are plausible but incorrect distractors."
+    },
+    {
+      "question": "What promise does Saito make in return for Cobb's service?",
+      "options": [
+        "A share of the profits from the conglomerate",
+        "Clearing Cobb's criminal status to return home",
+        "Hiring Cobb for future espionage missions",
+        "Providing access to experimental technology"
+      ],
+      "correct_index": 1,
+      "passage_id": "P2",
+      "evidence_quote": "In return, Saito promises to clear Cobb's criminal status, allowing him to return home to his children.",
+      "origin": {
+        "movie_id": 27205,
+        "source_id": "enwiki-23270459",
+        "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379453144",
+        "revision": "enwiki-1379453144-sections-v3-body",
+        "section_title": "Plot",
+        "section_category": "plot",
+        "start": 3506,
+        "end": 3609
+      },
+      "batch": 1,
+      "critic_reason": "The question asks for a specific promise made by Saito. The evidence quote confirms that clearing Cobb's criminal status is the promise, making option 1 the correct answer with no subjective interpretation involved."
+    },
+    {
+      "question": "Who was tasked with designing the architecture for all three dream levels?",
+      "options": [
+        "Eames",
+        "Yusuf",
+        "Ariadne",
+        "Mal"
+      ],
+      "correct_index": 2,
+      "passage_id": "P1",
+      "evidence_quote": "Cobb accepts the offer and recruits a forger named Eames, a chemist named Yusuf, and an architecture student named Ariadne. They devise a three-level dream structure in order for Robert to accept the implanted idea as his own. Ariadne is tasked with designing the architecture for all three levels, a task Cobb himself cannot do for fear of being sabotaged by his mind's projection of his late wife Mal.",
+      "origin": {
+        "movie_id": 27205,
+        "source_id": "enwiki-23270459",
+        "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379453144",
+        "revision": "enwiki-1379453144-sections-v3-body",
+        "section_title": "Plot",
+        "section_category": "plot",
+        "start": 3611,
+        "end": 4014
+      },
+      "batch": 2,
+      "critic_reason": "The question asks an objective story fact with one correct option (Ariadne) and three plausible distractors. The evidence quote explicitly confirms Ariadne was tasked with designing the architecture for all three levels."
+    },
+    {
+      "question": "How does time behave in relation to reality during the descent into deeper dream layers?",
+      "options": [
+        "Time runs faster with each descending layer",
+        "Time remains constant regardless of depth",
+        "Time runs slower with each descending layer",
+        "Time stops completely at the second level"
+      ],
+      "correct_index": 2,
+      "passage_id": "P2",
+      "evidence_quote": "Due to time dilation with reality, time runs slower with each descending layer, with the dreamer on each staying behind to perform a music-synchronized \"kick\" that simultaneously awakens dreamers on all three levels.",
+      "origin": {
+        "movie_id": 27205,
+        "source_id": "enwiki-23270459",
+        "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379453144",
+        "revision": "enwiki-1379453144-sections-v3-body",
+        "section_title": "Plot",
+        "section_category": "plot",
+        "start": 4015,
+        "end": 4231
+      },
+      "batch": 2,
+      "critic_reason": "The question addresses an objective story mechanic (time dilation) with one correct option and plausible distractors. The evidence quote directly supports that time runs slower with each descending layer due to time dilation."
+    },
+    {
+      "question": "What does Yusuf's sedatives do when someone dies in a dream?",
+      "options": [
+        "They send them into \"Limbo\", a world of raw subconscious and extreme time dilation.",
+        "They cause immediate physical awakening.",
+        "They freeze the dream sequence permanently.",
+        "They erase the dreamer's memory entirely."
+      ],
+      "correct_index": 0,
+      "passage_id": "P1",
+      "evidence_quote": "Cobb reveals that while dying in a dream usually awakens dreamers, Yusuf's sedatives will instead send them into \"Limbo\", a world of raw subconscious and extreme time dilation that is indistinguishable from reality.",
+      "origin": {
+        "movie_id": 27205,
+        "source_id": "enwiki-23270459",
+        "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379453144",
+        "revision": "enwiki-1379453144-sections-v3-body",
+        "section_title": "Plot",
+        "section_category": "plot",
+        "start": 4233,
+        "end": 4824
+      },
+      "batch": 3,
+      "critic_reason": "The question asks an objective story fact. The correct option is directly supported by the evidence quote explaining that Yusuf's sedatives send dreamers into Limbo upon death, while other options are plausible but incorrect based on the text."
+    }
+  ],
+  "batches": [
+    {
+      "batch": 1,
+      "evidence": [
+        {
+          "passage_id": "P1",
+          "purpose": "story",
+          "text": "Dom Cobb and Arthur are professional thieves who perform corporate espionage using experimental dream-sharing technology to infiltrate their targets' subconscious and extract information. Their latest target Saito is impressed with Cobb's ability to layer multiple dreams within each other. He offers to hire Cobb for the ostensibly impossible job of performing \"inception\": implanting Robert Fischer, the son of Saito's competitor Maurice Fischer, with the idea to dissolve his father's conglomerate.",
+          "origin": {
+            "movie_id": 27205,
+            "source_id": "enwiki-23270459",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379453144",
+            "revision": "enwiki-1379453144-sections-v3-body",
+            "section_title": "Plot",
+            "section_category": "plot",
+            "start": 3004,
+            "end": 3505
+          }
+        },
+        {
+          "passage_id": "P2",
+          "purpose": "story",
+          "text": "In return, Saito promises to clear Cobb's criminal status, allowing him to return home to his children.",
+          "origin": {
+            "movie_id": 27205,
+            "source_id": "enwiki-23270459",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379453144",
+            "revision": "enwiki-1379453144-sections-v3-body",
+            "section_title": "Plot",
+            "section_category": "plot",
+            "start": 3506,
+            "end": 3609
+          }
+        },
+        {
+          "passage_id": "P3",
+          "purpose": "background",
+          "text": "The cast at a premiere for the film in July 2010. From left to right: Cillian Murphy, Marion Cotillard, Joseph Gordon-Levitt, Elliot Page, Ken Watanabe, Michael Caine, and Leonardo DiCaprio",
+          "origin": {
+            "movie_id": 27205,
+            "source_id": "enwiki-23270459",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379453144",
+            "revision": "enwiki-1379453144-sections-v3-body",
+            "section_title": "Cast",
+            "section_category": "casting",
+            "start": 7163,
+            "end": 7352
+          }
+        },
+        {
+          "passage_id": "P4",
+          "purpose": "background",
+          "text": "Emma Thomas and Christopher Nolan answer questions about Inception. The husband-and-wife team produced the film through their company Syncopy. Nolan also wrote and directed it.",
+          "origin": {
+            "movie_id": 27205,
+            "source_id": "enwiki-23270459",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379453144",
+            "revision": "enwiki-1379453144-sections-v3-body",
+            "section_title": "Development",
+            "section_category": "production",
+            "start": 12958,
+            "end": 13134
+          }
+        }
+      ],
+      "proposals": {
+        "facts": [
+          {
+            "title": "Syncopy Production",
+            "text": "Emma Thomas and Christopher Nolan produced the film through their company Syncopy.",
+            "passage_id": "P4",
+            "evidence_quote": "Emma Thomas and Christopher Nolan answer questions about Inception. The husband-and-wife team produced the film through their company Syncopy."
+          },
+          {
+            "title": "Dream Sharing Tech",
+            "text": "The crew utilized experimental dream-sharing technology to infiltrate targets' subconscious minds.",
+            "passage_id": "P1",
+            "evidence_quote": "Dom Cobb and Arthur are professional thieves who perform corporate espionage using experimental dream-sharing technology to infiltrate their targets' subconscious and extract information."
+          }
+        ],
+        "questions": [
+          {
+            "question": "What is the ostensibly impossible job offered to Dom Cobb by Saito?",
+            "options": [
+              "Extracting information from a target's subconscious",
+              "Implanting an idea to dissolve a conglomerate",
+              "Layering multiple dreams within each other",
+              "Clearing Cobb's criminal status"
+            ],
+            "correct_index": 1,
+            "passage_id": "P1",
+            "evidence_quote": "He offers to hire Cobb for the ostensibly impossible job of performing \"inception\": implanting Robert Fischer, the son of Saito's competitor Maurice Fischer, with the idea to dissolve his father's conglomerate."
+          },
+          {
+            "question": "What promise does Saito make in return for Cobb's service?",
+            "options": [
+              "A share of the profits from the conglomerate",
+              "Clearing Cobb's criminal status to return home",
+              "Hiring Cobb for future espionage missions",
+              "Providing access to experimental technology"
+            ],
+            "correct_index": 1,
+            "passage_id": "P2",
+            "evidence_quote": "In return, Saito promises to clear Cobb's criminal status, allowing him to return home to his children."
+          }
+        ]
+      },
+      "checks": [
+        {
+          "kind": "fact",
+          "index": 0,
+          "passage_id": "P4",
+          "support_checks_passed": true,
+          "problems": [],
+          "semantic_review_required": true
+        },
+        {
+          "kind": "fact",
+          "index": 1,
+          "passage_id": "P1",
+          "support_checks_passed": false,
+          "problems": [
+            "wrong_evidence_purpose"
+          ],
+          "semantic_review_required": true
+        },
+        {
+          "kind": "question",
+          "index": 0,
+          "passage_id": "P1",
+          "support_checks_passed": true,
+          "problems": [],
+          "semantic_review_required": true
+        },
+        {
+          "kind": "question",
+          "index": 1,
+          "passage_id": "P2",
+          "support_checks_passed": true,
+          "problems": [],
+          "semantic_review_required": true
+        }
+      ],
+      "review": {
+        "items": [
+          {
+            "item_id": "F2",
+            "decision": "reject",
+            "reason": "Deterministic checks failed: wrong_evidence_purpose"
+          },
+          {
+            "item_id": "F1",
+            "decision": "accept",
+            "reason": "The proposal title 'Syncopy Production' accurately reflects the text. The evidence quote explicitly states Emma Thomas and Christopher Nolan produced the film through Syncopy, matching the factual claim without invention or contradiction."
+          },
+          {
+            "item_id": "Q1",
+            "decision": "accept",
+            "reason": "The question targets an objective plot detail supported by the evidence quote. Option 1 ('Implanting an idea...') is the correct answer derived directly from the text, while other options are plausible but incorrect distractors."
+          },
+          {
+            "item_id": "Q2",
+            "decision": "accept",
+            "reason": "The question asks for a specific promise made by Saito. The evidence quote confirms that clearing Cobb's criminal status is the promise, making option 1 the correct answer with no subjective interpretation involved."
+          }
+        ]
+      },
+      "selection": [
+        {
+          "item_id": "F1",
+          "retained": true,
+          "reason": "critic_accepted_draft"
+        },
+        {
+          "item_id": "F2",
+          "retained": false,
+          "reason": "reject"
+        },
+        {
+          "item_id": "Q1",
+          "retained": true,
+          "reason": "critic_accepted_draft"
+        },
+        {
+          "item_id": "Q2",
+          "retained": true,
+          "reason": "critic_accepted_draft"
+        }
+      ]
+    },
+    {
+      "batch": 2,
+      "evidence": [
+        {
+          "passage_id": "P1",
+          "purpose": "story",
+          "text": "Cobb accepts the offer and recruits a forger named Eames, a chemist named Yusuf, and an architecture student named Ariadne. They devise a three-level dream structure in order for Robert to accept the implanted idea as his own. Ariadne is tasked with designing the architecture for all three levels, a task Cobb himself cannot do for fear of being sabotaged by his mind's projection of his late wife Mal.",
+          "origin": {
+            "movie_id": 27205,
+            "source_id": "enwiki-23270459",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379453144",
+            "revision": "enwiki-1379453144-sections-v3-body",
+            "section_title": "Plot",
+            "section_category": "plot",
+            "start": 3611,
+            "end": 4014
+          }
+        },
+        {
+          "passage_id": "P2",
+          "purpose": "story",
+          "text": "Due to time dilation with reality, time runs slower with each descending layer, with the dreamer on each staying behind to perform a music-synchronized \"kick\" that simultaneously awakens dreamers on all three levels.",
+          "origin": {
+            "movie_id": 27205,
+            "source_id": "enwiki-23270459",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379453144",
+            "revision": "enwiki-1379453144-sections-v3-body",
+            "section_title": "Plot",
+            "section_category": "plot",
+            "start": 4015,
+            "end": 4231
+          }
+        },
+        {
+          "passage_id": "P3",
+          "purpose": "background",
+          "text": "Principal photography began in Tokyo on June 19, 2009, with the scene in which Saito first hires Cobb during a helicopter flight over the city.[26][11]: 13",
+          "origin": {
+            "movie_id": 27205,
+            "source_id": "enwiki-23270459",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379453144",
+            "revision": "enwiki-1379453144-sections-v3-body",
+            "section_title": "Locations and sets",
+            "section_category": "production",
+            "start": 15943,
+            "end": 16098
+          }
+        },
+        {
+          "passage_id": "P4",
+          "purpose": "background",
+          "text": "The film was shot primarily in the anamorphic format on 35 mm film, with key sequences filmed on 65 mm, and aerial sequences in VistaVision. Nolan did not shoot any footage with IMAX cameras as he had with The Dark Knight. \"We didn't feel that we were going to be able to shoot in IMAX because of the size of the cameras because this film, given that it deals with a potentially surreal area, the nature of dreams and so forth, I wanted it to be as realistic as possible. Not be bound by the scale of those IMAX cameras, even though I love the format dearly\".[7]",
+          "origin": {
+            "movie_id": 27205,
+            "source_id": "enwiki-23270459",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379453144",
+            "revision": "enwiki-1379453144-sections-v3-body",
+            "section_title": "Cinematography",
+            "section_category": "production",
+            "start": 22026,
+            "end": 22588
+          }
+        }
+      ],
+      "proposals": {
+        "facts": [
+          {
+            "title": "Helicopter Opening",
+            "text": "Principal photography started in Tokyo with a scene depicting Saito hiring Cobb during a flight over the city.",
+            "passage_id": "P3",
+            "evidence_quote": "Principal photography began in Tokyo on June 19, 2009, with the scene in which Saito first hires Cobb during a helicopter flight over the city.[26][11]: 13"
+          },
+          {
+            "title": "Camera Format Choice",
+            "text": "The production utilized anamorphic 35 mm film and VistaVision for aerial shots, avoiding IMAX cameras to maintain realism within the surreal dream narrative.",
+            "passage_id": "P4",
+            "evidence_quote": "The film was shot primarily in the anamorphic format on 35 mm film, with key sequences filmed on 65 mm, and aerial sequences in VistaVision. Nolan did not shoot any footage with IMAX cameras as he had with The Dark Knight."
+          }
+        ],
+        "questions": [
+          {
+            "question": "Who was tasked with designing the architecture for all three dream levels?",
+            "options": [
+              "Eames",
+              "Yusuf",
+              "Ariadne",
+              "Mal"
+            ],
+            "correct_index": 2,
+            "passage_id": "P1",
+            "evidence_quote": "Cobb accepts the offer and recruits a forger named Eames, a chemist named Yusuf, and an architecture student named Ariadne. They devise a three-level dream structure in order for Robert to accept the implanted idea as his own. Ariadne is tasked with designing the architecture for all three levels, a task Cobb himself cannot do for fear of being sabotaged by his mind's projection of his late wife Mal."
+          },
+          {
+            "question": "How does time behave in relation to reality during the descent into deeper dream layers?",
+            "options": [
+              "Time runs faster with each descending layer",
+              "Time remains constant regardless of depth",
+              "Time runs slower with each descending layer",
+              "Time stops completely at the second level"
+            ],
+            "correct_index": 2,
+            "passage_id": "P2",
+            "evidence_quote": "Due to time dilation with reality, time runs slower with each descending layer, with the dreamer on each staying behind to perform a music-synchronized \"kick\" that simultaneously awakens dreamers on all three levels."
+          }
+        ]
+      },
+      "checks": [
+        {
+          "kind": "fact",
+          "index": 0,
+          "passage_id": "P3",
+          "support_checks_passed": true,
+          "problems": [],
+          "semantic_review_required": true
+        },
+        {
+          "kind": "fact",
+          "index": 1,
+          "passage_id": "P4",
+          "support_checks_passed": true,
+          "problems": [],
+          "semantic_review_required": true
+        },
+        {
+          "kind": "question",
+          "index": 0,
+          "passage_id": "P1",
+          "support_checks_passed": true,
+          "problems": [],
+          "semantic_review_required": true
+        },
+        {
+          "kind": "question",
+          "index": 1,
+          "passage_id": "P2",
+          "support_checks_passed": true,
+          "problems": [],
+          "semantic_review_required": true
+        }
+      ],
+      "review": {
+        "items": [
+          {
+            "item_id": "F1",
+            "decision": "accept",
+            "reason": "The proposal text accurately reflects the evidence quote regarding the start of principal photography in Tokyo and the specific scene involving Saito hiring Cobb during a helicopter flight."
+          },
+          {
+            "item_id": "F2",
+            "decision": "reject",
+            "reason": "The proposal incorrectly claims IMAX cameras were avoided to maintain realism; the evidence quote states they were not used due to camera size constraints, not narrative requirements. Additionally, the claim about VistaVision for aerial shots is not supported by the provided text."
+          },
+          {
+            "item_id": "Q1",
+            "decision": "accept",
+            "reason": "The question asks an objective story fact with one correct option (Ariadne) and three plausible distractors. The evidence quote explicitly confirms Ariadne was tasked with designing the architecture for all three levels."
+          },
+          {
+            "item_id": "Q2",
+            "decision": "accept",
+            "reason": "The question addresses an objective story mechanic (time dilation) with one correct option and plausible distractors. The evidence quote directly supports that time runs slower with each descending layer due to time dilation."
+          }
+        ]
+      },
+      "selection": [
+        {
+          "item_id": "F1",
+          "retained": true,
+          "reason": "critic_accepted_draft"
+        },
+        {
+          "item_id": "F2",
+          "retained": false,
+          "reason": "reject"
+        },
+        {
+          "item_id": "Q1",
+          "retained": true,
+          "reason": "critic_accepted_draft"
+        },
+        {
+          "item_id": "Q2",
+          "retained": true,
+          "reason": "critic_accepted_draft"
+        }
+      ]
+    },
+    {
+      "batch": 3,
+      "evidence": [
+        {
+          "passage_id": "P1",
+          "purpose": "story",
+          "text": "Once Maurice Fischer dies, Saito buys the airline for Robert's commercial flight to America. The team sedates Robert into the first level, a raining city dreamt by Yusuf. They successfully abduct Robert, but discover that he is trained to anticipate such a scenario and has subconscious defensive projections; these projections attack, severely wounding Saito in the process. Cobb reveals that while dying in a dream usually awakens dreamers, Yusuf's sedatives will instead send them into \"Limbo\", a world of raw subconscious and extreme time dilation that is indistinguishable from reality.",
+          "origin": {
+            "movie_id": 27205,
+            "source_id": "enwiki-23270459",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379453144",
+            "revision": "enwiki-1379453144-sections-v3-body",
+            "section_title": "Plot",
+            "section_category": "plot",
+            "start": 4233,
+            "end": 4824
+          }
+        },
+        {
+          "passage_id": "P2",
+          "purpose": "story",
+          "text": "Eames impersonates Robert's godfather Peter Browning to introduce the idea of an alternate will to dissolve the company.",
+          "origin": {
+            "movie_id": 27205,
+            "source_id": "enwiki-23270459",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379453144",
+            "revision": "enwiki-1379453144-sections-v3-body",
+            "section_title": "Plot",
+            "section_category": "plot",
+            "start": 4825,
+            "end": 4945
+          }
+        },
+        {
+          "passage_id": "P3",
+          "purpose": "background",
+          "text": "For dream sequences in Inception, Nolan used little CGI, preferring practical effects whenever possible. Nolan said, \"It's always very important to me to do as much as possible in-camera, and then, if necessary, computer graphics are very useful to build on or enhance what you have achieved physically.\"[11]: 12 To this end, visual effects supervisor Paul Franklin built miniatures of the mountain fortress set and then blew it up for the film. For the fight scene that takes place in zero gravity, he used CGI-based effects to \"subtly bend elements like physics, space and time.\"[42]",
+          "origin": {
+            "movie_id": 27205,
+            "source_id": "enwiki-23270459",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379453144",
+            "revision": "enwiki-1379453144-sections-v3-body",
+            "section_title": "Visual effects",
+            "section_category": "effects",
+            "start": 24914,
+            "end": 25499
+          }
+        },
+        {
+          "passage_id": "P4",
+          "purpose": "background",
+          "text": "Main article: Inception: Music from the Motion Picture",
+          "origin": {
+            "movie_id": 27205,
+            "source_id": "enwiki-23270459",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379453144",
+            "revision": "enwiki-1379453144-sections-v3-body",
+            "section_title": "Music",
+            "section_category": "music",
+            "start": 26743,
+            "end": 26797
+          }
+        }
+      ],
+      "proposals": {
+        "facts": [
+          {
+            "title": "Practical Miniatures Over CGI",
+            "text": "Visual effects supervisor Paul Franklin built miniatures of the mountain fortress set and then blew it up for the film.",
+            "passage_id": "P3",
+            "evidence_quote": "To this end, visual effects supervisor Paul Franklin built miniatures of the mountain fortress set and then blew it up for the film."
+          },
+          {
+            "title": "In-Camera Preference",
+            "text": "Nolan preferred practical effects whenever possible, stating that computer graphics are only useful to build on what was achieved physically.",
+            "passage_id": "P3",
+            "evidence_quote": "\"It's always very important to me to do as much as possible in-camera, and then, if necessary, computer graphics are very useful to build on or enhance what you have achieved physically.\""
+          }
+        ],
+        "questions": [
+          {
+            "question": "What happens when the team sedates Robert into the first level dreamt by Yusuf?",
+            "options": [
+              "They discover he is trained to anticipate the scenario and his projections wound Saito.",
+              "He wakes up immediately due to dying in a dream.",
+              "The airline collapses before they can board.",
+              "Yusuf sends them directly into Limbo without waking."
+            ],
+            "correct_index": 0,
+            "passage_id": "P1",
+            "evidence_quote": "They successfully abduct Robert, but discover that he is trained to anticipate such a scenario and has subconscious defensive projections; these projections attack, severely wounding Saito in the process."
+          },
+          {
+            "question": "What does Yusuf's sedatives do when someone dies in a dream?",
+            "options": [
+              "They send them into \"Limbo\", a world of raw subconscious and extreme time dilation.",
+              "They cause immediate physical awakening.",
+              "They freeze the dream sequence permanently.",
+              "They erase the dreamer's memory entirely."
+            ],
+            "correct_index": 0,
+            "passage_id": "P1",
+            "evidence_quote": "Cobb reveals that while dying in a dream usually awakens dreamers, Yusuf's sedatives will instead send them into \"Limbo\", a world of raw subconscious and extreme time dilation that is indistinguishable from reality."
+          }
+        ]
+      },
+      "checks": [
+        {
+          "kind": "fact",
+          "index": 0,
+          "passage_id": "P3",
+          "support_checks_passed": true,
+          "problems": [],
+          "semantic_review_required": true
+        },
+        {
+          "kind": "fact",
+          "index": 1,
+          "passage_id": "P3",
+          "support_checks_passed": true,
+          "problems": [],
+          "semantic_review_required": true
+        },
+        {
+          "kind": "question",
+          "index": 0,
+          "passage_id": "P1",
+          "support_checks_passed": true,
+          "problems": [],
+          "semantic_review_required": true
+        },
+        {
+          "kind": "question",
+          "index": 1,
+          "passage_id": "P1",
+          "support_checks_passed": true,
+          "problems": [],
+          "semantic_review_required": true
+        }
+      ],
+      "review": {
+        "items": [
+          {
+            "item_id": "F1",
+            "decision": "accept",
+            "reason": "The proposal title is specific and useful. The text accurately reflects the evidence quote regarding Paul Franklin building and blowing up miniatures, supported by sufficient background context about practical effects preference."
+          },
+          {
+            "item_id": "F2",
+            "decision": "accept",
+            "reason": "The proposal title is specific. The text correctly summarizes Nolan's quote about preferring in-camera work and using CGI only to enhance physical achievements, fully supported by the provided evidence quote."
+          },
+          {
+            "item_id": "Q1",
+            "decision": "reject",
+            "reason": "The correct option relies on information (projections wounding Saito) that is not contained within the specific evidence_quote provided. The quote mentions the projections attack and wound Saito, but the question asks about sedating Robert into the dream generally; the answer requires combining the abduction success with the specific injury outcome which makes the distractor 'He wakes up' factably"
+          },
+          {
+            "item_id": "Q2",
+            "decision": "accept",
+            "reason": "The question asks an objective story fact. The correct option is directly supported by the evidence quote explaining that Yusuf's sedatives send dreamers into Limbo upon death, while other options are plausible but incorrect based on the text."
+          }
+        ]
+      },
+      "selection": [
+        {
+          "item_id": "F1",
+          "retained": true,
+          "reason": "critic_accepted_draft"
+        },
+        {
+          "item_id": "F2",
+          "retained": true,
+          "reason": "critic_accepted_draft"
+        },
+        {
+          "item_id": "Q1",
+          "retained": false,
+          "reason": "reject"
+        },
+        {
+          "item_id": "Q2",
+          "retained": true,
+          "reason": "critic_accepted_draft"
+        }
+      ]
+    },
+    {
+      "batch": 4,
+      "evidence": [
+        {
+          "passage_id": "P1",
+          "purpose": "story",
+          "text": "Cobb explains to Ariadne that he and Mal entered Limbo while experimenting with dream-sharing, experiencing fifty years in one night. After waking up, Mal still believed she was dreaming. Attempting to wake up, she committed suicide and framed Cobb for her murder to force him to do the same. Cobb fled the U.S., leaving his children behind.",
+          "origin": {
+            "movie_id": 27205,
+            "source_id": "enwiki-23270459",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379453144",
+            "revision": "enwiki-1379453144-sections-v3-body",
+            "section_title": "Plot",
+            "section_category": "plot",
+            "start": 4947,
+            "end": 5288
+          }
+        },
+        {
+          "passage_id": "P2",
+          "purpose": "story",
+          "text": "Yusuf drives the team around the first level as they are sedated into the second level, a hotel dreamed by Arthur. Cobb persuades Robert that Browning has kidnapped him to stop the dissolution and that Cobb is a defensive projection. He leads Robert to the third level, an alpine fortress dreamt by Eames, as a ruse to enter Robert's subconscious.",
+          "origin": {
+            "movie_id": 27205,
+            "source_id": "enwiki-23270459",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379453144",
+            "revision": "enwiki-1379453144-sections-v3-body",
+            "section_title": "Plot",
+            "section_category": "plot",
+            "start": 5290,
+            "end": 5637
+          }
+        },
+        {
+          "passage_id": "P3",
+          "purpose": "background",
+          "text": "Leonardo DiCaprio as Dom Cobb, a professional thief who specializes in conning secrets from his victims by infiltrating their dreams. DiCaprio was the first actor to be cast in the film.[7] Brad Pitt and Will Smith were the first two choices and were offered the role, according to The Hollywood Reporter.[8] Smith turned it down because he didn't understand it.[9] Cobb's role is compared to \"the haunted widower in a Gothic romance\".[10]",
+          "origin": {
+            "movie_id": 27205,
+            "source_id": "enwiki-23270459",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379453144",
+            "revision": "enwiki-1379453144-sections-v3-body",
+            "section_title": "Cast",
+            "section_category": "casting",
+            "start": 7354,
+            "end": 7793
+          }
+        },
+        {
+          "passage_id": "P4",
+          "purpose": "background",
+          "text": "Initially, Christopher Nolan wrote an 80-page treatment about dream-stealers.[26] Nolan had originally envisioned Inception as a horror film,[26] but eventually wrote it as a heist film even though he found that \"traditionally [they] are very deliberately superficial in emotional terms.\"[27] Upon revisiting his script, he decided that basing it in that genre did not work because the story \"relies so heavily on the idea of the interior state, the idea of dream and memory. I realized I needed to raise the emotional stakes.\"[27]",
+          "origin": {
+            "movie_id": 27205,
+            "source_id": "enwiki-23270459",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379453144",
+            "revision": "enwiki-1379453144-sections-v3-body",
+            "section_title": "Development",
+            "section_category": "production",
+            "start": 13136,
+            "end": 13667
+          }
+        }
+      ],
+      "proposals": {
+        "facts": [
+          {
+            "title": "Casting Choices",
+            "text": "Leonardo DiCaprio was the first actor cast as Dom Cobb, while Brad Pitt and Will Smith were initially offered the role before Smith declined.",
+            "passage_id": "P3",
+            "evidence_quote": "DiCaprio was the first actor to be cast in the film.[7] Brad Pitt and Will Smith were the first two choices and were offered the role, according to The Hollywood Reporter.[8] Smith turned it down because he didn't understand it.[9]"
+          },
+          {
+            "title": "Genre Evolution",
+            "text": "Christopher Nolan originally envisioned Inception as a horror film but shifted to a heist genre to better handle the story's reliance on interior states and memory.",
+            "passage_id": "P4",
+            "evidence_quote": "Nolan had originally envisioned Inception as a horror film,[26] but eventually wrote it as a heist film even though he found that \"traditionally [they] are very deliberately superficial in emotional terms.\"[27]"
+          }
+        ],
+        "questions": [
+          {
+            "question": "What did Cobb explain to Ariadne regarding his and Mal's experience in Limbo?",
+            "options": [
+              "They experienced fifty years in one night while experimenting with dream-sharing.",
+              "They spent a single night exploring the hotel dreamed by Arthur.",
+              "They were sedated into the third level before entering Robert's subconscious.",
+              "They wrote an 80-page treatment about dream-stealers before filming began."
+            ],
+            "correct_index": 0,
+            "passage_id": "P1",
+            "evidence_quote": "Cobb explains to Ariadne that he and Mal entered Limbo while experimenting with dream-sharing, experiencing fifty years in one night."
+          },
+          {
+            "question": "Why did Christopher Nolan decide to base the film in the heist genre?",
+            "options": [
+              "Because the story relies heavily on the idea of the interior state and memory.",
+              "Because he wanted to avoid the emotional superficiality traditionally found in horror films.",
+              "Because Will Smith turned down the role due to a lack of understanding.",
+              "Because he initially wrote an 80-page treatment about dream-stealers."
+            ],
+            "correct_index": 0,
+            "passage_id": "P4",
+            "evidence_quote": "Upon revisiting his script, he decided that basing it in that genre did not work because the story \"relies so heavily on the idea of the interior state, the idea of dream and memory. I realized I needed to raise the emotional stakes.\"[27]"
+          }
+        ]
+      },
+      "checks": [
+        {
+          "kind": "fact",
+          "index": 0,
+          "passage_id": "P3",
+          "support_checks_passed": true,
+          "problems": [],
+          "semantic_review_required": true
+        },
+        {
+          "kind": "fact",
+          "index": 1,
+          "passage_id": "P4",
+          "support_checks_passed": true,
+          "problems": [],
+          "semantic_review_required": true
+        },
+        {
+          "kind": "question",
+          "index": 0,
+          "passage_id": "P1",
+          "support_checks_passed": true,
+          "problems": [],
+          "semantic_review_required": true
+        },
+        {
+          "kind": "question",
+          "index": 1,
+          "passage_id": "P4",
+          "support_checks_passed": false,
+          "problems": [
+            "wrong_evidence_purpose"
+          ],
+          "semantic_review_required": true
+        }
+      ],
+      "review": {
+        "items": [
+          {
+            "item_id": "Q2",
+            "decision": "reject",
+            "reason": "Deterministic checks failed: wrong_evidence_purpose"
+          },
+          {
+            "item_id": "F1",
+            "decision": "reject",
+            "reason": "The proposal claims Brad Pitt was offered the role before Will Smith, but the evidence quote states they were 'the first two choices' without establishing a specific order between them. The causal claim of sequence is not supported by the provided text."
+          },
+          {
+            "item_id": "F2",
+            "decision": "accept",
+            "reason": "The proposal accurately reflects the source text: Nolan envisioned a horror film but shifted to heist because traditional heists are 'superficial in emotional terms' and the story relies on interior states. The quote fully supports the claim."
+          },
+          {
+            "item_id": "Q1",
+            "decision": "reject",
+            "reason": "The distractor 'They wrote an 80-page treatment about dream-stealers before filming began' is factually incorrect regarding the plot event and belongs to development history, not Cobb's explanation to Ariadne. This violates the rule against jokey or unrelated distractors."
+          }
+        ]
+      },
+      "selection": [
+        {
+          "item_id": "F1",
+          "retained": false,
+          "reason": "reject"
+        },
+        {
+          "item_id": "F2",
+          "retained": true,
+          "reason": "critic_accepted_draft"
+        },
+        {
+          "item_id": "Q1",
+          "retained": false,
+          "reason": "reject"
+        },
+        {
+          "item_id": "Q2",
+          "retained": false,
+          "reason": "reject"
+        }
+      ]
+    },
+    {
+      "batch": 5,
+      "evidence": [
+        {
+          "passage_id": "P1",
+          "purpose": "story",
+          "text": "In the third level, the team infiltrates the fortress with a projection of Maurice inside, where the inception itself can be performed. However, Yusuf performs his kick too soon by driving off a bridge, forcing Arthur and Eames to improvise a new set of kicks synchronized with them hitting the water by rigging an elevator and the fortress, respectively, with explosives. Mal then appears and kills Robert before he can be subjected to the inception; he and Saito are subsequently lost in Limbo, forcing Cobb and Ariadne to rescue them in time for Robert's inception and Eames's kick.",
+          "origin": {
+            "movie_id": 27205,
+            "source_id": "enwiki-23270459",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379453144",
+            "revision": "enwiki-1379453144-sections-v3-body",
+            "section_title": "Plot",
+            "section_category": "plot",
+            "start": 5639,
+            "end": 6224
+          }
+        },
+        {
+          "passage_id": "P2",
+          "purpose": "story",
+          "text": "Cobb reveals that during their time in Limbo, Mal refused to return to reality; Cobb had to convince her it was only a dream, accidentally incepting in her the belief that the real world was still a dream. Cobb makes peace with his role in Mal's death. Ariadne kills Mal's projection and wakes Robert up with a kick.",
+          "origin": {
+            "movie_id": 27205,
+            "source_id": "enwiki-23270459",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379453144",
+            "revision": "enwiki-1379453144-sections-v3-body",
+            "section_title": "Plot",
+            "section_category": "plot",
+            "start": 6225,
+            "end": 6541
+          }
+        },
+        {
+          "passage_id": "P3",
+          "purpose": "background",
+          "text": "Excerpt of the scene, visualizing the rotation of full 360 degrees in a gravity effect while in a hotel scene dreamed by Arthur The \"gravity scene\" was filmed using a rotating set.",
+          "origin": {
+            "movie_id": 27205,
+            "source_id": "enwiki-23270459",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379453144",
+            "revision": "enwiki-1379453144-sections-v3-body",
+            "section_title": "Locations and sets",
+            "section_category": "production",
+            "start": 16100,
+            "end": 16280
+          }
+        },
+        {
+          "passage_id": "P4",
+          "purpose": "background",
+          "text": "In addition Nolan and Pfister tested using Showscan and Super Dimension 70 as potential large-format, high-frame-rate camera systems to use for the film, but ultimately decided against either format.[33]: 29",
+          "origin": {
+            "movie_id": 27205,
+            "source_id": "enwiki-23270459",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379453144",
+            "revision": "enwiki-1379453144-sections-v3-body",
+            "section_title": "Cinematography",
+            "section_category": "production",
+            "start": 22589,
+            "end": 22796
+          }
+        }
+      ],
+      "proposals": {
+        "facts": [
+          {
+            "title": "Rotating Hotel Set",
+            "text": "The gravity-defying hotel scene was filmed using a rotating set that visualized a full 360-degree rotation.",
+            "passage_id": "P3",
+            "evidence_quote": "Excerpt of the scene, visualizing the rotation of full 360 degrees in a gravity effect while in a hotel scene dreamed by Arthur The \"gravity scene\" was filmed using a rotating set."
+          },
+          {
+            "title": "Format Testing Decisions",
+            "text": "Nolan and Pfister tested Showscan and Super Dimension 70 systems but ultimately decided against either format.",
+            "passage_id": "P4",
+            "evidence_quote": "In addition Nolan and Pfister tested using Showscan and Super Dimension 70 as potential large-format, high-frame-rate camera systems to use for the film, but ultimately decided against either format."
+          }
+        ],
+        "questions": [
+          {
+            "question": "What action did Yusuf take that forced Arthur and Eames to improvise new kicks?",
+            "options": [
+              "He performed his kick too soon by driving off a bridge.",
+              "He refused to return to reality with Mal.",
+              "He accidentally incepted the belief that the real world was a dream.",
+              "He killed Robert before he could be subjected to the inception."
+            ],
+            "correct_index": 0,
+            "passage_id": "P1",
+            "evidence_quote": "However, Yusuf performs his kick too soon by driving off a bridge, forcing Arthur and Eames to improvise a new set of kicks synchronized with them hitting the water by rigging an elevator and the fortress, respectively, with explosives."
+          },
+          {
+            "question": "How did Cobb make peace with his role in Mal's death?",
+            "options": [
+              "He convinced her it was only a dream.",
+              "He accidentally incepted in her the belief that the real world was still a dream.",
+              "He killed Mal's projection and woke Robert up with a kick.",
+              "He rescued them in time for Robert's inception and Eames's kick."
+            ],
+            "correct_index": 1,
+            "passage_id": "P2",
+            "evidence_quote": "Cobb had to convince her it was only a dream, accidentally incepting in her the belief that the real world was still a dream. Cobb makes peace with his role in Mal's death."
+          }
+        ]
+      },
+      "checks": [
+        {
+          "kind": "fact",
+          "index": 0,
+          "passage_id": "P3",
+          "support_checks_passed": true,
+          "problems": [],
+          "semantic_review_required": true
+        },
+        {
+          "kind": "fact",
+          "index": 1,
+          "passage_id": "P4",
+          "support_checks_passed": true,
+          "problems": [],
+          "semantic_review_required": true
+        },
+        {
+          "kind": "question",
+          "index": 0,
+          "passage_id": "P1",
+          "support_checks_passed": true,
+          "problems": [],
+          "semantic_review_required": true
+        },
+        {
+          "kind": "question",
+          "index": 1,
+          "passage_id": "P2",
+          "support_checks_passed": true,
+          "problems": [],
+          "semantic_review_required": true
+        }
+      ],
+      "review": {
+        "items": [
+          {
+            "item_id": "F1",
+            "decision": "reject",
+            "reason": "The evidence quote conflates the visual description of a dream sequence with the factual claim about filming techniques. The text describes the scene as 'dreamed by Arthur' and visualizes the rotation, but does not explicitly state that a physical rotating set was used for filming; this constitutes an invented causal claim linking the dream visualization to the production method without sufficient"
+          },
+          {
+            "item_id": "F2",
+            "decision": "accept",
+            "reason": "The proposal accurately reflects the source text, which explicitly states that Nolan and Pfister tested Showscan and Super Dimension 70 systems but ultimately decided against either format. The title is specific, and the evidence quote directly supports the factual claim without requiring external knowledge."
+          },
+          {
+            "item_id": "Q1",
+            "decision": "reject",
+            "reason": "The correct answer option ('He performed his kick too soon by driving off a bridge.') is factually supported by the evidence quote, but the other options are not merely subjective interpretations; they are specific plot events (e.g., killing Robert) that contradict the correct answer. While distractors should be plausible, including an option describing a major plot point that did not happen as a "
+          },
+          {
+            "item_id": "Q2",
+            "decision": "reject",
+            "reason": "The evidence quote states 'Ariadne kills Mal's projection,' but the proposal's correct option claims 'He killed Mal's projection.' This is an incorrect factual claim regarding who performed the action. Additionally, the question asks about Cobb making peace, yet the provided correct answer describes Ariadne's action, creating a mismatch between the question premise and the supported fact."
+          }
+        ]
+      },
+      "selection": [
+        {
+          "item_id": "F1",
+          "retained": false,
+          "reason": "reject"
+        },
+        {
+          "item_id": "F2",
+          "retained": false,
+          "reason": "target_already_reached"
+        },
+        {
+          "item_id": "Q1",
+          "retained": false,
+          "reason": "reject"
+        },
+        {
+          "item_id": "Q2",
+          "retained": false,
+          "reason": "reject"
+        }
+      ]
+    },
+    {
+      "batch": 6,
+      "evidence": [
+        {
+          "passage_id": "P1",
+          "purpose": "story",
+          "text": "Revived into the third level, Robert discovers the planted idea: his dying father telling him to create something for himself. While Cobb searches for Saito in Limbo, the others ride the synced kicks back to reality. Cobb finds an aged Saito and reminds him of their agreement. All of the dreamers awaken on the plane, and Saito makes a phone call. Arriving in Los Angeles, Cobb passes the immigration checkpoint, and his father-in-law accompanies him to his home.",
+          "origin": {
+            "movie_id": 27205,
+            "source_id": "enwiki-23270459",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379453144",
+            "revision": "enwiki-1379453144-sections-v3-body",
+            "section_title": "Plot",
+            "section_category": "plot",
+            "start": 6543,
+            "end": 7007
+          }
+        },
+        {
+          "passage_id": "P2",
+          "purpose": "story",
+          "text": "Cobb uses a top that spins indefinitely in a dream to verify that he is in the real world, but joins his children before he can observe the result.",
+          "origin": {
+            "movie_id": 27205,
+            "source_id": "enwiki-23270459",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379453144",
+            "revision": "enwiki-1379453144-sections-v3-body",
+            "section_title": "Plot",
+            "section_category": "plot",
+            "start": 7008,
+            "end": 7155
+          }
+        },
+        {
+          "passage_id": "P3",
+          "purpose": "background",
+          "text": "The most challenging effect was the \"Limbo\" city level at the end of the film, because it continually developed during production. Franklin had artists build concepts while Nolan expressed his ideal vision: \"Something glacial, with clear modernist architecture, but with chunks of it breaking off into the sea like icebergs\".[42]",
+          "origin": {
+            "movie_id": 27205,
+            "source_id": "enwiki-23270459",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379453144",
+            "revision": "enwiki-1379453144-sections-v3-body",
+            "section_title": "Visual effects",
+            "section_category": "effects",
+            "start": 25501,
+            "end": 25830
+          }
+        },
+        {
+          "passage_id": "P4",
+          "purpose": "background",
+          "text": "The score for Inception was composed and arranged by Hans Zimmer,[21] who described his work as \"a very electronic,[43] dense score\",[44] filled with \"nostalgia and sadness\" to match Cobb's feelings throughout the film.[45] The music was written simultaneously to filming,[44] and features a guitar sound reminiscent of Ennio Morricone, played by Johnny Marr, former guitarist of the Smiths. Édith Piaf's \"Non, je ne regrette rien\" (\"No, I Regret Nothing\") appears throughout the film, used to accurately time the dreams, and Zimmer reworked pieces of the song into cues of the score.[45]",
+          "origin": {
+            "movie_id": 27205,
+            "source_id": "enwiki-23270459",
+            "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379453144",
+            "revision": "enwiki-1379453144-sections-v3-body",
+            "section_title": "Music",
+            "section_category": "music",
+            "start": 26799,
+            "end": 27387
+          }
+        }
+      ],
+      "proposals": {
+        "facts": [
+          {
+            "title": "Limbo City Design",
+            "text": "The Limbo city level featured glacial modernist architecture with chunks breaking off into the sea like icebergs.",
+            "passage_id": "P3",
+            "evidence_quote": "\"Something glacial, with clear modernist architecture, but with chunks of it breaking off into the sea like icebergs\"."
+          },
+          {
+            "title": "Score Composition",
+            "text": "Hans Zimmer composed a dense electronic score filled with nostalgia and sadness while Édith Piaf's song timed the dreams.",
+            "passage_id": "P4",
+            "evidence_quote": "\"a very electronic, dense score\", filled with \"nostalgia and sadness\" to match Cobb's feelings throughout the film."
+          }
+        ],
+        "questions": [
+          {
+            "question": "What object does Cobb use in a dream to verify he is in the real world?",
+            "options": [
+              "A spinning top",
+              "A pocket watch",
+              "A compass needle",
+              "A digital clock"
+            ],
+            "correct_index": 0,
+            "passage_id": "P2",
+            "evidence_quote": "Cobb uses a top that spins indefinitely in a dream to verify that he is in the real world"
+          },
+          {
+            "question": "Which song appears throughout the film to accurately time the dreams?",
+            "options": [
+              "\"Non, je ne regrette rien\"",
+              "\"La Vie en Rose\"",
+              "\"My Heart Will Go On\"",
+              "\"Time\" by Hans Zimmer"
+            ],
+            "correct_index": 0,
+            "passage_id": "P4",
+            "evidence_quote": "Édith Piaf's \"Non, je ne regrette rien\" (\"No, I Regret Nothing\") appears throughout the film, used to accurately time the dreams"
+          }
+        ]
+      },
+      "checks": [
+        {
+          "kind": "fact",
+          "index": 0,
+          "passage_id": "P3",
+          "support_checks_passed": true,
+          "problems": [],
+          "semantic_review_required": true
+        },
+        {
+          "kind": "fact",
+          "index": 1,
+          "passage_id": "P4",
+          "support_checks_passed": false,
+          "problems": [
+            "quote_not_in_source"
+          ],
+          "semantic_review_required": true
+        },
+        {
+          "kind": "question",
+          "index": 0,
+          "passage_id": "P2",
+          "support_checks_passed": true,
+          "problems": [],
+          "semantic_review_required": true
+        },
+        {
+          "kind": "question",
+          "index": 1,
+          "passage_id": "P4",
+          "support_checks_passed": false,
+          "problems": [
+            "wrong_evidence_purpose"
+          ],
+          "semantic_review_required": true
+        }
+      ],
+      "review": {
+        "items": [
+          {
+            "item_id": "F2",
+            "decision": "reject",
+            "reason": "Deterministic checks failed: quote_not_in_source"
+          },
+          {
+            "item_id": "Q2",
+            "decision": "reject",
+            "reason": "Deterministic checks failed: wrong_evidence_purpose"
+          },
+          {
+            "item_id": "F1",
+            "decision": "accept",
+            "reason": "The proposal text is a direct paraphrase of the evidence quote, accurately reflecting the glacial modernist architecture and iceberg-like chunks described in the source without adding external information."
+          },
+          {
+            "item_id": "Q1",
+            "decision": "reject",
+            "reason": "The question asks for an object used to verify reality, but the evidence quote describes Cobb using a top that spins indefinitely in a dream; this contradicts the premise of verifying he is in the real world via that specific action as stated in the source text."
+          }
+        ]
+      },
+      "selection": [
+        {
+          "item_id": "F1",
+          "retained": false,
+          "reason": "target_already_reached"
+        },
+        {
+          "item_id": "F2",
+          "retained": false,
+          "reason": "reject"
+        },
+        {
+          "item_id": "Q1",
+          "retained": false,
+          "reason": "reject"
+        },
+        {
+          "item_id": "Q2",
+          "retained": false,
+          "reason": "reject"
+        }
+      ]
+    }
+  ],
+  "state": "incomplete",
+  "stop_reason": "deadline_exceeded",
+  "publication_approved": false,
+  "saved_collection_changed": false,
+  "elapsed_seconds": 360.01,
+  "error_type": "TimeoutError"
+}

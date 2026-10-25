@@ -1,0 +1,1166 @@
+{
+  "movie_id": 27205,
+  "embedding_artifact": {
+    "model": "nomic-embed-text:v1.5",
+    "digest": "0a109f422b47e3a30ba2b10eca18548e944e8a23073ee3f3e947efcf3c45e59f"
+  },
+  "elapsed_seconds": 0.43,
+  "retrieval": {
+    "version": "content-topic-retrieval-v2",
+    "embedding_model": "nomic-embed-text:v1.5",
+    "snapshot_state": "cached",
+    "snapshot_key": "5694139d4243ea63f1fabfa9a2a43dd681cd1ba2e44ab93acf167b12db9c4b29",
+    "max_chars": 600,
+    "overlap_chars": 100,
+    "spoiler_policy": "internal_drafts_allow_spoilers_not_published",
+    "queries": [
+      {
+        "purpose": "story",
+        "topic": "main character goals and important decisions",
+        "top_windows": [
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_006",
+            "score": 0.648288
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_012",
+            "score": 0.624185
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_007",
+            "score": 0.615106
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_011",
+            "score": 0.610428
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_010",
+            "score": 0.601163
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_008",
+            "score": 0.595878
+          }
+        ],
+        "selected": [
+          {
+            "start": 3004,
+            "end": 3505,
+            "window_id": "5694139d4243ea63f1fabfa9a2a43dd6_006",
+            "score": 0.648288,
+            "section": "Plot"
+          },
+          {
+            "start": 3506,
+            "end": 3609,
+            "window_id": "5694139d4243ea63f1fabfa9a2a43dd6_006",
+            "score": 0.648288,
+            "section": "Plot"
+          }
+        ]
+      },
+      {
+        "purpose": "story",
+        "topic": "relationships conflicts and consequences",
+        "top_windows": [
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_009",
+            "score": 0.566573
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_007",
+            "score": 0.55055
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_011",
+            "score": 0.548418
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_012",
+            "score": 0.546205
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_006",
+            "score": 0.544288
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_008",
+            "score": 0.537544
+          }
+        ],
+        "selected": [
+          {
+            "start": 4233,
+            "end": 4824,
+            "window_id": "5694139d4243ea63f1fabfa9a2a43dd6_009",
+            "score": 0.566573,
+            "section": "Plot"
+          },
+          {
+            "start": 4825,
+            "end": 4945,
+            "window_id": "5694139d4243ea63f1fabfa9a2a43dd6_009",
+            "score": 0.566573,
+            "section": "Plot"
+          }
+        ]
+      },
+      {
+        "purpose": "story",
+        "topic": "turning points revelations and discoveries",
+        "top_windows": [
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_013",
+            "score": 0.581527
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_011",
+            "score": 0.57612
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_007",
+            "score": 0.571972
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_009",
+            "score": 0.567797
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_012",
+            "score": 0.563128
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_006",
+            "score": 0.557398
+          }
+        ],
+        "selected": [
+          {
+            "start": 6543,
+            "end": 7007,
+            "window_id": "5694139d4243ea63f1fabfa9a2a43dd6_013",
+            "score": 0.581527,
+            "section": "Plot"
+          },
+          {
+            "start": 7008,
+            "end": 7155,
+            "window_id": "5694139d4243ea63f1fabfa9a2a43dd6_013",
+            "score": 0.581527,
+            "section": "Plot"
+          }
+        ]
+      },
+      {
+        "purpose": "story",
+        "topic": "ending final events and resolution",
+        "top_windows": [
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_012",
+            "score": 0.627218
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_009",
+            "score": 0.612277
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_008",
+            "score": 0.599991
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_013",
+            "score": 0.59725
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_011",
+            "score": 0.596956
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_007",
+            "score": 0.575836
+          }
+        ],
+        "selected": [
+          {
+            "start": 6225,
+            "end": 6541,
+            "window_id": "5694139d4243ea63f1fabfa9a2a43dd6_012",
+            "score": 0.627218,
+            "section": "Plot"
+          },
+          {
+            "start": 4015,
+            "end": 4231,
+            "window_id": "5694139d4243ea63f1fabfa9a2a43dd6_008",
+            "score": 0.599991,
+            "section": "Plot"
+          }
+        ]
+      },
+      {
+        "purpose": "story",
+        "topic": "obstacles plans and how characters overcome them",
+        "top_windows": [
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_006",
+            "score": 0.710448
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_007",
+            "score": 0.704274
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_011",
+            "score": 0.665855
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_013",
+            "score": 0.658769
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_012",
+            "score": 0.655397
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_010",
+            "score": 0.653961
+          }
+        ],
+        "selected": [
+          {
+            "start": 3611,
+            "end": 4014,
+            "window_id": "5694139d4243ea63f1fabfa9a2a43dd6_007",
+            "score": 0.704274,
+            "section": "Plot"
+          },
+          {
+            "start": 5639,
+            "end": 6224,
+            "window_id": "5694139d4243ea63f1fabfa9a2a43dd6_011",
+            "score": 0.665855,
+            "section": "Plot"
+          }
+        ]
+      },
+      {
+        "purpose": "story",
+        "topic": "important objects locations and their role in the story",
+        "top_windows": [
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_011",
+            "score": 0.638796
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_008",
+            "score": 0.615482
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_012",
+            "score": 0.612253
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_010",
+            "score": 0.605204
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_006",
+            "score": 0.603527
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_013",
+            "score": 0.602746
+          }
+        ],
+        "selected": [
+          {
+            "start": 4947,
+            "end": 5288,
+            "window_id": "5694139d4243ea63f1fabfa9a2a43dd6_010",
+            "score": 0.605204,
+            "section": "Plot"
+          },
+          {
+            "start": 5290,
+            "end": 5637,
+            "window_id": "5694139d4243ea63f1fabfa9a2a43dd6_010",
+            "score": 0.605204,
+            "section": "Plot"
+          }
+        ]
+      },
+      {
+        "purpose": "story",
+        "topic": "story rules causes and effects",
+        "top_windows": [
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_009",
+            "score": 0.584752
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_008",
+            "score": 0.562682
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_006",
+            "score": 0.558147
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_007",
+            "score": 0.556268
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_012",
+            "score": 0.553942
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_011",
+            "score": 0.547956
+          }
+        ],
+        "selected": []
+      },
+      {
+        "purpose": "story",
+        "topic": "character motivations and changes across the story",
+        "top_windows": [
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_006",
+            "score": 0.641439
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_007",
+            "score": 0.632541
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_011",
+            "score": 0.621498
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_012",
+            "score": 0.618643
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_010",
+            "score": 0.617472
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_009",
+            "score": 0.616857
+          }
+        ],
+        "selected": []
+      },
+      {
+        "purpose": "background",
+        "topic": "unusual practical filming techniques and production challenges",
+        "top_windows": [
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_040",
+            "score": 0.680022
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_047",
+            "score": 0.667094
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_044",
+            "score": 0.662822
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_046",
+            "score": 0.655917
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_052",
+            "score": 0.65045
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_048",
+            "score": 0.644969
+          }
+        ],
+        "selected": [
+          {
+            "start": 18923,
+            "end": 19263,
+            "window_id": "5694139d4243ea63f1fabfa9a2a43dd6_040",
+            "score": 0.680022,
+            "section": "Locations and sets"
+          },
+          {
+            "start": 22589,
+            "end": 22796,
+            "window_id": "5694139d4243ea63f1fabfa9a2a43dd6_047",
+            "score": 0.667094,
+            "section": "Cinematography"
+          }
+        ]
+      },
+      {
+        "purpose": "background",
+        "topic": "music recording instruments and creative sound design",
+        "top_windows": [
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_056",
+            "score": 0.594038
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_057",
+            "score": 0.574466
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_052",
+            "score": 0.546142
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_048",
+            "score": 0.539241
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_035",
+            "score": 0.538459
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_042",
+            "score": 0.538056
+          }
+        ],
+        "selected": [
+          {
+            "start": 26799,
+            "end": 27387,
+            "window_id": "5694139d4243ea63f1fabfa9a2a43dd6_056",
+            "score": 0.594038,
+            "section": "Music"
+          },
+          {
+            "start": 24914,
+            "end": 25499,
+            "window_id": "5694139d4243ea63f1fabfa9a2a43dd6_052",
+            "score": 0.546142,
+            "section": "Visual effects"
+          }
+        ]
+      },
+      {
+        "purpose": "background",
+        "topic": "visual effects miniatures stunts and how scenes were made",
+        "top_windows": [
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_052",
+            "score": 0.743491
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_040",
+            "score": 0.683811
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_042",
+            "score": 0.667542
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_055",
+            "score": 0.660629
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_047",
+            "score": 0.654023
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_041",
+            "score": 0.646358
+          }
+        ],
+        "selected": [
+          {
+            "start": 19265,
+            "end": 19641,
+            "window_id": "5694139d4243ea63f1fabfa9a2a43dd6_040",
+            "score": 0.683811,
+            "section": "Locations and sets"
+          },
+          {
+            "start": 26357,
+            "end": 26734,
+            "window_id": "5694139d4243ea63f1fabfa9a2a43dd6_055",
+            "score": 0.660629,
+            "section": "Visual effects"
+          }
+        ]
+      },
+      {
+        "purpose": "background",
+        "topic": "casting preparation training and performance techniques",
+        "top_windows": [
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_044",
+            "score": 0.590993
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_042",
+            "score": 0.571073
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_040",
+            "score": 0.56994
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_037",
+            "score": 0.56659
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_026",
+            "score": 0.560022
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_054",
+            "score": 0.557341
+          }
+        ],
+        "selected": [
+          {
+            "start": 21023,
+            "end": 21340,
+            "window_id": "5694139d4243ea63f1fabfa9a2a43dd6_044",
+            "score": 0.590993,
+            "section": "Locations and sets"
+          },
+          {
+            "start": 25831,
+            "end": 26356,
+            "window_id": "5694139d4243ea63f1fabfa9a2a43dd6_054",
+            "score": 0.557341,
+            "section": "Visual effects"
+          }
+        ]
+      },
+      {
+        "purpose": "background",
+        "topic": "writing inspirations research and script development",
+        "top_windows": [
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_028",
+            "score": 0.610149
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_035",
+            "score": 0.601902
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_029",
+            "score": 0.595649
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_033",
+            "score": 0.590676
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_042",
+            "score": 0.580868
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_031",
+            "score": 0.575355
+          }
+        ],
+        "selected": [
+          {
+            "start": 12958,
+            "end": 13134,
+            "window_id": "5694139d4243ea63f1fabfa9a2a43dd6_028",
+            "score": 0.610149,
+            "section": "Development"
+          },
+          {
+            "start": 16282,
+            "end": 16846,
+            "window_id": "5694139d4243ea63f1fabfa9a2a43dd6_035",
+            "score": 0.601902,
+            "section": "Locations and sets"
+          }
+        ]
+      },
+      {
+        "purpose": "background",
+        "topic": "filming locations sets and unexpected production events",
+        "top_windows": [
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_034",
+            "score": 0.750637
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_041",
+            "score": 0.707158
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_044",
+            "score": 0.698065
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_038",
+            "score": 0.690887
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_042",
+            "score": 0.680754
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_043",
+            "score": 0.68053
+          }
+        ],
+        "selected": [
+          {
+            "start": 15943,
+            "end": 16098,
+            "window_id": "5694139d4243ea63f1fabfa9a2a43dd6_034",
+            "score": 0.750637,
+            "section": "Locations and sets"
+          },
+          {
+            "start": 22026,
+            "end": 22588,
+            "window_id": "5694139d4243ea63f1fabfa9a2a43dd6_046",
+            "score": 0.621612,
+            "section": "Cinematography"
+          }
+        ]
+      },
+      {
+        "purpose": "background",
+        "topic": "costumes props and unusual design choices",
+        "top_windows": [
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_019",
+            "score": 0.60258
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_040",
+            "score": 0.597633
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_052",
+            "score": 0.594405
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_041",
+            "score": 0.592903
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_022",
+            "score": 0.585578
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_042",
+            "score": 0.584671
+          }
+        ],
+        "selected": [
+          {
+            "start": 19643,
+            "end": 20025,
+            "window_id": "5694139d4243ea63f1fabfa9a2a43dd6_041",
+            "score": 0.592903,
+            "section": "Locations and sets"
+          },
+          {
+            "start": 22798,
+            "end": 23313,
+            "window_id": "5694139d4243ea63f1fabfa9a2a43dd6_047",
+            "score": 0.57356,
+            "section": "Cinematography"
+          }
+        ]
+      },
+      {
+        "purpose": "background",
+        "topic": "creative collaboration and technical innovations",
+        "top_windows": [
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_035",
+            "score": 0.571535
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_028",
+            "score": 0.554737
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_052",
+            "score": 0.541308
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_032",
+            "score": 0.53814
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_042",
+            "score": 0.535418
+          },
+          {
+            "id": "5694139d4243ea63f1fabfa9a2a43dd6_025",
+            "score": 0.525636
+          }
+        ],
+        "selected": [
+          {
+            "start": 13136,
+            "end": 13667,
+            "window_id": "5694139d4243ea63f1fabfa9a2a43dd6_028",
+            "score": 0.554737,
+            "section": "Development"
+          },
+          {
+            "start": 20027,
+            "end": 20523,
+            "window_id": "5694139d4243ea63f1fabfa9a2a43dd6_042",
+            "score": 0.535418,
+            "section": "Locations and sets"
+          }
+        ]
+      }
+    ],
+    "batch_count": 8
+  },
+  "batches": [
+    [
+      {
+        "passage_id": "P1",
+        "purpose": "story",
+        "text": "Dom Cobb and Arthur are professional thieves who perform corporate espionage using experimental dream-sharing technology to infiltrate their targets' subconscious and extract information. Their latest target Saito is impressed with Cobb's ability to layer multiple dreams within each other. He offers to hire Cobb for the ostensibly impossible job of performing \"inception\": implanting Robert Fischer, the son of Saito's competitor Maurice Fischer, with the idea to dissolve his father's conglomerate.",
+        "origin": {
+          "movie_id": 27205,
+          "source_id": "enwiki-23270459",
+          "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379453144",
+          "revision": "enwiki-1379453144-sections-v3-body",
+          "section_title": "Plot",
+          "section_category": "plot",
+          "start": 3004,
+          "end": 3505
+        }
+      },
+      {
+        "passage_id": "P2",
+        "purpose": "story",
+        "text": "In return, Saito promises to clear Cobb's criminal status, allowing him to return home to his children.",
+        "origin": {
+          "movie_id": 27205,
+          "source_id": "enwiki-23270459",
+          "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379453144",
+          "revision": "enwiki-1379453144-sections-v3-body",
+          "section_title": "Plot",
+          "section_category": "plot",
+          "start": 3506,
+          "end": 3609
+        }
+      },
+      {
+        "passage_id": "P3",
+        "purpose": "background",
+        "text": "Pfister used six high-speed cameras to capture the sequence from different angles and make sure that they got the shot. The visual effects department enhanced the sequence, adding more destruction and flying debris. For the \"Paris folding\" sequence and when Ariadne \"creates\" the bridges, green screen and CGI were used on location.[11]: 17",
+        "origin": {
+          "movie_id": 27205,
+          "source_id": "enwiki-23270459",
+          "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379453144",
+          "revision": "enwiki-1379453144-sections-v3-body",
+          "section_title": "Locations and sets",
+          "section_category": "production",
+          "start": 18923,
+          "end": 19263
+        }
+      },
+      {
+        "passage_id": "P4",
+        "purpose": "background",
+        "text": "In addition Nolan and Pfister tested using Showscan and Super Dimension 70 as potential large-format, high-frame-rate camera systems to use for the film, but ultimately decided against either format.[33]: 29",
+        "origin": {
+          "movie_id": 27205,
+          "source_id": "enwiki-23270459",
+          "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379453144",
+          "revision": "enwiki-1379453144-sections-v3-body",
+          "section_title": "Cinematography",
+          "section_category": "production",
+          "start": 22589,
+          "end": 22796
+        }
+      }
+    ],
+    [
+      {
+        "passage_id": "P1",
+        "purpose": "story",
+        "text": "Once Maurice Fischer dies, Saito buys the airline for Robert's commercial flight to America. The team sedates Robert into the first level, a raining city dreamt by Yusuf. They successfully abduct Robert, but discover that he is trained to anticipate such a scenario and has subconscious defensive projections; these projections attack, severely wounding Saito in the process. Cobb reveals that while dying in a dream usually awakens dreamers, Yusuf's sedatives will instead send them into \"Limbo\", a world of raw subconscious and extreme time dilation that is indistinguishable from reality.",
+        "origin": {
+          "movie_id": 27205,
+          "source_id": "enwiki-23270459",
+          "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379453144",
+          "revision": "enwiki-1379453144-sections-v3-body",
+          "section_title": "Plot",
+          "section_category": "plot",
+          "start": 4233,
+          "end": 4824
+        }
+      },
+      {
+        "passage_id": "P2",
+        "purpose": "story",
+        "text": "Eames impersonates Robert's godfather Peter Browning to introduce the idea of an alternate will to dissolve the company.",
+        "origin": {
+          "movie_id": 27205,
+          "source_id": "enwiki-23270459",
+          "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379453144",
+          "revision": "enwiki-1379453144-sections-v3-body",
+          "section_title": "Plot",
+          "section_category": "plot",
+          "start": 4825,
+          "end": 4945
+        }
+      },
+      {
+        "passage_id": "P3",
+        "purpose": "background",
+        "text": "The score for Inception was composed and arranged by Hans Zimmer,[21] who described his work as \"a very electronic,[43] dense score\",[44] filled with \"nostalgia and sadness\" to match Cobb's feelings throughout the film.[45] The music was written simultaneously to filming,[44] and features a guitar sound reminiscent of Ennio Morricone, played by Johnny Marr, former guitarist of the Smiths. Édith Piaf's \"Non, je ne regrette rien\" (\"No, I Regret Nothing\") appears throughout the film, used to accurately time the dreams, and Zimmer reworked pieces of the song into cues of the score.[45]",
+        "origin": {
+          "movie_id": 27205,
+          "source_id": "enwiki-23270459",
+          "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379453144",
+          "revision": "enwiki-1379453144-sections-v3-body",
+          "section_title": "Music",
+          "section_category": "music",
+          "start": 26799,
+          "end": 27387
+        }
+      },
+      {
+        "passage_id": "P4",
+        "purpose": "background",
+        "text": "For dream sequences in Inception, Nolan used little CGI, preferring practical effects whenever possible. Nolan said, \"It's always very important to me to do as much as possible in-camera, and then, if necessary, computer graphics are very useful to build on or enhance what you have achieved physically.\"[11]: 12 To this end, visual effects supervisor Paul Franklin built miniatures of the mountain fortress set and then blew it up for the film. For the fight scene that takes place in zero gravity, he used CGI-based effects to \"subtly bend elements like physics, space and time.\"[42]",
+        "origin": {
+          "movie_id": 27205,
+          "source_id": "enwiki-23270459",
+          "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379453144",
+          "revision": "enwiki-1379453144-sections-v3-body",
+          "section_title": "Visual effects",
+          "section_category": "effects",
+          "start": 24914,
+          "end": 25499
+        }
+      }
+    ],
+    [
+      {
+        "passage_id": "P1",
+        "purpose": "story",
+        "text": "Revived into the third level, Robert discovers the planted idea: his dying father telling him to create something for himself. While Cobb searches for Saito in Limbo, the others ride the synced kicks back to reality. Cobb finds an aged Saito and reminds him of their agreement. All of the dreamers awaken on the plane, and Saito makes a phone call. Arriving in Los Angeles, Cobb passes the immigration checkpoint, and his father-in-law accompanies him to his home.",
+        "origin": {
+          "movie_id": 27205,
+          "source_id": "enwiki-23270459",
+          "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379453144",
+          "revision": "enwiki-1379453144-sections-v3-body",
+          "section_title": "Plot",
+          "section_category": "plot",
+          "start": 6543,
+          "end": 7007
+        }
+      },
+      {
+        "passage_id": "P2",
+        "purpose": "story",
+        "text": "Cobb uses a top that spins indefinitely in a dream to verify that he is in the real world, but joins his children before he can observe the result.",
+        "origin": {
+          "movie_id": 27205,
+          "source_id": "enwiki-23270459",
+          "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379453144",
+          "revision": "enwiki-1379453144-sections-v3-body",
+          "section_title": "Plot",
+          "section_category": "plot",
+          "start": 7008,
+          "end": 7155
+        }
+      },
+      {
+        "passage_id": "P3",
+        "purpose": "background",
+        "text": "Tangier, Morocco, doubled as Mombasa, where Cobb hires Eames and Yusuf. A foot chase was shot in the streets and alleyways of the historic medina quarter.[11]: 18 To capture this sequence, Pfister employed a mix of hand-held camera and steadicam work.[11]: 19 Tangier was also used as the setting for filming an important riot scene during the initial foray into Saito's mind.",
+        "origin": {
+          "movie_id": 27205,
+          "source_id": "enwiki-23270459",
+          "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379453144",
+          "revision": "enwiki-1379453144-sections-v3-body",
+          "section_title": "Locations and sets",
+          "section_category": "production",
+          "start": 19265,
+          "end": 19641
+        }
+      },
+      {
+        "passage_id": "P4",
+        "purpose": "background",
+        "text": "Later during principal photography, Nolan was able to direct DiCaprio and Page based on this rough computer animation that Franklin had created. Inception had nearly 500 visual effects shots (in comparison, Batman Begins had approximately 620), which is relatively few in comparison to contemporary effects-heavy films, which can have as many as 2,000 visual effects shots.[42]",
+        "origin": {
+          "movie_id": 27205,
+          "source_id": "enwiki-23270459",
+          "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379453144",
+          "revision": "enwiki-1379453144-sections-v3-body",
+          "section_title": "Visual effects",
+          "section_category": "effects",
+          "start": 26357,
+          "end": 26734
+        }
+      }
+    ],
+    [
+      {
+        "passage_id": "P1",
+        "purpose": "story",
+        "text": "Cobb reveals that during their time in Limbo, Mal refused to return to reality; Cobb had to convince her it was only a dream, accidentally incepting in her the belief that the real world was still a dream. Cobb makes peace with his role in Mal's death. Ariadne kills Mal's projection and wakes Robert up with a kick.",
+        "origin": {
+          "movie_id": 27205,
+          "source_id": "enwiki-23270459",
+          "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379453144",
+          "revision": "enwiki-1379453144-sections-v3-body",
+          "section_title": "Plot",
+          "section_category": "plot",
+          "start": 6225,
+          "end": 6541
+        }
+      },
+      {
+        "passage_id": "P2",
+        "purpose": "story",
+        "text": "Due to time dilation with reality, time runs slower with each descending layer, with the dreamer on each staying behind to perform a music-synchronized \"kick\" that simultaneously awakens dreamers on all three levels.",
+        "origin": {
+          "movie_id": 27205,
+          "source_id": "enwiki-23270459",
+          "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379453144",
+          "revision": "enwiki-1379453144-sections-v3-body",
+          "section_title": "Plot",
+          "section_category": "plot",
+          "start": 4015,
+          "end": 4231
+        }
+      },
+      {
+        "passage_id": "P3",
+        "purpose": "background",
+        "text": "Once the van landed in the water, the challenge for the actors was to avoid panic. \"And when they ask you to act, it's a bit of an ask,\" explained Cillian Murphy.[36] The actors had to be underwater for four to five minutes while drawing air from scuba tanks; underwater buddy breathing is shown in this sequence.[36]",
+        "origin": {
+          "movie_id": 27205,
+          "source_id": "enwiki-23270459",
+          "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379453144",
+          "revision": "enwiki-1379453144-sections-v3-body",
+          "section_title": "Locations and sets",
+          "section_category": "production",
+          "start": 21023,
+          "end": 21340
+        }
+      },
+      {
+        "passage_id": "P4",
+        "purpose": "background",
+        "text": "Franklin and his team ended up with \"something that looked like an iceberg version of Gotham City with water running through it.\"[42] They created a basic model of a glacier and then designers created a program that added elements like roads, intersections and ravines until they had a complex, yet organic-looking, cityscape. For the Paris-folding sequence, Franklin had artists producing concept sketches and then they created rough computer animations to give them an idea of what the sequence looked like while in motion.",
+        "origin": {
+          "movie_id": 27205,
+          "source_id": "enwiki-23270459",
+          "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379453144",
+          "revision": "enwiki-1379453144-sections-v3-body",
+          "section_title": "Visual effects",
+          "section_category": "effects",
+          "start": 25831,
+          "end": 26356
+        }
+      }
+    ],
+    [
+      {
+        "passage_id": "P1",
+        "purpose": "story",
+        "text": "Cobb accepts the offer and recruits a forger named Eames, a chemist named Yusuf, and an architecture student named Ariadne. They devise a three-level dream structure in order for Robert to accept the implanted idea as his own. Ariadne is tasked with designing the architecture for all three levels, a task Cobb himself cannot do for fear of being sabotaged by his mind's projection of his late wife Mal.",
+        "origin": {
+          "movie_id": 27205,
+          "source_id": "enwiki-23270459",
+          "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379453144",
+          "revision": "enwiki-1379453144-sections-v3-body",
+          "section_title": "Plot",
+          "section_category": "plot",
+          "start": 3611,
+          "end": 4014
+        }
+      },
+      {
+        "passage_id": "P2",
+        "purpose": "story",
+        "text": "In the third level, the team infiltrates the fortress with a projection of Maurice inside, where the inception itself can be performed. However, Yusuf performs his kick too soon by driving off a bridge, forcing Arthur and Eames to improvise a new set of kicks synchronized with them hitting the water by rigging an elevator and the fortress, respectively, with explosives. Mal then appears and kills Robert before he can be subjected to the inception; he and Saito are subsequently lost in Limbo, forcing Cobb and Ariadne to rescue them in time for Robert's inception and Eames's kick.",
+        "origin": {
+          "movie_id": 27205,
+          "source_id": "enwiki-23270459",
+          "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379453144",
+          "revision": "enwiki-1379453144-sections-v3-body",
+          "section_title": "Plot",
+          "section_category": "plot",
+          "start": 5639,
+          "end": 6224
+        }
+      },
+      {
+        "passage_id": "P3",
+        "purpose": "background",
+        "text": "Emma Thomas and Christopher Nolan answer questions about Inception. The husband-and-wife team produced the film through their company Syncopy. Nolan also wrote and directed it.",
+        "origin": {
+          "movie_id": 27205,
+          "source_id": "enwiki-23270459",
+          "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379453144",
+          "revision": "enwiki-1379453144-sections-v3-body",
+          "section_title": "Development",
+          "section_category": "production",
+          "start": 12958,
+          "end": 13134
+        }
+      },
+      {
+        "passage_id": "P4",
+        "purpose": "background",
+        "text": "The production moved to the United Kingdom and shot in a converted airship hangar in Cardington, Bedfordshire, north of London.[11]: 14 There, the hotel bar set which tilted 30 degrees was built.[33]: 29 A hotel corridor was also constructed by Guy Hendrix Dyas, the production designer, Chris Corbould, the special effects supervisor, and Wally Pfister, the director of photography; it rotated a full 360 degrees to create the effect of alternate directions of gravity for scenes set during the second level of dreaming, where dream-sector physics become chaotic.",
+        "origin": {
+          "movie_id": 27205,
+          "source_id": "enwiki-23270459",
+          "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379453144",
+          "revision": "enwiki-1379453144-sections-v3-body",
+          "section_title": "Locations and sets",
+          "section_category": "production",
+          "start": 16282,
+          "end": 16846
+        }
+      }
+    ],
+    [
+      {
+        "passage_id": "P1",
+        "purpose": "story",
+        "text": "Cobb explains to Ariadne that he and Mal entered Limbo while experimenting with dream-sharing, experiencing fifty years in one night. After waking up, Mal still believed she was dreaming. Attempting to wake up, she committed suicide and framed Cobb for her murder to force him to do the same. Cobb fled the U.S., leaving his children behind.",
+        "origin": {
+          "movie_id": 27205,
+          "source_id": "enwiki-23270459",
+          "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379453144",
+          "revision": "enwiki-1379453144-sections-v3-body",
+          "section_title": "Plot",
+          "section_category": "plot",
+          "start": 4947,
+          "end": 5288
+        }
+      },
+      {
+        "passage_id": "P2",
+        "purpose": "story",
+        "text": "Yusuf drives the team around the first level as they are sedated into the second level, a hotel dreamed by Arthur. Cobb persuades Robert that Browning has kidnapped him to stop the dissolution and that Cobb is a defensive projection. He leads Robert to the third level, an alpine fortress dreamt by Eames, as a ruse to enter Robert's subconscious.",
+        "origin": {
+          "movie_id": 27205,
+          "source_id": "enwiki-23270459",
+          "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379453144",
+          "revision": "enwiki-1379453144-sections-v3-body",
+          "section_title": "Plot",
+          "section_category": "plot",
+          "start": 5290,
+          "end": 5637
+        }
+      },
+      {
+        "passage_id": "P3",
+        "purpose": "background",
+        "text": "Principal photography began in Tokyo on June 19, 2009, with the scene in which Saito first hires Cobb during a helicopter flight over the city.[26][11]: 13",
+        "origin": {
+          "movie_id": 27205,
+          "source_id": "enwiki-23270459",
+          "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379453144",
+          "revision": "enwiki-1379453144-sections-v3-body",
+          "section_title": "Locations and sets",
+          "section_category": "production",
+          "start": 15943,
+          "end": 16098
+        }
+      },
+      {
+        "passage_id": "P4",
+        "purpose": "background",
+        "text": "The film was shot primarily in the anamorphic format on 35 mm film, with key sequences filmed on 65 mm, and aerial sequences in VistaVision. Nolan did not shoot any footage with IMAX cameras as he had with The Dark Knight. \"We didn't feel that we were going to be able to shoot in IMAX because of the size of the cameras because this film, given that it deals with a potentially surreal area, the nature of dreams and so forth, I wanted it to be as realistic as possible. Not be bound by the scale of those IMAX cameras, even though I love the format dearly\".[7]",
+        "origin": {
+          "movie_id": 27205,
+          "source_id": "enwiki-23270459",
+          "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379453144",
+          "revision": "enwiki-1379453144-sections-v3-body",
+          "section_title": "Cinematography",
+          "section_category": "production",
+          "start": 22026,
+          "end": 22588
+        }
+      }
+    ],
+    [
+      {
+        "passage_id": "P1",
+        "purpose": "background",
+        "text": "Filming moved to the Los Angeles area, where some sets were built on a Warner Bros. sound stage, including the interior rooms of Saito's Japanese castle (the exterior was done on a small set built in Malibu Beach). The dining room was inspired by the historic Nijō Castle, built around 1603. These sets were inspired by a mix of Japanese architecture and Western influences.[11]: 19",
+        "origin": {
+          "movie_id": 27205,
+          "source_id": "enwiki-23270459",
+          "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379453144",
+          "revision": "enwiki-1379453144-sections-v3-body",
+          "section_title": "Locations and sets",
+          "section_category": "production",
+          "start": 19643,
+          "end": 20025
+        }
+      },
+      {
+        "passage_id": "P2",
+        "purpose": "background",
+        "text": "Sequences in slow motion were filmed on a Photo-Sonics 35 mm camera at speeds of up to 1,000 frames per second. Wally Pfister tested shooting some of these sequences using a high speed digital camera, but found the format to be too unreliable due to technical glitches. \"Out of six times that we shot on the digital format, we only had one usable piece and it didn't end up in the film. Out of the six times we shot with the Photo-Sonics camera and 35 mm running through it, every single shot was in the movie.\"[37]",
+        "origin": {
+          "movie_id": 27205,
+          "source_id": "enwiki-23270459",
+          "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379453144",
+          "revision": "enwiki-1379453144-sections-v3-body",
+          "section_title": "Cinematography",
+          "section_category": "production",
+          "start": 22798,
+          "end": 23313
+        }
+      }
+    ],
+    [
+      {
+        "passage_id": "P1",
+        "purpose": "background",
+        "text": "Initially, Christopher Nolan wrote an 80-page treatment about dream-stealers.[26] Nolan had originally envisioned Inception as a horror film,[26] but eventually wrote it as a heist film even though he found that \"traditionally [they] are very deliberately superficial in emotional terms.\"[27] Upon revisiting his script, he decided that basing it in that genre did not work because the story \"relies so heavily on the idea of the interior state, the idea of dream and memory. I realized I needed to raise the emotional stakes.\"[27]",
+        "origin": {
+          "movie_id": 27205,
+          "source_id": "enwiki-23270459",
+          "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379453144",
+          "revision": "enwiki-1379453144-sections-v3-body",
+          "section_title": "Development",
+          "section_category": "production",
+          "start": 13136,
+          "end": 13667
+        }
+      },
+      {
+        "passage_id": "P2",
+        "purpose": "background",
+        "text": "The production staged a multi-vehicle car chase on the streets of downtown Los Angeles, which involved a freight train crashing down the middle of a street.[11]: 20 To do this, the filmmakers configured a train engine on the chassis of a tractor trailer. The replica was made from fiberglass molds taken from authentic train parts and matched in terms of color and design.[11]: 21 Also, the car chase was supposed to be set in the midst of a downpour, but the L.A. weather stayed typically sunny.",
+        "origin": {
+          "movie_id": 27205,
+          "source_id": "enwiki-23270459",
+          "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379453144",
+          "revision": "enwiki-1379453144-sections-v3-body",
+          "section_title": "Locations and sets",
+          "section_category": "production",
+          "start": 20027,
+          "end": 20523
+        }
+      }
+    ]
+  ],
+  "publication_approved": false,
+  "saved_collection_changed": false
+}

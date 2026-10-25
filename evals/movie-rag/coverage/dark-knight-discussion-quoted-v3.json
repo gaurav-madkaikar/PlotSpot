@@ -1,0 +1,1103 @@
+{
+  "created_at_utc": "2026-10-11T19:41:12.653211+00:00",
+  "movie_id": 155,
+  "dataset_version": "dark-knight-discussion-dev-v1",
+  "split": "development",
+  "dataset_sha256": "edc65fccb812a0480b1fb3e9c8ea27d3859b50f535e8b643eab84e30be058884",
+  "source_snapshot": "902071f36d1e1c1ae43ce3ae813ef0dadcb422e7827fd06cdc7299a9867d4792",
+  "source_revision": "enwiki-1378704545-sections-v3-body",
+  "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1378704545",
+  "pipeline_sha256": "6f052e9af44c58b1d1e362e6fbe9ff14570ac50cffee21b3fa8dfc0d225c5936",
+  "prompt_sha256": "6b318a23863f804053f738346fc638729aea3f6225b591af14ba637317e23125",
+  "grounding_module_sha256": "a7e29b8e38a2b0ab57fca9726db0d337a41c7bfb43e2089aed9a737f082eb56d",
+  "retrieval_policy": "discussion-hybrid-v2",
+  "grounding_policy": "grounded-support-quotes-v1",
+  "retriever_sha256": "2084660632a45e8d0c4afbbf33fcf9344d0c36abca84270f046e8406864636c8",
+  "comparison": {
+    "order": "alternating baseline/candidate per case; sequential",
+    "baseline_sha256": {
+      "grounding_learning": "cd984e87a32baad171d6c3938afdb0ed918db53b6263b1b394c55c2595cbd6df",
+      "movie_qa_learning": "91bc247e547060f1ea5ee863aa5b89dfe4a4544dc4684030cd601efacd346fd4"
+    },
+    "baseline_automated_passed": 3,
+    "baseline_generation_errors": 0
+  },
+  "models": {
+    "nomic-embed-text:v1.5": "0a109f422b47e3a30ba2b10eca18548e944e8a23073ee3f3e947efcf3c45e59f",
+    "llama3.2:3b": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72"
+  },
+  "chunk_settings": {
+    "max_chars": 600,
+    "overlap_chars": 100
+  },
+  "ingestion": "cached",
+  "passages": 167,
+  "publication": false,
+  "token_usage": null,
+  "summary": {
+    "automated_passed": 4,
+    "total": 5
+  },
+  "limitations": [
+    "Small development inspection, not an independent holdout or safety benchmark.",
+    "Phrase and citation membership checks do not establish entailment; inspect cited passages.",
+    "Runs the shared Wikipedia discussion function, not the HTTP or script-assisted path.",
+    "No bank generation, publication, or production throughput is measured."
+  ],
+  "cases": [
+    {
+      "id": "composers",
+      "question": "Who composed the music for The Dark Knight?",
+      "expected_status": "answered",
+      "labelled_supporting_ids": [
+        "902071f36d1e1c1ae43ce3ae813ef0da_001",
+        "902071f36d1e1c1ae43ce3ae813ef0da_075"
+      ],
+      "retrieved": [
+        {
+          "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_075",
+          "score": 0.8203151061898933,
+          "section": "Music"
+        },
+        {
+          "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_001",
+          "score": 0.7282605213117851,
+          "section": "Introduction"
+        },
+        {
+          "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_076",
+          "score": 0.685621931337457,
+          "section": "Music"
+        }
+      ],
+      "answer": {
+        "status": "answered",
+        "answer": "James Newton Howard and Hans Zimmer",
+        "citation_ids": [
+          "902071f36d1e1c1ae43ce3ae813ef0da_075",
+          "902071f36d1e1c1ae43ce3ae813ef0da_076"
+        ]
+      },
+      "error": null,
+      "duration_seconds": 3.468,
+      "supporting_hit_at_3": true,
+      "annotated_id_recall_at_3": 1.0,
+      "automated_pass": true,
+      "failures": [],
+      "human_claim_support_review": "pending",
+      "retrieval_trace": {
+        "policy": "discussion-hybrid-v2",
+        "scope": "all",
+        "classified": true,
+        "eligible_passages": 167,
+        "routed_passages": 167,
+        "lexical_anchor": "902071f36d1e1c1ae43ce3ae813ef0da_076",
+        "selected_ids": [
+          "902071f36d1e1c1ae43ce3ae813ef0da_075",
+          "902071f36d1e1c1ae43ce3ae813ef0da_001",
+          "902071f36d1e1c1ae43ce3ae813ef0da_076"
+        ],
+        "vector_top": [
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_075",
+            "cosine": 0.8203151061898933
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_002",
+            "cosine": 0.7789767711726072
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_001",
+            "cosine": 0.7282605213117851
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_025",
+            "cosine": 0.7208062836302018
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_153",
+            "cosine": 0.7192406226622085
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_103",
+            "cosine": 0.7161916391310494
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_000",
+            "cosine": 0.7158798251464462
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_124",
+            "cosine": 0.6968175696333038
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_148",
+            "cosine": 0.6883537414961536
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_076",
+            "cosine": 0.685621931337457
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_004",
+            "cosine": 0.6808070164392246
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_007",
+            "cosine": 0.6796371102175925
+          }
+        ],
+        "lexical_top": [
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_076",
+            "bm25": 7.3022802095367325
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_075",
+            "bm25": 5.786530121889159
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_000",
+            "bm25": 4.802768944973926
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_113",
+            "bm25": 4.802768944973926
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_001",
+            "bm25": 4.345375712334338
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_078",
+            "bm25": 4.11718973850796
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_165",
+            "bm25": 2.851491559289668
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_072",
+            "bm25": 2.849102892088959
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_077",
+            "bm25": 2.769948710501149
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_008",
+            "bm25": 2.520739497301567
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_088",
+            "bm25": 2.450352890502316
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_050",
+            "bm25": 2.408848165096767
+          }
+        ],
+        "selected_ranks": [
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_075",
+            "rrf": 0.03252247488101534,
+            "vector_rank": 1,
+            "lexical_rank": 2
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_001",
+            "rrf": 0.03125763125763126,
+            "vector_rank": 3,
+            "lexical_rank": 5
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_076",
+            "rrf": 0.030679156908665108,
+            "vector_rank": 10,
+            "lexical_rank": 1
+          }
+        ]
+      },
+      "grounding_trace": {
+        "type": "grounding",
+        "policy": "grounded-support-quotes-v1",
+        "support": [
+          {
+            "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_075",
+            "quote": "Composers James Newton Howard and Hans Zimmer, who had also worked on Batman Begins, scored The Dark Knight because Nolan believed it was important to bridge the musical-narrative gap between the films."
+          },
+          {
+            "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_076",
+            "quote": "Howard and Zimmer composed the score without seeing the film because Nolan wanted them to be influenced by the characters and story rather than fitting specific on-screen elements."
+          }
+        ],
+        "note": "Exact quote presence is checked; semantic claim support still requires evaluation."
+      },
+      "baseline": {
+        "id": "composers",
+        "question": "Who composed the music for The Dark Knight?",
+        "expected_status": "answered",
+        "labelled_supporting_ids": [
+          "902071f36d1e1c1ae43ce3ae813ef0da_001",
+          "902071f36d1e1c1ae43ce3ae813ef0da_075"
+        ],
+        "retrieved": [
+          {
+            "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_075",
+            "score": 0.8203151061898933,
+            "section": "Music"
+          },
+          {
+            "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_002",
+            "score": 0.7789767711726072,
+            "section": "Introduction"
+          },
+          {
+            "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_001",
+            "score": 0.7282605213117851,
+            "section": "Introduction"
+          }
+        ],
+        "answer": {
+          "status": "answered",
+          "answer": "James Newton Howard and Hans Zimmer",
+          "citation_ids": [
+            "902071f36d1e1c1ae43ce3ae813ef0da_075",
+            "902071f36d1e1c1ae43ce3ae813ef0da_002"
+          ]
+        },
+        "error": null,
+        "duration_seconds": 2.567,
+        "supporting_hit_at_3": true,
+        "annotated_id_recall_at_3": 1.0,
+        "automated_pass": true,
+        "failures": [],
+        "human_claim_support_review": "pending",
+        "retrieval_trace": null,
+        "grounding_trace": null
+      }
+    },
+    {
+      "id": "working-title",
+      "question": "What cover title was used for filming The Dark Knight in Chicago?",
+      "expected_status": "answered",
+      "labelled_supporting_ids": [
+        "902071f36d1e1c1ae43ce3ae813ef0da_050",
+        "902071f36d1e1c1ae43ce3ae813ef0da_051"
+      ],
+      "retrieved": [
+        {
+          "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_050",
+          "score": 0.8038110366057649,
+          "section": "Filming in Chicago"
+        },
+        {
+          "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_056",
+          "score": 0.7710494555619185,
+          "section": "Filming in Chicago"
+        },
+        {
+          "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_004",
+          "score": 0.7444327038778255,
+          "section": "Introduction"
+        }
+      ],
+      "answer": {
+        "status": "answered",
+        "answer": "Rory's First Kiss",
+        "citation_ids": [
+          "902071f36d1e1c1ae43ce3ae813ef0da_050"
+        ]
+      },
+      "error": null,
+      "duration_seconds": 3.531,
+      "supporting_hit_at_3": true,
+      "annotated_id_recall_at_3": 0.5,
+      "automated_pass": true,
+      "failures": [],
+      "human_claim_support_review": "pending",
+      "retrieval_trace": {
+        "policy": "discussion-hybrid-v2",
+        "scope": "all",
+        "classified": true,
+        "eligible_passages": 167,
+        "routed_passages": 167,
+        "lexical_anchor": "902071f36d1e1c1ae43ce3ae813ef0da_050",
+        "selected_ids": [
+          "902071f36d1e1c1ae43ce3ae813ef0da_050",
+          "902071f36d1e1c1ae43ce3ae813ef0da_056",
+          "902071f36d1e1c1ae43ce3ae813ef0da_004"
+        ],
+        "vector_top": [
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_050",
+            "cosine": 0.8038110366057649
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_056",
+            "cosine": 0.7710494555619185
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_004",
+            "cosine": 0.7444327038778255
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_047",
+            "cosine": 0.7243159158754863
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_049",
+            "cosine": 0.7211994653206405
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_087",
+            "cosine": 0.7118671073521236
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_060",
+            "cosine": 0.7090563344926062
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_002",
+            "cosine": 0.6950035203034068
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_045",
+            "cosine": 0.694265921768639
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_125",
+            "cosine": 0.6899857895076426
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_051",
+            "cosine": 0.685473808296694
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_123",
+            "cosine": 0.6835585881947249
+          }
+        ],
+        "lexical_top": [
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_050",
+            "bm25": 13.0355728663236
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_056",
+            "bm25": 9.43799692219892
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_051",
+            "bm25": 8.985166276257775
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_060",
+            "bm25": 8.307665803596763
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_004",
+            "bm25": 6.281112205591613
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_059",
+            "bm25": 6.268764793743534
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_049",
+            "bm25": 5.993423606065457
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_052",
+            "bm25": 5.551391338985078
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_048",
+            "bm25": 5.168981222900587
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_057",
+            "bm25": 4.682846430577084
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_047",
+            "bm25": 4.6387995326368205
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_064",
+            "bm25": 4.566967942100041
+          }
+        ],
+        "selected_ranks": [
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_050",
+            "rrf": 0.03278688524590164,
+            "vector_rank": 1,
+            "lexical_rank": 1
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_056",
+            "rrf": 0.03225806451612903,
+            "vector_rank": 2,
+            "lexical_rank": 2
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_004",
+            "rrf": 0.03125763125763126,
+            "vector_rank": 3,
+            "lexical_rank": 5
+          }
+        ]
+      },
+      "grounding_trace": {
+        "type": "grounding",
+        "policy": "grounded-support-quotes-v1",
+        "support": [
+          {
+            "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_050",
+            "quote": "To avoid attention, filming in Chicago took place under the ruse title Rory's First Kiss but the"
+          },
+          {
+            "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_050",
+            "quote": "Filming in Chicago\n\nSee also: Stunts of The Dark Knight A photograph of the Chicago skyline behind Navy Pier. The Dark Knight was mainly filmed on location in the city.\n\nPrincipal photography began on April 18, 2007, in Chicago on a $185 million budget.[s][t]"
+          }
+        ],
+        "note": "Exact quote presence is checked; semantic claim support still requires evaluation."
+      },
+      "baseline": {
+        "id": "working-title",
+        "question": "What cover title was used for filming The Dark Knight in Chicago?",
+        "expected_status": "answered",
+        "labelled_supporting_ids": [
+          "902071f36d1e1c1ae43ce3ae813ef0da_050",
+          "902071f36d1e1c1ae43ce3ae813ef0da_051"
+        ],
+        "retrieved": [
+          {
+            "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_050",
+            "score": 0.8038110366057649,
+            "section": "Filming in Chicago"
+          },
+          {
+            "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_056",
+            "score": 0.7710494555619185,
+            "section": "Filming in Chicago"
+          },
+          {
+            "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_004",
+            "score": 0.7444327038778255,
+            "section": "Introduction"
+          }
+        ],
+        "answer": {
+          "status": "answered",
+          "answer": "Rory's First Kiss",
+          "citation_ids": [
+            "902071f36d1e1c1ae43ce3ae813ef0da_050"
+          ]
+        },
+        "error": null,
+        "duration_seconds": 1.878,
+        "supporting_hit_at_3": true,
+        "annotated_id_recall_at_3": 0.5,
+        "automated_pass": true,
+        "failures": [],
+        "human_claim_support_review": "pending",
+        "retrieval_trace": null,
+        "grounding_trace": null
+      }
+    },
+    {
+      "id": "dents-decoy",
+      "question": "Why does Harvey Dent claim that he is Batman?",
+      "expected_status": "answered",
+      "labelled_supporting_ids": [
+        "902071f36d1e1c1ae43ce3ae813ef0da_012"
+      ],
+      "retrieved": [
+        {
+          "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_011",
+          "score": 0.7878760022762068,
+          "section": "Plot"
+        },
+        {
+          "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_012",
+          "score": 0.7560667257406845,
+          "section": "Plot"
+        },
+        {
+          "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_009",
+          "score": 0.785176552328438,
+          "section": "Plot"
+        }
+      ],
+      "answer": {
+        "status": "answered",
+        "answer": "to lure the Joker out",
+        "citation_ids": [
+          "902071f36d1e1c1ae43ce3ae813ef0da_012"
+        ]
+      },
+      "error": null,
+      "duration_seconds": 2.091,
+      "supporting_hit_at_3": true,
+      "annotated_id_recall_at_3": 1.0,
+      "automated_pass": true,
+      "failures": [],
+      "human_claim_support_review": "pending",
+      "retrieval_trace": {
+        "policy": "discussion-hybrid-v2",
+        "scope": "story",
+        "classified": true,
+        "eligible_passages": 167,
+        "routed_passages": 8,
+        "lexical_anchor": "902071f36d1e1c1ae43ce3ae813ef0da_012",
+        "selected_ids": [
+          "902071f36d1e1c1ae43ce3ae813ef0da_011",
+          "902071f36d1e1c1ae43ce3ae813ef0da_012",
+          "902071f36d1e1c1ae43ce3ae813ef0da_009"
+        ],
+        "vector_top": [
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_011",
+            "cosine": 0.7878760022762068
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_009",
+            "cosine": 0.785176552328438
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_016",
+            "cosine": 0.7812214299795269
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_012",
+            "cosine": 0.7560667257406845
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_010",
+            "cosine": 0.7274352498213495
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_015",
+            "cosine": 0.7194735952783274
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_013",
+            "cosine": 0.6900996296710985
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_014",
+            "cosine": 0.6612071898615988
+          }
+        ],
+        "lexical_top": [
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_012",
+            "bm25": 7.517357495950817
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_011",
+            "bm25": 7.079108709177175
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_009",
+            "bm25": 6.314166847348067
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_016",
+            "bm25": 3.6176552674307594
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_015",
+            "bm25": 3.585614302455891
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_010",
+            "bm25": 3.105022047082648
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_013",
+            "bm25": 2.8500751126315302
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_014",
+            "bm25": 1.777224420717706
+          }
+        ],
+        "selected_ranks": [
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_011",
+            "rrf": 0.03252247488101534,
+            "vector_rank": 1,
+            "lexical_rank": 2
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_012",
+            "rrf": 0.032018442622950824,
+            "vector_rank": 4,
+            "lexical_rank": 1
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_009",
+            "rrf": 0.03200204813108039,
+            "vector_rank": 2,
+            "lexical_rank": 3
+          }
+        ]
+      },
+      "grounding_trace": {
+        "type": "grounding",
+        "policy": "grounded-support-quotes-v1",
+        "support": [
+          {
+            "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_012",
+            "quote": "Dent claims he is Batman to lure the Joker out, who attacks the police convoy transporting Dent."
+          },
+          {
+            "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_012",
+            "quote": "Batman and Gordon apprehend the Joker, and Gordon is promoted to commissioner."
+          }
+        ],
+        "note": "Exact quote presence is checked; semantic claim support still requires evaluation."
+      },
+      "baseline": {
+        "id": "dents-decoy",
+        "question": "Why does Harvey Dent claim that he is Batman?",
+        "expected_status": "answered",
+        "labelled_supporting_ids": [
+          "902071f36d1e1c1ae43ce3ae813ef0da_012"
+        ],
+        "retrieved": [
+          {
+            "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_137",
+            "score": 0.8257692076760306,
+            "section": "Morality and ethics"
+          },
+          {
+            "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_134",
+            "score": 0.7996564258581375,
+            "section": "Terrorism and escalation"
+          },
+          {
+            "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_031",
+            "score": 0.7948065580718873,
+            "section": "Writing"
+          }
+        ],
+        "answer": {
+          "status": "insufficient_evidence",
+          "answer": "The supplied evidence is insufficient to answer this question.",
+          "citation_ids": []
+        },
+        "error": null,
+        "duration_seconds": 1.451,
+        "supporting_hit_at_3": false,
+        "annotated_id_recall_at_3": 0.0,
+        "automated_pass": false,
+        "failures": [
+          "No labelled supporting passage retrieved",
+          "Answer status differs from expectation",
+          "No labelled supporting passage cited",
+          "Missing expected phrase group: ['lure', 'draw']",
+          "Missing expected phrase group: ['Joker']"
+        ],
+        "human_claim_support_review": "pending",
+        "retrieval_trace": null,
+        "grounding_trace": null
+      }
+    },
+    {
+      "id": "ending-legacy",
+      "question": "Why does Batman take the blame for Harvey Dent\u2019s crimes at the end?",
+      "expected_status": "answered",
+      "labelled_supporting_ids": [
+        "902071f36d1e1c1ae43ce3ae813ef0da_016"
+      ],
+      "retrieved": [
+        {
+          "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_016",
+          "score": 0.8329079186929602,
+          "section": "Plot"
+        },
+        {
+          "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_009",
+          "score": 0.7728253301860536,
+          "section": "Plot"
+        },
+        {
+          "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_011",
+          "score": 0.796067162445948,
+          "section": "Plot"
+        }
+      ],
+      "answer": null,
+      "error": "ValueError",
+      "duration_seconds": 2.457,
+      "supporting_hit_at_3": true,
+      "annotated_id_recall_at_3": 1.0,
+      "automated_pass": false,
+      "failures": [
+        "Generation or response validation failed"
+      ],
+      "human_claim_support_review": "pending",
+      "retrieval_trace": {
+        "policy": "discussion-hybrid-v2",
+        "scope": "story",
+        "classified": true,
+        "eligible_passages": 167,
+        "routed_passages": 8,
+        "lexical_anchor": "902071f36d1e1c1ae43ce3ae813ef0da_016",
+        "selected_ids": [
+          "902071f36d1e1c1ae43ce3ae813ef0da_016",
+          "902071f36d1e1c1ae43ce3ae813ef0da_009",
+          "902071f36d1e1c1ae43ce3ae813ef0da_011"
+        ],
+        "vector_top": [
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_016",
+            "cosine": 0.8329079186929602
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_011",
+            "cosine": 0.796067162445948
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_009",
+            "cosine": 0.7728253301860536
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_015",
+            "cosine": 0.765107923088124
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_010",
+            "cosine": 0.7519608577214625
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_012",
+            "cosine": 0.7483009389212641
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_013",
+            "cosine": 0.7184338000152783
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_014",
+            "cosine": 0.7033012698813232
+          }
+        ],
+        "lexical_top": [
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_016",
+            "bm25": 11.250633781383668
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_009",
+            "bm25": 8.2270222124204
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_015",
+            "bm25": 6.18022845210211
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_011",
+            "bm25": 5.12584353492368
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_010",
+            "bm25": 5.099288574047397
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_014",
+            "bm25": 4.407386737825942
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_012",
+            "bm25": 3.7169626516985743
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_013",
+            "bm25": 2.8500751126315302
+          }
+        ],
+        "selected_ranks": [
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_016",
+            "rrf": 0.03278688524590164,
+            "vector_rank": 1,
+            "lexical_rank": 1
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_009",
+            "rrf": 0.03200204813108039,
+            "vector_rank": 3,
+            "lexical_rank": 2
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_011",
+            "rrf": 0.031754032258064516,
+            "vector_rank": 2,
+            "lexical_rank": 4
+          }
+        ]
+      },
+      "grounding_trace": null,
+      "baseline": {
+        "id": "ending-legacy",
+        "question": "Why does Batman take the blame for Harvey Dent\u2019s crimes at the end?",
+        "expected_status": "answered",
+        "labelled_supporting_ids": [
+          "902071f36d1e1c1ae43ce3ae813ef0da_016"
+        ],
+        "retrieved": [
+          {
+            "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_016",
+            "score": 0.8329079186929602,
+            "section": "Plot"
+          },
+          {
+            "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_144",
+            "score": 0.8222377962781703,
+            "section": "Morality and ethics"
+          },
+          {
+            "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_011",
+            "score": 0.796067162445948,
+            "section": "Plot"
+          }
+        ],
+        "answer": {
+          "status": "answered",
+          "answer": "Batman takes the blame for Harvey Dent's crimes at the end to preserve the city and maintain hope for its residents, as he believes Dent's corruption will harm Gotham.",
+          "citation_ids": [
+            "902071f36d1e1c1ae43ce3ae813ef0da_144",
+            "902071f36d1e1c1ae43ce3ae813ef0da_011"
+          ]
+        },
+        "error": null,
+        "duration_seconds": 2.986,
+        "supporting_hit_at_3": true,
+        "annotated_id_recall_at_3": 1.0,
+        "automated_pass": false,
+        "failures": [
+          "No labelled supporting passage cited"
+        ],
+        "human_claim_support_review": "pending",
+        "retrieval_trace": null,
+        "grounding_trace": null
+      }
+    },
+    {
+      "id": "missing-private-diary",
+      "question": "What did I write in my private diary after watching The Dark Knight?",
+      "expected_status": "insufficient_evidence",
+      "labelled_supporting_ids": [],
+      "retrieved": [
+        {
+          "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_087",
+          "score": 0.6755465433884421,
+          "section": "Marketing and anti-piracy"
+        },
+        {
+          "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_028",
+          "score": 0.6790144976186043,
+          "section": "Writing"
+        },
+        {
+          "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_131",
+          "score": 0.6666841227631675,
+          "section": "Terrorism and escalation"
+        }
+      ],
+      "answer": {
+        "status": "insufficient_evidence",
+        "answer": "The supplied evidence is insufficient to answer this question.",
+        "citation_ids": []
+      },
+      "error": null,
+      "duration_seconds": 1.7,
+      "supporting_hit_at_3": null,
+      "annotated_id_recall_at_3": null,
+      "automated_pass": true,
+      "failures": [],
+      "human_claim_support_review": "pending",
+      "retrieval_trace": {
+        "policy": "discussion-hybrid-v2",
+        "scope": "all",
+        "classified": true,
+        "eligible_passages": 167,
+        "routed_passages": 167,
+        "lexical_anchor": "902071f36d1e1c1ae43ce3ae813ef0da_131",
+        "selected_ids": [
+          "902071f36d1e1c1ae43ce3ae813ef0da_087",
+          "902071f36d1e1c1ae43ce3ae813ef0da_028",
+          "902071f36d1e1c1ae43ce3ae813ef0da_131"
+        ],
+        "vector_top": [
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_029",
+            "cosine": 0.717173632970508
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_002",
+            "cosine": 0.7132274177177659
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_025",
+            "cosine": 0.6830197666306131
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_162",
+            "cosine": 0.6800360746316315
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_005",
+            "cosine": 0.6797168180002621
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_028",
+            "cosine": 0.6790144976186043
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_067",
+            "cosine": 0.6785721847933232
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_087",
+            "cosine": 0.6755465433884421
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_129",
+            "cosine": 0.6731697014244137
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_026",
+            "cosine": 0.6713853561104135
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_047",
+            "cosine": 0.6705581037194692
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_104",
+            "cosine": 0.6703546624441861
+          }
+        ],
+        "lexical_top": [
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_131",
+            "bm25": 6.678562371475213
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_163",
+            "bm25": 6.332489308073155
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_039",
+            "bm25": 4.604018371471808
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_087",
+            "bm25": 4.122801975807864
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_115",
+            "bm25": 4.108927435170619
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_068",
+            "bm25": 4.0261567243968015
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_129",
+            "bm25": 3.904131063095375
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_028",
+            "bm25": 3.6037657736928495
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_165",
+            "bm25": 2.851491559289668
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_091",
+            "bm25": 2.6975568226167255
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_008",
+            "bm25": 2.520739497301567
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_088",
+            "bm25": 2.450352890502316
+          }
+        ],
+        "selected_ranks": [
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_087",
+            "rrf": 0.030330882352941176,
+            "vector_rank": 8,
+            "lexical_rank": 4
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_028",
+            "rrf": 0.029857397504456328,
+            "vector_rank": 6,
+            "lexical_rank": 8
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_131",
+            "rrf": 0.029726775956284153,
+            "vector_rank": 15,
+            "lexical_rank": 1
+          }
+        ]
+      },
+      "grounding_trace": {
+        "type": "grounding",
+        "policy": "grounded-support-quotes-v1",
+        "support": [],
+        "note": "Exact quote presence is checked; semantic claim support still requires evaluation."
+      },
+      "baseline": {
+        "id": "missing-private-diary",
+        "question": "What did I write in my private diary after watching The Dark Knight?",
+        "expected_status": "insufficient_evidence",
+        "labelled_supporting_ids": [],
+        "retrieved": [
+          {
+            "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_029",
+            "score": 0.717173632970508,
+            "section": "Writing"
+          },
+          {
+            "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_002",
+            "score": 0.7132274177177659,
+            "section": "Introduction"
+          },
+          {
+            "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_025",
+            "score": 0.6830197666306131,
+            "section": "Writing"
+          }
+        ],
+        "answer": {
+          "status": "insufficient_evidence",
+          "answer": "The supplied evidence is insufficient to answer this question.",
+          "citation_ids": []
+        },
+        "error": null,
+        "duration_seconds": 1.779,
+        "supporting_hit_at_3": null,
+        "annotated_id_recall_at_3": null,
+        "automated_pass": true,
+        "failures": [],
+        "human_claim_support_review": "pending",
+        "retrieval_trace": null,
+        "grounding_trace": null
+      }
+    }
+  ]
+}

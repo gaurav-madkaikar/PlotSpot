@@ -1,0 +1,1 @@
+{"policy": "cross-source-story-v10-narrative-quality", "model": "qwen3.5:9b", "model_digest": "6488c96fa5faab64bb65cbd30d4289e20e6130ef535a93ef9a49f42eda893ea7", "implementation_sha256": "6b47abd25b973ea3d4d1142203d9358e5fa298fea8ab0c4246c90ed9c49afa96", "published": false, "evaluation_kind": "real_movie_development_inspection", "movies": []}

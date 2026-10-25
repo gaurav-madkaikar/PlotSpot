@@ -1,0 +1,261 @@
+{
+  "description": "Fresh v2 reserved cases authored and frozen before model execution.",
+  "cases": [
+    {
+      "id": "isolation-reserved-choice",
+      "mode": "quiz",
+      "expected_accept": true,
+      "label_reason": "The item tests the explicit motivation behind a central choice.",
+      "evidence": [
+        {
+          "alias": "W1",
+          "text": "Sora burns the false treaty because signing it would surrender Demer to the invaders."
+        },
+        {
+          "alias": "S1",
+          "text": "Rather than surrender Demer, Sora refuses the false treaty and burns it."
+        }
+      ],
+      "draft": {
+        "kind": "event",
+        "question": "Why does Sora burn the false treaty?",
+        "answer": "signing it would surrender Demer to the invaders",
+        "wiki_alias": "W1",
+        "wiki_quote": "Sora burns the false treaty because signing it would surrender Demer to the invaders.",
+        "script_alias": "S1",
+        "script_quote": "Rather than surrender Demer, Sora refuses the false treaty and burns it.",
+        "options": [
+          "signing it would surrender Demer to the invaders",
+          "it contains a treasure map",
+          "the ink is invisible",
+          "the mayor asks for a copy"
+        ],
+        "correct_index": 0
+      }
+    },
+    {
+      "id": "isolation-reserved-consequence",
+      "mode": "quiz",
+      "expected_accept": true,
+      "label_reason": "The item tests a central action and consequence.",
+      "evidence": [
+        {
+          "alias": "W1",
+          "text": "After Sora opens the old canal, water reaches the farms and ends the siege."
+        },
+        {
+          "alias": "S1",
+          "text": "Sora opens the canal; the farms receive water, so the besiegers lose their leverage."
+        }
+      ],
+      "draft": {
+        "kind": "event",
+        "question": "What consequence follows when Sora opens the canal?",
+        "answer": "water reaches the farms and ends the siege",
+        "wiki_alias": "W1",
+        "wiki_quote": "After Sora opens the old canal, water reaches the farms and ends the siege.",
+        "script_alias": "S1",
+        "script_quote": "Sora opens the canal; the farms receive water, so the besiegers lose their leverage.",
+        "options": [
+          "water reaches the farms and ends the siege",
+          "the farms are abandoned",
+          "the invaders capture the mayor",
+          "the canal freezes"
+        ],
+        "correct_index": 0
+      }
+    },
+    {
+      "id": "isolation-reserved-relationship",
+      "mode": "quiz",
+      "expected_accept": true,
+      "label_reason": "The item tests a meaningful relationship change.",
+      "evidence": [
+        {
+          "alias": "W1",
+          "text": "Sora gives command to Kellan after recognizing that Kellan protected the villagers at personal risk."
+        },
+        {
+          "alias": "S1",
+          "text": "Because Kellan risked everything to protect the villagers, Sora trusts Kellan with command."
+        }
+      ],
+      "draft": {
+        "kind": "event",
+        "question": "Why does Sora give command to Kellan?",
+        "answer": "Kellan protected the villagers at personal risk",
+        "wiki_alias": "W1",
+        "wiki_quote": "Sora gives command to Kellan after recognizing that Kellan protected the villagers at personal risk.",
+        "script_alias": "S1",
+        "script_quote": "Because Kellan risked everything to protect the villagers, Sora trusts Kellan with command.",
+        "options": [
+          "Kellan protected the villagers at personal risk",
+          "Kellan owns the canal",
+          "the mayor leaves town",
+          "the treaty requires it"
+        ],
+        "correct_index": 0
+      }
+    },
+    {
+      "id": "isolation-reserved-story-rule",
+      "mode": "quiz",
+      "expected_accept": true,
+      "label_reason": "The item tests an explicit central story rule.",
+      "evidence": [
+        {
+          "alias": "W1",
+          "text": "The warning beacon can be lit only when two rival houses place their seals together."
+        },
+        {
+          "alias": "S1",
+          "text": "The beacon responds only after both rival houses join their seals."
+        }
+      ],
+      "draft": {
+        "kind": "event",
+        "question": "What must the rival houses do to light the warning beacon?",
+        "answer": "place their seals together",
+        "wiki_alias": "W1",
+        "wiki_quote": "The warning beacon can be lit only when two rival houses place their seals together.",
+        "script_alias": "S1",
+        "script_quote": "The beacon responds only after both rival houses join their seals.",
+        "options": [
+          "place their seals together",
+          "destroy both seals",
+          "wait until midnight",
+          "open the canal"
+        ],
+        "correct_index": 0
+      }
+    },
+    {
+      "id": "isolation-reserved-granular-name",
+      "mode": "quiz",
+      "expected_accept": false,
+      "label_reason": "The ferry name is isolated recall with no narrative role in the question.",
+      "evidence": [
+        {
+          "alias": "W1",
+          "text": "Sora calls the small ferry Silver Finch before the final meeting."
+        },
+        {
+          "alias": "S1",
+          "text": "The ferry named Silver Finch carries Sora to the meeting."
+        }
+      ],
+      "draft": {
+        "kind": "event",
+        "question": "What is the name of Sora’s ferry?",
+        "answer": "Silver Finch",
+        "wiki_alias": "W1",
+        "wiki_quote": "Sora calls the small ferry Silver Finch before the final meeting.",
+        "script_alias": "S1",
+        "script_quote": "The ferry named Silver Finch carries Sora to the meeting.",
+        "options": [
+          "Silver Finch",
+          "Morning Star",
+          "River Queen",
+          "Grey Heron"
+        ],
+        "correct_index": 0
+      }
+    },
+    {
+      "id": "isolation-reserved-conflict",
+      "mode": "quiz",
+      "expected_accept": false,
+      "label_reason": "The sources contradict the actor and outcome.",
+      "evidence": [
+        {
+          "alias": "W1",
+          "text": "Sora opens the canal, and water reaches the farms to end the siege."
+        },
+        {
+          "alias": "S1",
+          "text": "Kellan destroys the canal before Sora arrives, leaving the farms without water."
+        }
+      ],
+      "draft": {
+        "kind": "event",
+        "question": "Whose action brings water to the farms?",
+        "answer": "Sora",
+        "wiki_alias": "W1",
+        "wiki_quote": "Sora opens the canal, and water reaches the farms to end the siege.",
+        "script_alias": "S1",
+        "script_quote": "Kellan destroys the canal before Sora arrives, leaving the farms without water.",
+        "options": [
+          "Sora",
+          "Kellan",
+          "the mayor",
+          "the invaders"
+        ],
+        "correct_index": 0
+      }
+    },
+    {
+      "id": "isolation-reserved-wrong-relation",
+      "mode": "quiz",
+      "expected_accept": false,
+      "label_reason": "The selected answer occurs in evidence but is not the cause.",
+      "evidence": [
+        {
+          "alias": "W1",
+          "text": "Sora carries a brass seal while fear of the flood drives the evacuation."
+        },
+        {
+          "alias": "S1",
+          "text": "The flood causes the evacuation; Sora merely carries a brass seal."
+        }
+      ],
+      "draft": {
+        "kind": "event",
+        "question": "What drives the evacuation?",
+        "answer": "a brass seal",
+        "wiki_alias": "W1",
+        "wiki_quote": "Sora carries a brass seal while fear of the flood drives the evacuation.",
+        "script_alias": "S1",
+        "script_quote": "The flood causes the evacuation; Sora merely carries a brass seal.",
+        "options": [
+          "a brass seal",
+          "fear of the flood",
+          "a festival",
+          "a broken cart"
+        ],
+        "correct_index": 0
+      }
+    },
+    {
+      "id": "isolation-reserved-ambiguous",
+      "mode": "quiz",
+      "expected_accept": false,
+      "label_reason": "Two options are supported, so the item is not uniquely scorable.",
+      "evidence": [
+        {
+          "alias": "W1",
+          "text": "Sora names both the northern bridge and the river tunnel as safe escape routes."
+        },
+        {
+          "alias": "S1",
+          "text": "The northern bridge and river tunnel are both approved escape routes."
+        }
+      ],
+      "draft": {
+        "kind": "event",
+        "question": "Which route is approved for escape?",
+        "answer": "the northern bridge",
+        "wiki_alias": "W1",
+        "wiki_quote": "Sora names both the northern bridge and the river tunnel as safe escape routes.",
+        "script_alias": "S1",
+        "script_quote": "The northern bridge and river tunnel are both approved escape routes.",
+        "options": [
+          "the northern bridge",
+          "the river tunnel",
+          "the market road",
+          "the cliff path"
+        ],
+        "correct_index": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "type": "assistant development inspection; not independent quality qualification",
+  "inputs": [
+    {
+      "path": "evals/movie-rag/research/readiness-v3.json",
+      "sha256": "14369acb484b50ec4f15683e5035ef39f9847e069905d32571a186f06a4ec84b"
+    },
+    {
+      "path": "evals/movie-rag/research/arrival-readiness-v3.json",
+      "sha256": "8948414cb81b0ccc8d051c2691719bd5de3f5a9cde8eef7a06d039a7fb44c907"
+    }
+  ],
+  "final_module_hashes_match": true,
+  "original_fourteen_labels_unchanged": true,
+  "control_results": {
+    "passed": 14,
+    "total": 17
+  },
+  "failed_controls": [
+    {
+      "id": "same-character-new-fact",
+      "result": {
+        "policy": "content-citation-novelty-readiness-v2-purpose",
+        "ready_ids": [],
+        "items": [
+          {
+            "candidate_id": "Q1",
+            "novelty": "new",
+            "matches": [],
+            "clarity": "needs_edit",
+            "reason": "The candidate tests the specific property of Louise's daughter's age at death. The saved pair (B1) tests a different property (Louise's profession). These are distinct facts involving different subjects and properties.",
+            "clarity_reason": "The question stem 'How old' asks for a number, but the answer 'Twelve' is a noun phrase representing an age rather than a numeric value; additionally, the phrasing 'when she dies' creates ambiguity regarding which subject's death is being referenced.",
+            "ready": false
+          }
+        ],
+        "error_type": null
+      }
+    },
+    {
+      "id": "same-answer-different-object",
+      "result": {
+        "policy": "content-citation-novelty-readiness-v2-purpose",
+        "ready_ids": [],
+        "items": [
+          {
+            "candidate_id": "Q1",
+            "novelty": "duplicate",
+            "matches": [
+              "B1"
+            ],
+            "clarity": "not_reviewed",
+            "reason": "Both questions test the same property (color) for distinct objects (spacecraft vs. captain's uniform) but share the identical answer string 'Blue' and lack a specified distinction in the data; under strict paraphrase testing where wording differs but",
+            "clarity_reason": "",
+            "ready": false
+          }
+        ],
+        "error_type": null
+      }
+    },
+    {
+      "id": "within-batch-paraphrase",
+      "result": {
+        "policy": "content-citation-novelty-readiness-v2-purpose",
+        "ready_ids": [],
+        "items": [
+          {
+            "candidate_id": "Q1",
+            "novelty": "new",
+            "matches": [],
+            "clarity": "needs_edit",
+            "reason": "No prior saved pairs or earlier candidates exist to compare against; the fact tested (aliens offering help due to future need for human assistance) is unique in this context.",
+            "clarity_reason": "The question asks 'Why' (seeking a reason), but the answer provides a future prediction ('They will need...'), creating a mismatch between the question type and the answer content.",
+            "ready": false
+          },
+          {
+            "candidate_id": "Q2",
+            "novelty": "duplicate",
+            "matches": [
+              "Q1"
+            ],
+            "clarity": "not_reviewed",
+            "reason": "Tests the exact same specific property/reason (aliens needing human help later) as Q1, despite different question wording; paraphrase of the same answerable fact.",
+            "clarity_reason": "",
+            "ready": false
+          }
+        ],
+        "error_type": null
+      }
+    }
+  ],
+  "failure_interpretation": "Three valid new quiz questions are overblocked. No observed incorrect ready decision in these fixed controls; the small tuned set is not a safety or quality guarantee.",
+  "replay": {
+    "previously_eligible_quizzes": 2,
+    "previously_eligible_facts": 2,
+    "new_ready_quizzes": 0,
+    "new_ready_facts": 0
+  },
+  "fresh_flow": {
+    "branch_states": [
+      "inspected",
+      "inspected"
+    ],
+    "same_generated_proposals_as_lesson_61": true,
+    "total_seconds": 107.401042,
+    "new_ready_quizzes": 0,
+    "new_ready_facts": 0,
+    "published": false
+  },
+  "source_inspection": [
+    {
+      "id": "story:Q1",
+      "assessment": "Matched B6 future-help topic; code preserves the exact saved-bank alias."
+    },
+    {
+      "id": "story:Q2",
+      "assessment": "Incomplete how/revealed-to-be stem withheld before topic inference; saved topic already known from the previous independent source inspection."
+    },
+    {
+      "id": "time-arrival:F1",
+      "assessment": "Generic-title and selected-citation name checks withhold the wider-context mood-board claim."
+    },
+    {
+      "id": "time-arrival:F2",
+      "assessment": "Previous necessary rejection preserved; readiness never overrides it."
+    },
+    {
+      "id": "bfi-arrival:F1",
+      "assessment": "Previous saved-wording duplicate withholding preserved."
+    },
+    {
+      "id": "bfi-arrival:F2",
+      "assessment": "General evidence review still accepts unstated narrative purpose. Targeted WHY review returns unsupported with Insufficient evidence, so final eligibility is false."
+    }
+  ],
+  "saved_content": {
+    "saved_banks_unchanged": true,
+    "count": 11,
+    "script_policy_unchanged": true,
+    "inception_more_questions_gate": true
+  },
+  "backend_tests_passed": 1090,
+  "new_backend_tests": 40,
+  "automatic_publication_qualified": false,
+  "frontend_changed": false,
+  "limits": [
+    "Assistant-authored consumed controls and regression examples; no independent holdout.",
+    "Topic and wording reviewers overblock valid questions.",
+    "Finite English purpose/stem rules and multiword-name heuristics are incomplete.",
+    "General support review remains fallible even when a separate purpose review repairs this example.",
+    "No UI/API job integration or token/production-throughput claim."
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "implementation_sha256": "d23ff4cbf5da17e8379fd9fb94a2cbc162acecf79ec1c4b417b1be861baccc74",
+  "discussion": {
+    "status": "answered",
+    "manual_observation": "Response included a leap-of-faith/regret detail from script context not supported by the selected released-film plot span. Subsequent policy restricts event answers to literal released evidence."
+  },
+  "quiz": {
+    "status": "validation_failure",
+    "reason": "Generated answer text did not match an option exactly; no publication."
+  },
+  "saved_collection_changed": false
+}

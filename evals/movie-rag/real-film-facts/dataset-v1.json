@@ -1,0 +1,389 @@
+{
+  "sources": [
+    {
+      "movie_id": 496243,
+      "snapshot_sha256": "68e96d2fdde06b5935c8277469603695d0f3cdb2820779c939cf7c01b3dae9ed",
+      "revision": "enwiki-1377908085-sections-v3-body",
+      "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1377908085"
+    },
+    {
+      "movie_id": 129,
+      "snapshot_sha256": "601fbdba987f2ec6cb8f280c0db0cad6d4cea99521011722100a37264e2866bc",
+      "revision": "enwiki-1378275530-sections-v3-body",
+      "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1378275530"
+    },
+    {
+      "movie_id": 120467,
+      "snapshot_sha256": "b1cadb7f2ce7907f4c1935f76603bb95bc9e763baa6032a06a4a49629f10e0d8",
+      "revision": "enwiki-1379203663-sections-v3-body",
+      "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379203663"
+    },
+    {
+      "movie_id": 438631,
+      "snapshot_sha256": "e814e197dccfc2a22e21ab9906cbce4e8d77430fe6fcc2c4f784752a9448b7c4",
+      "revision": "enwiki-1379707655-sections-v3-body",
+      "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379707655"
+    },
+    {
+      "movie_id": 546554,
+      "snapshot_sha256": "6c714663f2370b9ca1bdd5a1dc7899c9f2ac90f8776b1d39b63edbc0d07100bd",
+      "revision": "enwiki-1378593030-sections-v3-body",
+      "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1378593030"
+    },
+    {
+      "movie_id": 37165,
+      "snapshot_sha256": "004d0225b0fcefcb6fbc5fc15889dc6a553e906da6e6b962406c1cfca5aa7041",
+      "revision": "enwiki-1378575188-sections-v3-body",
+      "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1378575188"
+    }
+  ],
+  "quality": {
+    "dataset_version": "real-film-facts-v1",
+    "partition": "development",
+    "label_policy": "Assistant-authored fresh challenge labels, frozen before inference: accept complete supported useful production details; reject contradictions and invented causes. Not independent external annotations; all cases become consumed development evidence after this run.",
+    "batches": [
+      {
+        "batch_id": "film-496243-craft",
+        "evidence": [
+          {
+            "passage_id": "P1",
+            "purpose": "background",
+            "text": "According to editor Yang Jin-mo, Bong chose to shoot the film without traditional coverage. To give them more editing options with limited shots, they sometimes stitched together different takes of the same shot.",
+            "origin": {
+              "movie_id": 496243,
+              "source_id": "enwiki-56746570",
+              "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1377908085",
+              "revision": "enwiki-1377908085-sections-v3-body",
+              "section_title": "Editing",
+              "section_category": "production",
+              "start": 15736,
+              "end": 15948
+            }
+          }
+        ],
+        "proposals": {
+          "facts": [
+            {
+              "title": "An edit assembled from multiple takes",
+              "text": "With limited shot coverage, Parasite’s editors sometimes joined different takes of the same shot.",
+              "passage_id": "P1",
+              "evidence_quote": "According to editor Yang Jin-mo, Bong chose to shoot the film without traditional coverage. To give them more editing options with limited shots, they sometimes stitched together different takes of the same shot."
+            },
+            {
+              "title": "Traditional coverage throughout",
+              "text": "Bong filmed Parasite with traditional coverage, giving the editors unlimited shots to choose from.",
+              "passage_id": "P1",
+              "evidence_quote": "According to editor Yang Jin-mo, Bong chose to shoot the film without traditional coverage. To give them more editing options with limited shots, they sometimes stitched together different takes of the same shot."
+            },
+            {
+              "title": "A budget-driven editing shortcut",
+              "text": "The editors joined different takes of the same shot because the film ran out of production money.",
+              "passage_id": "P1",
+              "evidence_quote": "According to editor Yang Jin-mo, Bong chose to shoot the film without traditional coverage. To give them more editing options with limited shots, they sometimes stitched together different takes of the same shot."
+            }
+          ],
+          "questions": []
+        },
+        "labels": {
+          "F1": {
+            "decision": "accept",
+            "category": "supported-production-detail"
+          },
+          "F2": {
+            "decision": "reject",
+            "category": "contradicted-production-choice"
+          },
+          "F3": {
+            "decision": "reject",
+            "category": "invented-causal-link"
+          }
+        }
+      },
+      {
+        "batch_id": "film-129-craft",
+        "evidence": [
+          {
+            "passage_id": "P1",
+            "purpose": "background",
+            "text": "Screenwriters Cindy Davis Hewitt and Donald H. Hewitt penned the English-language dialogue, which they wrote in order to match the characters' original Japanese-language lip movements.",
+            "origin": {
+              "movie_id": 129,
+              "source_id": "enwiki-70091",
+              "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1378275530",
+              "revision": "enwiki-1378275530-sections-v3-body",
+              "section_title": "English dub",
+              "section_category": "production",
+              "start": 14984,
+              "end": 15168
+            }
+          }
+        ],
+        "proposals": {
+          "facts": [
+            {
+              "title": "Dialogue fitted to existing animation",
+              "text": "Cindy Davis Hewitt and Donald H. Hewitt wrote the English dialogue to fit the characters’ original Japanese lip movements.",
+              "passage_id": "P1",
+              "evidence_quote": "Screenwriters Cindy Davis Hewitt and Donald H. Hewitt penned the English-language dialogue, which they wrote in order to match the characters' original Japanese-language lip movements."
+            },
+            {
+              "title": "Animation changed for the English voices",
+              "text": "The animation team redrew the characters’ mouths to match newly recorded English dialogue.",
+              "passage_id": "P1",
+              "evidence_quote": "Screenwriters Cindy Davis Hewitt and Donald H. Hewitt penned the English-language dialogue, which they wrote in order to match the characters' original Japanese-language lip movements."
+            },
+            {
+              "title": "A dubbing choice to save money",
+              "text": "The writers fitted English dialogue to Japanese lip movements because Disney refused to pay for new animation.",
+              "passage_id": "P1",
+              "evidence_quote": "Screenwriters Cindy Davis Hewitt and Donald H. Hewitt penned the English-language dialogue, which they wrote in order to match the characters' original Japanese-language lip movements."
+            }
+          ],
+          "questions": []
+        },
+        "labels": {
+          "F1": {
+            "decision": "accept",
+            "category": "supported-production-detail"
+          },
+          "F2": {
+            "decision": "reject",
+            "category": "reversed-adaptation-process"
+          },
+          "F3": {
+            "decision": "reject",
+            "category": "invented-causal-link"
+          }
+        }
+      },
+      {
+        "batch_id": "film-120467-craft",
+        "evidence": [
+          {
+            "passage_id": "P1",
+            "purpose": "background",
+            "text": "Canonero researched 1930s uniform design and period artwork by photographers George Hurrell and Man Ray and painters Kees van Dongen, Gustav Klimt, George Grosz and Tamara de Lempicka.",
+            "origin": {
+              "movie_id": 120467,
+              "source_id": "enwiki-38041226",
+              "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379203663",
+              "revision": "enwiki-1379203663-sections-v3-body",
+              "section_title": "Costumes",
+              "section_category": "production",
+              "start": 27012,
+              "end": 27196
+            }
+          }
+        ],
+        "proposals": {
+          "facts": [
+            {
+              "title": "Costumes drawn from photographs and paintings",
+              "text": "Canonero researched 1930s uniforms and artworks by photographers and painters, including Man Ray and Gustav Klimt, for the costume designs.",
+              "passage_id": "P1",
+              "evidence_quote": "Canonero researched 1930s uniform design and period artwork by photographers George Hurrell and Man Ray and painters Kees van Dongen, Gustav Klimt, George Grosz and Tamara de Lempicka."
+            },
+            {
+              "title": "A modern wardrobe reference",
+              "text": "Canonero researched 1990s uniform design rather than 1930s uniforms for the costumes.",
+              "passage_id": "P1",
+              "evidence_quote": "Canonero researched 1930s uniform design and period artwork by photographers George Hurrell and Man Ray and painters Kees van Dongen, Gustav Klimt, George Grosz and Tamara de Lempicka."
+            },
+            {
+              "title": "A request from the cast",
+              "text": "Canonero researched Man Ray and Gustav Klimt because the actors insisted on costumes based on those artists.",
+              "passage_id": "P1",
+              "evidence_quote": "Canonero researched 1930s uniform design and period artwork by photographers George Hurrell and Man Ray and painters Kees van Dongen, Gustav Klimt, George Grosz and Tamara de Lempicka."
+            }
+          ],
+          "questions": []
+        },
+        "labels": {
+          "F1": {
+            "decision": "accept",
+            "category": "supported-production-detail"
+          },
+          "F2": {
+            "decision": "reject",
+            "category": "incorrect-period"
+          },
+          "F3": {
+            "decision": "reject",
+            "category": "invented-causal-link"
+          }
+        }
+      },
+      {
+        "batch_id": "film-438631-craft",
+        "evidence": [
+          {
+            "passage_id": "P1",
+            "purpose": "background",
+            "text": "\"Sandscreens\" were used to simulate the natural luminance of the desert intended for backgrounds.",
+            "origin": {
+              "movie_id": 438631,
+              "source_id": "enwiki-52659577",
+              "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379707655",
+              "revision": "enwiki-1379707655-sections-v3-body",
+              "section_title": "Visual effects and design",
+              "section_category": "production",
+              "start": 31452,
+              "end": 31549
+            }
+          }
+        ],
+        "proposals": {
+          "facts": [
+            {
+              "title": "Desert light simulated with sandscreens",
+              "text": "Dune used sandscreens to simulate the natural brightness of desert backgrounds.",
+              "passage_id": "P1",
+              "evidence_quote": "\"Sandscreens\" were used to simulate the natural luminance of the desert intended for backgrounds."
+            },
+            {
+              "title": "A different role for sandscreens",
+              "text": "Dune used sandscreens to simulate ocean lighting rather than the luminance of desert backgrounds.",
+              "passage_id": "P1",
+              "evidence_quote": "\"Sandscreens\" were used to simulate the natural luminance of the desert intended for backgrounds."
+            },
+            {
+              "title": "A restriction that forced sandscreens",
+              "text": "The crew used sandscreens because Jordan banned filming in the desert.",
+              "passage_id": "P1",
+              "evidence_quote": "\"Sandscreens\" were used to simulate the natural luminance of the desert intended for backgrounds."
+            }
+          ],
+          "questions": []
+        },
+        "labels": {
+          "F1": {
+            "decision": "accept",
+            "category": "supported-production-detail"
+          },
+          "F2": {
+            "decision": "reject",
+            "category": "contradicted-effects-purpose"
+          },
+          "F3": {
+            "decision": "reject",
+            "category": "invented-causal-link"
+          }
+        }
+      },
+      {
+        "batch_id": "film-546554-craft",
+        "evidence": [
+          {
+            "passage_id": "P1",
+            "purpose": "background",
+            "text": "Johnson named each of the characters after musicians whose works he enjoyed because it was a simple practice to remember—for example, Joni Mitchell, Richard Thompson, and Steely Dan's Donald Fagen.",
+            "origin": {
+              "movie_id": 546554,
+              "source_id": "enwiki-58400663",
+              "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1378593030",
+              "revision": "enwiki-1378593030-sections-v3-body",
+              "section_title": "Casting",
+              "section_category": "casting",
+              "start": 12042,
+              "end": 12239
+            }
+          }
+        ],
+        "proposals": {
+          "facts": [
+            {
+              "title": "Musicians behind the character names",
+              "text": "Johnson named Knives Out characters after musicians he enjoyed, including Joni Mitchell and Steely Dan’s Donald Fagen, to make the names easier to remember.",
+              "passage_id": "P1",
+              "evidence_quote": "Johnson named each of the characters after musicians whose works he enjoyed because it was a simple practice to remember—for example, Joni Mitchell, Richard Thompson, and Steely Dan's Donald Fagen."
+            },
+            {
+              "title": "A rejected source for character names",
+              "text": "Johnson named every character after Agatha Christie detectives, rather than musicians he enjoyed.",
+              "passage_id": "P1",
+              "evidence_quote": "Johnson named each of the characters after musicians whose works he enjoyed because it was a simple practice to remember—for example, Joni Mitchell, Richard Thompson, and Steely Dan's Donald Fagen."
+            },
+            {
+              "title": "A soundtrack-driven naming decision",
+              "text": "Johnson named the characters after musicians because their songs were licensed for the soundtrack.",
+              "passage_id": "P1",
+              "evidence_quote": "Johnson named each of the characters after musicians whose works he enjoyed because it was a simple practice to remember—for example, Joni Mitchell, Richard Thompson, and Steely Dan's Donald Fagen."
+            }
+          ],
+          "questions": []
+        },
+        "labels": {
+          "F1": {
+            "decision": "accept",
+            "category": "supported-attributed-motive"
+          },
+          "F2": {
+            "decision": "reject",
+            "category": "contradicted-naming-source"
+          },
+          "F3": {
+            "decision": "reject",
+            "category": "invented-causal-link"
+          }
+        }
+      },
+      {
+        "batch_id": "film-37165-craft",
+        "evidence": [
+          {
+            "passage_id": "P1",
+            "purpose": "background",
+            "text": "After Laura Linney was hired to play the actress pretending to be Meryl, Truman's wife, she studied Sears catalogs from the 1950s to develop her character's poses.",
+            "origin": {
+              "movie_id": 37165,
+              "source_id": "enwiki-232711",
+              "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1378575188",
+              "revision": "enwiki-1378575188-sections-v3-body",
+              "section_title": "Casting",
+              "section_category": "casting",
+              "start": 12062,
+              "end": 12225
+            }
+          }
+        ],
+        "proposals": {
+          "facts": [
+            {
+              "title": "Catalog poses behind Meryl",
+              "text": "Laura Linney studied Sears catalogs from the 1950s to develop the poses of her character, the actress playing Truman’s wife.",
+              "passage_id": "P1",
+              "evidence_quote": "After Laura Linney was hired to play the actress pretending to be Meryl, Truman's wife, she studied Sears catalogs from the 1950s to develop her character's poses."
+            },
+            {
+              "title": "A different decade of catalog research",
+              "text": "Laura Linney studied Sears catalogs from the 1980s to develop her character’s poses.",
+              "passage_id": "P1",
+              "evidence_quote": "After Laura Linney was hired to play the actress pretending to be Meryl, Truman's wife, she studied Sears catalogs from the 1950s to develop her character's poses."
+            },
+            {
+              "title": "A sponsor behind the catalog research",
+              "text": "Laura Linney studied Sears catalogs because Sears sponsored the film and required its advertising poses.",
+              "passage_id": "P1",
+              "evidence_quote": "After Laura Linney was hired to play the actress pretending to be Meryl, Truman's wife, she studied Sears catalogs from the 1950s to develop her character's poses."
+            }
+          ],
+          "questions": []
+        },
+        "labels": {
+          "F1": {
+            "decision": "accept",
+            "category": "supported-production-detail"
+          },
+          "F2": {
+            "decision": "reject",
+            "category": "incorrect-period"
+          },
+          "F3": {
+            "decision": "reject",
+            "category": "invented-causal-link"
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "status_code": 200,
+  "seconds": 90.9,
+  "published": true,
+  "before_count": 10,
+  "after_count": 11,
+  "existing_items_preserved": true,
+  "facts_unchanged": true,
+  "unique_ids": true,
+  "new_questions": [
+    {
+      "id": "script-rag-74e285b37039",
+      "origin": "generated",
+      "question": "How many years did Cobb and Mal experience in Limbo during their experiment?",
+      "kind": "plot",
+      "options": [
+        "one night",
+        "three days",
+        "fifty years",
+        "ten hours"
+      ],
+      "correct_index": 2,
+      "explanation": "Cobb explains to Ariadne that he and Mal entered Limbo while experimenting with dream-sharing, experiencing fifty years in one night.",
+      "citations": [
+        {
+          "passage_id": "ab833719d85e2f740ebd9cf22beb5db1",
+          "source_label": "English Wikipedia contributors: Inception",
+          "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379453144",
+          "revision": "enwiki-1379453144-sections-v3-body",
+          "excerpt": "Cobb explains to Ariadne that he and Mal entered Limbo while experimenting with dream-sharing, experiencing fifty years in one night."
+        }
+      ]
+    }
+  ],
+  "response": {
+    "message": "1 new question added."
+  }
+}

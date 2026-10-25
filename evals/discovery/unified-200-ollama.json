@@ -1,0 +1,295 @@
+{
+  "routing_version": "unified-v1",
+  "prepared_at": "2026-10-10T15:31:26.941476+00:00",
+  "scope": "200 genre-balanced TMDB films; local nomic embeddings. Development cases only, not held-out. Synopsis-support gate is conservative English term/synonym matching, not a general relevance classifier.",
+  "model": "nomic-embed-text:v1.5",
+  "catalog_fingerprint": "b76010e769d9f4410a0420ea878a615357e253cc86c67cba3a71b3ab28ee8691",
+  "indexed_movies": 200,
+  "genre_counts": {
+    "Action": 36,
+    "Adventure": 35,
+    "Animation": 41,
+    "Comedy": 40,
+    "Crime": 23,
+    "Documentary": 24,
+    "Drama": 88,
+    "Family": 26,
+    "Fantasy": 28,
+    "History": 17,
+    "Horror": 16,
+    "Music": 22,
+    "Mystery": 21,
+    "Romance": 20,
+    "Science Fiction": 24,
+    "TV Movie": 16,
+    "Thriller": 25,
+    "War": 17,
+    "Western": 16
+  },
+  "deterministic_passes": 10,
+  "deterministic_cases": 10,
+  "checks": [
+    {
+      "query": "Interstellar",
+      "kind": "title_cast",
+      "total": 1,
+      "titles": [
+        "Interstellar"
+      ],
+      "passed": true
+    },
+    {
+      "query": "Amy Adams",
+      "kind": "title_cast",
+      "total": 1,
+      "titles": [
+        "Arrival"
+      ],
+      "passed": true
+    },
+    {
+      "query": "Intersteler",
+      "kind": "typo",
+      "total": 1,
+      "titles": [
+        "Interstellar"
+      ],
+      "passed": true
+    },
+    {
+      "query": "romance",
+      "kind": "genre",
+      "total": 20,
+      "titles": [
+        "Accidental Partners",
+        "\u00bfQuieres ser mi novia?",
+        "Young Hearts",
+        "My Dearest Assassin",
+        "Chainsaw Man - The Movie: Reze Arc"
+      ],
+      "passed": true
+    },
+    {
+      "query": "romantic comedy",
+      "kind": "genre",
+      "total": 9,
+      "titles": [
+        "Accidental Partners",
+        "\u00bfQuieres ser mi novia?",
+        "Dilwale Dulhania Le Jayenge",
+        "Forrest Gump",
+        "\u00bfQuieres ser mi hijo?"
+      ],
+      "passed": true
+    },
+    {
+      "query": "horror",
+      "kind": "genre",
+      "total": 16,
+      "titles": [
+        "Psycho",
+        "Succubus",
+        "La Leyenda de los Chaneques",
+        "Las leyendas: El origen",
+        "Michael Jackson's Thriller"
+      ],
+      "passed": true
+    },
+    {
+      "request": {
+        "query": "quantum crochet recipes for sourdough",
+        "genre": null,
+        "language": null,
+        "max_runtime": null,
+        "page": 1,
+        "page_size": 20
+      },
+      "total": 0,
+      "passed": true
+    },
+    {
+      "request": {
+        "query": "romance",
+        "genre": "Horror",
+        "language": "Klingon",
+        "max_runtime": null,
+        "page": 1,
+        "page_size": 20
+      },
+      "total": 0,
+      "passed": true
+    },
+    {
+      "request": {
+        "query": "Interstellar",
+        "genre": null,
+        "language": null,
+        "max_runtime": 120,
+        "page": 1,
+        "page_size": 20
+      },
+      "total": 0,
+      "passed": true
+    },
+    {
+      "case": "ten browse pages",
+      "passed": true,
+      "page_sizes": [
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20
+      ]
+    }
+  ],
+  "description_top1_hits": 5,
+  "description_top5_hits": 8,
+  "description_cases": [
+    {
+      "query": "A thoughtful science fiction story about communicating with aliens",
+      "expected_movie_id": 329865,
+      "total": 3,
+      "top5_ids": [
+        348,
+        329865,
+        1091
+      ],
+      "top1_hit": false,
+      "top5_hit": true,
+      "latency_seconds": 1.262
+    },
+    {
+      "query": "A father travels through space to save humanity and return to his children",
+      "expected_movie_id": 157336,
+      "total": 117,
+      "top5_ids": [
+        438631,
+        937337,
+        348,
+        687163,
+        105
+      ],
+      "top1_hit": false,
+      "top5_hit": false,
+      "latency_seconds": 0.804
+    },
+    {
+      "query": "A detective investigating a wealthy family after a suspicious death",
+      "expected_movie_id": 546554,
+      "total": 63,
+      "top5_ids": [
+        753230,
+        546554,
+        426,
+        118665,
+        11324
+      ],
+      "top1_hit": false,
+      "top5_hit": true,
+      "latency_seconds": 0.468
+    },
+    {
+      "query": "A Korean thriller about economic inequality between two families",
+      "expected_movie_id": 496243,
+      "language": "Korean",
+      "total": 1,
+      "top5_ids": [
+        496243
+      ],
+      "top1_hit": true,
+      "top5_hit": true,
+      "latency_seconds": 0.374
+    },
+    {
+      "query": "A young girl finding courage in a magical world of spirits",
+      "expected_movie_id": 129,
+      "total": 60,
+      "top5_ids": [
+        4935,
+        129,
+        620249,
+        1291559,
+        12477
+      ],
+      "top1_hit": false,
+      "top5_hit": true,
+      "latency_seconds": 0.235
+    },
+    {
+      "query": "A hacker discovers that reality is a computer simulation",
+      "expected_movie_id": 603,
+      "total": 13,
+      "top5_ids": [
+        603,
+        348,
+        118662,
+        10494,
+        245881
+      ],
+      "top1_hit": true,
+      "top5_hit": true,
+      "latency_seconds": 0.199
+    },
+    {
+      "query": "An ordinary man discovers his life is a television show",
+      "expected_movie_id": 37165,
+      "max_runtime": 120,
+      "total": 64,
+      "top5_ids": [
+        37165,
+        664280,
+        576712,
+        637,
+        21634
+      ],
+      "top1_hit": true,
+      "top5_hit": true,
+      "latency_seconds": 0.223
+    },
+    {
+      "query": "A stylish comedy adventure about a concierge in a European hotel",
+      "expected_movie_id": 120467,
+      "total": 0,
+      "top5_ids": [],
+      "top1_hit": false,
+      "top5_hit": false,
+      "latency_seconds": 0.136
+    },
+    {
+      "query": "A desert planet with political conflict over a valuable resource",
+      "expected_movie_id": 438631,
+      "total": 19,
+      "top5_ids": [
+        438631,
+        348,
+        664280,
+        576017,
+        6977
+      ],
+      "top1_hit": true,
+      "top5_hit": true,
+      "latency_seconds": 0.163
+    },
+    {
+      "query": "A heist that enters people's dreams and changes their ideas",
+      "expected_movie_id": 27205,
+      "total": 58,
+      "top5_ids": [
+        27205,
+        1007757,
+        620249,
+        40096,
+        1585
+      ],
+      "top1_hit": true,
+      "top5_hit": true,
+      "latency_seconds": 0.138
+    }
+  ]
+}

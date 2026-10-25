@@ -1,0 +1,28 @@
+{
+  "policy_intent": "narrative-first cross-source qualification with exact structured response cardinality",
+  "frozen_at": "2026-10-20",
+  "execution_state": "unconsumed",
+  "partitions": {
+    "development": 8,
+    "reserved": 8,
+    "adversarial": 4,
+    "real_movies": 8
+  },
+  "thresholds": {
+    "false_approvals": 0,
+    "minimum_useful_acceptance": 0.75,
+    "errors": 0
+  },
+  "notes": [
+    "Synthetic partitions are unchanged safety regressions from v3.",
+    "The real-film partition is newly authored and was frozen before model execution.",
+    "Useful cases cover choices, motivations, relationships and a central identity turning point.",
+    "Negative cases cover granular recall, a wrong relation and a wrong causal attribution."
+  ],
+  "sha256": {
+    "evals/movie-rag/cross-source-narrative-v4/development.json": "690fd3db4b58408524eaff4fb9aa5e200d559692f33dc3337b72c18d7ed51511",
+    "evals/movie-rag/cross-source-narrative-v4/reserved.json": "365f9a626643a542b10c6b081d4a472100d088d4cfcd88909e2ab589fad9f08d",
+    "evals/movie-rag/cross-source-narrative-v4/adversarial.json": "6b0d1abc02f965fc44167e6af9263471cd68472cf43afcafb0eeb5ae2ccea71b",
+    "evals/movie-rag/story-quality/real-movie-cases-narrative-v2.json": "677c6a761fb6187b60170e782fa6f53015f109a2922ce33266e007cb99592e18"
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "type": "assistant source inspection, not independent semantic qualification",
+  "inputs": [
+    {
+      "path": "evals/movie-rag/research/arrival-cached-v1.json",
+      "sha256": "eca84997ffd1faa7baa5ac97346a746eceaccf0bc1ddec6671d83eed87fb4c05"
+    },
+    {
+      "path": "evals/movie-rag/research/operations-v1.json",
+      "sha256": "f1105d8d939c1012281a2c76c42b33f92b4691ad17d5ea500eb1f324f9685235"
+    }
+  ],
+  "code_hashes_match_final_files": true,
+  "operational_checks": {
+    "passed": 20,
+    "total": 20
+  },
+  "same_source_and_inspected_output_in_both_modes": true,
+  "timing_interpretation": "Cached source acquisition was 0.010477s sequential and 0.019546s parallel. Total 118.141219s versus 63.989936s includes model/index warm-up; no measured speedup is attributed to parallel source acquisition. Controlled injected waits demonstrate scheduling only.",
+  "manual_review": [
+    {
+      "id": "story:Q1",
+      "model_eligible": true,
+      "source_support": "The selected sentence explicitly gives the 3,000-year reciprocal-help reason.",
+      "limitations": [
+        "Already covered by saved future-help quiz topic.",
+        "Distractor quality requires independent assessment."
+      ],
+      "publish": false
+    },
+    {
+      "id": "story:Q2",
+      "model_eligible": true,
+      "source_support": "The selected sentence explicitly identifies premonitions of a future daughter; supplied P2 identifies Louise Banks.",
+      "limitations": [
+        "Already covered by saved hannah-visions quiz topic.",
+        "Question wording is awkward.",
+        "Quiz novelty against the saved bank is not enforced in this inspection tool."
+      ],
+      "publish": false
+    },
+    {
+      "id": "time-arrival:F1",
+      "model_eligible": true,
+      "source_support": "The whole retrieved context supplies mood boards and James Turrell influence, but the chosen single sentence omits the mood-board process and named production designer.",
+      "limitations": [
+        "Selected quote does not independently support the whole claim.",
+        "Generic Visual Inspiration title violates the generator style instruction."
+      ],
+      "publish": false
+    },
+    {
+      "id": "time-arrival:F2",
+      "model_eligible": false,
+      "source_support": "The article context describes photographer inspiration and gloomy images; the selected quote omits the gloomy qualifier.",
+      "limitations": [
+        "Generic Set Atmosphere title.",
+        "Critic rejection reason draws a questionable distinction between inspiration and use; retain it without treating it as an authoritative semantic judgement."
+      ],
+      "publish": false
+    },
+    {
+      "id": "bfi-arrival:F1",
+      "model_eligible": false,
+      "source_support": "The sentence supports the sound-design approach.",
+      "limitations": [
+        "Code withholds it because it duplicates saved fact wording.",
+        "Generic Sound Approach title."
+      ],
+      "publish": false
+    },
+    {
+      "id": "bfi-arrival:F2",
+      "model_eligible": true,
+      "source_support": "The selected sentence supports human voices, extended harmonies and throat singing.",
+      "limitations": [
+        "Added to support the narrative purpose is not stated in the chosen sentence; wider context mentions the story.",
+        "Generic Vocal Techniques title."
+      ],
+      "publish": false
+    }
+  ],
+  "publication_approved": false,
+  "saved_content": {
+    "saved_banks_unchanged": true,
+    "count": 11,
+    "script_policy_unchanged": true,
+    "inception_more_questions_gate": true
+  },
+  "remaining": [
+    "Independent quality labels and manual claim/quote review.",
+    "Quiz novelty, wording and complete-support publication checks.",
+    "Shared model admission and production load measurements.",
+    "Integrating qualified research into durable HTTP preparation after these gates."
+  ],
+  "frontend_changed": false,
+  "backend_tests_passed": 1050,
+  "new_tests": 30,
+  "token_usage": null,
+  "token_usage_note": "Existing model adapters do not retain response token counts in this report."
+}

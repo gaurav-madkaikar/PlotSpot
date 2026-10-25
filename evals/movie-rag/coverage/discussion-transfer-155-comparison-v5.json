@@ -1,0 +1,915 @@
+{
+  "created_at_utc": "2026-10-11T19:49:27.916781+00:00",
+  "movie_id": 155,
+  "dataset_version": "discussion-transfer-155-dev-v1",
+  "split": "development",
+  "dataset_sha256": "80139afabe387902b85c0dd7225c5180fc53df326e62f1ff66bbb28234c51768",
+  "source_snapshot": "902071f36d1e1c1ae43ce3ae813ef0dadcb422e7827fd06cdc7299a9867d4792",
+  "source_revision": "enwiki-1378704545-sections-v3-body",
+  "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1378704545",
+  "pipeline_sha256": "6f052e9af44c58b1d1e362e6fbe9ff14570ac50cffee21b3fa8dfc0d225c5936",
+  "prompt_sha256": "33dfd878003893e1e693eee342b9666be408de80bc9966a499a50d3570975132",
+  "grounding_module_sha256": "7f09123bd643af3d6d5406657c765e69a36f4a535c91913e8383c51c21e213b9",
+  "retrieval_policy": "discussion-hybrid-v2",
+  "grounding_policy": "grounded-support-options-v2",
+  "retriever_sha256": "2084660632a45e8d0c4afbbf33fcf9344d0c36abca84270f046e8406864636c8",
+  "comparison": {
+    "order": "alternating baseline/candidate per case; sequential",
+    "baseline_sha256": {
+      "grounding_learning": "cd984e87a32baad171d6c3938afdb0ed918db53b6263b1b394c55c2595cbd6df",
+      "movie_qa_learning": "91bc247e547060f1ea5ee863aa5b89dfe4a4544dc4684030cd601efacd346fd4"
+    },
+    "baseline_automated_passed": 3,
+    "baseline_generation_errors": 0
+  },
+  "models": {
+    "nomic-embed-text:v1.5": "0a109f422b47e3a30ba2b10eca18548e944e8a23073ee3f3e947efcf3c45e59f",
+    "llama3.2:3b": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72"
+  },
+  "chunk_settings": {
+    "max_chars": 600,
+    "overlap_chars": 100
+  },
+  "ingestion": "cached",
+  "passages": 167,
+  "publication": false,
+  "token_usage": null,
+  "summary": {
+    "automated_passed": 2,
+    "total": 4
+  },
+  "limitations": [
+    "Small development inspection, not an independent holdout or safety benchmark.",
+    "Phrase and citation membership checks do not establish entailment; inspect cited passages.",
+    "Runs the shared Wikipedia discussion function, not the HTTP or script-assisted path.",
+    "No bank generation, publication, or production throughput is measured."
+  ],
+  "cases": [
+    {
+      "id": "ferry-event",
+      "question": "What happens when the Joker asks the two ferry groups to kill each other?",
+      "expected_status": "answered",
+      "labelled_supporting_ids": [
+        "902071f36d1e1c1ae43ce3ae813ef0da_015"
+      ],
+      "retrieved": [
+        {
+          "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_014",
+          "score": 0.7783432503080063,
+          "section": "Plot"
+        },
+        {
+          "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_015",
+          "score": 0.7301859561672975,
+          "section": "Plot"
+        },
+        {
+          "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_011",
+          "score": 0.7473131382190598,
+          "section": "Plot"
+        }
+      ],
+      "answer": {
+        "status": "answered",
+        "answer": "The passengers refuse to kill one another.",
+        "citation_ids": [
+          "902071f36d1e1c1ae43ce3ae813ef0da_015"
+        ]
+      },
+      "error": null,
+      "duration_seconds": 1.845,
+      "supporting_hit_at_3": true,
+      "annotated_id_recall_at_3": 1.0,
+      "automated_pass": true,
+      "failures": [],
+      "human_claim_support_review": "pending",
+      "retrieval_trace": {
+        "policy": "discussion-hybrid-v2",
+        "scope": "story",
+        "classified": true,
+        "eligible_passages": 167,
+        "routed_passages": 8,
+        "lexical_anchor": "902071f36d1e1c1ae43ce3ae813ef0da_015",
+        "selected_ids": [
+          "902071f36d1e1c1ae43ce3ae813ef0da_014",
+          "902071f36d1e1c1ae43ce3ae813ef0da_015",
+          "902071f36d1e1c1ae43ce3ae813ef0da_011"
+        ],
+        "vector_top": [
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_014",
+            "cosine": 0.7783432503080063
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_011",
+            "cosine": 0.7473131382190598
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_010",
+            "cosine": 0.7435735938022279
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_015",
+            "cosine": 0.7301859561672975
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_012",
+            "cosine": 0.7198536920982062
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_013",
+            "cosine": 0.6997652125541813
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_009",
+            "cosine": 0.6945959321011232
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_016",
+            "cosine": 0.6820689274219176
+          }
+        ],
+        "lexical_top": [
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_015",
+            "bm25": 10.48789375915103
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_014",
+            "bm25": 10.363037578549918
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_009",
+            "bm25": 5.340928937735664
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_010",
+            "bm25": 4.453664339604821
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_011",
+            "bm25": 4.373934128107662
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_012",
+            "bm25": 3.3522985638690637
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_013",
+            "bm25": 3.2526714048430767
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_016",
+            "bm25": 0.9671527852264326
+          }
+        ],
+        "selected_ranks": [
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_014",
+            "rrf": 0.03252247488101534,
+            "vector_rank": 1,
+            "lexical_rank": 2
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_015",
+            "rrf": 0.032018442622950824,
+            "vector_rank": 4,
+            "lexical_rank": 1
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_011",
+            "rrf": 0.0315136476426799,
+            "vector_rank": 2,
+            "lexical_rank": 5
+          }
+        ]
+      },
+      "grounding_trace": {
+        "type": "grounding",
+        "policy": "grounded-support-options-v2",
+        "support": [
+          {
+            "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_015",
+            "quote": "To the Joker's disbelief, the passengers refuse to kill one another."
+          }
+        ],
+        "note": "Exact quote presence is checked; semantic claim support still requires evaluation."
+      },
+      "baseline": {
+        "id": "ferry-event",
+        "question": "What happens when the Joker asks the two ferry groups to kill each other?",
+        "expected_status": "answered",
+        "labelled_supporting_ids": [
+          "902071f36d1e1c1ae43ce3ae813ef0da_015"
+        ],
+        "retrieved": [
+          {
+            "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_014",
+            "score": 0.7783432503080063,
+            "section": "Plot"
+          },
+          {
+            "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_143",
+            "score": 0.7680365400451479,
+            "section": "Morality and ethics"
+          },
+          {
+            "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_011",
+            "score": 0.7473131382190598,
+            "section": "Plot"
+          }
+        ],
+        "answer": {
+          "status": "answered",
+          "answer": "The passengers on the two evacuation ferries, one carrying civilians and the other prisoners, refuse to kill each other, despite the Joker's threat that the ferries will explode at midnight unless one group sacrifices the other.",
+          "citation_ids": [
+            "902071f36d1e1c1ae43ce3ae813ef0da_143"
+          ]
+        },
+        "error": null,
+        "duration_seconds": 2.822,
+        "supporting_hit_at_3": false,
+        "annotated_id_recall_at_3": 0.0,
+        "automated_pass": false,
+        "failures": [
+          "No labelled supporting passage retrieved",
+          "No labelled supporting passage cited"
+        ],
+        "human_claim_support_review": "pending",
+        "retrieval_trace": null,
+        "grounding_trace": null
+      }
+    },
+    {
+      "id": "makeup-craft",
+      "question": "How did Ledger\u2019s facial expressions help create the Joker\u2019s makeup?",
+      "expected_status": "answered",
+      "labelled_supporting_ids": [
+        "902071f36d1e1c1ae43ce3ae813ef0da_073"
+      ],
+      "retrieved": [
+        {
+          "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_073",
+          "score": 0.8211159338194942,
+          "section": "Special effects and design"
+        },
+        {
+          "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_074",
+          "score": 0.7779023443074099,
+          "section": "Special effects and design"
+        },
+        {
+          "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_072",
+          "score": 0.792530226294462,
+          "section": "Special effects and design"
+        }
+      ],
+      "answer": {
+        "status": "answered",
+        "answer": "Ledger's facial expressions helped create the Joker's makeup by scrunching up his face to create different cracks and textures once the makeup was applied and he relaxed.",
+        "citation_ids": [
+          "902071f36d1e1c1ae43ce3ae813ef0da_074",
+          "902071f36d1e1c1ae43ce3ae813ef0da_072"
+        ]
+      },
+      "error": null,
+      "duration_seconds": 3.173,
+      "supporting_hit_at_3": true,
+      "annotated_id_recall_at_3": 1.0,
+      "automated_pass": false,
+      "failures": [
+        "No labelled supporting passage cited"
+      ],
+      "human_claim_support_review": "pending",
+      "retrieval_trace": {
+        "policy": "discussion-hybrid-v2",
+        "scope": "all",
+        "classified": true,
+        "eligible_passages": 167,
+        "routed_passages": 167,
+        "lexical_anchor": "902071f36d1e1c1ae43ce3ae813ef0da_073",
+        "selected_ids": [
+          "902071f36d1e1c1ae43ce3ae813ef0da_073",
+          "902071f36d1e1c1ae43ce3ae813ef0da_074",
+          "902071f36d1e1c1ae43ce3ae813ef0da_072"
+        ],
+        "vector_top": [
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_073",
+            "cosine": 0.8211159338194942
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_072",
+            "cosine": 0.792530226294462
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_074",
+            "cosine": 0.7779023443074099
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_038",
+            "cosine": 0.7598598369007009
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_039",
+            "cosine": 0.746184939172448
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_107",
+            "cosine": 0.7312499865102988
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_106",
+            "cosine": 0.7301748925112147
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_066",
+            "cosine": 0.7297822004799984
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_036",
+            "cosine": 0.712872853755824
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_037",
+            "cosine": 0.7067633975893097
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_051",
+            "cosine": 0.7045744124960591
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_161",
+            "cosine": 0.7012103101702136
+          }
+        ],
+        "lexical_top": [
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_073",
+            "bm25": 10.675412173926503
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_107",
+            "bm25": 9.16254602632706
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_037",
+            "bm25": 6.95565795846318
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_074",
+            "bm25": 6.54860600993123
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_081",
+            "bm25": 5.739250633091956
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_072",
+            "bm25": 5.731821967948605
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_106",
+            "bm25": 5.727698338095582
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_079",
+            "bm25": 5.689176177832486
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_061",
+            "bm25": 5.221248667183907
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_133",
+            "bm25": 4.9610547123157795
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_010",
+            "bm25": 4.802286916903002
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_071",
+            "bm25": 4.410812211840673
+          }
+        ],
+        "selected_ranks": [
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_073",
+            "rrf": 0.03278688524590164,
+            "vector_rank": 1,
+            "lexical_rank": 1
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_074",
+            "rrf": 0.03149801587301587,
+            "vector_rank": 3,
+            "lexical_rank": 4
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_072",
+            "rrf": 0.03128054740957967,
+            "vector_rank": 2,
+            "lexical_rank": 6
+          }
+        ]
+      },
+      "grounding_trace": {
+        "type": "grounding",
+        "policy": "grounded-support-options-v2",
+        "support": [
+          {
+            "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_074",
+            "quote": "is face so different cracks and textures were created once the makeup was applied and Ledger relaxed."
+          },
+          {
+            "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_072",
+            "quote": "Hemming designed Joker's overall appearance, which he based on fashion-and-music celebrities to create a modern and trendy look."
+          }
+        ],
+        "note": "Exact quote presence is checked; semantic claim support still requires evaluation."
+      },
+      "baseline": {
+        "id": "makeup-craft",
+        "question": "How did Ledger\u2019s facial expressions help create the Joker\u2019s makeup?",
+        "expected_status": "answered",
+        "labelled_supporting_ids": [
+          "902071f36d1e1c1ae43ce3ae813ef0da_073"
+        ],
+        "retrieved": [
+          {
+            "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_073",
+            "score": 0.8211159338194942,
+            "section": "Special effects and design"
+          },
+          {
+            "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_072",
+            "score": 0.792530226294462,
+            "section": "Special effects and design"
+          },
+          {
+            "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_074",
+            "score": 0.7779023443074099,
+            "section": "Special effects and design"
+          }
+        ],
+        "answer": {
+          "status": "answered",
+          "answer": "Ledger's facial expressions helped create the Joker's makeup by scrunching up his face to create different cracks and textures once the makeup was applied and he relaxed.",
+          "citation_ids": [
+            "902071f36d1e1c1ae43ce3ae813ef0da_074",
+            "902071f36d1e1c1ae43ce3ae813ef0da_072",
+            "902071f36d1e1c1ae43ce3ae813ef0da_073"
+          ]
+        },
+        "error": null,
+        "duration_seconds": 3.073,
+        "supporting_hit_at_3": true,
+        "annotated_id_recall_at_3": 1.0,
+        "automated_pass": true,
+        "failures": [],
+        "human_claim_support_review": "pending",
+        "retrieval_trace": null,
+        "grounding_trace": null
+      }
+    },
+    {
+      "id": "ending-analysis",
+      "question": "How does the article\u2019s thematic analysis interpret Batman taking the blame for Dent\u2019s crimes?",
+      "expected_status": "answered",
+      "labelled_supporting_ids": [
+        "902071f36d1e1c1ae43ce3ae813ef0da_144"
+      ],
+      "retrieved": [
+        {
+          "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_144",
+          "score": 0.794753864426139,
+          "section": "Morality and ethics"
+        },
+        {
+          "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_016",
+          "score": 0.7655088517433659,
+          "section": "Plot"
+        },
+        {
+          "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_011",
+          "score": 0.7254241546097823,
+          "section": "Plot"
+        }
+      ],
+      "answer": {
+        "status": "answered",
+        "answer": "The article's thematic analysis interprets Batman taking the blame for Dent's crimes as a Christ-like sacrifice, as he takes on Dent's sins to preserve the city.",
+        "citation_ids": [
+          "902071f36d1e1c1ae43ce3ae813ef0da_144"
+        ]
+      },
+      "error": null,
+      "duration_seconds": 3.873,
+      "supporting_hit_at_3": true,
+      "annotated_id_recall_at_3": 1.0,
+      "automated_pass": false,
+      "failures": [
+        "Missing expected phrase group: ['hope', 'good', 'hero']"
+      ],
+      "human_claim_support_review": "pending",
+      "retrieval_trace": {
+        "policy": "discussion-hybrid-v2",
+        "scope": "all",
+        "classified": true,
+        "eligible_passages": 167,
+        "routed_passages": 167,
+        "lexical_anchor": "902071f36d1e1c1ae43ce3ae813ef0da_144",
+        "selected_ids": [
+          "902071f36d1e1c1ae43ce3ae813ef0da_144",
+          "902071f36d1e1c1ae43ce3ae813ef0da_016",
+          "902071f36d1e1c1ae43ce3ae813ef0da_011"
+        ],
+        "vector_top": [
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_144",
+            "cosine": 0.794753864426139
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_134",
+            "cosine": 0.7771656464788363
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_016",
+            "cosine": 0.7655088517433659
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_138",
+            "cosine": 0.7541061248179931
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_031",
+            "cosine": 0.7484387768122145
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_137",
+            "cosine": 0.7452296835289203
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_139",
+            "cosine": 0.739467092631018
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_132",
+            "cosine": 0.738562068386074
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_142",
+            "cosine": 0.7377458015418007
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_136",
+            "cosine": 0.7324683040825624
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_011",
+            "cosine": 0.7254241546097823
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_131",
+            "cosine": 0.7244545359812391
+          }
+        ],
+        "lexical_top": [
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_144",
+            "bm25": 15.061189085379096
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_016",
+            "bm25": 8.153744617483575
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_145",
+            "bm25": 6.575905896277048
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_126",
+            "bm25": 6.389458474502289
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_030",
+            "bm25": 5.647881336635663
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_041",
+            "bm25": 5.551789176074886
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_009",
+            "bm25": 5.3997945395177105
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_011",
+            "bm25": 5.12584353492368
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_010",
+            "bm25": 5.099288574047397
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_018",
+            "bm25": 4.872403492216929
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_002",
+            "bm25": 4.743387999075972
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_165",
+            "bm25": 4.252312916335679
+          }
+        ],
+        "selected_ranks": [
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_144",
+            "rrf": 0.03278688524590164,
+            "vector_rank": 1,
+            "lexical_rank": 1
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_016",
+            "rrf": 0.03200204813108039,
+            "vector_rank": 3,
+            "lexical_rank": 2
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_011",
+            "rrf": 0.028790389395194696,
+            "vector_rank": 11,
+            "lexical_rank": 8
+          }
+        ]
+      },
+      "grounding_trace": {
+        "type": "grounding",
+        "policy": "grounded-support-options-v2",
+        "support": [
+          {
+            "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_144",
+            "quote": "Batman makes his own Christ-like sacrifice, taking on Dent's sins to preserve the city."
+          }
+        ],
+        "note": "Exact quote presence is checked; semantic claim support still requires evaluation."
+      },
+      "baseline": {
+        "id": "ending-analysis",
+        "question": "How does the article\u2019s thematic analysis interpret Batman taking the blame for Dent\u2019s crimes?",
+        "expected_status": "answered",
+        "labelled_supporting_ids": [
+          "902071f36d1e1c1ae43ce3ae813ef0da_144"
+        ],
+        "retrieved": [
+          {
+            "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_144",
+            "score": 0.794753864426139,
+            "section": "Morality and ethics"
+          },
+          {
+            "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_134",
+            "score": 0.7771656464788363,
+            "section": "Terrorism and escalation"
+          },
+          {
+            "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_016",
+            "score": 0.7655088517433659,
+            "section": "Plot"
+          }
+        ],
+        "answer": {
+          "status": "answered",
+          "answer": "Batman takes the blame for Dent's crimes to preserve the city and maintain hope for Gotham's residents, as he chooses to become a symbol of criminality by taking the blame and preserving Dent as a symbol of good.",
+          "citation_ids": [
+            "902071f36d1e1c1ae43ce3ae813ef0da_144",
+            "902071f36d1e1c1ae43ce3ae813ef0da_016"
+          ]
+        },
+        "error": null,
+        "duration_seconds": 3.657,
+        "supporting_hit_at_3": true,
+        "annotated_id_recall_at_3": 1.0,
+        "automated_pass": true,
+        "failures": [],
+        "human_claim_support_review": "pending",
+        "retrieval_trace": null,
+        "grounding_trace": null
+      }
+    },
+    {
+      "id": "missing-rating",
+      "question": "Which personal rating did I give The Dark Knight yesterday?",
+      "expected_status": "insufficient_evidence",
+      "labelled_supporting_ids": [],
+      "retrieved": [
+        {
+          "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_102",
+          "score": 0.7662696856470839,
+          "section": "Critical response"
+        },
+        {
+          "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_166",
+          "score": 0.712486788218235,
+          "section": "Sequel"
+        },
+        {
+          "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_156",
+          "score": 0.7410533109248398,
+          "section": "Retrospective assessments"
+        }
+      ],
+      "answer": {
+        "status": "insufficient_evidence",
+        "answer": "The supplied evidence is insufficient to answer this question.",
+        "citation_ids": []
+      },
+      "error": null,
+      "duration_seconds": 2.104,
+      "supporting_hit_at_3": null,
+      "annotated_id_recall_at_3": null,
+      "automated_pass": true,
+      "failures": [],
+      "human_claim_support_review": "pending",
+      "retrieval_trace": {
+        "policy": "discussion-hybrid-v2",
+        "scope": "all",
+        "classified": true,
+        "eligible_passages": 167,
+        "routed_passages": 167,
+        "lexical_anchor": "902071f36d1e1c1ae43ce3ae813ef0da_102",
+        "selected_ids": [
+          "902071f36d1e1c1ae43ce3ae813ef0da_102",
+          "902071f36d1e1c1ae43ce3ae813ef0da_166",
+          "902071f36d1e1c1ae43ce3ae813ef0da_156"
+        ],
+        "vector_top": [
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_102",
+            "cosine": 0.7662696856470839
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_103",
+            "cosine": 0.7616463424758135
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_163",
+            "cosine": 0.7552119594179366
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_159",
+            "cosine": 0.7412118340094447
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_156",
+            "cosine": 0.7410533109248398
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_157",
+            "cosine": 0.7386550343725427
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_158",
+            "cosine": 0.722215070384087
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_002",
+            "cosine": 0.7208230160662307
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_007",
+            "cosine": 0.7127814659014478
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_166",
+            "cosine": 0.712486788218235
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_092",
+            "cosine": 0.707428099151097
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_094",
+            "cosine": 0.7058465128322418
+          }
+        ],
+        "lexical_top": [
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_102",
+            "bm25": 6.832784910786118
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_043",
+            "bm25": 5.56229902196281
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_027",
+            "bm25": 5.161552362503708
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_140",
+            "bm25": 3.9890972033005085
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_033",
+            "bm25": 3.8332467502659284
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_032",
+            "bm25": 3.749901636962095
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_165",
+            "bm25": 2.851491559289668
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_008",
+            "bm25": 2.520739497301567
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_088",
+            "bm25": 2.450352890502316
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_050",
+            "bm25": 2.408848165096767
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_125",
+            "bm25": 2.408385839123925
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_148",
+            "bm25": 2.3989957264722594
+          }
+        ],
+        "selected_ranks": [
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_102",
+            "rrf": 0.03278688524590164,
+            "vector_rank": 1,
+            "lexical_rank": 1
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_166",
+            "rrf": 0.027272727272727275,
+            "vector_rank": 10,
+            "lexical_rank": 17
+          },
+          {
+            "id": "902071f36d1e1c1ae43ce3ae813ef0da_156",
+            "rrf": 0.026878868258178604,
+            "vector_rank": 5,
+            "lexical_rank": 27
+          }
+        ]
+      },
+      "grounding_trace": {
+        "type": "grounding",
+        "policy": "grounded-support-options-v2",
+        "support": [],
+        "note": "Exact quote presence is checked; semantic claim support still requires evaluation."
+      },
+      "baseline": {
+        "id": "missing-rating",
+        "question": "Which personal rating did I give The Dark Knight yesterday?",
+        "expected_status": "insufficient_evidence",
+        "labelled_supporting_ids": [],
+        "retrieved": [
+          {
+            "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_102",
+            "score": 0.7662696856470839,
+            "section": "Critical response"
+          },
+          {
+            "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_103",
+            "score": 0.7616463424758135,
+            "section": "Critical response"
+          },
+          {
+            "passage_id": "902071f36d1e1c1ae43ce3ae813ef0da_163",
+            "score": 0.7552119594179366,
+            "section": "Retrospective assessments"
+          }
+        ],
+        "answer": {
+          "status": "insufficient_evidence",
+          "answer": "The supplied evidence is insufficient to answer this question.",
+          "citation_ids": []
+        },
+        "error": null,
+        "duration_seconds": 0.888,
+        "supporting_hit_at_3": null,
+        "annotated_id_recall_at_3": null,
+        "automated_pass": true,
+        "failures": [],
+        "human_claim_support_review": "pending",
+        "retrieval_trace": null,
+        "grounding_trace": null
+      }
+    }
+  ]
+}

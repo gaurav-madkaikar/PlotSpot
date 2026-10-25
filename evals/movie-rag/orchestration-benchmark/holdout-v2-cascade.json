@@ -1,0 +1,579 @@
+{
+  "policy": "plotspot-direct-first-cascade-holdout-v2",
+  "created_at": "2026-10-17T07:31:45.941589+00:00",
+  "split": "holdout",
+  "label_origin": "Objective answer labels and exact spans were copied from human-reviewed published quiz items before the direct-first fallback was implemented or run. Missing-evidence controls were authored before execution. These are reviewed project labels, not new independent human annotations.",
+  "embedding_model": "nomic-embed-text:v1.5",
+  "chat_model": "llama3.2:3b",
+  "chunk_settings": {
+    "max_chars": 600,
+    "overlap_chars": 100
+  },
+  "sources": [
+    {
+      "movie_id": 129,
+      "path": ".cache/expanded20/sources/129.json",
+      "sha256": "81041fc58bd57d02c966bd056b16c591cef669679ad1270bb3aec3d2dd8ee40e",
+      "revision": "enwiki-1379739874-sections-v3-body",
+      "snapshot": "fcdc1bb5b851fc5a1b26e5a675806110114c9cba1415a19e3849fd300533b40f"
+    },
+    {
+      "movie_id": 155,
+      "path": ".cache/expanded20/sources/155.json",
+      "sha256": "6aea52adffaa7d9dc4bb0e9553927b263c075a28dd720743769ae9c4b1bbf758",
+      "revision": "enwiki-1378704545-sections-v3-body",
+      "snapshot": "902071f36d1e1c1ae43ce3ae813ef0dadcb422e7827fd06cdc7299a9867d4792"
+    },
+    {
+      "movie_id": 603,
+      "path": ".cache/expanded20/sources/603.json",
+      "sha256": "a7252b1312049016af695f72d38285b6b2f9825f3d0ccf1d3c5459bc33b7e11c",
+      "revision": "enwiki-1379344781-sections-v3-body",
+      "snapshot": "22e1757b3c5efd463dc42f8d407a8526c02034880ee5d79a5f148c68b2990166"
+    },
+    {
+      "movie_id": 27205,
+      "path": ".cache/expanded20/sources/27205.json",
+      "sha256": "88705cc1c33da9ab01b6b01ebb95e5b40a3f7e2bdc7471d1101b0d9ca0603a84",
+      "revision": "enwiki-1379453144-sections-v3-body",
+      "snapshot": "5694139d4243ea63f1fabfa9a2a43dd681cd1ba2e44ab93acf167b12db9c4b29"
+    },
+    {
+      "movie_id": 37165,
+      "path": ".cache/expanded20/sources/37165.json",
+      "sha256": "eba90cb1cea4f0b08392c5eadf2aa451ec48b71d795050002ee4dae21dcabf3e",
+      "revision": "enwiki-1378575188-sections-v3-body",
+      "snapshot": "0cab92271d696171c8f167ca89272db4926f152f8e69dd6e60ff8ceb4c478bb2"
+    },
+    {
+      "movie_id": 120467,
+      "path": ".cache/expanded20/sources/120467.json",
+      "sha256": "3b2c568bd354a0dbacb01701a58db0b0741bea1e18a10c1db3e40aa618fab4ff",
+      "revision": "enwiki-1379203663-sections-v3-body",
+      "snapshot": "88661922bfdd3c26825f548bc2beeab795e0abc173d225cd2044563a5f1a6e6c"
+    },
+    {
+      "movie_id": 157336,
+      "path": ".cache/expanded20/sources/157336.json",
+      "sha256": "9904e40514586fcec21f1f2effffddae7b03915b1a58534db58e0e93acd48557",
+      "revision": "enwiki-1379809765-sections-v3-body",
+      "snapshot": "371b9f1e63c22c3d567e5075ee63f1cdbda2e2397a0a1ab7aac08e10f8f0aa66"
+    },
+    {
+      "movie_id": 329865,
+      "path": ".cache/expanded20/sources/329865.json",
+      "sha256": "aa1dcda654421cd2633b5224a167214c52efa608a7dd5ebaaf1e71cd2c555e52",
+      "revision": "enwiki-1377517038-sections-v3-body",
+      "snapshot": "89f7bcf5fc9b8c405c2e6775e296c5d620ed1639ad843f67053dffb02b8a1fde"
+    },
+    {
+      "movie_id": 438631,
+      "path": ".cache/expanded20/sources/438631.json",
+      "sha256": "f5835bdc679b45e7683f405e69d26a839335cefc125bd7ed75a2f5cab090d0ca",
+      "revision": "enwiki-1379906971-sections-v3-body",
+      "snapshot": "bd70454d940297a3435246bcc782646c68afaed84c1576782c969183588094b6"
+    },
+    {
+      "movie_id": 496243,
+      "path": ".cache/expanded20/sources/496243.json",
+      "sha256": "f71968a85aa6268d6867080b8f0f23b47b694b4087572e94355593e971b9e5d6",
+      "revision": "enwiki-1377908085-sections-v3-body",
+      "snapshot": "2d96846051d9c5f14076a13aaa402f6410625412a44ff811211ec37912a4b903"
+    },
+    {
+      "movie_id": 546554,
+      "path": ".cache/expanded20/sources/546554.json",
+      "sha256": "9ae2598c39ed154361e2a4cd25f29dd145ea282652567ad3ea766990ba2c8333",
+      "revision": "enwiki-1378593030-sections-v3-body",
+      "snapshot": "1179572245185c9f871574a7a54cc20532fa74f0ef6373dd124d60d875cc5414"
+    }
+  ],
+  "cases": [
+    {
+      "id": "spirited-away-parents-transformed",
+      "movie_id": 129,
+      "title": "Spirited Away",
+      "question": "What happens to Chihiro’s parents after they eat the unattended food?",
+      "expected_status": "answered",
+      "reference_answer": "They turn into pigs",
+      "reference_excerpt": "Spirits begin to appear, and Chihiro discovers that her parents have been transformed into pigs and that she cannot cross the now-flooded river.",
+      "relevant_passage_ids": [
+        "fcdc1bb5b851fc5a1b26e5a675806110_006",
+        "fcdc1bb5b851fc5a1b26e5a675806110_007"
+      ],
+      "required_phrase_groups": [
+        [
+          "pigs",
+          "pig"
+        ]
+      ]
+    },
+    {
+      "id": "spirited-away-boiler-worker",
+      "movie_id": 129,
+      "title": "Spirited Away",
+      "question": "Who works in the bathhouse boiler room?",
+      "expected_status": "answered",
+      "reference_answer": "Kamaji",
+      "reference_excerpt": "Haku finds Chihiro and tells her to ask for a job from the bathhouse's boiler-man, Kamaji, a yōkai spirit.",
+      "relevant_passage_ids": [
+        "fcdc1bb5b851fc5a1b26e5a675806110_007"
+      ],
+      "required_phrase_groups": [
+        [
+          "Kamaji"
+        ]
+      ]
+    },
+    {
+      "id": "the-dark-knight-last-bank-robber",
+      "movie_id": 155,
+      "title": "The Dark Knight",
+      "question": "Who turns out to be the last surviving robber in the opening bank heist?",
+      "expected_status": "answered",
+      "reference_answer": "The Joker",
+      "reference_excerpt": "A gang of masked criminals rob a mafia-owned bank in Gotham City, betraying and killing each other until the sole survivor, the Joker, reveals himself as the mastermind and escapes with the money.",
+      "relevant_passage_ids": [
+        "902071f36d1e1c1ae43ce3ae813ef0da_009"
+      ],
+      "required_phrase_groups": [
+        [
+          "Joker"
+        ]
+      ]
+    },
+    {
+      "id": "the-dark-knight-bruces-exit-plan",
+      "movie_id": 155,
+      "title": "The Dark Knight",
+      "question": "Why does Bruce publicly support Harvey Dent as Gotham’s protector?",
+      "expected_status": "answered",
+      "reference_answer": "He hopes Dent’s success will let him retire as Batman",
+      "reference_excerpt": "Batman's true identity, the billionaire Bruce Wayne, publicly supports Dent as Gotham's legitimate protector, believing Dent's success will allow him to retire as Batman and romantically pursue his childhood friend Rachel Dawes—despite her being with Dent.",
+      "relevant_passage_ids": [
+        "902071f36d1e1c1ae43ce3ae813ef0da_009",
+        "902071f36d1e1c1ae43ce3ae813ef0da_010"
+      ],
+      "required_phrase_groups": [
+        [
+          "retire as Batman",
+          "retire"
+        ]
+      ]
+    },
+    {
+      "id": "the-matrix-neo-name",
+      "movie_id": 603,
+      "title": "The Matrix",
+      "question": "What is Neo’s name outside his hacker identity?",
+      "expected_status": "answered",
+      "reference_answer": "Thomas Anderson",
+      "reference_excerpt": "In an unnamed city in 1999, Thomas Anderson, a computer programmer known as \"Neo\" in hacking circles, investigates the mystery of the \"Matrix\", bringing him to the attention of hacker Trinity.",
+      "relevant_passage_ids": [
+        "22e1757b3c5efd463dc42f8d407a8526_008"
+      ],
+      "required_phrase_groups": [
+        [
+          "Thomas Anderson"
+        ]
+      ]
+    },
+    {
+      "id": "the-matrix-pill-choice",
+      "movie_id": 603,
+      "title": "The Matrix",
+      "question": "Which pill does Neo take to uncover the truth about the Matrix?",
+      "expected_status": "answered",
+      "reference_answer": "The red pill",
+      "reference_excerpt": "Neo takes the red pill and awakens in the real world, submerged in a mechanical pod and connected to invasive cables.",
+      "relevant_passage_ids": [
+        "22e1757b3c5efd463dc42f8d407a8526_009",
+        "22e1757b3c5efd463dc42f8d407a8526_010"
+      ],
+      "required_phrase_groups": [
+        [
+          "red pill"
+        ]
+      ]
+    },
+    {
+      "id": "inception-fischer-plan",
+      "movie_id": 27205,
+      "title": "Inception",
+      "question": "What idea is Cobb hired to plant in Robert Fischer’s mind?",
+      "expected_status": "answered",
+      "reference_answer": "Dissolve his father’s company",
+      "reference_excerpt": "He offers to hire Cobb for the ostensibly impossible job of performing \"inception\": implanting Robert Fischer, the son of Saito's competitor Maurice Fischer, with the idea to dissolve his father's conglomerate.",
+      "relevant_passage_ids": [
+        "5694139d4243ea63f1fabfa9a2a43dd6_006",
+        "5694139d4243ea63f1fabfa9a2a43dd6_007"
+      ],
+      "required_phrase_groups": [
+        [
+          "dissolve"
+        ],
+        [
+          "father's company",
+          "father’s company",
+          "father's conglomerate"
+        ]
+      ]
+    },
+    {
+      "id": "inception-cobb-reward",
+      "movie_id": 27205,
+      "title": "Inception",
+      "question": "What does Saito promise Cobb in exchange for completing the job?",
+      "expected_status": "answered",
+      "reference_answer": "A way home to his children",
+      "reference_excerpt": "In return, Saito promises to clear Cobb's criminal status, allowing him to return home to his children.",
+      "relevant_passage_ids": [
+        "5694139d4243ea63f1fabfa9a2a43dd6_006",
+        "5694139d4243ea63f1fabfa9a2a43dd6_007"
+      ],
+      "required_phrase_groups": [
+        [
+          "home",
+          "children"
+        ]
+      ]
+    },
+    {
+      "id": "the-truman-show-seahaven-secret",
+      "movie_id": 37165,
+      "title": "The Truman Show",
+      "question": "What is Seahaven Island really?",
+      "expected_status": "answered",
+      "reference_answer": "A vast television soundstage",
+      "reference_excerpt": "Truman's hometown, Seahaven Island, is set inside an enormous soundstage in Los Angeles, which allows Christof, the show's creator and executive producer, to control nearly all aspects of Truman's life.",
+      "relevant_passage_ids": [
+        "0cab92271d696171c8f167ca89272db4_005"
+      ],
+      "required_phrase_groups": [
+        [
+          "soundstage"
+        ]
+      ]
+    },
+    {
+      "id": "the-truman-show-world-controller",
+      "movie_id": 37165,
+      "title": "The Truman Show",
+      "question": "Who controls the show built around Truman’s life?",
+      "expected_status": "answered",
+      "reference_answer": "Christof",
+      "reference_excerpt": "Truman's hometown, Seahaven Island, is set inside an enormous soundstage in Los Angeles, which allows Christof, the show's creator and executive producer, to control nearly all aspects of Truman's life.",
+      "relevant_passage_ids": [
+        "0cab92271d696171c8f167ca89272db4_005"
+      ],
+      "required_phrase_groups": [
+        [
+          "Christof"
+        ]
+      ]
+    },
+    {
+      "id": "the-grand-budapest-hotel-zero-first-job",
+      "movie_id": 120467,
+      "title": "The Grand Budapest Hotel",
+      "question": "What is Zero’s first job at the Grand Budapest Hotel?",
+      "expected_status": "answered",
+      "reference_answer": "Lobby boy",
+      "reference_excerpt": "In 1932, Zero flees his war-ravaged country to work as a lobby boy for Monsieur Gustave H., the philandering concierge at the Grand Budapest Hotel.",
+      "relevant_passage_ids": [
+        "88661922bfdd3c26825f548bc2beeab7_007",
+        "88661922bfdd3c26825f548bc2beeab7_008"
+      ],
+      "required_phrase_groups": [
+        [
+          "lobby boy"
+        ]
+      ]
+    },
+    {
+      "id": "the-grand-budapest-hotel-famous-bequest",
+      "movie_id": 120467,
+      "title": "The Grand Budapest Hotel",
+      "question": "Which painting does Madame D. leave to Gustave?",
+      "expected_status": "answered",
+      "reference_answer": "Boy with Apple",
+      "reference_excerpt": "Kovacs announces that she has bequeathed a famous Renaissance painting, Boy with Apple, to Gustave.",
+      "relevant_passage_ids": [
+        "88661922bfdd3c26825f548bc2beeab7_008",
+        "88661922bfdd3c26825f548bc2beeab7_009"
+      ],
+      "required_phrase_groups": [
+        [
+          "Boy with Apple"
+        ]
+      ]
+    },
+    {
+      "id": "interstellar-dust-coordinates",
+      "movie_id": 157336,
+      "title": "Interstellar",
+      "question": "Where do the dust patterns in Murph's room lead Cooper and Murph in Interstellar?",
+      "expected_status": "answered",
+      "reference_answer": "A secret NASA facility",
+      "reference_excerpt": "wed former NASA test pilot, works as a farmer and raises his children, Murphy \"Murph\" and Tom, with his father-in-law Donald. Following a dust storm, Cooper and Murph discover that dust patterns in Murph's room, which she had attributed to a ghost, result from a gravitational anomaly. Cooper recognizes the patterns as binary code specifying coordinates, which lead him and Murph to a secret NASA facility headed by Professor John Brand.\n\nBrand explains that 48 years earlier, a wormhole appeared near Saturn, apparently placed there by an unknown intelligence, leading to a system in another galaxy",
+      "relevant_passage_ids": [
+        "371b9f1e63c22c3d567e5075ee63f1cd_006",
+        "371b9f1e63c22c3d567e5075ee63f1cd_007"
+      ],
+      "required_phrase_groups": [
+        [
+          "NASA facility"
+        ]
+      ]
+    },
+    {
+      "id": "interstellar-mann-motive",
+      "movie_id": 157336,
+      "title": "Interstellar",
+      "question": "Why did Dr. Mann falsify his planet's data in Interstellar?",
+      "expected_status": "answered",
+      "reference_answer": "In the hope of being rescued",
+      "reference_excerpt": "measurements from inside a black hole.\n\nOn Mann's planet, they awaken him from cryostasis, and he assures them that colonization is possible, despite the extreme environment. During a scouting mission, Mann attempts to kill Cooper and reveals that he falsified his data in the hope of being rescued. He steals Cooper's lander and heads for the Endurance. A booby trap set by Mann kills Romilly, but Brand rescues Cooper with the other lander and they race back to the Endurance. Mann is killed in a failed manual docking operation, badly damaging the Endurance, but Cooper is able to regain control o",
+      "relevant_passage_ids": [
+        "371b9f1e63c22c3d567e5075ee63f1cd_011",
+        "371b9f1e63c22c3d567e5075ee63f1cd_012"
+      ],
+      "required_phrase_groups": [
+        [
+          "rescued",
+          "rescue"
+        ]
+      ]
+    },
+    {
+      "id": "arrival-louise-profession",
+      "movie_id": 329865,
+      "title": "Arrival",
+      "question": "What expertise brings Louise Banks onto the first-contact team?",
+      "expected_status": "answered",
+      "reference_answer": "Linguistics",
+      "reference_excerpt": "Linguist Louise Banks's daughter Hannah dies at the age of twelve from an incurable illness.",
+      "relevant_passage_ids": [
+        "89f7bcf5fc9b8c405c2e6775e296c5d6_006"
+      ],
+      "required_phrase_groups": [
+        [
+          "linguist",
+          "linguistics"
+        ]
+      ]
+    },
+    {
+      "id": "arrival-ship-count",
+      "movie_id": 329865,
+      "title": "Arrival",
+      "question": "How many alien spacecraft arrive around Earth?",
+      "expected_status": "answered",
+      "reference_answer": "Twelve",
+      "reference_excerpt": "Twelve extraterrestrial spacecraft hover over various locations around the Earth.",
+      "relevant_passage_ids": [
+        "89f7bcf5fc9b8c405c2e6775e296c5d6_006"
+      ],
+      "required_phrase_groups": [
+        [
+          "Twelve",
+          "12"
+        ]
+      ]
+    },
+    {
+      "id": "dune-new-fief",
+      "movie_id": 438631,
+      "title": "Dune",
+      "question": "Which planet is Duke Leto ordered to take over?",
+      "expected_status": "answered",
+      "reference_answer": "Arrakis",
+      "reference_excerpt": "In the distant future, Duke Leto Atreides is assigned by the Padishah Emperor Shaddam IV to replace Baron Vladimir Harkonnen as the fiefholder of Arrakis, a harsh desert planet and the sole source of \"spice\", a valuable psychotropic substance that imparts heightened vitality and awareness.",
+      "relevant_passage_ids": [
+        "bd70454d940297a3435246bcc782646c_006"
+      ],
+      "required_phrase_groups": [
+        [
+          "Arrakis"
+        ]
+      ]
+    },
+    {
+      "id": "dune-spice-purpose",
+      "movie_id": 438631,
+      "title": "Dune",
+      "question": "Besides heightened awareness, what makes spice essential to the empire?",
+      "expected_status": "answered",
+      "reference_answer": "It enables interstellar travel",
+      "reference_excerpt": "Spice is also key to interstellar travel.",
+      "relevant_passage_ids": [
+        "bd70454d940297a3435246bcc782646c_006"
+      ],
+      "required_phrase_groups": [
+        [
+          "interstellar travel"
+        ]
+      ]
+    },
+    {
+      "id": "parasite-scholars-gift",
+      "movie_id": 496243,
+      "title": "Parasite",
+      "question": "What does Min-hyuk give the Kim family as a promise of wealth?",
+      "expected_status": "answered",
+      "reference_answer": "A scholar’s rock",
+      "reference_excerpt": "As the family has financial struggles and low-income jobs, family friend Min-hyuk gives them a scholar's rock meant to promise wealth.",
+      "relevant_passage_ids": [
+        "2d96846051d9c5f14076a13aaa402f64_006"
+      ],
+      "required_phrase_groups": [
+        [
+          "scholar's rock",
+          "scholar’s rock"
+        ]
+      ]
+    },
+    {
+      "id": "parasite-first-position",
+      "movie_id": 496243,
+      "title": "Parasite",
+      "question": "Which job first brings Ki-woo into the Park household?",
+      "expected_status": "answered",
+      "reference_answer": "English tutor",
+      "reference_excerpt": "Leaving to study abroad, he suggests that Ki-woo lie about his qualifications to take over Min-hyuk's job as an English tutor for Da-hye, the daughter of the wealthy but naïve Park family.",
+      "relevant_passage_ids": [
+        "2d96846051d9c5f14076a13aaa402f64_006"
+      ],
+      "required_phrase_groups": [
+        [
+          "English tutor"
+        ]
+      ]
+    },
+    {
+      "id": "knives-out-marta-role",
+      "movie_id": 546554,
+      "title": "Knives Out",
+      "question": "What is Marta’s connection to Harlan?",
+      "expected_status": "answered",
+      "reference_answer": "His nurse",
+      "reference_excerpt": "Unbeknownst to Blanc, Harlan's nurse Marta Cabrera believes she injected Harlan with a lethal dose of morphine after mixing up his bedtime medications the night of the party.",
+      "relevant_passage_ids": [
+        "1179572245185c9f871574a7a54cc205_006",
+        "1179572245185c9f871574a7a54cc205_007"
+      ],
+      "required_phrase_groups": [
+        [
+          "nurse"
+        ]
+      ]
+    },
+    {
+      "id": "knives-out-lie-reaction",
+      "movie_id": 546554,
+      "title": "Knives Out",
+      "question": "What makes telling a lie especially difficult for Marta?",
+      "expected_status": "answered",
+      "reference_answer": "She vomits",
+      "reference_excerpt": "Marta cannot lie without vomiting, so she gives accurate but incomplete answers when questioned.",
+      "relevant_passage_ids": [
+        "1179572245185c9f871574a7a54cc205_007",
+        "1179572245185c9f871574a7a54cc205_008"
+      ],
+      "required_phrase_groups": [
+        [
+          "vomit",
+          "vomits"
+        ]
+      ]
+    },
+    {
+      "id": "private-voice-actor-phone",
+      "movie_id": 129,
+      "title": "Spirited Away",
+      "question": "What is the private mobile number of Chihiro's voice actor?",
+      "expected_status": "insufficient_evidence",
+      "reference_answer": null,
+      "reference_excerpt": null,
+      "relevant_passage_ids": [],
+      "required_phrase_groups": []
+    },
+    {
+      "id": "unpublished-director-notes",
+      "movie_id": 155,
+      "title": "The Dark Knight",
+      "question": "What did Christopher Nolan write in his unpublished private notes about the ending?",
+      "expected_status": "insufficient_evidence",
+      "reference_answer": null,
+      "reference_excerpt": null,
+      "relevant_passage_ids": [],
+      "required_phrase_groups": []
+    },
+    {
+      "id": "private-bank-account",
+      "movie_id": 603,
+      "title": "The Matrix",
+      "question": "What is Keanu Reeves's private bank account number?",
+      "expected_status": "insufficient_evidence",
+      "reference_answer": null,
+      "reference_excerpt": null,
+      "relevant_passage_ids": [],
+      "required_phrase_groups": []
+    },
+    {
+      "id": "viewer-watch-history",
+      "movie_id": 27205,
+      "title": "Inception",
+      "question": "On what date did the current viewer first watch Inception?",
+      "expected_status": "insufficient_evidence",
+      "reference_answer": null,
+      "reference_excerpt": null,
+      "relevant_passage_ids": [],
+      "required_phrase_groups": []
+    },
+    {
+      "id": "private-actor-email",
+      "movie_id": 37165,
+      "title": "The Truman Show",
+      "question": "What is Jim Carrey's private email address?",
+      "expected_status": "insufficient_evidence",
+      "reference_answer": null,
+      "reference_excerpt": null,
+      "relevant_passage_ids": [],
+      "required_phrase_groups": []
+    },
+    {
+      "id": "studio-payroll-record",
+      "movie_id": 120467,
+      "title": "The Grand Budapest Hotel",
+      "question": "What exact private payroll amount was paid to every background actor?",
+      "expected_status": "insufficient_evidence",
+      "reference_answer": null,
+      "reference_excerpt": null,
+      "relevant_passage_ids": [],
+      "required_phrase_groups": []
+    },
+    {
+      "id": "unreleased-sequel-ending",
+      "movie_id": 329865,
+      "title": "Arrival",
+      "question": "How does the unreleased Arrival sequel end?",
+      "expected_status": "insufficient_evidence",
+      "reference_answer": null,
+      "reference_excerpt": null,
+      "relevant_passage_ids": [],
+      "required_phrase_groups": []
+    },
+    {
+      "id": "private-medical-record",
+      "movie_id": 438631,
+      "title": "Dune",
+      "question": "What confidential medical diagnosis appears in Timothée Chalamet's private records?",
+      "expected_status": "insufficient_evidence",
+      "reference_answer": null,
+      "reference_excerpt": null,
+      "relevant_passage_ids": [],
+      "required_phrase_groups": []
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "scope": "Live HTTP/browser smoke, not a general relevance benchmark. Existing cached search from browser used.",
+  "indexed_movies": 1500,
+  "browse_pages_checked": 75,
+  "unique_browse_movies": 1500,
+  "query": "hero movies",
+  "response_status": 200,
+  "cached_request_seconds": [
+    0.3211,
+    0.3048
+  ],
+  "returned_titles": [
+    "My Hero Academia: Two Heroes",
+    "Henry Danger: The Movie",
+    "My Hero Academia: Heroes Rising",
+    "Miraculous World: New York, United HeroeZ",
+    "Dragon Ball Super: Super Hero",
+    "Protector",
+    "Justice League: Starcrossed - The Movie",
+    "Regular Show: The Movie",
+    "Iron Man",
+    "The Quintessential Quintuplets Movie",
+    "Paths of Glory",
+    "Spider-Man: No Way Home",
+    "Zack Snyder's Justice League",
+    "Ultraman: Rising",
+    "The Dark Knight",
+    "Duck Dodgers in the 24\u00bdth Century",
+    "Guardians of the Galaxy Vol. 3",
+    "Sgt. Stubby: An American Hero",
+    "Fury",
+    "RRR"
+  ],
+  "observed_problem": "False positives remain, including Paths of Glory, Fury and The Quintessential Quintuplets Movie. The grader is not a reliable proof of every candidate relevance.",
+  "screenshot": ".cache/previews/hybrid-1500-search.jpg"
+}

@@ -1,0 +1,66 @@
+{
+  "version": "discussion-transfer-155-dev-v1",
+  "split": "development",
+  "source_snapshot": "902071f36d1e1c1ae43ce3ae813ef0dadcb422e7827fd06cdc7299a9867d4792",
+  "cases": [
+    {
+      "id": "ferry-event",
+      "question": "What happens when the Joker asks the two ferry groups to kill each other?",
+      "expected_status": "answered",
+      "relevant_passage_ids": [
+        "902071f36d1e1c1ae43ce3ae813ef0da_015"
+      ],
+      "required_phrase_groups": [
+        [
+          "refuse",
+          "neither"
+        ],
+        [
+          "kill",
+          "destroy",
+          "detonate"
+        ]
+      ]
+    },
+    {
+      "id": "makeup-craft",
+      "question": "How did Ledger’s facial expressions help create the Joker’s makeup?",
+      "expected_status": "answered",
+      "relevant_passage_ids": [
+        "902071f36d1e1c1ae43ce3ae813ef0da_073"
+      ],
+      "required_phrase_groups": [
+        [
+          "scrunch",
+          "scrunched"
+        ],
+        [
+          "crack",
+          "texture"
+        ]
+      ]
+    },
+    {
+      "id": "ending-analysis",
+      "question": "How does the article’s thematic analysis interpret Batman taking the blame for Dent’s crimes?",
+      "expected_status": "answered",
+      "relevant_passage_ids": [
+        "902071f36d1e1c1ae43ce3ae813ef0da_144"
+      ],
+      "required_phrase_groups": [
+        [
+          "hope",
+          "good",
+          "hero"
+        ]
+      ]
+    },
+    {
+      "id": "missing-rating",
+      "question": "Which personal rating did I give The Dark Knight yesterday?",
+      "expected_status": "insufficient_evidence",
+      "relevant_passage_ids": [],
+      "required_phrase_groups": []
+    }
+  ]
+}

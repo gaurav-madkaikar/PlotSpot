@@ -1,0 +1,85 @@
+{
+  "mocked": false,
+  "additions": [
+    {
+      "id": "generated-tidal-wave-56cbdbc3e181",
+      "origin": "generated",
+      "question": "Who traverses the wormhole after a two-year voyage to Saturn?",
+      "kind": "plot",
+      "options": [
+        "Cooper",
+        "Brand",
+        "Doyle",
+        "The Endurance"
+      ],
+      "correct_index": 2,
+      "explanation": "y, and Doyle, traverses the wormhole after a two-year voyage to Saturn.",
+      "citations": [
+        {
+          "passage_id": "17688ac2f74a50178ede3963a6d2f53a",
+          "source_label": "English Wikipedia contributors: Interstellar (film)",
+          "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379200125",
+          "revision": "enwiki-1379200125-plaintext-v1",
+          "excerpt": "y, and Doyle, traverses the wormhole after a two-year voyage to Saturn. Cooper, Doyle, and Brand use a lander to investigate Miller's planet, where time is severely dilated. They land in knee-high water and find only wreckage from Miller's expedition before a gigantic tidal wave kills Doyle and waterlogs the lander's engines.\n\nBy the time they leave the planet, Cooper and Brand discover that 23 years have elapsed on the Endurance. Having enough fuel left for only one of the remaining planets, Cooper and Romilly decide to go to Mann's planet, despite Brand's protests, as he is still broadcastin"
+        }
+      ]
+    },
+    {
+      "id": "generated-slingshot-time-59c997d23d21",
+      "origin": "generated",
+      "question": "How many years does a slingshot around Gargantua cost Cooper and Brand?",
+      "kind": "plot",
+      "options": [
+        "50 years",
+        "51 years",
+        "52 years",
+        "53 years"
+      ],
+      "correct_index": 1,
+      "explanation": "With insufficient fuel, Cooper and Brand resort to a slingshot around Gargantua, which costs them 51 years due to time dilation.",
+      "citations": [
+        {
+          "passage_id": "249e2887badeae9dddb5d03d9b76206c",
+          "source_label": "English Wikipedia contributors: Interstellar (film)",
+          "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379200125",
+          "revision": "enwiki-1379200125-plaintext-v1",
+          "excerpt": "ailed manual docking operation, badly damaging the Endurance, but Cooper is able to regain control of the spacecraft through his own docking maneuver.\n\nWith insufficient fuel, Cooper and Brand resort to a slingshot around Gargantua, which costs them 51 years due to time dilation. In the process, Cooper and TARS detach in their craft to lighten the Endurance so that Brand and CASE may reach Edmunds' planet. Falling past Gargantua's event horizon, they eject from their craft and find themselves in a tesseract made up of infinite copies of Murph's bedroom across moments in time. Cooper deduces th"
+        }
+      ]
+    },
+    {
+      "id": "generated-colony-cargo-20b1852c1d6c",
+      "origin": "generated",
+      "question": "How many frozen embryos are part of the mission to colonize a habitable planet?",
+      "kind": "plot",
+      "options": [
+        "3,000 frozen embryos",
+        "4,000 frozen embryos",
+        "5,000 frozen embryos",
+        "6,000 frozen embryos"
+      ],
+      "correct_index": 2,
+      "explanation": "Cooper is enlisted to pilot the Endurance spacecraft through the wormhole as part of a mission to colonize a habitable planet with 5,000 frozen embryos and ensure humanity's survival.",
+      "citations": [
+        {
+          "passage_id": "f2bb509770383519676c02bb465b5fb6",
+          "source_label": "English Wikipedia contributors: Interstellar (film)",
+          "source_ref": "https://en.wikipedia.org/w/index.php?oldid=1379200125",
+          "revision": "enwiki-1379200125-plaintext-v1",
+          "excerpt": "ar Saturn, apparently placed there by an unknown intelligence, leading to a system in another galaxy with 12 potentially habitable planets located near a black hole named Gargantua. Volunteers of the Lazarus expedition had previously traveled through the wormhole to evaluate the planets, with three\u2014Miller, Mann, and Edmunds\u2014reporting back desirable results.\n\nCooper is enlisted to pilot the Endurance spacecraft through the wormhole as part of a mission to colonize a habitable planet with 5,000 frozen embryos and ensure humanity's survival. Meanwhile, Professor Brand would continue his work on s"
+        }
+      ]
+    }
+  ],
+  "correctEvidenceHidden": true,
+  "wrongOptionLetter": true,
+  "persistedOnReload": true,
+  "overflow": false,
+  "pageErrors": [],
+  "human_review": {
+    "rejected_ambiguous_question_ids": [
+      "generated-tidal-wave-56cbdbc3e181"
+    ],
+    "action": "Removed ambiguous question from saved content; kept two supported additions."
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "version": "discussion-transfer-546554-dev-v1",
+  "split": "development",
+  "source_snapshot": "1179572245185c9f871574a7a54cc20532fa74f0ef6373dd124d60d875cc5414",
+  "cases": [
+    {
+      "id": "false-alibi",
+      "question": "Why does Harlan ask Marta to create a false alibi in the story?",
+      "expected_status": "answered",
+      "relevant_passage_ids": [
+        "1179572245185c9f871574a7a54cc205_007"
+      ],
+      "required_phrase_groups": [
+        [
+          "Marta"
+        ],
+        [
+          "blame",
+          "protect",
+          "blamed"
+        ]
+      ]
+    },
+    {
+      "id": "medicine-recognition",
+      "question": "How does Marta identify the right medicine despite the switched labels?",
+      "expected_status": "answered",
+      "relevant_passage_ids": [
+        "1179572245185c9f871574a7a54cc205_011"
+      ],
+      "required_phrase_groups": [
+        [
+          "viscosity"
+        ]
+      ]
+    },
+    {
+      "id": "stage-knife",
+      "question": "How does Ransom’s knife attack on Marta end?",
+      "expected_status": "answered",
+      "relevant_passage_ids": [
+        "1179572245185c9f871574a7a54cc205_013"
+      ],
+      "required_phrase_groups": [
+        [
+          "stage",
+          "retractable",
+          "harmless"
+        ]
+      ]
+    },
+    {
+      "id": "title-origin",
+      "question": "Which band’s song inspired the title Knives Out?",
+      "expected_status": "answered",
+      "relevant_passage_ids": [
+        "1179572245185c9f871574a7a54cc205_022"
+      ],
+      "required_phrase_groups": [
+        [
+          "Radiohead"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "scope": "Offline threshold replay of final 200-film development candidate scores; identity/genre paths unchanged. No validation queries used. Scores are ordinal relevance grades, not probabilities.",
+  "selected": 0.6666666666666666,
+  "reason": "All three thresholds tie on labelled hit/empty metrics in this development replay. Keep the predeclared grade-2 requirement (clearly relevant); these incomplete labels do not establish an optimal threshold or precision.",
+  "development_replay": [
+    {
+      "minimum_score": 0.3333333333333333,
+      "top5_hits": 31,
+      "top20_hits": 33,
+      "correct_empty": 5
+    },
+    {
+      "minimum_score": 0.6666666666666666,
+      "top5_hits": 31,
+      "top20_hits": 33,
+      "correct_empty": 5
+    },
+    {
+      "minimum_score": 1,
+      "top5_hits": 31,
+      "top20_hits": 33,
+      "correct_empty": 5
+    }
+  ]
+}

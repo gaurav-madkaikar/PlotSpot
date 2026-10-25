@@ -1,0 +1,170 @@
+{
+  "source": "live_local_keyword_api",
+  "cases": [
+    {
+      "query": "Interstellar",
+      "indexed_movies": 1533,
+      "total": 21,
+      "match_type": "title_cast",
+      "correction": null,
+      "milliseconds": 144,
+      "first_three": [
+        {
+          "id": 157336,
+          "title": "Interstellar"
+        },
+        {
+          "id": 1443305,
+          "title": "Container Interstellar"
+        },
+        {
+          "id": 763179,
+          "title": "Cosmic Journey: The Voyager Interstellar Mission and Message"
+        }
+      ]
+    },
+    {
+      "query": "Intersteler",
+      "indexed_movies": 1533,
+      "total": 21,
+      "match_type": "typo",
+      "correction": "Interstellar",
+      "milliseconds": 276,
+      "first_three": [
+        {
+          "id": 157336,
+          "title": "Interstellar"
+        },
+        {
+          "id": 1443305,
+          "title": "Container Interstellar"
+        },
+        {
+          "id": 763179,
+          "title": "Cosmic Journey: The Voyager Interstellar Mission and Message"
+        }
+      ]
+    },
+    {
+      "query": "Cristopher Nolan",
+      "indexed_movies": 1533,
+      "total": 28,
+      "match_type": "typo",
+      "correction": "Christopher Nolan",
+      "milliseconds": 312,
+      "first_three": [
+        {
+          "id": 272,
+          "title": "Batman Begins"
+        },
+        {
+          "id": 505819,
+          "title": "Cinema 16: European Short Films (U.S. Edition)"
+        },
+        {
+          "id": 126444,
+          "title": "Cinema16: British Short Films"
+        }
+      ]
+    },
+    {
+      "query": "Tom Hnaks",
+      "indexed_movies": 1533,
+      "total": 9,
+      "match_type": "typo",
+      "correction": "Tom Hanks",
+      "milliseconds": 252,
+      "first_three": [
+        {
+          "id": 640,
+          "title": "Catch Me If You Can"
+        },
+        {
+          "id": 522402,
+          "title": "Finch"
+        },
+        {
+          "id": 13,
+          "title": "Forrest Gump"
+        }
+      ]
+    },
+    {
+      "query": "dream",
+      "indexed_movies": 1533,
+      "total": 28,
+      "match_type": "title_cast",
+      "correction": null,
+      "milliseconds": 123,
+      "first_three": [
+        {
+          "id": 554152,
+          "title": "Coldplay: A Head Full of Dreams"
+        },
+        {
+          "id": 660698,
+          "title": "Faster Than Light: the Dream of Interstellar Flight"
+        },
+        {
+          "id": 80767,
+          "title": "Jiro Dreams of Sushi"
+        }
+      ]
+    },
+    {
+      "query": "linguist",
+      "indexed_movies": 1533,
+      "total": 1,
+      "match_type": "keyword",
+      "correction": null,
+      "milliseconds": 245,
+      "first_three": [
+        {
+          "id": 329865,
+          "title": "Arrival"
+        }
+      ]
+    },
+    {
+      "query": "hero movies",
+      "indexed_movies": 1533,
+      "total": 19,
+      "match_type": "keyword",
+      "correction": null,
+      "milliseconds": 278,
+      "first_three": [
+        {
+          "id": 13479,
+          "title": "A Charlie Brown Thanksgiving"
+        },
+        {
+          "id": 299536,
+          "title": "Avengers: Infinity War"
+        },
+        {
+          "id": 68,
+          "title": "Brazil"
+        }
+      ]
+    },
+    {
+      "query": "pasta recipes and knitting",
+      "indexed_movies": 1533,
+      "total": 0,
+      "match_type": "keyword",
+      "correction": null,
+      "milliseconds": 429,
+      "first_three": []
+    },
+    {
+      "query": "zzzzzzzz",
+      "indexed_movies": 1533,
+      "total": 0,
+      "match_type": "keyword",
+      "correction": null,
+      "milliseconds": 356,
+      "first_three": []
+    }
+  ],
+  "model_calls_required": false
+}

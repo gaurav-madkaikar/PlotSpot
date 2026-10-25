@@ -1,0 +1,28 @@
+{
+  "policy_intent": "narrative-first cross-source qualification with reviewed and ranked seed fallback",
+  "frozen_at": "2026-10-20",
+  "execution_state": "unconsumed",
+  "partitions": {
+    "development": 8,
+    "reserved": 8,
+    "adversarial": 4,
+    "real_movies": 8
+  },
+  "thresholds": {
+    "false_approvals": 0,
+    "minimum_useful_acceptance": 0.75,
+    "errors": 0
+  },
+  "notes": [
+    "Synthetic partitions are unchanged safety regressions.",
+    "The real-film partition is newly authored and frozen before model execution.",
+    "Useful cases cover resolution, motivation, sacrifice and a central world rule.",
+    "Negative cases cover granular recall, wrong causality and missing screenplay corroboration."
+  ],
+  "sha256": {
+    "evals/movie-rag/cross-source-narrative-v5/development.json": "690fd3db4b58408524eaff4fb9aa5e200d559692f33dc3337b72c18d7ed51511",
+    "evals/movie-rag/cross-source-narrative-v5/reserved.json": "365f9a626643a542b10c6b081d4a472100d088d4cfcd88909e2ab589fad9f08d",
+    "evals/movie-rag/cross-source-narrative-v5/adversarial.json": "6b0d1abc02f965fc44167e6af9263471cd68472cf43afcafb0eeb5ae2ccea71b",
+    "evals/movie-rag/story-quality/real-movie-cases-narrative-v3.json": "079d2e8a918ad756715cb7a8694adb3699cfc892908fdf0a2f2c9ddc6f7ac93d"
+  }
+}

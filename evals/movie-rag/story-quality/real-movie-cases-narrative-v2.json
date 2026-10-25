@@ -1,0 +1,214 @@
+{
+  "kind": "preregistered_narrative_real_movie_holdout_v2",
+  "created_at": "2026-10-20",
+  "cases": [
+    {
+      "id": "narrative-v2-saito-home",
+      "movie_id": 27205,
+      "expected_accept": true,
+      "wiki_revision": "enwiki-1379453144-sections-v3-body",
+      "script_revision": "imsdb-scenes-v1-b2318593c69efc77e2ab42006e975adc0d288d131322ba3220624a55bd013a0f",
+      "wiki_start": 3506,
+      "wiki_end": 3609,
+      "script_start": 25313,
+      "script_end": 26122,
+      "label_reason": "The offer's connection to Cobb's children drives his decision to accept the inception job.",
+      "draft": {
+        "kind": "event",
+        "question": "What does Saito's offer give Cobb a chance to do?",
+        "answer": "return home to his children",
+        "wiki_alias": "W1",
+        "script_alias": "S1",
+        "options": [
+          "return home to his children",
+          "take control of a company",
+          "become an architect",
+          "leave the dream-sharing team"
+        ],
+        "correct_index": 0
+      }
+    },
+    {
+      "id": "narrative-v2-mal-blocks-design",
+      "movie_id": 27205,
+      "expected_accept": true,
+      "wiki_revision": "enwiki-1379453144-sections-v3-body",
+      "script_revision": "imsdb-scenes-v1-b2318593c69efc77e2ab42006e975adc0d288d131322ba3220624a55bd013a0f",
+      "wiki_start": 3611,
+      "wiki_end": 4014,
+      "script_start": 29634,
+      "script_end": 30437,
+      "label_reason": "Both accounts connect Cobb's need for another architect to Mal's interference.",
+      "draft": {
+        "kind": "event",
+        "question": "Why does Cobb rely on Ariadne to design the dream levels?",
+        "answer": "fear of being sabotaged by his mind's projection of his late wife Mal",
+        "wiki_alias": "W1",
+        "script_alias": "S1",
+        "options": [
+          "fear of being sabotaged by his mind's projection of his late wife Mal",
+          "a ban on designing more than one level",
+          "a promise to let Robert design them",
+          "a lack of architectural training"
+        ],
+        "correct_index": 0
+      }
+    },
+    {
+      "id": "narrative-v2-red-pill-choice",
+      "movie_id": 603,
+      "expected_accept": true,
+      "wiki_revision": "enwiki-1379344781-sections-v3-body",
+      "script_revision": "imsdb-scenes-v1-f3b7d7c6313a6b3bfaef394d69ab08f97cc11e4514e6e6e39b7adf517bca4548",
+      "wiki_start": 4294,
+      "wiki_end": 4837,
+      "script_start": 36459,
+      "script_end": 37367,
+      "label_reason": "The red-pill decision is a central choice and both sources connect it to learning the truth.",
+      "draft": {
+        "kind": "event",
+        "question": "What does Neo choose by taking the red pill?",
+        "answer": "to uncover the truth about the Matrix",
+        "wiki_alias": "W1",
+        "script_alias": "S1",
+        "options": [
+          "to uncover the truth about the Matrix",
+          "to return to his normal life",
+          "to join the Agents",
+          "to forget Morpheus"
+        ],
+        "correct_index": 0
+      }
+    },
+    {
+      "id": "narrative-v2-oracle-one",
+      "movie_id": 603,
+      "expected_accept": true,
+      "wiki_revision": "enwiki-1379344781-sections-v3-body",
+      "script_revision": "imsdb-scenes-v1-f3b7d7c6313a6b3bfaef394d69ab08f97cc11e4514e6e6e39b7adf517bca4548",
+      "wiki_start": 5954,
+      "wiki_end": 6474,
+      "script_start": 75053,
+      "script_end": 76067,
+      "label_reason": "The Oracle encounter changes Neo's understanding and both accounts support the same conclusion.",
+      "draft": {
+        "kind": "event",
+        "question": "What does the Oracle imply to Neo about being the One?",
+        "answer": "Neo is not the One",
+        "wiki_alias": "W1",
+        "script_alias": "S1",
+        "options": [
+          "Neo is not the One",
+          "Morpheus is not the One",
+          "Cypher is the One",
+          "Smith is the One"
+        ],
+        "correct_index": 0
+      }
+    },
+    {
+      "id": "narrative-v2-granular-recruit",
+      "movie_id": 27205,
+      "expected_accept": false,
+      "wiki_revision": "enwiki-1379453144-sections-v3-body",
+      "script_revision": "imsdb-scenes-v1-b2318593c69efc77e2ab42006e975adc0d288d131322ba3220624a55bd013a0f",
+      "wiki_start": 3611,
+      "wiki_end": 4014,
+      "script_start": 30437,
+      "script_end": 30846,
+      "label_reason": "This is isolated minor-name recall even though both sources identify Ariadne.",
+      "draft": {
+        "kind": "event",
+        "question": "Which architecture student does Cobb recruit?",
+        "answer": "Ariadne",
+        "wiki_alias": "W1",
+        "script_alias": "S1",
+        "options": [
+          "Ariadne",
+          "Mal",
+          "Arthur",
+          "Saito"
+        ],
+        "correct_index": 0
+      }
+    },
+    {
+      "id": "narrative-v2-wrong-structure-purpose",
+      "movie_id": 27205,
+      "expected_accept": false,
+      "wiki_revision": "enwiki-1379453144-sections-v3-body",
+      "script_revision": "imsdb-scenes-v1-b2318593c69efc77e2ab42006e975adc0d288d131322ba3220624a55bd013a0f",
+      "wiki_start": 3611,
+      "wiki_end": 4014,
+      "script_start": 29634,
+      "script_end": 30437,
+      "label_reason": "The selected phrase explains Cobb's need for an architect, not the purpose of the dream structure.",
+      "draft": {
+        "kind": "event",
+        "question": "What is the purpose of the team's three-level dream structure?",
+        "answer": "fear of being sabotaged by his mind's projection of his late wife Mal",
+        "wiki_alias": "W1",
+        "script_alias": "S1",
+        "options": [
+          "fear of being sabotaged by his mind's projection of his late wife Mal",
+          "for Robert to accept the implanted idea as his own",
+          "to return Cobb to his children",
+          "to recruit a new chemist"
+        ],
+        "correct_index": 0
+      }
+    },
+    {
+      "id": "narrative-v2-granular-tracker",
+      "movie_id": 603,
+      "expected_accept": false,
+      "wiki_revision": "enwiki-1379344781-sections-v3-body",
+      "script_revision": "imsdb-scenes-v1-f3b7d7c6313a6b3bfaef394d69ab08f97cc11e4514e6e6e39b7adf517bca4548",
+      "wiki_start": 4294,
+      "wiki_end": 4837,
+      "script_start": 25740,
+      "script_end": 26433,
+      "label_reason": "This tests an isolated body-location detail rather than story understanding.",
+      "draft": {
+        "kind": "event",
+        "question": "Where do the Agents implant the tracking device in Neo?",
+        "answer": "his abdomen",
+        "wiki_alias": "W1",
+        "script_alias": "S1",
+        "options": [
+          "his abdomen",
+          "his wrist",
+          "his shoulder",
+          "his ankle"
+        ],
+        "correct_index": 0
+      }
+    },
+    {
+      "id": "narrative-v2-wrong-sacrifice-cause",
+      "movie_id": 603,
+      "expected_accept": false,
+      "wiki_revision": "enwiki-1379344781-sections-v3-body",
+      "script_revision": "imsdb-scenes-v1-f3b7d7c6313a6b3bfaef394d69ab08f97cc11e4514e6e6e39b7adf517bca4548",
+      "wiki_start": 5954,
+      "wiki_end": 6474,
+      "script_start": 101148,
+      "script_end": 101883,
+      "label_reason": "Cypher's betrayal is context for the ambush, but it is not the stated motivation for Morpheus's sacrifice.",
+      "draft": {
+        "kind": "event",
+        "question": "Why does Morpheus sacrifice himself to confront Smith?",
+        "answer": "betrayed by Cypher",
+        "wiki_alias": "W1",
+        "script_alias": "S1",
+        "options": [
+          "betrayed by Cypher",
+          "Convinced of Neo's importance",
+          "to return to the virtual comforts of the Matrix",
+          "to disconnect the others"
+        ],
+        "correct_index": 0
+      }
+    }
+  ]
+}

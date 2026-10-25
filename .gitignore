@@ -1,0 +1,24 @@
+node_modules/
+.venv/
+.cache/
+.vscode/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+dist/
+.env
+.env.*
+!.env.example
+.DS_Store
+playwright-report/
+test-results/
+# Runtime databases, downloaded screenplay material, and vector indexes.
+/data/
+/backend/data/
+*.db
+*.sqlite3
+*.bin
+*.pickle
+design-system/
+design-prototypes/

@@ -1,0 +1,34 @@
+{
+  "policy": "provisional-whole-bank-novelty-input-v1",
+  "scope": "Four assistant-editorial accepts only. Each candidate replaces the named saved question and is compared with every other question in that movie's current bank.",
+  "items": [
+    {
+      "source_report": "evals/movie-rag/quiz-narrative-quality/replacement-editorial-review-v1.json",
+      "source_report_sha256": "b76cc65ddf160ed595b5ae23c65c114e0e8d371abd0d3abc3de1fed2c2dbf035",
+      "movie_id": 8587,
+      "question_id": "research-b4c4933bed48-t11-Q3",
+      "candidate_sha256": "c90ae2db65a6bbfa08615b4f0c5d81597d7252912167b4fc28e26d75783f6509"
+    },
+    {
+      "source_report": "evals/movie-rag/quiz-narrative-quality/replacement-broader-editorial-v1.json",
+      "source_report_sha256": "d11260cd224e330d3dc2c2e8f99761d4107332d7fc422fd886024ca5c9d61e0a",
+      "movie_id": 550,
+      "question_id": "research-e783e7f83fe0-t1-Q1",
+      "candidate_sha256": "05261e46363bc481771025fbdf8b71e311884cdff0085e956425440321cd5bc4"
+    },
+    {
+      "source_report": "evals/movie-rag/quiz-narrative-quality/replacement-shaped-span-editorial-v1.json",
+      "source_report_sha256": "3578041962efe1f856fafc2b0992161689eb08dbe0770a3374c568fd495c7441",
+      "movie_id": 13,
+      "question_id": "research-423740447f00-t10-Q1",
+      "candidate_sha256": "fdd9f89f1342204ee70143511ece177fee77b6955a1d72bd9ea2df8cbb0a05fc"
+    },
+    {
+      "source_report": "evals/movie-rag/quiz-narrative-quality/replacement-shaped-span-editorial-v1.json",
+      "source_report_sha256": "3578041962efe1f856fafc2b0992161689eb08dbe0770a3374c568fd495c7441",
+      "movie_id": 278,
+      "question_id": "research-4630dcebf37c-t5-Q1",
+      "candidate_sha256": "3a5e9ad3a80c642a1be3f4dc95c93365c8ba610684e4f78afa720054ac7dc5b4"
+    }
+  ]
+}
