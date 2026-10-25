@@ -23,6 +23,9 @@ import { DiscoverPage } from './pages/discover'
 const queryClient = new QueryClient({
   defaultOptions: { queries: { staleTime: 60_000, retry: 1 } },
 })
+const labEnabled =
+  import.meta.env.DEV && import.meta.env.VITE_PLOTSPOT_LAB_ENABLED === 'true'
+
 function LegacyCollectionRoute() {
   const location = useLocation()
   return (
@@ -69,6 +72,16 @@ const router = createBrowserRouter([
           Component: (await import('./pages/account')).AccountPage,
         }),
       },
+      ...(labEnabled
+        ? [
+            {
+              path: '/lab',
+              lazy: async () => ({
+                Component: (await import('./pages/lab')).LabPage,
+              }),
+            },
+          ]
+        : []),
       { path: '/collection', element: <LegacyCollectionRoute /> },
       { path: '*', element: <MissingMovie /> },
     ],
