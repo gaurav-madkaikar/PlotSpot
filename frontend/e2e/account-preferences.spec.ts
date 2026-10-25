@@ -101,10 +101,11 @@ test('failed save keeps edits and stale writes require deliberate reload', async
     page.getByRole('switch', { name: 'Allow spoilers by default' }),
   ).toBeChecked()
   fail = false
-  const session = await (await page.request.get('/api/auth/session')).json()
+  const sessionResponse = await page.request.get('/api/auth/session')
+  const session = await sessionResponse.json()
   const response = await page.request.put('/api/me/preferences', {
     headers: {
-      Origin: 'http://127.0.0.1:5176',
+      Origin: new URL(sessionResponse.url()).origin,
       'X-CSRF-Token': session.csrf_token,
     },
     data: { ...session.user.preferences, include_adult: false },

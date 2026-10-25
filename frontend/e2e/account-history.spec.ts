@@ -5,9 +5,10 @@ async function history(page: Page, kind = 'movies') {
   return await (await page.request.get(`/api/me/history/${kind}`)).json()
 }
 async function authHeaders(page: Page) {
-  const session = await (await page.request.get('/api/auth/session')).json()
+  const response = await page.request.get('/api/auth/session')
+  const session = await response.json()
   return {
-    Origin: origin,
+    Origin: new URL(response.url()).origin,
     'X-CSRF-Token': session.csrf_token,
     'X-Account-Owner': session.user.id,
   }

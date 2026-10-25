@@ -6,6 +6,10 @@ const accountDb = join(
   mkdtempSync(join(tmpdir(), 'frame-browser-')),
   'accounts.db',
 )
+const apiPort = process.env.PLOTSPOT_E2E_API_PORT ?? '8000'
+const webPort = process.env.PLOTSPOT_E2E_WEB_PORT ?? '5173'
+const apiOrigin = `http://127.0.0.1:${apiPort}`
+const webOrigin = `http://127.0.0.1:${webPort}`
 
 export default defineConfig({
   testDir: './e2e',
@@ -13,27 +17,29 @@ export default defineConfig({
   forbidOnly: Boolean(process.env.CI),
   retries: process.env.CI ? 1 : 0,
   reporter: 'list',
-  use: { baseURL: 'http://127.0.0.1:5173', trace: 'retain-on-failure' },
+  use: { baseURL: webOrigin, trace: 'retain-on-failure' },
   projects: [{ name: 'chromium', use: { ...devices['Desktop Chrome'] } }],
   webServer: [
     {
-      command:
-        '../backend/.venv/bin/uvicorn movie_companion.main:app --app-dir ../backend/src --host 127.0.0.1 --port 8000',
-      url: 'http://127.0.0.1:8000/api/health',
+      command: `../backend/.venv/bin/uvicorn movie_companion.main:app --app-dir ../backend/src --host 127.0.0.1 --port ${apiPort}`,
+      url: `${apiOrigin}/api/health`,
       reuseExistingServer: false,
       env: {
         MOVIE_DATA_SOURCE: 'demo',
         TMDB_READ_TOKEN: '',
         FRAME_ACCOUNT_DB: accountDb,
-        FRAME_APP_ORIGIN: 'http://127.0.0.1:5173',
+        FRAME_APP_ORIGIN: webOrigin,
         PLOTSPOT_VERIFICATION_MODE: 'preview',
       },
     },
     {
-      command: 'npm run dev',
-      url: 'http://127.0.0.1:5173',
+      command: `npx vite --host 127.0.0.1 --port ${webPort} --strictPort`,
+      url: webOrigin,
       reuseExistingServer: false,
-      env: { VITE_PLOTSPOT_LAB_ENABLED: 'true' },
+      env: {
+        MOVIE_API_TARGET: apiOrigin,
+        VITE_PLOTSPOT_LAB_ENABLED: 'true',
+      },
     },
   ],
 })

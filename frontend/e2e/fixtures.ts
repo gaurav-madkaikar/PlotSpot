@@ -70,11 +70,13 @@ export { expect }
 // disposable browser-test database. Guest suites keep their anonymous context.
 export async function signInMember(
   page: import('@playwright/test').Page,
-  origin: string,
+  _origin: string,
 ) {
   const username = `member_${crypto.randomUUID().slice(0, 16)}`
   const password = 'Local test password!'
-  const session = await (await page.request.get('/api/auth/session')).json()
+  const sessionResponse = await page.request.get('/api/auth/session')
+  const origin = new URL(sessionResponse.url()).origin
+  const session = await sessionResponse.json()
   const headers = { Origin: origin, 'X-CSRF-Token': session.csrf_token }
   const receipt = await page.request.post('/api/auth/register', {
     headers,
