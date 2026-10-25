@@ -86,6 +86,22 @@ npm run test:e2e
 
 Browser tests start their own local servers. Install the project-local test browser once with `npm run browsers:install` if needed. Stop any manually started servers on the test ports first. No API keys or inference service are required for these checks.
 
+### Inspect AI reliability locally
+
+PlotSpot includes a read-only, developer-only **AI Reliability Lab** for inspecting registered evaluation reports and bounded recent pipeline runs. It is deliberately absent from production builds and has no public navigation link.
+
+Set both local flags to `true`:
+
+```dotenv
+# backend/.env
+PLOTSPOT_LAB_ENABLED=true
+
+# frontend/.env.local
+VITE_PLOTSPOT_LAB_ENABLED=true
+```
+
+Restart both servers, then open `http://127.0.0.1:5173/lab`. The backend flag is authoritative: when it is disabled, all lab API routes return `404`. The frontend flag only exposes the development route. The lab reads a fixed registry of evaluation artifacts and a bounded projection of local run records; it cannot launch jobs, alter reports, publish content or reveal prompts, retrieved passages or model reasoning. See [Lesson 82](docs/learning/82-ai-reliability-lab.md) for the full data flow and safety model.
+
 ## Learn alongside the implementation
 
 Start with [Checkpoint 1](docs/learning/01-foundation.md). It traces one request from search field to Python and back, provides a small exercise, and explains the design decisions.
